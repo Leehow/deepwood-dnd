@@ -82,10 +82,43 @@
 
       .nav-links {
         display: flex;
+        align-items: center;
         gap: 18px;
         flex-wrap: wrap;
         color: var(--muted);
         font-size: 14px;
+      }
+
+      .language-switch {
+        display: inline-flex;
+        gap: 4px;
+        padding: 3px;
+        border: 1px solid rgba(243, 197, 68, 0.3);
+        border-radius: var(--radius);
+        background: rgba(20, 27, 42, 0.82);
+      }
+
+      .language-switch button {
+        min-width: 44px;
+        border: 0;
+        border-radius: 6px;
+        padding: 5px 9px;
+        color: var(--muted);
+        background: transparent;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .language-switch button[aria-pressed="true"] {
+        color: #171109;
+        background: var(--gold);
+      }
+
+      html[lang="en"] [data-lang="zh"],
+      html[lang="zh-CN"] [data-lang="en"] {
+        display: none !important;
       }
 
       .hero {
@@ -289,14 +322,18 @@
     <header class="nav">
       <div class="container nav-inner">
         <a class="brand" href="https://github.com/Leehow/deepwood-dnd">
-          <img src="../../frontend/public/logo.png" alt="" />
+          <img src="../assets/deepwood-logo.png" alt="" />
           <span>Deepwood DND</span>
         </a>
         <nav class="nav-links" aria-label="Showcase navigation">
-          <a href="#features">Features</a>
-          <a href="#screens">Screenshots</a>
-          <a href="#legal">Legal</a>
+          <a href="#features"><span data-lang="en">Features</span><span data-lang="zh">功能</span></a>
+          <a href="#screens"><span data-lang="en">Screenshots</span><span data-lang="zh">截图</span></a>
+          <a href="#legal"><span data-lang="en">Legal</span><span data-lang="zh">法律声明</span></a>
           <a href="https://github.com/Leehow/deepwood-dnd">GitHub</a>
+          <span class="language-switch" aria-label="Language switch">
+            <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+            <button type="button" data-set-lang="zh-CN" aria-pressed="true">中文</button>
+          </span>
         </nav>
       </div>
     </header>
@@ -305,20 +342,29 @@
       <section class="hero">
         <div class="container hero-grid">
           <div>
-            <div class="eyebrow">AI-assisted virtual tabletop / AI 辅助虚拟桌面</div>
+            <div class="eyebrow">
+              <span data-lang="en">AI-assisted virtual tabletop</span>
+              <span data-lang="zh">AI 辅助虚拟桌面</span>
+            </div>
             <h1>Deepwood DND</h1>
-            <p class="lead">
+            <p class="lead" data-lang="en">
               A full-stack D&D-style campaign platform for real-time tactical play,
               automated character math, asset management, dice adjudication, module
               reading, and AI-assisted DM preparation.
             </p>
-            <p class="lead">
+            <p class="lead" data-lang="zh">
               一个面向 D&D 风格战役的全栈平台：实时战术桌面、角色自动计算、资产管理、
               骰子裁定、AI 读规则/读模组、AI 备团和实时生成战役资产。
             </p>
             <div class="cta-row">
-              <a class="button primary" href="https://github.com/Leehow/deepwood-dnd">View on GitHub</a>
-              <a class="button" href="../showcase.md">Markdown showcase</a>
+              <a class="button primary" href="https://github.com/Leehow/deepwood-dnd">
+                <span data-lang="en">View on GitHub</span>
+                <span data-lang="zh">查看 GitHub</span>
+              </a>
+              <a class="button" href="../showcase.md">
+                <span data-lang="en">Markdown showcase</span>
+                <span data-lang="zh">Markdown 展示</span>
+              </a>
             </div>
           </div>
           <figure class="hero-card">
@@ -330,20 +376,24 @@
       <section id="features" class="section">
         <div class="container">
           <div class="section-head">
-            <h2>One workspace for the whole table / 一张桌子，跑完整场团</h2>
-            <p>
+            <h2><span data-lang="en">One workspace for the whole table</span><span data-lang="zh">一张桌子，跑完整场团</span></h2>
+            <p data-lang="en">
               Deepwood DND brings the DM, players, tactical state, rules context, dice,
               maps, NPCs, monsters, treasure, and AI-generated prep into the same campaign
               workspace.
             </p>
+            <p data-lang="zh">
+              Deepwood DND 把 DM、玩家、战术状态、规则上下文、骰子、地图、NPC、怪物、
+              宝箱和 AI 备团材料放在同一个战役工作区里。
+            </p>
           </div>
           <div class="feature-grid">
-            <div class="feature"><strong>Realtime combat / 实时战斗</strong><span>Initiative, token state, actions, reactions, range, AC, HP, and turn flow.</span></div>
-            <div class="feature"><strong>Character automation / 角色自动计算</strong><span>Race/class flow, derived stats, resources, equipment, and sheet data.</span></div>
-            <div class="feature"><strong>Dice automation / 骰子自动计算</strong><span>Visible d20 math, DC checks, attack rolls, damage, and adjudication.</span></div>
-            <div class="feature"><strong>AI module prep / AI 备团</strong><span>Read rules/modules, summarize prep, suggest encounters, and create assets.</span></div>
-            <div class="feature"><strong>Asset management / 资产管理</strong><span>Inventory, currency, item icons, portraits, chests, loot, NPCs, and monsters.</span></div>
-            <div class="feature"><strong>Map generation / 地图生成</strong><span>Upload maps, align scale, transform, or generate new scenes with AI.</span></div>
+            <div class="feature"><strong><span data-lang="en">Realtime combat</span><span data-lang="zh">实时战斗</span></strong><span data-lang="en">Initiative, token state, actions, reactions, range, AC, HP, and turn flow.</span><span data-lang="zh">先攻、棋子状态、动作、反应、距离、AC、HP 和回合流程。</span></div>
+            <div class="feature"><strong><span data-lang="en">Character automation</span><span data-lang="zh">角色自动计算</span></strong><span data-lang="en">Race/class flow, derived stats, resources, equipment, and sheet data.</span><span data-lang="zh">种族/职业流程、派生属性、资源、装备和角色卡数据。</span></div>
+            <div class="feature"><strong><span data-lang="en">Dice automation</span><span data-lang="zh">骰子自动计算</span></strong><span data-lang="en">Visible d20 math, DC checks, attack rolls, damage, and adjudication.</span><span data-lang="zh">可见的 d20 计算、DC 检定、攻击、伤害和裁定。</span></div>
+            <div class="feature"><strong><span data-lang="en">AI module prep</span><span data-lang="zh">AI 备团</span></strong><span data-lang="en">Read rules/modules, summarize prep, suggest encounters, and create assets.</span><span data-lang="zh">读取规则/模组、总结备团、建议遭遇并创建资产。</span></div>
+            <div class="feature"><strong><span data-lang="en">Asset management</span><span data-lang="zh">资产管理</span></strong><span data-lang="en">Inventory, currency, item icons, portraits, chests, loot, NPCs, and monsters.</span><span data-lang="zh">背包、货币、物品图标、头像、宝箱、战利品、NPC 和怪物。</span></div>
+            <div class="feature"><strong><span data-lang="en">Map generation</span><span data-lang="zh">地图生成</span></strong><span data-lang="en">Upload maps, align scale, transform, or generate new scenes with AI.</span><span data-lang="zh">上传地图、校准比例、变换地图，或用 AI 生成新场景。</span></div>
           </div>
         </div>
       </section>
@@ -351,18 +401,24 @@
       <section id="screens" class="section">
         <div class="container">
           <div class="section-head">
-            <h2>Product screenshots / 产品截图</h2>
-            <p>Actual UI captures showing the core workflows that can be shared publicly.</p>
+            <h2><span data-lang="en">Product screenshots</span><span data-lang="zh">产品截图</span></h2>
+            <p data-lang="en">Actual UI captures showing the core workflows that can be shared publicly.</p>
+            <p data-lang="zh">可公开展示的真实 UI 截图，覆盖核心工作流。</p>
           </div>
 
           <article class="shot">
             <img src="../assets/showcase/combat-tabletop.png" alt="Combat tabletop" />
             <div class="copy">
-              <h3>Live tactical tabletop / 实时战术桌面</h3>
-              <p>Shared map, initiative, combat panel, chat narration, token actions, and range overlays.</p>
-              <ul>
+              <h3><span data-lang="en">Live tactical tabletop</span><span data-lang="zh">实时战术桌面</span></h3>
+              <p data-lang="en">Shared map, initiative, combat panel, chat narration, token actions, and range overlays.</p>
+              <p data-lang="zh">共享地图、先攻、战斗面板、聊天叙事、棋子动作和距离覆盖层。</p>
+              <ul data-lang="en">
                 <li>Turn order, HP, AC, reactions, actions, and creature abilities.</li>
                 <li>DM narration and player rolls stay in the campaign timeline.</li>
+              </ul>
+              <ul data-lang="zh">
+                <li>回合顺序、HP、AC、反应、动作和生物能力集中管理。</li>
+                <li>DM 叙事和玩家掷骰都保留在战役时间线里。</li>
               </ul>
               <div class="badges"><span class="badge">WebSocket</span><span class="badge">Konva map</span><span class="badge">Combat state</span></div>
             </div>
@@ -371,11 +427,16 @@
           <article class="shot">
             <img src="../assets/showcase/character-builder.png" alt="Character builder" />
             <div class="copy">
-              <h3>Character creation / 创建角色自动计算</h3>
-              <p>Step-by-step character builder for race, class, features, attributes, equipment, and final review.</p>
-              <ul>
+              <h3><span data-lang="en">Character creation</span><span data-lang="zh">创建角色自动计算</span></h3>
+              <p data-lang="en">Step-by-step character builder for race, class, features, attributes, equipment, and final review.</p>
+              <p data-lang="zh">分步骤创建角色：种族、职业、特性、属性、装备和最终审核。</p>
+              <ul data-lang="en">
                 <li>Ability bonuses and derived sheet values are calculated where possible.</li>
                 <li>Players get a usable character sheet without hand-wiring formulas.</li>
+              </ul>
+              <ul data-lang="zh">
+                <li>自动计算属性加值和可推导的角色卡数值。</li>
+                <li>玩家不需要手动维护公式，也能得到可用角色卡。</li>
               </ul>
               <div class="badges"><span class="badge">Race/class</span><span class="badge">Derived stats</span><span class="badge">Equipment</span></div>
             </div>
@@ -384,11 +445,16 @@
           <article class="shot">
             <img src="../assets/showcase/ai-module-prep.png" alt="AI module preparation" />
             <div class="copy">
-              <h3>AI reads rules and modules / AI 读规则、读模组与备团</h3>
-              <p>Turn module notes into DM prep cards, NPCs, encounters, routes, rumors, and map prompts.</p>
-              <ul>
+              <h3><span data-lang="en">AI reads rules and modules</span><span data-lang="zh">AI 读规则、读模组与备团</span></h3>
+              <p data-lang="en">Turn module notes into DM prep cards, NPCs, encounters, routes, rumors, and map prompts.</p>
+              <p data-lang="zh">把模组笔记转成 DM 速查卡、NPC、遭遇、路线、传闻和地图提示词。</p>
+              <ul data-lang="en">
                 <li>Ask about module content and generate concrete campaign assets.</li>
                 <li>Prepare balanced fights or variants for different party sizes.</li>
+              </ul>
+              <ul data-lang="zh">
+                <li>围绕模组内容提问，并生成可直接使用的战役资产。</li>
+                <li>按队伍人数准备平衡战斗或改编版本。</li>
               </ul>
               <div class="badges"><span class="badge">Rules chat</span><span class="badge">Module chat</span><span class="badge">DM prep</span></div>
             </div>
@@ -397,11 +463,16 @@
           <article class="shot">
             <img src="../assets/showcase/map-management.png" alt="Map management" />
             <div class="copy">
-              <h3>Maps and scenes / 地图资产与 AI 生成</h3>
-              <p>Manage map library assets, upload scenes, generate maps, and align scale for tactical play.</p>
-              <ul>
+              <h3><span data-lang="en">Maps and scenes</span><span data-lang="zh">地图资产与 AI 生成</span></h3>
+              <p data-lang="en">Manage map library assets, upload scenes, generate maps, and align scale for tactical play.</p>
+              <p data-lang="zh">管理地图库、上传场景、生成地图，并为战术战斗校准比例。</p>
+              <ul data-lang="en">
                 <li>Scale, rotate, flip, and reset map transforms.</li>
                 <li>Convert prep ideas into playable scene maps quickly.</li>
+              </ul>
+              <ul data-lang="zh">
+                <li>支持缩放、旋转、翻转和重置地图变换。</li>
+                <li>快速把备团想法变成可游玩的场景地图。</li>
               </ul>
               <div class="badges"><span class="badge">Map library</span><span class="badge">AI generation</span><span class="badge">Scale tools</span></div>
             </div>
@@ -410,11 +481,16 @@
           <article class="shot">
             <img src="../assets/showcase/asset-inventory.png" alt="Inventory and assets" />
             <div class="copy">
-              <h3>Assets and inventory / 资产与装备管理</h3>
-              <p>Manage equipment, backpack contents, currency, weight, value, icons, custom items, and portraits.</p>
-              <ul>
+              <h3><span data-lang="en">Assets and inventory</span><span data-lang="zh">资产与装备管理</span></h3>
+              <p data-lang="en">Manage equipment, backpack contents, currency, weight, value, icons, custom items, and portraits.</p>
+              <p data-lang="zh">管理装备、背包、货币、重量、价值、图标、自定义物品和头像。</p>
+              <ul data-lang="en">
                 <li>Use the same asset model for PCs, NPCs, monsters, treasure, and chests.</li>
                 <li>AI item transformation and avatar workflows help keep assets visual.</li>
+              </ul>
+              <ul data-lang="zh">
+                <li>同一套资产模型服务于玩家、NPC、怪物、战利品和宝箱。</li>
+                <li>AI 物品转化和头像工作流让资产保持可视化。</li>
               </ul>
               <div class="badges"><span class="badge">Inventory</span><span class="badge">Treasure</span><span class="badge">Portraits</span></div>
             </div>
@@ -423,11 +499,16 @@
           <article class="shot">
             <img src="../assets/showcase/dice-automation.png" alt="Dice automation" />
             <div class="copy">
-              <h3>Dice automation / 骰子与规则自动计算</h3>
-              <p>Resolve checks and attacks with visible math: d20, modifiers, proficiency, DC, hit/miss, and damage.</p>
-              <ul>
+              <h3><span data-lang="en">Dice automation</span><span data-lang="zh">骰子与规则自动计算</span></h3>
+              <p data-lang="en">Resolve checks and attacks with visible math: d20, modifiers, proficiency, DC, hit/miss, and damage.</p>
+              <p data-lang="zh">以可见公式裁定检定和攻击：d20、修正值、熟练、DC、命中/未命中和伤害。</p>
+              <ul data-lang="en">
                 <li>DM can request skill checks and let players choose a roller.</li>
                 <li>Attack rolls produce adjudicated combat narration in chat.</li>
+              </ul>
+              <ul data-lang="zh">
+                <li>DM 可以发起技能检定，让玩家选择角色投掷。</li>
+                <li>攻击掷骰会在聊天中生成已裁定的战斗叙事。</li>
               </ul>
               <div class="badges"><span class="badge">DC checks</span><span class="badge">Damage dice</span><span class="badge">Narration</span></div>
             </div>
@@ -438,15 +519,15 @@
       <section id="legal" class="section">
         <div class="container">
           <div class="notice">
-            <strong>Commercial and content boundary / 商业化与内容边界</strong>
-            <p>
+            <strong><span data-lang="en">Commercial and content boundary</span><span data-lang="zh">商业化与内容边界</span></strong>
+            <p data-lang="en">
               Deepwood DND software is Apache-2.0 licensed. That does not grant rights
               to D&D rules text, official books, adventures, art, maps, trademarks,
               uploaded modules, generated campaign content, or third-party assets.
               Commercial deployments must independently satisfy the applicable rights
               and policies.
             </p>
-            <p>
+            <p data-lang="zh">
               Deepwood DND 软件代码使用 Apache-2.0，但不授权 D&D 规则文本、官方书籍、
               冒险、美术、地图、商标、上传模组、生成战役内容或第三方素材。商业化部署
               需要自行满足相关权利和政策要求。
@@ -459,8 +540,28 @@
     <footer>
       <div class="container">
         Deepwood DND · <a href="https://github.com/Leehow/deepwood-dnd">GitHub</a> ·
-        <a href="../../LICENSE">Apache-2.0 software license</a>
+        <a href="../../LICENSE"><span data-lang="en">Apache-2.0 software license</span><span data-lang="zh">Apache-2.0 软件许可证</span></a>
       </div>
     </footer>
+    <script>
+      const applyLanguage = (lang) => {
+        const normalized = lang === "en" ? "en" : "zh-CN";
+        document.documentElement.lang = normalized;
+        localStorage.setItem("deepwood-showcase-lang", normalized);
+        document.querySelectorAll("[data-set-lang]").forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.setLang === normalized));
+        });
+      };
+
+      const savedLanguage = localStorage.getItem("deepwood-showcase-lang");
+      const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith("zh")
+        ? "zh-CN"
+        : "en";
+      applyLanguage(savedLanguage || browserLanguage);
+
+      document.querySelectorAll("[data-set-lang]").forEach((button) => {
+        button.addEventListener("click", () => applyLanguage(button.dataset.setLang));
+      });
+    </script>
   </body>
 </html>
