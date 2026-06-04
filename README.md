@@ -20,6 +20,27 @@ Deepwood DND 是一个免费的全栈虚拟桌面角色扮演平台，面向 Dun
 > Deepwood DND 与 Wizards of the Coast 无从属、授权、赞助或认可关系。本项目
 > 只提供产品和软件代码，不提供 D&D 相关内容、商标、设定或版权授权。
 
+## Product Showcase / 产品展示
+
+![Deepwood DND tactical tabletop showcase](./docs/assets/showcase/combat-tabletop.png)
+
+Deepwood DND combines a real-time tactical tabletop, character automation,
+asset management, dice resolution, and AI-assisted DM preparation. The full
+showcase includes screenshots for combat, character creation, AI module prep,
+map generation, inventory/assets, and dice automation.
+
+Deepwood DND 集成实时战术桌面、角色自动计算、资产管理、骰子裁定和 AI 辅助备团。
+完整展示页包含战斗桌面、创建角色、AI 读规则/读模组、AI 备团、地图生成、装备资产
+和骰子自动计算等截图。
+
+See the hosted showcase page and the Markdown walkthrough:
+[`GitHub Pages showcase`](https://leehow.github.io/deepwood-dnd/showcase/) ·
+[`docs/showcase.md`](./docs/showcase.md).
+
+完整中英双语产品展示：
+[`GitHub Pages 展示页`](https://leehow.github.io/deepwood-dnd/showcase/) ·
+[`docs/showcase.md`](./docs/showcase.md)。
+
 ## Features / 功能
 
 - **Campaigns & characters / 战役与角色** — create and manage 5E-style
@@ -27,10 +48,16 @@ Deepwood DND 是一个免费的全栈虚拟桌面角色扮演平台，面向 Dun
 - **Real-time tabletop / 实时战术桌面** — Konva-based tactical map with tokens,
   fog of war, drawing, rulers, terrain, music, and WebSocket synchronization.
 - **Dice flow / 骰子流程** — a DM → player → adjudication roll workflow.
+- **Automated character math / 角色自动计算** — ability bonuses, derived stats,
+  resources, equipment constraints, and character sheet data are calculated
+  where possible.
 - **Module pipeline / 模组流水线** — upload PDF/Markdown content, OCR/parse it,
   and organize chapters, monsters, items, maps, and notes.
 - **AI assists / AI 辅助** — optional chat, image/avatar generation, OCR, and
   module processing integrations. Bring your own provider keys.
+- **AI DM prep and asset generation / AI 备团与资产生成** — use AI to read
+  rules/modules, summarize prep notes, create NPCs, monsters, chests, maps,
+  encounters, and other campaign assets.
 
 ## Tech Stack / 技术栈
 

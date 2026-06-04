@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deepwood DND Showcase</title>
+    <meta
+      name="description"
+      content="Deepwood DND product showcase: tactical tabletop, character automation, AI prep, maps, assets, and dice automation."
+    />
+    <style>
+      :root {
+        --bg: #0b101a;
+        --panel: #141b2a;
+        --panel-2: #1b2435;
+        --line: #334159;
+        --gold: #f3c544;
+        --gold-2: #c7862c;
+        --text: #f5f0df;
+        --muted: #aeb7c7;
+        --blue: #58a6ff;
+        --green: #58d178;
+        --red: #ef6c67;
+        --radius: 8px;
+        --shadow: 0 18px 60px rgba(0, 0, 0, 0.38);
+        color-scheme: dark;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 15% 0%, rgba(243, 197, 68, 0.16), transparent 28rem),
+          radial-gradient(circle at 88% 18%, rgba(88, 166, 255, 0.13), transparent 24rem),
+          linear-gradient(180deg, #0b101a 0%, #101522 52%, #080b12 100%);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "PingFang SC", "Microsoft YaHei", sans-serif;
+        line-height: 1.65;
+      }
+
+      a { color: var(--gold); text-decoration: none; }
+      a:hover { color: #ffe08a; }
+      img { display: block; max-width: 100%; height: auto; }
+
+      .container {
+        width: min(1160px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(18px);
+        background: rgba(11, 16, 26, 0.82);
+        border-bottom: 1px solid rgba(243, 197, 68, 0.18);
+      }
+
+      .nav-inner {
+        min-height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      .brand img {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 72px 0 52px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 34px;
+        align-items: center;
+      }
+
+      .eyebrow {
+        color: var(--gold);
+        font-weight: 700;
+        letter-spacing: 0;
+        margin-bottom: 12px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(44px, 7vw, 82px);
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        color: var(--muted);
+        font-size: 18px;
+        max-width: 62ch;
+      }
+
+      .cta-row {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 18px;
+        border-radius: var(--radius);
+        border: 1px solid rgba(243, 197, 68, 0.38);
+        background: rgba(243, 197, 68, 0.12);
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      .button.primary {
+        background: linear-gradient(135deg, var(--gold), var(--gold-2));
+        color: #181008;
+        border-color: transparent;
+      }
+
+      .hero-card {
+        overflow: hidden;
+        border: 1px solid rgba(243, 197, 68, 0.28);
+        border-radius: var(--radius);
+        background: rgba(20, 27, 42, 0.84);
+        box-shadow: var(--shadow);
+      }
+
+      .hero-card img { width: 100%; }
+
+      .section {
+        padding: 58px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 28px;
+        align-items: end;
+        margin-bottom: 24px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: clamp(28px, 4vw, 44px);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .section-head p,
+      .copy p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .feature {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius);
+        background: rgba(20, 27, 42, 0.78);
+        padding: 18px;
+      }
+
+      .feature strong {
+        display: block;
+        color: var(--gold);
+        margin-bottom: 7px;
+      }
+
+      .feature span {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .shot {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 0.48fr);
+        gap: 22px;
+        align-items: center;
+        margin-top: 22px;
+        padding: 16px;
+        border-radius: var(--radius);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(20, 27, 42, 0.72);
+      }
+
+      .shot:nth-child(even) {
+        grid-template-columns: minmax(280px, 0.48fr) minmax(0, 1fr);
+      }
+
+      .shot:nth-child(even) .copy { order: -1; }
+
+      .shot img {
+        border-radius: 6px;
+        border: 1px solid rgba(243, 197, 68, 0.18);
+        box-shadow: var(--shadow);
+      }
+
+      .copy h3 {
+        margin: 0 0 10px;
+        font-size: 24px;
+        color: var(--gold);
+      }
+
+      .copy ul {
+        margin: 16px 0 0;
+        padding-left: 20px;
+        color: var(--muted);
+      }
+
+      .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .badge {
+        border-radius: 999px;
+        padding: 5px 10px;
+        background: rgba(88, 166, 255, 0.14);
+        color: #b8d9ff;
+        border: 1px solid rgba(88, 166, 255, 0.24);
+        font-size: 13px;
+      }
+
+      .notice {
+        border: 1px solid rgba(239, 108, 103, 0.28);
+        background: rgba(239, 108, 103, 0.1);
+        border-radius: var(--radius);
+        padding: 20px;
+        color: #ffd6d4;
+      }
+
+      footer {
+        padding: 36px 0 54px;
+        color: var(--muted);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      @media (max-width: 880px) {
+        .hero-grid,
+        .section-head,
+        .shot,
+        .shot:nth-child(even) {
+          grid-template-columns: 1fr;
+        }
+
+        .shot:nth-child(even) .copy { order: 0; }
+        .feature-grid { grid-template-columns: 1fr; }
+        .nav-inner { align-items: flex-start; flex-direction: column; padding: 14px 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="https://github.com/Leehow/deepwood-dnd">
+          <img src="../../frontend/public/logo.png" alt="" />
+          <span>Deepwood DND</span>
+        </a>
+        <nav class="nav-links" aria-label="Showcase navigation">
+          <a href="#features">Features</a>
+          <a href="#screens">Screenshots</a>
+          <a href="#legal">Legal</a>
+          <a href="https://github.com/Leehow/deepwood-dnd">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">AI-assisted virtual tabletop / AI 辅助虚拟桌面</div>
+            <h1>Deepwood DND</h1>
+            <p class="lead">
+              A full-stack D&D-style campaign platform for real-time tactical play,
+              automated character math, asset management, dice adjudication, module
+              reading, and AI-assisted DM preparation.
+            </p>
+            <p class="lead">
+              一个面向 D&D 风格战役的全栈平台：实时战术桌面、角色自动计算、资产管理、
+              骰子裁定、AI 读规则/读模组、AI 备团和实时生成战役资产。
+            </p>
+            <div class="cta-row">
+              <a class="button primary" href="https://github.com/Leehow/deepwood-dnd">View on GitHub</a>
+              <a class="button" href="../showcase.md">Markdown showcase</a>
+            </div>
+          </div>
+          <figure class="hero-card">
+            <img src="../assets/showcase/combat-tabletop.png" alt="Deepwood DND tactical tabletop" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>One workspace for the whole table / 一张桌子，跑完整场团</h2>
+            <p>
+              Deepwood DND brings the DM, players, tactical state, rules context, dice,
+              maps, NPCs, monsters, treasure, and AI-generated prep into the same campaign
+              workspace.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <div class="feature"><strong>Realtime combat / 实时战斗</strong><span>Initiative, token state, actions, reactions, range, AC, HP, and turn flow.</span></div>
+            <div class="feature"><strong>Character automation / 角色自动计算</strong><span>Race/class flow, derived stats, resources, equipment, and sheet data.</span></div>
+            <div class="feature"><strong>Dice automation / 骰子自动计算</strong><span>Visible d20 math, DC checks, attack rolls, damage, and adjudication.</span></div>
+            <div class="feature"><strong>AI module prep / AI 备团</strong><span>Read rules/modules, summarize prep, suggest encounters, and create assets.</span></div>
+            <div class="feature"><strong>Asset management / 资产管理</strong><span>Inventory, currency, item icons, portraits, chests, loot, NPCs, and monsters.</span></div>
+            <div class="feature"><strong>Map generation / 地图生成</strong><span>Upload maps, align scale, transform, or generate new scenes with AI.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="screens" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Product screenshots / 产品截图</h2>
+            <p>Actual UI captures showing the core workflows that can be shared publicly.</p>
+          </div>
+
+          <article class="shot">
+            <img src="../assets/showcase/combat-tabletop.png" alt="Combat tabletop" />
+            <div class="copy">
+              <h3>Live tactical tabletop / 实时战术桌面</h3>
+              <p>Shared map, initiative, combat panel, chat narration, token actions, and range overlays.</p>
+              <ul>
+                <li>Turn order, HP, AC, reactions, actions, and creature abilities.</li>
+                <li>DM narration and player rolls stay in the campaign timeline.</li>
+              </ul>
+              <div class="badges"><span class="badge">WebSocket</span><span class="badge">Konva map</span><span class="badge">Combat state</span></div>
+            </div>
+          </article>
+
+          <article class="shot">
+            <img src="../assets/showcase/character-builder.png" alt="Character builder" />
+            <div class="copy">
+              <h3>Character creation / 创建角色自动计算</h3>
+              <p>Step-by-step character builder for race, class, features, attributes, equipment, and final review.</p>
+              <ul>
+                <li>Ability bonuses and derived sheet values are calculated where possible.</li>
+                <li>Players get a usable character sheet without hand-wiring formulas.</li>
+              </ul>
+              <div class="badges"><span class="badge">Race/class</span><span class="badge">Derived stats</span><span class="badge">Equipment</span></div>
+            </div>
+          </article>
+
+          <article class="shot">
+            <img src="../assets/showcase/ai-module-prep.png" alt="AI module preparation" />
+            <div class="copy">
+              <h3>AI reads rules and modules / AI 读规则、读模组与备团</h3>
+              <p>Turn module notes into DM prep cards, NPCs, encounters, routes, rumors, and map prompts.</p>
+              <ul>
+                <li>Ask about module content and generate concrete campaign assets.</li>
+                <li>Prepare balanced fights or variants for different party sizes.</li>
+              </ul>
+              <div class="badges"><span class="badge">Rules chat</span><span class="badge">Module chat</span><span class="badge">DM prep</span></div>
+            </div>
+          </article>
+
+          <article class="shot">
+            <img src="../assets/showcase/map-management.png" alt="Map management" />
+            <div class="copy">
+              <h3>Maps and scenes / 地图资产与 AI 生成</h3>
+              <p>Manage map library assets, upload scenes, generate maps, and align scale for tactical play.</p>
+              <ul>
+                <li>Scale, rotate, flip, and reset map transforms.</li>
+                <li>Convert prep ideas into playable scene maps quickly.</li>
+              </ul>
+              <div class="badges"><span class="badge">Map library</span><span class="badge">AI generation</span><span class="badge">Scale tools</span></div>
+            </div>
+          </article>
+
+          <article class="shot">
+            <img src="../assets/showcase/asset-inventory.png" alt="Inventory and assets" />
+            <div class="copy">
+              <h3>Assets and inventory / 资产与装备管理</h3>
+              <p>Manage equipment, backpack contents, currency, weight, value, icons, custom items, and portraits.</p>
+              <ul>
+                <li>Use the same asset model for PCs, NPCs, monsters, treasure, and chests.</li>
+                <li>AI item transformation and avatar workflows help keep assets visual.</li>
+              </ul>
+              <div class="badges"><span class="badge">Inventory</span><span class="badge">Treasure</span><span class="badge">Portraits</span></div>
+            </div>
+          </article>
+
+          <article class="shot">
+            <img src="../assets/showcase/dice-automation.png" alt="Dice automation" />
+            <div class="copy">
+              <h3>Dice automation / 骰子与规则自动计算</h3>
+              <p>Resolve checks and attacks with visible math: d20, modifiers, proficiency, DC, hit/miss, and damage.</p>
+              <ul>
+                <li>DM can request skill checks and let players choose a roller.</li>
+                <li>Attack rolls produce adjudicated combat narration in chat.</li>
+              </ul>
+              <div class="badges"><span class="badge">DC checks</span><span class="badge">Damage dice</span><span class="badge">Narration</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="legal" class="section">
+        <div class="container">
+          <div class="notice">
+            <strong>Commercial and content boundary / 商业化与内容边界</strong>
+            <p>
+              Deepwood DND software is Apache-2.0 licensed. That does not grant rights
+              to D&D rules text, official books, adventures, art, maps, trademarks,
+              uploaded modules, generated campaign content, or third-party assets.
+              Commercial deployments must independently satisfy the applicable rights
+              and policies.
+            </p>
+            <p>
+              Deepwood DND 软件代码使用 Apache-2.0，但不授权 D&D 规则文本、官方书籍、
+              冒险、美术、地图、商标、上传模组、生成战役内容或第三方素材。商业化部署
+              需要自行满足相关权利和政策要求。
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        Deepwood DND · <a href="https://github.com/Leehow/deepwood-dnd">GitHub</a> ·
+        <a href="../../LICENSE">Apache-2.0 software license</a>
+      </div>
+    </footer>
+  </body>
+</html>
