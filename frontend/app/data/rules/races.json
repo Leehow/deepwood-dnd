@@ -1,0 +1,2391 @@
+{
+  "races": [
+    {
+      "id": "dwarf",
+      "name": "矮人",
+      "nameEn": "Dwarf",
+      "description": "矮小敦实，记忆久远、仇恨长存的石中工匠",
+      "abilityScoreIncrease": {
+        "constitution": 2
+      },
+      "age": {
+        "mature": 50,
+        "max": 350,
+        "description": "矮人成长的速度和人类相仿，但他们直到50岁前都能被认为是年轻矮人。他们平均能够活350年。"
+      },
+      "alignment": "守序善良",
+      "size": "中型",
+      "sizeDescription": "矮人直立身高4到5尺，平均体重约150磅",
+      "speed": 25,
+      "speedNote": "速度不会因穿着重甲而减慢",
+      "traits": [
+        {
+          "name": "黑暗视觉",
+          "nameEn": "Darkvision",
+          "description": "你习惯了地下生活，因而在黑暗和微光环境下有着良好的视力。在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。",
+          "range": 60,
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          }
+        },
+        {
+          "name": "矮人韧性",
+          "nameEn": "Dwarven Resilience",
+          "description": "你进行对抗毒素的豁免时具有优势，并且拥有毒素伤害的抗性。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [
+              "poison"
+            ],
+            "damageResistances": [
+              "poison"
+            ],
+            "skillBonuses": []
+          },
+          "combatEffects": [
+            {
+              "trigger": "on_saving_throw",
+              "effect": "saving_throw_advantage",
+              "conditions": {
+                "save_type": "poison"
+              }
+            },
+            {
+              "trigger": "passive",
+              "effect": "damage_resistance",
+              "params": {
+                "resistance_type": "poison"
+              }
+            }
+          ],
+          "effects": [
+            {
+              "trigger": "passive",
+              "target": {
+                "type": "self"
+              },
+              "effects": [
+                {
+                  "type": "grant_advantage",
+                  "on": "saving_throw",
+                  "condition": {
+                    "damage_type": "poison"
+                  }
+                },
+                {
+                  "type": "grant_resistance",
+                  "damageTypes": [
+                    "poison"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "矮人战斗训练",
+          "nameEn": "Dwarven Combat Training",
+          "description": "你具有战斧、手斧、轻锤和战锤等武器的熟练项。",
+          "weaponProficiencies": [
+            "battleaxe",
+            "handaxe",
+            "light_hammer",
+            "warhammer"
+          ],
+          "structuredData": {
+            "weaponProficiencies": [
+              "battleaxe",
+              "handaxe",
+              "light_hammer",
+              "warhammer"
+            ],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          }
+        },
+        {
+          "name": "工具熟练项",
+          "nameEn": "Tool Proficiency",
+          "description": "你获得一个工匠工具的熟练项，从以下项目中自选其一：铁匠工具、酿酒工具或石匠工具。",
+          "toolProficiencies": [
+            "smiths_tools",
+            "brewers_supplies",
+            "masons_tools"
+          ],
+          "choice": 1,
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [
+              "smiths_tools",
+              "brewers_supplies",
+              "masons_tools"
+            ],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          }
+        },
+        {
+          "name": "石中精妙",
+          "nameEn": "Stonecunning",
+          "description": "每当你对一件石制品的起源做智力(历史)检定时，你视为具有历史技能的熟练项，并可以在检定中加上双倍的熟练加值，而非你平时的熟练加值。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": [
+              {
+                "skill": "history",
+                "type": "double_proficiency"
+              }
+            ]
+          }
+        }
+      ],
+      "languages": [
+        "common",
+        "dwarvish"
+      ],
+      "subraces": [
+        {
+          "id": "hill_dwarf",
+          "name": "丘陵矮人",
+          "nameEn": "Hill Dwarf",
+          "description": "作为一名丘陵矮人，你有着敏锐的感官，精确的直觉以及惊人的恢复力。",
+          "abilityScoreIncrease": {
+            "wisdom": 1
+          },
+          "traits": [
+            {
+              "name": "矮人刚毅",
+              "nameEn": "Dwarven Toughness",
+              "description": "你的生命值最大值加1，且此后每次升级时再加1。",
+              "specialAbilities": [
+                {
+                  "type": "hp_bonus"
+                }
+              ],
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "mountain_dwarf",
+          "name": "山地矮人",
+          "nameEn": "Mountain Dwarf",
+          "description": "作为一名坚强而健壮的山地矮人，你习惯于崎岖山地的艰苦生活。",
+          "abilityScoreIncrease": {
+            "strength": 2
+          },
+          "traits": [
+            {
+              "name": "矮人护甲训练",
+              "nameEn": "Dwarven Armor Training",
+              "description": "你拥有轻甲和中甲的熟练项。",
+              "armorProficiencies": [
+                "light",
+                "medium"
+              ],
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [
+                  "light_armor",
+                  "medium_armor"
+                ],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elf",
+      "name": "精灵",
+      "nameEn": "Elf",
+      "description": "纤瘦而优雅，带着超凡脱俗般优雅的魔幻民族",
+      "abilityScoreIncrease": {
+        "dexterity": 2
+      },
+      "age": {
+        "mature": 100,
+        "max": 750,
+        "description": "尽管精灵的生理成熟速度和人类差不多，但成年的精灵除生理成熟外，还必须拥有成熟的处世经验。一般而言，精灵一般在100岁前后宣布成年，寿命可达750岁。"
+      },
+      "alignment": "混乱善良",
+      "size": "中型",
+      "sizeDescription": "精灵中有的身高低于5尺，而有的则甚至超过6尺。他们身材纤细",
+      "speed": 30,
+      "traits": [
+        {
+          "name": "黑暗视觉",
+          "nameEn": "Darkvision",
+          "description": "精灵早已适应了在幽暗的森林中和夜晚的天空下视物。你在黑暗和微光光照下拥有超常的视力。在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。",
+          "range": 60,
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          }
+        },
+        {
+          "name": "敏锐感官",
+          "nameEn": "Keen Senses",
+          "description": "你拥有察觉技能的熟练项。",
+          "skillProficiencies": [
+            "perception"
+          ],
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          },
+          "combatEffects": {
+            "trigger": "passive",
+            "effect": "skill_proficiency"
+          }
+        },
+        {
+          "name": "精类血统",
+          "nameEn": "Fey Ancestry",
+          "description": "你进行对抗魅惑的豁免时具有优势，并且不会因魔法效应而陷入睡眠。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [
+              "charm"
+            ],
+            "damageResistances": [],
+            "skillBonuses": []
+          },
+          "combatEffects": [
+            {
+              "trigger": "on_saving_throw",
+              "effect": "saving_throw_advantage",
+              "conditions": {
+                "save_type": "charm"
+              }
+            },
+            {
+              "trigger": "passive",
+              "effect": "none",
+              "conditions": {
+                "save_type": "sleep",
+                "against_magic": true
+              }
+            }
+          ],
+          "effects": [
+            {
+              "trigger": "passive",
+              "target": {
+                "type": "self"
+              },
+              "effects": [
+                {
+                  "type": "grant_advantage",
+                  "on": "saving_throw",
+                  "condition": {
+                    "condition": "charmed"
+                  }
+                },
+                {
+                  "type": "grant_immunity",
+                  "conditions": [
+                    "magical_sleep"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "出神",
+          "nameEn": "Trance",
+          "description": "精灵不需要睡眠。他们会在需要休息时陷入持续4个小时的半清醒深度冥想中。冥想时精灵也会做梦，这种梦其实是反应多年来现实生活的思维活动。以这种方式休息后，你获得人类睡眠8小时的全部益处。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          }
+        }
+      ],
+      "languages": [
+        "common",
+        "elvish"
+      ],
+      "subraces": [
+        {
+          "id": "high_elf",
+          "name": "高等精灵",
+          "nameEn": "High Elf",
+          "description": "作为一名高等精灵，你拥有机敏的思维，且精通或多或少的魔法知识。",
+          "abilityScoreIncrease": {
+            "intelligence": 1
+          },
+          "traits": [
+            {
+              "name": "精灵武器训练",
+              "nameEn": "Elf Weapon Training",
+              "description": "你拥有长剑、短剑、短弓和长弓等武器的熟练项。",
+              "weaponProficiencies": [
+                "longsword",
+                "shortsword",
+                "shortbow",
+                "longbow"
+              ],
+              "structuredData": {
+                "weaponProficiencies": [
+                  "longsword",
+                  "shortsword",
+                  "shortbow",
+                  "longbow"
+                ],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            },
+            {
+              "name": "戏法",
+              "nameEn": "Cantrip",
+              "description": "你掌握一个戏法，你可以从法师法术列表中自选其一。其施法关键属性为智力。",
+              "cantripChoice": 1,
+              "spellcastingAbility": "intelligence",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            },
+            {
+              "name": "额外语言",
+              "nameEn": "Extra Language",
+              "description": "你能说、读、写一门额外的自选语言。",
+              "extraLanguages": 1,
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "wood_elf",
+          "name": "木精灵",
+          "nameEn": "Wood Elf",
+          "description": "作为木精灵，你拥有敏锐的感知能力和直觉。你步伐轻捷，可以快速隐秘地穿行在熟悉的森林中。",
+          "abilityScoreIncrease": {
+            "wisdom": 1
+          },
+          "traits": [
+            {
+              "name": "精灵武器训练",
+              "nameEn": "Elf Weapon Training",
+              "description": "你拥有长剑、短剑、短弓和长弓等武器的熟练项。",
+              "weaponProficiencies": [
+                "longsword",
+                "shortsword",
+                "shortbow",
+                "longbow"
+              ],
+              "structuredData": {
+                "weaponProficiencies": [
+                  "longsword",
+                  "shortsword",
+                  "shortbow",
+                  "longbow"
+                ],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            },
+            {
+              "name": "轻捷步伐",
+              "nameEn": "Fleet of Foot",
+              "description": "你的基础步行速度提升至35尺。",
+              "speedBonus": 5,
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            },
+            {
+              "name": "野性面具",
+              "nameEn": "Mask of Wild",
+              "description": "你从树丛、大雨、落雪、雾气或其他自然现象中获得轻度遮蔽时，就可以尝试执行躲藏。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "dark_elf",
+          "name": "黑暗精灵(卓尔)",
+          "nameEn": "Dark Elf (Drow)",
+          "description": "卓尔传承自一个早期的黑皮肤精灵亚种，这些精灵因追随女神罗丝踏上邪恶与腐化之路，而被放逐出地表世界。",
+          "rare": true,
+          "abilityScoreIncrease": {
+            "charisma": 1
+          },
+          "traits": [
+            {
+              "name": "增强黑暗视觉",
+              "nameEn": "Superior Darkvision",
+              "description": "你的黑暗视觉感官范围提升至120尺。",
+              "range": 120,
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            },
+            {
+              "name": "阳光敏感",
+              "nameEn": "Sunlight Sensitivity",
+              "description": "你进行攻击检定和依赖视觉的感知(察觉)检定时，如果你本人、你的攻击目标或你尝试察觉的东西位于阳光直射下，则你所进行的相应检定具有劣势。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            },
+            {
+              "name": "卓尔魔法",
+              "nameEn": "Drow Magic",
+              "description": "你掌握戏法舞光术。达到3级后，你可以每日使用一次法术妖火。达到5级后，你可以每日使用一次法术黑暗术。这些每日施展一次的法术其施法关键属性是魅力。",
+              "spells": [
+                {
+                  "name": "dancing_lights",
+                  "level": 0
+                },
+                {
+                  "name": "faerie_fire",
+                  "level": 1,
+                  "minCharacterLevel": 3,
+                  "usesPerDay": 1
+                },
+                {
+                  "name": "darkness",
+                  "level": 2,
+                  "minCharacterLevel": 5,
+                  "usesPerDay": 1
+                }
+              ],
+              "spellcastingAbility": "charisma",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            },
+            {
+              "name": "卓尔武器训练",
+              "nameEn": "Drow Weapon Training",
+              "description": "你拥有刺剑、短剑和手弩等武器的熟练项。",
+              "weaponProficiencies": [
+                "rapier",
+                "shortsword",
+                "hand_crossbow"
+              ],
+              "structuredData": {
+                "weaponProficiencies": [
+                  "rapier",
+                  "shortsword",
+                  "hand_crossbow"
+                ],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "halfling",
+      "name": "半身人",
+      "nameEn": "Halfling",
+      "description": "小而实在，和蔼又好奇的安稳种族",
+      "abilityScoreIncrease": {
+        "dexterity": 2
+      },
+      "age": {
+        "mature": 20,
+        "max": 150,
+        "description": "半身人约20岁成年，一般能活到150岁。"
+      },
+      "alignment": "守序善良",
+      "size": "小型",
+      "sizeDescription": "半身人身高约3尺，体重约40磅",
+      "speed": 25,
+      "traits": [
+        {
+          "name": "幸运",
+          "nameEn": "Lucky",
+          "description": "当攻击检定、属性检定以及豁免检定掷出1时，你可以再重掷一次，但必须使用重掷的结果。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          },
+          "combatEffects": {
+            "trigger": "on_natural_1",
+            "effect": "reroll",
+            "params": {
+              "must_use_new": true
+            }
+          }
+        },
+        {
+          "name": "勇敢",
+          "nameEn": "Brave",
+          "description": "你进行对抗恐慌的豁免时具有优势。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [
+              "fright"
+            ],
+            "damageResistances": [],
+            "skillBonuses": []
+          },
+          "combatEffects": {
+            "trigger": "on_saving_throw",
+            "effect": "saving_throw_advantage",
+            "conditions": {
+              "save_type": "fear"
+            }
+          },
+          "effects": [
+            {
+              "trigger": "passive",
+              "target": {
+                "type": "self"
+              },
+              "effects": [
+                {
+                  "type": "grant_advantage",
+                  "on": "saving_throw",
+                  "condition": {
+                    "condition": "frightened"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "半身人灵巧",
+          "nameEn": "Halfling Nimbleness",
+          "description": "你可以穿越任何体形比你大的生物所在空间。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          }
+        }
+      ],
+      "languages": [
+        "common",
+        "halfling"
+      ],
+      "subraces": [
+        {
+          "id": "lightfoot",
+          "name": "轻足半身人",
+          "nameEn": "Lightfoot",
+          "description": "作为一名轻足半身人，你可以轻易的躲过别人耳目，甚至能够以其他人的身躯作为掩护。",
+          "abilityScoreIncrease": {
+            "charisma": 1
+          },
+          "traits": [
+            {
+              "name": "天生善匿",
+              "nameEn": "Naturally Stealthy",
+              "description": "当你从体型比自己大的生物获得遮蔽时，可以尝试执行躲藏Hide动作。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "stout",
+          "name": "敦实半身人",
+          "nameEn": "Stout",
+          "description": "作为一名敦实半身人，你普遍比其他半身人强壮，并对毒素有一定抗性。",
+          "abilityScoreIncrease": {
+            "constitution": 1
+          },
+          "traits": [
+            {
+              "name": "敦实韧性",
+              "nameEn": "Stout Resilience",
+              "description": "你进行对抗毒素的豁免时具有优势，你拥有毒素伤害的伤害抗性。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [
+                  "poison"
+                ],
+                "damageResistances": [
+                  "poison"
+                ],
+                "skillBonuses": []
+              },
+              "combatEffects": [
+                {
+                  "trigger": "on_saving_throw",
+                  "effect": "saving_throw_advantage",
+                  "conditions": {
+                    "save_type": "poison"
+                  }
+                },
+                {
+                  "trigger": "passive",
+                  "effect": "damage_resistance",
+                  "params": {
+                    "resistance_type": "poison"
+                  }
+                }
+              ],
+              "effects": [
+                {
+                  "trigger": "passive",
+                  "target": {
+                    "type": "self"
+                  },
+                  "effects": [
+                    {
+                      "type": "grant_advantage",
+                      "on": "saving_throw",
+                      "condition": {
+                        "damage_type": "poison"
+                      }
+                    },
+                    {
+                      "type": "grant_resistance",
+                      "damageTypes": [
+                        "poison"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "human",
+      "name": "人类",
+      "nameEn": "Human",
+      "description": "最年轻但最有野心的种族，适应力最强",
+      "abilityScoreIncrease": {
+        "strength": 1,
+        "dexterity": 1,
+        "constitution": 1,
+        "intelligence": 1,
+        "wisdom": 1,
+        "charisma": 1
+      },
+      "age": {
+        "mature": 20,
+        "max": 100,
+        "description": "人类不到20岁成年，而很少活过100岁。"
+      },
+      "alignment": "无特定阵营",
+      "size": "中型",
+      "sizeDescription": "人类身高差距很大，有的刚好5尺高，而有的甚至高过6尺",
+      "speed": 30,
+      "traits": [],
+      "languages": [
+        "common"
+      ],
+      "extraLanguages": 1,
+      "variant": {
+        "name": "变体人类",
+        "nameEn": "Variant Human",
+        "description": "使用可选专长规则时的变体特质",
+        "abilityScoreIncrease": {
+          "choice": 2,
+          "amount": 1,
+          "description": "自选两项不同属性各加1"
+        },
+        "traits": [
+          {
+            "name": "技能",
+            "nameEn": "Skills",
+            "description": "你获得一项自选的技能作为熟练项。",
+            "skillChoice": 1
+          },
+          {
+            "name": "专长",
+            "nameEn": "Feat",
+            "description": "你获得一项自选的专长。",
+            "featChoice": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "dragonborn",
+      "name": "龙裔",
+      "nameEn": "Dragonborn",
+      "description": "生而为龙，结合龙类和类人生物最佳优点的种族",
+      "abilityScoreIncrease": {
+        "strength": 2,
+        "charisma": 1
+      },
+      "age": {
+        "mature": 15,
+        "max": 80,
+        "description": "年幼的龙裔成长速度很快，在孵化后几小时就可以行走。其3岁时就达到了人类10岁儿童的体型和发育水平，然后在15岁时成年。其一生总共能活大约80年。"
+      },
+      "alignment": "极端化阵营",
+      "size": "中型",
+      "sizeDescription": "龙裔比人类更高大。直立身高超过6尺，平均体重250磅",
+      "speed": 30,
+      "traits": [
+        {
+          "name": "龙族血统",
+          "nameEn": "Draconic Ancestry",
+          "description": "你拥有巨龙的血统。你的龙族血统决定了你的吐息武器形式和伤害抗性。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          },
+          "combatEffects": {
+            "trigger": "passive",
+            "effect": "damage_resistance",
+            "params": {
+              "resistance_type": "ancestry_element"
+            }
+          }
+        },
+        {
+          "name": "吐息武器",
+          "nameEn": "Breath Weapon",
+          "description": "你可以使用动作呼出破坏性的能量。豁免DC等于8+你的体质调整值+你的熟练加值。豁免失败者将受到2d6点伤害。豁免成功则伤害减半。其伤害值在6级时增加到3d6，11级增加到4d6，16级增加到5d6。使用后必须完成短休或长休后才能再次使用。",
+          "damage": [
+            {
+              "level": 1,
+              "dice": "2d6"
+            },
+            {
+              "level": 6,
+              "dice": "3d6"
+            },
+            {
+              "level": 11,
+              "dice": "4d6"
+            },
+            {
+              "level": 16,
+              "dice": "5d6"
+            }
+          ],
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          },
+          "combatEffects": {
+            "trigger": "on_saving_throw",
+            "effect": "extra_damage_die",
+            "conditions": {
+              "damage_type": "varies"
+            },
+            "params": {
+              "dice_count": 2,
+              "uses_per_long_rest": 1
+            }
+          },
+          "effects": [
+            {
+              "trigger": "on_action_invoked",
+              "target": {
+                "type": "all_in_area"
+              },
+              "save": {
+                "ability": "VARIES",
+                "on_success": "half_damage"
+              },
+              "effects": [
+                {
+                  "type": "deal_damage",
+                  "formula": "2d6",
+                  "damageType": "VARIES",
+                  "scaling": {
+                    "perCharacterLevel": [
+                      {
+                        "level": 1,
+                        "formula": "2d6"
+                      },
+                      {
+                        "level": 6,
+                        "formula": "3d6"
+                      },
+                      {
+                        "level": 11,
+                        "formula": "4d6"
+                      },
+                      {
+                        "level": 16,
+                        "formula": "5d6"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "narrative",
+                  "description": "吐息武器：具体伤害类型、形状和豁免类型由龙族血统决定。使用后需完成短休或长休才能再次使用。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "伤害抗性",
+          "nameEn": "Damage Resistance",
+          "description": "你的龙族血统为你带来相应伤害类型的伤害抗性。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [
+              "poison"
+            ],
+            "skillBonuses": []
+          },
+          "combatEffects": {
+            "trigger": "passive",
+            "effect": "damage_resistance",
+            "params": {
+              "resistance_type": "ancestry_damage_type"
+            }
+          }
+        }
+      ],
+      "languages": [
+        "common",
+        "draconic"
+      ],
+      "subraces": [
+        {
+          "id": "black_dragon",
+          "name": "黑龙血统",
+          "nameEn": "黑龙 Dragon",
+          "description": "你拥有黑龙的血统，获得acid伤害抗性和对应的吐息武器。",
+          "dragonType": "black",
+          "damageType": "acid",
+          "breathWeapon": {
+            "shape": "line",
+            "size": "30尺长5尺宽",
+            "save": "dexterity",
+            "shapeCn": "线状",
+            "saveCn": "敏捷"
+          },
+          "traits": [
+            {
+              "name": "黑龙血统",
+              "nameEn": "黑龙 Ancestry",
+              "description": "你拥有黑龙的血统。你获得强酸伤害抗性。你的吐息武器形状为线状（30尺长5尺宽），豁免类型为敏捷豁免。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [
+                  "acid"
+                ],
+                "skillBonuses": []
+              },
+              "combatEffects": {
+                "trigger": "passive",
+                "effect": "damage_resistance",
+                "params": {
+                  "resistance_type": "acid"
+                }
+              },
+              "effects": [
+                {
+                  "trigger": "on_action_invoked",
+                  "target": {
+                    "type": "all_in_area"
+                  },
+                  "save": {
+                    "ability": "dex",
+                    "on_success": "half_damage"
+                  },
+                  "effects": [
+                    {
+                      "type": "deal_damage",
+                      "formula": "2d6",
+                      "damageType": "acid"
+                    },
+                    {
+                      "type": "apply_token_filter",
+                      "filter": {
+                        "glow": "#22c55e",
+                        "glowRadius": 8,
+                        "glowAnimation": "pulse"
+                      }
+                    }
+                  ],
+                  "areaOfEffect": {
+                    "type": "line",
+                    "size": 30
+                  },
+                  "usesPerRest": "short_rest",
+                  "maxUses": 1
+                },
+                {
+                  "trigger": "passive",
+                  "target": {
+                    "type": "self"
+                  },
+                  "effects": [
+                    {
+                      "type": "grant_resistance",
+                      "damageTypes": [
+                        "acid"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "damageTypeCn": "强酸"
+        },
+        {
+          "id": "blue_dragon",
+          "name": "蓝龙血统",
+          "nameEn": "蓝龙 Dragon",
+          "description": "你拥有蓝龙的血统，获得lightning伤害抗性和对应的吐息武器。",
+          "dragonType": "blue",
+          "damageType": "lightning",
+          "breathWeapon": {
+            "shape": "line",
+            "size": "30尺长5尺宽",
+            "save": "dexterity",
+            "shapeCn": "线状",
+            "saveCn": "敏捷"
+          },
+          "traits": [
+            {
+              "name": "蓝龙血统",
+              "nameEn": "蓝龙 Ancestry",
+              "description": "你拥有蓝龙的血统。你获得闪电伤害抗性。你的吐息武器形状为线状（30尺长5尺宽），豁免类型为敏捷豁免。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [
+                  "lightning"
+                ],
+                "skillBonuses": []
+              },
+              "combatEffects": [
+                {
+                  "trigger": "passive",
+                  "effect": "damage_resistance",
+                  "params": {
+                    "resistance_type": "lightning"
+                  }
+                }
+              ],
+              "effects": [
+                {
+                  "trigger": "on_action_invoked",
+                  "target": {
+                    "type": "all_in_area"
+                  },
+                  "save": {
+                    "ability": "dex",
+                    "on_success": "half_damage"
+                  },
+                  "effects": [
+                    {
+                      "type": "deal_damage",
+                      "formula": "2d6",
+                      "damageType": "lightning"
+                    },
+                    {
+                      "type": "apply_token_filter",
+                      "filter": {
+                        "glow": "#3b82f6",
+                        "glowRadius": 8,
+                        "glowAnimation": "pulse"
+                      }
+                    }
+                  ],
+                  "areaOfEffect": {
+                    "type": "line",
+                    "size": 30
+                  },
+                  "usesPerRest": "short_rest",
+                  "maxUses": 1
+                },
+                {
+                  "trigger": "passive",
+                  "target": {
+                    "type": "self"
+                  },
+                  "effects": [
+                    {
+                      "type": "grant_resistance",
+                      "damageTypes": [
+                        "lightning"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "damageTypeCn": "闪电"
+        },
+        {
+          "id": "brass_dragon",
+          "name": "黄铜龙血统",
+          "nameEn": "黄铜龙 Dragon",
+          "description": "你拥有黄铜龙的血统，获得fire伤害抗性和对应的吐息武器。",
+          "dragonType": "brass",
+          "damageType": "fire",
+          "breathWeapon": {
+            "shape": "line",
+            "size": "30尺长5尺宽",
+            "save": "dexterity",
+            "shapeCn": "线状",
+            "saveCn": "敏捷"
+          },
+          "traits": [
+            {
+              "name": "黄铜龙血统",
+              "nameEn": "黄铜龙 Ancestry",
+              "description": "你拥有黄铜龙的血统。你获得火焰伤害抗性。你的吐息武器形状为线状（30尺长5尺宽），豁免类型为敏捷豁免。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [
+                  "fire"
+                ],
+                "skillBonuses": []
+              },
+              "combatEffects": {
+                "trigger": "passive",
+                "effect": "damage_resistance",
+                "params": {
+                  "resistance_type": "fire"
+                }
+              },
+              "effects": [
+                {
+                  "trigger": "on_action_invoked",
+                  "target": {
+                    "type": "all_in_area"
+                  },
+                  "save": {
+                    "ability": "dex",
+                    "on_success": "half_damage"
+                  },
+                  "effects": [
+                    {
+                      "type": "deal_damage",
+                      "formula": "2d6",
+                      "damageType": "fire"
+                    },
+                    {
+                      "type": "apply_token_filter",
+                      "filter": {
+                        "glow": "#ef4444",
+                        "glowRadius": 8,
+                        "glowAnimation": "pulse"
+                      }
+                    }
+                  ],
+                  "areaOfEffect": {
+                    "type": "line",
+                    "size": 30
+                  },
+                  "usesPerRest": "short_rest",
+                  "maxUses": 1
+                },
+                {
+                  "trigger": "passive",
+                  "target": {
+                    "type": "self"
+                  },
+                  "effects": [
+                    {
+                      "type": "grant_resistance",
+                      "damageTypes": [
+                        "fire"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "damageTypeCn": "火焰"
+        },
+        {
+          "id": "bronze_dragon",
+          "name": "青铜龙血统",
+          "nameEn": "青铜龙 Dragon",
+          "description": "你拥有青铜龙的血统，获得lightning伤害抗性和对应的吐息武器。",
+          "dragonType": "bronze",
+          "damageType": "lightning",
+          "breathWeapon": {
+            "shape": "line",
+            "size": "30尺长5尺宽",
+            "save": "dexterity",
+            "shapeCn": "线状",
+            "saveCn": "敏捷"
+          },
+          "traits": [
+            {
+              "name": "青铜龙血统",
+              "nameEn": "青铜龙 Ancestry",
+              "description": "你拥有青铜龙的血统。你获得闪电伤害抗性。你的吐息武器形状为线状（30尺长5尺宽），豁免类型为敏捷豁免。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [
+                  "lightning"
+                ],
+                "skillBonuses": []
+              },
+              "combatEffects": {
+                "trigger": "passive",
+                "effect": "damage_resistance",
+                "params": {
+                  "resistance_type": "lightning"
+                }
+              },
+              "effects": [
+                {
+                  "trigger": "on_action_invoked",
+                  "target": {
+                    "type": "all_in_area"
+                  },
+                  "save": {
+                    "ability": "dex",
+                    "on_success": "half_damage"
+                  },
+                  "effects": [
+                    {
+                      "type": "deal_damage",
+                      "formula": "2d6",
+                      "damageType": "lightning"
+                    },
+                    {
+                      "type": "apply_token_filter",
+                      "filter": {
+                        "glow": "#3b82f6",
+                        "glowRadius": 8,
+                        "glowAnimation": "pulse"
+                      }
+                    }
+                  ],
+                  "areaOfEffect": {
+                    "type": "line",
+                    "size": 30
+                  },
+                  "usesPerRest": "short_rest",
+                  "maxUses": 1
+                },
+                {
+                  "trigger": "passive",
+                  "target": {
+                    "type": "self"
+                  },
+                  "effects": [
+                    {
+                      "type": "grant_resistance",
+                      "damageTypes": [
+                        "lightning"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "damageTypeCn": "闪电"
+        },
+        {
+          "id": "copper_dragon",
+          "name": "赤铜龙血统",
+          "nameEn": "赤铜龙 Dragon",
+          "description": "你拥有赤铜龙的血统，获得acid伤害抗性和对应的吐息武器。",
+          "dragonType": "copper",
+          "damageType": "acid",
+          "breathWeapon": {
+            "shape": "line",
+            "size": "30尺长5尺宽",
+            "save": "dexterity",
+            "shapeCn": "线状",
+            "saveCn": "敏捷"
+          },
+          "traits": [
+            {
+              "name": "赤铜龙血统",
+              "nameEn": "赤铜龙 Ancestry",
+              "description": "你拥有赤铜龙的血统。你获得强酸伤害抗性。你的吐息武器形状为线状（30尺长5尺宽），豁免类型为敏捷豁免。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [
+                  "acid"
+                ],
+                "skillBonuses": []
+              },
+              "combatEffects": [
+                {
+                  "trigger": "passive",
+                  "effect": "damage_resistance",
+                  "params": {
+                    "resistance_type": "acid"
+                  }
+                }
+              ],
+              "effects": [
+                {
+                  "trigger": "on_action_invoked",
+                  "target": {
+                    "type": "all_in_area"
+                  },
+                  "save": {
+                    "ability": "dex",
+                    "on_success": "half_damage"
+                  },
+                  "effects": [
+                    {
+                      "type": "deal_damage",
+                      "formula": "2d6",
+                      "damageType": "acid"
+                    },
+                    {
+                      "type": "apply_token_filter",
+                      "filter": {
+                        "glow": "#22c55e",
+                        "glowRadius": 8,
+                        "glowAnimation": "pulse"
+                      }
+                    }
+                  ],
+                  "areaOfEffect": {
+                    "type": "line",
+                    "size": 30
+                  },
+                  "usesPerRest": "short_rest",
+                  "maxUses": 1
+                },
+                {
+                  "trigger": "passive",
+                  "target": {
+                    "type": "self"
+                  },
+                  "effects": [
+                    {
+                      "type": "grant_resistance",
+                      "damageTypes": [
+                        "acid"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "damageTypeCn": "强酸"
+        },
+        {
+          "id": "gold_dragon",
+          "name": "金龙血统",
+          "nameEn": "金龙 Dragon",
+          "description": "你拥有金龙的血统，获得fire伤害抗性和对应的吐息武器。",
+          "dragonType": "gold",
+          "damageType": "fire",
+          "breathWeapon": {
+            "shape": "cone",
+            "size": "15尺锥状",
+            "save": "dexterity",
+            "shapeCn": "锥状",
+            "saveCn": "敏捷"
+          },
+          "traits": [
+            {
+              "name": "金龙血统",
+              "nameEn": "金龙 Ancestry",
+              "description": "你拥有金龙的血统。你获得火焰伤害抗性。你的吐息武器形状为锥状（15尺锥状），豁免类型为敏捷豁免。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [
+                  "fire"
+                ],
+                "skillBonuses": []
+              },
+              "combatEffects": [
+                {
+                  "trigger": "passive",
+                  "effect": "damage_resistance",
+                  "params": {
+                    "resistance_type": "fire"
+                  }
+                }
+              ],
+              "effects": [
+                {
+                  "trigger": "on_action_invoked",
+                  "target": {
+                    "type": "all_in_area"
+                  },
+                  "save": {
+                    "ability": "dex",
+                    "on_success": "half_damage"
+                  },
+                  "effects": [
+                    {
+                      "type": "deal_damage",
+                      "formula": "2d6",
+                      "damageType": "fire"
+                    },
+                    {
+                      "type": "apply_token_filter",
+                      "filter": {
+                        "glow": "#ef4444",
+                        "glowRadius": 8,
+                        "glowAnimation": "pulse"
+                      }
+                    }
+                  ],
+                  "areaOfEffect": {
+                    "type": "cone",
+                    "size": 15
+                  },
+                  "usesPerRest": "short_rest",
+                  "maxUses": 1
+                },
+                {
+                  "trigger": "passive",
+                  "target": {
+                    "type": "self"
+                  },
+                  "effects": [
+                    {
+                      "type": "grant_resistance",
+                      "damageTypes": [
+                        "fire"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "damageTypeCn": "火焰"
+        },
+        {
+          "id": "green_dragon",
+          "name": "绿龙血统",
+          "nameEn": "绿龙 Dragon",
+          "description": "你拥有绿龙的血统，获得poison伤害抗性和对应的吐息武器。",
+          "dragonType": "green",
+          "damageType": "poison",
+          "breathWeapon": {
+            "shape": "cone",
+            "size": "15尺锥状",
+            "save": "constitution",
+            "shapeCn": "锥状",
+            "saveCn": "体质"
+          },
+          "traits": [
+            {
+              "name": "绿龙血统",
+              "nameEn": "绿龙 Ancestry",
+              "description": "你拥有绿龙的血统。你获得毒素伤害抗性。你的吐息武器形状为锥状（15尺锥状），豁免类型为体质豁免。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [
+                  "poison"
+                ],
+                "skillBonuses": []
+              },
+              "combatEffects": {
+                "trigger": "passive",
+                "effect": "damage_resistance",
+                "params": {
+                  "resistance_type": "poison"
+                }
+              },
+              "effects": [
+                {
+                  "trigger": "on_action_invoked",
+                  "target": {
+                    "type": "all_in_area"
+                  },
+                  "save": {
+                    "ability": "con",
+                    "on_success": "half_damage"
+                  },
+                  "effects": [
+                    {
+                      "type": "deal_damage",
+                      "formula": "2d6",
+                      "damageType": "poison"
+                    },
+                    {
+                      "type": "apply_token_filter",
+                      "filter": {
+                        "glow": "#a3e635",
+                        "glowRadius": 8,
+                        "glowAnimation": "pulse"
+                      }
+                    }
+                  ],
+                  "areaOfEffect": {
+                    "type": "cone",
+                    "size": 15
+                  },
+                  "usesPerRest": "short_rest",
+                  "maxUses": 1
+                },
+                {
+                  "trigger": "passive",
+                  "target": {
+                    "type": "self"
+                  },
+                  "effects": [
+                    {
+                      "type": "grant_resistance",
+                      "damageTypes": [
+                        "poison"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "damageTypeCn": "毒素"
+        },
+        {
+          "id": "red_dragon",
+          "name": "红龙血统",
+          "nameEn": "红龙 Dragon",
+          "description": "你拥有红龙的血统，获得fire伤害抗性和对应的吐息武器。",
+          "dragonType": "red",
+          "damageType": "fire",
+          "breathWeapon": {
+            "shape": "cone",
+            "size": "15尺锥状",
+            "save": "dexterity",
+            "shapeCn": "锥状",
+            "saveCn": "敏捷"
+          },
+          "traits": [
+            {
+              "name": "红龙血统",
+              "nameEn": "红龙 Ancestry",
+              "description": "你拥有红龙的血统。你获得火焰伤害抗性。你的吐息武器形状为锥状（15尺锥状），豁免类型为敏捷豁免。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [
+                  "fire"
+                ],
+                "skillBonuses": []
+              },
+              "combatEffects": {
+                "trigger": "passive",
+                "effect": "damage_resistance",
+                "params": {
+                  "resistance_type": "fire"
+                }
+              },
+              "effects": [
+                {
+                  "trigger": "on_action_invoked",
+                  "target": {
+                    "type": "all_in_area"
+                  },
+                  "save": {
+                    "ability": "dex",
+                    "on_success": "half_damage"
+                  },
+                  "effects": [
+                    {
+                      "type": "deal_damage",
+                      "formula": "2d6",
+                      "damageType": "fire"
+                    },
+                    {
+                      "type": "apply_token_filter",
+                      "filter": {
+                        "glow": "#ef4444",
+                        "glowRadius": 8,
+                        "glowAnimation": "pulse"
+                      }
+                    }
+                  ],
+                  "areaOfEffect": {
+                    "type": "cone",
+                    "size": 15
+                  },
+                  "usesPerRest": "short_rest",
+                  "maxUses": 1
+                },
+                {
+                  "trigger": "passive",
+                  "target": {
+                    "type": "self"
+                  },
+                  "effects": [
+                    {
+                      "type": "grant_resistance",
+                      "damageTypes": [
+                        "fire"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "damageTypeCn": "火焰"
+        },
+        {
+          "id": "silver_dragon",
+          "name": "银龙血统",
+          "nameEn": "银龙 Dragon",
+          "description": "你拥有银龙的血统，获得cold伤害抗性和对应的吐息武器。",
+          "dragonType": "silver",
+          "damageType": "cold",
+          "breathWeapon": {
+            "shape": "cone",
+            "size": "15尺锥状",
+            "save": "constitution",
+            "shapeCn": "锥状",
+            "saveCn": "体质"
+          },
+          "traits": [
+            {
+              "name": "银龙血统",
+              "nameEn": "银龙 Ancestry",
+              "description": "你拥有银龙的血统。你获得冷冻伤害抗性。你的吐息武器形状为锥状（15尺锥状），豁免类型为体质豁免。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [
+                  "cold"
+                ],
+                "skillBonuses": []
+              },
+              "combatEffects": [
+                {
+                  "trigger": "passive",
+                  "effect": "damage_resistance",
+                  "params": {
+                    "resistance_type": "cold"
+                  }
+                }
+              ],
+              "effects": [
+                {
+                  "trigger": "on_action_invoked",
+                  "target": {
+                    "type": "all_in_area"
+                  },
+                  "save": {
+                    "ability": "con",
+                    "on_success": "half_damage"
+                  },
+                  "effects": [
+                    {
+                      "type": "deal_damage",
+                      "formula": "2d6",
+                      "damageType": "cold"
+                    },
+                    {
+                      "type": "apply_token_filter",
+                      "filter": {
+                        "glow": "#67e8f9",
+                        "glowRadius": 8,
+                        "glowAnimation": "pulse"
+                      }
+                    }
+                  ],
+                  "areaOfEffect": {
+                    "type": "cone",
+                    "size": 15
+                  },
+                  "usesPerRest": "short_rest",
+                  "maxUses": 1
+                },
+                {
+                  "trigger": "passive",
+                  "target": {
+                    "type": "self"
+                  },
+                  "effects": [
+                    {
+                      "type": "grant_resistance",
+                      "damageTypes": [
+                        "cold"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "damageTypeCn": "冷冻"
+        },
+        {
+          "id": "white_dragon",
+          "name": "白龙血统",
+          "nameEn": "白龙 Dragon",
+          "description": "你拥有白龙的血统，获得cold伤害抗性和对应的吐息武器。",
+          "dragonType": "white",
+          "damageType": "cold",
+          "breathWeapon": {
+            "shape": "cone",
+            "size": "15尺锥状",
+            "save": "constitution",
+            "shapeCn": "锥状",
+            "saveCn": "体质"
+          },
+          "traits": [
+            {
+              "name": "白龙血统",
+              "nameEn": "白龙 Ancestry",
+              "description": "你拥有白龙的血统。你获得冷冻伤害抗性。你的吐息武器形状为锥状（15尺锥状），豁免类型为体质豁免。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [
+                  "cold"
+                ],
+                "skillBonuses": []
+              },
+              "combatEffects": [
+                {
+                  "trigger": "passive",
+                  "effect": "damage_resistance",
+                  "params": {
+                    "resistance_type": "cold"
+                  }
+                }
+              ],
+              "effects": [
+                {
+                  "trigger": "on_action_invoked",
+                  "target": {
+                    "type": "all_in_area"
+                  },
+                  "save": {
+                    "ability": "con",
+                    "on_success": "half_damage"
+                  },
+                  "effects": [
+                    {
+                      "type": "deal_damage",
+                      "formula": "2d6",
+                      "damageType": "cold"
+                    },
+                    {
+                      "type": "apply_token_filter",
+                      "filter": {
+                        "glow": "#67e8f9",
+                        "glowRadius": 8,
+                        "glowAnimation": "pulse"
+                      }
+                    }
+                  ],
+                  "areaOfEffect": {
+                    "type": "cone",
+                    "size": 15
+                  },
+                  "usesPerRest": "short_rest",
+                  "maxUses": 1
+                },
+                {
+                  "trigger": "passive",
+                  "target": {
+                    "type": "self"
+                  },
+                  "effects": [
+                    {
+                      "type": "grant_resistance",
+                      "damageTypes": [
+                        "cold"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "damageTypeCn": "冷冻"
+        }
+      ]
+    },
+    {
+      "id": "gnome",
+      "name": "侏儒",
+      "nameEn": "Gnome",
+      "description": "充满生机，献身于快乐的发明家种族",
+      "abilityScoreIncrease": {
+        "intelligence": 2
+      },
+      "age": {
+        "mature": 40,
+        "max": 450,
+        "description": "侏儒成长速度与人类相同，大多侏儒预计在40岁左右便定居过上成人生活。他们能活到350到接近500岁。"
+      },
+      "alignment": "善良",
+      "size": "小型",
+      "sizeDescription": "侏儒平均身高3到4尺，体重约40磅",
+      "speed": 25,
+      "traits": [
+        {
+          "name": "黑暗视觉",
+          "nameEn": "Darkvision",
+          "description": "你在黑暗和微光光照下拥有超常的视力。在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。",
+          "range": 60,
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          }
+        },
+        {
+          "name": "侏儒狡黠",
+          "nameEn": "Gnome Cunning",
+          "description": "你进行对抗魔法的智力、感知和魅力豁免检定时具有优势。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [
+              "intelligence",
+              "wisdom",
+              "charisma"
+            ],
+            "damageResistances": [],
+            "skillBonuses": []
+          },
+          "combatEffects": [
+            {
+              "trigger": "on_saving_throw",
+              "effect": "saving_throw_advantage",
+              "conditions": {
+                "against_magic": true
+              }
+            }
+          ],
+          "effects": [
+            {
+              "trigger": "passive",
+              "target": {
+                "type": "self"
+              },
+              "effects": [
+                {
+                  "type": "grant_advantage",
+                  "on": "saving_throw",
+                  "condition": {
+                    "abilities": [
+                      "intelligence",
+                      "wisdom",
+                      "charisma"
+                    ],
+                    "against_magic": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "languages": [
+        "common",
+        "gnomish"
+      ],
+      "subraces": [
+        {
+          "id": "forest_gnome",
+          "name": "森林侏儒",
+          "nameEn": "Forest Gnome",
+          "description": "森林侏儒天生具有幻术能力，行事低调隐秘。",
+          "abilityScoreIncrease": {
+            "dexterity": 1
+          },
+          "traits": [
+            {
+              "name": "自然幻术师",
+              "nameEn": "Natural Illusionist",
+              "description": "你学会戏法次级幻影。其相应的施法关键属性为智力。",
+              "cantrip": "minor_illusion",
+              "spells": [
+                {
+                  "name": "minor_illusion",
+                  "level": 0
+                }
+              ],
+              "spellcastingAbility": "intelligence",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            },
+            {
+              "name": "小型野兽交谈",
+              "nameEn": "Speak with Small Beasts",
+              "description": "你可以通过声音和手势与小型或更小的野兽进行简单沟通。森林侏儒喜爱动物，且经常喂养松鼠、獾、兔子、鼹鼠、啄木鸟等动物作为自己心爱的宠物。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            }
+          ]
+        },
+        {
+          "id": "rock_gnome",
+          "name": "岩侏儒",
+          "nameEn": "Rock Gnome",
+          "description": "岩侏儒拥有天生的发明才能和坚韧性。",
+          "abilityScoreIncrease": {
+            "constitution": 1
+          },
+          "traits": [
+            {
+              "name": "工匠学识",
+              "nameEn": "Artificer's Lore",
+              "description": "当你进行关于魔法物品、炼金物品或是工艺元件的智力(历史)检定时，你可以在检定中加上双倍的熟练加值，而非你平时的熟练加值。",
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": [
+                  {
+                    "skill": "history",
+                    "type": "double_proficiency"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "修补匠",
+              "nameEn": "Tinker",
+              "description": "你拥有工匠工具(修理工具)的熟练项。使用这些工具时，你可以花费1小时时间和10gp材料制作一个超小型的发条机械装置(AC5, HP1)。该装置在24小时后将自动停止运作，你也可以使用你的动作主动使其停止运作。你最多可以同时激活三个这样的装置。",
+              "toolProficiencies": [
+                "tinkers_tools"
+              ],
+              "structuredData": {
+                "weaponProficiencies": [],
+                "armorProficiencies": [],
+                "toolProficiencies": [
+                  "tinker_tools"
+                ],
+                "savingThrowAdvantages": [],
+                "damageResistances": [],
+                "skillBonuses": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "half_elf",
+      "name": "半精灵",
+      "nameEn": "Half-Elf",
+      "description": "同属两个世界，优秀的外交官或浪人",
+      "abilityScoreIncrease": {
+        "charisma": 2
+      },
+      "extraAbilityIncrease": {
+        "choice": 2,
+        "amount": 1,
+        "description": "另外自选两项不同的属性各加1"
+      },
+      "age": {
+        "mature": 20,
+        "max": 180,
+        "description": "半精灵的成长速度与人类相同，在20岁左右进入成年。但他们的寿命要长得多，通常能活过180岁。"
+      },
+      "alignment": "混乱",
+      "size": "中型",
+      "sizeDescription": "半精灵的体型与人类相近，身高从5尺到6尺不等",
+      "speed": 30,
+      "traits": [
+        {
+          "name": "黑暗视觉",
+          "nameEn": "Darkvision",
+          "description": "得益于你的精灵血统，你在黑暗和微光光照下拥有超常的视力。在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。",
+          "range": 60,
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          }
+        },
+        {
+          "name": "精类血统",
+          "nameEn": "Fey Ancestry",
+          "description": "你进行对抗魅惑的豁免时具有优势，并且不会因魔法效应而陷入睡眠。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [
+              "charm"
+            ],
+            "damageResistances": [],
+            "skillBonuses": []
+          },
+          "combatEffects": {
+            "trigger": "on_saving_throw",
+            "effect": "saving_throw_advantage",
+            "conditions": {
+              "save_type": "charm"
+            }
+          },
+          "effects": [
+            {
+              "trigger": "passive",
+              "target": {
+                "type": "self"
+              },
+              "effects": [
+                {
+                  "type": "grant_advantage",
+                  "on": "saving_throw",
+                  "condition": {
+                    "condition": "charmed"
+                  }
+                },
+                {
+                  "type": "grant_immunity",
+                  "conditions": [
+                    "magical_sleep"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "技能多才",
+          "nameEn": "Skill Versatility",
+          "description": "你获得两项自选技能的熟练项。",
+          "skillChoice": 2,
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          },
+          "combatEffects": {
+            "trigger": "passive",
+            "effect": "skill_proficiency"
+          }
+        }
+      ],
+      "languages": [
+        "common",
+        "elvish"
+      ],
+      "extraLanguages": 1
+    },
+    {
+      "id": "half_orc",
+      "name": "半兽人",
+      "nameEn": "Half-Orc",
+      "description": "疤痕与强壮，带有格乌什印记的强大战士",
+      "abilityScoreIncrease": {
+        "strength": 2,
+        "constitution": 1
+      },
+      "age": {
+        "mature": 14,
+        "max": 75,
+        "description": "半兽人的成长速度比人类稍快，在14岁左右进入成年。他们的寿命较短，很少能活过75岁。"
+      },
+      "alignment": "混乱",
+      "size": "中型",
+      "sizeDescription": "半兽人比人类稍高且更为魁梧，身高通常从5尺到远超6尺不等",
+      "speed": 30,
+      "traits": [
+        {
+          "name": "黑暗视觉",
+          "nameEn": "Darkvision",
+          "description": "得益于你的兽人血统，你在黑暗和微光光照下拥有超常的视力。在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。",
+          "range": 60,
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          }
+        },
+        {
+          "name": "威吓",
+          "nameEn": "Menacing",
+          "description": "你获得威吓技能的熟练项。",
+          "skillProficiencies": [
+            "intimidation"
+          ],
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          },
+          "combatEffects": {
+            "trigger": "passive",
+            "effect": "skill_proficiency"
+          }
+        },
+        {
+          "name": "不屈",
+          "nameEn": "Relentless Endurance",
+          "description": "当你的生命值降至0但未当场死亡时，你可以改为降至1点生命值。使用此特性后，你必须完成一次长休后才能再次使用。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          },
+          "combatEffects": {
+            "trigger": "on_hp_zero",
+            "effect": "set_hp",
+            "params": {
+              "hp_value": 1,
+              "uses_per_long_rest": 1
+            }
+          },
+          "effects": [
+            {
+              "trigger": "on_target_downed",
+              "target": {
+                "type": "self"
+              },
+              "effects": [
+                {
+                  "type": "heal",
+                  "formula": "1"
+                },
+                {
+                  "type": "narrative",
+                  "description": "当你的生命值降至0但没被直接杀死时，你可以选择让生命值变为1。使用后需完成长休才能再次使用。"
+                }
+              ],
+              "usesPerRest": "long_rest",
+              "maxUses": 1
+            }
+          ]
+        },
+        {
+          "name": "野蛮攻击",
+          "nameEn": "Savage Attacks",
+          "description": "当你使用近战武器攻击造成重击时，你可以额外投一次武器的一个伤害骰，并将其加到重击的额外伤害中。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          },
+          "combatEffects": {
+            "trigger": "on_critical",
+            "effect": "extra_damage_die",
+            "conditions": {
+              "is_melee": true
+            },
+            "params": {
+              "dice_count": 1,
+              "use_weapon_die": true
+            }
+          },
+          "effects": [
+            {
+              "trigger": "on_hit",
+              "target": {
+                "type": "single"
+              },
+              "condition": {
+                "critical_hit": true,
+                "melee_weapon": true
+              },
+              "effects": [
+                {
+                  "type": "deal_damage",
+                  "formula": "1d_weapon",
+                  "damageType": "weapon"
+                },
+                {
+                  "type": "narrative",
+                  "description": "当你使用近战武器攻击造成重击时，可以额外投掷该武器的一颗伤害骰，并将结果加入重击的额外伤害中。"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "languages": [
+        "common",
+        "orc"
+      ]
+    },
+    {
+      "id": "tiefling",
+      "name": "提夫林",
+      "nameEn": "Tiefling",
+      "description": "地狱血脉，自恃而多疑的魔裔后代",
+      "abilityScoreIncrease": {
+        "intelligence": 1,
+        "charisma": 2
+      },
+      "age": {
+        "mature": 20,
+        "max": 100,
+        "description": "提夫林的成长速度与人类相同，但寿命要长一些。"
+      },
+      "alignment": "无特定阵营",
+      "size": "中型",
+      "sizeDescription": "提夫林的体型和身材与人类相近",
+      "speed": 30,
+      "traits": [
+        {
+          "name": "黑暗视觉",
+          "nameEn": "Darkvision",
+          "description": "得益于你的地狱血统，你在黑暗和微光光照下拥有超常的视力。在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。",
+          "range": 60,
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          }
+        },
+        {
+          "name": "地狱抗性",
+          "nameEn": "Hellish Resistance",
+          "description": "你拥有火焰伤害的抗性。",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [
+              "fire"
+            ],
+            "skillBonuses": []
+          },
+          "combatEffects": {
+            "trigger": "passive",
+            "effect": "damage_resistance",
+            "params": {
+              "resistance_type": "fire"
+            }
+          },
+          "effects": [
+            {
+              "trigger": "passive",
+              "target": {
+                "type": "self"
+              },
+              "effects": [
+                {
+                  "type": "grant_resistance",
+                  "damageTypes": [
+                    "fire"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "地狱血裔",
+          "nameEn": "Infernal Legacy",
+          "description": "你掌握戏法妖术。达到3级后，你可以每日使用一次法术灼热射线。达到5级后，你可以每日使用一次法术黑暗术。这些法术的施法关键属性是魅力。",
+          "spells": [
+            {
+              "name": "thaumaturgy",
+              "level": 0
+            },
+            {
+              "name": "hellish_rebuke",
+              "level": 1,
+              "minCharacterLevel": 3,
+              "usesPerDay": 1
+            },
+            {
+              "name": "darkness",
+              "level": 2,
+              "minCharacterLevel": 5,
+              "usesPerDay": 1
+            }
+          ],
+          "spellcastingAbility": "charisma",
+          "structuredData": {
+            "weaponProficiencies": [],
+            "armorProficiencies": [],
+            "toolProficiencies": [],
+            "savingThrowAdvantages": [],
+            "damageResistances": [],
+            "skillBonuses": []
+          }
+        }
+      ],
+      "languages": [
+        "common",
+        "infernal"
+      ]
+    }
+  ]
+}

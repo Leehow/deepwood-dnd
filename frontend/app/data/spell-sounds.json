@@ -1,0 +1,157 @@
+{
+  "categories": {
+    "damage_fire": {
+      "name": "火焰伤害",
+      "sounds": ["fire_cast.mp3", "fire_impact.mp3"],
+      "spells": ["fireball", "fire_bolt", "burning_hands", "scorching_ray", "flame_strike", "meteor_swarm"]
+    },
+    "damage_cold": {
+      "name": "冰冷伤害",
+      "sounds": ["ice_cast.mp3", "ice_impact.mp3"],
+      "spells": ["ray_of_frost", "ice_knife", "cone_of_cold", "ice_storm"]
+    },
+    "damage_lightning": {
+      "name": "闪电伤害",
+      "sounds": ["lightning_cast.mp3", "lightning_impact.mp3"],
+      "spells": ["shocking_grasp", "lightning_bolt", "witch_bolt", "call_lightning", "chain_lightning"]
+    },
+    "damage_thunder": {
+      "name": "雷鸣伤害",
+      "sounds": ["thunder_cast.mp3", "thunder_impact.mp3"],
+      "spells": ["thunderwave", "shatter", "thunderous_smite"]
+    },
+    "damage_acid": {
+      "name": "强酸伤害",
+      "sounds": ["acid_cast.mp3", "acid_sizzle.mp3"],
+      "spells": ["acid_splash", "melf_acid_arrow", "chromatic_orb"]
+    },
+    "damage_poison": {
+      "name": "毒素伤害",
+      "sounds": ["poison_cast.mp3", "poison_effect.mp3"],
+      "spells": ["poison_spray", "ray_of_sickness", "cloudkill"]
+    },
+    "damage_necrotic": {
+      "name": "黯蚀伤害",
+      "sounds": ["necrotic_cast.mp3", "necrotic_drain.mp3"],
+      "spells": ["chill_touch", "inflict_wounds", "blight", "finger_of_death", "circle_of_death"]
+    },
+    "damage_radiant": {
+      "name": "光耀伤害",
+      "sounds": ["radiant_cast.mp3", "radiant_burst.mp3"],
+      "spells": ["sacred_flame", "guiding_bolt", "moonbeam", "sunbeam", "divine_word"]
+    },
+    "damage_force": {
+      "name": "力场伤害",
+      "sounds": ["force_cast.mp3", "force_impact.mp3"],
+      "spells": ["magic_missile", "eldritch_blast", "disintegrate"]
+    },
+    "damage_psychic": {
+      "name": "心灵伤害",
+      "sounds": ["psychic_cast.mp3", "psychic_pulse.mp3"],
+      "spells": ["vicious_mockery", "dissonant_whispers", "phantasmal_killer", "psychic_scream"]
+    },
+    "control_charm": {
+      "name": "魅惑控制",
+      "sounds": ["charm_cast.mp3", "charm_effect.mp3"],
+      "spells": ["charm_person", "suggestion", "dominate_person", "dominate_monster", "crown_of_madness"]
+    },
+    "control_fear": {
+      "name": "恐惧控制",
+      "sounds": ["fear_cast.mp3", "fear_scream.mp3"],
+      "spells": ["cause_fear", "fear", "phantasmal_killer", "wrathful_smite"]
+    },
+    "control_paralyze": {
+      "name": "麻痹控制",
+      "sounds": ["paralyze_cast.mp3", "paralyze_freeze.mp3"],
+      "spells": ["hold_person", "hold_monster", "power_word_stun"]
+    },
+    "control_restrain": {
+      "name": "束缚控制",
+      "sounds": ["restrain_cast.mp3", "vines_grow.mp3"],
+      "spells": ["entangle", "web", "ensnaring_strike", "flesh_to_stone"]
+    },
+    "control_sleep": {
+      "name": "睡眠控制",
+      "sounds": ["sleep_cast.mp3", "sleep_effect.mp3"],
+      "spells": ["sleep", "eyebite"]
+    },
+    "control_blind": {
+      "name": "目盲控制",
+      "sounds": ["blind_cast.mp3", "blind_effect.mp3"],
+      "spells": ["blindness_deafness", "color_spray", "blinding_smite"]
+    },
+    "control_incapacitate": {
+      "name": "失能控制",
+      "sounds": ["incapacitate_cast.mp3", "laugh_effect.mp3"],
+      "spells": ["tashas_hideous_laughter", "hypnotic_pattern", "confusion", "slow"]
+    },
+    "healing": {
+      "name": "治疗",
+      "sounds": ["heal_cast.mp3", "heal_chime.mp3"],
+      "spells": ["cure_wounds", "healing_word", "mass_cure_wounds", "heal", "mass_heal", "prayer_of_healing"]
+    },
+    "buff_protection": {
+      "name": "防护增益",
+      "sounds": ["shield_cast.mp3", "shield_up.mp3"],
+      "spells": ["shield", "shield_of_faith", "mage_armor", "stoneskin", "protection_from_evil_and_good"]
+    },
+    "buff_enhance": {
+      "name": "强化增益",
+      "sounds": ["enhance_cast.mp3", "power_up.mp3"],
+      "spells": ["bless", "heroism", "enhance_ability", "haste", "greater_invisibility", "enlarge-reduce"]
+    },
+    "buff_inspire": {
+      "name": "激励增益",
+      "sounds": ["inspire_cast.mp3", "inspire_chime.mp3"],
+      "spells": ["bardic_inspiration", "guidance", "resistance"]
+    },
+    "summon": {
+      "name": "召唤",
+      "sounds": ["summon_cast.mp3", "portal_open.mp3"],
+      "spells": ["find_familiar", "conjure_animals", "conjure_elemental", "summon_celestial"]
+    },
+    "teleport": {
+      "name": "传送",
+      "sounds": ["teleport_cast.mp3", "teleport_woosh.mp3"],
+      "spells": ["misty_step", "dimension_door", "teleport", "plane_shift"]
+    },
+    "zone_fog": {
+      "name": "迷雾区域",
+      "sounds": ["fog_cast.mp3", "fog_ambient.mp3"],
+      "spells": ["fog_cloud", "darkness", "stinking_cloud"]
+    },
+    "zone_elemental": {
+      "name": "元素区域",
+      "sounds": ["zone_cast.mp3", "elemental_ambient.mp3"],
+      "spells": ["cloud_of_daggers", "flaming_sphere", "spirit_guardians", "wall_of_fire"]
+    },
+    "utility": {
+      "name": "通用法术",
+      "sounds": ["magic_cast.mp3"],
+      "spells": []
+    }
+  },
+  "events": {
+    "cast": {
+      "description": "法术施放时播放",
+      "volume": 0.6
+    },
+    "hit": {
+      "description": "法术命中时播放",
+      "volume": 0.7
+    },
+    "effect": {
+      "description": "效果生效时播放",
+      "volume": 0.5
+    },
+    "fail": {
+      "description": "豁免成功/未命中时播放",
+      "volume": 0.4
+    }
+  },
+  "settings": {
+    "enabled": true,
+    "masterVolume": 0.7,
+    "basePath": "/sounds/spells/"
+  }
+}

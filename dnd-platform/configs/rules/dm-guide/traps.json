@@ -1,0 +1,349 @@
+{
+  "meta": {
+    "source": "DMG Chapter 5",
+    "description": "D&D 5E 陷阱规则与范例"
+  },
+  "trapTypes": [
+    {
+      "id": "mechanical",
+      "name": "机械陷阱",
+      "nameEn": "Mechanical Trap",
+      "description": "包括陷坑、箭陷阱、落石、充水房间、旋刃等，藉由机械构造来运作的陷阱。"
+    },
+    {
+      "id": "magic_device",
+      "name": "魔法装置陷阱",
+      "nameEn": "Magical Device Trap",
+      "description": "会在被激活时释放相应的法术效应。"
+    },
+    {
+      "id": "spell",
+      "name": "法术陷阱",
+      "nameEn": "Spell Trap",
+      "description": "诸如守卫刻文或魔法徽记一类运作模式的法术。",
+      "examples": ["守卫刻文 glyph of warding", "魔法徽记 symbol"]
+    }
+  ],
+  "severityLevels": [
+    {
+      "id": "setback",
+      "name": "阻碍",
+      "nameEn": "Setback",
+      "description": "不会令角色死亡或遭受重伤",
+      "saveDC": "10-11",
+      "attackBonus": "+3 至 +5"
+    },
+    {
+      "id": "dangerous",
+      "name": "危险",
+      "nameEn": "Dangerous",
+      "description": "可以重伤（并有潜力杀死）角色",
+      "saveDC": "12-15",
+      "attackBonus": "+6 至 +8"
+    },
+    {
+      "id": "deadly",
+      "name": "致命",
+      "nameEn": "Deadly",
+      "description": "可以直接杀死角色",
+      "saveDC": "16-20",
+      "attackBonus": "+9 至 +12"
+    }
+  ],
+  "damageBySeverity": {
+    "levels": [
+      { "range": "1-4", "setback": "1d10", "dangerous": "2d10", "deadly": "4d10" },
+      { "range": "5-10", "setback": "2d10", "dangerous": "4d10", "deadly": "10d10" },
+      { "range": "11-16", "setback": "4d10", "dangerous": "10d10", "deadly": "18d10" },
+      { "range": "17-20", "setback": "10d10", "dangerous": "18d10", "deadly": "24d10" }
+    ]
+  },
+  "commonTriggers": [
+    "踩到压力板",
+    "踩到地板虚假的部分",
+    "拉扯到拌线",
+    "转动门把",
+    "对门锁使用错误的钥匙",
+    "进入某区域",
+    "触碰某物件",
+    "口令（魔法陷阱）"
+  ],
+  "disableRules": {
+    "mechanical": {
+      "detectCheck": "感知(察觉)检定",
+      "disableCheck": "敏捷检定（使用盗贼工具）",
+      "alternativeDisable": "锋利的武器或工具进行同样的检定，但检定时具有劣势"
+    },
+    "magical": {
+      "detectCheck": "智力(奥秘)检定",
+      "disableCheck": "智力(奥秘)检定",
+      "dispelMagic": "法术解除魔法有一定几率使魔法陷阱无效化"
+    }
+  },
+  "sampleTraps": [
+    {
+      "id": "collapsing_roof",
+      "name": "塌方",
+      "nameEn": "Collapsing Roof",
+      "type": "mechanical",
+      "trigger": "绊脚线",
+      "triggerHeight": "离地3寸",
+      "detectDC": 10,
+      "disableDC": 15,
+      "disableMethod": "敏捷检定（盗贼工具）",
+      "effect": {
+        "saveDC": 15,
+        "saveType": "dexterity",
+        "damage": "4d10",
+        "damageType": "bludgeoning",
+        "onSuccess": "伤害减半",
+        "aftermath": "该区域的地面将铺满碎石并成为困难地形"
+      },
+      "description": "该陷阱以一根绊脚线触发，陷阱激活后一处不稳定天花板的支撑点将被破坏。"
+    },
+    {
+      "id": "falling_net",
+      "name": "落网",
+      "nameEn": "Falling Net",
+      "type": "mechanical",
+      "trigger": "绊脚线",
+      "triggerHeight": "离地3寸",
+      "detectDC": 10,
+      "disableDC": 15,
+      "disableMethod": "敏捷检定（盗贼工具）",
+      "effect": {
+        "area": "10平方尺",
+        "conditions": ["束缚"],
+        "knockdownSaveDC": 10,
+        "knockdownSaveType": "strength",
+        "escapeCheck": {
+          "dc": 10,
+          "type": "strength",
+          "action": "动作"
+        },
+        "netStats": {
+          "ac": 10,
+          "hp": 20,
+          "damageToFree": 5,
+          "freeArea": "5平方尺"
+        }
+      },
+      "description": "该陷阱以一根绊脚线触发，陷阱激活后将一张悬挂在天花板上的捕网释放下来。"
+    },
+    {
+      "id": "fire_breathing_statue",
+      "name": "喷火雕像",
+      "nameEn": "Fire-Breathing Statue",
+      "type": "magic_device",
+      "trigger": "压板",
+      "triggerWeight": "超过20磅",
+      "detectDC": 15,
+      "detectClues": ["地板和墙壁上的焦痕"],
+      "detectMagic": "塑能魔法灵光",
+      "disableMethod": {
+        "physical": "用长铁钉或其他物品楔紧压板",
+        "magical": {
+          "spell": "解除魔法",
+          "dc": 13
+        }
+      },
+      "effect": {
+        "area": "30尺锥形",
+        "saveDC": 13,
+        "saveType": "dexterity",
+        "damage": "4d10",
+        "damageType": "fire",
+        "onSuccess": "伤害减半"
+      },
+      "description": "该陷阱在闯入者踩踏一块隐藏的压板时触发，陷阱激活后附近一尊雕像将释放一团魔法烈焰。"
+    },
+    {
+      "id": "simple_pit",
+      "name": "普通陷坑",
+      "nameEn": "Simple Pit",
+      "type": "mechanical",
+      "trigger": "踩上去",
+      "detectDC": 10,
+      "coverMethod": "大块布料掩盖并以灰土和杂物伪装",
+      "effect": {
+        "fallDamage": true,
+        "typicalDepth": "10尺或更深"
+      },
+      "description": "普通陷坑即是挖在地上的一个深坑。坑洞用大块布料掩盖并以灰土和杂物伪装好。"
+    },
+    {
+      "id": "hidden_pit",
+      "name": "隐蔽陷坑",
+      "nameEn": "Hidden Pit",
+      "type": "mechanical",
+      "trigger": "踩上去",
+      "detectDC": 15,
+      "detectMethod": "感知(察觉)检定 - 从地上脚印的轨迹发现",
+      "confirmDC": 15,
+      "confirmMethod": "智力(调查)检定 - 确认整个陷阱在地板上的位置",
+      "disableMethod": "用长铁钉楔入坑盖与周围地板之间，或使用秘法锁",
+      "effect": {
+        "fallDamage": true,
+        "typicalDepth": "10至20尺或更深"
+      },
+      "description": "隐蔽陷坑的掩盖材料与结构设计成跟周围的地板相仿。"
+    },
+    {
+      "id": "locking_pit",
+      "name": "锁困陷坑",
+      "nameEn": "Locking Pit",
+      "type": "mechanical",
+      "trigger": "踩上去",
+      "detectDC": 15,
+      "effect": {
+        "fallDamage": true,
+        "lockMechanic": "盖板回弹锁紧并困住陷入者"
+      },
+      "escapeOptions": [
+        {
+          "method": "力量检定（从外部）",
+          "dc": 20
+        },
+        {
+          "method": "敏捷检定（盗贼工具，从内部）",
+          "dc": 15,
+          "requirement": "必须可以看到并触及相应的机关"
+        },
+        {
+          "method": "强行破坏盖板"
+        }
+      ],
+      "description": "锁困陷坑与隐蔽陷坑相似，但陷坑的盖板有一个回弹的结构。"
+    },
+    {
+      "id": "spiked_pit",
+      "name": "尖刺陷坑",
+      "nameEn": "Spiked Pit",
+      "type": "mechanical",
+      "trigger": "踩上去",
+      "variants": ["普通陷坑", "隐蔽陷坑", "锁困陷坑"],
+      "effect": {
+        "fallDamage": true,
+        "spikeDamage": "2d10",
+        "spikeDamageType": "piercing",
+        "poisonedVariant": {
+          "saveDC": 13,
+          "saveType": "constitution",
+          "poisonDamage": "4d10",
+          "onSuccess": "伤害减半"
+        }
+      },
+      "description": "尖刺陷坑在陷坑底设置上尖锐的木刺或铁刺。"
+    },
+    {
+      "id": "poison_darts",
+      "name": "毒镖",
+      "nameEn": "Poison Darts",
+      "type": "mechanical",
+      "trigger": "压板",
+      "triggerWeight": "超过20磅",
+      "detectDC": 15,
+      "detectClues": ["发射毒镖的小洞由灰尘和蛛丝掩盖", "或精心设计在浮雕、墙饰或壁画之中"],
+      "confirmDC": 15,
+      "confirmMethod": "智力(调查)检定 - 分辨压板材料和涂装与周围地板的差异",
+      "disableMethod": "用长铁钉楔入压板下方，或用布料或蜡封堵发射口",
+      "effect": {
+        "dartCount": 4,
+        "attackBonus": 8,
+        "range": "压板所在处10尺范围",
+        "dartDamage": "1d4",
+        "dartDamageType": "piercing",
+        "poisonSaveDC": 15,
+        "poisonSaveType": "constitution",
+        "poisonDamage": "2d10",
+        "onSuccess": "伤害减半"
+      },
+      "description": "该陷阱在闯入者踩踏一块隐藏的压板时触发，陷阱激活后若干毒镖从附近墙壁上射出。"
+    },
+    {
+      "id": "poison_needle",
+      "name": "毒针",
+      "nameEn": "Poison Needle",
+      "type": "mechanical",
+      "trigger": "以对应钥匙之外的方式打开",
+      "location": "宝箱箱锁或其他能够开启的装置",
+      "detectDC": 20,
+      "detectMethod": "智力(调查)检定 - 发现锁的改动痕迹",
+      "disableDC": 15,
+      "disableMethod": "敏捷检定（盗贼工具）- 移除毒针",
+      "disableFailure": "陷阱的机关在开锁失败时触发",
+      "effect": {
+        "needleLength": "3寸",
+        "pierceDamage": 1,
+        "poisonDamage": "2d10",
+        "poisonSaveDC": 15,
+        "poisonSaveType": "constitution",
+        "onFailure": "中毒1小时"
+      },
+      "description": "毒针陷阱隐藏在宝箱箱锁或其他能够开启的装置之中。"
+    },
+    {
+      "id": "rolling_sphere",
+      "name": "滚石",
+      "nameEn": "Rolling Sphere",
+      "type": "mechanical",
+      "trigger": "压板",
+      "triggerWeight": "超过20磅",
+      "detectDC": 15,
+      "detectMethod": "感知(察觉)检定 - 辨认活板门与压板位置",
+      "confirmDC": 15,
+      "confirmMethod": "智力(调查)检定 - 分辨压板材料和涂装，或从活板门石工工艺辨认",
+      "disableMethod": "用长铁钉楔入压板下方",
+      "sphereStats": {
+        "diameter": "10尺",
+        "initiativeBonus": 8,
+        "speed": "60尺/轮"
+      },
+      "effect": {
+        "saveDC": 15,
+        "saveType": "dexterity",
+        "damage": "10d10",
+        "damageType": "bludgeoning",
+        "onHit": "倒地",
+        "passThrough": "生物穿过滚石所在空间视为穿过困难地形"
+      },
+      "stopMechanic": {
+        "check": "力量检定",
+        "dc": 20,
+        "action": "动作",
+        "effect": "削减滚石15尺的滚动速度",
+        "stopCondition": "速度降至0时滚石停止"
+      },
+      "description": "该陷阱在其压板上承重超过20磅时触发。陷阱激活后，天花板上一扇活板门打开，并放出一个直径10尺的实心球状滚石。",
+      "isComplex": true
+    },
+    {
+      "id": "sphere_of_annihilation",
+      "name": "湮灭法球",
+      "nameEn": "Sphere of Annihilation",
+      "type": "magic_device",
+      "trigger": "接近或进入",
+      "location": "石刻面孔的口中",
+      "detectDC": 20,
+      "detectMethod": "智力(奥秘)检定",
+      "cannotDisable": true,
+      "cannotMove": true,
+      "sphereDiameter": "2尺",
+      "enchantment": {
+        "spell": "嫌恶/关怀术 antipathy/sympathy 的关怀效应",
+        "effect": "引诱生物接近陷阱甚至自行爬入石口",
+        "dispelDC": 18
+      },
+      "description": "一张石刻面孔的口中散发着魔法力量与浓厚的黑暗气息。里面没有一点声响，光线无法照亮其内，并且任何进入其中的物质都将消失不见。"
+    }
+  ],
+  "complexTrapRules": {
+    "description": "复合陷阱运作起来跟标准陷阱相似，只是它会在每轮都执行一系列动作。",
+    "mechanics": [
+      "复合陷阱激活后先骰先攻",
+      "该陷阱会在每个其自己回合开始时自行激活并执行一个特定的动作",
+      "复合陷阱可以如普通陷阱一样被侦查、解除或绕开"
+    ],
+    "example": "慢慢淹没房间的陷阱"
+  }
+}

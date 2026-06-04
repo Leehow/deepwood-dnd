@@ -1,0 +1,299 @@
+{
+  "fixes": [
+    {
+      "spell_id": "tashas_hideous_laughter",
+      "name": "塔莎狂笑术",
+      "nameEn": "Tasha's Hideous Laughter",
+      "fix": {
+        "phase_index": 0,
+        "add_fields": {
+          "escape": {
+            "type": "save",
+            "save_type": "wis",
+            "timing": "end_of_turn"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "wrathful_smite",
+      "name": "激愤斩",
+      "nameEn": "Wrathful Smite",
+      "fix": {
+        "phase_index": 2,
+        "add_fields": {
+          "escape": {
+            "type": "check",
+            "ability": "wis",
+            "timing": "action"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "entangle",
+      "name": "纠缠术",
+      "nameEn": "Entangle",
+      "fix": [
+        {
+          "phase_index": 0,
+          "add_fields": {
+            "escape": {
+              "type": "check",
+              "ability": "str",
+              "timing": "action"
+            }
+          }
+        },
+        {
+          "phase_index": 1,
+          "add_fields": {
+            "escape": {
+              "type": "check",
+              "ability": "str",
+              "timing": "action"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "spell_id": "ray_of_sickness",
+      "name": "致病射线",
+      "nameEn": "Ray of Sickness",
+      "fix": {
+        "phase_index": 0,
+        "add_fields": {
+          "duration": {
+            "rounds": 1
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "ensnaring_strike",
+      "name": "诱捕打击",
+      "nameEn": "Ensnaring Strike",
+      "fix": {
+        "phase_index": 1,
+        "add_fields": {
+          "escape": {
+            "type": "check",
+            "ability": "str",
+            "timing": "action"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "hold_person",
+      "name": "人类定身术",
+      "nameEn": "Hold Person",
+      "fix": {
+        "phase_index": 0,
+        "add_fields": {
+          "escape": {
+            "type": "save",
+            "save_type": "wis",
+            "timing": "end_of_turn"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "crown_of_madness",
+      "name": "疯狂冠冕",
+      "nameEn": "Crown of Madness",
+      "fix": {
+        "phase_index": 0,
+        "add_fields": {
+          "escape": {
+            "type": "save",
+            "save_type": "wis",
+            "timing": "end_of_turn"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "blindness-deafness",
+      "name": "目盲 / 耳聋术",
+      "nameEn": "Blindness/Deafness",
+      "fix": [
+        {
+          "phase_index": 0,
+          "add_fields": {
+            "escape": {
+              "type": "save",
+              "save_type": "con",
+              "timing": "end_of_turn"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "spell_id": "web",
+      "name": "蛛网术",
+      "nameEn": "Web",
+      "fix": [
+        {
+          "phase_index": 1,
+          "add_fields": {
+            "escape": {
+              "type": "check",
+              "ability": "str",
+              "timing": "action"
+            }
+          }
+        },
+        {
+          "phase_index": 2,
+          "add_fields": {
+            "escape": {
+              "type": "check",
+              "ability": "str",
+              "timing": "action"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "spell_id": "fear",
+      "name": "恐惧术",
+      "nameEn": "Fear",
+      "fix": {
+        "phase_index": 0,
+        "add_fields": {
+          "escape": {
+            "type": "save",
+            "save_type": "wis",
+            "timing": "end_of_turn"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "blinding_smite",
+      "name": "致盲斩",
+      "nameEn": "Blinding Smite",
+      "fix": {
+        "phase_index": 1,
+        "add_fields": {
+          "escape": {
+            "type": "save",
+            "save_type": "con",
+            "timing": "end_of_turn"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "phantasmal_killer",
+      "name": "魅影杀手",
+      "nameEn": "Phantasmal Killer",
+      "fix": {
+        "phase_index": 0,
+        "add_fields": {
+          "escape": {
+            "type": "save",
+            "save_type": "wis",
+            "timing": "end_of_turn"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "hold_monster",
+      "name": "怪物定身术",
+      "nameEn": "Hold Monster",
+      "fix": {
+        "phase_index": 0,
+        "add_fields": {
+          "escape": {
+            "type": "save",
+            "save_type": "wis",
+            "timing": "end_of_turn"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "contagion",
+      "name": "疫病术",
+      "nameEn": "Contagion",
+      "fix": {
+        "phase_index": 0,
+        "add_fields": {
+          "escape": {
+            "type": "save",
+            "save_type": "con",
+            "timing": "end_of_turn"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "ottos_irresistible_dance",
+      "name": "奥图迷舞",
+      "nameEn": "Otto's Irresistible Dance",
+      "fix": {
+        "phase_index": 0,
+        "add_fields": {
+          "escape": {
+            "type": "save",
+            "save_type": "wis",
+            "timing": "action"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "eyebite",
+      "name": "摄心目光",
+      "nameEn": "Eyebite",
+      "fix": {
+        "phase_index": 0,
+        "add_fields": {
+          "escape": {
+            "type": "save",
+            "save_type": "wis",
+            "timing": "end_of_turn"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "flesh_to_stone",
+      "name": "石化术",
+      "nameEn": "Flesh to Stone",
+      "fix": {
+        "phase_index": 0,
+        "add_fields": {
+          "escape": {
+            "type": "save",
+            "save_type": "con",
+            "timing": "end_of_turn"
+          }
+        }
+      }
+    },
+    {
+      "spell_id": "power_word_stun",
+      "name": "律令震慑",
+      "nameEn": "Power Word Stun",
+      "fix": {
+        "phase_index": 0,
+        "add_fields": {
+          "escape": {
+            "type": "save",
+            "save_type": "con",
+            "timing": "end_of_turn"
+          }
+        }
+      }
+    }
+  ],
+  "failed": []
+}

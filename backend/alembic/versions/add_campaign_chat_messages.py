@@ -1,0 +1,47 @@
+"""Add campaign_chat_messages table (after merge)
+
+Revision ID: add_campaign_chat_messages
+Revises: merge_heads_20251107
+Create Date: 2025-11-07 18:12:00
+
+"""
+from alembic import op
+import sqlalchemy as sa
+
+# revision identifiers, used by Alembic.
+revision = "add_campaign_chat_messages"
+down_revision = "merge_heads_20251107"
+branch_labels = None
+depends_on = None
+
+
+def upgrade() -> None:
+    op.create_table(
+        "campaign_chat_messages",
+        sa.Column("id", sa.Integer(), nullable=False),
+        sa.Column("campaign_id", sa.Integer(), nullable=False),
+        sa.Column("sender_user_id", sa.String(length=50), nullable=False),
+        sa.Column("sender_role", sa.String(length=20), nullable=False),
+        sa.Column("sender_character_id", sa.Integer(), nullable=True),
+        sa.Column("message_type", sa.String(length=20), nullable=False, server_default="chat"),
+        sa.Column("content", sa.Text(), nullable=False),
+        sa.Column("recipients", sa.JSON(), nullable=False, server_default="[]"),
+        sa.Column("is_private", sa.Boolean(), nullable=False, server_default=sa.text("false")),
+        sa.Column("mentions", sa.JSON(), nullable=False, server_default="[]"),
+        sa.Column("meta", sa.JSON(), nullable=True),
+        sa.Column("reply_to_id", sa.Integer(), nullable=True),
+        sa.Column("created_at", sa.DateTime(timezone=True), nullable=True, server_default=sa.text("NOW()")),
+        sa.PrimaryKeyConstraint("id"),
+    )
+    op.create_index(
+        "ix_chat_campaign_created_at",
+        "campaign_chat_messages",
+        ["campaign_id", "created_at"],
+        unique=False,
+    )
+
+
+def downgrade() -> None:
+    op.drop_index("ix_chat_campaign_created_at", table_name="campaign_chat_messages")
+    op.drop_table("campaign_chat_messages")
+

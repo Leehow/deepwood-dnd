@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "source": "D&D 5E 城主指南",
+    "chapter": "第2章 创建多元宇宙",
+    "description": "位面系统简介，用于创建跨位面冒险"
+  },
+  "plane_categories": {
+    "description": "位面分类",
+    "categories": [
+      {
+        "name": "物质位面及其回响",
+        "name_en": "The Material Plane and Its Echoes",
+        "planes": ["物质位面", "妖精荒野", "堕影冥界"],
+        "description": "大多数战役和冒险的起始地"
+      },
+      {
+        "name": "中转位面",
+        "name_en": "The Transitive Planes",
+        "planes": ["以太位面", "星界位面"],
+        "description": "不具特性的位面，主要用作位面之间的连接通路"
+      },
+      {
+        "name": "内层位面",
+        "name_en": "The Inner Planes",
+        "planes": ["火之位面", "水之位面", "土之位面", "气之位面", "元素混乱"],
+        "description": "四大元素位面构成诸内层位面"
+      },
+      {
+        "name": "外层位面",
+        "name_en": "The Outer Planes",
+        "planes": ["天界山", "极乐境", "万兽园", "奔放之野", "约瑟园", "混沌海", "喧癫空隧", "无底深渊", "卡瑟利", "哈迪斯", "焦炎地狱", "九层地狱", "修罗场", "机械境", "世外桃源", "双生天堂", "外域"],
+        "description": "对应阵营的精神领域"
+      },
+      {
+        "name": "正负能量位面",
+        "name_en": "The Positive and Negative Planes",
+        "planes": ["正能量位面", "负能量位面"],
+        "description": "提供生命与死亡的原材料"
+      }
+    ]
+  },
+  "outer_planes": {
+    "description": "外层位面详情",
+    "planes": [
+      { "name": "天界山", "name_en": "Mount Celestia", "alignment": "守序善良", "description": "至善与秩序之地", "color_pool": "金色" },
+      { "name": "双生天堂", "name_en": "Bytopia", "alignment": "中立善良/守序善良", "description": "田园牧歌之地", "color_pool": "琥珀色" },
+      { "name": "极乐境", "name_en": "Elysium", "alignment": "中立善良", "description": "纯粹善良之地", "color_pool": "橘色" },
+      { "name": "万兽园", "name_en": "The Beastlands", "alignment": "中立善良/混乱善良", "description": "自然与野兽之地", "color_pool": "翡翠绿" },
+      { "name": "奔放之野", "name_en": "Arborea", "alignment": "混乱善良", "description": "狂野自由之地", "color_pool": "蔚蓝" },
+      { "name": "约瑟园", "name_en": "Ysgard", "alignment": "混乱中立/混乱善良", "description": "英雄与战斗之地", "color_pool": "靛蓝" },
+      { "name": "混沌海", "name_en": "Limbo", "alignment": "混乱中立", "description": "纯粹混乱之地", "color_pool": "乌黑" },
+      { "name": "喧癫空隧", "name_en": "Pandemonium", "alignment": "混乱中立/混乱邪恶", "description": "疯狂与噪音之地", "color_pool": "洋红" },
+      { "name": "无底深渊", "name_en": "The Abyss", "alignment": "混乱邪恶", "description": "恶魔与毁灭之地", "color_pool": "紫蓝" },
+      { "name": "卡瑟利", "name_en": "Carceri", "alignment": "中立邪恶/混乱邪恶", "description": "囚禁与背叛之地", "color_pool": "橄榄绿" },
+      { "name": "哈迪斯", "name_en": "Hades", "alignment": "中立邪恶", "description": "灰暗与绝望之地", "color_pool": "铁锈色" },
+      { "name": "焦炎地狱", "name_en": "Gehenna", "alignment": "中立邪恶/守序邪恶", "description": "残酷与贪婪之地", "color_pool": "赤褐" },
+      { "name": "九层地狱", "name_en": "The Nine Hells", "alignment": "守序邪恶", "description": "魔鬼与契约之地", "color_pool": "宝石红" },
+      { "name": "修罗场", "name_en": "Acheron", "alignment": "守序邪恶/守序中立", "description": "战争与冲突之地", "color_pool": "焰红" },
+      { "name": "机械境", "name_en": "Mechanus", "alignment": "守序中立", "description": "纯粹秩序之地", "color_pool": "钻石蓝" },
+      { "name": "世外桃源", "name_en": "Arcadia", "alignment": "守序中立/守序善良", "description": "和谐与完美之地", "color_pool": "橘黄" },
+      { "name": "外域", "name_en": "The Outlands", "alignment": "绝对中立", "description": "位面的中心交汇处", "color_pool": "皮革棕" }
+    ]
+  },
+  "echo_planes": {
+    "description": "物质位面的回响",
+    "planes": [
+      {
+        "name": "妖精荒野",
+        "name_en": "Feywild",
+        "description": "物质位面的魔法映射，色彩更加鲜艳，情感更加强烈",
+        "features": ["精类生物", "时间流逝不同", "魔法增强"],
+        "dangers": ["迷失方向", "被精类欺骗", "时间陷阱"]
+      },
+      {
+        "name": "堕影冥界",
+        "name_en": "Shadowfell",
+        "description": "物质位面的黑暗映射，一切都被灰暗和绝望笼罩",
+        "features": ["不死生物", "阴暗", "情感压抑"],
+        "dangers": ["精神损耗", "不死生物攻击", "绝望感染"]
+      }
+    ]
+  },
+  "planar_travel": {
+    "description": "位面旅行方式",
+    "methods": [
+      {
+        "method": "位面传送门",
+        "method_en": "Planar Portals",
+        "description": "位面中特定地点与另一位面特定地点的静态连接",
+        "conditions": [
+          "时间：仅在特定时间生效",
+          "条件：特殊情况被实现后才开启",
+          "随机：随机开启和关闭",
+          "命令语：说出特定命令语后开启",
+          "钥匙：持有特定物件时开启"
+        ]
+      },
+      {
+        "method": "法术",
+        "method_en": "Spells",
+        "spells": [
+          { "name": "异界传送", "name_en": "Plane Shift", "level": 7, "notes": "需要目的地位面同调的音叉" },
+          { "name": "异界之门", "name_en": "Gate", "level": 9, "notes": "打开直接的传送门，但强大实体可阻止" },
+          { "name": "以太化", "name_en": "Etherealness", "level": 7, "notes": "进入以太位面" },
+          { "name": "星界投影", "name_en": "Astral Projection", "level": 9, "notes": "投影到星界位面" }
+        ]
+      }
+    ]
+  },
+  "cosmology_models": {
+    "description": "宇宙体系模型",
+    "models": [
+      {
+        "name": "巨轮说",
+        "name_en": "The Great Wheel",
+        "description": "诸位面视觉化为一组同心的轮环，中心为物质位面"
+      },
+      {
+        "name": "世界树说",
+        "name_en": "The World Tree",
+        "description": "宇宙大树的根枝连接不同界域"
+      },
+      {
+        "name": "世界轴说",
+        "name_en": "The World Axis",
+        "description": "物质位面位于众星之海与元素混沌之间"
+      }
+    ]
+  },
+  "planar_adventure_hooks": {
+    "description": "位面冒险钩子",
+    "hooks": [
+      "寻找通往特定位面的传送门",
+      "阻止来自下层位面的入侵",
+      "营救被困在另一位面的盟友",
+      "获取只存在于某位面的物品",
+      "与位面生物谈判或结盟",
+      "关闭失控的位面裂隙",
+      "追踪逃往另一位面的反派"
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "overview": {
+    "description": "毒素可以通过多种方式造成伤害，包括接触、摄入、吸入或通过伤口注入。毒素的DC代表目标抵抗其效果所需的体质豁免检定难度。",
+    "descriptionEn": "Poisons can deal damage in various ways, including contact, ingestion, inhalation, or through wounds. The DC of a poison represents the difficulty of the Constitution saving throw needed to resist its effects."
+  },
+  "poisonTypes": [
+    {
+      "id": "contact",
+      "name": "接触型",
+      "nameEn": "Contact",
+      "description": "接触型毒素只要接触皮肤即可生效。接触者必须进行体质豁免检定，否则会受到效果影响。"
+    },
+    {
+      "id": "ingested",
+      "name": "摄入型",
+      "nameEn": "Ingested",
+      "description": "摄入型毒素必须被吞咽才能生效。毒素的剂量决定了其效果的强度。"
+    },
+    {
+      "id": "inhaled",
+      "name": "吸入型",
+      "nameEn": "Inhaled",
+      "description": "吸入型毒素是粉末或气体形式，吸入后生效。这类毒素通常会影响一定范围内的所有生物。"
+    },
+    {
+      "id": "injury",
+      "name": "伤口型",
+      "nameEn": "Injury",
+      "description": "伤口型毒素必须通过伤口进入血液才能生效，通常涂在武器或弹药上使用。"
+    }
+  ],
+  "poisons": [
+    {
+      "id": "assassins_blood",
+      "name": "刺客之血",
+      "nameEn": "Assassin's Blood",
+      "type": "ingested",
+      "price": "150 gp",
+      "dc": 10,
+      "description": "摄入这种毒素的生物必须进行DC 10的体质豁免检定。豁免失败则受到1d12点毒素伤害并陷入中毒状态持续24小时。豁免成功则受到一半伤害且不会中毒。",
+      "descriptionEn": "A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save, it takes 1d12 poison damage and is poisoned for 24 hours. On a successful save, it takes half damage and is not poisoned."
+    },
+    {
+      "id": "burnt_othur_fumes",
+      "name": "燃烧奥瑟烟",
+      "nameEn": "Burnt Othur Fumes",
+      "type": "inhaled",
+      "price": "500 gp",
+      "dc": 13,
+      "description": "吸入这种毒素的生物必须进行DC 13的体质豁免检定，豁免失败则受到3d6点毒素伤害，并且必须在每个回合开始时重复豁免。每次豁免失败再受3d6点毒素伤害。三次豁免成功后毒素效果结束。",
+      "descriptionEn": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or take 3d6 poison damage, and must repeat the save at the start of each turn. On each failure, it takes 3d6 poison damage. After three successes, the poison ends."
+    },
+    {
+      "id": "crawler_mucus",
+      "name": "爬行者粘液",
+      "nameEn": "Crawler Mucus",
+      "type": "contact",
+      "price": "200 gp",
+      "dc": 13,
+      "description": "接触这种毒素的生物必须进行DC 13的体质豁免检定，豁免失败则陷入中毒状态持续1分钟。中毒期间目标处于瘫痪状态。目标可在每个回合结束时重复豁免，成功则结束效果。",
+      "descriptionEn": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. The poisoned creature is paralyzed. The creature can repeat the save at end of each turn, ending the effect on a success."
+    },
+    {
+      "id": "drow_poison",
+      "name": "卓尔毒药",
+      "nameEn": "Drow Poison",
+      "type": "injury",
+      "price": "200 gp",
+      "dc": 13,
+      "description": "这种毒素通常由卓尔精灵制造。受到这种毒素伤害的生物必须进行DC 13的体质豁免检定，豁免失败则陷入中毒状态持续1小时。如果豁免失败5点或更多，目标在中毒期间还会陷入昏迷。受到伤害或被他人用动作摇醒可使其苏醒。",
+      "descriptionEn": "This poison is typically made by drow. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the save fails by 5 or more, the creature is also unconscious while poisoned. Taking damage or being shaken awake ends the unconscious condition."
+    },
+    {
+      "id": "essence_of_ether",
+      "name": "醚之精华",
+      "nameEn": "Essence of Ether",
+      "type": "inhaled",
+      "price": "300 gp",
+      "dc": 15,
+      "description": "吸入这种毒素的生物必须进行DC 15的体质豁免检定，豁免失败则陷入中毒状态持续8小时。中毒期间目标处于昏迷状态。受到伤害或被他人用动作摇醒可使其苏醒。",
+      "descriptionEn": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 8 hours. The poisoned creature is unconscious. Taking damage or being shaken awake ends the effect."
+    },
+    {
+      "id": "malice",
+      "name": "恶意",
+      "nameEn": "Malice",
+      "type": "inhaled",
+      "price": "250 gp",
+      "dc": 15,
+      "description": "吸入这种毒素的生物必须进行DC 15的体质豁免检定，豁免失败则陷入中毒状态持续1小时。中毒期间目标处于目盲状态。",
+      "descriptionEn": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 1 hour. The poisoned creature is blinded."
+    },
+    {
+      "id": "midnight_tears",
+      "name": "午夜之泪",
+      "nameEn": "Midnight Tears",
+      "type": "ingested",
+      "price": "1500 gp",
+      "dc": 17,
+      "description": "摄入这种毒素的生物在午夜之前不会受到任何影响。如果毒素在那之前没有被中和，生物必须进行DC 17的体质豁免检定，豁免失败则受到9d6点毒素伤害，成功则受到一半伤害。",
+      "descriptionEn": "A creature that ingests this poison suffers no effect until midnight. At that time, the creature must succeed on a DC 17 Constitution saving throw, taking 9d6 poison damage on a failed save, or half as much on a successful one."
+    },
+    {
+      "id": "oil_of_taggit",
+      "name": "塔吉特油",
+      "nameEn": "Oil of Taggit",
+      "type": "contact",
+      "price": "400 gp",
+      "dc": 13,
+      "description": "接触这种毒素的生物必须进行DC 13的体质豁免检定，豁免失败则陷入中毒状态持续24小时。中毒期间目标处于昏迷状态。受到伤害可使其苏醒。",
+      "descriptionEn": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or become poisoned for 24 hours. The poisoned creature is unconscious. Taking damage awakens the creature."
+    },
+    {
+      "id": "pale_tincture",
+      "name": "苍白酊剂",
+      "nameEn": "Pale Tincture",
+      "type": "ingested",
+      "price": "250 gp",
+      "dc": 16,
+      "description": "摄入这种毒素的生物必须进行DC 16的体质豁免检定，豁免失败则受到1d6点毒素伤害并陷入中毒状态。中毒期间，每24小时重复豁免，每次失败再受1d6点毒素伤害。连续七次豁免成功后效果结束，或者使用次级复原术可以提前结束。",
+      "descriptionEn": "A creature subjected to this poison must succeed on a DC 16 Constitution saving throw or take 1d6 poison damage and become poisoned. The poisoned creature must repeat the save every 24 hours, taking 1d6 poison damage on each failure. After seven successful saves, the effect ends, or lesser restoration can end it early."
+    },
+    {
+      "id": "purple_worm_poison",
+      "name": "紫虫毒液",
+      "nameEn": "Purple Worm Poison",
+      "type": "injury",
+      "price": "2000 gp",
+      "dc": 19,
+      "description": "这种毒素必须从死亡或失去行动能力的紫虫身上采集。受到这种毒素伤害的生物必须进行DC 19的体质豁免检定，豁免失败则受到12d6点毒素伤害，成功则受到一半伤害。",
+      "descriptionEn": "This poison must be harvested from a dead or incapacitated purple worm. A creature subjected to this poison must make a DC 19 Constitution saving throw, taking 12d6 poison damage on a failed save, or half as much on a successful one."
+    },
+    {
+      "id": "serpent_venom",
+      "name": "蛇毒",
+      "nameEn": "Serpent Venom",
+      "type": "injury",
+      "price": "200 gp",
+      "dc": 11,
+      "description": "这种毒素必须从死亡或失去行动能力的巨蛇身上采集。受到这种毒素伤害的生物必须进行DC 11的体质豁免检定，豁免失败则受到3d6点毒素伤害，成功则受到一半伤害。",
+      "descriptionEn": "This poison must be harvested from a dead or incapacitated giant poisonous snake. A creature subjected to this poison must succeed on a DC 11 Constitution saving throw, taking 3d6 poison damage on a failed save, or half as much on a successful one."
+    },
+    {
+      "id": "torpor",
+      "name": "麻木剂",
+      "nameEn": "Torpor",
+      "type": "ingested",
+      "price": "600 gp",
+      "dc": 15,
+      "description": "摄入这种毒素的生物必须进行DC 15的体质豁免检定，豁免失败则陷入中毒状态持续4d6小时。中毒期间目标处于失能状态。",
+      "descriptionEn": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 4d6 hours. The poisoned creature is incapacitated."
+    },
+    {
+      "id": "truth_serum",
+      "name": "吐真剂",
+      "nameEn": "Truth Serum",
+      "type": "ingested",
+      "price": "150 gp",
+      "dc": 11,
+      "description": "摄入这种毒素的生物必须进行DC 11的体质豁免检定。豁免成功则不受影响。豁免失败则陷入中毒状态持续1小时。中毒期间目标无法故意说谎，就好像受到了侦测真言法术的影响一样。",
+      "descriptionEn": "A creature subjected to this poison must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. The poisoned creature can't knowingly speak a lie, as if under the effect of a zone of truth spell."
+    },
+    {
+      "id": "wyvern_poison",
+      "name": "飞龙毒液",
+      "nameEn": "Wyvern Poison",
+      "type": "injury",
+      "price": "1200 gp",
+      "dc": 15,
+      "description": "这种毒素必须从死亡或失去行动能力的飞龙身上采集。受到这种毒素伤害的生物必须进行DC 15的体质豁免检定，豁免失败则受到7d6点毒素伤害，成功则受到一半伤害。",
+      "descriptionEn": "This poison must be harvested from a dead or incapacitated wyvern. A creature subjected to this poison must make a DC 15 Constitution saving throw, taking 7d6 poison damage on a failed save, or half as much on a successful one."
+    }
+  ],
+  "craftingRules": {
+    "description": "制作毒素需要熟练毒药工具包，并且需要合适的原材料。制作时间和成本因毒素的稀有程度和复杂性而异。",
+    "descriptionEn": "Crafting poisons requires proficiency with a poisoner's kit and appropriate raw materials. The time and cost vary based on the rarity and complexity of the poison.",
+    "harvestingDC": {
+      "description": "从生物身上采集毒素通常需要进行自然或医药检定，DC通常为10-20不等。",
+      "descriptionEn": "Harvesting poison from a creature usually requires a Nature or Medicine check, with DC typically ranging from 10-20."
+    }
+  }
+}

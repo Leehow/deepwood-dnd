@@ -1,0 +1,12 @@
+{
+  "total": 443,
+  "srd_matched": 262,
+  "llm_processed": 13,
+  "proficiencies_added": 169,
+  "ac_type_added": 262,
+  "damage_arrays_fixed": 262,
+  "cr_fixed": 43,
+  "senses_enriched": 60,
+  "duplicates_removed": 443,
+  "errors": []
+}

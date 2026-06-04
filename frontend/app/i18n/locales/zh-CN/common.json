@@ -1,0 +1,378 @@
+{
+  "app": {
+    "name": "Deepwood",
+    "tagline": "D&D 5E 在线跑团平台",
+    "shortName": "DW"
+  },
+  "actions": {
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "confirm": "确认",
+    "back": "返回",
+    "close": "关闭",
+    "retry": "重试",
+    "loading": "加载中..."
+  },
+  "language": {
+    "label": "语言",
+    "en-US": "English",
+    "zh-CN": "中文"
+  },
+  "errors": {
+    "generic": "出错了，请重试。",
+    "networkUnavailable": "无法连接到服务器。"
+  },
+  "spellCard": {
+    "badges": {
+      "concentration": "专注",
+      "ritual": "仪式"
+    },
+    "tts": {
+      "readDescription": "朗读法术描述",
+      "stopReading": "停止朗读"
+    },
+    "labels": {
+      "castingTime": "施法时间",
+      "range": "施法距离",
+      "duration": "持续时间",
+      "target": "目标",
+      "components": "法术成分",
+      "description": "法术描述",
+      "availableClasses": "可用职业",
+      "damage": "伤害",
+      "healing": "治疗",
+      "saveCheck": "豁免检定",
+      "areaOfEffect": "影响区域"
+    },
+    "saveEffect": {
+      "halfSuffix": " (半伤)"
+    },
+    "tooltips": {
+      "viewDetails": "查看法术详情"
+    },
+    "sections": {
+      "combatEffects": "战斗效果",
+      "spellEffects": "法术效果",
+      "mechanicalEffects": "机械效果",
+      "atHigherLevels": "升环施法",
+      "atHigherLevelsShort": "升环",
+      "cantripScaling": "戏法成长",
+      "statusEffects": "状态效果",
+      "creatureTypes": "特定生物类型",
+      "invocationBoost": "魔能祈唤强化"
+    },
+    "saveSuccess": {
+      "half": "成功: 伤害减半",
+      "none": "成功: 无效果",
+      "partial": "成功: 部分效果"
+    },
+    "area": {
+      "upTo": "至多",
+      "feet": "尺"
+    },
+    "zone": {
+      "heavyObscurement": "重度遮蔽",
+      "lightObscurement": "轻度遮蔽",
+      "difficultTerrain": "困难地形"
+    },
+    "castOption": {
+      "enlarge": "变巨",
+      "reduce": "缩小"
+    }
+  },
+  "statusEffectsDialog": {
+    "title": "状态效果",
+    "closeTitle": "关闭",
+    "listSeparator": "、",
+    "breakConditions": {
+      "damage": "受到伤害",
+      "shaken": "被摇醒",
+      "template": "满足条件时结束：{{list}}"
+    },
+    "toolbar": {
+      "advanceRound": "本地-1轮",
+      "advanceRoundHint": "仅本地手动维护：将本面板追踪的状态时长各减 1 轮，不推进世界时间，也不结算法术 runtime。要推进全局时间请用顶部的「+1轮」。",
+      "shortRest": "短休 (1h)",
+      "longRest": "长休 (8h)"
+    },
+    "concentration": {
+      "label": "专注",
+      "helpTitle": "什么是专注？",
+      "helpBody1": "部分法术需要你保持专注来维持效果。受到伤害时需进行体质豁免（DC为10或伤害值的一半，取较高者），失败则失去专注。",
+      "helpBody2": "同一时间只能专注于一个法术，施放新的专注法术会自动终止当前专注。",
+      "cantrip": "戏法",
+      "levelN": "{{n}}环",
+      "viewSpellDetail": "查看法术详情",
+      "break": "解除",
+      "breakTitle": "解除专注",
+      "rounds": "{{n}} 轮",
+      "roundsOf": "{{n}}/{{total}} 轮",
+      "arrow": "→"
+    },
+    "incomingBuffs": {
+      "title": "受到的法术增益",
+      "fromCaster": "来自 {{name}}",
+      "rounds": "{{n}} 轮"
+    },
+    "advDisadv": {
+      "title": "优劣势",
+      "categories": {
+        "checks": "检定",
+        "attacks": "攻击骰",
+        "beingAttacked": "被攻击",
+        "saves": "豁免"
+      },
+      "states": {
+        "both": "优势+劣势(抵消)",
+        "adv": "⬆ 优势",
+        "disadv": "⬇ 劣势"
+      },
+      "tipAdv": "优势: {{src}}",
+      "tipDisadv": "劣势: {{src}}",
+      "sources": {
+        "exhaustion": "力竭{{lv}}级",
+        "blinded": "目盲",
+        "frightened": "恐惧",
+        "invisible": "隐形",
+        "poisoned": "中毒",
+        "prone": "倒地",
+        "proneMelee": "倒地(近战)",
+        "restrained": "束缚",
+        "restrainedDex": "束缚(敏捷)",
+        "stunned": "震慑",
+        "unconscious": "昏迷",
+        "paralyzed": "麻痹",
+        "petrified": "石化",
+        "favoredEnemy": "宿敌(生存追踪/智力回忆)",
+        "favoredTerrain": "偏好地形(智力/感知)",
+        "circleLand": "大地结社(自然/生存)",
+        "effectParam": "{{name}}({{param}})"
+      }
+    },
+    "specialBuffs": {
+      "title": "特殊增益",
+      "knowledgeTitle": "知识通道：{{label}}",
+      "knowledgeDesc": "获得{{kind}}熟练",
+      "knowledgeRemainingSuffix": " · 剩余 {{remaining}}",
+      "favoredEnemyTitle": "宿敌：{{detail}}",
+      "favoredEnemyDesc": "追踪和回忆相关检定优势",
+      "favoredEnemyHumanoidDetail": "{{label}}（{{races}}）",
+      "favoredTerrainTitle": "偏好地形：{{label}}",
+      "favoredTerrainDesc": "地形相关探索检定优势",
+      "circleLandTitle": "大地结社：{{label}}",
+      "circleLandDesc": "自然/生存相关检定优势",
+      "match": "(环境匹配)",
+      "skill": "技能",
+      "tool": "工具",
+      "on": "ON",
+      "off": "OFF"
+    },
+    "addEffect": "+ 添加效果",
+    "proficiencyWarnings": { "title": "装备不熟练" },
+    "customEffects": {
+      "title": "自定义效果",
+      "advShort": "⬆优势",
+      "disadvShort": "⬇劣势",
+      "aura": "光环 {{radius}}尺",
+      "auraWithTargets": "光环 {{radius}}尺 · {{targets}}",
+      "applies": "附加：{{list}}",
+      "removeTitle": "删除效果"
+    },
+    "conditions": {
+      "title": "当前状态",
+      "quickRef": "状态速查",
+      "quickRefHint": "（点击切换）",
+      "addExhaustion": "+ 力竭",
+      "removeTitle": "移除",
+      "spellProjectedSuffix": "（法术效果）",
+      "sourceLabels": {
+        "spell": "法术",
+        "dm": "DM",
+        "ability": "能力",
+        "item": "物品",
+        "environment": "环境"
+      },
+      "casterSeparator": " · "
+    },
+    "removal": {
+      "concentration": "专注维持",
+      "save": "豁免",
+      "duration": "限时",
+      "spellEnd": "法术结束",
+      "manual": "手动",
+      "saveDC": "DC {{dc}}",
+      "expiresAt": "到期 第{{day}}天 {{hour}}:{{minute}}:{{second}}",
+      "roundsValue": "{{n}}轮",
+      "remainingPrefix": "剩余 {{label}}"
+    },
+    "duration": {
+      "permanent": "永久",
+      "permanentLabel": "持续时间：永久",
+      "label": "持续：{{remaining}} / {{total}}",
+      "rounds": "轮",
+      "minutes": "分钟",
+      "hours": "小时",
+      "equalsRounds": "= {{n}}轮",
+      "roundUnit": "轮",
+      "minuteUnit": "分钟",
+      "hourUnit": "小时",
+      "zeroRounds": "0轮"
+    },
+    "exhaustion": {
+      "title": "力竭 等级 {{n}}",
+      "dying": "(濒死)",
+      "levels": {
+        "1": { "desc": "属性检定劣势", "tag": "⬇ 检定" },
+        "2": { "desc": "速度减半", "tag": "½ 速度" },
+        "3": { "desc": "攻击骰和豁免劣势", "tag": "⬇ 攻击/豁免" },
+        "4": { "desc": "HP上限减半", "tag": "½ HP" },
+        "5": { "desc": "速度降为0", "tag": "⛔ 速度" },
+        "6": { "desc": "死亡", "tag": "💀" }
+      }
+    },
+    "empty": {
+      "title": "无活跃状态效果",
+      "hint": "DM可在此为角色添加效果"
+    },
+    "saveAbilities": {
+      "strength": "力量",
+      "dexterity": "敏捷",
+      "constitution": "体质",
+      "intelligence": "智力",
+      "wisdom": "感知",
+      "charisma": "魅力",
+      "fallback": "豁免"
+    },
+    "form": {
+      "namePlaceholder": "效果名称（如：祝福术、仙灵之火）",
+      "modifiersLabel": "修改项：",
+      "helpTitle": "操作说明",
+      "helpIntro": "每条修改项左侧有三个按钮，选择效果类型：",
+      "helpBonus": "数值加减 — 直接增减属性值（如 AC+2, 攻击骰-1）",
+      "helpAdv": "优势骰 — 掷2次d20取高值，更容易大成功",
+      "helpDisadv": "劣势骰 — 掷2次d20取低值，更容易大失败",
+      "helpRight": "右侧下拉框选择影响的属性（攻击骰、被攻击、豁免、技能等）",
+      "advShort": "⬆ 优势",
+      "disadvShort": "⬇ 劣势",
+      "addRow": "+ 添加修改项",
+      "auraToggleTitle": "作为光环状态",
+      "auraToggleDesc": "激活后会在周围自动附加选中的状态",
+      "auraRadius": "半径（尺）",
+      "auraIcon": "图标",
+      "auraColor": "颜色",
+      "auraDescription": "说明（可选）",
+      "auraDescPlaceholder": "例如：范围内敌人陷入恐惧",
+      "auraAffects": "影响对象",
+      "auraSelf": "自身",
+      "auraAllies": "友方",
+      "auraEnemies": "敌方",
+      "auraConscious": "需保持清醒",
+      "applyConditions": "周围附加状态",
+      "applyConditionsCount": "{{n}} 个",
+      "durationLabel": "持续：",
+      "durPermanent": "永久",
+      "durRounds": "轮",
+      "durMinutes": "分钟",
+      "durHours": "小时",
+      "equalsRounds": "= {{n}}轮",
+      "cancel": "取消",
+      "confirm": "确认添加",
+      "bonusTitle": "数值加减",
+      "advTitle": "优势骰",
+      "disadvTitle": "劣势骰",
+      "deleteRow": "删除"
+    },
+    "modifierGroups": {
+      "core": "核心",
+      "abilities": "属性值",
+      "saves": "豁免",
+      "skills": "技能"
+    },
+    "params": {
+      "ac": "AC",
+      "hp_max": "HP上限",
+      "attack": "攻击骰",
+      "being_attacked": "被攻击",
+      "damage": "伤害",
+      "speed": "速度",
+      "initiative": "先攻",
+      "strength": "力量",
+      "dexterity": "敏捷",
+      "constitution": "体质",
+      "intelligence": "智力",
+      "wisdom": "感知",
+      "charisma": "魅力",
+      "str_save": "力量豁免",
+      "dex_save": "敏捷豁免",
+      "con_save": "体质豁免",
+      "int_save": "智力豁免",
+      "wis_save": "感知豁免",
+      "cha_save": "魅力豁免",
+      "all_saves": "全豁免",
+      "athletics": "运动",
+      "acrobatics": "杂技",
+      "sleight_of_hand": "巧手",
+      "stealth": "隐匿",
+      "arcana": "奥秘",
+      "history": "历史",
+      "investigation": "调查",
+      "nature": "自然",
+      "religion": "宗教",
+      "animal_handling": "驯兽",
+      "insight": "洞悉",
+      "medicine": "医药",
+      "perception": "察觉",
+      "survival": "求生",
+      "deception": "欺瞒",
+      "intimidation": "威吓",
+      "performance": "表演",
+      "persuasion": "游说",
+      "all_checks": "全检定"
+    },
+    "conditionNames": {
+      "blinded": "目盲",
+      "charmed": "魅惑",
+      "deafened": "耳聋",
+      "exhaustion": "力竭",
+      "frightened": "恐惧",
+      "grappled": "擒抱",
+      "incapacitated": "失能",
+      "invisible": "隐形",
+      "paralyzed": "麻痹",
+      "petrified": "石化",
+      "poisoned": "中毒",
+      "prone": "倒地",
+      "restrained": "束缚",
+      "stunned": "震慑",
+      "unconscious": "昏迷",
+      "silenced": "沉默",
+      "diseased": "疾病",
+      "sleep": "睡眠",
+      "aging": "衰老",
+      "confused": "困惑"
+    },
+    "conditionDesc": {
+      "blinded": "攻击劣势，被攻击优势",
+      "charmed": "不能攻击施术者",
+      "deafened": "无法听到声音",
+      "exhaustion": "累积6级逐级加重",
+      "frightened": "攻击/检定劣势",
+      "grappled": "速度为0",
+      "incapacitated": "无法行动或反应",
+      "invisible": "攻击优势，被攻击劣势",
+      "paralyzed": "失能，力/敏豁免自动失败",
+      "petrified": "石化，全伤害抗性",
+      "poisoned": "攻击/检定劣势",
+      "prone": "攻击劣势，近战被优势",
+      "restrained": "速度0，攻击劣势",
+      "stunned": "失能，力/敏豁免自动失败",
+      "unconscious": "近战命中自动暴击",
+      "silenced": "无法施放需要V成分的法术",
+      "diseased": "根据疾病类型不同",
+      "sleep": "受伤或被摇醒时苏醒",
+      "aging": "加速衰老",
+      "confused": "随机行动，无法反应"
+    }
+  }
+}

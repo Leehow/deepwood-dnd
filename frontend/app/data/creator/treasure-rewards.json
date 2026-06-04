@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "source": "D&D 5E 城主指南",
+    "chapter": "第7章 宝藏",
+    "description": "宝藏和奖励相关的随机表和指南"
+  },
+  "treasure_types": {
+    "description": "宝藏的基本类型",
+    "types": [
+      {
+        "type": "硬币",
+        "type_en": "Coins",
+        "coins": ["铜币(cp)", "银币(sp)", "银金币(ep)", "金币(gp)", "铂金币(pp)"],
+        "note": "50枚任何类型的硬币重1磅"
+      },
+      {
+        "type": "宝石",
+        "type_en": "Gemstones",
+        "description": "小巧轻便，比同等价值的硬币更易于保存"
+      },
+      {
+        "type": "艺术品",
+        "type_en": "Art Objects",
+        "description": "纯金神像、镶宝石项链、古代绘画等装饰性物品"
+      },
+      {
+        "type": "魔法物品",
+        "type_en": "Magic Items",
+        "description": "护甲、魔药、卷轴、戒指、权杖、法杖、魔杖、武器和奇物"
+      }
+    ]
+  },
+  "individual_treasure": {
+    "description": "个体宝藏表 - 单个生物携带的宝藏",
+    "tables": [
+      {
+        "cr_range": "0-4",
+        "dice": "d100",
+        "results": [
+          { "roll": [1, 30], "coins": "5d6 cp", "average": "17 cp" },
+          { "roll": [31, 60], "coins": "4d6 sp", "average": "14 sp" },
+          { "roll": [61, 70], "coins": "3d6 ep", "average": "10 ep" },
+          { "roll": [71, 95], "coins": "3d6 gp", "average": "10 gp" },
+          { "roll": [96, 100], "coins": "1d6 pp", "average": "3 pp" }
+        ]
+      },
+      {
+        "cr_range": "5-10",
+        "dice": "d100",
+        "results": [
+          { "roll": [1, 30], "coins": "4d6×100 cp + 1d6×10 ep", "average": "1400 cp + 35 ep" },
+          { "roll": [31, 60], "coins": "6d6×10 sp + 2d6×10 ep", "average": "210 sp + 70 ep" },
+          { "roll": [61, 70], "coins": "3d6×10 ep + 2d6×10 gp", "average": "105 ep + 70 gp" },
+          { "roll": [71, 95], "coins": "4d6×10 gp", "average": "140 gp" },
+          { "roll": [96, 100], "coins": "2d6×10 gp + 3d6 pp", "average": "70 gp + 10 pp" }
+        ]
+      },
+      {
+        "cr_range": "11-16",
+        "dice": "d100",
+        "results": [
+          { "roll": [1, 20], "coins": "4d6×100 sp + 1d6×100 gp", "average": "1400 sp + 350 gp" },
+          { "roll": [21, 35], "coins": "1d6×100 ep + 1d6×100 gp", "average": "350 ep + 350 gp" },
+          { "roll": [36, 75], "coins": "2d6×100 gp + 1d6×10 pp", "average": "700 gp + 35 pp" },
+          { "roll": [76, 100], "coins": "2d6×100 gp + 2d6×10 pp", "average": "700 gp + 70 pp" }
+        ]
+      },
+      {
+        "cr_range": "17+",
+        "dice": "d100",
+        "results": [
+          { "roll": [1, 15], "coins": "2d6×1000 ep + 8d6×100 gp", "average": "7000 ep + 2800 gp" },
+          { "roll": [16, 55], "coins": "1d6×1000 gp + 1d6×100 pp", "average": "3500 gp + 350 pp" },
+          { "roll": [56, 100], "coins": "1d6×1000 gp + 2d6×100 pp", "average": "3500 gp + 700 pp" }
+        ]
+      }
+    ]
+  },
+  "hoard_treasure": {
+    "description": "库藏宝藏表 - 大群生物共同积累的财富或强大生物的宝库",
+    "usage": "用于宝库、团体财富、任务奖励等",
+    "tables": [
+      {
+        "cr_range": "0-4",
+        "base_coins": {
+          "cp": "6d6×100 (2100)",
+          "sp": "3d6×100 (1050)",
+          "gp": "2d6×10 (70)"
+        },
+        "gems_arts_magic": "根据d100骰值决定宝石/艺术品数量和魔法物品"
+      },
+      {
+        "cr_range": "5-10",
+        "base_coins": {
+          "cp": "2d6×100 (700)",
+          "sp": "2d6×1000 (7000)",
+          "gp": "6d6×100 (2100)",
+          "pp": "3d6×10 (105)"
+        }
+      },
+      {
+        "cr_range": "11-16",
+        "base_coins": {
+          "gp": "4d6×1000 (14000)",
+          "pp": "5d6×100 (1750)"
+        }
+      },
+      {
+        "cr_range": "17+",
+        "base_coins": {
+          "gp": "12d6×1000 (42000)",
+          "pp": "8d6×1000 (28000)"
+        }
+      }
+    ],
+    "typical_campaign_hoards": {
+      "description": "典型战役中队伍可以收获的宝库数量",
+      "cr_0_4": 7,
+      "cr_5_10": 18,
+      "cr_11_16": 20,
+      "cr_17_plus": 8
+    }
+  },
+  "gemstones": {
+    "description": "宝石随机表",
+    "tables": [
+      {
+        "value": "10 gp",
+        "dice": "d12",
+        "gems": [
+          { "roll": 1, "name": "蓝铜矿", "nameEn": "azurite", "description": "深蓝色斑驳纹理不透明宝石" },
+          { "roll": 2, "name": "条纹玛瑙", "nameEn": "banded agate", "description": "棕色、蓝色、白色或红色条纹的透明宝石" },
+          { "roll": 3, "name": "蓝水晶", "nameEn": "blue quartz", "description": "淡蓝色透明宝石" },
+          { "roll": 4, "name": "眼纹玛瑙", "nameEn": "eye agate", "description": "灰色、白色、棕色、蓝色或绿色的半透明圆形宝石" },
+          { "roll": 5, "name": "赭石", "nameEn": "hematite", "description": "灰黑色不透明宝石" },
+          { "roll": 6, "name": "天青石", "nameEn": "lapis lazuli", "description": "带黄斑的深浅蓝混色不透明宝石" },
+          { "roll": 7, "name": "孔雀石", "nameEn": "malachite", "description": "带条纹的深浅绿混色不透明宝石" },
+          { "roll": 8, "name": "藓纹玛瑙", "nameEn": "moss agate", "description": "带灰色或绿色藓状斑点的粉色或黄白色透明宝石" },
+          { "roll": 9, "name": "黑曜石", "nameEn": "obsidian", "description": "黑色不透明宝石" },
+          { "roll": 10, "name": "红纹石", "nameEn": "rhodochrosite", "description": "浅粉色不透明宝石" },
+          { "roll": 11, "name": "虎眼石", "nameEn": "tiger eye", "description": "棕色中部夹金的透明宝石" },
+          { "roll": 12, "name": "绿松石", "nameEn": "turquoise", "description": "浅青绿色不透明宝石" }
+        ]
+      },
+      {
+        "value": "50 gp",
+        "dice": "d12",
+        "gems": [
+          { "roll": 1, "name": "血石", "nameEn": "bloodstone", "description": "带红斑的深灰色不透明宝石" },
+          { "roll": 2, "name": "红玉髓", "nameEn": "carnelian", "description": "橙色到棕红色的不透明宝石" },
+          { "roll": 3, "name": "蓝玉髓", "nameEn": "chalcedony", "description": "乳白色不透明宝石" },
+          { "roll": 4, "name": "绿玉髓", "nameEn": "chrysoprase", "description": "绿色不透明宝石" },
+          { "roll": 5, "name": "黄水晶", "nameEn": "citrine", "description": "浅黄褐色透明宝石" },
+          { "roll": 6, "name": "碧玉", "nameEn": "jasper", "description": "蓝色、黑色或褐色的不透明宝石" },
+          { "roll": 7, "name": "月长石", "nameEn": "moonstone", "description": "带淡蓝光芒的白色透明宝石" },
+          { "roll": 8, "name": "缟玛瑙", "nameEn": "onyx", "description": "黑白相间或纯黑、纯白色的不透明宝石" },
+          { "roll": 9, "name": "石英", "nameEn": "quartz", "description": "白色、烟灰色或黄色的透明宝石" },
+          { "roll": 10, "name": "缠丝玛瑙", "nameEn": "sardonyx", "description": "带红色和白色带状条纹的不透明宝石" },
+          { "roll": 11, "name": "星光粉晶", "nameEn": "star rose quartz", "description": "中央闪着白星的玫瑰色透明宝石" },
+          { "roll": 12, "name": "锆石", "nameEn": "zircon", "description": "淡青绿色的透明宝石" }
+        ]
+      },
+      {
+        "value": "100 gp",
+        "dice": "d10",
+        "gems": [
+          { "roll": 1, "name": "琥珀", "nameEn": "amber", "description": "水金色到油金色的透明宝石" },
+          { "roll": 2, "name": "紫晶", "nameEn": "amethyst", "description": "深紫色的透明宝石" },
+          { "roll": 3, "name": "金绿玉", "nameEn": "chrysoberyl", "description": "黄绿色到淡绿色的透明宝石" },
+          { "roll": 4, "name": "珊瑚", "nameEn": "coral", "description": "深红色的不透明宝石" },
+          { "roll": 5, "name": "石榴石", "nameEn": "garnet", "description": "红色、棕绿色或紫色的透明宝石" },
+          { "roll": 6, "name": "翡翠", "nameEn": "jade", "description": "浅绿色、深绿色或白色的透明宝石" },
+          { "roll": 7, "name": "黑玉", "nameEn": "jet", "description": "深黑色的不透明宝石" },
+          { "roll": 8, "name": "珍珠", "nameEn": "pearl", "description": "带光泽的白色、黄色或粉红色不透明宝石" },
+          { "roll": 9, "name": "尖晶石", "nameEn": "spinel", "description": "红色、红褐色或深绿色的透明宝石" },
+          { "roll": 10, "name": "电气石", "nameEn": "tourmaline", "description": "淡绿色、蓝色、棕色或红色的透明宝石" }
+        ]
+      },
+      {
+        "value": "500 gp",
+        "dice": "d6",
+        "gems": [
+          { "roll": 1, "name": "紫翠玉", "nameEn": "alexandrite", "description": "深绿色的透明宝石" },
+          { "roll": 2, "name": "蓝晶", "nameEn": "aquamarine", "description": "淡青绿色的透明宝石" },
+          { "roll": 3, "name": "黑珍珠", "nameEn": "black pearl", "description": "纯黑色的不透明宝石" },
+          { "roll": 4, "name": "蓝尖晶石", "nameEn": "blue spinel", "description": "深蓝色的透明宝石" },
+          { "roll": 5, "name": "橄榄石", "nameEn": "peridot", "description": "油橄榄绿色的透明宝石" },
+          { "roll": 6, "name": "黄玉", "nameEn": "topaz", "description": "金黄色的透明宝石" }
+        ]
+      },
+      {
+        "value": "1000 gp",
+        "dice": "d8",
+        "gems": [
+          { "roll": 1, "name": "黑蛋白石", "nameEn": "black opal", "description": "带黑影和金斑的深绿色透明宝石" },
+          { "roll": 2, "name": "蓝色蓝宝石", "nameEn": "blue sapphire", "description": "蓝白色到中蓝色的透明宝石" },
+          { "roll": 3, "name": "绿宝石", "nameEn": "emerald", "description": "深翠绿色的透明宝石" },
+          { "roll": 4, "name": "火蛋白石", "nameEn": "fire opal", "description": "火红色的透明宝石" },
+          { "roll": 5, "name": "蛋白石", "nameEn": "opal", "description": "带绿点和金点的淡蓝色透明宝石" },
+          { "roll": 6, "name": "星彩红宝石", "nameEn": "star ruby", "description": "中央带白色星形的透明红宝石" },
+          { "roll": 7, "name": "星彩蓝宝石", "nameEn": "star sapphire", "description": "中央带白色星形的透明蓝宝石" },
+          { "roll": 8, "name": "黄色蓝宝石", "nameEn": "yellow sapphire", "description": "焰黄色或黄绿色的透明宝石" }
+        ]
+      },
+      {
+        "value": "5000 gp",
+        "dice": "d4",
+        "gems": [
+          { "roll": 1, "name": "黑蓝宝石", "nameEn": "black sapphire", "description": "闪耀高光带光泽的黑色半透明宝石" },
+          { "roll": 2, "name": "钻石", "nameEn": "diamond", "description": "蓝白色、鲜黄色、粉红色、棕色或蓝色的透明宝石" },
+          { "roll": 3, "name": "红锆石", "nameEn": "jacinth", "description": "焰橘色的透明宝石" },
+          { "roll": 4, "name": "红宝石", "nameEn": "ruby", "description": "红色到深红色的通透宝石" }
+        ]
+      }
+    ]
+  },
+  "art_objects": {
+    "description": "艺术品随机表",
+    "tables": [
+      {
+        "value": "25 gp",
+        "dice": "d10",
+        "items": [
+          "银水壶", "骨制雕像", "金制小手镯", "金丝织制的法衣",
+          "由银丝缝制的黑天鹅绒面具", "点缀着银丝的铜制酒杯",
+          "成对的骨制骰子", "镶在彩绘木框中的小镜子",
+          "绣花丝绸手帕", "内里画着彩绘肖像的金质链坠盒"
+        ]
+      },
+      {
+        "value": "250 gp",
+        "dice": "d10",
+        "items": [
+          "镶有血石的金戒指", "象牙制雕像", "金质大手镯",
+          "带宝石坠饰的银项链", "青铜王冠", "带金色刺绣的丝绸长袍",
+          "造工精良的大壁毯", "镶有翡翠的黄铜马克杯",
+          "装着绿松石动物塑像的盒子", "带银金装饰的黄金鸟笼"
+        ]
+      },
+      {
+        "value": "750 gp",
+        "dice": "d10",
+        "items": [
+          "镶有月长石的银酒杯", "剑柄上镶嵌着黑玉的钢质镀银长剑",
+          "由异国木材精雕而成、以锆石和象牙装饰的竖琴", "金质小型神像",
+          "镶有红色石榴石作双眼的金龙形梳子",
+          "压印着金箔并镶有紫晶的软木瓶塞",
+          "柄端镶着黑珍珠的银金质仪式匕首",
+          "由白银和黄金制成的胸针",
+          "带黄金配件和嵌体的黑曜石雕像", "涂成金色的战争面具"
+        ]
+      },
+      {
+        "value": "2500 gp",
+        "dice": "d10",
+        "items": [
+          "镶有火蛋白石的纯金链条", "古老的油画杰作",
+          "镶有众多月长石且由绣花丝绸和天鹅绒织造而成的披风",
+          "镶一枚蓝宝石的铂金手镯", "镶着碎宝石的绣花手套",
+          "宝石脚镯", "黄金音乐盒",
+          "镶有四颗蓝晶的黄金头饰",
+          "用蓝色蓝宝石和月长石来模仿眼睛的眼罩",
+          "串有小粒粉红珍珠的项链"
+        ]
+      },
+      {
+        "value": "7500 gp",
+        "dice": "d10",
+        "items": [
+          "镶有宝石的黄金王冠", "镶有宝石的铂金戒指",
+          "镶有红宝石的小型黄金雕像", "镶有绿宝石的金杯",
+          "饰有铂金丝的黄金首饰盒", "涂成金色的儿童石棺",
+          "翡翠游戏盘和纯金棋子", "镶有宝石的金丝象牙角杯"
+        ]
+      }
+    ]
+  },
+  "magic_item_rarity": {
+    "description": "魔法物品稀有度",
+    "table": [
+      { "rarity": "普通", "rarityEn": "common", "min_level": 1, "value_range": "50-100 gp" },
+      { "rarity": "非普通", "rarityEn": "uncommon", "min_level": 1, "value_range": "101-500 gp" },
+      { "rarity": "珍稀", "rarityEn": "rare", "min_level": 5, "value_range": "501-5000 gp" },
+      { "rarity": "极珍稀", "rarityEn": "very rare", "min_level": 11, "value_range": "5001-50000 gp" },
+      { "rarity": "传说", "rarityEn": "legendary", "min_level": 17, "value_range": "50001+ gp" }
+    ],
+    "notes": [
+      "消耗品（药水、卷轴）的价值通常是同稀有度永久物品的一半",
+      "最强大的物品往往是独一无二的古董",
+      "稀有度对应着角色等级，可用于平衡奖励"
+    ]
+  },
+  "magic_item_categories": {
+    "description": "魔法物品类别",
+    "categories": [
+      { "category": "护甲", "categoryEn": "Armor", "note": "必须着装才能发挥魔法效果" },
+      { "category": "魔药", "categoryEn": "Potions", "note": "消耗品，喝下或涂抹后立即生效" },
+      { "category": "戒指", "categoryEn": "Rings", "note": "必须戴在手指上才能生效" },
+      { "category": "权杖", "categoryEn": "Rods", "note": "约2-3尺长，1寸厚，2-5磅重" },
+      { "category": "卷轴", "categoryEn": "Scrolls", "note": "消耗品，读取后释放魔法" },
+      { "category": "法杖", "categoryEn": "Staffs", "note": "约5-6尺长，可当长棍使用" },
+      { "category": "魔杖", "categoryEn": "Wands", "note": "约15寸长" },
+      { "category": "武器", "categoryEn": "Weapons", "note": "发射的弹药视为魔法" },
+      { "category": "奇物", "categoryEn": "Wondrous Items", "note": "各种杂项魔法物品" }
+    ]
+  },
+  "attunement": {
+    "description": "同调规则",
+    "rules": [
+      "一些魔法物品需要同调才能使用其魔法属性",
+      "同调需要短休期间对物品专注并保持物理接触",
+      "同一件物品一次只能与一个生物同调",
+      "一个生物不能同时与三件以上的魔法物品同调",
+      "同调在以下情况终止：不再满足先决条件、物品离开100尺超过24小时、生物死亡、另一生物同调该物品"
+    ]
+  },
+  "ai_usage": {
+    "description": "AI使用这些表格的建议",
+    "tips": [
+      "不要直接展示宝藏表格给用户，而是描述具体的宝藏",
+      "根据队伍等级选择合适CR范围的宝藏表",
+      "宝石和艺术品可以给宝藏增加故事性",
+      "魔法物品应该有来历和故事，不是随机掉落",
+      "传说级物品应该是独特的，有专属名称和历史"
+    ],
+    "example_descriptions": [
+      "在巨龙的宝库深处，你们发现了一堆闪闪发光的金币，上面散落着几颗血红色的红宝石...",
+      "老祭司递给你一枚银戒指，戒指上镶嵌着一颗月长石，在月光下泛着淡蓝色的光芒...",
+      "在古老的石棺中，你们找到了一把长剑，剑柄上镶嵌着黑玉，剑身刻着矮人文字..."
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "战役大厅 - DND 5E 跑团平台",
+    "description": "基于 D&D 5E 规则的在线跑团平台"
+  },
+  "brand": {
+    "tagline": "DND"
+  },
+  "userMenu": {
+    "fallbackName": "未登录",
+    "profile": "个人设置",
+    "myCharacters": "我的角色",
+    "spellbook": "法术大全",
+    "mapLibrary": "地图库",
+    "modules": "管理模组",
+    "apiSettings": "API设置",
+    "apiUsage": "API使用配置",
+    "logout": "退出登录"
+  },
+  "hero": {
+    "title": "冒险之旅，由此开始",
+    "subtitle": "实时地图 · 战斗管理 · AI 助手",
+    "roleDm": "👑 我是主持人",
+    "rolePlayer": "🎭 我是玩家",
+    "dmStepsLabel": "上传 PDF → AI 提取内容 → 创建战役 → 模组Tab选择 → 一键导入地图/怪物/物品",
+    "playerStepsLabel": "在下方选择战役加入 → 创建你的角色 → 等待 DM 开始游戏",
+    "dmSteps": {
+      "upload": "上传模组",
+      "ai": "AI解析",
+      "create": "创建战役",
+      "pick": "选择模组",
+      "import": "导入资源"
+    },
+    "playerSteps": {
+      "join": "加入战役",
+      "createCharacter": "创建角色",
+      "begin": "开始冒险"
+    },
+    "actions": {
+      "uploadModule": "上传模组",
+      "createCampaign": "创建战役",
+      "playerHint": "↓ 在下方战役列表中选择一个战役加入"
+    }
+  },
+  "campaigns": {
+    "sectionTitle": "正在进行的战役",
+    "empty": "暂无战役",
+    "emptyCta": "发起新的冒险",
+    "loadFailed": "加载战役失败",
+    "connectFailed": "无法连接到服务器",
+    "joinFailed": "加入战役失败",
+    "deleteFailed": "删除战役失败",
+    "deleteConfirm": "确定要删除战役\"{{name}}\"吗？此操作不可撤销！",
+    "statusInProgress": "⚔️ 进行中",
+    "statusRecruiting": "📜 招募中",
+    "dmBadge": "👑 DM",
+    "hostLabel": "主持人: {{name}}",
+    "levelLabel": "Lv.{{range}}",
+    "buttons": {
+      "enter": "进入战役",
+      "continue": "继续冒险",
+      "join": "加入冒险",
+      "full": "人数已满"
+    }
+  },
+  "sharedTemplates": {
+    "sectionTitle": "共享战役模板",
+    "sharedByBadge": "{{name}} 分享",
+    "view": "查看模板",
+    "delete": "删除模板",
+    "addToLibrary": "加入模板库",
+    "cloneSuccess": "已添加到你的模板库！创建新战役时可使用。",
+    "cloneOwnError": "这是你自己的模板，无需克隆。",
+    "cloneFailed": "添加模板失败",
+    "deleteConfirm": "确定要删除共享模板「{{name}}」吗？此操作不可撤销。",
+    "deleteFailed": "删除模板失败",
+    "defaultDm": "DM"
+  },
+  "footer": {
+    "fanContentPolicy": "粉丝内容政策",
+    "disclaimer": "本平台是根据粉丝内容政策许可的非官方粉丝内容。未经威世智批准/认可。部分材料是威世智海岸公司的财产。©Wizards of the Coast LLC."
+  }
+}

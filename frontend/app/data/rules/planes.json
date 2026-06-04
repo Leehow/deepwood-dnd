@@ -1,0 +1,485 @@
+{
+  "overview": {
+    "description": "多元宇宙由多个位面组成，每个位面都有独特的物理和魔法法则、居民和环境。位面旅行是高级冒险的重要部分",
+    "descriptionEn": "The multiverse consists of many planes, each with unique physical and magical laws, inhabitants, and environments. Planar travel is a key part of high-level adventures",
+    "purpose": "定义多元宇宙的结构和跨位面冒险规则",
+    "relatedRules": [
+      "位面旅行",
+      "内层位面",
+      "外层位面",
+      "异界",
+      "传送"
+    ],
+    "quickReference": "主物质位面是凡人的家园，其他位面包括元素位面、外层位面等"
+  },
+  "planesOverview": {
+    "description": "DND的大宇宙中充斥着众多各不相同的世界，它们以不同的异次元多维空间存在，或称之为存在位面。其中也包括了相对平凡的物质位面，即DM通常用以主持冒险的所有世界",
+    "descriptionEn": "The D&D multiverse contains countless different worlds existing in various extradimensional spaces called planes of existence"
+  },
+  "materialPlane": {
+    "id": "material_plane",
+    "name": "物质位面",
+    "nameEn": "Material Plane",
+    "description": "物质位面充满了凡俗的生命与平凡的物质，是构成其它位面的精神力与元素力交杂而成的存在物。所有奇幻游戏世界都存在于物质位面中",
+    "characteristics": [
+      "无限丰富的世界",
+      "魔法与物质交织",
+      "凡人生命的主要居所",
+      "多元宇宙的中心"
+    ],
+    "famousWorlds": [
+      {
+        "id": "greyhawk",
+        "name": "灰鹰",
+        "nameEn": "Greyhawk"
+      },
+      {
+        "id": "blackmoor",
+        "name": "黑沼",
+        "nameEn": "Blackmoor"
+      },
+      {
+        "id": "dragonlance",
+        "name": "龙枪",
+        "nameEn": "Dragonlance"
+      },
+      {
+        "id": "sundered_realms",
+        "name": "裂隙诸境",
+        "nameEn": "Sundered Realms",
+        "note": "本平台默认世界设定"
+      },
+      {
+        "id": "mystara",
+        "name": "密斯塔拉",
+        "nameEn": "Mystara"
+      },
+      {
+        "id": "birthright",
+        "name": "天赋神权",
+        "nameEn": "Birthright"
+      },
+      {
+        "id": "dark_sun",
+        "name": "浩劫残阳",
+        "nameEn": "Dark Sun"
+      },
+      {
+        "id": "eberron",
+        "name": "艾伯伦",
+        "nameEn": "Eberron"
+      }
+    ]
+  },
+  "echoPlanes": {
+    "name": "映射位面",
+    "nameEn": "Echo Planes",
+    "description": "与物质位面共享宇宙空间的平行维度，被称作映射位面或物质位面的镜像位面",
+    "planes": [
+      {
+        "id": "feywild",
+        "name": "妖精荒野",
+        "nameEn": "Feywild",
+        "alternateNames": [
+          "妖精位面",
+          "Plane of Faerie"
+        ],
+        "description": "光怪陆离的大地，充满热切渴望的小人，音乐与死亡的领域",
+        "characteristics": [
+          "永远处在黎明的辉光中",
+          "柔风中摇曳的灯火",
+          "巨大的萤火虫穿行于林地",
+          "朝阳或落日的余辉照亮天空",
+          "太阳静挂空中永不升起或落下"
+        ],
+        "regions": [
+          {
+            "name": "喜乐庭",
+            "nameEn": "Seelie Court",
+            "description": "精类主要领地"
+          },
+          {
+            "name": "哀怒精类领地",
+            "nameEn": "Unseelie Lands",
+            "description": "尖锐荆棘和粘稠沼泽的狩猎场"
+          }
+        ],
+        "inhabitants": "精类生物 (由召唤林地之精等法术召唤的生物)"
+      },
+      {
+        "id": "shadowfell",
+        "name": "堕影冥界",
+        "nameEn": "Shadowfell",
+        "alternateNames": [
+          "幽影位面",
+          "Plane of Shadow"
+        ],
+        "description": "光线阴暗之地，一切暗淡失色只剩黑白灰",
+        "characteristics": [
+          "弥漫着扼杀光亮的恶毒黑暗",
+          "天空是不见日月星光的漆黑穹顶",
+          "所有色彩褪去",
+          "扭曲暗淡的环境"
+        ]
+      }
+    ]
+  },
+  "energyPlanes": {
+    "name": "正负位面",
+    "nameEn": "Positive and Negative Planes",
+    "planes": [
+      {
+        "id": "positive_plane",
+        "name": "正位面",
+        "nameEn": "Positive Plane",
+        "description": "如同穹顶一般罩在其它位面上方，是充盈着所有生命的光耀能量和原始生命力之源",
+        "energy": "生命能量"
+      },
+      {
+        "id": "negative_plane",
+        "name": "负位面",
+        "nameEn": "Negative Plane",
+        "description": "摧毁生命以及创造不死生物的死亡能量之源",
+        "energy": "死亡能量"
+      }
+    ]
+  },
+  "transitivePlanes": {
+    "name": "中转位面",
+    "nameEn": "Transitive Planes",
+    "description": "几乎毫无特征，只为了联通不同的位面而存在",
+    "planes": [
+      {
+        "id": "ethereal_plane",
+        "name": "以太位面",
+        "nameEn": "Ethereal Plane",
+        "description": "云雾笼罩的空间，有时被比作一片汪洋",
+        "regions": [
+          {
+            "name": "以太边界",
+            "nameEn": "Border Ethereal",
+            "description": "物质位面和内层位面与以太位面重叠的区域，每个地点都有对应"
+          },
+          {
+            "name": "深以太",
+            "nameEn": "Deep Ethereal",
+            "description": "笼罩着迷雾和彩烟之地"
+          }
+        ],
+        "access": [
+          "以太化 (Etherealness) 法术"
+        ],
+        "vision": [
+          "识破隐形 (See Invisibility)",
+          "真视术 (True Seeing)"
+        ],
+        "magicEffects": "某些力场能量效应可以从物质位面延伸进以太边界，例如魔力牢笼和力场墙"
+      },
+      {
+        "id": "astral_plane",
+        "name": "星界位面",
+        "nameEn": "Astral Plane",
+        "description": "思想和梦境的世界，造访者们离体的魂魄在期间穿行，前往神圣或魔性的位面",
+        "appearance": "没有上下之分广袤无垠的银色海洋，混杂着灰与白的游光，变化莫测的彩色漩涡",
+        "terrain": "大部分是宽广开阔的领域，偶尔出现小块固态物质",
+        "access": [
+          "星界投影 (Astral Projection) 法术"
+        ]
+      }
+    ]
+  },
+  "innerPlanes": {
+    "name": "内层位面",
+    "nameEn": "Inner Planes",
+    "description": "包覆着物质位面和它的映射位面，提供了组成所有世界的基础元素物质",
+    "elementalPlanes": [
+      {
+        "id": "plane_of_air",
+        "name": "气元素位面",
+        "nameEn": "Plane of Air",
+        "element": "气",
+        "description": "无尽的天空和永恒的风暴，没有地面只有漂浮的云层和气团。气元素和气精灵在此翱翔，是自由与轻盈的极致表现",
+        "borderRegion": "表现出物质位面的特征，元素如同物质界般交汇",
+        "pureRegion": "无垢气团，纯粹气元素形态"
+      },
+      {
+        "id": "plane_of_earth",
+        "name": "土元素位面",
+        "nameEn": "Plane of Earth",
+        "element": "土",
+        "description": "无尽的岩石、矿脉和洞穴组成的实心位面。土元素和土精灵在此穿行于坚固的岩层中，是稳定与坚韧的化身",
+        "borderRegion": "表现出物质位面的特征，元素如同物质界般交汇",
+        "pureRegion": "大面积的坚实土地，纯粹土元素形态"
+      },
+      {
+        "id": "plane_of_fire",
+        "name": "火元素位面",
+        "nameEn": "Plane of Fire",
+        "element": "火",
+        "description": "燃烧着永恒火焰的炽热位面，充满熔岩海洋和火焰风暴。火元素和易弗利特在此建造了华丽的黄铜之城",
+        "borderRegion": "表现出物质位面的特征，元素如同物质界般交汇",
+        "pureRegion": "炙热火焰，固态火焰的街道，纯粹火元素形态"
+      },
+      {
+        "id": "plane_of_water",
+        "name": "水元素位面",
+        "nameEn": "Plane of Water",
+        "element": "水",
+        "description": "无边无际的深海，没有水面也没有海底。水元素和玛瑞德在此遨游，海洋的黑暗深处隐藏着未知的生物",
+        "borderRegion": "表现出物质位面的特征，元素如同物质界般交汇",
+        "pureRegion": "澄澈水流，纯粹水元素形态"
+      }
+    ],
+    "elementalChaos": {
+      "name": "元素混沌",
+      "nameEn": "Elemental Chaos",
+      "description": "纯粹的元素融合交汇在一起形成的能量和物质冲击碰撞的无尽喧嚣"
+    }
+  },
+  "outerPlanes": {
+    "name": "外层位面",
+    "nameEn": "Outer Planes",
+    "description": "构成多元宇宙的方向、思想和目的，众所周知的众神居所",
+    "alternateNames": [
+      "神圣位面",
+      "精神位面",
+      "神之位面"
+    ],
+    "characteristics": [
+      "众神的居所",
+      "思想和精神世界",
+      "景观可以随强大力量意愿改变",
+      "距离是毫无意义的概念"
+    ],
+    "planes": [
+      {
+        "id": "mount_celestia",
+        "name": "天界山的七层天堂",
+        "nameEn": "Seven Heavens of Mount Celestia",
+        "alignment": "LG",
+        "type": "上层位面",
+        "description": "善良阵营位面，天使和飞马等天界生物居所"
+      },
+      {
+        "id": "bytopia",
+        "name": "双生天堂的孪生伊甸",
+        "nameEn": "Twin Paradises of Bytopia",
+        "alignment": "LG, NG",
+        "type": "上层位面",
+        "description": "两层彼此面对的位面，一层代表勤劳的田园风光，另一层代表原始的自然荒野。这里是诚实劳动和自然美德的居所"
+      },
+      {
+        "id": "elysium",
+        "name": "极乐境的祝福之地",
+        "nameEn": "Blessed Fields of Elysium",
+        "alignment": "NG",
+        "type": "上层位面",
+        "description": "平静、安宁的田园位面，流淌着治愈之水的奥斯瑞安河贯穿其中。这是纯粹善良的化身，不受秩序与混乱的束缚"
+      },
+      {
+        "id": "beastlands",
+        "name": "万兽园的无尽荒野",
+        "nameEn": "Wilderness of the Beastlands",
+        "alignment": "NG, CG",
+        "type": "上层位面",
+        "description": "三层永不停歇的荒野，分别处于永恒的正午、黄昏和月夜。万兽在此自由奔跑，是自然、动物与善良精神的完美结合"
+      },
+      {
+        "id": "arborea",
+        "name": "奔放之野的奥林匹亚林地",
+        "nameEn": "Olympian Glades of Arborea",
+        "alignment": "CG",
+        "type": "上层位面",
+        "description": "热情奔放、生机勃勃的位面，希腊众神和精灵神系的家园。这里有无尽的森林、雄伟的山脉和汹涌的海洋，一切感情都被放大"
+      },
+      {
+        "id": "ysgard",
+        "name": "约瑟园的英雄领域",
+        "nameEn": "Heroic Domains of Ysgard",
+        "alignment": "CG, CN",
+        "type": "上层位面",
+        "description": "由漂浮于无尽虚空中的巨大土地构成的战场。北欧众神的家园，在这里战死的勇士会在第二天黎明复活，永恒地享受战斗的荣耀"
+      },
+      {
+        "id": "limbo",
+        "name": "混沌海的永恒混乱",
+        "nameEn": "Ever-Changing Chaos of Limbo",
+        "alignment": "CN",
+        "description": "纯粹混沌的翻涌之海，物质和能量在这里不断变化、融合、分裂。只有通过意志力才能暂时稳定周围的环境，斯拉蟾的家园"
+      },
+      {
+        "id": "pandemonium",
+        "name": "喧癫空隧的风啸深渊",
+        "nameEn": "Windswept Depths of Pandemonium",
+        "alignment": "CN, CE",
+        "description": "永恒黑暗中无尽蜿蜒的隧道，被狂风不断呼啸穿过。风声刺耳尖锐，能令访客发疯，是流放者和被遗忘者的藏身之所"
+      },
+      {
+        "id": "abyss",
+        "name": "无底深渊的无限层域",
+        "nameEn": "Infinite Layers of the Abyss",
+        "alignment": "CE",
+        "type": "下层位面",
+        "description": "邪恶阵营位面，恶魔等邪魔居所"
+      },
+      {
+        "id": "carceri",
+        "name": "卡瑟利的流放深渊",
+        "nameEn": "Tarterean Depths of Carceri",
+        "alignment": "CE, NE",
+        "type": "下层位面",
+        "description": "由六层同心球体组成的监狱位面，每一层都有无尽的陆地漂浮其中。这里是叛徒、骗子和被流放者的永恒牢笼，进入容易离开难"
+      },
+      {
+        "id": "hades",
+        "name": "哈迪斯的灰色荒野",
+        "nameEn": "Gray Wastes of Hades",
+        "alignment": "NE",
+        "type": "下层位面",
+        "description": "三层灰暗、绝望的荒原，颜色和情感在这里被吸干。尤格罗斯魔的发源地，也是血腥战争中恶魔与魔鬼交战的永恒战场"
+      },
+      {
+        "id": "gehenna",
+        "name": "焦炎地狱的永恒旷野",
+        "nameEn": "Bleak Eternity of Gehenna",
+        "alignment": "NE, LE",
+        "type": "下层位面",
+        "description": "四座悬浮于无尽虚空中的火山，没有任何平坦的地面。贪婪、残忍和自私的化身，是尤格罗斯魔的主要居所"
+      },
+      {
+        "id": "nine_hells",
+        "name": "九层地狱 (巴托)",
+        "nameEn": "Nine Hells (Baator)",
+        "alignment": "LE",
+        "type": "下层位面",
+        "description": "邪恶阵营位面，魔鬼和尤格罗斯魔等邪魔居所"
+      },
+      {
+        "id": "acheron",
+        "name": "修罗场的地狱战场",
+        "nameEn": "Infernal Battlefield of Acheron",
+        "alignment": "LE, LN",
+        "description": "无尽虚空中漂浮着无数铁立方体，它们相互碰撞，发出震耳欲聋的轰鸣。这里是无意义战争和暴力的化身，亡灵大军在此永恒厮杀"
+      },
+      {
+        "id": "mechanus",
+        "name": "机械境的钟表涅槃",
+        "nameEn": "Clockwork Nirvana of Mechanus",
+        "alignment": "LN",
+        "description": "由无数精密咬合的巨大齿轮组成的位面，一切都按照完美的秩序运转。魔冢的家园，也是绝对秩序和纯粹法则的化身"
+      },
+      {
+        "id": "arcadia",
+        "name": "世外桃源的和平国度",
+        "nameEn": "Peaceable Kingdoms of Arcadia",
+        "alignment": "LN, LG",
+        "description": "秩序与善良完美融合的位面，有着整齐的果园、几何形状的森林和方正的农田。这里的一切都井然有序，和谐而有目的"
+      }
+    ]
+  },
+  "outlands": {
+    "id": "outlands",
+    "name": "外域",
+    "nameEn": "Outlands",
+    "description": "外层位面之间的位面，中间状态的位面，万事万物都参杂其中并互相矛盾般对立抗衡却一致地共存",
+    "shape": "圆环形，如同巨轮",
+    "terrain": "地形多变的宽广领域，有开阔的草原、高耸的山脉、蜿蜒而低浅的河流",
+    "gateTowns": {
+      "count": 16,
+      "description": "外围均匀排布的16处聚居地，每处都建立在一座通往某个外层位面的传送门周围"
+    },
+    "spire": {
+      "name": "无极尖峰",
+      "nameEn": "Spire",
+      "description": "外域中心的尖峰，如同位面巨轮的轮轴，延伸至难以言喻的高度"
+    },
+    "nexus": {
+      "name": "枢纽城",
+      "nameEn": "The Nexus",
+      "alternateNames": [
+        "众门之城",
+        "City of Doors"
+      ],
+      "location": "漂浮在以太之海中心的环状城市",
+      "description": "喧嚣的跨境都市，潜藏着无数通往其它境域和世界的传送门",
+      "economy": "商业城市，货物、商品和情报从诸境汇聚于此",
+      "tradeFocus": "关于各种传送门的命令语和启动物品的情报交易"
+    }
+  },
+  "otherPlanes": {
+    "demiplanes": {
+      "name": "半位面",
+      "nameEn": "Demiplanes",
+      "description": "有自己规则的小型异次元空间，构成现实中不存在于任何地方的部分",
+      "creation": [
+        "通过进半位面 (Demiplane) 等法术产生",
+        "由强大神祇或其它势力创造",
+        "作为多元宇宙中被剥离的一部分自然存在",
+        "某个正在成长的幼年宇宙"
+      ],
+      "access": [
+        "通过与其他位面的连接点进入",
+        "位面传送 (Plane Shift) 法术 - 需要正确的频率",
+        "异界之门 (Gate) 法术 - 需要知道目的地半位面"
+      ]
+    },
+    "farRealm": {
+      "name": "遥远国度",
+      "nameEn": "Far Realm",
+      "description": "存在于已知宇宙之外，可能本身就是另一个多元宇宙，甚至有着自己的物理和魔法规律",
+      "effects": [
+        "能量流入另一个位面时会扭曲生命和物质",
+        "违背一般几何学和生物学的怪异形态",
+        "对普通心智造成直接损害",
+        "心智凌驾于物质与空间，乃至凌驾于理智"
+      ],
+      "inhabitants": [
+        "巨大的生物在虚空中游动，内里充盈着疯狂",
+        "不可名状之物呢喃着恐怖的真实"
+      ],
+      "access": "没有任何已知的传送门可以通向遥远国度",
+      "historicalNote": "远古时代精灵们曾使用炎爆峰的传送门连接到遥远国度，其文明随之在血淋淋的恐怖中崩塌"
+    }
+  },
+  "planarTravel": {
+    "name": "位面旅行",
+    "nameEn": "Planar Travel",
+    "methods": [
+      {
+        "type": "法术",
+        "spells": [
+          {
+            "name": "位面传送",
+            "nameEn": "Plane Shift",
+            "description": "以不同的精准度将冒险者直接送往另一个存在位面"
+          },
+          {
+            "name": "异界之门",
+            "nameEn": "Gate",
+            "description": "将冒险者直接送往另一个存在位面"
+          },
+          {
+            "name": "以太化",
+            "nameEn": "Etherealness",
+            "description": "进入以太位面，从那里前往幽影荒原、妖精荒野或元素位面"
+          },
+          {
+            "name": "星界投影",
+            "nameEn": "Astral Projection",
+            "description": "将冒险者投影到星界从而传送去外层位面"
+          }
+        ]
+      },
+      {
+        "type": "传送门",
+        "nameEn": "Portals",
+        "description": "连接两个位面特定地点的不动型跨位面链接",
+        "types": [
+          "像门窗或烟雾缭绕的通道，穿过时激活位面传送功能",
+          "特殊地点（石碑阵、高塔、航船、城镇），同时存在于多个位面或不断在位面间切变",
+          "涡流，链接着物质位面和相应元素位面类似的区域（如火山中心前往火元素位面）"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "source": "DMG Chapter 8",
+    "description": "D&D 5E 疯狂规则与效应表"
+  },
+  "causes": [
+    "某些法术（异界探知 contact other plane、徽记术 symbol）",
+    "疾病",
+    "毒药",
+    "位面效应（心灵风暴 psychic wind、喧嚣空隧 Pandemonium 中的狂风）",
+    "某些神器"
+  ],
+  "resistSave": {
+    "types": ["感知", "魅力"],
+    "optional": "理智值豁免（可选规则）"
+  },
+  "cures": {
+    "calmEmotions": {
+      "name": "安定心神",
+      "nameEn": "Calm Emotions",
+      "effect": "压制疯狂的效应"
+    },
+    "lesserRestoration": {
+      "name": "次级复原术",
+      "nameEn": "Lesser Restoration",
+      "effect": "解除短暂性或长期性疯狂效应"
+    },
+    "removeCurse": {
+      "name": "移除诅咒",
+      "nameEn": "Remove Curse",
+      "effect": "根据疯狂的来源可能有效"
+    },
+    "dispelEvil": {
+      "name": "反制邪恶",
+      "nameEn": "Dispel Evil",
+      "effect": "根据疯狂的来源可能有效"
+    },
+    "greaterRestoration": {
+      "name": "高等复原术",
+      "nameEn": "Greater Restoration",
+      "effect": "解除永久性疯狂"
+    }
+  },
+  "shortTermMadness": {
+    "duration": "1d10分钟",
+    "durationEn": "1d10 minutes",
+    "effects": [
+      {
+        "roll": "01-20",
+        "effect": "角色陷入自己精神世界中并陷入麻痹",
+        "endCondition": "若该角色受到伤害则该效应终止",
+        "condition": "paralyzed"
+      },
+      {
+        "roll": "21-30",
+        "effect": "角色陷入失能，并在整个持续时间内不停地尖叫、狂笑或嚎泣",
+        "condition": "incapacitated"
+      },
+      {
+        "roll": "31-40",
+        "effect": "角色陷入恐慌，每轮必须使用他的动作和移动力尽可能的远离恐惧的源头",
+        "condition": "frightened"
+      },
+      {
+        "roll": "41-50",
+        "effect": "角色变得语无伦次，而无法正常说话和施法",
+        "restrictions": ["无法说话", "无法施法"]
+      },
+      {
+        "roll": "51-60",
+        "effect": "角色每轮必须使用他的动作攻击最近的生物",
+        "forcedAction": "攻击最近的生物"
+      },
+      {
+        "roll": "61-70",
+        "effect": "角色面前出现逼真的幻觉，其属性检定具有劣势",
+        "penalty": "属性检定劣势"
+      },
+      {
+        "roll": "71-75",
+        "effect": "角色变得毫无主见，并遵从任何人发出的，不是明显自残的命令",
+        "behavior": "服从命令"
+      },
+      {
+        "roll": "76-80",
+        "effect": "角色内心浮现一种无法抑制冲动敦促自己去吃一些怪异的东西（比如泥土、软泥或内脏）",
+        "compulsion": "吃怪异的东西"
+      },
+      {
+        "roll": "81-90",
+        "effect": "角色陷入震慑",
+        "condition": "stunned"
+      },
+      {
+        "roll": "91-100",
+        "effect": "角色陷入昏迷",
+        "condition": "unconscious"
+      }
+    ]
+  },
+  "longTermMadness": {
+    "duration": "1d10 x 10小时",
+    "durationEn": "1d10 x 10 hours",
+    "effects": [
+      {
+        "roll": "01-10",
+        "effect": "角色被强迫重复进行某种行为",
+        "examples": ["洗手", "触摸某物", "祈祷", "数钱"],
+        "type": "compulsion"
+      },
+      {
+        "roll": "11-20",
+        "effect": "角色面前出现逼真的幻觉，其属性检定具有劣势",
+        "penalty": "属性检定劣势",
+        "type": "hallucination"
+      },
+      {
+        "roll": "21-30",
+        "effect": "角色患上强烈的妄想症，其感知和魅力检定具有劣势",
+        "penalty": "感知和魅力检定劣势",
+        "type": "paranoia"
+      },
+      {
+        "roll": "31-40",
+        "effect": "角色对某物（通常是疯狂的源头）产生强烈的厌恶感",
+        "relatedSpell": "嫌恶/吸引术 antipathy/sympathy 的嫌恶效应",
+        "type": "phobia"
+      },
+      {
+        "roll": "41-45",
+        "effect": "角色产生一种强烈的错觉，坚信自己始终处于某种药水的效应中",
+        "type": "delusion"
+      },
+      {
+        "roll": "46-55",
+        "effect": "角色将某人或者某物件视为"幸运物"",
+        "penalty": "离开该对象30尺范围后，攻击检定、属性检定和豁免检定均具有劣势",
+        "type": "attachment"
+      },
+      {
+        "roll": "56-65",
+        "effect": "角色陷入目盲（25%）或者耳聋（75%）",
+        "blindChance": 25,
+        "deafChance": 75,
+        "type": "sensoryLoss"
+      },
+      {
+        "roll": "66-75",
+        "effect": "角色经历无法控制的抽搐或颤动",
+        "penalty": "与力量和敏捷相关的攻击检定、属性检定和豁免检定时具有劣势",
+        "type": "tremors"
+      },
+      {
+        "roll": "76-85",
+        "effect": "角色患上选择性失忆症",
+        "retains": ["身份", "种族特质", "职业特性"],
+        "forgets": ["其他所有人", "疯狂效应生效前发生的事"],
+        "type": "amnesia"
+      },
+      {
+        "roll": "86-90",
+        "effect": "每当角色受到伤害时，他必须进行一次DC 15的感知豁免",
+        "saveDC": 15,
+        "saveType": "wisdom",
+        "onFailure": "等同于遭受法术困惑术 confusion 且豁免失败，效应持续1分钟",
+        "type": "confusion"
+      },
+      {
+        "roll": "91-95",
+        "effect": "角色失去说话能力",
+        "type": "mutism"
+      },
+      {
+        "roll": "96-100",
+        "effect": "角色陷入昏迷，且无法用摇晃和伤害的方式唤醒",
+        "condition": "unconscious",
+        "type": "catatonia"
+      }
+    ]
+  },
+  "indefiniteMadness": {
+    "duration": "永久（直至被治愈）",
+    "durationEn": "Indefinite (until cured)",
+    "effectType": "新的角色缺点",
+    "effects": [
+      {
+        "roll": "01-15",
+        "flaw": "醉酒使我保持理智",
+        "flawEn": "Being drunk keeps me sane"
+      },
+      {
+        "roll": "16-25",
+        "flaw": "我会留下所有我找到的东西",
+        "flawEn": "I keep whatever I find"
+      },
+      {
+        "roll": "26-30",
+        "flaw": "我要试着变成我认识的另一个人——模仿他的衣着习惯、举止和姓名",
+        "flawEn": "I try to become more like someone I know—adopting their style of dress, mannerisms, and name"
+      },
+      {
+        "roll": "31-35",
+        "flaw": "我必须歪曲事实、夸大或直接说谎来取悦他人",
+        "flawEn": "I must bend the truth, exaggerate, or outright lie to be interesting to other people"
+      },
+      {
+        "roll": "36-45",
+        "flaw": "达成我的目标是我唯一感兴趣的事，我在追寻的路上会无视其他任何事",
+        "flawEn": "Achieving my goal is the only thing of interest to me, and I'll ignore everything else to pursue it"
+      },
+      {
+        "roll": "46-50",
+        "flaw": "我对周遭发生的任何事都漠不关心",
+        "flawEn": "I find it hard to care about anything that goes on around me"
+      },
+      {
+        "roll": "51-55",
+        "flaw": "我不喜欢其他人看待我的方式",
+        "flawEn": "I don't like the way people judge me all the time"
+      },
+      {
+        "roll": "56-70",
+        "flaw": "我在自己认识的所有人里最聪明、最强壮、最敏捷、最睿智、最漂亮",
+        "flawEn": "I am the smartest, wisest, strongest, fastest, and most beautiful person I know"
+      },
+      {
+        "roll": "71-80",
+        "flaw": "我确信一个强大的敌人正在找我，而他的手下无处不在。我确信他就在盯着我的一举一动",
+        "flawEn": "I am convinced that powerful enemies are hunting me, and their agents are everywhere I go"
+      },
+      {
+        "roll": "81-85",
+        "flaw": "我在世上只有一个能信任的朋友，而只有我才能看见他",
+        "flawEn": "There's only one person I can trust, and only I can see this special friend"
+      },
+      {
+        "roll": "86-95",
+        "flaw": "我无法严肃的看待任何事物。形势越严峻，我就觉得越好笑",
+        "flawEn": "I can't take anything seriously. The more serious the situation, the funnier I find it"
+      },
+      {
+        "roll": "96-100",
+        "flaw": "我刚刚发现我真的很喜欢杀人",
+        "flawEn": "I've discovered that I really like killing people"
+      }
+    ]
+  }
+}

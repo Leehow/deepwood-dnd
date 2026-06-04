@@ -1,0 +1,438 @@
+{
+  "features": [
+    {
+      "id": "second_wind",
+      "name": "回气",
+      "nameEn": "Second Wind",
+      "class": ["fighter"],
+      "level": 1,
+      "trigger": "on_activate",
+      "actionType": "bonus_action",
+      "cost": { "resourceId": "second_wind", "amount": 1 },
+      "phases": [{
+        "trigger": "on_cast",
+        "target": { "type": "self" },
+        "effects": [{ "type": "heal", "formula": "1d10+level" }]
+      }],
+      "ui": { "promptType": "quick_use", "icon": "💨", "color": "#dc2626" },
+      "chat": {
+        "activate": "{source} 使用回气，恢复 {value} 点生命值！"
+      }
+    },
+    {
+      "id": "action_surge",
+      "name": "行动如潮",
+      "nameEn": "Action Surge",
+      "class": ["fighter"],
+      "level": 2,
+      "trigger": "on_activate",
+      "actionType": "none",
+      "cost": { "resourceId": "action_surge", "amount": 1 },
+      "phases": [{
+        "trigger": "on_cast",
+        "target": { "type": "self" },
+        "effects": [{ "type": "narrative", "description": "获得一个额外动作" }]
+      }],
+      "ui": { "promptType": "quick_use", "icon": "⚡", "color": "#dc2626" },
+      "chat": {
+        "activate": "{source} 使用行动如潮，获得一个额外动作！"
+      }
+    },
+    {
+      "id": "trip_attack",
+      "name": "绊摔攻击",
+      "nameEn": "Trip Attack",
+      "class": ["fighter"],
+      "subclass": ["battle_master", "战斗大师"],
+      "level": 3,
+      "trigger": "on_hit",
+      "actionType": "none",
+      "cost": { "resourceId": "superiority_dice", "amount": 1 },
+      "phases": [
+        {
+          "trigger": "on_hit",
+          "effects": [{ "type": "deal_damage", "formula": "{die}", "damageType": "weapon" }]
+        },
+        {
+          "trigger": "on_hit",
+          "save": { "ability": "strength", "onSuccess": "no_effect" },
+          "effects": [{ "type": "apply_condition", "condition": "prone" }]
+        }
+      ],
+      "diceScaling": { "3": "d8", "10": "d10", "18": "d12" },
+      "ui": { "promptType": "on_hit_confirm", "icon": "🦶", "color": "#dc2626" },
+      "chat": {
+        "activate": "{source} 消耗战技骰，发动绊摔攻击！",
+        "save_fail": "{target} 未通过力量豁免（DC {dc}），被绊倒！",
+        "save_success": "{target} 通过力量豁免，站稳了脚跟。",
+        "result": "额外造成 {die_result} 点伤害。"
+      }
+    },
+    {
+      "id": "riposte",
+      "name": "回击",
+      "nameEn": "Riposte",
+      "class": ["fighter"],
+      "subclass": ["battle_master", "战斗大师"],
+      "level": 3,
+      "trigger": "on_enemy_miss",
+      "actionType": "reaction",
+      "cost": { "resourceId": "superiority_dice", "amount": 1 },
+      "phases": [{
+        "trigger": "on_reaction",
+        "effects": [{ "type": "deal_damage", "formula": "weapon+{die}", "damageType": "weapon" }]
+      }],
+      "diceScaling": { "3": "d8", "10": "d10", "18": "d12" },
+      "ui": { "promptType": "reaction_prompt", "icon": "⚔️", "color": "#dc2626" },
+      "chat": {
+        "activate": "{source} 消耗战技骰，发动回击！",
+        "result": "命中 {target}，造成 {value} 点伤害（含 {die_result} 战技骰）。"
+      }
+    },
+    {
+      "id": "menacing_attack",
+      "name": "威慑攻击",
+      "nameEn": "Menacing Attack",
+      "class": ["fighter"],
+      "subclass": ["battle_master", "战斗大师"],
+      "level": 3,
+      "trigger": "on_hit",
+      "actionType": "none",
+      "cost": { "resourceId": "superiority_dice", "amount": 1 },
+      "phases": [
+        {
+          "trigger": "on_hit",
+          "effects": [{ "type": "deal_damage", "formula": "{die}", "damageType": "weapon" }]
+        },
+        {
+          "trigger": "on_hit",
+          "save": { "ability": "wisdom", "onSuccess": "no_effect" },
+          "effects": [{
+            "type": "apply_condition", "condition": "frightened",
+            "escape": { "trigger": "end_of_turn", "method": "save", "ability": "wisdom" }
+          }]
+        }
+      ],
+      "diceScaling": { "3": "d8", "10": "d10", "18": "d12" },
+      "ui": { "promptType": "on_hit_confirm", "icon": "😨", "color": "#dc2626" },
+      "chat": {
+        "activate": "{source} 消耗战技骰，发动威慑攻击！",
+        "save_fail": "{target} 未通过感知豁免（DC {dc}），陷入恐惧！",
+        "save_success": "{target} 通过感知豁免，不为所动。",
+        "result": "额外造成 {die_result} 点伤害。"
+      }
+    },
+    {
+      "id": "precision_attack",
+      "name": "精准攻击",
+      "nameEn": "Precision Attack",
+      "class": ["fighter"],
+      "subclass": ["battle_master", "战斗大师"],
+      "level": 3,
+      "trigger": "on_hit",
+      "actionType": "none",
+      "cost": { "resourceId": "superiority_dice", "amount": 1 },
+      "phases": [{
+        "trigger": "on_hit",
+        "effects": [{ "type": "modify_roll", "rollTypes": ["attack"], "formula": "{die}", "operation": "add", "consumeOnUse": true }]
+      }],
+      "diceScaling": { "3": "d8", "10": "d10", "18": "d12" },
+      "ui": { "promptType": "pre_roll", "icon": "🎯", "color": "#dc2626" },
+      "chat": {
+        "activate": "{source} 消耗战技骰，使用精准攻击！攻击骰 +{die_result}。"
+      }
+    },
+    {
+      "id": "pushing_attack",
+      "name": "逼退攻击",
+      "nameEn": "Pushing Attack",
+      "class": ["fighter"],
+      "subclass": ["battle_master", "战斗大师"],
+      "level": 3,
+      "trigger": "on_hit",
+      "actionType": "none",
+      "cost": { "resourceId": "superiority_dice", "amount": 1 },
+      "phases": [
+        {
+          "trigger": "on_hit",
+          "effects": [{ "type": "deal_damage", "formula": "{die}", "damageType": "weapon" }]
+        },
+        {
+          "trigger": "on_hit",
+          "save": { "ability": "strength", "onSuccess": "no_effect" },
+          "effects": [{ "type": "forced_movement", "direction": "push", "distance": 15, "relativeTo": "caster" }]
+        }
+      ],
+      "diceScaling": { "3": "d8", "10": "d10", "18": "d12" },
+      "ui": { "promptType": "on_hit_confirm", "icon": "💥", "color": "#dc2626" },
+      "chat": {
+        "activate": "{source} 消耗战技骰，发动逼退攻击！",
+        "save_fail": "{target} 未通过力量豁免（DC {dc}），被推后15尺！",
+        "save_success": "{target} 通过力量豁免，站稳不动。",
+        "result": "额外造成 {die_result} 点伤害。"
+      }
+    },
+    {
+      "id": "rally",
+      "name": "鼓舞",
+      "nameEn": "Rally",
+      "class": ["fighter"],
+      "subclass": ["battle_master", "战斗大师"],
+      "level": 3,
+      "trigger": "on_activate",
+      "actionType": "bonus_action",
+      "cost": { "resourceId": "superiority_dice", "amount": 1 },
+      "phases": [{
+        "trigger": "on_cast",
+        "target": { "type": "single" },
+        "effects": [{ "type": "grant_temp_hp", "formula": "{die}+CHA_MOD" }]
+      }],
+      "diceScaling": { "3": "d8", "10": "d10", "18": "d12" },
+      "ui": { "promptType": "target_select", "icon": "📢", "color": "#dc2626" },
+      "chat": {
+        "activate": "{source} 消耗战技骰，鼓舞 {target}！获得 {value} 点临时生命值。"
+      }
+    },
+    {
+      "id": "goading_attack",
+      "name": "挑衅攻击",
+      "nameEn": "Goading Attack",
+      "class": ["fighter"],
+      "subclass": ["battle_master", "战斗大师"],
+      "level": 3,
+      "trigger": "on_hit",
+      "actionType": "none",
+      "cost": { "resourceId": "superiority_dice", "amount": 1 },
+      "phases": [
+        {
+          "trigger": "on_hit",
+          "effects": [{ "type": "deal_damage", "formula": "{die}", "damageType": "weapon" }]
+        },
+        {
+          "trigger": "on_hit",
+          "save": { "ability": "wisdom", "onSuccess": "no_effect" },
+          "effects": [{ "type": "grant_disadvantage", "on": "incoming_attack", "condition": { "notTarget": "caster" } }]
+        }
+      ],
+      "diceScaling": { "3": "d8", "10": "d10", "18": "d12" },
+      "ui": { "promptType": "on_hit_confirm", "icon": "😤", "color": "#dc2626" },
+      "chat": {
+        "activate": "{source} 消耗战技骰，发动挑衅攻击！",
+        "save_fail": "{target} 未通过感知豁免（DC {dc}），攻击 {source} 以外目标时有劣势！",
+        "save_success": "{target} 通过感知豁免，不受挑衅。",
+        "result": "额外造成 {die_result} 点伤害。"
+      }
+    },
+    {
+      "id": "disarming_attack",
+      "name": "缴械攻击",
+      "nameEn": "Disarming Attack",
+      "class": ["fighter"],
+      "subclass": ["battle_master", "战斗大师"],
+      "level": 3,
+      "trigger": "on_hit",
+      "actionType": "none",
+      "cost": { "resourceId": "superiority_dice", "amount": 1 },
+      "phases": [
+        {
+          "trigger": "on_hit",
+          "effects": [{ "type": "deal_damage", "formula": "{die}", "damageType": "weapon" }]
+        },
+        {
+          "trigger": "on_hit",
+          "save": { "ability": "strength", "onSuccess": "no_effect" },
+          "effects": [{ "type": "narrative", "description": "目标手中武器掉落" }]
+        }
+      ],
+      "diceScaling": { "3": "d8", "10": "d10", "18": "d12" },
+      "ui": { "promptType": "on_hit_confirm", "icon": "🤚", "color": "#dc2626" },
+      "chat": {
+        "activate": "{source} 消耗战技骰，发动缴械攻击！",
+        "save_fail": "{target} 未通过力量豁免（DC {dc}），武器脱手！",
+        "save_success": "{target} 通过力量豁免，紧握武器。",
+        "result": "额外造成 {die_result} 点伤害。"
+      }
+    },
+    {
+      "id": "stunning_strike",
+      "name": "震慑打击",
+      "nameEn": "Stunning Strike",
+      "class": ["monk"],
+      "level": 5,
+      "trigger": "on_hit",
+      "actionType": "none",
+      "cost": { "resourceId": "ki", "amount": 1 },
+      "phases": [{
+        "trigger": "on_hit",
+        "save": { "ability": "constitution", "onSuccess": "no_effect" },
+        "effects": [{
+          "type": "apply_condition", "condition": "stunned",
+          "escape": { "trigger": "end_of_target_turn", "method": "auto_end" }
+        }]
+      }],
+      "ui": { "promptType": "on_hit_confirm", "icon": "👊", "color": "#eab308" },
+      "chat": {
+        "activate": "{source} 消耗 1 气，对 {target} 发动震慑打击！",
+        "save_fail": "{target} 未通过体质豁免（DC {dc}），陷入震慑至下回合结束！",
+        "save_success": "{target} 通过体质豁免，抵抗了震慑。"
+      }
+    },
+    {
+      "id": "flurry_of_blows",
+      "name": "疾风连击",
+      "nameEn": "Flurry of Blows",
+      "class": ["monk"],
+      "level": 2,
+      "trigger": "on_activate",
+      "actionType": "bonus_action",
+      "cost": { "resourceId": "ki", "amount": 1 },
+      "phases": [{
+        "trigger": "on_cast",
+        "target": { "type": "single" },
+        "effects": [{ "type": "narrative", "description": "进行两次额外徒手攻击" }]
+      }],
+      "ui": { "promptType": "quick_use", "icon": "👊", "color": "#eab308" },
+      "chat": {
+        "activate": "{source} 消耗 1 气，发动疾风连击！进行两次额外徒手攻击。"
+      }
+    },
+    {
+      "id": "patient_defense",
+      "name": "躲避术",
+      "nameEn": "Patient Defense",
+      "class": ["monk"],
+      "level": 2,
+      "trigger": "on_activate",
+      "actionType": "bonus_action",
+      "cost": { "resourceId": "ki", "amount": 1 },
+      "phases": [{
+        "trigger": "on_cast",
+        "target": { "type": "self" },
+        "effects": [{ "type": "grant_disadvantage", "on": "incoming_attack" }]
+      }],
+      "ui": { "promptType": "quick_use", "icon": "🛡️", "color": "#eab308" },
+      "chat": {
+        "activate": "{source} 消耗 1 气，使用躲避术！本回合攻击 {source} 具有劣势。"
+      }
+    },
+    {
+      "id": "step_of_wind",
+      "name": "踏风步",
+      "nameEn": "Step of the Wind",
+      "class": ["monk"],
+      "level": 2,
+      "trigger": "on_activate",
+      "actionType": "bonus_action",
+      "cost": { "resourceId": "ki", "amount": 1 },
+      "phases": [{
+        "trigger": "on_cast",
+        "target": { "type": "self" },
+        "effects": [
+          { "type": "narrative", "description": "撤离或疾走作为附赠动作" },
+          { "type": "modify_movement", "movementType": "walk", "formula": "walk_speed", "operation": "add" }
+        ]
+      }],
+      "ui": { "promptType": "quick_use", "icon": "💨", "color": "#eab308" },
+      "chat": {
+        "activate": "{source} 消耗 1 气，使用踏风步！可撤离/疾走，跳跃距离翻倍。"
+      }
+    },
+    {
+      "id": "divine_smite",
+      "name": "神圣惩击",
+      "nameEn": "Divine Smite",
+      "class": ["paladin"],
+      "level": 2,
+      "trigger": "on_hit",
+      "actionType": "none",
+      "cost": { "resourceId": "spell_slots", "amount": 1, "spellSlot": true, "minSlotLevel": 1 },
+      "phases": [
+        {
+          "trigger": "on_hit",
+          "effects": [{
+            "type": "deal_damage", "formula": "2d8", "damageType": "radiant",
+            "scaling": { "perSlotAbove": 1, "extraDice": "1d8" }
+          }]
+        },
+        {
+          "trigger": "on_hit",
+          "targetCreatureTypes": ["undead", "fiend"],
+          "effects": [{ "type": "deal_damage", "formula": "1d8", "damageType": "radiant" }]
+        }
+      ],
+      "ui": { "promptType": "on_hit_confirm", "icon": "✨", "color": "#fbbf24" },
+      "chat": {
+        "activate": "{source} 消耗法术位，释放神圣惩击！",
+        "result": "造成 {value} 点光耀伤害！"
+      }
+    },
+    {
+      "id": "lay_on_hands",
+      "name": "圣疗术",
+      "nameEn": "Lay on Hands",
+      "class": ["paladin"],
+      "level": 1,
+      "trigger": "on_activate",
+      "actionType": "action",
+      "cost": { "resourceId": "lay_on_hands", "amount": 1, "variable": true },
+      "phases": [{
+        "trigger": "on_cast",
+        "target": { "type": "single" },
+        "effects": [{ "type": "heal", "formula": "{cost_amount}" }]
+      }],
+      "ui": { "promptType": "target_select", "icon": "🤲", "color": "#fbbf24" },
+      "chat": {
+        "activate": "{source} 使用圣疗术，治疗 {target} {value} 点生命值！"
+      }
+    },
+    {
+      "id": "cutting_words",
+      "name": "辛辣嘲讽",
+      "nameEn": "Cutting Words",
+      "class": ["bard"],
+      "subclass": ["lore", "博识学院"],
+      "level": 3,
+      "trigger": "on_enemy_roll",
+      "actionType": "reaction",
+      "cost": { "resourceId": "bardic_inspiration", "amount": 1 },
+      "phases": [{
+        "trigger": "on_reaction",
+        "effects": [{
+          "type": "modify_roll", "rollTypes": ["attack", "check", "damage"],
+          "formula": "{die}", "operation": "subtract", "consumeOnUse": true
+        }]
+      }],
+      "diceScaling": { "1": "d6", "5": "d8", "10": "d10", "15": "d12" },
+      "ui": { "promptType": "reaction_prompt", "icon": "🎵", "color": "#a855f7" },
+      "chat": {
+        "activate": "{source} 消耗激励骰，对 {target} 使用辛辣嘲讽！结果 -{die_result}。"
+      }
+    },
+    {
+      "id": "turn_undead",
+      "name": "驱散不死",
+      "nameEn": "Turn Undead",
+      "class": ["cleric"],
+      "level": 2,
+      "trigger": "on_activate",
+      "actionType": "action",
+      "cost": { "resourceId": "channel_divinity_cleric", "amount": 1 },
+      "phases": [{
+        "trigger": "on_cast",
+        "target": { "type": "all_in_area" },
+        "save": { "ability": "wisdom", "onSuccess": "no_effect" },
+        "targetCreatureTypes": ["undead"],
+        "effects": [{
+          "type": "apply_condition", "condition": "frightened",
+          "escape": { "trigger": "on_take_damage", "method": "auto_end" }
+        }]
+      }],
+      "ui": { "promptType": "quick_use", "icon": "☀️", "color": "#f59e0b" },
+      "chat": {
+        "activate": "{source} 引导神力，驱散不死！30尺内不死生物须通过感知豁免（DC {dc}）。",
+        "save_fail": "不死生物未通过豁免，被驱散1分钟！",
+        "save_success": "不死生物通过了豁免。"
+      }
+    }
+  ]
+}

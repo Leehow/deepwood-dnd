@@ -1,0 +1,5144 @@
+{
+  "classes": [
+    {
+      "id": "barbarian",
+      "name": "野蛮人",
+      "nameEn": "Barbarian",
+      "hitDie": "d12",
+      "primaryAbility": [
+        "strength"
+      ],
+      "savingThrows": [
+        "strength",
+        "constitution"
+      ],
+      "proficiencies": {
+        "armor": [
+          "light_armor",
+          "medium_armor",
+          "shields"
+        ],
+        "weapons": [
+          "simple_weapons",
+          "martial_weapons"
+        ],
+        "tools": [],
+        "skillsAvailable": [
+          "animal_handling",
+          "athletics",
+          "intimidation",
+          "nature",
+          "perception",
+          "survival"
+        ],
+        "skillChoices": 2
+      },
+      "startingEquipment": {
+        "choices": [
+          {
+            "choose": 1,
+            "from": [
+              [
+                "greataxe"
+              ],
+              [
+                "martial_melee_weapon"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "handaxe",
+                "handaxe"
+              ],
+              [
+                "simple_weapon"
+              ]
+            ]
+          }
+        ],
+        "fixed": [
+          "explorers_pack",
+          "javelin:4"
+        ]
+      },
+      "features": [
+        {
+          "level": 1,
+          "name": "狂暴",
+          "nameEn": "Rage",
+          "description": "在你的回合中，你可以用一个附赠动作进入狂暴状态。狂暴时获得：+2伤害加值(1级)、力量检定和豁免优势、近战武器攻击伤害抗性。",
+          "ragesPerDay": {
+            "1": 2,
+            "3": 3,
+            "6": 4,
+            "12": 5,
+            "17": 6,
+            "20": "unlimited"
+          },
+          "rageDamage": {
+            "1": 2,
+            "9": 3,
+            "16": 4
+          }
+        },
+        {
+          "level": 1,
+          "name": "无甲防御",
+          "nameEn": "Unarmored Defense",
+          "description": "当你没有穿着护甲时，你的护甲等级等于10 + 你的敏捷调整值 + 你的体质调整值。",
+          "acFormula": "10 + DEX调整值 + CON调整值"
+        },
+        {
+          "level": 2,
+          "name": "鲁莽攻击",
+          "nameEn": "Reckless Attack",
+          "description": "在你回合的第一次攻击时，你可以选择进行鲁莽攻击。这样做会让你在本回合所有使用力量的近战武器攻击检定具有优势，但攻击你的敌人在你的下一回合结束前对你的攻击检定也具有优势。"
+        },
+        {
+          "level": 2,
+          "name": "危险感知",
+          "nameEn": "Danger Sense",
+          "description": "你在对抗你能看见的效应(如陷阱和法术)的敏捷豁免检定上具有优势。"
+        },
+        {
+          "level": 3,
+          "name": "原始道途",
+          "nameEn": "Primal Path",
+          "description": "选择你的原始道途：狂怒之道或图腾战士之道。"
+        },
+        {
+          "level": 4,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 5,
+          "name": "额外攻击",
+          "nameEn": "Extra Attack",
+          "description": "当你在自己的回合使用攻击动作时，你可以攻击两次。"
+        },
+        {
+          "level": 5,
+          "name": "快速移动",
+          "nameEn": "Fast Movement",
+          "description": "你的速度在你不穿着重甲时增加10尺。"
+        },
+        {
+          "level": 6,
+          "name": "原始道途特性",
+          "nameEn": "Primal Path Feature",
+          "description": "你获得所选原始道途的6级特性。"
+        },
+        {
+          "level": 7,
+          "name": "野性直觉",
+          "nameEn": "Feral Instinct",
+          "description": "你的直觉被磨砺得如此敏锐，使你在战斗开始时获得优势。你在先攻检定上具有优势。"
+        },
+        {
+          "level": 8,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 9,
+          "name": "野蛮重击",
+          "nameEn": "Brutal Critical",
+          "description": "当你用近战武器进行重击时，你可以额外掷一次武器的伤害骰并将其加到伤害中。",
+          "extraDice": {
+            "9": 1,
+            "13": 2,
+            "17": 3
+          }
+        },
+        {
+          "level": 10,
+          "name": "原始道途特性",
+          "nameEn": "Primal Path Feature",
+          "description": "你获得所选原始道途的10级特性。"
+        },
+        {
+          "level": 11,
+          "name": "不屈狂暴",
+          "nameEn": "Relentless Rage",
+          "description": "如果你在狂暴时降至0生命值但没有彻底死亡，你可以进行DC 10的体质豁免。成功则你降至1生命值。每次在同一次狂暴中使用此特性，DC增加5。"
+        },
+        {
+          "level": 12,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 13,
+          "name": "野蛮重击改良",
+          "nameEn": "Brutal Critical Improvement",
+          "description": "你在进行近战武器攻击的重击时可以额外掷两个武器伤害骰。"
+        },
+        {
+          "level": 14,
+          "name": "原始道途特性",
+          "nameEn": "Primal Path Feature",
+          "description": "你获得所选原始道途的14级特性。"
+        },
+        {
+          "level": 15,
+          "name": "持久狂暴",
+          "nameEn": "Persistent Rage",
+          "description": "你的狂暴非常凶猛，只有在你失去意识或你选择结束时才会终止。"
+        },
+        {
+          "level": 16,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 17,
+          "name": "野蛮重击改良",
+          "nameEn": "Brutal Critical Improvement",
+          "description": "你在进行近战武器攻击的重击时可以额外掷三个武器伤害骰。"
+        },
+        {
+          "level": 18,
+          "name": "不屈之力",
+          "nameEn": "Indomitable Might",
+          "description": "如果你的力量检定结果低于你的力量值，你可以用你的力量值代替检定结果。"
+        },
+        {
+          "level": 19,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 20,
+          "name": "原始斗士",
+          "nameEn": "Primal Champion",
+          "description": "你的力量和体质各增加4点。你的这两项属性最大值现在为24。"
+        }
+      ],
+      "subclasses": [
+        {
+          "id": "berserker",
+          "name": "狂怒之道",
+          "nameEn": "Path of the Berserker",
+          "description": "狂怒之道是一条愤怒之路，由愤怒驱动。狂战士在战斗中释放原始的愤怒，以狂暴的力量压倒敌人。",
+          "descriptionEn": "The Path of the Berserker is a path of untrammeled fury. Berserkers unleash primal rage in battle, overwhelming foes with savage power.",
+          "features": "狂暴（3级）、无畏狂怒（6级）、威吓存在（10级）、报复（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "野蛮人在3级时选择原始道途。狂怒之道在3级获得狂暴特性，让你在狂暴时进行额外的近战武器攻击。"
+            }
+          ]
+        },
+        {
+          "id": "totem_warrior",
+          "name": "图腾战士之道",
+          "nameEn": "Path of the Totem Warrior",
+          "description": "图腾战士之道是一条精神之路，野蛮人接受与动物相关的灵性。图腾战士从动物图腾中获得力量，可选择熊、鹰或狼作为图腾。",
+          "descriptionEn": "The Path of the Totem Warrior is a spiritual path, accepting a spirit animal as guide. Totem warriors gain power from animal totems, choosing bear, eagle, or wolf.",
+          "features": "图腾灵魂（3级）、图腾守护（6级）、图腾亲和（10级）、图腾化身（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "野蛮人在3级时选择原始道途。图腾战士之道在3级获得图腾灵魂特性，你选择一个图腾动物（熊、鹰或狼）并获得其力量。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bard",
+      "name": "吟游诗人",
+      "nameEn": "Bard",
+      "hitDie": "d8",
+      "primaryAbility": [
+        "charisma"
+      ],
+      "savingThrows": [
+        "dexterity",
+        "charisma"
+      ],
+      "proficiencies": {
+        "armor": [
+          "light_armor"
+        ],
+        "weapons": [
+          "simple_weapons",
+          "hand_crossbows",
+          "longswords",
+          "rapiers",
+          "shortswords"
+        ],
+        "tools": [
+          "three_musical_instruments"
+        ],
+        "skillsAvailable": [
+          "acrobatics",
+          "animal_handling",
+          "arcana",
+          "athletics",
+          "deception",
+          "history",
+          "insight",
+          "intimidation",
+          "investigation",
+          "medicine",
+          "nature",
+          "perception",
+          "performance",
+          "persuasion",
+          "religion",
+          "sleight_of_hand",
+          "stealth",
+          "survival"
+        ],
+        "skillChoices": 3
+      },
+      "spellcasting": {
+        "ability": "charisma",
+        "preparedSpells": false,
+        "cantripsKnown": {
+          "1": 2,
+          "4": 3,
+          "10": 4
+        },
+        "spellsKnown": {
+          "1": 4,
+          "2": 5,
+          "3": 6,
+          "4": 7,
+          "5": 8,
+          "6": 9,
+          "7": 10,
+          "8": 11,
+          "9": 12,
+          "10": 14,
+          "11": 15,
+          "13": 16,
+          "14": 18,
+          "15": 19,
+          "17": 20,
+          "18": 22
+        },
+        "spellSlots": {
+          "1": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        "ritualCasting": true
+      },
+      "startingEquipment": {
+        "choices": [
+          {
+            "choose": 1,
+            "from": [
+              [
+                "rapier"
+              ],
+              [
+                "longsword"
+              ],
+              [
+                "simple_weapon"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "diplomats_pack"
+              ],
+              [
+                "entertainers_pack"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "lute"
+              ],
+              [
+                "musical_instrument"
+              ]
+            ]
+          }
+        ],
+        "fixed": [
+          "leather_armor",
+          "dagger"
+        ]
+      },
+      "features": [
+        {
+          "level": 1,
+          "name": "施法",
+          "nameEn": "Spellcasting",
+          "description": "你已经学会了如何从庞大的法术宝库中解开和塑造现实的结构。"
+        },
+        {
+          "level": 1,
+          "name": "激励",
+          "nameEn": "Bardic Inspiration",
+          "description": "你可以用一个附赠动作选择一个60尺内能听到你的生物(除了你自己)。该生物获得一个激励骰(d6)。在接下来的10分钟内，该生物可以在一次攻击检定、属性检定或豁免检定中掷激励骰并将结果加到掷骰中。",
+          "die": {
+            "1": "d6",
+            "5": "d8",
+            "10": "d10",
+            "15": "d12"
+          },
+          "uses": "魅力调整值(最少1次)"
+        },
+        {
+          "level": 2,
+          "name": "万事通",
+          "nameEn": "Jack of All Trades",
+          "description": "你可以将你的熟练加值的一半(向下取整)加到任何你没有熟练的属性检定上。"
+        },
+        {
+          "level": 2,
+          "name": "安息曲",
+          "nameEn": "Song of Rest",
+          "description": "在短休期间你可以使用舒缓的音乐或演说来帮助恢复伤口。任何在短休中花费一个或多个生命骰恢复生命值的友方生物额外恢复1d6生命值。",
+          "extraHealing": {
+            "2": "d6",
+            "9": "d8",
+            "13": "d10",
+            "17": "d12"
+          }
+        },
+        {
+          "level": 3,
+          "name": "诗人学院",
+          "nameEn": "Bard College",
+          "description": "你深入研究诗人学院的高级技巧：勇气学院或智识学院。"
+        },
+        {
+          "level": 3,
+          "name": "专精",
+          "nameEn": "Expertise",
+          "description": "选择两项你熟练的技能。你在使用这些技能的属性检定上的熟练加值翻倍。"
+        },
+        {
+          "level": 4,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 5,
+          "name": "灵感之泉",
+          "nameEn": "Font of Inspiration",
+          "description": "你在完成短休或长休后恢复所有已使用的激励次数。"
+        },
+        {
+          "level": 6,
+          "name": "反魅惑",
+          "nameEn": "Countercharm",
+          "description": "你可以用一个动作开始表演，持续到你的下一回合结束。在此期间，你和30尺内的友方生物在对抗魅惑和恐惧的豁免上具有优势。"
+        },
+        {
+          "level": 7,
+          "name": "反魅惑",
+          "nameEn": "Countercharm",
+          "description": "你和你30尺内的友方生物在对抗魅惑和恐慌的豁免上具有优势。"
+        },
+        {
+          "level": 8,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 9,
+          "name": "灵感之泉改良",
+          "nameEn": "Font of Inspiration Improvement",
+          "description": "你在短休后恢复所有已使用的激励骰。"
+        },
+        {
+          "level": 10,
+          "name": "魔法奥秘",
+          "nameEn": "Magical Secrets",
+          "description": "你从任何职业的法术列表中学习两个法术。这些法术对你来说视为吟游诗人法术。",
+          "spellsLearned": {
+            "10": 2,
+            "14": 2,
+            "18": 2
+          }
+        },
+        {
+          "level": 11,
+          "name": "魔法奥秘",
+          "nameEn": "Magical Secrets",
+          "description": "你从任何职业的法术列表中学习两个法术。"
+        },
+        {
+          "level": 12,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 13,
+          "name": "魔法奥秘",
+          "nameEn": "Magical Secrets",
+          "description": "你从任何职业的法术列表中学习两个法术。"
+        },
+        {
+          "level": 14,
+          "name": "诗人学院特性",
+          "nameEn": "Bard College Feature",
+          "description": "你获得所选诗人学院的14级特性。"
+        },
+        {
+          "level": 15,
+          "name": "魔法奥秘",
+          "nameEn": "Magical Secrets",
+          "description": "你从任何职业的法术列表中学习两个法术。"
+        },
+        {
+          "level": 16,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 17,
+          "name": "魔法奥秘",
+          "nameEn": "Magical Secrets",
+          "description": "你从任何职业的法术列表中学习两个法术。"
+        },
+        {
+          "level": 18,
+          "name": "魔法奥秘",
+          "nameEn": "Magical Secrets",
+          "description": "你从任何职业的法术列表中学习两个法术。"
+        },
+        {
+          "level": 19,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 20,
+          "name": "至高激励",
+          "nameEn": "Superior Inspiration",
+          "description": "当你掷先攻且没有剩余激励次数时，你恢复一次激励。"
+        }
+      ],
+      "subclasses": [
+        {
+          "id": "lore",
+          "name": "智识学院",
+          "nameEn": "College of Lore",
+          "description": "智识学院的吟游诗人知晓各种知识，收集知识碎片。他们精通多种技能，能够施展额外的魔法秘密。",
+          "descriptionEn": "Bards of the College of Lore know something about most things, collecting bits of knowledge. They master many skills and can cast additional magical secrets.",
+          "features": "额外熟练（3级）、妙语连珠（3级）、额外魔法秘密（6级）、无双技艺（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "吟游诗人在3级时选择学院。智识学院在3级获得额外熟练（3项技能）和妙语连珠（用反应降低敌人的攻击、属性检定或伤害骰）。"
+            }
+          ]
+        },
+        {
+          "id": "valor",
+          "name": "勇气学院",
+          "nameEn": "College of Valor",
+          "description": "勇气学院的吟游诗人是勇敢的探险者和决斗者。他们精通武器和护甲，能在战斗中激励盟友。",
+          "descriptionEn": "Bards of the College of Valor are daring explorers and duelists. They are proficient with weapons and armor, inspiring allies in battle.",
+          "features": "战斗熟练（3级）、战斗激励（3级）、额外攻击（6级）、战斗魔法（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "吟游诗人在3级时选择学院。勇气学院在3级获得战斗熟练（中甲、盾牌、军用武器）和战斗激励（战斗激励骰可用于武器伤害）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleric",
+      "name": "牧师",
+      "nameEn": "Cleric",
+      "hitDie": "d8",
+      "primaryAbility": [
+        "wisdom"
+      ],
+      "savingThrows": [
+        "wisdom",
+        "charisma"
+      ],
+      "proficiencies": {
+        "armor": [
+          "light_armor",
+          "medium_armor",
+          "shields"
+        ],
+        "weapons": [
+          "simple_weapons"
+        ],
+        "tools": [],
+        "skillsAvailable": [
+          "history",
+          "insight",
+          "medicine",
+          "persuasion",
+          "religion"
+        ],
+        "skillChoices": 2
+      },
+      "spellcasting": {
+        "ability": "wisdom",
+        "preparedSpells": true,
+        "preparedFormula": "感知调整值 + 牧师等级",
+        "cantripsKnown": {
+          "1": 3,
+          "4": 4,
+          "10": 5
+        },
+        "spellSlots": {
+          "1": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        "ritualCasting": true
+      },
+      "startingEquipment": {
+        "choices": [
+          {
+            "choose": 1,
+            "from": [
+              [
+                "mace"
+              ],
+              [
+                "warhammer"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "scale_mail"
+              ],
+              [
+                "leather_armor"
+              ],
+              [
+                "chain_mail"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "light_crossbow",
+                "crossbow_bolts:20"
+              ],
+              [
+                "simple_weapon"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "priests_pack"
+              ],
+              [
+                "explorers_pack"
+              ]
+            ]
+          }
+        ],
+        "fixed": [
+          "shield",
+          "holy_symbol"
+        ]
+      },
+      "features": [
+        {
+          "level": 1,
+          "name": "施法",
+          "nameEn": "Spellcasting",
+          "description": "作为神力的导管，你可以施放牧师法术。"
+        },
+        {
+          "level": 1,
+          "name": "神圣领域",
+          "nameEn": "Divine Domain",
+          "description": "选择一个与你的神祇相关的领域：知识、生命、光明、自然、风暴、诡术或战争。每个领域在1级时授予你领域法术和其他特性。"
+        },
+        {
+          "level": 2,
+          "name": "引导神力",
+          "nameEn": "Channel Divinity",
+          "description": "你获得引导神圣能量的能力。每次短休或长休后可使用一次，18级时增至三次。",
+          "uses": {
+            "2": 1,
+            "6": 2,
+            "18": 3
+          },
+          "options": [
+            {
+              "name": "驱散不死生物",
+              "nameEn": "Turn Undead",
+              "description": "用一个动作展示你的圣徽并念诵祷文。30尺内能看到或听到你的每个不死生物必须进行感知豁免，失败则被驱散1分钟。"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "引导神力改良",
+          "nameEn": "Channel Divinity Improvement",
+          "description": "你可以使用引导神力特性的次数增加。"
+        },
+        {
+          "level": 4,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 5,
+          "name": "摧毁不死生物",
+          "nameEn": "Destroy Undead",
+          "description": "当不死生物在你的驱散不死生物特性中豁免失败时，如果其挑战等级达到特定阈值或以下，该生物立即被摧毁。",
+          "crThreshold": {
+            "5": "1/2",
+            "8": 1,
+            "11": 2,
+            "14": 3,
+            "17": 4
+          }
+        },
+        {
+          "level": 6,
+          "name": "神圣领域特性",
+          "nameEn": "Divine Domain Feature",
+          "description": "你获得所选神圣领域的6级特性。"
+        },
+        {
+          "level": 7,
+          "name": "引导神力改良",
+          "nameEn": "Channel Divinity Improvement",
+          "description": "你可以使用引导神力特性的次数增加。"
+        },
+        {
+          "level": 8,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 9,
+          "name": "引导神力改良",
+          "nameEn": "Channel Divinity Improvement",
+          "description": "你可以使用引导神力特性的次数增加。"
+        },
+        {
+          "level": 10,
+          "name": "神圣干预",
+          "nameEn": "Divine Intervention",
+          "description": "你可以恳求你的神祇在你需要帮助时介入。你掷百分骰，如果结果等于或小于你的牧师等级，你的神祇介入。成功后，你必须完成7天长休才能再次使用。",
+          "successChance": "牧师等级%",
+          "automaticSuccess": 20
+        },
+        {
+          "level": 11,
+          "name": "摧毁不死生物改良",
+          "nameEn": "Destroy Undead Improvement",
+          "description": "当不死生物在你的引导神力：摧毁不死生物特性的豁免中失败时，该生物被立即摧毁，如果其挑战等级为1或更低。"
+        },
+        {
+          "level": 12,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 13,
+          "name": "引导神力改良",
+          "nameEn": "Channel Divinity Improvement",
+          "description": "你可以使用引导神力特性的次数增加。"
+        },
+        {
+          "level": 14,
+          "name": "摧毁不死生物改良",
+          "nameEn": "Destroy Undead Improvement",
+          "description": "当不死生物在你的引导神力：摧毁不死生物特性的豁免中失败时，该生物被立即摧毁，如果其挑战等级为3或更低。"
+        },
+        {
+          "level": 15,
+          "name": "引导神力改良",
+          "nameEn": "Channel Divinity Improvement",
+          "description": "你可以使用引导神力特性的次数增加。"
+        },
+        {
+          "level": 16,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 17,
+          "name": "神圣领域特性",
+          "nameEn": "Divine Domain Feature",
+          "description": "你获得所选神圣领域的17级特性。"
+        },
+        {
+          "level": 18,
+          "name": "引导神力改良",
+          "nameEn": "Channel Divinity Improvement",
+          "description": "你可以使用引导神力特性的次数增加。"
+        },
+        {
+          "level": 19,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 20,
+          "name": "神圣干预改良",
+          "nameEn": "Divine Intervention Improvement",
+          "description": "你的神圣干预自动成功，无需掷骰。"
+        }
+      ],
+      "subclasses": [
+        {
+          "id": "knowledge",
+          "name": "知识领域",
+          "nameEn": "Knowledge Domain",
+          "description": "知识领域的神祇重视学习和理解。追随者精通多种技能，能够阅读所有文字。",
+          "descriptionEn": "Deities of knowledge value learning and understanding. Followers gain proficiency in multiple skills and can read all writing.",
+          "features": "知识祝福（1级）、知识通道（2级）、阅读思想（6级）、强力施法（8级）、异象（17级）",
+          "level1Features": [
+            {
+              "name": "知识祝福",
+              "nameEn": "Blessing of Knowledge",
+              "description": "在第1级时，你学会两门自选语言。你还从以下技能中选择两项加入你的熟练项中：奥秘、历史、自然、宗教。你进行关于所选两项技能的属性检定时，可以加上双倍的熟练加值。"
+            },
+            {
+              "name": "知识领域法术",
+              "nameEn": "Knowledge Domain Spells",
+              "description": "1级：命令术、鉴定术"
+            }
+          ],
+          "featureChoices": [
+            {
+              "featureName": "知识祝福",
+              "featureNameEn": "Blessing of Knowledge",
+              "choices": [
+                {
+                  "type": "language",
+                  "count": 2,
+                  "description": "选择两门语言",
+                  "descriptionEn": "Choose two languages",
+                  "options": [
+                    {
+                      "id": "common",
+                      "name": "通用语",
+                      "nameEn": "Common"
+                    },
+                    {
+                      "id": "dwarvish",
+                      "name": "矮人语",
+                      "nameEn": "Dwarvish"
+                    },
+                    {
+                      "id": "elvish",
+                      "name": "精灵语",
+                      "nameEn": "Elvish"
+                    },
+                    {
+                      "id": "giant",
+                      "name": "巨人语",
+                      "nameEn": "Giant"
+                    },
+                    {
+                      "id": "gnomish",
+                      "name": "侏儒语",
+                      "nameEn": "Gnomish"
+                    },
+                    {
+                      "id": "goblin",
+                      "name": "地精语",
+                      "nameEn": "Goblin"
+                    },
+                    {
+                      "id": "halfling",
+                      "name": "半身人语",
+                      "nameEn": "Halfling"
+                    },
+                    {
+                      "id": "orc",
+                      "name": "兽人语",
+                      "nameEn": "Orc"
+                    },
+                    {
+                      "id": "abyssal",
+                      "name": "深渊语",
+                      "nameEn": "Abyssal"
+                    },
+                    {
+                      "id": "celestial",
+                      "name": "天界语",
+                      "nameEn": "Celestial"
+                    },
+                    {
+                      "id": "draconic",
+                      "name": "龙语",
+                      "nameEn": "Draconic"
+                    },
+                    {
+                      "id": "deep_speech",
+                      "name": "深言语",
+                      "nameEn": "Deep Speech"
+                    },
+                    {
+                      "id": "infernal",
+                      "name": "炼狱语",
+                      "nameEn": "Infernal"
+                    },
+                    {
+                      "id": "primordial",
+                      "name": "原初语",
+                      "nameEn": "Primordial"
+                    },
+                    {
+                      "id": "sylvan",
+                      "name": "林精语",
+                      "nameEn": "Sylvan"
+                    },
+                    {
+                      "id": "undercommon",
+                      "name": "地底通用语",
+                      "nameEn": "Undercommon"
+                    }
+                  ]
+                },
+                {
+                  "type": "skill",
+                  "count": 2,
+                  "description": "选择两项技能（这两项技能检定时加双倍熟练加值）",
+                  "descriptionEn": "Choose two skills (double proficiency bonus)",
+                  "options": [
+                    {
+                      "id": "arcana",
+                      "name": "奥秘",
+                      "nameEn": "Arcana"
+                    },
+                    {
+                      "id": "history",
+                      "name": "历史",
+                      "nameEn": "History"
+                    },
+                    {
+                      "id": "nature",
+                      "name": "自然",
+                      "nameEn": "Nature"
+                    },
+                    {
+                      "id": "religion",
+                      "name": "宗教",
+                      "nameEn": "Religion"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "life",
+          "name": "生命领域",
+          "nameEn": "Life Domain",
+          "description": "生命领域专注于生命力和治疗。追随者是最强大的治疗者，能够恢复生命和保护盟友。",
+          "descriptionEn": "The Life domain focuses on vibrant life and healing. Followers are the most powerful healers, restoring life and protecting allies.",
+          "features": "额外熟练（1级）、生命门徒（1级）、保命通道（2级）、祝福治疗者（6级）、神圣打击（8级）、至高治疗（17级）",
+          "level1Features": [
+            {
+              "name": "额外熟练项",
+              "nameEn": "Bonus Proficiency",
+              "description": "在第1级选择该领域时，你获得重甲的熟练项。"
+            },
+            {
+              "name": "生命门徒",
+              "nameEn": "Disciple of Life",
+              "description": "第1级起，你的治疗法术更加有效。当你施展1环或更高环阶法术恢复生物生命值时，你的目标额外恢复2+法术环阶数值的生命值。"
+            },
+            {
+              "name": "生命领域法术",
+              "nameEn": "Life Domain Spells",
+              "description": "1级：祝福术、疗伤术"
+            }
+          ]
+        },
+        {
+          "id": "light",
+          "name": "光明领域",
+          "nameEn": "Light Domain",
+          "description": "光明领域的神祇代表真理、美丽和对抗黑暗。追随者能够释放灼热的光芒和火焰。",
+          "descriptionEn": "Deities of light represent truth, beauty, and the fight against darkness. Followers can unleash searing light and flame.",
+          "features": "额外戏法（1级）、护卫闪光（1级）、光辉通道（2级）、改良闪光（6级）、强力施法（8级）、日冕（17级）",
+          "level1Features": [
+            {
+              "name": "额外戏法",
+              "nameEn": "Bonus Cantrip",
+              "description": "在第1级选择该领域时，你获得光亮术戏法（如果你还没有学会的话）。"
+            },
+            {
+              "name": "护卫闪光",
+              "nameEn": "Warding Flare",
+              "description": "第1级起，你可以在被攻击时用神圣之光干扰敌人。当你能看到的30尺内生物攻击你时，你可以用你的反应令该攻击者在攻击检定上具有劣势，使其被一道神圣之光闪花了眼。攻击者若免疫目盲状态则不受该特性影响。你可以使用该特性的次数等于你的感知调整值（最少1次）。完成一次长休后，你恢复所有已消耗的使用次数。"
+            },
+            {
+              "name": "光明领域法术",
+              "nameEn": "Light Domain Spells",
+              "description": "1级：燃烧之手、妖火"
+            }
+          ]
+        },
+        {
+          "id": "nature",
+          "name": "自然领域",
+          "nameEn": "Nature Domain",
+          "description": "自然领域的神祇是自然世界的守护者。追随者能够指挥动植物，保护荒野。",
+          "descriptionEn": "Deities of nature are guardians of the natural world. Followers can command plants and animals, protecting the wilderness.",
+          "features": "自然学徒（1级）、额外熟练（1级）、魅惑动植物通道（2级）、衰减不死通道（2级）、自然之怒（6级）、神圣打击（8级）、自然大师（17级）",
+          "level1Features": [
+            {
+              "name": "自然学徒",
+              "nameEn": "Acolyte of Nature",
+              "description": "在第1级时，你学会一个德鲁伊戏法。你还从以下技能中选择一项加入你的熟练项中：动物驯养、自然、求生。"
+            },
+            {
+              "name": "额外熟练项",
+              "nameEn": "Bonus Proficiency",
+              "description": "在第1级选择该领域时，你获得重甲的熟练项。"
+            },
+            {
+              "name": "自然领域法术",
+              "nameEn": "Nature Domain Spells",
+              "description": "1级：动物友谊、树肤术"
+            }
+          ],
+          "featureChoices": [
+            {
+              "featureName": "自然学徒",
+              "featureNameEn": "Acolyte of Nature",
+              "choices": [
+                {
+                  "type": "cantrip",
+                  "count": 1,
+                  "description": "选择一个德鲁伊戏法",
+                  "descriptionEn": "Choose one druid cantrip",
+                  "options": "druid_cantrips"
+                },
+                {
+                  "type": "skill",
+                  "count": 1,
+                  "description": "选择一项技能",
+                  "descriptionEn": "Choose one skill",
+                  "options": [
+                    {
+                      "id": "animal_handling",
+                      "name": "驯兽",
+                      "nameEn": "Animal Handling"
+                    },
+                    {
+                      "id": "nature",
+                      "name": "自然",
+                      "nameEn": "Nature"
+                    },
+                    {
+                      "id": "survival",
+                      "name": "求生",
+                      "nameEn": "Survival"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tempest",
+          "name": "风暴领域",
+          "nameEn": "Tempest Domain",
+          "description": "风暴领域的神祇掌控风暴、海洋和天空。追随者能够召唤雷电和狂风。",
+          "descriptionEn": "Deities of tempest govern storms, sea, and sky. Followers can summon lightning and gales.",
+          "features": "额外熟练（1级）、风暴之怒（1级）、破坏之怒通道（2级）、雷霆打击（6级）、神圣打击（8级）、风暴之子（17级）",
+          "level1Features": [
+            {
+              "name": "额外熟练项",
+              "nameEn": "Bonus Proficiencies",
+              "description": "在第1级时，你获得武器（军用）和重甲的熟练项。"
+            },
+            {
+              "name": "风暴之怒",
+              "nameEn": "Wrath of the Storm",
+              "description": "第1级起，你可以用雷鸣般的怒吼谴责攻击你的敌人。当你5尺内可见的生物击中你时，你可以用你的反应令该生物进行一次敏捷豁免。豁免失败的生物受到2d8点雷鸣或闪电伤害（由你选择），豁免成功则伤害减半。你可以使用该特性的次数等于你的感知调整值（最少1次）。完成一次长休后，你恢复所有已消耗的使用次数。"
+            },
+            {
+              "name": "风暴领域法术",
+              "nameEn": "Tempest Domain Spells",
+              "description": "1级：造雾术、雷鸣波"
+            }
+          ]
+        },
+        {
+          "id": "trickery",
+          "name": "诡术领域",
+          "nameEn": "Trickery Domain",
+          "description": "诡术领域的神祇是欺骗和幻象的大师。追随者精通隐秘和欺诈。",
+          "descriptionEn": "Deities of trickery are masters of deception and illusion. Followers excel at stealth and trickery.",
+          "features": "诡术祝福（1级）、诡术通道（2级）、诡术分身通道（2级）、诡术斗篷（6级）、神圣打击（8级）、改良复制（17级）",
+          "level1Features": [
+            {
+              "name": "诡术祝福",
+              "nameEn": "Blessing of the Trickster",
+              "description": "第1级起，你可以用你的动作触碰一个自愿生物（除了你自己），赋予其在敏捷（隐匿）检定上的优势。该祝福持续1小时或直到你再次使用该特性。"
+            },
+            {
+              "name": "诡术领域法术",
+              "nameEn": "Trickery Domain Spells",
+              "description": "1级：魅惑人类、易容术"
+            }
+          ]
+        },
+        {
+          "id": "war",
+          "name": "战争领域",
+          "nameEn": "War Domain",
+          "description": "战争领域的神祇是战斗和勇气的守护者。追随者是强大的战士，能够激励盟友。",
+          "descriptionEn": "Deities of war are patrons of warriors and courage. Followers are mighty combatants who inspire allies.",
+          "features": "额外熟练（1级）、战争祭司（1级）、战争通道（2级）、战争之神通道（2级）、神圣打击（6级、8级）、战争化身（17级）",
+          "level1Features": [
+            {
+              "name": "额外熟练项",
+              "nameEn": "Bonus Proficiencies",
+              "description": "在第1级时，你获得武器（军用）和重甲的熟练项。"
+            },
+            {
+              "name": "战争祭司",
+              "nameEn": "War Priest",
+              "description": "第1级起，你的神祇会在战斗中激励你。当你使用攻击动作时，你可以用一个附赠动作进行一次武器攻击。你可以使用该特性的次数等于你的感知调整值（最少1次）。完成一次长休后，你恢复所有已消耗的使用次数。"
+            },
+            {
+              "name": "战争领域法术",
+              "nameEn": "War Domain Spells",
+              "description": "1级：神恩术、护盾术"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "druid",
+      "name": "德鲁伊",
+      "nameEn": "Druid",
+      "hitDie": "d8",
+      "primaryAbility": [
+        "wisdom"
+      ],
+      "savingThrows": [
+        "intelligence",
+        "wisdom"
+      ],
+      "proficiencies": {
+        "armor": [
+          "light_armor",
+          "medium_armor",
+          "shields"
+        ],
+        "armorRestriction": "不穿戴金属护甲",
+        "weapons": [
+          "clubs",
+          "daggers",
+          "darts",
+          "javelins",
+          "maces",
+          "quarterstaffs",
+          "scimitars",
+          "sickles",
+          "slings",
+          "spears"
+        ],
+        "tools": [
+          "herbalism_kit"
+        ],
+        "skillsAvailable": [
+          "arcana",
+          "animal_handling",
+          "insight",
+          "medicine",
+          "nature",
+          "perception",
+          "religion",
+          "survival"
+        ],
+        "skillChoices": 2
+      },
+      "spellcasting": {
+        "ability": "wisdom",
+        "preparedSpells": true,
+        "preparedFormula": "感知调整值 + 德鲁伊等级",
+        "cantripsKnown": {
+          "1": 2,
+          "4": 3,
+          "10": 4
+        },
+        "spellSlots": {
+          "1": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        "ritualCasting": true
+      },
+      "startingEquipment": {
+        "choices": [
+          {
+            "choose": 1,
+            "from": [
+              [
+                "wooden_shield"
+              ],
+              [
+                "simple_weapon"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "scimitar"
+              ],
+              [
+                "simple_melee_weapon"
+              ]
+            ]
+          }
+        ],
+        "fixed": [
+          "leather_armor",
+          "explorers_pack",
+          "druidic_focus"
+        ]
+      },
+      "features": [
+        {
+          "level": 1,
+          "name": "德鲁伊语",
+          "nameEn": "Druidic",
+          "description": "你知道德鲁伊语，这是德鲁伊的秘密语言。你可以用它来留下隐藏的讯息。"
+        },
+        {
+          "level": 1,
+          "name": "施法",
+          "nameEn": "Spellcasting",
+          "description": "你从自然本身汲取神圣法术，可以施放德鲁伊法术。"
+        },
+        {
+          "level": 2,
+          "name": "野性形态",
+          "nameEn": "Wild Shape",
+          "description": "你可以用一个动作魔法般地变成你见过的野兽。你可以使用此特性两次，在短休或长休后恢复使用次数。",
+          "uses": 2,
+          "maxCR": {
+            "2": "1/4",
+            "4": "1/2",
+            "8": 1
+          },
+          "restrictions": {
+            "2": "无飞行或游泳速度",
+            "4": "无飞行速度",
+            "8": "无限制"
+          },
+          "duration": "等级的一半(向下取整)小时"
+        },
+        {
+          "level": 3,
+          "name": "野性形态改良",
+          "nameEn": "Wild Shape Improvement",
+          "description": "你可以使用野性形态变化为挑战等级1或更低的野兽。"
+        },
+        {
+          "level": 4,
+          "name": "野性形态改良",
+          "nameEn": "Wild Shape Improvement",
+          "description": "你可以变身为挑战等级1/2或更低的野兽。"
+        },
+        {
+          "level": 5,
+          "name": "野性形态改良",
+          "nameEn": "Wild Shape Improvement",
+          "description": "你可以使用野性形态变化为挑战等级2或更低的野兽。"
+        },
+        {
+          "level": 6,
+          "name": "德鲁伊结社特性",
+          "nameEn": "Druid Circle Feature",
+          "description": "你获得所选德鲁伊结社的6级特性。"
+        },
+        {
+          "level": 7,
+          "name": "野性形态改良",
+          "nameEn": "Wild Shape Improvement",
+          "description": "你可以使用野性形态变化为挑战等级3或更低的野兽。"
+        },
+        {
+          "level": 8,
+          "name": "野性形态改良",
+          "nameEn": "Wild Shape Improvement",
+          "description": "你可以变身为挑战等级1或更低的野兽。"
+        },
+        {
+          "level": 9,
+          "name": "野性形态改良",
+          "nameEn": "Wild Shape Improvement",
+          "description": "你可以使用野性形态变化为挑战等级4或更低的野兽。"
+        },
+        {
+          "level": 10,
+          "name": "德鲁伊结社特性",
+          "nameEn": "Druid Circle Feature",
+          "description": "你获得所选德鲁伊结社的10级特性。"
+        },
+        {
+          "level": 11,
+          "name": "野性形态改良",
+          "nameEn": "Wild Shape Improvement",
+          "description": "你可以使用野性形态变化为挑战等级5或更低的野兽。"
+        },
+        {
+          "level": 12,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 13,
+          "name": "野性形态改良",
+          "nameEn": "Wild Shape Improvement",
+          "description": "你可以使用野性形态变化为挑战等级5或更低的野兽（飞行速度）。"
+        },
+        {
+          "level": 14,
+          "name": "德鲁伊结社特性",
+          "nameEn": "Druid Circle Feature",
+          "description": "你获得所选德鲁伊结社的14级特性。"
+        },
+        {
+          "level": 15,
+          "name": "野性形态改良",
+          "nameEn": "Wild Shape Improvement",
+          "description": "你可以使用野性形态变化为挑战等级5或更低的野兽（游泳速度）。"
+        },
+        {
+          "level": 16,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 16,
+          "name": "野性形态改良",
+          "nameEn": "Wild Shape Improvement",
+          "description": "你可以使用野性形态变化为挑战等级6或更低的野兽。"
+        },
+        {
+          "level": 17,
+          "name": "野性形态改良",
+          "nameEn": "Wild Shape Improvement",
+          "description": "你可以使用野性形态变化为挑战等级6或更低的野兽。"
+        },
+        {
+          "level": 18,
+          "name": "永恒之躯",
+          "nameEn": "Timeless Body",
+          "description": "你每过10年只会衰老1岁。"
+        },
+        {
+          "level": 18,
+          "name": "野兽法术",
+          "nameEn": "Beast Spells",
+          "description": "你可以在野性形态下施放德鲁伊法术。"
+        },
+        {
+          "level": 19,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 20,
+          "name": "大德鲁伊",
+          "nameEn": "Archdruid",
+          "description": "你可以无限次数使用野性形态。你可以忽略德鲁伊法术的言语和姿态成分。"
+        }
+      ],
+      "subclasses": [
+        {
+          "id": "land",
+          "name": "大地结社",
+          "nameEn": "Circle of the Land",
+          "description": "大地结社的德鲁伊与特定地形建立神秘联系。他们能够恢复法术位，获得地形相关的额外法术。",
+          "descriptionEn": "Druids of the Circle of the Land form a mystical bond with a specific terrain. They can recover spell slots and gain terrain-specific spells.",
+          "features": "额外戏法（2级）、自然恢复（2级）、环境法术（3、5、7、9级）、大地行者（6级）、自然庇护（10级）、自然圣所（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "德鲁伊在2级时选择结社。大地结社在2级获得额外戏法和自然恢复（短休时恢复法术位）。你还需要选择一个环境（极地、海岸、荒漠、丛林、草原、山地、沼泽、幽暗地域）。"
+            }
+          ]
+        },
+        {
+          "id": "moon",
+          "name": "月亮结社",
+          "nameEn": "Circle of the Moon",
+          "description": "月亮结社的德鲁伊是凶猛的守护者。他们能够变化为更强大的野兽形态，在野性形态下战斗。",
+          "descriptionEn": "Druids of the Circle of the Moon are fierce guardians. They can transform into more powerful beast shapes and fight in wild shape.",
+          "features": "战斗野性形态（2级）、环境形态（2级）、原初打击（6级）、元素野性形态（10级）、千面（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "德鲁伊在2级时选择结社。月亮结社在2级获得战斗野性形态（可以变化为更强大的野兽）和环境形态（可以用附赠动作变化）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fighter",
+      "name": "战士",
+      "nameEn": "Fighter",
+      "hitDie": "d10",
+      "primaryAbility": [
+        "strength",
+        "dexterity"
+      ],
+      "savingThrows": [
+        "strength",
+        "constitution"
+      ],
+      "proficiencies": {
+        "armor": [
+          "light_armor",
+          "medium_armor",
+          "heavy_armor",
+          "shields"
+        ],
+        "weapons": [
+          "simple_weapons",
+          "martial_weapons"
+        ],
+        "tools": [],
+        "skillsAvailable": [
+          "acrobatics",
+          "animal_handling",
+          "athletics",
+          "history",
+          "insight",
+          "intimidation",
+          "perception",
+          "survival"
+        ],
+        "skillChoices": 2
+      },
+      "startingEquipment": {
+        "choices": [
+          {
+            "choose": 1,
+            "from": [
+              [
+                "chain_mail"
+              ],
+              [
+                "leather_armor",
+                "longbow",
+                "arrows:20"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "martial_weapon",
+                "shield"
+              ],
+              [
+                "martial_weapon",
+                "martial_weapon"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "light_crossbow",
+                "crossbow_bolts:20"
+              ],
+              [
+                "handaxe",
+                "handaxe"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "dungeoneers_pack"
+              ],
+              [
+                "explorers_pack"
+              ]
+            ]
+          }
+        ],
+        "fixed": []
+      },
+      "features": [
+        {
+          "level": 1,
+          "name": "战斗风格",
+          "nameEn": "Fighting Style",
+          "description": "选择一种战斗风格：箭术、防御、决斗、强武器战斗或双武器战斗。",
+          "options": [
+            {
+              "id": "archery",
+              "name": "箭术",
+              "nameEn": "Archery",
+              "description": "你用远程武器进行的攻击检定获得+2加值。"
+            },
+            {
+              "id": "defense",
+              "name": "防御",
+              "nameEn": "Defense",
+              "description": "当你穿着护甲时，你的AC获得+1加值。"
+            },
+            {
+              "id": "dueling",
+              "name": "决斗",
+              "nameEn": "Dueling",
+              "description": "当你在一只手持有一把近战武器而另一只手没有持武器时，你用该武器的伤害掷骰获得+2加值。"
+            },
+            {
+              "id": "great_weapon_fighting",
+              "name": "强武器战斗",
+              "nameEn": "Great Weapon Fighting",
+              "description": "当你用双手持有的近战武器掷伤害骰时，你可以将任何掷出1或2的骰子重掷一次，但必须使用新结果。"
+            },
+            {
+              "id": "two_weapon_fighting",
+              "name": "双武器战斗",
+              "nameEn": "Two-Weapon Fighting",
+              "description": "当你使用双武器战斗时，你可以将你的属性调整值加到第二次攻击的伤害中。"
+            }
+          ]
+        },
+        {
+          "level": 1,
+          "name": "回气",
+          "nameEn": "Second Wind",
+          "description": "你在战斗中可以使用一个附赠动作恢复生命值，恢复量等于1d10 + 你的战士等级。短休或长休后恢复使用。",
+          "healing": "1d10 + 战士等级"
+        },
+        {
+          "level": 2,
+          "name": "行动如潮",
+          "nameEn": "Action Surge",
+          "description": "你可以在你的回合进行一个额外的动作。短休或长休后恢复使用。",
+          "uses": {
+            "2": 1,
+            "17": 2
+          }
+        },
+        {
+          "level": 3,
+          "name": "武技范型",
+          "nameEn": "Martial Archetype",
+          "description": "选择一个武技范型：冠军、战斗大师或诡术师。"
+        },
+        {
+          "level": 4,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 5,
+          "name": "额外攻击",
+          "nameEn": "Extra Attack",
+          "description": "当你在自己的回合使用攻击动作时，你可以攻击两次。",
+          "attacks": {
+            "5": 2,
+            "11": 3,
+            "20": 4
+          }
+        },
+        {
+          "level": 6,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 7,
+          "name": "武技范型特性",
+          "nameEn": "Martial Archetype Feature",
+          "description": "你获得所选武技范型的7级特性。"
+        },
+        {
+          "level": 8,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 9,
+          "name": "不屈",
+          "nameEn": "Indomitable",
+          "description": "你可以重掷一次失败的豁免检定，但必须使用新结果。长休后恢复使用。",
+          "uses": {
+            "9": 1,
+            "13": 2,
+            "17": 3
+          }
+        },
+        {
+          "level": 10,
+          "name": "武技范型特性",
+          "nameEn": "Martial Archetype Feature",
+          "description": "你获得所选武技范型的10级特性。"
+        },
+        {
+          "level": 11,
+          "name": "额外攻击（2次）",
+          "nameEn": "Extra Attack (2)",
+          "description": "当你在自己的回合使用攻击动作时，你可以攻击三次，而不是两次。"
+        },
+        {
+          "level": 12,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 13,
+          "name": "不屈改良",
+          "nameEn": "Indomitable Improvement",
+          "description": "你可以使用不屈特性两次。"
+        },
+        {
+          "level": 14,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 15,
+          "name": "武技范型特性",
+          "nameEn": "Martial Archetype Feature",
+          "description": "你获得所选武技范型的15级特性。"
+        },
+        {
+          "level": 16,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 17,
+          "name": "不屈改良",
+          "nameEn": "Indomitable Improvement",
+          "description": "你可以使用不屈特性三次。"
+        },
+        {
+          "level": 18,
+          "name": "武技范型特性",
+          "nameEn": "Martial Archetype Feature",
+          "description": "你获得所选武技范型的18级特性。"
+        },
+        {
+          "level": 19,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 20,
+          "name": "额外攻击（3次）",
+          "nameEn": "Extra Attack (3)",
+          "description": "当你在自己的回合使用攻击动作时，你可以攻击四次，而不是三次。"
+        }
+      ],
+      "subclasses": [
+        {
+          "id": "champion",
+          "name": "冠军",
+          "nameEn": "Champion",
+          "description": "冠军专注于纯粹的身体力量和战斗技巧。他们追求完美的战斗技艺，更容易造成重击。",
+          "descriptionEn": "Champions focus on raw physical power and combat prowess. They pursue perfect combat technique and score critical hits more easily.",
+          "features": "精进重击（3级）、卓越运动员（7级）、额外战斗风格（10级）、超凡重击（15级）、幸存者（18级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "战士在3级时选择武技范型。冠军在3级获得精进重击（攻击骰19-20时造成重击）。"
+            }
+          ]
+        },
+        {
+          "id": "battle_master",
+          "name": "战斗大师",
+          "nameEn": "Battle Master",
+          "description": "战斗大师运用战术技巧和特殊战技。他们能够使用优势骰执行各种战斗策略。",
+          "descriptionEn": "Battle Masters employ tactical maneuvers and special techniques. They use superiority dice to execute various combat strategies.",
+          "features": "战斗优势（3级）、战技（3级）、学者（3级）、知己知彼（7级）、改良战斗优势（10、18级）、不屈（15级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "战士在3级时选择武技范型。战斗大师在3级获得战斗优势（4个d8优势骰）、战技（学习3个战技）和学者（获得一项技能或工具熟练）。"
+            }
+          ]
+        },
+        {
+          "id": "eldritch_knight",
+          "name": "诡术师",
+          "nameEn": "Eldritch Knight",
+          "description": "诡术骑士将武技与奥术魔法结合。他们能够施展法师法术，将魔法融入战斗。",
+          "descriptionEn": "Eldritch Knights combine martial prowess with arcane magic. They can cast wizard spells, weaving magic into combat.",
+          "features": "施法（3级）、武器绑定（3级）、战争魔法（7级）、诡术打击（10级）、奥法冲锋（15级）、改良战争魔法（18级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "战士在3级时选择武技范型。诡术骑士在3级获得施法能力（学习法师法术，主要是防护和塑能学派）和武器绑定（召回绑定武器）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monk",
+      "name": "武僧",
+      "nameEn": "Monk",
+      "hitDie": "d8",
+      "primaryAbility": [
+        "dexterity",
+        "wisdom"
+      ],
+      "savingThrows": [
+        "strength",
+        "dexterity"
+      ],
+      "proficiencies": {
+        "armor": [],
+        "weapons": [
+          "simple_weapons",
+          "shortswords"
+        ],
+        "tools": [
+          "one_type_artisan_tools_or_musical_instrument"
+        ],
+        "skillsAvailable": [
+          "acrobatics",
+          "athletics",
+          "history",
+          "insight",
+          "religion",
+          "stealth"
+        ],
+        "skillChoices": 2
+      },
+      "startingEquipment": {
+        "choices": [
+          {
+            "choose": 1,
+            "from": [
+              [
+                "shortsword"
+              ],
+              [
+                "simple_weapon"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "dungeoneers_pack"
+              ],
+              [
+                "explorers_pack"
+              ]
+            ]
+          }
+        ],
+        "fixed": [
+          "dart:10"
+        ]
+      },
+      "features": [
+        {
+          "level": 1,
+          "name": "无甲防御",
+          "nameEn": "Unarmored Defense",
+          "description": "当你没有穿着护甲或持盾时，你的AC等于10 + 你的敏捷调整值 + 你的感知调整值。",
+          "acFormula": "10 + DEX调整值 + WIS调整值"
+        },
+        {
+          "level": 1,
+          "name": "武艺",
+          "nameEn": "Martial Arts",
+          "description": "你在徒手或使用武僧武器时获得特殊能力。你可以用敏捷代替力量进行攻击和伤害检定。你可以掷武艺骰代替正常伤害。",
+          "martialArtsDie": {
+            "1": "d4",
+            "5": "d6",
+            "11": "d8",
+            "17": "d10"
+          }
+        },
+        {
+          "level": 2,
+          "name": "气",
+          "nameEn": "Ki",
+          "description": "你的武僧训练让你可以掌控生命能量之流。你有等于武僧等级的气点数。",
+          "points": "武僧等级",
+          "abilities": [
+            {
+              "name": "疾风连击",
+              "nameEn": "Flurry of Blows",
+              "cost": 1,
+              "description": "在你的回合使用攻击动作后，你可以花费1点气进行两次徒手打击作为附赠动作。"
+            },
+            {
+              "name": "残影步",
+              "nameEn": "Patient Defense",
+              "cost": 1,
+              "description": "你可以花费1点气在你的回合使用闪避动作作为附赠动作。"
+            },
+            {
+              "name": "踏风而行",
+              "nameEn": "Step of the Wind",
+              "cost": 1,
+              "description": "你可以花费1点气在你的回合使用脱离或冲刺动作作为附赠动作，且你的跳跃距离在该回合翻倍。"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "无甲移动",
+          "nameEn": "Unarmored Movement",
+          "description": "当你没有穿着护甲或持盾时，你的速度增加10尺。",
+          "speedBonus": {
+            "2": 10,
+            "6": 15,
+            "10": 20,
+            "14": 25,
+            "18": 30
+          }
+        },
+        {
+          "level": 3,
+          "name": "武僧传统",
+          "nameEn": "Monastic Tradition",
+          "description": "选择一个武僧传统：开手之道、暗影之道或四元素之道。"
+        },
+        {
+          "level": 3,
+          "name": "偏斜飞弹",
+          "nameEn": "Deflect Missiles",
+          "description": "你可以用反应偏斜或捕获你被远程武器攻击击中时的弹药。伤害减少1d10 + 你的敏捷调整值 + 你的武僧等级。如果伤害减至0且弹药足够小，你可以花费1点气将其作为攻击的一部分扔回去。"
+        },
+        {
+          "level": 4,
+          "name": "缓落",
+          "nameEn": "Slow Fall",
+          "description": "你可以用反应减少掉落伤害，减少量等于你的武僧等级的5倍。"
+        },
+        {
+          "level": 5,
+          "name": "额外攻击",
+          "nameEn": "Extra Attack",
+          "description": "当你在自己的回合使用攻击动作时，你可以攻击两次。"
+        },
+        {
+          "level": 5,
+          "name": "震慑打击",
+          "nameEn": "Stunning Strike",
+          "description": "当你用近战武器攻击击中生物时，你可以花费1点气尝试震慑目标。目标必须成功通过体质豁免，否则被震慑至你的下一回合结束。"
+        },
+        {
+          "level": 6,
+          "name": "气驭打击",
+          "nameEn": "Ki-Empowered Strikes",
+          "description": "你的徒手打击视为魔法武器，用于克服抗性和免疫。"
+        },
+        {
+          "level": 7,
+          "name": "心神宁静",
+          "nameEn": "Stillness of Mind",
+          "description": "你可以用一个动作结束自己身上的魅惑或恐惧效果。"
+        },
+        {
+          "level": 8,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 9,
+          "name": "无甲移动改良",
+          "nameEn": "Unarmored Movement Improvement",
+          "description": "你可以在垂直表面和液体表面移动而不会在回合结束时掉落。"
+        },
+        {
+          "level": 10,
+          "name": "疾病免疫",
+          "nameEn": "Purity of Body",
+          "description": "你对疾病和毒素免疫。"
+        },
+        {
+          "level": 11,
+          "name": "武僧传统特性",
+          "nameEn": "Monastic Tradition Feature",
+          "description": "你获得所选武僧传统的11级特性。"
+        },
+        {
+          "level": 11,
+          "name": "无甲移动改良",
+          "nameEn": "Unarmored Movement Improvement",
+          "description": "你的无甲移动速度提升。你可以在你的回合沿着垂直表面移动和在液体表面移动而不会在回合结束时坠落。"
+        },
+        {
+          "level": 12,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 13,
+          "name": "通晓诸语",
+          "nameEn": "Tongue of the Sun and Moon",
+          "description": "你可以理解所有口语，且所有能说语言的生物都能理解你的话。"
+        },
+        {
+          "level": 14,
+          "name": "金刚魂",
+          "nameEn": "Diamond Soul",
+          "description": "你在所有豁免检定上获得熟练。当你豁免失败时，你可以花费1点气重掷并使用新结果。"
+        },
+        {
+          "level": 15,
+          "name": "永恒之躯",
+          "nameEn": "Timeless Body",
+          "description": "你不再因衰老而受罚，且不能被魔法衰老。你仍然会死于老年。你不需要食物或水。"
+        },
+        {
+          "level": 16,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 17,
+          "name": "武僧传统特性",
+          "nameEn": "Monastic Tradition Feature",
+          "description": "你获得所选武僧传统的17级特性。"
+        },
+        {
+          "level": 18,
+          "name": "空灵体",
+          "nameEn": "Empty Body",
+          "description": "你可以花费4点气隐形1分钟。在此期间，你对除力场伤害外的所有伤害具有抗性。你也可以花费8点气施放星界投影法术。"
+        },
+        {
+          "level": 19,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 20,
+          "name": "至臻己身",
+          "nameEn": "Perfect Self",
+          "description": "当你掷先攻且没有剩余气点时，你恢复4点气。"
+        }
+      ],
+      "subclasses": [
+        {
+          "id": "open_hand",
+          "name": "开手之道",
+          "nameEn": "Way of the Open Hand",
+          "description": "开手之道的武僧是徒手战斗的大师。他们能够使用气来操控敌人的身体和生命力。",
+          "descriptionEn": "Monks of the Way of the Open Hand are masters of unarmed combat. They use ki to manipulate enemies' bodies and life force.",
+          "features": "开手技巧（3级）、完整自我（6级）、宁静（11级）、颤栗掌（17级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "武僧在3级时选择修道传统。开手之道在3级获得开手技巧（连击攻击时可以击倒、推开或阻止敌人反应）。"
+            }
+          ]
+        },
+        {
+          "id": "shadow",
+          "name": "暗影之道",
+          "nameEn": "Way of Shadow",
+          "description": "暗影之道的武僧精通隐秘和欺诈。他们能够操控阴影，在黑暗中移动。",
+          "descriptionEn": "Monks of the Way of Shadow excel at stealth and deception. They manipulate shadows and move through darkness.",
+          "features": "暗影艺术（3级）、暗影步（6级）、暗影斗篷（11级）、机会主义者（17级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "武僧在3级时选择修道传统。暗影之道在3级获得暗影艺术（学习次级幻影戏法，可以用气点施展黑暗术、黑暗视觉、沉默术、通行无阻）。"
+            }
+          ]
+        },
+        {
+          "id": "four_elements",
+          "name": "四元素之道",
+          "nameEn": "Way of the Four Elements",
+          "description": "四元素之道的武僧掌控元素力量。他们能够施展类似法术的元素技能。",
+          "descriptionEn": "Monks of the Way of the Four Elements harness elemental power. They cast spell-like elemental disciplines.",
+          "features": "元素门徒（3级）、额外元素门徒（6、11、17级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "武僧在3级时选择修道传统。四元素之道在3级获得元素门徒（学习元素门徒法门，可以用气点施展类似法术的能力）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paladin",
+      "name": "圣武士",
+      "nameEn": "Paladin",
+      "hitDie": "d10",
+      "primaryAbility": [
+        "strength",
+        "charisma"
+      ],
+      "savingThrows": [
+        "wisdom",
+        "charisma"
+      ],
+      "proficiencies": {
+        "armor": [
+          "light_armor",
+          "medium_armor",
+          "heavy_armor",
+          "shields"
+        ],
+        "weapons": [
+          "simple_weapons",
+          "martial_weapons"
+        ],
+        "tools": [],
+        "skillsAvailable": [
+          "athletics",
+          "insight",
+          "intimidation",
+          "medicine",
+          "persuasion",
+          "religion"
+        ],
+        "skillChoices": 2
+      },
+      "spellcasting": {
+        "ability": "charisma",
+        "preparedSpells": true,
+        "preparedFormula": "魅力调整值 + 圣武士等级的一半(向下取整)",
+        "spellSlots": {
+          "2": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            2,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            2,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            1,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            2,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ]
+        }
+      },
+      "startingEquipment": {
+        "choices": [
+          {
+            "choose": 1,
+            "from": [
+              [
+                "martial_weapon",
+                "shield"
+              ],
+              [
+                "martial_weapon",
+                "martial_weapon"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "javelin:5"
+              ],
+              [
+                "simple_melee_weapon"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "priests_pack"
+              ],
+              [
+                "explorers_pack"
+              ]
+            ]
+          }
+        ],
+        "fixed": [
+          "chain_mail",
+          "holy_symbol"
+        ]
+      },
+      "features": [
+        {
+          "level": 1,
+          "name": "神圣感知",
+          "nameEn": "Divine Sense",
+          "description": "你可以用一个动作感知60尺内的异界生物、不死生物、天界、邪魔或妖精，以及被祝圣或亵渎的地点或物品。你可以使用此特性的次数等于1 + 你的魅力调整值。",
+          "uses": "1 + 魅力调整值",
+          "range": 60
+        },
+        {
+          "level": 1,
+          "name": "圣疗",
+          "nameEn": "Lay on Hands",
+          "description": "你有一个生命值池，等于你的圣武士等级×5。你可以用一个动作从池中消耗生命值来恢复一个生物的生命值，或花费5点来治愈一种疾病或中和一种毒素。",
+          "pool": "圣武士等级 × 5"
+        },
+        {
+          "level": 2,
+          "name": "战斗风格",
+          "nameEn": "Fighting Style",
+          "description": "选择一种战斗风格：防御、决斗、强武器战斗或防护。"
+        },
+        {
+          "level": 2,
+          "name": "施法",
+          "nameEn": "Spellcasting",
+          "description": "你通过祈祷和冥想从神圣源泉汲取魔法。"
+        },
+        {
+          "level": 2,
+          "name": "神击",
+          "nameEn": "Divine Smite",
+          "description": "当你用近战武器击中生物时，你可以消耗一个法术位对目标造成额外光耀伤害。额外伤害为2d8(1环)，每高一环增加1d8(最多5d8)。对不死生物或邪魔额外增加1d8。",
+          "baseDamage": "2d8",
+          "perLevel": "1d8",
+          "maxDamage": "5d8",
+          "bonusAgainst": [
+            "undead",
+            "fiend"
+          ]
+        },
+        {
+          "level": 3,
+          "name": "神圣健康",
+          "nameEn": "Divine Health",
+          "description": "你对疾病免疫。"
+        },
+        {
+          "level": 3,
+          "name": "神圣誓约",
+          "nameEn": "Sacred Oath",
+          "description": "选择一个神圣誓约：奉献誓约、先古誓约或复仇誓约。"
+        },
+        {
+          "level": 4,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 5,
+          "name": "额外攻击",
+          "nameEn": "Extra Attack",
+          "description": "当你在自己的回合使用攻击动作时，你可以攻击两次。"
+        },
+        {
+          "level": 6,
+          "name": "护卫灵光",
+          "nameEn": "Aura of Protection",
+          "description": "你和10尺内的友方生物在豁免检定上获得等于你的魅力调整值的加值(最少+1)。18级时范围增至30尺。",
+          "bonus": "魅力调整值(最少+1)",
+          "range": {
+            "6": 10,
+            "18": 30
+          }
+        },
+        {
+          "level": 7,
+          "name": "神圣誓约特性",
+          "nameEn": "Sacred Oath Feature",
+          "description": "你获得所选神圣誓约的7级特性。"
+        },
+        {
+          "level": 8,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 9,
+          "name": "圣疗改良",
+          "nameEn": "Lay on Hands Improvement",
+          "description": "你的圣疗池增加。"
+        },
+        {
+          "level": 10,
+          "name": "勇气灵光",
+          "nameEn": "Aura of Courage",
+          "description": "你和10尺内的友方生物不能被恐惧。18级时范围增至30尺。"
+        },
+        {
+          "level": 11,
+          "name": "进阶神击",
+          "nameEn": "Improved Divine Smite",
+          "description": "你的所有近战武器攻击都额外造成1d8光耀伤害。"
+        },
+        {
+          "level": 12,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 13,
+          "name": "圣疗改良",
+          "nameEn": "Lay on Hands Improvement",
+          "description": "你的圣疗池增加。"
+        },
+        {
+          "level": 14,
+          "name": "净化之触",
+          "nameEn": "Cleansing Touch",
+          "description": "你可以用一个动作结束自己或一个你碰触的自愿生物身上的一个法术。你可以使用此特性的次数等于你的魅力调整值(最少1次)。",
+          "uses": "魅力调整值(最少1次)"
+        },
+        {
+          "level": 15,
+          "name": "神圣誓约特性",
+          "nameEn": "Sacred Oath Feature",
+          "description": "你获得所选神圣誓约的15级特性。"
+        },
+        {
+          "level": 16,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 17,
+          "name": "圣疗改良",
+          "nameEn": "Lay on Hands Improvement",
+          "description": "你的圣疗池增加。"
+        },
+        {
+          "level": 18,
+          "name": "灵光改良",
+          "nameEn": "Aura Improvements",
+          "description": "你的灵光范围扩大到30尺。"
+        },
+        {
+          "level": 19,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 20,
+          "name": "神圣誓约特性",
+          "nameEn": "Sacred Oath Feature",
+          "description": "你获得所选神圣誓约的20级特性。"
+        }
+      ],
+      "subclasses": [
+        {
+          "id": "devotion",
+          "name": "奉献誓约",
+          "nameEn": "Oath of Devotion",
+          "description": "奉献誓约的圣武士致力于正义、美德和秩序。他们是对抗邪恶的光辉战士。",
+          "descriptionEn": "Paladins of the Oath of Devotion are committed to justice, virtue, and order. They are shining warriors against evil.",
+          "features": "誓约法术（3级）、神圣武器通道（3级）、驱散邪恶通道（3级）、纯洁灵光（7级）、圣洁灵光（15级）、圣洁化身（20级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "圣武士在3级时选择神圣誓约。奉献誓约在3级获得誓约法术和两个引导神力选项：神圣武器（武器发光并获得+魅力调整值命中）和驱散邪恶（驱散不死生物和邪魔）。"
+            }
+          ]
+        },
+        {
+          "id": "ancients",
+          "name": "先古誓约",
+          "nameEn": "Oath of the Ancients",
+          "description": "先古誓约的圣武士保护光明、美丽和生命。他们是自然和善良的守护者。",
+          "descriptionEn": "Paladins of the Oath of the Ancients preserve light, beauty, and life. They are guardians of nature and goodness.",
+          "features": "誓约法术（3级）、自然之怒通道（3级）、驱散不忠通道（3级）、抵抗魔法灵光（7级）、不屈哨兵（15级）、先古长者（20级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "圣武士在3级时选择神圣誓约。先古誓约在3级获得誓约法术和两个引导神力选项：自然之怒（束缚敌人）和驱散不忠（驱散妖精和邪魔）。"
+            }
+          ]
+        },
+        {
+          "id": "vengeance",
+          "name": "复仇誓约",
+          "nameEn": "Oath of Vengeance",
+          "description": "复仇誓约的圣武士追捕邪恶势力。他们不惜一切代价惩罚作恶者。",
+          "descriptionEn": "Paladins of the Oath of Vengeance hunt down evil forces. They punish wrongdoers at any cost.",
+          "features": "誓约法术（3级）、敌对誓言通道（3级）、驱散敌人通道（3级）、无情复仇者（7级）、灵魂猎手（15级）、复仇天使（20级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "圣武士在3级时选择神圣誓约。复仇誓约在3级获得誓约法术和两个引导神力选项：敌对誓言（对一个敌人获得优势）和驱散敌人（恐吓并减速敌人）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ranger",
+      "name": "游侠",
+      "nameEn": "Ranger",
+      "hitDie": "d10",
+      "primaryAbility": [
+        "dexterity",
+        "wisdom"
+      ],
+      "savingThrows": [
+        "strength",
+        "dexterity"
+      ],
+      "proficiencies": {
+        "armor": [
+          "light_armor",
+          "medium_armor",
+          "shields"
+        ],
+        "weapons": [
+          "simple_weapons",
+          "martial_weapons"
+        ],
+        "tools": [],
+        "skillsAvailable": [
+          "animal_handling",
+          "athletics",
+          "insight",
+          "investigation",
+          "nature",
+          "perception",
+          "stealth",
+          "survival"
+        ],
+        "skillChoices": 3
+      },
+      "spellcasting": {
+        "ability": "wisdom",
+        "preparedSpells": false,
+        "spellsKnown": {
+          "2": 2,
+          "3": 3,
+          "5": 4,
+          "7": 5,
+          "9": 6,
+          "11": 7,
+          "13": 8,
+          "15": 9,
+          "17": 10,
+          "19": 11
+        },
+        "spellSlots": {
+          "2": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            2,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            2,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            1,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            2,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            2
+          ]
+        }
+      },
+      "startingEquipment": {
+        "choices": [
+          {
+            "choose": 1,
+            "from": [
+              [
+                "scale_mail"
+              ],
+              [
+                "leather_armor"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "shortsword",
+                "shortsword"
+              ],
+              [
+                "simple_melee_weapon",
+                "simple_melee_weapon"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "dungeoneers_pack"
+              ],
+              [
+                "explorers_pack"
+              ]
+            ]
+          }
+        ],
+        "fixed": [
+          "longbow",
+          "quiver",
+          "arrows:20"
+        ]
+      },
+      "features": [
+        {
+          "level": 1,
+          "name": "宿敌",
+          "nameEn": "Favored Enemy",
+          "description": "选择一种宿敌类型。你在追踪和回忆该类型生物信息的检定上具有优势。你学习一门该类型常说的语言。",
+          "choices": [
+            "aberrations",
+            "beasts",
+            "celestials",
+            "constructs",
+            "dragons",
+            "elementals",
+            "fey",
+            "fiends",
+            "giants",
+            "monstrosities",
+            "oozes",
+            "plants",
+            "undead",
+            "humanoids"
+          ],
+          "additionalChoices": {
+            "6": 1,
+            "14": 1
+          }
+        },
+        {
+          "level": 1,
+          "name": "自然探索者",
+          "nameEn": "Natural Explorer",
+          "description": "选择一种偏好地形。在该地形中，你在智力或感知检定上获得双倍熟练加值，且获得多项探索优势。",
+          "terrainChoices": [
+            "arctic",
+            "coast",
+            "desert",
+            "forest",
+            "grassland",
+            "mountain",
+            "swamp",
+            "underdark"
+          ],
+          "additionalChoices": {
+            "6": 1,
+            "10": 1
+          }
+        },
+        {
+          "level": 2,
+          "name": "战斗风格",
+          "nameEn": "Fighting Style",
+          "description": "选择一种战斗风格：箭术、防御、决斗或双武器战斗。"
+        },
+        {
+          "level": 2,
+          "name": "施法",
+          "nameEn": "Spellcasting",
+          "description": "你从自然本身汲取神圣法术。"
+        },
+        {
+          "level": 3,
+          "name": "游侠范型",
+          "nameEn": "Ranger Archetype",
+          "description": "选择一个游侠范型：猎人或兽主。"
+        },
+        {
+          "level": 3,
+          "name": "原始意识",
+          "nameEn": "Primeval Awareness",
+          "description": "你可以花费一个法术位来感知1英里内(偏好地形中为6英里)的异界生物、龙、元素、妖精、邪魔或不死生物的存在。"
+        },
+        {
+          "level": 4,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 5,
+          "name": "额外攻击",
+          "nameEn": "Extra Attack",
+          "description": "当你在自己的回合使用攻击动作时，你可以攻击两次。"
+        },
+        {
+          "level": 6,
+          "name": "宿敌改良",
+          "nameEn": "Favored Enemy Improvement",
+          "description": "你选择一个额外的宿敌类型。"
+        },
+        {
+          "level": 7,
+          "name": "游侠范型特性",
+          "nameEn": "Ranger Archetype Feature",
+          "description": "你获得所选游侠范型的7级特性。"
+        },
+        {
+          "level": 8,
+          "name": "野地疾行",
+          "nameEn": "Land's Stride",
+          "description": "穿越非魔法困难地形不消耗额外移动。你可以穿越非魔法植物而不减速或受伤害。你在对抗魔法创造或操纵的植物的豁免上具有优势。"
+        },
+        {
+          "level": 9,
+          "name": "野地疾行改良",
+          "nameEn": "Land's Stride Improvement",
+          "description": "你的野地疾行能力提升。"
+        },
+        {
+          "level": 10,
+          "name": "自然掩蔽",
+          "nameEn": "Hide in Plain Sight",
+          "description": "你可以花费1分钟伪装自己。之后你在对抗你不动时的生物的感知(察觉)检定上获得+10加值。"
+        },
+        {
+          "level": 11,
+          "name": "游侠范型特性",
+          "nameEn": "Ranger Archetype Feature",
+          "description": "你获得所选游侠范型的11级特性。"
+        },
+        {
+          "level": 12,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 13,
+          "name": "自然掩蔽改良",
+          "nameEn": "Hide in Plain Sight Improvement",
+          "description": "你的自然掩蔽能力提升。"
+        },
+        {
+          "level": 14,
+          "name": "消失无踪",
+          "nameEn": "Vanish",
+          "description": "你可以在你的回合使用隐藏动作作为附赠动作。你也不能被非魔法手段追踪，除非你选择留下痕迹。"
+        },
+        {
+          "level": 15,
+          "name": "游侠范型特性",
+          "nameEn": "Ranger Archetype Feature",
+          "description": "你获得所选游侠范型的15级特性。"
+        },
+        {
+          "level": 16,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 17,
+          "name": "野性感官改良",
+          "nameEn": "Feral Senses Improvement",
+          "description": "你的野性感官能力提升。"
+        },
+        {
+          "level": 18,
+          "name": "野性感官",
+          "nameEn": "Feral Senses",
+          "description": "你可以感知30尺内你看不见的生物位置，只要该生物没有隐藏且你没有目盲或耳聋。"
+        },
+        {
+          "level": 19,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 20,
+          "name": "宿敌杀手",
+          "nameEn": "Foe Slayer",
+          "description": "每回合一次，你可以将你的感知调整值加到对宿敌的攻击检定或伤害掷骰上。"
+        }
+      ],
+      "subclasses": [
+        {
+          "id": "hunter",
+          "name": "猎人",
+          "nameEn": "Hunter",
+          "description": "猎人专精于追踪和消灭特定类型的敌人。他们能够选择多种战术选项来对抗敌人。",
+          "descriptionEn": "Hunters specialize in tracking and eliminating specific types of foes. They choose tactical options to combat enemies.",
+          "features": "猎人猎物（3级）、防御战术（7级）、多重攻击（11级）、高等猎人防御（15级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "游侠在3级时选择范型。猎人在3级获得猎人猎物（选择一个战术选项：巨人杀手、兽群破坏者或巨像杀手）。"
+            }
+          ]
+        },
+        {
+          "id": "beast_master",
+          "name": "兽主",
+          "nameEn": "Beast Master",
+          "description": "兽主与动物伙伴建立神秘联系。他们的动物伙伴在战斗中并肩作战。",
+          "descriptionEn": "Beast Masters form a mystical bond with an animal companion. Their companion fights alongside them in battle.",
+          "features": "游侠伙伴（3级）、特殊训练（7级）、兽性狂怒（11级）、分享法术（15级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "游侠在3级时选择范型。兽主在3级获得游侠伙伴（选择一个中型或更小的野兽作为伙伴，它在战斗中服从你的命令）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rogue",
+      "name": "游荡者",
+      "nameEn": "Rogue",
+      "hitDie": "d8",
+      "primaryAbility": [
+        "dexterity"
+      ],
+      "savingThrows": [
+        "dexterity",
+        "intelligence"
+      ],
+      "proficiencies": {
+        "armor": [
+          "light_armor"
+        ],
+        "weapons": [
+          "simple_weapons",
+          "hand_crossbows",
+          "longswords",
+          "rapiers",
+          "shortswords"
+        ],
+        "tools": [
+          "thieves_tools"
+        ],
+        "skillsAvailable": [
+          "acrobatics",
+          "athletics",
+          "deception",
+          "insight",
+          "intimidation",
+          "investigation",
+          "perception",
+          "performance",
+          "persuasion",
+          "sleight_of_hand",
+          "stealth"
+        ],
+        "skillChoices": 4
+      },
+      "startingEquipment": {
+        "choices": [
+          {
+            "choose": 1,
+            "from": [
+              [
+                "rapier"
+              ],
+              [
+                "shortsword"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "shortbow",
+                "quiver",
+                "arrows:20"
+              ],
+              [
+                "shortsword"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "burglars_pack"
+              ],
+              [
+                "dungeoneers_pack"
+              ],
+              [
+                "explorers_pack"
+              ]
+            ]
+          }
+        ],
+        "fixed": [
+          "leather_armor",
+          "dagger",
+          "dagger",
+          "thieves_tools"
+        ]
+      },
+      "features": [
+        {
+          "level": 1,
+          "name": "专精",
+          "nameEn": "Expertise",
+          "description": "选择两项你熟练的技能或一项技能和盗贼工具。你在使用这些技能的检定上的熟练加值翻倍。6级时再选择两项。"
+        },
+        {
+          "level": 1,
+          "name": "偷袭",
+          "nameEn": "Sneak Attack",
+          "description": "每回合一次，当你用灵巧武器或远程武器攻击并具有优势时,你可以对目标造成额外伤害。额外伤害为1d6，随等级提升。",
+          "damage": {
+            "1": "1d6",
+            "3": "2d6",
+            "5": "3d6",
+            "7": "4d6",
+            "9": "5d6",
+            "11": "6d6",
+            "13": "7d6",
+            "15": "8d6",
+            "17": "9d6",
+            "19": "10d6"
+          }
+        },
+        {
+          "level": 1,
+          "name": "盗贼黑话",
+          "nameEn": "Thieves' Cant",
+          "description": "你知道盗贼黑话，这是一种秘密的混合语言、行话和暗号。"
+        },
+        {
+          "level": 2,
+          "name": "狡诈动作",
+          "nameEn": "Cunning Action",
+          "description": "你可以用一个附赠动作使用冲刺、脱离或隐藏动作。"
+        },
+        {
+          "level": 3,
+          "name": "游荡者范型",
+          "nameEn": "Roguish Archetype",
+          "description": "选择一个游荡者范型:盗贼、刺客或秘法诡术师。"
+        },
+        {
+          "level": 4,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 5,
+          "name": "反制",
+          "nameEn": "Uncanny Dodge",
+          "description": "当你能看见的攻击者击中你时，你可以用反应将该攻击的伤害减半。"
+        },
+        {
+          "level": 6,
+          "name": "专精",
+          "nameEn": "Expertise",
+          "description": "选择另外两项你熟练的技能，或一项你熟练的技能和盗贼工具。你的熟练加值翻倍。"
+        },
+        {
+          "level": 7,
+          "name": "反射闪避",
+          "nameEn": "Evasion",
+          "description": "当你进行敏捷豁免时，你可以只受到一半伤害(豁免失败时)或不受伤害(豁免成功时)。"
+        },
+        {
+          "level": 8,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 9,
+          "name": "游荡者范型特性",
+          "nameEn": "Roguish Archetype Feature",
+          "description": "你获得所选游荡者范型的9级特性。"
+        },
+        {
+          "level": 10,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 11,
+          "name": "可靠天赋",
+          "nameEn": "Reliable Talent",
+          "description": "当你进行你有熟练的属性检定时，你的d20掷骰结果低于10时视为10。"
+        },
+        {
+          "level": 12,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 13,
+          "name": "游荡者范型特性",
+          "nameEn": "Roguish Archetype Feature",
+          "description": "你获得所选游荡者范型的13级特性。"
+        },
+        {
+          "level": 14,
+          "name": "盲感",
+          "nameEn": "Blindsense",
+          "description": "如果你能听到，你可以感知10尺内隐藏或隐形的生物位置。"
+        },
+        {
+          "level": 15,
+          "name": "滑溜心智",
+          "nameEn": "Slippery Mind",
+          "description": "你在感知豁免上获得熟练。"
+        },
+        {
+          "level": 16,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 17,
+          "name": "游荡者范型特性",
+          "nameEn": "Roguish Archetype Feature",
+          "description": "你获得所选游荡者范型的17级特性。"
+        },
+        {
+          "level": 18,
+          "name": "难以捉摸",
+          "nameEn": "Elusive",
+          "description": "没有攻击检定在对抗你时具有优势，除非你失能。"
+        },
+        {
+          "level": 19,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 20,
+          "name": "好运当头",
+          "nameEn": "Stroke of Luck",
+          "description": "如果你的攻击未命中，你可以将其转为命中。或者如果你失败于属性检定，你可以将d20掷骰视为20。短休或长休后恢复使用。"
+        }
+      ],
+      "subclasses": [
+        {
+          "id": "thief",
+          "name": "盗贼",
+          "nameEn": "Thief",
+          "description": "盗贼精通潜行和盗窃技巧。他们能够快速使用物品，攀爬速度更快。",
+          "descriptionEn": "Thieves excel at stealth and thievery. They can use items quickly and climb faster.",
+          "features": "快手（3级）、二层工作（9级）、至高隐秘（13级）、盗贼反射（17级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "游荡者在3级时选择范型。盗贼在3级获得快手（可以用附赠动作使用巧手、使用盗贼工具解锁或使用物品）。"
+            }
+          ]
+        },
+        {
+          "id": "assassin",
+          "name": "刺客",
+          "nameEn": "Assassin",
+          "description": "刺客是致命的杀手，精通伪装和毒药。他们在突袭时造成毁灭性伤害。",
+          "descriptionEn": "Assassins are deadly killers skilled in disguise and poison. They deal devastating damage when surprising foes.",
+          "features": "额外熟练（3级）、暗杀（3级）、渗透专长（9级）、冒名顶替（13级）、死亡打击（17级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "游荡者在3级时选择范型。刺客在3级获得额外熟练（易容工具和制毒工具）和暗杀（对未行动的生物攻击具有优势，突袭时的命中自动重击）。"
+            }
+          ]
+        },
+        {
+          "id": "arcane_trickster",
+          "name": "秘法诡术师",
+          "nameEn": "Arcane Trickster",
+          "description": "秘法诡术师将盗贼技巧与奥术魔法结合。他们能够施展法师法术，使用魔法辅助盗窃。",
+          "descriptionEn": "Arcane Tricksters combine rogue skills with arcane magic. They cast wizard spells, using magic to aid thievery.",
+          "features": "施法（3级）、魔法之手（3级）、魔法伏击（9级）、多才多艺诡术师（13级）、法术盗贼（17级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "游荡者在3级时选择范型。秘法诡术师在3级获得施法能力（学习法师法术，主要是附魔和幻术学派）和魔法之手（学习魔法伎俩戏法，可以用它开锁、偷窃等）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sorcerer",
+      "name": "术士",
+      "nameEn": "Sorcerer",
+      "hitDie": "d6",
+      "primaryAbility": [
+        "charisma"
+      ],
+      "savingThrows": [
+        "constitution",
+        "charisma"
+      ],
+      "proficiencies": {
+        "armor": [],
+        "weapons": [
+          "daggers",
+          "darts",
+          "slings",
+          "quarterstaffs",
+          "light_crossbows"
+        ],
+        "tools": [],
+        "skillsAvailable": [
+          "arcana",
+          "deception",
+          "insight",
+          "intimidation",
+          "persuasion",
+          "religion"
+        ],
+        "skillChoices": 2
+      },
+      "spellcasting": {
+        "ability": "charisma",
+        "preparedSpells": false,
+        "cantripsKnown": {
+          "1": 4,
+          "4": 5,
+          "10": 6
+        },
+        "spellsKnown": {
+          "1": 2,
+          "2": 3,
+          "3": 4,
+          "4": 5,
+          "5": 6,
+          "6": 7,
+          "7": 8,
+          "8": 9,
+          "9": 10,
+          "10": 11,
+          "11": 12,
+          "13": 13,
+          "14": 14,
+          "15": 15,
+          "17": 15
+        },
+        "spellSlots": {
+          "1": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ]
+        }
+      },
+      "startingEquipment": {
+        "choices": [
+          {
+            "choose": 1,
+            "from": [
+              [
+                "light_crossbow",
+                "crossbow_bolts:20"
+              ],
+              [
+                "simple_weapon"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "component_pouch"
+              ],
+              [
+                "arcane_focus"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "dungeoneers_pack"
+              ],
+              [
+                "explorers_pack"
+              ]
+            ]
+          }
+        ],
+        "fixed": [
+          "dagger",
+          "dagger"
+        ]
+      },
+      "features": [
+        {
+          "level": 1,
+          "name": "施法",
+          "nameEn": "Spellcasting",
+          "description": "魔法在你的血液中流淌，等待被释放。"
+        },
+        {
+          "level": 1,
+          "name": "术士起源",
+          "nameEn": "Sorcerous Origin",
+          "description": "选择你的魔法来源:龙裔血统或狂野魔法。"
+        },
+        {
+          "level": 2,
+          "name": "灵感之泉",
+          "nameEn": "Font of Magic",
+          "description": "你获得术士点数(等于术士等级)。你可以用术士点转换法术位,或用法术位转换术士点。",
+          "sorceryPoints": "术士等级"
+        },
+        {
+          "level": 3,
+          "name": "超魔",
+          "nameEn": "Metamagic",
+          "description": "你学习两个超魔选项,可以花费术士点来扭曲法术。10级和17级时各学习一个额外选项。",
+          "optionsKnown": {
+            "3": 2,
+            "10": 3,
+            "17": 4
+          },
+          "options": [
+            {
+              "id": "careful_spell",
+              "name": "谨慎法术",
+              "nameEn": "Careful Spell",
+              "cost": 1,
+              "description": "当你施放需要进行豁免的法术时,你可以保护最多等于你的魅力调整值的生物免受影响。"
+            },
+            {
+              "id": "distant_spell",
+              "name": "遥远法术",
+              "nameEn": "Distant Spell",
+              "cost": 1,
+              "description": "当你施放距离为5尺或更远的法术时,你可以将其距离翻倍。如果是接触法术,距离变为30尺。"
+            },
+            {
+              "id": "empowered_spell",
+              "name": "强效法术",
+              "nameEn": "Empowered Spell",
+              "cost": 1,
+              "description": "当你掷法术伤害时,你可以重掷最多等于你的魅力调整值的伤害骰,但必须使用新结果。"
+            },
+            {
+              "id": "extended_spell",
+              "name": "延时法术",
+              "nameEn": "Extended Spell",
+              "cost": 1,
+              "description": "当你施放持续时间至少为1分钟的法术时,你可以将其持续时间翻倍(最多24小时)。"
+            },
+            {
+              "id": "heightened_spell",
+              "name": "升阶法术",
+              "nameEn": "Heightened Spell",
+              "cost": 3,
+              "description": "当你施放需要进行豁免的法术时,你可以让一个目标在对抗该法术的第一次豁免上具有劣势。"
+            },
+            {
+              "id": "quickened_spell",
+              "name": "瞬发法术",
+              "nameEn": "Quickened Spell",
+              "cost": 2,
+              "description": "当你施放施法时间为1动作的法术时,你可以将其改为1附赠动作。"
+            },
+            {
+              "id": "subtle_spell",
+              "name": "微妙法术",
+              "nameEn": "Subtle Spell",
+              "cost": 1,
+              "description": "当你施放法术时,你可以施放它而不需要姿态或言语成分。"
+            },
+            {
+              "id": "twinned_spell",
+              "name": "孪生法术",
+              "nameEn": "Twinned Spell",
+              "cost": "法术环数",
+              "description": "当你施放只针对一个生物且距离不为自身的法术时,你可以同时针对第二个在距离内的生物。"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 4,
+          "name": "超魔",
+          "nameEn": "Metamagic",
+          "description": "你学会一个新的超魔选项。"
+        },
+        {
+          "level": 5,
+          "name": "灵感之泉改良",
+          "nameEn": "Font of Magic Improvement",
+          "description": "你的术士点数增加。"
+        },
+        {
+          "level": 6,
+          "name": "术士起源特性",
+          "nameEn": "Sorcerous Origin Feature",
+          "description": "你获得所选术士起源的6级特性。"
+        },
+        {
+          "level": 7,
+          "name": "灵感之泉改良",
+          "nameEn": "Font of Magic Improvement",
+          "description": "你的术士点数增加。"
+        },
+        {
+          "level": 8,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 9,
+          "name": "灵感之泉改良",
+          "nameEn": "Font of Magic Improvement",
+          "description": "你的术士点数增加。"
+        },
+        {
+          "level": 10,
+          "name": "超魔",
+          "nameEn": "Metamagic",
+          "description": "你学会一个新的超魔选项。"
+        },
+        {
+          "level": 11,
+          "name": "灵感之泉改良",
+          "nameEn": "Font of Magic Improvement",
+          "description": "你的术士点数增加。"
+        },
+        {
+          "level": 12,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 13,
+          "name": "灵感之泉改良",
+          "nameEn": "Font of Magic Improvement",
+          "description": "你的术士点数增加。"
+        },
+        {
+          "level": 14,
+          "name": "术士起源特性",
+          "nameEn": "Sorcerous Origin Feature",
+          "description": "你获得所选术士起源的14级特性。"
+        },
+        {
+          "level": 15,
+          "name": "灵感之泉改良",
+          "nameEn": "Font of Magic Improvement",
+          "description": "你的术士点数增加。"
+        },
+        {
+          "level": 16,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 17,
+          "name": "超魔",
+          "nameEn": "Metamagic",
+          "description": "你学会一个新的超魔选项。"
+        },
+        {
+          "level": 18,
+          "name": "术士起源特性",
+          "nameEn": "Sorcerous Origin Feature",
+          "description": "你获得所选术士起源的18级特性。"
+        },
+        {
+          "level": 19,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 20,
+          "name": "术士复原",
+          "nameEn": "Sorcerous Restoration",
+          "description": "当你完成短休时,你恢复等于你的魅力调整值的已使用术士点。"
+        }
+      ],
+      "subclasses": [
+        {
+          "id": "draconic_bloodline",
+          "name": "龙裔血统",
+          "nameEn": "Draconic Bloodline",
+          "description": "龙裔血统的术士体内流淌着龙的血液。他们获得龙鳞护甲，能够造成额外元素伤害。",
+          "descriptionEn": "Sorcerers with Draconic Bloodline have dragon blood in their veins. They gain dragon scale armor and deal extra elemental damage.",
+          "features": "龙族先祖（1级）、龙语（1级）、龙鳞韧性（1级）、元素亲和（6级）、龙翼（14级）、龙之存在（18级）",
+          "level1Features": [
+            {
+              "name": "龙族先祖",
+              "nameEn": "Dragon Ancestor",
+              "description": "在第1级时，你选择一种龙作为你的先祖。你获得的伤害类型与该龙种相关联。你可以使用魅力替代智力进行与龙相关的魅力检定。"
+            },
+            {
+              "name": "龙语",
+              "nameEn": "Draconic",
+              "description": "你可以说、读、写龙语。"
+            },
+            {
+              "name": "龙鳞韧性",
+              "nameEn": "Draconic Resilience",
+              "description": "随着魔法在你体内流淌，它会在你的身体上形成物理特征。你的生命值上限增加1，并且每当你获得一个术士等级时，你的生命值上限额外增加1。此外，你身体的部分被一层薄薄的龙鳞覆盖。当你没有穿着护甲时，你的AC等于13+你的敏捷调整值。"
+            }
+          ],
+          "featureChoices": [
+            {
+              "featureName": "龙族先祖",
+              "featureNameEn": "Dragon Ancestor",
+              "choices": [
+                {
+                  "type": "dragon_type",
+                  "count": 1,
+                  "description": "选择一种龙作为你的先祖",
+                  "descriptionEn": "Choose one dragon as your ancestor",
+                  "options": [
+                    {
+                      "id": "black",
+                      "name": "黑龙",
+                      "nameEn": "Black Dragon",
+                      "damageType": "强酸",
+                      "damageTypeEn": "Acid"
+                    },
+                    {
+                      "id": "blue",
+                      "name": "蓝龙",
+                      "nameEn": "Blue Dragon",
+                      "damageType": "闪电",
+                      "damageTypeEn": "Lightning"
+                    },
+                    {
+                      "id": "brass",
+                      "name": "黄铜龙",
+                      "nameEn": "Brass Dragon",
+                      "damageType": "火焰",
+                      "damageTypeEn": "Fire"
+                    },
+                    {
+                      "id": "bronze",
+                      "name": "青铜龙",
+                      "nameEn": "Bronze Dragon",
+                      "damageType": "闪电",
+                      "damageTypeEn": "Lightning"
+                    },
+                    {
+                      "id": "copper",
+                      "name": "赤铜龙",
+                      "nameEn": "Copper Dragon",
+                      "damageType": "强酸",
+                      "damageTypeEn": "Acid"
+                    },
+                    {
+                      "id": "gold",
+                      "name": "金龙",
+                      "nameEn": "Gold Dragon",
+                      "damageType": "火焰",
+                      "damageTypeEn": "Fire"
+                    },
+                    {
+                      "id": "green",
+                      "name": "绿龙",
+                      "nameEn": "Green Dragon",
+                      "damageType": "毒素",
+                      "damageTypeEn": "Poison"
+                    },
+                    {
+                      "id": "red",
+                      "name": "红龙",
+                      "nameEn": "Red Dragon",
+                      "damageType": "火焰",
+                      "damageTypeEn": "Fire"
+                    },
+                    {
+                      "id": "silver",
+                      "name": "银龙",
+                      "nameEn": "Silver Dragon",
+                      "damageType": "冷冻",
+                      "damageTypeEn": "Cold"
+                    },
+                    {
+                      "id": "white",
+                      "name": "白龙",
+                      "nameEn": "White Dragon",
+                      "damageType": "冷冻",
+                      "damageTypeEn": "Cold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wild_magic",
+          "name": "狂野魔法",
+          "nameEn": "Wild Magic",
+          "description": "狂野魔法的术士魔法不稳定且不可预测。他们的法术可能触发随机的魔法效果。",
+          "descriptionEn": "Sorcerers of Wild Magic have unstable, unpredictable magic. Their spells may trigger random magical effects.",
+          "features": "狂野魔法涌动（1级）、潮汐混沌（1级）、弯曲运气（6级）、受控混沌（14级）、法术轰炸（18级）",
+          "level1Features": [
+            {
+              "name": "狂野魔法涌动",
+              "nameEn": "Wild Magic Surge",
+              "description": "第1级起，你的施法可能会触发狂野魔法涌动。当你施展1环或更高环阶的术士法术后，DM可以让你投一个d20。如果你投出1，则在狂野魔法涌动表上投骰以产生一个随机魔法效果。"
+            },
+            {
+              "name": "潮汐混沌",
+              "nameEn": "Tides of Chaos",
+              "description": "第1级起，你可以操控命运的力量来获得优势。你可以在一次攻击检定、属性检定或豁免检定上获得优势。一旦你这样做，你必须完成一次长休才能再次使用该特性。在你恢复该特性的使用之前的任何时候，DM可以让你在施展1环或更高环阶的术士法术后触发狂野魔法涌动。如果这样做，你恢复该特性的使用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "warlock",
+      "name": "邪术师",
+      "nameEn": "Warlock",
+      "hitDie": "d8",
+      "primaryAbility": [
+        "charisma"
+      ],
+      "savingThrows": [
+        "wisdom",
+        "charisma"
+      ],
+      "proficiencies": {
+        "armor": [
+          "light_armor"
+        ],
+        "weapons": [
+          "simple_weapons"
+        ],
+        "tools": [],
+        "skillsAvailable": [
+          "arcana",
+          "deception",
+          "history",
+          "intimidation",
+          "investigation",
+          "nature",
+          "religion"
+        ],
+        "skillChoices": 2
+      },
+      "spellcasting": {
+        "ability": "charisma",
+        "preparedSpells": false,
+        "pactMagic": true,
+        "cantripsKnown": {
+          "1": 2,
+          "4": 3,
+          "10": 4
+        },
+        "spellsKnown": {
+          "1": 2,
+          "2": 3,
+          "3": 4,
+          "4": 5,
+          "5": 6,
+          "6": 7,
+          "7": 8,
+          "8": 9,
+          "9": 10,
+          "10": 10,
+          "11": 11,
+          "13": 12,
+          "15": 13,
+          "17": 14,
+          "19": 15
+        },
+        "spellSlots": {
+          "1": {
+            "slots": 1,
+            "level": 1
+          },
+          "2": {
+            "slots": 2,
+            "level": 1
+          },
+          "3": {
+            "slots": 2,
+            "level": 2
+          },
+          "5": {
+            "slots": 2,
+            "level": 3
+          },
+          "7": {
+            "slots": 2,
+            "level": 4
+          },
+          "9": {
+            "slots": 2,
+            "level": 5
+          },
+          "11": {
+            "slots": 3,
+            "level": 5
+          },
+          "17": {
+            "slots": 4,
+            "level": 5
+          }
+        }
+      },
+      "startingEquipment": {
+        "choices": [
+          {
+            "choose": 1,
+            "from": [
+              [
+                "light_crossbow",
+                "crossbow_bolts:20"
+              ],
+              [
+                "simple_weapon"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "component_pouch"
+              ],
+              [
+                "arcane_focus"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "scholars_pack"
+              ],
+              [
+                "dungeoneers_pack"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "leather_armor",
+                "simple_weapon",
+                "dagger",
+                "dagger"
+              ]
+            ]
+          }
+        ],
+        "fixed": []
+      },
+      "features": [
+        {
+          "level": 1,
+          "name": "异界恩主",
+          "nameEn": "Otherworldly Patron",
+          "description": "选择你的恩主:精类领主、邪魔或旧日支配者。"
+        },
+        {
+          "level": 1,
+          "name": "契约魔法",
+          "nameEn": "Pact Magic",
+          "description": "你的奥术研究和恩主赋予的魔法让你可以施放法术。你的法术位在短休后恢复。"
+        },
+        {
+          "level": 2,
+          "name": "魔能祈唤",
+          "nameEn": "Eldritch Invocations",
+          "description": "你学习两个魔能祈唤。随等级提升,你学习更多祈唤。",
+          "invocationsKnown": {
+            "2": 2,
+            "5": 3,
+            "7": 4,
+            "9": 5,
+            "12": 6,
+            "15": 7,
+            "18": 8
+          }
+        },
+        {
+          "level": 3,
+          "name": "契约恩赐",
+          "nameEn": "Pact Boon",
+          "description": "你的恩主赐予你一份礼物:契约之刃、契约之链或契约之书。",
+          "options": [
+            {
+              "id": "pact_of_the_blade",
+              "name": "契约之刃",
+              "nameEn": "Pact of the Blade",
+              "description": "你可以用一个动作创造一把契约武器。你用该武器时视为熟练,且可以用你的魅力调整值代替力量或敏捷进行攻击和伤害掷骰。"
+            },
+            {
+              "id": "pact_of_the_chain",
+              "name": "契约之链",
+              "nameEn": "Pact of the Chain",
+              "description": "你学习寻找魔宠法术。当你施放该法术时,你可以选择小精灵、伪龙、小恶魔或鬼婆魔作为魔宠。"
+            },
+            {
+              "id": "pact_of_the_tome",
+              "name": "契约之书",
+              "nameEn": "Pact of the Tome",
+              "description": "你的恩主赐予你一本影之书。选择三个任意职业列表中的戏法。你可以施放这些戏法。"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 4,
+          "name": "契约恩赐改良",
+          "nameEn": "Pact Boon Improvement",
+          "description": "你的契约恩赐获得改良。"
+        },
+        {
+          "level": 5,
+          "name": "魔能祈唤改良",
+          "nameEn": "Eldritch Invocations Improvement",
+          "description": "你学会一个新的魔能祈唤。"
+        },
+        {
+          "level": 6,
+          "name": "异界恩主特性",
+          "nameEn": "Otherworldly Patron Feature",
+          "description": "你获得所选异界恩主的6级特性。"
+        },
+        {
+          "level": 7,
+          "name": "魔能祈唤改良",
+          "nameEn": "Eldritch Invocations Improvement",
+          "description": "你学会一个新的魔能祈唤。"
+        },
+        {
+          "level": 8,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 9,
+          "name": "魔能祈唤改良",
+          "nameEn": "Eldritch Invocations Improvement",
+          "description": "你学会一个新的魔能祈唤。"
+        },
+        {
+          "level": 10,
+          "name": "异界恩主特性",
+          "nameEn": "Otherworldly Patron Feature",
+          "description": "你获得所选异界恩主的10级特性。"
+        },
+        {
+          "level": 11,
+          "name": "秘法奥秘",
+          "nameEn": "Mystic Arcanum",
+          "description": "你的恩主赐予你一个魔法奥秘,称为秘法奥秘。选择一个6环邪术师法术作为此奥秘。每次长休后可施放一次。13、15、17级时各学习一个7、8、9环秘法奥秘。",
+          "level6": 11,
+          "level7": 13,
+          "level8": 15,
+          "level9": 17
+        },
+        {
+          "level": 12,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 13,
+          "name": "魔能祈唤改良",
+          "nameEn": "Eldritch Invocations Improvement",
+          "description": "你学会一个新的魔能祈唤。"
+        },
+        {
+          "level": 14,
+          "name": "异界恩主特性",
+          "nameEn": "Otherworldly Patron Feature",
+          "description": "你获得所选异界恩主的14级特性。"
+        },
+        {
+          "level": 15,
+          "name": "魔能祈唤改良",
+          "nameEn": "Eldritch Invocations Improvement",
+          "description": "你学会一个新的魔能祈唤。"
+        },
+        {
+          "level": 16,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 17,
+          "name": "魔能祈唤改良",
+          "nameEn": "Eldritch Invocations Improvement",
+          "description": "你学会一个新的魔能祈唤。"
+        },
+        {
+          "level": 18,
+          "name": "魔能祈唤改良",
+          "nameEn": "Eldritch Invocations Improvement",
+          "description": "你学会一个新的魔能祈唤。"
+        },
+        {
+          "level": 19,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 20,
+          "name": "魔能大师",
+          "nameEn": "Eldritch Master",
+          "description": "你可以花费1分钟恳求恩主恢复所有已使用的契约魔法法术位。长休后恢复使用。"
+        }
+      ],
+      "subclasses": [
+        {
+          "id": "archfey",
+          "name": "精类领主",
+          "nameEn": "The Archfey",
+          "description": "精类领主的邪术师与妖精贵族订立契约。他们获得魅惑和幻象的力量。",
+          "descriptionEn": "Warlocks of the Archfey make pacts with fey nobility. They gain powers of charm and illusion.",
+          "features": "扩展法术列表（1级）、妖精存在（1级）、雾步（6级）、魅惑防御（10级）、黑暗谵妄（14级）",
+          "level1Features": [
+            {
+              "name": "扩展法术列表",
+              "nameEn": "Expanded Spell List",
+              "description": "精类领主让你在选择邪术师法术时可以从扩展的法术列表中选择。1级法术：妖火、睡眠术"
+            },
+            {
+              "name": "妖精存在",
+              "nameEn": "Fey Presence",
+              "description": "第1级起，你的宗主赋予你以迷人或恐吓的能力投射妖精魔法的能力。作为一个动作，你可以令你周围10尺立方体内的每个生物进行一次感知豁免检定，对抗你的邪术师法术豁免DC。豁免失败的生物在你的下一回合结束前被你魅惑或恐慌（由你选择）。一旦你使用该特性，你必须完成一次短休或长休才能再次使用。"
+            }
+          ]
+        },
+        {
+          "id": "fiend",
+          "name": "邪魔",
+          "nameEn": "The Fiend",
+          "description": "邪魔的邪术师与恶魔或魔鬼订立契约。他们获得火焰和黑暗的力量。",
+          "descriptionEn": "Warlocks of the Fiend make pacts with demons or devils. They gain powers of fire and darkness.",
+          "features": "扩展法术列表（1级）、黑暗祝福（1级）、黑暗自身运气（6级）、邪魔韧性（10级）、穿越地狱（14级）",
+          "level1Features": [
+            {
+              "name": "扩展法术列表",
+              "nameEn": "Expanded Spell List",
+              "description": "邪魔让你在选择邪术师法术时可以从扩展的法术列表中选择。1级法术：燃烧之手、命令术"
+            },
+            {
+              "name": "黑暗祝福",
+              "nameEn": "Dark One's Blessing",
+              "description": "第1级起，当你将一个敌对生物的生命值降至0时，你获得等于你的魅力调整值+邪术师等级（最少1）的临时生命值。"
+            }
+          ]
+        },
+        {
+          "id": "great_old_one",
+          "name": "旧日支配者",
+          "nameEn": "The Great Old One",
+          "description": "旧日支配者的邪术师与远古异界存在订立契约。他们获得心灵和疯狂的力量。",
+          "descriptionEn": "Warlocks of the Great Old One make pacts with ancient alien entities. They gain powers of mind and madness.",
+          "features": "扩展法术列表（1级）、觉醒心灵（1级）、熵之护盾（6级）、思想创造（10级）、创造奴仆（14级）",
+          "level1Features": [
+            {
+              "name": "扩展法术列表",
+              "nameEn": "Expanded Spell List",
+              "description": "旧日支配者让你在选择邪术师法术时可以从扩展的法术列表中选择。1级法术：不协调低语、塔莎狂笑术"
+            },
+            {
+              "name": "觉醒心灵",
+              "nameEn": "Awakened Mind",
+              "description": "第1级起，你的异界知识赋予你以心灵感应交流的能力。你可以与你能看到的30尺内的任何生物进行心灵感应交流。你不需要与该生物共享语言就能理解你的心灵感应话语，但该生物必须能够理解至少一种语言。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wizard",
+      "name": "法师",
+      "nameEn": "Wizard",
+      "hitDie": "d6",
+      "primaryAbility": [
+        "intelligence"
+      ],
+      "savingThrows": [
+        "intelligence",
+        "wisdom"
+      ],
+      "proficiencies": {
+        "armor": [],
+        "weapons": [
+          "daggers",
+          "darts",
+          "slings",
+          "quarterstaffs",
+          "light_crossbows"
+        ],
+        "tools": [],
+        "skillsAvailable": [
+          "arcana",
+          "history",
+          "insight",
+          "investigation",
+          "medicine",
+          "religion"
+        ],
+        "skillChoices": 2
+      },
+      "spellcasting": {
+        "ability": "intelligence",
+        "preparedSpells": true,
+        "preparedFormula": "智力调整值 + 法师等级",
+        "cantripsKnown": {
+          "1": 3,
+          "4": 4,
+          "10": 5
+        },
+        "spellbook": {
+          "starting": 6,
+          "perLevel": 2
+        },
+        "spellSlots": {
+          "1": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            4,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "6": [
+            4,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "7": [
+            4,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "8": [
+            4,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "9": [
+            4,
+            3,
+            3,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "10": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "11": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "13": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "15": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "17": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "18": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "19": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "20": [
+            4,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        "ritualCasting": true
+      },
+      "startingEquipment": {
+        "choices": [
+          {
+            "choose": 1,
+            "from": [
+              [
+                "quarterstaff"
+              ],
+              [
+                "dagger"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "component_pouch"
+              ],
+              [
+                "arcane_focus"
+              ]
+            ]
+          },
+          {
+            "choose": 1,
+            "from": [
+              [
+                "scholars_pack"
+              ],
+              [
+                "explorers_pack"
+              ]
+            ]
+          }
+        ],
+        "fixed": [
+          "spellbook"
+        ]
+      },
+      "features": [
+        {
+          "level": 1,
+          "name": "施法",
+          "nameEn": "Spellcasting",
+          "description": "作为奥术魔法的学生,你有一本法术书,记录着你知道的法师法术。"
+        },
+        {
+          "level": 1,
+          "name": "奥术回响",
+          "nameEn": "Arcane Recovery",
+          "description": "每天一次,当你完成短休时,你可以恢复一些已使用的法术位。法术位的总环数不能超过你的法师等级的一半(向上取整),且不能是6环或更高。",
+          "maxLevel": "法师等级的一半(向上取整)",
+          "restriction": "不能恢复6环或更高法术位"
+        },
+        {
+          "level": 2,
+          "name": "奥术传承",
+          "nameEn": "Arcane Tradition",
+          "description": "选择一个奥术传承:防护学派、咒法学派、预言学派、附魔学派、塑能学派、幻术学派、死灵学派或变化学派。"
+        },
+        {
+          "level": 3,
+          "name": "法术书扩充",
+          "nameEn": "Spellbook Expansion",
+          "description": "你的法术书中增加新的法术。"
+        },
+        {
+          "level": 4,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 5,
+          "name": "法术书扩充",
+          "nameEn": "Spellbook Expansion",
+          "description": "你的法术书中增加新的法术。"
+        },
+        {
+          "level": 6,
+          "name": "奥术传承特性",
+          "nameEn": "Arcane Tradition Feature",
+          "description": "你获得所选奥术传承的6级特性。"
+        },
+        {
+          "level": 7,
+          "name": "法术书扩充",
+          "nameEn": "Spellbook Expansion",
+          "description": "你的法术书中增加新的法术。"
+        },
+        {
+          "level": 8,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 9,
+          "name": "法术书扩充",
+          "nameEn": "Spellbook Expansion",
+          "description": "你的法术书中增加新的法术。"
+        },
+        {
+          "level": 10,
+          "name": "奥术传承特性",
+          "nameEn": "Arcane Tradition Feature",
+          "description": "你获得所选奥术传承的10级特性。"
+        },
+        {
+          "level": 11,
+          "name": "法术书扩充",
+          "nameEn": "Spellbook Expansion",
+          "description": "你的法术书中增加新的法术。"
+        },
+        {
+          "level": 12,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 13,
+          "name": "法术书扩充",
+          "nameEn": "Spellbook Expansion",
+          "description": "你的法术书中增加新的法术。"
+        },
+        {
+          "level": 14,
+          "name": "奥术传承特性",
+          "nameEn": "Arcane Tradition Feature",
+          "description": "你获得所选奥术传承的14级特性。"
+        },
+        {
+          "level": 15,
+          "name": "法术书扩充",
+          "nameEn": "Spellbook Expansion",
+          "description": "你的法术书中增加新的法术。"
+        },
+        {
+          "level": 16,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 17,
+          "name": "法术书扩充",
+          "nameEn": "Spellbook Expansion",
+          "description": "你的法术书中增加新的法术。"
+        },
+        {
+          "level": 18,
+          "name": "法术精通",
+          "nameEn": "Spell Mastery",
+          "description": "选择一个1环法术和一个2环法术。你可以随意施放这些法术而不消耗法术位。"
+        },
+        {
+          "level": 19,
+          "name": "属性值提升",
+          "nameEn": "Ability Score Improvement",
+          "description": "你可以将一项属性值提高2点，或将两项属性值各提高1点。按照常规，你不能将属性值提高到20以上。或者，你可以选择一个专长。"
+        },
+        {
+          "level": 20,
+          "name": "招牌法术",
+          "nameEn": "Signature Spells",
+          "description": "选择两个你的法术书中的3环法师法术作为你的招牌法术。你总是准备这些法术,它们不计入你的已准备法术数量,你可以各施放一次而不消耗法术位。短休后恢复使用。"
+        }
+      ],
+      "subclasses": [
+        {
+          "id": "abjuration",
+          "name": "防护学派",
+          "nameEn": "School of Abjuration",
+          "description": "防护学派专注于保护性魔法。法师能够创造魔法护盾，抵御伤害和魔法效果。",
+          "descriptionEn": "The School of Abjuration focuses on protective magic. Wizards create magical wards, resisting damage and magical effects.",
+          "features": "防护学者（2级）、奥术护盾（2级）、投影护盾（6级）、改良防护（10级）、法术抗性（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "法师在2级时选择奥术传承。防护学派在2级获得防护学者（抄录防护法术更快更便宜）和奥术护盾（施展防护法术时创建魔法护盾吸收伤害）。"
+            }
+          ]
+        },
+        {
+          "id": "conjuration",
+          "name": "咒法学派",
+          "nameEn": "School of Conjuration",
+          "description": "咒法学派专注于召唤和传送。法师能够召唤生物和物品，瞬间移动。",
+          "descriptionEn": "The School of Conjuration focuses on summoning and teleportation. Wizards summon creatures and objects, teleporting instantly.",
+          "features": "咒法学者（2级）、次级咒法（2级）、善意传送（6级）、专注咒法（10级）、耐久召唤（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "法师在2级时选择奥术传承。咒法学派在2级获得咒法学者（抄录咒法法术更快更便宜）和次级咒法（用动作召唤一个无生命物体）。"
+            }
+          ]
+        },
+        {
+          "id": "divination",
+          "name": "预言学派",
+          "nameEn": "School of Divination",
+          "description": "预言学派专注于揭示秘密和预见未来。法师能够看穿幻象，预知危险。",
+          "descriptionEn": "The School of Divination focuses on revealing secrets and foreseeing the future. Wizards see through illusions and foresee danger.",
+          "features": "预言学者（2级）、预兆（2级）、专家预言（6级）、第三只眼（10级）、高等预兆（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "法师在2级时选择奥术传承。预言学派在2级获得预言学者（抄录预言法术更快更便宜）和预兆（每次长休后投2个d20，可以用这些骰子替换任何生物的攻击、豁免或属性检定）。"
+            }
+          ]
+        },
+        {
+          "id": "enchantment",
+          "name": "附魔学派",
+          "nameEn": "School of Enchantment",
+          "description": "附魔学派专注于魅惑和控制心灵。法师能够操控敌人的思想和行为。",
+          "descriptionEn": "The School of Enchantment focuses on charming and controlling minds. Wizards manipulate enemies' thoughts and actions.",
+          "features": "附魔学者（2级）、催眠凝视（2级）、本能魅惑（6级）、分裂附魔（10级）、改变记忆（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "法师在2级时选择奥术传承。附魔学派在2级获得附魔学者（抄录附魔法术更快更便宜）和催眠凝视（用动作魅惑5尺内的生物）。"
+            }
+          ]
+        },
+        {
+          "id": "evocation",
+          "name": "塑能学派",
+          "nameEn": "School of Evocation",
+          "description": "塑能学派专注于创造强大的元素效果。法师能够塑造法术，保护盟友免受伤害。",
+          "descriptionEn": "The School of Evocation focuses on creating powerful elemental effects. Wizards shape spells, protecting allies from harm.",
+          "features": "塑能学者（2级）、塑能雕琢（2级）、强力戏法（6级）、强力法术（10级）、超载（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "法师在2级时选择奥术传承。塑能学派在2级获得塑能学者（抄录塑能法术更快更便宜）和塑能雕琢（施展塑能法术时可以保护盟友免受伤害）。"
+            }
+          ]
+        },
+        {
+          "id": "illusion",
+          "name": "幻术学派",
+          "nameEn": "School of Illusion",
+          "description": "幻术学派专注于欺骗感官和心灵。法师能够创造逼真的幻象，使幻象成真。",
+          "descriptionEn": "The School of Illusion focuses on deceiving senses and minds. Wizards create realistic illusions, making illusions real.",
+          "features": "幻术学者（2级）、改良次级幻影（2级）、可塑幻象（6级）、虚幻自我（10级）、虚幻真实（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "法师在2级时选择奥术传承。幻术学派在2级获得幻术学者（抄录幻术法术更快更便宜）和改良次级幻影（次级幻影戏法可以同时产生声音和图像）。"
+            }
+          ]
+        },
+        {
+          "id": "necromancy",
+          "name": "死灵学派",
+          "nameEn": "School of Necromancy",
+          "description": "死灵学派专注于操控生命力和不死生物。法师能够吸取生命，复活死者。",
+          "descriptionEn": "The School of Necromancy focuses on manipulating life force and undead. Wizards drain life and raise the dead.",
+          "features": "死灵学者（2级）、严峻收割（2级）、不死奴仆（6级）、不死活力（10级）、指挥不死（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "法师在2级时选择奥术传承。死灵学派在2级获得死灵学者（抄录死灵法术更快更便宜）和严峻收割（用死灵法术杀死生物时恢复生命值）。"
+            }
+          ]
+        },
+        {
+          "id": "transmutation",
+          "name": "变化学派",
+          "nameEn": "School of Transmutation",
+          "description": "变化学派专注于改变物质和能量。法师能够变化物品，改变自身形态。",
+          "descriptionEn": "The School of Transmutation focuses on altering matter and energy. Wizards transform objects and change their own form.",
+          "features": "变化学者（2级）、次级炼金（2级）、变化石（6级）、塑形者（10级）、大师变化师（14级）",
+          "level1Features": [
+            {
+              "name": "子职业选择",
+              "nameEn": "Subclass Selection",
+              "description": "法师在2级时选择奥术传承。变化学派在2级获得变化学者（抄录变化法术更快更便宜）和次级炼金（临时改变物体的物理属性）。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

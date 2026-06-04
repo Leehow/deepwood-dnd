@@ -1,0 +1,106 @@
+[
+  {
+    "id": "_old_owl_trouble__old_owl_well_____netheril___",
+    "name": "古枭井 Old Owl Trouble。达朗从凡达林东北山丘的淘金者口中得知, 有人发掘出一处称为古枭井 Old Owl Well 的废墟。更让人不安的是, 一些淘金者还曾在那片地区被不死生物追赶。达朗请求玩家前往古枭井看看情况, 找出谁在那里, 想要做什么。他知道这片废墟是远古魔法帝国奈瑟瑞尔 Netheril 的古老瞭望塔, 而他担心里面可能还残留着一些危险的魔法。如果玩家接受这个任务,见下文的 “古枭井”。",
+    "type": "side",
+    "giver": null,
+    "description": "",
+    "objectives": [],
+    "rewards": {
+      "gold": null
+    },
+    "prerequisites": [],
+    "consequences": {}
+  },
+  {
+    "id": "_halias_job_offer___100mathrmgp______dc_15___",
+    "name": "哈利娅的委托 Halia's Job Offer。哈利娅认为自己能控制接近她的冒险者时, 会向冒险者们描述红标帮完全是镇子上的毒瘤。这些恶棍们经常在沉睡巨人酒馆附近闲晃,而大本营则藏在镇子东面崔森德庄园下。之后她会提供 \\( {100}\\mathrm{{gp}} \\) 的委托, 要求玩家除掉红标帮的首领玻璃手杖, 并带回在他住处找到的信件。哈利娅并未暴露她想取而代之接管红标帮的野心, 但成功通过一次 DC 15 感知 (察觉) 检定后便能发觉她想要玻璃手杖死掉的不纯动机。",
+    "type": "side",
+    "giver": null,
+    "description": "",
+    "objectives": [],
+    "rewards": {
+      "gold": null
+    },
+    "prerequisites": [],
+    "consequences": {}
+  },
+  {
+    "id": "reidoth_the_druid__reidoth____50__thundertree___",
+    "name": "德鲁里多斯Reidoth the Druid。奎琳有一位德鲁伊老朋友, 名叫里多斯 Reidoth。玩家询问她一些比较特别的地点, 比如克拉摩堡和潮音洞穴时, 她会建议玩家去拜访里多斯。“没有里多斯不知道的地方。”奎琳告诉角色们,里多斯最近去了无冬森林西边, 在凡达林西北大约 50 里外的雷树镇 Thundertree 废墟那儿。如果队伍接受这个任务, 则参见 “雷树镇废墟”。",
+    "type": "side",
+    "giver": null,
+    "description": "",
+    "objectives": [],
+    "rewards": {
+      "gold": null
+    },
+    "prerequisites": [],
+    "consequences": {}
+  },
+  {
+    "id": "_the_banshees_bargain__agatha___",
+    "name": "女妖的交易 The Banshee's Bargain。最近, 加莉尔的上级让她去寻找一个名叫阿加莎 Agatha 的女妖, 并从其口中问出一个关于某法术书的问题。加莉尔找到了阿加莎的巢穴, 但女妖并不愿意回应她。",
+    "type": "side",
+    "giver": null,
+    "description": "",
+    "objectives": [],
+    "rewards": {
+      "gold": null
+    },
+    "prerequisites": [],
+    "consequences": {}
+  },
+  {
+    "id": "_orc_trouble_wyvern_tor____100mathrmgp____",
+    "name": "兽人袭来 Orc Trouble。沿着三猪小径向东走,在飞龙岩 Wyvern Tor 附近, 有旅行者看到了一队兽人。哈宾悬赏 \\( {100}\\mathrm{{gp}} \\) ,希望有人能解决掉它们。如果小队决定接受任务, 则详见 “飞龙岩”。",
+    "type": "side",
+    "giver": null,
+    "description": "",
+    "objectives": [],
+    "rewards": {
+      "gold": null
+    },
+    "prerequisites": [],
+    "consequences": {}
+  },
+  {
+    "id": "finding_cragmaw_castle_____",
+    "name": "寻访克拉摩堡Finding Cragmaw Castle。在石丘旅馆休息后, 修达·霍温特前往镇长大厅表明了身份。作为领主联盟的特工,他来此的目的是为凡达林建立法度与秩序。他的构想是, 先找到潮音洞穴古矿坑, 帮助寻岩者兄弟重新开采, 使这个地区逐渐繁荣起来, 凡达林镇也会变得文明有序。",
+    "type": "side",
+    "giver": null,
+    "description": "",
+    "objectives": [],
+    "rewards": {
+      "gold": null
+    },
+    "prerequisites": [],
+    "consequences": {}
+  },
+  {
+    "id": "_finding_iarno____",
+    "name": "失踪的伊阿诺 Finding Iarno。当地人告诉修达, 领主联盟成员伊阿诺·阿布雷克是在大约两个月前,他刚到凡达林不久前往探索崔森德庄园时失踪的。修达请求角色们调查庄园及周边地区, 找回伊阿诺一一或如果他已经遇害, 至少也要带回他的遗物。修达描述伊阿诺是一个 “三十来岁,蓄着黑色胡子的矮个子人类法师。”",
+    "type": "side",
+    "giver": null,
+    "description": "",
+    "objectives": [],
+    "rewards": {
+      "gold": null
+    },
+    "prerequisites": [],
+    "consequences": {}
+  },
+  {
+    "id": "_mirnas_heirloom_______3_",
+    "name": "米尔娜的传家宝 Mirna's Heirloom。丹卓一家没有什么值钱的东西回报冒险者, 但米尔娜提供了关于她家族一件珍贵的传家之宝的线索。她小时候住在雷树镇, 镇子遭不死生物肆虐后, 她与亲人逃离了那里。在雷树镇, 她家拥有一间药草与炼金商店, 商店的货架下埋着一个装有翡翠项链的盒子。这么多年,她一直不敢去拿回来。商店位于雷树镇东南部。如果玩家决定探索雷树镇遗址, 则参见第 3 部分的冒险。",
+    "type": "side",
+    "giver": null,
+    "description": "",
+    "objectives": [],
+    "rewards": {
+      "gold": null
+    },
+    "prerequisites": [],
+    "consequences": {}
+  }
+]

@@ -1,0 +1,2244 @@
+{
+  "total_checked": 298,
+  "errors_found": 43,
+  "results": [
+    {
+      "name_en": "Acid Splash",
+      "name_cn": "酸液飞溅",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Aid",
+      "name_cn": "援助术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Alarm",
+      "name_cn": "警报术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Alter Self",
+      "name_cn": "变身术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Animal Friendship",
+      "name_cn": "化兽为友",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Animal Messenger",
+      "name_cn": "动物信使",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Animal Shapes",
+      "name_cn": "动物形态",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Animate Dead",
+      "name_cn": "操纵死尸",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文为“如果你不发出命令，该生物只会自卫（only defends itself）”；中文写成“若你不发出命令，它会执行上一次接到的命令”，与原文规则不一致"
+      ]
+    },
+    {
+      "name_en": "Animate Objects",
+      "name_cn": "活化物件",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文为“当活化物件降至0生命值时，变回原物件形态，且任何剩余伤害会转移到原物件形态（any remaining damage carries over）”；中文未写明“剩余伤害转移”这一规则",
+        "关键规则条件遗漏：原文为“活化物件拥有30尺半径盲视，且超出该距离视为目盲（blindsight 30 ft and blind beyond）”；中文未包含该感知规则"
+      ]
+    },
+    {
+      "name_en": "Antilife Shell",
+      "name_cn": "防活物护罩",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Antimagic Field",
+      "name_cn": "反魔法力场",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Antipathy/Sympathy",
+      "name_cn": "嫌恶 / 关怀术",
+      "status": "error",
+      "issues": [
+        "豁免类型：原文在 60 尺触发与后续检定均为 Wisdom saving throw；中文在嫌恶/关怀/结束效果中写成了“感知豁免”（应为“感知/感知力”对应 Perception，但这里规则上是 Wisdom（感知属性）豁免）。"
+      ]
+    },
+    {
+      "name_en": "Arcane Eye",
+      "name_cn": "秘法眼",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Arcane Lock",
+      "name_cn": "秘法锁",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Astral Projection",
+      "name_cn": "星界投影",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Augury",
+      "name_cn": "占卜术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Awaken",
+      "name_cn": "启蒙术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Bane",
+      "name_cn": "灾祸术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Banishment",
+      "name_cn": "放逐术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Barkskin",
+      "name_cn": "树肤术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Beacon of Hope",
+      "name_cn": "希望信标",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Bestow Curse",
+      "name_cn": "降咒",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Blade Barrier",
+      "name_cn": "剑刃护壁",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Bless",
+      "name_cn": "祝福术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Blight",
+      "name_cn": "枯萎术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Blindness/Deafness",
+      "name_cn": "目盲 / 耳聋术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Blink",
+      "name_cn": "闪现术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Blur",
+      "name_cn": "朦胧术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Branding Smite",
+      "name_cn": "印记斩",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Burning Hands",
+      "name_cn": "燃烧之手",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Call Lightning",
+      "name_cn": "召雷术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Calm Emotions",
+      "name_cn": "安定心神",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Chain Lightning",
+      "name_cn": "连锁闪电",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Charm Person",
+      "name_cn": "魅惑人类",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Chill Touch",
+      "name_cn": "冻寒之触",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Circle of Death",
+      "name_cn": "死亡法阵",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Clairvoyance",
+      "name_cn": "鹰眼术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Clone",
+      "name_cn": "克隆术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Cloudkill",
+      "name_cn": "死云术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Color Spray",
+      "name_cn": "七彩喷射",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Command",
+      "name_cn": "命令术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Commune",
+      "name_cn": "通神术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Comprehend Languages",
+      "name_cn": "通晓语言",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Compulsion",
+      "name_cn": "强迫术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Cone of Cold",
+      "name_cn": "寒冰锥",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Confusion",
+      "name_cn": "困惑术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Conjure Animals",
+      "name_cn": "召唤动物",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Conjure Celestial",
+      "name_cn": "召唤天界生物",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Conjure Elemental",
+      "name_cn": "召唤元素生物",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Conjure Fey",
+      "name_cn": "召唤精类生物",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Conjure Minor Elementals",
+      "name_cn": "召唤次级元素生物",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Conjure Woodland Beings",
+      "name_cn": "召唤林地之精",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Contact Other Plane",
+      "name_cn": "异界探知",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Contagion",
+      "name_cn": "疫病术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Contingency",
+      "name_cn": "触发术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Continual Flame",
+      "name_cn": "不灭明焰",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Control Water",
+      "name_cn": "操控水体",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Control Weather",
+      "name_cn": "操控天气",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Counterspell",
+      "name_cn": "法术反制",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Create Food and Water",
+      "name_cn": "造粮术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Create Undead",
+      "name_cn": "唤起死灵",
+      "status": "error",
+      "issues": [
+        "原文：你每回合以附赠动作可以命令“120尺内”的受控生物；中文前段写成“你用一个附赠动作在自己的回合中对它们发出精神命令”但未写明必须在120尺内（距离/规则条件遗漏）。",
+        "原文：若不发出命令，“the creature only defends itself against hostile creatures”；中文写成“只会进行自卫而不采取其他动作”，遗漏了“仅对敌对生物”这一关键限制条件。"
+      ]
+    },
+    {
+      "name_en": "Create or Destroy Water",
+      "name_cn": "造水/枯水术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Creation",
+      "name_cn": "造物术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Cure Wounds",
+      "name_cn": "疗伤术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Dancing Lights",
+      "name_cn": "舞光术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Darkness",
+      "name_cn": "黑暗术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Darkvision",
+      "name_cn": "黑暗视觉",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Daylight",
+      "name_cn": "昼明术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Death Ward",
+      "name_cn": "防死结界",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Delayed Blast Fireball",
+      "name_cn": "延迟爆裂火球",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Demiplane",
+      "name_cn": "创造半位面",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Detect Evil and Good",
+      "name_cn": "侦测善恶",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Detect Magic",
+      "name_cn": "侦测魔法",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Detect Poison and Disease",
+      "name_cn": "侦测毒性和疾病",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Detect Thoughts",
+      "name_cn": "侦测思想",
+      "status": "error",
+      "issues": [
+        "豁免类型不一致：原文是 Wisdom saving throw（感知豁免），中文写成了“感知豁免”"
+      ]
+    },
+    {
+      "name_en": "Dimension Door",
+      "name_cn": "任意门",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Disguise Self",
+      "name_cn": "易容术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Disintegrate",
+      "name_cn": "解离术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Dispel Evil and Good",
+      "name_cn": "反制善恶",
+      "status": "error",
+      "issues": [
+        "保护对象范围表述不一致：原文为“保护你免受 fey、undead、以及源于主物质位面外的生物（creatures originating from beyond the Material Plane）”，中文写成“保护你免受来自精类生物、不死生物和源于主物质位面外异域生物的伤害”，将规则效果表述成“免受…伤害”（原文并未给予减伤/免伤，只给攻击检定劣势与两个动作选项）。"
+      ]
+    },
+    {
+      "name_en": "Dispel Magic",
+      "name_cn": "解除魔法",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Divination",
+      "name_cn": "预言术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Divine Favor",
+      "name_cn": "神恩",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Divine Word",
+      "name_cn": "圣言术",
+      "status": "error",
+      "issues": [
+        "30 HP 阈值效果：原文为“deafened, blinded, and stunned for 1 hour（失聪/目盲/震慑各1小时）”，中文写成“失聪1小时、目盲1小时，并被震慑1小时”（此处一致）；但 40 HP 阈值效果原文为“deafened and blinded for 10 minutes（失聪与目盲各10分钟）”，中文写成“失聪10分钟，并被目盲10分钟”（一致）；50 HP 阈值原文为“deafened for 1 minute（失聪1分钟）”，中文一致。",
+        "结论：未发现数值/规则参数不一致（上述各项一致），因此不应标记为 error。"
+      ]
+    },
+    {
+      "name_en": "Dominate Beast",
+      "name_cn": "支配野兽",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Dominate Monster",
+      "name_cn": "支配怪物",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Dominate Person",
+      "name_cn": "支配人类",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Dream",
+      "name_cn": "托梦术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Druidcraft",
+      "name_cn": "德鲁伊伎俩",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Earthquake",
+      "name_cn": "地震术",
+      "status": "error",
+      "issues": [
+        "裂缝触发时间：原文为“在你施放法术后的下个回合开始时裂缝出现（at the start of your next turn）”，中文写成了“DM 可以在法术施展后的下一轮中……创造裂缝”，缺少“在你下个回合开始时必定出现”的关键触发条件。"
+      ]
+    },
+    {
+      "name_en": "Eldritch Blast",
+      "name_cn": "魔能爆",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Enhance Ability",
+      "name_cn": "强化属性",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Enlarge/Reduce",
+      "name_cn": "变巨 / 缩小术",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文 Reduce 写明“伤害减少 1d4（这不能使伤害降低到 1 以下）”，中文写成“伤害不会因此降低到 1 点以下”（允许降到0），与原文不一致。"
+      ]
+    },
+    {
+      "name_en": "Entangle",
+      "name_cn": "纠缠术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Enthrall",
+      "name_cn": "注目术",
+      "status": "error",
+      "issues": [
+        "豁免类型：原文是 Wisdom saving throw（感知豁免），中文写成了“感知豁免”。"
+      ]
+    },
+    {
+      "name_en": "Etherealness",
+      "name_cn": "以太化",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Expeditious Retreat",
+      "name_cn": "脚底抹油",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Eyebite",
+      "name_cn": "摄心目光",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Fabricate",
+      "name_cn": "鬼斧神工",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Faerie Fire",
+      "name_cn": "妖火",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "False Life",
+      "name_cn": "虚假生命",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Fear",
+      "name_cn": "恐惧术",
+      "status": "error",
+      "issues": [
+        "豁免属性不一致：原文是 Wisdom saving throw（感知豁免），中文写成了“感知豁免”（应为感知/睿知=Wisdom；若中文“感知”被用作 Perception 则会错置）。",
+        "关键规则条件疑似偏差：原文是“Each creature in a 30-foot cone”（30 尺锥形内每个生物），中文写成“你选择一个30尺锥形区域”（不影响数值，但可能暗示可任意选择锥形位置；原文为以施法者为起点的锥形）。"
+      ]
+    },
+    {
+      "name_en": "Feather Fall",
+      "name_cn": "羽落术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Feeblemind",
+      "name_cn": "弱智术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Find Familiar",
+      "name_cn": "获得魔宠",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Find Steed",
+      "name_cn": "召唤坐骑",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Find Traps",
+      "name_cn": "寻找陷阱",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Find the Path",
+      "name_cn": "寻路术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Finger of Death",
+      "name_cn": "死亡一指",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Fire Bolt",
+      "name_cn": "火焰箭",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Fire Shield",
+      "name_cn": "火焰护盾",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Fire Storm",
+      "name_cn": "火焰风暴",
+      "status": "error",
+      "issues": [
+        "范围/距离条件不一致：原文为“within range（施法距离内）”，中文写成了“你视野范围内”"
+      ]
+    },
+    {
+      "name_en": "Fireball",
+      "name_cn": "火球术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Flame Blade",
+      "name_cn": "火焰刀",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Flame Strike",
+      "name_cn": "焰击术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Flaming Sphere",
+      "name_cn": "炽焰法球",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Flesh to Stone",
+      "name_cn": "石化术",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：英文原文写明“On a successful save, the creature isn't affected（首次体质豁免成功则不受影响）”，中文未明确这一点，反而直接进入“持续时间内束缚且每回合末再豁免”的流程。"
+      ]
+    },
+    {
+      "name_en": "Fly",
+      "name_cn": "飞行术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Fog Cloud",
+      "name_cn": "云雾术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Forbiddance",
+      "name_cn": "禁制术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Forcecage",
+      "name_cn": "魔力监牢",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Foresight",
+      "name_cn": "预警术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Freedom of Movement",
+      "name_cn": "行动自如",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Gaseous Form",
+      "name_cn": "气化形体",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Gate",
+      "name_cn": "异界之门",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Geas",
+      "name_cn": "指使术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Gentle Repose",
+      "name_cn": "遗体防腐",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Giant Insect",
+      "name_cn": "巨虫术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Glibness",
+      "name_cn": "花言巧语",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Globe of Invulnerability",
+      "name_cn": "法术无效结界",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Glyph of Warding",
+      "name_cn": "守卫刻文",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Goodberry",
+      "name_cn": "神莓术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Grease",
+      "name_cn": "油腻术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Greater Invisibility",
+      "name_cn": "高等隐形术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Greater Restoration",
+      "name_cn": "高等复原术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Guardian of Faith",
+      "name_cn": "信仰守卫",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文是“生物在其回合内第一次移动到距离守卫10尺内的空间时触发（moves to a space within 10 feet ... for the first time on a turn）”，中文写成了“第一次进入守护者身边10尺范围内时”，漏掉/弱化了“移动到一个空间（moves to a space）”这一触发条件。"
+      ]
+    },
+    {
+      "name_en": "Guards and Wards",
+      "name_cn": "铜墙铁壁",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Guidance",
+      "name_cn": "神导术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Guiding Bolt",
+      "name_cn": "曳光弹",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Gust of Wind",
+      "name_cn": "造风术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Hallow",
+      "name_cn": "圣居",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Hallucinatory Terrain",
+      "name_cn": "幻景",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Harm",
+      "name_cn": "重伤术",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文是“伤害不能将目标生命值降到 1 以下（can't reduce... below 1）”，中文写成了“不能将目标的生命值降到 1 以下”，阈值不同（应为至少保留 1 点生命值）。"
+      ]
+    },
+    {
+      "name_en": "Haste",
+      "name_cn": "加速术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Heal",
+      "name_cn": "医疗术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Healing Word",
+      "name_cn": "治愈真言",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Heat Metal",
+      "name_cn": "灼热金属",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Hellish Rebuke",
+      "name_cn": "炼狱叱喝",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Heroes' Feast",
+      "name_cn": "英雄宴",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Heroism",
+      "name_cn": "英雄气概",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Hold Monster",
+      "name_cn": "怪物定身术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Hold Person",
+      "name_cn": "人类定身术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Holy Aura",
+      "name_cn": "圣洁灵光",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Hunter's Mark",
+      "name_cn": "猎人印记",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Hypnotic Pattern",
+      "name_cn": "催眠图纹",
+      "status": "error",
+      "issues": [
+        "关键条件遗漏：原文为“区域内每个看见图纹的生物必须进行感知豁免”，中文写成了“区域内每个能看见该图纹的生物必须进行感知豁免”，遗漏了“必须看见图纹（see the pattern）”这一判定条件。"
+      ]
+    },
+    {
+      "name_en": "Ice Storm",
+      "name_cn": "冰风暴",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Identify",
+      "name_cn": "鉴定术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Illusory Script",
+      "name_cn": "迷幻手稿",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Imprisonment",
+      "name_cn": "禁锢术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Incendiary Cloud",
+      "name_cn": "焚云术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Inflict Wounds",
+      "name_cn": "致伤术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Insect Plague",
+      "name_cn": "疫病虫群",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Invisibility",
+      "name_cn": "隐形术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Jump",
+      "name_cn": "跳跃术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Knock",
+      "name_cn": "敲击术",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文写“如果物体有多把锁，只解开其中一把（If the object has multiple locks, only one of them is unlocked）”，中文写成“如果目标被多把锁锁住，则只有一把锁会被打开”，将“解锁一把”误写为“打开一把”（改变规则效果）"
+      ]
+    },
+    {
+      "name_en": "Legend Lore",
+      "name_cn": "通晓传奇",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Lesser Restoration",
+      "name_cn": "次级复原术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Levitate",
+      "name_cn": "浮空术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Light",
+      "name_cn": "光亮术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Lightning Bolt",
+      "name_cn": "闪电束",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Locate Animals or Plants",
+      "name_cn": "动植物定位术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Locate Creature",
+      "name_cn": "生物定位术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Locate Object",
+      "name_cn": "物件定位术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Longstrider",
+      "name_cn": "大步奔行",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Mage Armor",
+      "name_cn": "法师护甲",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Mage Hand",
+      "name_cn": "法师之手",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Magic Circle",
+      "name_cn": "防护法阵",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Magic Jar",
+      "name_cn": "魔魂壶",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Magic Missile",
+      "name_cn": "魔法飞弹",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Magic Mouth",
+      "name_cn": "魔嘴术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Magic Weapon",
+      "name_cn": "魔化武器",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Major Image",
+      "name_cn": "高等幻影",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Mass Cure Wounds",
+      "name_cn": "群体疗伤术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Mass Heal",
+      "name_cn": "群体医疗术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Mass Healing Word",
+      "name_cn": "群体治愈真言",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Mass Suggestion",
+      "name_cn": "群体暗示术",
+      "status": "error",
+      "issues": [
+        "豁免类型不一致：原文是 Wisdom saving throw，中文写成了“感知豁免”（应为“感知/感知属性”为 Wisdom 但中文通常对应“感知”，此处不算错）；但中文将“On a failed save, it pursues the course of action you described to the best of its ability”改成了“会倾向于以和平的方式遵循你的建议”，改变了关键规则条件（失败时必须尽力执行建议，而非仅‘倾向于’且‘以和平方式’）。",
+        "关键规则条件遗漏：原文有“如果建议可在更短时间完成，则目标完成后法术结束”，中文未包含该结束条件。"
+      ]
+    },
+    {
+      "name_en": "Maze",
+      "name_cn": "迷宫术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Mending",
+      "name_cn": "修复术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Message",
+      "name_cn": "传讯术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Meteor Swarm",
+      "name_cn": "流星爆",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Mind Blank",
+      "name_cn": "心灵屏障",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Minor Illusion",
+      "name_cn": "次级幻影",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Mirage Arcane",
+      "name_cn": "海市蜃楼",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Mirror Image",
+      "name_cn": "镜影术",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文是“每当一个生物以你为攻击目标时…决定该次攻击是否改为以其中一个分身为目标（target you with an attack）”，中文写成了“决定该次攻击是否改为以其中一个分身为目标/是否改为…命中分身”，缺少/混淆了“攻击目标改为分身（target）”而非“命中分身（hit）”的判定条件。"
+      ]
+    },
+    {
+      "name_en": "Mislead",
+      "name_cn": "假象术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Misty Step",
+      "name_cn": "迷踪步",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Modify Memory",
+      "name_cn": "篡改记忆",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Moonbeam",
+      "name_cn": "月华之光",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Move Earth",
+      "name_cn": "地动术",
+      "status": "error",
+      "issues": [
+        "原文：你可以在区域内以任意方式重塑泥土/沙土/黏土；中文写成“你可以选择以下一种效果”，把原本可自由组合/任意塑形的规则限制成四选一。",
+        "原文：变化幅度“不能超过该区域最大边长的一半”（40尺边长则上限20尺）；中文各条目固定写成“至多20尺”，缺少“随区域尺寸变化而变化”的关键参数。"
+      ]
+    },
+    {
+      "name_en": "Nondetection",
+      "name_cn": "回避侦测",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Passwall",
+      "name_cn": "穿墙术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Phantasmal Killer",
+      "name_cn": "魅影杀手",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Phantom Steed",
+      "name_cn": "魅影驹",
+      "status": "error",
+      "issues": [
+        "射程/出现位置：原文只写“within range（射程内）”，中文写成了“你前方30尺内”，把位置/距离具体化为30尺（若该法术射程并非30尺则会造成不一致）。"
+      ]
+    },
+    {
+      "name_en": "Planar Ally",
+      "name_cn": "异界誓盟",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Planar Binding",
+      "name_cn": "异界誓缚",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Plane Shift",
+      "name_cn": "异界传送",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Plant Growth",
+      "name_cn": "植物滋长",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Poison Spray",
+      "name_cn": "毒气喷溅",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Polymorph",
+      "name_cn": "变形术",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文“变形持续到持续时间结束，或直到目标生命值降至0或死亡”；中文末句写成“在目标生命值降至0、你施法专注被打断、或持续时间结束时提前终止”，多了“专注被打断”这一终止条件（原文此段未写）。"
+      ]
+    },
+    {
+      "name_en": "Power Word Kill",
+      "name_cn": "律令死亡",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Power Word Stun",
+      "name_cn": "律令震慑",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Prayer of Healing",
+      "name_cn": "治疗祷言",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Prestidigitation",
+      "name_cn": "魔法伎俩",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Prismatic Spray",
+      "name_cn": "虹光喷射",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Prismatic Wall",
+      "name_cn": "虹光法墙",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文为“若法墙穿过生物占据的空间则法术失败”，中文写成“穿过某个生物所占据空间的位置”（未限定为‘施放时/你设置位置时’这一关键判定时点，可能导致规则含义扩大）"
+      ]
+    },
+    {
+      "name_en": "Produce Flame",
+      "name_cn": "燃火术",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文为“施放时，或在之后的回合以一个动作（as an action on a later turn）掷出火焰”，中文只写“施展该法术时…掷向…”，遗漏了“后续回合也可用动作掷出”的规则"
+      ]
+    },
+    {
+      "name_en": "Programmed Illusion",
+      "name_cn": "预置幻影",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Project Image",
+      "name_cn": "投影术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Protection from Evil and Good",
+      "name_cn": "防护善恶",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Protection from Poison",
+      "name_cn": "防护毒素",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Purify Food and Drink",
+      "name_cn": "净化食粮",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Raise Dead",
+      "name_cn": "死者复活",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Ray of Enfeeblement",
+      "name_cn": "衰弱射线",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Ray of Frost",
+      "name_cn": "冷冻射线",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Regenerate",
+      "name_cn": "再生术",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文写明“持续期间目标在其每回合开始恢复1生命值（每分钟10生命值）”，中文漏译了括号内“每分钟10生命值”的规则参数。"
+      ]
+    },
+    {
+      "name_en": "Reincarnate",
+      "name_cn": "转生术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Remove Curse",
+      "name_cn": "移除诅咒",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Resistance",
+      "name_cn": "提升抗性",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Resurrection",
+      "name_cn": "复生术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Reverse Gravity",
+      "name_cn": "反重力",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Revivify",
+      "name_cn": "回生术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Rope Trick",
+      "name_cn": "魔绳术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Sacred Flame",
+      "name_cn": "圣火术",
+      "status": "error",
+      "issues": [
+        "目标条件遗漏：原文是“你能看见且在射程内的生物”，中文写成“你指定的一个生物”（缺少“你能看见/在射程内”这一关键条件）"
+      ]
+    },
+    {
+      "name_en": "Sanctuary",
+      "name_cn": "庇护术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Scorching Ray",
+      "name_cn": "灼热射线",
+      "status": "error",
+      "issues": [
+        "目标条件变更：原文是“targets within range（射程内的目标）”，中文写成“施法距离内你能看见的目标”（额外加入“你能看见”限制）"
+      ]
+    },
+    {
+      "name_en": "Scrying",
+      "name_cn": "探知",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "See Invisibility",
+      "name_cn": "识破隐形",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Seeming",
+      "name_cn": "伪装术",
+      "status": "error",
+      "issues": [
+        "原文写明“可以让每个生物看起来高或矮 1 英尺”，中文描述遗漏了“1 英尺”这一关键数值参数"
+      ]
+    },
+    {
+      "name_en": "Sending",
+      "name_cn": "短讯术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Sequester",
+      "name_cn": "隔离术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Shapechange",
+      "name_cn": "形体变化",
+      "status": "error",
+      "issues": [
+        "原文写明“除非你的新形态也具有该感官，否则你不能使用你原本的特殊感官（例如黑暗视觉）”，中文写成了“你不能使用任何需要特殊身体部位…（例如没手）”，遗漏并替换了关于“特殊感官”的关键规则条件",
+        "原文写明“你只能在该生物通常能说话时才能说话”，中文描述遗漏了该关键规则条件"
+      ]
+    },
+    {
+      "name_en": "Shatter",
+      "name_cn": "粉碎音波",
+      "status": "error",
+      "issues": [
+        "升环加成错误：原文为“使用3环或更高法术位时，每高于2环1环，伤害+1d8”；中文写成了“每比2环高出一环而增加1d8”（表达为以2环为基准还可接受），但又写成“随每比2环高出一环”，整体不清晰且看似按“每比2环高出一环”可能被理解为每高2环才+1d8。应明确为：3环+1d8，4环+2d8，5环+3d8……"
+      ]
+    },
+    {
+      "name_en": "Shield",
+      "name_cn": "护盾术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Shield of Faith",
+      "name_cn": "虔诚护盾",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Shillelagh",
+      "name_cn": "橡棍术",
+      "status": "error",
+      "issues": [
+        "伤害骰规则被改写：原文为“武器的伤害骰变为d8”（仅改变伤害骰大小）；中文写成了“伤害变为1d8 + 你的施法属性调整值”，这会在原本武器已加力量调整值的基础上造成规则表述偏差（原文是用施法属性替代力量来计算攻击与伤害，不是额外再加一次）。",
+        "关键结束条件遗漏：原文包含“若你再次施放该法术或放开武器，法术结束”；中文未包含这些结束条件。"
+      ]
+    },
+    {
+      "name_en": "Shocking Grasp",
+      "name_cn": "电爪",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Silence",
+      "name_cn": "沉默术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Silent Image",
+      "name_cn": "无声幻影",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Simulacrum",
+      "name_cn": "拟像术",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文为“拟像在战斗中在你的回合行动（acting on your turn in combat）”，中文未体现“在你的回合行动”这一规则参数。"
+      ]
+    },
+    {
+      "name_en": "Sleep",
+      "name_cn": "睡眠术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Sleet Storm",
+      "name_cn": "雪雨暴",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Slow",
+      "name_cn": "缓慢术",
+      "status": "error",
+      "issues": [
+        "豁免属性不一致：原文是 Wisdom saving throw（感知豁免），中文写成了“感知豁免”。（应为“感知/感知”对应 Wisdom，但中文用词“感知”通常对应 Perception；若按5E常规译名应为“感知=Wisdom/感知？”这里实际应为“感知/感知”不清。若你们体系中“感知=Wisdom”则无问题）"
+      ]
+    },
+    {
+      "name_en": "Spare the Dying",
+      "name_cn": "维生术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Speak with Animals",
+      "name_cn": "动物交谈",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文允许野兽至少提供“在过去一天内所感知到的”附近地点与怪物信息（within the past day），中文未体现“过去一天内”的时间限制。"
+      ]
+    },
+    {
+      "name_en": "Speak with Dead",
+      "name_cn": "死者交谈",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Speak with Plants",
+      "name_cn": "植物交谈",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Spider Climb",
+      "name_cn": "蛛行术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Spike Growth",
+      "name_cn": "荆棘丛生",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Spirit Guardians",
+      "name_cn": "灵体卫士",
+      "status": "error",
+      "issues": [
+        "豁免类型不一致：原文是 Wisdom saving throw，中文写成了“感知豁免”（应为“感知/察觉”，属于技能检定概念；这里应是感知属性即感知/感知=Wisdom 的豁免，但中文表述成了‘感知豁免’易被误作技能或不规范类型）"
+      ]
+    },
+    {
+      "name_en": "Spiritual Weapon",
+      "name_cn": "灵体武器",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Stinking Cloud",
+      "name_cn": "臭云术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Stone Shape",
+      "name_cn": "塑石术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Stoneskin",
+      "name_cn": "石肤术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Storm of Vengeance",
+      "name_cn": "复仇风暴",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Suggestion",
+      "name_cn": "暗示术",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文为“要求目标明显会伤害到其自身的行为……会使法术结束(ends the spell)”，中文写成“会使该法术自动失败”。"
+      ]
+    },
+    {
+      "name_en": "Sunbeam",
+      "name_cn": "阳炎射线",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Sunburst",
+      "name_cn": "阳炎爆",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Symbol",
+      "name_cn": "魔法徽记",
+      "status": "error",
+      "issues": [
+        "遗漏关键规则条件：原文写明“不死生物与软泥怪在该豁免上具有劣势（Undead and oozes have disadvantage on this saving throw）”，中文未提及"
+      ]
+    },
+    {
+      "name_en": "Telekinesis",
+      "name_cn": "心灵遥控",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Teleport",
+      "name_cn": "传送术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Teleportation Circle",
+      "name_cn": "传送法阵",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Thaumaturgy",
+      "name_cn": "奇术",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文为“你在射程内创造以下效果之一（within range）”，中文未体现“在射程内”这一限制（仅第4条提到射程内某点）。"
+      ]
+    },
+    {
+      "name_en": "Thunderwave",
+      "name_cn": "雷鸣波",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Time Stop",
+      "name_cn": "时间停止",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Tongues",
+      "name_cn": "巧言术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Transport via Plants",
+      "name_cn": "木遁术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Tree Stride",
+      "name_cn": "树跃术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "True Polymorph",
+      "name_cn": "完全变形术",
+      "status": "error",
+      "issues": [
+        "豁免类型不一致：原文为 Wisdom saving throw（感知豁免），中文写成了“感知豁免”（一致）——但中文前段表述成“你可以将一个不愿意的生物变形成另一种生物”；原文规定不愿意生物可做 Wisdom 豁免，成功则不受影响（关键规则条件需明确适用于不愿意生物）。",
+        "关键规则条件遗漏：原文“当其恢复为原本形态时，生物回到变形前的生命值；若因降至0而恢复，超额伤害结转；只要超额伤害未把本体打到0，则不会昏迷”。中文仅写了“当其生命值降至0时恢复…超出0的伤害承受于原本形态”，遗漏了“恢复时回到变形前生命值”以及“超额伤害未致本体0则不昏迷”的关键条件。"
+      ]
+    },
+    {
+      "name_en": "True Resurrection",
+      "name_cn": "完全复生术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "True Seeing",
+      "name_cn": "真知术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "True Strike",
+      "name_cn": "克敌机先",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Unseen Servant",
+      "name_cn": "隐形仆役",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Vampiric Touch",
+      "name_cn": "吸血鬼之触",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Vicious Mockery",
+      "name_cn": "恶言相加",
+      "status": "error",
+      "issues": [
+        "豁免属性不一致：原文是 Wisdom saving throw（感知/意志类豁免），中文写成了“感知豁免”"
+      ]
+    },
+    {
+      "name_en": "Wall of Fire",
+      "name_cn": "火墙术",
+      "status": "error",
+      "issues": [
+        "关键规则条件表述不一致：原文“进入火墙时”是 enters the wall for the first time on a turn（每回合第一次进入墙体本身），中文写成了“穿过火墙时…每回合首次进入火墙时才会受到”，将“进入墙体”混写为“穿过”，可能改变触发判定（未必需要穿过）"
+      ]
+    },
+    {
+      "name_en": "Wall of Force",
+      "name_cn": "力场墙",
+      "status": "error",
+      "issues": [
+        "持续时间规则条件缺失：原文明确“持续至法术持续时间结束（It lasts for the duration）”，中文描述未出现持续时间/持续至结束的规则参数"
+      ]
+    },
+    {
+      "name_en": "Wall of Ice",
+      "name_cn": "冰墙术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Wall of Stone",
+      "name_cn": "石墙术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Wall of Thorns",
+      "name_cn": "棘墙术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Warding Bond",
+      "name_cn": "守护之链",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Water Breathing",
+      "name_cn": "水下呼吸",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Water Walk",
+      "name_cn": "水上行走",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Web",
+      "name_cn": "蛛网术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Weird",
+      "name_cn": "怪影杀手",
+      "status": "error",
+      "issues": [
+        "豁免类型不一致：原文为 Wisdom saving throw（感知豁免），中文写成了“感知豁免”（应为“感知”=Wisdom没问题）；但中文将状态写为“恐慌状态”，而原文为 frightened（恐慌/受惊）——此处属于关键规则条件：必须是 frightened 状态（受惊），不是 panic（若中文系统中“恐慌”不等同 frightened 则会导致规则偏差）。"
+      ]
+    },
+    {
+      "name_en": "Wind Walk",
+      "name_cn": "御风而行",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Wind Wall",
+      "name_cn": "风墙术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Wish",
+      "name_cn": "祈愿术",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Word of Recall",
+      "name_cn": "回返真言",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "name_en": "Zone of Truth",
+      "name_cn": "诚实之域",
+      "status": "ok",
+      "issues": []
+    }
+  ],
+  "error_details": [
+    {
+      "name_en": "Animate Dead",
+      "name_cn": "操纵死尸",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文为“如果你不发出命令，该生物只会自卫（only defends itself）”；中文写成“若你不发出命令，它会执行上一次接到的命令”，与原文规则不一致"
+      ]
+    },
+    {
+      "name_en": "Animate Objects",
+      "name_cn": "活化物件",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文为“当活化物件降至0生命值时，变回原物件形态，且任何剩余伤害会转移到原物件形态（any remaining damage carries over）”；中文未写明“剩余伤害转移”这一规则",
+        "关键规则条件遗漏：原文为“活化物件拥有30尺半径盲视，且超出该距离视为目盲（blindsight 30 ft and blind beyond）”；中文未包含该感知规则"
+      ]
+    },
+    {
+      "name_en": "Antipathy/Sympathy",
+      "name_cn": "嫌恶 / 关怀术",
+      "status": "error",
+      "issues": [
+        "豁免类型：原文在 60 尺触发与后续检定均为 Wisdom saving throw；中文在嫌恶/关怀/结束效果中写成了“感知豁免”（应为“感知/感知力”对应 Perception，但这里规则上是 Wisdom（感知属性）豁免）。"
+      ]
+    },
+    {
+      "name_en": "Create Undead",
+      "name_cn": "唤起死灵",
+      "status": "error",
+      "issues": [
+        "原文：你每回合以附赠动作可以命令“120尺内”的受控生物；中文前段写成“你用一个附赠动作在自己的回合中对它们发出精神命令”但未写明必须在120尺内（距离/规则条件遗漏）。",
+        "原文：若不发出命令，“the creature only defends itself against hostile creatures”；中文写成“只会进行自卫而不采取其他动作”，遗漏了“仅对敌对生物”这一关键限制条件。"
+      ]
+    },
+    {
+      "name_en": "Detect Thoughts",
+      "name_cn": "侦测思想",
+      "status": "error",
+      "issues": [
+        "豁免类型不一致：原文是 Wisdom saving throw（感知豁免），中文写成了“感知豁免”"
+      ]
+    },
+    {
+      "name_en": "Dispel Evil and Good",
+      "name_cn": "反制善恶",
+      "status": "error",
+      "issues": [
+        "保护对象范围表述不一致：原文为“保护你免受 fey、undead、以及源于主物质位面外的生物（creatures originating from beyond the Material Plane）”，中文写成“保护你免受来自精类生物、不死生物和源于主物质位面外异域生物的伤害”，将规则效果表述成“免受…伤害”（原文并未给予减伤/免伤，只给攻击检定劣势与两个动作选项）。"
+      ]
+    },
+    {
+      "name_en": "Divine Word",
+      "name_cn": "圣言术",
+      "status": "error",
+      "issues": [
+        "30 HP 阈值效果：原文为“deafened, blinded, and stunned for 1 hour（失聪/目盲/震慑各1小时）”，中文写成“失聪1小时、目盲1小时，并被震慑1小时”（此处一致）；但 40 HP 阈值效果原文为“deafened and blinded for 10 minutes（失聪与目盲各10分钟）”，中文写成“失聪10分钟，并被目盲10分钟”（一致）；50 HP 阈值原文为“deafened for 1 minute（失聪1分钟）”，中文一致。",
+        "结论：未发现数值/规则参数不一致（上述各项一致），因此不应标记为 error。"
+      ]
+    },
+    {
+      "name_en": "Earthquake",
+      "name_cn": "地震术",
+      "status": "error",
+      "issues": [
+        "裂缝触发时间：原文为“在你施放法术后的下个回合开始时裂缝出现（at the start of your next turn）”，中文写成了“DM 可以在法术施展后的下一轮中……创造裂缝”，缺少“在你下个回合开始时必定出现”的关键触发条件。"
+      ]
+    },
+    {
+      "name_en": "Enlarge/Reduce",
+      "name_cn": "变巨 / 缩小术",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文 Reduce 写明“伤害减少 1d4（这不能使伤害降低到 1 以下）”，中文写成“伤害不会因此降低到 1 点以下”（允许降到0），与原文不一致。"
+      ]
+    },
+    {
+      "name_en": "Enthrall",
+      "name_cn": "注目术",
+      "status": "error",
+      "issues": [
+        "豁免类型：原文是 Wisdom saving throw（感知豁免），中文写成了“感知豁免”。"
+      ]
+    },
+    {
+      "name_en": "Fear",
+      "name_cn": "恐惧术",
+      "status": "error",
+      "issues": [
+        "豁免属性不一致：原文是 Wisdom saving throw（感知豁免），中文写成了“感知豁免”（应为感知/睿知=Wisdom；若中文“感知”被用作 Perception 则会错置）。",
+        "关键规则条件疑似偏差：原文是“Each creature in a 30-foot cone”（30 尺锥形内每个生物），中文写成“你选择一个30尺锥形区域”（不影响数值，但可能暗示可任意选择锥形位置；原文为以施法者为起点的锥形）。"
+      ]
+    },
+    {
+      "name_en": "Fire Storm",
+      "name_cn": "火焰风暴",
+      "status": "error",
+      "issues": [
+        "范围/距离条件不一致：原文为“within range（施法距离内）”，中文写成了“你视野范围内”"
+      ]
+    },
+    {
+      "name_en": "Flesh to Stone",
+      "name_cn": "石化术",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：英文原文写明“On a successful save, the creature isn't affected（首次体质豁免成功则不受影响）”，中文未明确这一点，反而直接进入“持续时间内束缚且每回合末再豁免”的流程。"
+      ]
+    },
+    {
+      "name_en": "Guardian of Faith",
+      "name_cn": "信仰守卫",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文是“生物在其回合内第一次移动到距离守卫10尺内的空间时触发（moves to a space within 10 feet ... for the first time on a turn）”，中文写成了“第一次进入守护者身边10尺范围内时”，漏掉/弱化了“移动到一个空间（moves to a space）”这一触发条件。"
+      ]
+    },
+    {
+      "name_en": "Harm",
+      "name_cn": "重伤术",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文是“伤害不能将目标生命值降到 1 以下（can't reduce... below 1）”，中文写成了“不能将目标的生命值降到 1 以下”，阈值不同（应为至少保留 1 点生命值）。"
+      ]
+    },
+    {
+      "name_en": "Hypnotic Pattern",
+      "name_cn": "催眠图纹",
+      "status": "error",
+      "issues": [
+        "关键条件遗漏：原文为“区域内每个看见图纹的生物必须进行感知豁免”，中文写成了“区域内每个能看见该图纹的生物必须进行感知豁免”，遗漏了“必须看见图纹（see the pattern）”这一判定条件。"
+      ]
+    },
+    {
+      "name_en": "Knock",
+      "name_cn": "敲击术",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文写“如果物体有多把锁，只解开其中一把（If the object has multiple locks, only one of them is unlocked）”，中文写成“如果目标被多把锁锁住，则只有一把锁会被打开”，将“解锁一把”误写为“打开一把”（改变规则效果）"
+      ]
+    },
+    {
+      "name_en": "Mass Suggestion",
+      "name_cn": "群体暗示术",
+      "status": "error",
+      "issues": [
+        "豁免类型不一致：原文是 Wisdom saving throw，中文写成了“感知豁免”（应为“感知/感知属性”为 Wisdom 但中文通常对应“感知”，此处不算错）；但中文将“On a failed save, it pursues the course of action you described to the best of its ability”改成了“会倾向于以和平的方式遵循你的建议”，改变了关键规则条件（失败时必须尽力执行建议，而非仅‘倾向于’且‘以和平方式’）。",
+        "关键规则条件遗漏：原文有“如果建议可在更短时间完成，则目标完成后法术结束”，中文未包含该结束条件。"
+      ]
+    },
+    {
+      "name_en": "Mirror Image",
+      "name_cn": "镜影术",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文是“每当一个生物以你为攻击目标时…决定该次攻击是否改为以其中一个分身为目标（target you with an attack）”，中文写成了“决定该次攻击是否改为以其中一个分身为目标/是否改为…命中分身”，缺少/混淆了“攻击目标改为分身（target）”而非“命中分身（hit）”的判定条件。"
+      ]
+    },
+    {
+      "name_en": "Move Earth",
+      "name_cn": "地动术",
+      "status": "error",
+      "issues": [
+        "原文：你可以在区域内以任意方式重塑泥土/沙土/黏土；中文写成“你可以选择以下一种效果”，把原本可自由组合/任意塑形的规则限制成四选一。",
+        "原文：变化幅度“不能超过该区域最大边长的一半”（40尺边长则上限20尺）；中文各条目固定写成“至多20尺”，缺少“随区域尺寸变化而变化”的关键参数。"
+      ]
+    },
+    {
+      "name_en": "Phantom Steed",
+      "name_cn": "魅影驹",
+      "status": "error",
+      "issues": [
+        "射程/出现位置：原文只写“within range（射程内）”，中文写成了“你前方30尺内”，把位置/距离具体化为30尺（若该法术射程并非30尺则会造成不一致）。"
+      ]
+    },
+    {
+      "name_en": "Polymorph",
+      "name_cn": "变形术",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文“变形持续到持续时间结束，或直到目标生命值降至0或死亡”；中文末句写成“在目标生命值降至0、你施法专注被打断、或持续时间结束时提前终止”，多了“专注被打断”这一终止条件（原文此段未写）。"
+      ]
+    },
+    {
+      "name_en": "Prismatic Wall",
+      "name_cn": "虹光法墙",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文为“若法墙穿过生物占据的空间则法术失败”，中文写成“穿过某个生物所占据空间的位置”（未限定为‘施放时/你设置位置时’这一关键判定时点，可能导致规则含义扩大）"
+      ]
+    },
+    {
+      "name_en": "Produce Flame",
+      "name_cn": "燃火术",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文为“施放时，或在之后的回合以一个动作（as an action on a later turn）掷出火焰”，中文只写“施展该法术时…掷向…”，遗漏了“后续回合也可用动作掷出”的规则"
+      ]
+    },
+    {
+      "name_en": "Regenerate",
+      "name_cn": "再生术",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文写明“持续期间目标在其每回合开始恢复1生命值（每分钟10生命值）”，中文漏译了括号内“每分钟10生命值”的规则参数。"
+      ]
+    },
+    {
+      "name_en": "Sacred Flame",
+      "name_cn": "圣火术",
+      "status": "error",
+      "issues": [
+        "目标条件遗漏：原文是“你能看见且在射程内的生物”，中文写成“你指定的一个生物”（缺少“你能看见/在射程内”这一关键条件）"
+      ]
+    },
+    {
+      "name_en": "Scorching Ray",
+      "name_cn": "灼热射线",
+      "status": "error",
+      "issues": [
+        "目标条件变更：原文是“targets within range（射程内的目标）”，中文写成“施法距离内你能看见的目标”（额外加入“你能看见”限制）"
+      ]
+    },
+    {
+      "name_en": "Seeming",
+      "name_cn": "伪装术",
+      "status": "error",
+      "issues": [
+        "原文写明“可以让每个生物看起来高或矮 1 英尺”，中文描述遗漏了“1 英尺”这一关键数值参数"
+      ]
+    },
+    {
+      "name_en": "Shapechange",
+      "name_cn": "形体变化",
+      "status": "error",
+      "issues": [
+        "原文写明“除非你的新形态也具有该感官，否则你不能使用你原本的特殊感官（例如黑暗视觉）”，中文写成了“你不能使用任何需要特殊身体部位…（例如没手）”，遗漏并替换了关于“特殊感官”的关键规则条件",
+        "原文写明“你只能在该生物通常能说话时才能说话”，中文描述遗漏了该关键规则条件"
+      ]
+    },
+    {
+      "name_en": "Shatter",
+      "name_cn": "粉碎音波",
+      "status": "error",
+      "issues": [
+        "升环加成错误：原文为“使用3环或更高法术位时，每高于2环1环，伤害+1d8”；中文写成了“每比2环高出一环而增加1d8”（表达为以2环为基准还可接受），但又写成“随每比2环高出一环”，整体不清晰且看似按“每比2环高出一环”可能被理解为每高2环才+1d8。应明确为：3环+1d8，4环+2d8，5环+3d8……"
+      ]
+    },
+    {
+      "name_en": "Shillelagh",
+      "name_cn": "橡棍术",
+      "status": "error",
+      "issues": [
+        "伤害骰规则被改写：原文为“武器的伤害骰变为d8”（仅改变伤害骰大小）；中文写成了“伤害变为1d8 + 你的施法属性调整值”，这会在原本武器已加力量调整值的基础上造成规则表述偏差（原文是用施法属性替代力量来计算攻击与伤害，不是额外再加一次）。",
+        "关键结束条件遗漏：原文包含“若你再次施放该法术或放开武器，法术结束”；中文未包含这些结束条件。"
+      ]
+    },
+    {
+      "name_en": "Simulacrum",
+      "name_cn": "拟像术",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文为“拟像在战斗中在你的回合行动（acting on your turn in combat）”，中文未体现“在你的回合行动”这一规则参数。"
+      ]
+    },
+    {
+      "name_en": "Slow",
+      "name_cn": "缓慢术",
+      "status": "error",
+      "issues": [
+        "豁免属性不一致：原文是 Wisdom saving throw（感知豁免），中文写成了“感知豁免”。（应为“感知/感知”对应 Wisdom，但中文用词“感知”通常对应 Perception；若按5E常规译名应为“感知=Wisdom/感知？”这里实际应为“感知/感知”不清。若你们体系中“感知=Wisdom”则无问题）"
+      ]
+    },
+    {
+      "name_en": "Speak with Animals",
+      "name_cn": "动物交谈",
+      "status": "error",
+      "issues": [
+        "关键规则条件遗漏：原文允许野兽至少提供“在过去一天内所感知到的”附近地点与怪物信息（within the past day），中文未体现“过去一天内”的时间限制。"
+      ]
+    },
+    {
+      "name_en": "Spirit Guardians",
+      "name_cn": "灵体卫士",
+      "status": "error",
+      "issues": [
+        "豁免类型不一致：原文是 Wisdom saving throw，中文写成了“感知豁免”（应为“感知/察觉”，属于技能检定概念；这里应是感知属性即感知/感知=Wisdom 的豁免，但中文表述成了‘感知豁免’易被误作技能或不规范类型）"
+      ]
+    },
+    {
+      "name_en": "Suggestion",
+      "name_cn": "暗示术",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文为“要求目标明显会伤害到其自身的行为……会使法术结束(ends the spell)”，中文写成“会使该法术自动失败”。"
+      ]
+    },
+    {
+      "name_en": "Symbol",
+      "name_cn": "魔法徽记",
+      "status": "error",
+      "issues": [
+        "遗漏关键规则条件：原文写明“不死生物与软泥怪在该豁免上具有劣势（Undead and oozes have disadvantage on this saving throw）”，中文未提及"
+      ]
+    },
+    {
+      "name_en": "Thaumaturgy",
+      "name_cn": "奇术",
+      "status": "error",
+      "issues": [
+        "关键规则条件：原文为“你在射程内创造以下效果之一（within range）”，中文未体现“在射程内”这一限制（仅第4条提到射程内某点）。"
+      ]
+    },
+    {
+      "name_en": "True Polymorph",
+      "name_cn": "完全变形术",
+      "status": "error",
+      "issues": [
+        "豁免类型不一致：原文为 Wisdom saving throw（感知豁免），中文写成了“感知豁免”（一致）——但中文前段表述成“你可以将一个不愿意的生物变形成另一种生物”；原文规定不愿意生物可做 Wisdom 豁免，成功则不受影响（关键规则条件需明确适用于不愿意生物）。",
+        "关键规则条件遗漏：原文“当其恢复为原本形态时，生物回到变形前的生命值；若因降至0而恢复，超额伤害结转；只要超额伤害未把本体打到0，则不会昏迷”。中文仅写了“当其生命值降至0时恢复…超出0的伤害承受于原本形态”，遗漏了“恢复时回到变形前生命值”以及“超额伤害未致本体0则不昏迷”的关键条件。"
+      ]
+    },
+    {
+      "name_en": "Vicious Mockery",
+      "name_cn": "恶言相加",
+      "status": "error",
+      "issues": [
+        "豁免属性不一致：原文是 Wisdom saving throw（感知/意志类豁免），中文写成了“感知豁免”"
+      ]
+    },
+    {
+      "name_en": "Wall of Fire",
+      "name_cn": "火墙术",
+      "status": "error",
+      "issues": [
+        "关键规则条件表述不一致：原文“进入火墙时”是 enters the wall for the first time on a turn（每回合第一次进入墙体本身），中文写成了“穿过火墙时…每回合首次进入火墙时才会受到”，将“进入墙体”混写为“穿过”，可能改变触发判定（未必需要穿过）"
+      ]
+    },
+    {
+      "name_en": "Wall of Force",
+      "name_cn": "力场墙",
+      "status": "error",
+      "issues": [
+        "持续时间规则条件缺失：原文明确“持续至法术持续时间结束（It lasts for the duration）”，中文描述未出现持续时间/持续至结束的规则参数"
+      ]
+    },
+    {
+      "name_en": "Weird",
+      "name_cn": "怪影杀手",
+      "status": "error",
+      "issues": [
+        "豁免类型不一致：原文为 Wisdom saving throw（感知豁免），中文写成了“感知豁免”（应为“感知”=Wisdom没问题）；但中文将状态写为“恐慌状态”，而原文为 frightened（恐慌/受惊）——此处属于关键规则条件：必须是 frightened 状态（受惊），不是 panic（若中文系统中“恐慌”不等同 frightened 则会导致规则偏差）。"
+      ]
+    }
+  ]
+}

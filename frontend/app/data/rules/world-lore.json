@@ -1,0 +1,114 @@
+{
+  "world": {
+    "name": "裂隙诸境",
+    "nameEn": "The Sundered Realms",
+    "subtitle": "一个被古老灾变撕裂的魔幻世界",
+    "subtitleEn": "A Fantasy World Torn Asunder by Ancient Cataclysm"
+  },
+  "history": {
+    "summary": "在远古时代，世界曾是一片完整的大陆，被称为「原初大地」。众神与凡人共存，魔法如同空气般自然流淌。然而，一场被称为「大裂隙」的灾变永远改变了一切——原初大地被撕裂成无数碎片，漂浮在被称为「以太之海」的虚空之中。如今，这些碎片被称为「诸境」，由古老的魔法桥梁和不稳定的传送门相连。",
+    "summaryEn": "In ancient times, the world was a single unified continent known as the Primordial Land. Gods walked among mortals, and magic flowed as naturally as air. However, a cataclysm called 'The Sundering' changed everything forever—the Primordial Land was torn into countless fragments, now drifting in the void known as the Aetheric Sea. These fragments are now called the Realms, connected by ancient magical bridges and unstable portals.",
+    "eras": [
+      {
+        "name": "原初纪元",
+        "nameEn": "The Primordial Age",
+        "description": "众神创世，万物初生。这是一个神与凡人共存的黄金时代。"
+      },
+      {
+        "name": "大裂隙",
+        "nameEn": "The Sundering",
+        "description": "一场由诸神战争引发的灾变，原初大地被撕裂成无数碎片。"
+      },
+      {
+        "name": "漂流纪元",
+        "nameEn": "The Drifting Age",
+        "description": "幸存者在碎片世界中重建文明，学会在以太之海中航行。"
+      },
+      {
+        "name": "当今时代",
+        "nameEn": "The Current Era",
+        "description": "各境之间重新建立联系，冒险者穿梭于不同领域，探索失落的遗迹。"
+      }
+    ]
+  },
+  "geography": {
+    "mainRealms": [
+      {
+        "id": "prime_realm",
+        "name": "主境",
+        "nameEn": "The Prime Realm",
+        "description": "最大的碎片大陆，大多数凡人种族的家园。这里有广袤的平原、巍峨的山脉和古老的森林。",
+        "replaces": "Faerûn/主物质位面"
+      },
+      {
+        "id": "abyssal_rifts",
+        "name": "深渊裂隙",
+        "nameEn": "The Abyssal Rifts",
+        "description": "主境下方的地下世界，由大裂隙时形成的巨大裂缝组成。这里是卓尔精灵、灰矮人和其他地下种族的家园，充满了危险的洞穴、地下河流和古老的遗迹。",
+        "replaces": "Underdark/幽暗地域"
+      },
+      {
+        "id": "nexus_city",
+        "name": "枢纽城",
+        "nameEn": "The Nexus",
+        "description": "漂浮在以太之海中心的神秘城市，是所有境域的交汇点。各种种族和势力在此交易、交流信息。",
+        "replaces": "Sigil/印记城"
+      },
+      {
+        "id": "shadow_drift",
+        "name": "影漂领域",
+        "nameEn": "The Shadow Drift",
+        "description": "一个与主境平行存在的阴暗镜像，充满了阴影和亡灵。"
+      },
+      {
+        "id": "feywild_shard",
+        "name": "精魂碎境",
+        "nameEn": "The Feywild Shard",
+        "description": "精类生物的家园，一个色彩鲜艳、魔法浓郁的梦幻之地。"
+      }
+    ],
+    "aethericSea": {
+      "name": "以太之海",
+      "nameEn": "The Aetheric Sea",
+      "description": "连接所有碎片领域的虚空，充满了流动的魔法能量。勇敢的冒险者可以乘坐以太飞船在其中航行，但危险无处不在——从以太风暴到游荡的虚空生物。"
+    }
+  },
+  "factions": [
+    {
+      "name": "境域守望者",
+      "nameEn": "The Realm Wardens",
+      "description": "致力于维护各境之间和平与秩序的跨境组织"
+    },
+    {
+      "name": "以太商会",
+      "nameEn": "The Aether Merchants Guild",
+      "description": "控制跨境贸易的强大商业联盟"
+    },
+    {
+      "name": "裂隙探索者",
+      "nameEn": "The Rift Seekers",
+      "description": "专门探索未知碎片领域的冒险者公会"
+    },
+    {
+      "name": "虚空教团",
+      "nameEn": "The Void Cult",
+      "description": "崇拜大裂隙之力、企图进一步撕裂世界的危险邪教"
+    }
+  ],
+  "terminology": {
+    "replacements": [
+      { "original": "Forgotten Realms", "replacement": "裂隙诸境 (The Sundered Realms)" },
+      { "original": "Faerûn", "replacement": "主境 (The Prime Realm)" },
+      { "original": "Underdark", "replacement": "深渊裂隙 (The Abyssal Rifts)" },
+      { "original": "Sigil", "replacement": "枢纽城 (The Nexus)" },
+      { "original": "Material Plane", "replacement": "主境 (Prime Realm)" },
+      { "original": "Shadowfell", "replacement": "影漂领域 (Shadow Drift)" },
+      { "original": "Feywild", "replacement": "精魂碎境 (Feywild Shard)" },
+      { "original": "Astral Plane", "replacement": "以太之海 (Aetheric Sea)" }
+    ]
+  },
+  "designNotes": {
+    "purpose": "这个原创世界设定用于替代被遗忘国度(Forgotten Realms)等受版权保护的设定，同时保持D&D风格的魔幻冒险体验。",
+    "license": "本世界设定为原创内容，可自由使用和修改。"
+  }
+}

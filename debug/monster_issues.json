@@ -1,0 +1,1682 @@
+[
+  {
+    "name": "阿兰寇拉鹰人",
+    "issue": "1. 缺少 hpFormula"
+  },
+  {
+    "name": "底栖魔鱼",
+    "issue": "1. 缺少 hpFormula"
+  },
+  {
+    "name": "天使",
+    "issue": "```json\n1."
+  },
+  {
+    "name": "梵天神侍",
+    "issue": "数据存在以下问题：缺失 hp"
+  },
+  {
+    "name": "异界神侍",
+    "issue": "OK)\n    *"
+  },
+  {
+    "name": "炽天神侍",
+    "issue": "杀戮长弓描述中存在"
+  },
+  {
+    "name": "炽天神侍",
+    "issue": "`id`和`nameEn"
+  },
+  {
+    "name": "活化盔甲",
+    "issue": "1. id和nameEn"
+  },
+  {
+    "name": "凌空剑",
+    "issue": "`damageImmunities`和`"
+  },
+  {
+    "name": "闷人毯",
+    "issue": "数据存在多处错误："
+  },
+  {
+    "name": "掘地虫",
+    "issue": "```json\n{"
+  },
+  {
+    "name": "火矮人",
+    "issue": "1. type错误（火矮人"
+  },
+  {
+    "name": "女妖",
+    "issue": "OK)\n    *"
+  },
+  {
+    "name": "石化蜥蜴",
+    "issue": "`specialAbilities`中第二个"
+  },
+  {
+    "name": "青足龙蛇",
+    "issue": "OK。\n\n**存在的问题"
+  },
+  {
+    "name": "亡眼暴君",
+    "issue": "`damageImmunities`和`condition"
+  },
+  {
+    "name": "观察者眼魔",
+    "issue": "1. alignment字段内容"
+  },
+  {
+    "name": "枯萎怪",
+    "issue": "1. type（类型）"
+  },
+  {
+    "name": "枯藤怪",
+    "issue": "怪\" (OK)"
+  },
+  {
+    "name": "熊地精",
+    "issue": "\"残暴 Brute\"应"
+  },
+  {
+    "name": "鲨蜥兽",
+    "issue": "```json\n{\n  \""
+  },
+  {
+    "name": "狂蛙人",
+    "issue": "1. alignment字段错误"
+  },
+  {
+    "name": "魔裔",
+    "issue": "1. type字段错误（"
+  },
+  {
+    "name": "食腐虫",
+    "issue": "1. action \"多重攻击Multi"
+  },
+  {
+    "name": "人马",
+    "issue": "1. type字段错误（人马"
+  },
+  {
+    "name": "奇美拉",
+    "issue": "拉\" (OK)"
+  },
+  {
+    "name": "甲伏怪",
+    "issue": "怪\" (OK)"
+  },
+  {
+    "name": "蛰伏伪怪",
+    "issue": "数据存在问题：啃咬B"
+  },
+  {
+    "name": "蛇鸡兽",
+    "issue": "鸡兽\" (OK)"
+  },
+  {
+    "name": "羽蛇",
+    "issue": "1. 缺少 `hpFormula`"
+  },
+  {
+    "name": "蠕行之爪",
+    "issue": "数据错误：蠕行"
+  },
+  {
+    "name": "索斯爵士",
+    "issue": "OK。\n\n**存在问题：**"
+  },
+  {
+    "name": "半巫妖",
+    "issue": "1. 缺少 hpFormula"
+  },
+  {
+    "name": "阿瑟瑞拉克及其信徒",
+    "issue": "alignment字段内容错误（包含"
+  },
+  {
+    "name": "恶魔",
+    "issue": "`action.name` 格式"
+  },
+  {
+    "name": "恶魔领主",
+    "issue": "OK)\n    *"
+  },
+  {
+    "name": "巴弗灭",
+    "issue": "1. type（类型）错误："
+  },
+  {
+    "name": "狄摩高根",
+    "issue": "action的name格式不符合“"
+  },
+  {
+    "name": "格拉兹特",
+    "issue": "数据格式不规范："
+  },
+  {
+    "name": "朱庇莱克斯",
+    "issue": "问题描述：`hpFormula`缺失"
+  },
+  {
+    "name": "罗丝",
+    "issue": "数据逻辑错误：罗丝"
+  },
+  {
+    "name": "奥喀斯",
+    "issue": "walk` is present in examples but"
+  },
+  {
+    "name": "耶诺古",
+    "issue": "数据存在多处问题：1"
+  },
+  {
+    "name": "巴洛炎魔",
+    "issue": "1. action的name格式不"
+  },
+  {
+    "name": "巴古拉魔",
+    "issue": "```json\n1. actions中的description"
+  },
+  {
+    "name": "喀嘶魔",
+    "issue": "action.description 中存在明显的文字"
+  },
+  {
+    "name": "迷诱魔",
+    "issue": "迷诱魔的数据存在"
+  },
+  {
+    "name": "巨牛魔",
+    "issue": "`damageImmunities`"
+  },
+  {
+    "name": "狂战魔",
+    "issue": "数据存在严重逻辑错误"
+  },
+  {
+    "name": "原魔",
+    "issue": "数据存在多处逻辑"
+  },
+  {
+    "name": "夸塞魔",
+    "issue": "数据存在多处严重错误：体"
+  },
+  {
+    "name": "幽影恶魔",
+    "issue": "恶魔\" (OK)"
+  },
+  {
+    "name": "弗洛魔",
+    "issue": "数据存在以下问题：缺少"
+  },
+  {
+    "name": "魔鬼",
+    "issue": "1. type字段错误"
+  },
+  {
+    "name": "猬魔",
+    "issue": "1. id字段包含"
+  },
+  {
+    "name": "须魔",
+    "issue": "数据存在以下问题：\n1"
+  },
+  {
+    "name": "骨魔",
+    "issue": "En`: \"Bone Devil(奥塞"
+  },
+  {
+    "name": "链魔",
+    "issue": "ton)\" -> Contains parentheses and Chinese,"
+  },
+  {
+    "name": "欲魔",
+    "issue": "数据存在以下问题："
+  },
+  {
+    "name": "角魔",
+    "issue": "雄霸魔 Malebranche)\""
+  },
+  {
+    "name": "冰魔",
+    "issue": "数据存在多项错误："
+  },
+  {
+    "name": "小魔鬼",
+    "issue": "OK)\n    *   `name"
+  },
+  {
+    "name": "劣魔",
+    "issue": "数据存在严重逻辑错误：劣魔"
+  },
+  {
+    "name": "深狱炼魔",
+    "issue": ""
+  },
+  {
+    "name": "棘魔",
+    "issue": "1. `hp`"
+  },
+  {
+    "name": "恐龙",
+    "issue": "验证错误: The read operation timed out"
+  },
+  {
+    "name": "异龙",
+    "issue": "action的name字段缺少空格（\""
+  },
+  {
+    "name": "翼龙",
+    "issue": "HP数据与CR不匹配（HP"
+  },
+  {
+    "name": "三角龙",
+    "issue": "1. **数据混乱**：`"
+  },
+  {
+    "name": "移位兽",
+    "issue": "OK)\n    *"
+  },
+  {
+    "name": "龙巫妖",
+    "issue": "1. action的name"
+  },
+  {
+    "name": "幽影龙",
+    "issue": "Standard format usually uses hyphens"
+  },
+  {
+    "name": "龙",
+    "issue": "`actions`中的`"
+  },
+  {
+    "name": "色彩龙",
+    "issue": "1. type字段格式错误："
+  },
+  {
+    "name": "幼年黑龙",
+    "issue": "`damageImmunities`字段"
+  },
+  {
+    "name": "黑龙雏龙",
+    "issue": "有问题：actions中包含非动作的"
+  },
+  {
+    "name": "幼年蓝龙",
+    "issue": "验证错误: The read operation timed out"
+  },
+  {
+    "name": "蓝龙雏龙",
+    "issue": "1. `alignment` 字段正常"
+  },
+  {
+    "name": "红龙雏龙",
+    "issue": "1. action \"啃咬B"
+  },
+  {
+    "name": "金属龙",
+    "issue": "验证错误: The read operation timed out"
+  },
+  {
+    "name": "成年黄铜龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "幼年黄铜龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "黄铜龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "远古青铜龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "成年青铜龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "青铜龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "成年赤铜龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "赤铜龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "幼年金龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "幼年银龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "龙龟",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蛛化精灵",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "树精",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "灰矮人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "元素",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "气元素",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "土元素",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "火元素",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "水元素",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "精灵",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "卓尔精英武者",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "卓尔魔法师",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "卓尔·罗丝女祭司",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "卓尔",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "至高天",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "伊特怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "双头巨人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "妖精龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "燃焰之颅",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "呋噜",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "废陋巨人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "真菌",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "毒气孢子",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "紫蕈",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "紫蕈",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "格莱石人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "石像鬼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "邪恶元素碎片",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨灵",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "土巨灵",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "气巨灵",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "火巨灵",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "水巨灵",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "幽魂",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "食尸鬼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "食尸鬼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "云巨人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "火巨人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "霜巨人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "山丘巨人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "石巨人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "风暴巨人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨人众神",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "惧噬体",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "吉斯人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "吉斯洋基",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "吉斯泽莱",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "吉斯泽莱武僧",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "豺狼人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "豺狼人头领",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "豺狼人·耶诺古毒牙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "侏儒",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "地精",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "地精头目",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "粘土魔像",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "肉身魔像",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "钢铁魔像",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "石魔像",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "石化牛",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "触须怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "穴居攫怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "石盲蛮族",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鬼婆",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鬼婆集会",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "绿鬼婆",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "夜鬼婆",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "夜鬼婆的物品",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "海鬼婆",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "半龙模板",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "半龙范例",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鸟妖",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "地狱犬",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "恐怖铠甲",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鹫马",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "大地精",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "大地精",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "大地精长官",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "造妖",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "恐爪怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "多头蛇蜥",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "噬脑怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "隐形追猎者",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "化豺",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "天狗",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "狗头人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "带翼狗头人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "克拉肯",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "寇涛鱼人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "寇涛鞭策者",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "拉米亚",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巫妖",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蜥蜴人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蜥蜴人萨满",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "兽化症",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "熊人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "野猪人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鼠人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "虎人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "狼人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "兽化人玩家角色",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "美杜莎",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "魔蝠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "尘魔蝠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "冰魔蝠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "熔岩魔蝠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "泥魔蝠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "烟魔蝠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蒸汽魔蝠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "人鱼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "迈罗人鱼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "拟身怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "夺心魔",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "灵吸文",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "牛头人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "魔冢",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "单元冢",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "二元冢",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "三元冢",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "四元家",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "五元冢",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "中型构装生物,",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "木乃伊领主",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "木乃伊",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蕈人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "孢子奴仆模版",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "孢子奴仆范例",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蕈人幼体",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蕈人成体",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蕈人王",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "骸骨娜迦",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巡守纳迦",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "精魂纳迦",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "梦魇",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "诺斯异怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "食人魔",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "食人魔",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "半食人魔",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "恶鬼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "泥怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "黑布丁",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "胶质方块",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "灰泥怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "赭冻怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "变种:",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "兽人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "兽人王·奥伯德·众箭",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "兽人军官",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "兽人·格乌什之眼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "魔兽人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "食腐兽",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "枭熊",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "k",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鹿鹰兽",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "穿刺者",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "皮克精",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "伪龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "紫虫",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "泽地熊人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "罗刹",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "百足魔兽",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "还魂尸",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鹏鸟",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "树绳妖",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "锈蚀怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "沙华鱼人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "火蜥蜴",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "火蛇",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "半羊人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "稻草人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "幽影",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蔓生怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "构装盾卫",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "骷髅",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "史拉蟾",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "史拉红蟾",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "史拉蓝蟾",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "史拉绿蟾",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "史拉灰蟾",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "史拉亡蟾",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "史拉蟾蝌蚪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "幽灵",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "斯芬克斯",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "男面斯芬克斯",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "女面斯芬克斯",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "小妖精",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蚊蝠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "魅魔",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "泰拉斯奎巨兽",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "斯里克林螳螂人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "树人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "战蜥人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨魔",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "独角兽",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "斯特拉德·冯·扎洛维奇",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "吸血鬼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "吸血鬼衍体",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "水诡",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "尸妖",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鬼火",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "缚灵",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "飞龙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "索尔石怪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨恶雪人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "雪人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "原体蛇人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "恶咒蛇人",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "2",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蛇神",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "尤格罗斯魔",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "奥登罗斯魔",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "麦泽罗斯魔",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "尼卡罗斯魔",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "乌特罗斯魔",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "僵尸",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "眼魔僵尸",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "猿",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "启蒙灌木",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "启蒙树木",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "斧嘴鸟",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "狒狒",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "獾",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蝙蝠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "黑熊",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "闪现犬",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "血鹰",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "野猪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "棕熊",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "骆驼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "猫",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蟒蛇",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蟹",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鳄鱼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "亡命恶犬",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鹿",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "恐狼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "驮用马",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鹰",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "象",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "麋鹿",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "飞蛇",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "青蛙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨獾",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨蝙蝠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨野猪",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨蜈蚣",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨蟹",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨鳄",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨鹰",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨麋鹿",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨火甲虫",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨蛙",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨山羊",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨鬣狗",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨蜥",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨章鱼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨猫头鹰",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨毒蛇",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨鼠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨蝎",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨海马",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨鲨",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨蜘蛛",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨蟾",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨秃鹫",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨黄蜂",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨鼬",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "巨狼蛛",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "山羊",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "寻猎鲨",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鬣狗",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "豺狗",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "虎鲸",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "狮子",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "猛犸",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "獒犬",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "骡子",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "章鱼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "猫头鹰",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "黑豹",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "相位蜘蛛",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "毒蛇",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "白熊",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "矮种马",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "食人鱼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "老鼠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "渡鸦",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "礁鲨",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "犀牛",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "乘用马",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "剑齿虎",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蝎子",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "海马",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蜘蛛",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "蝙蝠群",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "自然集群",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "虫群",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "毒蛇群",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "食人鱼群",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鼠群",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "渡鸦群",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "老虎",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "秃鹫",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "战马",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "鼬鼠",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "冬狼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "座狼",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "附录",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "自定义非玩家角色",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "侍僧",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "大法师",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "刺客",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "强盗",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "强盗首领",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "狂战士",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "平民",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "邪教徒",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "邪教狂信者",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "德鲁伊",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "角斗士",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "警卫",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "骑士",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "魔法师",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "贵族",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "祭司",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "斥候",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "密探",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "暴徒",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "部族武者",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  },
+  {
+    "name": "老兵",
+    "issue": "验证错误: [Errno 8] nodename nor servname provided, or not known"
+  }
+]

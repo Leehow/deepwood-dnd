@@ -1,0 +1,1681 @@
+{
+  "effects": [
+    {
+      "id": "dodge",
+      "name": "回避",
+      "name_en": "Dodge",
+      "category": "standard_action",
+      "icon": "🛡️",
+      "color": "#3b82f6",
+      "action_type": "action",
+      "can_toggle": false,
+      "duration": {
+        "rounds": 1
+      },
+      "action_effect": {
+        "type": "self_buff",
+        "chat_template": "🛡️ **{source}** 采取**回避**动作！\n> 直到下回合开始前，对其的攻击检定具有**劣势**，敏捷豁免具有**优势**"
+      },
+      "modifiers": [
+        {
+          "type": "disadvantage",
+          "target": "incoming_attack"
+        },
+        {
+          "type": "advantage",
+          "target": "saving_throw",
+          "condition": {
+            "ability": "dexterity"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dash",
+      "name": "疾走",
+      "name_en": "Dash",
+      "category": "standard_action",
+      "icon": "💨",
+      "color": "#22c55e",
+      "action_type": "action",
+      "can_toggle": false,
+      "duration": {
+        "rounds": 1
+      },
+      "action_effect": {
+        "type": "movement_bonus",
+        "value": "speed",
+        "chat_template": "💨 **{source}** 采取**疾走**动作！\n> 移动力 +{value}尺"
+      }
+    },
+    {
+      "id": "disengage",
+      "name": "撤离",
+      "name_en": "Disengage",
+      "category": "standard_action",
+      "icon": "🏃",
+      "color": "#a855f7",
+      "action_type": "action",
+      "can_toggle": false,
+      "duration": {
+        "rounds": 1
+      },
+      "action_effect": {
+        "type": "self_buff",
+        "chat_template": "🏃 **{source}** 采取**撤离**动作！\n> 本回合移动不引发借机攻击"
+      },
+      "modifiers": [
+        {
+          "type": "suppress",
+          "target": "opportunity_attack_provoked"
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "name": "协助",
+      "name_en": "Help",
+      "description": "你协助一名友方生物完成某项任务，或分散敌人注意力。被协助的生物下次攻击检定具有优势。",
+      "category": "standard_action",
+      "icon": "🤝",
+      "color": "#f59e0b",
+      "action_type": "action",
+      "can_toggle": false,
+      "duration": {
+        "rounds": 1
+      },
+      "action_effect": {
+        "type": "ally_buff",
+        "chat_template": "🤝 **{source}** 协助 **{target}**！\n> 下次攻击检定具有**优势**",
+        "requires_target": true
+      },
+      "modifiers": [
+        {
+          "type": "advantage",
+          "target": "attack_roll",
+          "condition": {
+            "consume_on_use": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "hide",
+      "name": "躲藏",
+      "name_en": "Hide",
+      "category": "standard_action",
+      "icon": "👁️",
+      "color": "#6b7280",
+      "action_type": "action",
+      "can_toggle": true,
+      "action_effect": {
+        "type": "check_then_buff",
+        "check_type": "stealth",
+        "success_effect_id": "hidden",
+        "chat_template": "👁️ **{source}** 尝试**躲藏**！\n> 请进行隐匿（敏捷）检定"
+      }
+    },
+    {
+      "id": "hidden",
+      "name": "躲藏中",
+      "name_en": "Hidden",
+      "description": "你处于隐蔽状态。攻击检定具有优势，针对你的攻击检定具有劣势。攻击后隐蔽状态结束。",
+      "category": "standard_action",
+      "icon": "🫥",
+      "color": "#6b7280",
+      "action_type": "bonus_action",
+      "can_toggle": true,
+      "duration": {
+        "rounds": 10
+      },
+      "modifiers": [
+        {
+          "type": "advantage",
+          "target": "attack_roll",
+          "condition": {
+            "consume_on_use": true
+          }
+        },
+        {
+          "type": "disadvantage",
+          "target": "incoming_attack"
+        }
+      ]
+    },
+    {
+      "id": "ready",
+      "name": "预备",
+      "name_en": "Ready",
+      "description": "你准备在某个触发条件下执行一个动作或移动。",
+      "category": "standard_action",
+      "icon": "⏳",
+      "color": "#f97316",
+      "action_type": "action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "⏳ **{source}** 采取**预备**动作！\n> 等待触发条件执行反应"
+      }
+    },
+    {
+      "id": "search",
+      "name": "搜索",
+      "name_en": "Search",
+      "description": "你花费动作进行感知（侦查）或智力（调查）检定来搜索周围。",
+      "category": "standard_action",
+      "icon": "🔍",
+      "color": "#06b6d4",
+      "action_type": "action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "🔍 **{source}** 采取**搜索**动作！\n> 进行感知或调查检定"
+      }
+    },
+    {
+      "id": "use_object",
+      "name": "使用物件",
+      "name_en": "Use an Object",
+      "description": "你使用一个物件或与环境中的物件互动。",
+      "category": "standard_action",
+      "icon": "🎒",
+      "color": "#8b5cf6",
+      "action_type": "action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "🎒 **{source}** 采取**使用物件**动作！"
+      }
+    },
+    {
+      "id": "improvise",
+      "name": "即兴动作",
+      "name_en": "Improvise",
+      "description": "你执行一个自由发挥的动作，由DM裁定结果。",
+      "category": "standard_action",
+      "icon": "💡",
+      "color": "#ec4899",
+      "action_type": "action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "💡 **{source}** 采取**即兴动作**！\n> 等待DM裁定"
+      }
+    },
+    {
+      "id": "rage",
+      "name": "狂暴",
+      "name_en": "Rage",
+      "category": "class_feature",
+      "source": "barbarian",
+      "resource_id": "rage",
+      "icon": "🔥",
+      "color": "#ef4444",
+      "action_type": "bonus_action",
+      "can_toggle": true,
+      "duration": {
+        "minutes": 1
+      },
+      "action_effect": {
+        "type": "self_buff",
+        "chat_template": "🔥 **{source}** 进入**狂暴**状态！\n> 力量检定和豁免优势，近战伤害加成，钝击/穿刺/挥砍伤害抗性"
+      },
+      "modifiers": [
+        {
+          "type": "advantage",
+          "target": "ability_check",
+          "condition": {
+            "ability": "strength"
+          }
+        },
+        {
+          "type": "advantage",
+          "target": "saving_throw",
+          "condition": {
+            "ability": "strength"
+          }
+        },
+        {
+          "type": "bonus",
+          "target": "damage",
+          "value": 2,
+          "condition": {
+            "is_strength_based": true,
+            "attack_type": "melee"
+          }
+        },
+        {
+          "type": "resistance",
+          "target": "damage_taken",
+          "condition": {
+            "damage_type": [
+              "bludgeoning",
+              "piercing",
+              "slashing"
+            ]
+          }
+        }
+      ],
+      "prerequisites": {
+        "class": [
+          "barbarian"
+        ]
+      },
+      "level_scaling": {
+        "9": {
+          "damage_bonus": 3
+        },
+        "16": {
+          "damage_bonus": 4
+        }
+      }
+    },
+    {
+      "id": "reckless_attack",
+      "name": "鲁莽攻击",
+      "name_en": "Reckless Attack",
+      "category": "class_feature",
+      "source": "barbarian",
+      "icon": "💢",
+      "color": "#f97316",
+      "action_type": "free",
+      "can_toggle": false,
+      "duration": {
+        "rounds": 1
+      },
+      "action_effect": {
+        "type": "self_buff",
+        "chat_template": "💢 **{source}** 使用**鲁莽攻击**！\n> 本回合力量近战攻击具有优势，但被攻击也具有优势"
+      },
+      "modifiers": [
+        {
+          "type": "advantage",
+          "target": "attack_roll",
+          "condition": {
+            "is_strength_based": true,
+            "attack_type": "melee"
+          }
+        },
+        {
+          "type": "advantage",
+          "target": "incoming_attack"
+        }
+      ],
+      "prerequisites": {
+        "class": [
+          "barbarian"
+        ],
+        "level": 2
+      }
+    },
+    {
+      "id": "frenzy",
+      "name": "狂乱",
+      "name_en": "Frenzy",
+      "category": "class_feature",
+      "source": "berserker",
+      "icon": "😡",
+      "color": "#dc2626",
+      "action_type": "free",
+      "can_toggle": false,
+      "duration": {
+        "minutes": 1
+      },
+      "action_effect": {
+        "type": "self_buff",
+        "chat_template": "😡 **{source}** 进入**狂乱**状态！\n> 每回合可用附赠动作进行一次近战武器攻击\n> ⚠️ 狂乱结束后将承受1级力竭"
+      },
+      "prerequisites": {
+        "class": [
+          "barbarian"
+        ],
+        "subclass": [
+          "berserker"
+        ],
+        "level": 3,
+        "has_effect": [
+          "rage"
+        ]
+      },
+      "ends_when": [
+        "rage"
+      ],
+      "triggers": [
+        {
+          "timing": "on_deactivate",
+          "action": {
+            "type": "add_effect",
+            "effect_id": "exhaustion_1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "second_wind",
+      "name": "回气",
+      "name_en": "Second Wind",
+      "category": "class_feature",
+      "source": "fighter",
+      "resource_id": "second_wind",
+      "icon": "💨",
+      "color": "#22c55e",
+      "action_type": "bonus_action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "instant_heal",
+        "heal_formula": "1d10+level",
+        "chat_template": "💨 **{source}** 使用【回气】恢复生命值！\n🎲 {rollDetail}\n❤️ HP: {hpBefore} → {hpAfter}/{hpMax}"
+      },
+      "triggers": [
+        {
+          "timing": "on_activate",
+          "action": {
+            "type": "heal",
+            "value": "1d10+level"
+          }
+        }
+      ],
+      "prerequisites": {
+        "class": [
+          "fighter"
+        ]
+      }
+    },
+    {
+      "id": "action_surge",
+      "name": "行动如潮",
+      "name_en": "Action Surge",
+      "category": "class_feature",
+      "source": "fighter",
+      "resource_id": "action_surge",
+      "icon": "⚡",
+      "color": "#3b82f6",
+      "action_type": "free",
+      "can_toggle": false,
+      "duration": {
+        "rounds": 1
+      },
+      "action_effect": {
+        "type": "self_buff",
+        "chat_template": "⚡ **{source}** 使用**行动如潮**！\n> 本回合获得一个额外动作"
+      },
+      "prerequisites": {
+        "class": [
+          "fighter"
+        ],
+        "level": 2
+      },
+      "level_scaling": {
+        "17": {
+          "uses_max": 2
+        }
+      }
+    },
+    {
+      "id": "bardic_inspiration",
+      "name": "激励",
+      "name_en": "Bardic Inspiration",
+      "category": "class_feature",
+      "source": "bard",
+      "resource_id": "bardic_inspiration",
+      "icon": "🎵",
+      "color": "#a855f7",
+      "action_type": "bonus_action",
+      "can_toggle": true,
+      "duration": {
+        "minutes": 10
+      },
+      "prerequisites": {
+        "class": [
+          "bard"
+        ]
+      }
+    },
+    {
+      "id": "wild_shape",
+      "name": "野性形态",
+      "name_en": "Wild Shape",
+      "category": "class_feature",
+      "source": "druid",
+      "resource_id": "wild_shape",
+      "icon": "🐺",
+      "color": "#84cc16",
+      "action_type": "action",
+      "can_toggle": true,
+      "action_effect": {
+        "type": "self_buff",
+        "chat_template": "🐺 **{source}** 使用**野性形态**！\n> 变形为一只野兽"
+      },
+      "prerequisites": {
+        "class": [
+          "druid"
+        ],
+        "level": 2
+      }
+    },
+    {
+      "id": "cunning_action",
+      "name": "狡诈动作",
+      "name_en": "Cunning Action",
+      "description": "从2级起，你可以使用附赠动作进行疾走、撤离或躲藏。",
+      "category": "class_feature",
+      "source": "rogue",
+      "icon": "🗡️",
+      "color": "#6366f1",
+      "action_type": "bonus_action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "🗡️ **{source}** 使用**狡诈动作**！\n> 以附赠动作执行疾走、撤离或躲藏"
+      },
+      "prerequisites": {
+        "class": ["rogue"],
+        "level": 2
+      }
+    },
+    {
+      "id": "divine_sense",
+      "name": "神圣感知",
+      "name_en": "Divine Sense",
+      "description": "作为动作，你可以感知60尺内任何天界生物、邪魔或不死生物的存在。",
+      "category": "class_feature",
+      "source": "paladin",
+      "resource_id": "divine_sense",
+      "icon": "👁️",
+      "color": "#f59e0b",
+      "action_type": "action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "👁️ **{source}** 使用**神圣感知**！\n> 感知60尺内天界生物、邪魔或不死生物的存在"
+      },
+      "prerequisites": {
+        "class": ["paladin"],
+        "level": 1
+      }
+    },
+    {
+      "id": "vanish",
+      "name": "消失无踪",
+      "name_en": "Vanish",
+      "description": "从14级起，你可以使用附赠动作进行躲藏。",
+      "category": "class_feature",
+      "source": "ranger",
+      "icon": "🌿",
+      "color": "#059669",
+      "action_type": "bonus_action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "check_then_buff",
+        "check_type": "stealth",
+        "success_effect_id": "hidden",
+        "chat_template": "🌿 **{source}** 使用**消失无踪**！\n> 以附赠动作进行隐匿检定"
+      },
+      "prerequisites": {
+        "class": ["ranger"],
+        "level": 14
+      }
+    },
+    {
+      "id": "stillness_of_mind",
+      "name": "心神宁静",
+      "name_en": "Stillness of Mind",
+      "description": "从7级起，你可以使用动作结束自身的魅惑或恐惧效果。",
+      "category": "class_feature",
+      "source": "monk",
+      "icon": "🧘",
+      "color": "#0ea5e9",
+      "action_type": "action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "🧘 **{source}** 使用**心神宁静**！\n> 结束自身的魅惑或恐惧效果"
+      },
+      "prerequisites": {
+        "class": ["monk"],
+        "level": 7
+      }
+    },
+    {
+      "id": "countercharm",
+      "name": "反魅惑",
+      "name_en": "Countercharm",
+      "description": "从6级起，你可以使用动作进行歌唱或演说，30尺内的盟友在对抗恐惧和魅惑效果的豁免中具有优势。",
+      "category": "class_feature",
+      "source": "bard",
+      "icon": "🎶",
+      "color": "#a855f7",
+      "action_type": "action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "🎶 **{source}** 使用**反魅惑**！\n> 30尺内盟友对恐惧和魅惑的豁免具有**优势**，持续到下回合结束"
+      },
+      "prerequisites": {
+        "class": ["bard"],
+        "level": 6
+      }
+    },
+    {
+      "id": "patient_defense",
+      "name": "忍耐防御",
+      "name_en": "Patient Defense",
+      "description": "你可以花费1点气，使用附赠动作采取回避动作。",
+      "category": "class_feature",
+      "source": "monk",
+      "resource_id": "ki",
+      "icon": "🛡️",
+      "color": "#0ea5e9",
+      "action_type": "bonus_action",
+      "can_toggle": true,
+      "duration": { "rounds": 1 },
+      "action_effect": {
+        "type": "self_buff",
+        "chat_template": "🛡️ **{source}** 花费1点气使用**忍耐防御**！\n> 本回合采取回避动作，攻击检定对其具有劣势"
+      },
+      "modifiers": [
+        { "type": "disadvantage", "target": "incoming_attack" }
+      ],
+      "prerequisites": {
+        "class": ["monk"],
+        "level": 2
+      }
+    },
+    {
+      "id": "step_of_the_wind",
+      "name": "疾风步",
+      "name_en": "Step of the Wind",
+      "description": "你可以花费1点气，使用附赠动作采取疾走或撤离动作，且跳跃距离翻倍。",
+      "category": "class_feature",
+      "source": "monk",
+      "resource_id": "ki",
+      "icon": "💨",
+      "color": "#0ea5e9",
+      "action_type": "bonus_action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "movement_bonus",
+        "value": "speed",
+        "chat_template": "💨 **{source}** 花费1点气使用**疾风步**！\n> 移动力 +{value}尺，且跳跃距离翻倍"
+      },
+      "prerequisites": {
+        "class": ["monk"],
+        "level": 2
+      }
+    },
+    {
+      "id": "flurry_of_blows",
+      "name": "连环拳",
+      "name_en": "Flurry of Blows",
+      "description": "你在攻击动作后可以花费1点气，使用附赠动作进行两次徒手打击。",
+      "category": "class_feature",
+      "source": "monk",
+      "resource_id": "ki",
+      "icon": "👊",
+      "color": "#0ea5e9",
+      "action_type": "bonus_action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "👊 **{source}** 花费1点气使用**连环拳**！\n> 以附赠动作进行两次徒手打击"
+      },
+      "prerequisites": {
+        "class": ["monk"],
+        "level": 2
+      }
+    },
+    {
+      "id": "sacred_weapon",
+      "name": "神圣武器",
+      "name_en": "Sacred Weapon",
+      "description": "使用引导神力，你将神圣力量灌注入武器。1分钟内，攻击检定加上魅力修正，武器散发明亮光芒。",
+      "category": "class_feature",
+      "source": "paladin",
+      "resource_id": "channel_divinity_paladin",
+      "icon": "⚔️",
+      "color": "#fbbf24",
+      "action_type": "action",
+      "can_toggle": true,
+      "duration": { "minutes": 1 },
+      "action_effect": {
+        "type": "self_buff",
+        "chat_template": "⚔️ **{source}** 引导神力：**神圣武器**！\n> 1分钟内攻击检定加上魅力修正，武器散发光芒"
+      },
+      "modifiers": [
+        { "type": "bonus", "target": "attack_roll", "value": "charisma" }
+      ],
+      "prerequisites": {
+        "class": ["paladin"],
+        "subclass": ["devotion"],
+        "level": 3
+      }
+    },
+    {
+      "id": "lay_on_hands",
+      "name": "圣疗",
+      "name_en": "Lay on Hands",
+      "description": "你拥有一个治疗之池，可以恢复等于圣骑士等级×5的生命值。",
+      "category": "class_feature",
+      "source": "paladin",
+      "resource_id": "lay_on_hands",
+      "icon": "✋",
+      "color": "#fbbf24",
+      "action_type": "action",
+      "can_toggle": false,
+      "prerequisites": {
+        "class": ["paladin"],
+        "level": 1
+      }
+    },
+    {
+      "id": "arcane_recovery",
+      "name": "奥术恢复",
+      "name_en": "Arcane Recovery",
+      "description": "短休时，恢复已消耗法术位，总等级不超过法师等级一半（向上取整），不能恢复6级及以上。每次长休后可用一次。",
+      "category": "class_feature",
+      "source": "wizard",
+      "resource_id": "arcane_recovery",
+      "icon": "🔮",
+      "color": "#6366f1",
+      "action_type": "bonus_action",
+      "can_toggle": false,
+      "prerequisites": {
+        "class": ["wizard"],
+        "level": 1
+      }
+    },
+    {
+      "id": "natural_recovery",
+      "name": "自然恢复",
+      "name_en": "Natural Recovery",
+      "description": "短休时，恢复已消耗法术位，总等级不超过德鲁伊等级一半（向上取整），不能恢复6级及以上。每次长休后可用一次。",
+      "category": "class_feature",
+      "source": "druid",
+      "resource_id": "natural_recovery",
+      "icon": "🌿",
+      "color": "#10b981",
+      "action_type": "bonus_action",
+      "can_toggle": false,
+      "prerequisites": {
+        "class": ["druid"],
+        "level": 2
+      }
+    },
+    {
+      "id": "vow_of_enmity",
+      "name": "复仇誓言",
+      "name_en": "Vow of Enmity",
+      "description": "使用引导神力，对10尺内一个生物立下复仇誓言。1分钟内，对该生物的攻击检定具有优势。",
+      "category": "class_feature",
+      "source": "paladin",
+      "resource_id": "channel_divinity_paladin",
+      "icon": "⚔️",
+      "color": "#dc2626",
+      "action_type": "bonus_action",
+      "can_toggle": true,
+      "duration": { "minutes": 1 },
+      "action_effect": {
+        "type": "self_buff",
+        "chat_template": "⚔️ **{source}** 引导神力：**复仇誓言**！\n> 1分钟内对目标的攻击检定具有**优势**"
+      },
+      "modifiers": [
+        { "type": "advantage", "target": "attack_roll" }
+      ],
+      "prerequisites": {
+        "class": ["paladin"],
+        "subclass": ["vengeance"],
+        "level": 3
+      }
+    },
+    {
+      "id": "intimidating_presence",
+      "name": "威压风范",
+      "name_en": "Intimidating Presence",
+      "description": "从10级起，你可以使用动作恐吓30尺内一个你能看见的生物。目标必须通过感知豁免，否则被恐惧。",
+      "category": "class_feature",
+      "source": "barbarian",
+      "icon": "😤",
+      "color": "#ef4444",
+      "action_type": "action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "😤 **{source}** 使用**威压风范**！\n> 30尺内一个生物必须进行感知豁免，失败则被**恐惧**直到下回合结束"
+      },
+      "prerequisites": {
+        "class": ["barbarian"],
+        "subclass": ["berserker"],
+        "level": 10
+      }
+    },
+    {
+      "id": "cleansing_touch",
+      "name": "净化之触",
+      "name_en": "Cleansing Touch",
+      "description": "从14级起，你可以使用动作结束作用于自己或一个自愿生物身上的一个法术效果。",
+      "category": "class_feature",
+      "source": "paladin",
+      "resource_id": "cleansing_touch",
+      "icon": "✨",
+      "color": "#fbbf24",
+      "action_type": "action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "✨ **{source}** 使用**净化之触**！\n> 结束目标身上的一个法术效果"
+      },
+      "prerequisites": {
+        "class": ["paladin"],
+        "level": 14
+      }
+    },
+    {
+      "id": "tides_of_chaos",
+      "name": "混乱之潮",
+      "name_en": "Tides of Chaos",
+      "description": "从1级起，你可以获得一次攻击检定、属性检定或豁免检定的优势。",
+      "category": "class_feature",
+      "source": "sorcerer",
+      "resource_id": "tides_of_chaos",
+      "icon": "🌀",
+      "color": "#8b5cf6",
+      "action_type": "free",
+      "can_toggle": true,
+      "duration": { "rounds": 1 },
+      "action_effect": {
+        "type": "self_buff",
+        "chat_template": "🌀 **{source}** 使用**混乱之潮**！\n> 获得一次攻击检定、属性检定或豁免的**优势**"
+      },
+      "modifiers": [
+        { "type": "advantage", "target": "attack_roll", "condition": { "consumeOnUse": true } }
+      ],
+      "prerequisites": {
+        "class": ["sorcerer"],
+        "subclass": ["wild_magic"],
+        "level": 1
+      }
+    },
+    {
+      "id": "fey_presence",
+      "name": "精类降临",
+      "name_en": "Fey Presence",
+      "description": "从1级起，你可以使用动作令10尺方块内的生物进行感知豁免，失败则被魅惑或恐惧。",
+      "category": "class_feature",
+      "source": "warlock",
+      "resource_id": "fey_presence",
+      "icon": "🧚",
+      "color": "#c084fc",
+      "action_type": "action",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "🧚 **{source}** 使用**精类降临**！\n> 10尺方块内生物进行感知豁免，失败则被**魅惑**或**恐惧**直到下回合结束"
+      },
+      "prerequisites": {
+        "class": ["warlock"],
+        "subclass": ["archfey"],
+        "level": 1
+      }
+    },
+    {
+      "id": "stunning_strike",
+      "name": "震慑打击",
+      "name_en": "Stunning Strike",
+      "description": "从5级起，当你以近战武器攻击命中时，可以花费1点气尝试震慑目标。目标必须通过体质豁免，否则被震慑。",
+      "category": "class_feature",
+      "source": "monk",
+      "resource_id": "ki",
+      "icon": "💫",
+      "color": "#0ea5e9",
+      "action_type": "free",
+      "can_toggle": false,
+      "action_effect": {
+        "type": "narrative",
+        "chat_template": "💫 **{source}** 花费1点气使用**震慑打击**！\n> 目标必须进行**体质豁免**，失败则被**震慑**直到下回合结束"
+      },
+      "prerequisites": {
+        "class": ["monk"],
+        "level": 5
+      }
+    },
+    {
+      "id": "grappled",
+      "name": "擒抱",
+      "name_en": "Grappled",
+      "category": "condition",
+      "icon": "🔗",
+      "color": "#78716c",
+      "description": "- A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.\n- The condition ends if the grappler is incapacitated (see the condition).\n- The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "speed_zero",
+          "target": "movement"
+        }
+      ]
+    },
+    {
+      "id": "frightened",
+      "name": "恐惧",
+      "name_en": "Frightened",
+      "category": "condition",
+      "icon": "😨",
+      "color": "#7c3aed",
+      "description": "- A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.\n- The creature can't willingly move closer to the source of its fear.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "disadvantage",
+          "target": "ability_check",
+          "condition": {
+            "source_visible": true
+          }
+        },
+        {
+          "type": "disadvantage",
+          "target": "attack_roll",
+          "condition": {
+            "source_visible": true
+          }
+        },
+        {
+          "type": "cannot_approach",
+          "target": "fear_source"
+        }
+      ]
+    },
+    {
+      "id": "prone",
+      "name": "倒地",
+      "name_en": "Prone",
+      "category": "condition",
+      "icon": "⬇️",
+      "color": "#92400e",
+      "description": "- A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.\n- The creature has disadvantage on attack rolls.\n- An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "disadvantage",
+          "target": "attack_roll"
+        },
+        {
+          "type": "advantage",
+          "target": "incoming_attack",
+          "condition": {
+            "range": "5ft"
+          }
+        },
+        {
+          "type": "disadvantage",
+          "target": "incoming_attack",
+          "condition": {
+            "range": "ranged"
+          }
+        }
+      ]
+    },
+    {
+      "id": "poisoned",
+      "name": "中毒",
+      "name_en": "Poisoned",
+      "category": "condition",
+      "icon": "☠️",
+      "color": "#16a34a",
+      "description": "- A poisoned creature has disadvantage on attack rolls and ability checks.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "disadvantage",
+          "target": "attack_roll"
+        },
+        {
+          "type": "disadvantage",
+          "target": "ability_check"
+        }
+      ]
+    },
+    {
+      "id": "blinded",
+      "name": "目盲",
+      "name_en": "Blinded",
+      "category": "condition",
+      "icon": "🙈",
+      "color": "#374151",
+      "description": "- A blinded creature can't see and automatically fails any ability check that requires sight.\n- Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "auto_fail",
+          "target": "ability_check",
+          "condition": {
+            "requires_sight": true
+          }
+        },
+        {
+          "type": "disadvantage",
+          "target": "attack_roll"
+        },
+        {
+          "type": "advantage",
+          "target": "incoming_attack"
+        }
+      ]
+    },
+    {
+      "id": "stunned",
+      "name": "震慑",
+      "name_en": "Stunned",
+      "category": "condition",
+      "icon": "⭐",
+      "color": "#eab308",
+      "description": "- A stunned creature is incapacitated (see the condition), can't move, and can speak only falteringly.\n- The creature automatically fails Strength and Dexterity saving throws.\n- Attack rolls against the creature have advantage.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "incapacitated",
+          "target": "self"
+        },
+        {
+          "type": "cannot_move",
+          "target": "self"
+        },
+        {
+          "type": "auto_fail",
+          "target": "saving_throw",
+          "condition": {
+            "ability": [
+              "strength",
+              "dexterity"
+            ]
+          }
+        },
+        {
+          "type": "advantage",
+          "target": "incoming_attack"
+        }
+      ]
+    },
+    {
+      "id": "restrained",
+      "name": "束缚",
+      "name_en": "Restrained",
+      "category": "condition",
+      "icon": "⛓️",
+      "color": "#64748b",
+      "description": "- A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.\n- Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.\n- The creature has disadvantage on Dexterity saving throws.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "speed_zero",
+          "target": "movement"
+        },
+        {
+          "type": "disadvantage",
+          "target": "attack_roll"
+        },
+        {
+          "type": "advantage",
+          "target": "incoming_attack"
+        },
+        {
+          "type": "disadvantage",
+          "target": "saving_throw",
+          "condition": {
+            "ability": "dexterity"
+          }
+        }
+      ]
+    },
+    {
+      "id": "invisible",
+      "name": "隐形",
+      "name_en": "Invisible",
+      "category": "condition",
+      "icon": "👻",
+      "color": "#94a3b8",
+      "description": "- An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.\n- Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "advantage",
+          "target": "attack_roll"
+        },
+        {
+          "type": "disadvantage",
+          "target": "incoming_attack"
+        },
+        {
+          "type": "advantage",
+          "target": "ability_check",
+          "condition": { "skill": "stealth" }
+        }
+      ]
+    },
+    {
+      "id": "exhaustion_1",
+      "name": "力竭(1级)",
+      "name_en": "Exhaustion (Level 1)",
+      "category": "condition",
+      "icon": "😩",
+      "color": "#71717a",
+      "action_type": "free",
+      "can_toggle": true,
+      "duration": {
+        "until_rest": "long"
+      },
+      "modifiers": [
+        {
+          "type": "disadvantage",
+          "target": "ability_check"
+        }
+      ]
+    },
+    {
+      "id": "charmed",
+      "name": "魅惑",
+      "name_en": "Charmed",
+      "category": "condition",
+      "icon": "💕",
+      "color": "#ec4899",
+      "description": "- A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.\n- The charmer has advantage on any ability check to interact socially with the creature.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "cannot_attack",
+          "target": "charmer"
+        },
+        {
+          "type": "advantage",
+          "target": "social_check",
+          "condition": {
+            "from": "charmer"
+          }
+        }
+      ]
+    },
+    {
+      "id": "turned",
+      "name": "被驱散",
+      "name_en": "Turned",
+      "category": "condition",
+      "icon": "✝️",
+      "color": "#fbbf24",
+      "description": "- A turned creature must spend its turns trying to move as far away from the turner as it can.\n- It cannot willingly move within 30 feet of the turner.\n- It can't take reactions and can only use its action to Dash or escape effects.",
+      "duration": 10,
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "no_reactions"
+        }
+      ]
+    },
+    {
+      "id": "deafened",
+      "name": "耳聋",
+      "name_en": "Deafened",
+      "category": "condition",
+      "icon": "🔇",
+      "color": "#6b7280",
+      "description": "- A deafened creature can't hear and automatically fails any ability check that requires hearing.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "auto_fail",
+          "target": "ability_check",
+          "condition": {
+            "requires_hearing": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "exhaustion",
+      "name": "力竭",
+      "name_en": "Exhaustion",
+      "category": "condition",
+      "icon": "😫",
+      "color": "#78716c",
+      "description": "Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.\n1 - Disadvantage on ability checks\n2 - Speed halved\n3 - Disadvantage on attack rolls and saving throws\n4 - Hit point maximum halved\n5 - Speed reduced to 0\n6 - Death\nIf an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.\nA creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on ability checks.\nAn effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1.\nFinishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [],
+      "levels": {
+        "1": {
+          "effect": "属性检定劣势",
+          "modifiers": [
+            {
+              "type": "disadvantage",
+              "target": "ability_check"
+            }
+          ]
+        },
+        "2": {
+          "effect": "速度减半",
+          "modifiers": [
+            {
+              "type": "speed_halved",
+              "target": "movement"
+            }
+          ]
+        },
+        "3": {
+          "effect": "攻击和豁免劣势",
+          "modifiers": [
+            {
+              "type": "disadvantage",
+              "target": "attack_roll"
+            },
+            {
+              "type": "disadvantage",
+              "target": "saving_throw"
+            }
+          ]
+        },
+        "4": {
+          "effect": "HP上限减半",
+          "modifiers": [
+            {
+              "type": "hp_max_halved",
+              "target": "hp"
+            }
+          ]
+        },
+        "5": {
+          "effect": "速度为0",
+          "modifiers": [
+            {
+              "type": "speed_zero",
+              "target": "movement"
+            }
+          ]
+        },
+        "6": {
+          "effect": "死亡",
+          "modifiers": [
+            {
+              "type": "death",
+              "target": "self"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "incapacitated",
+      "name": "失能",
+      "name_en": "Incapacitated",
+      "category": "condition",
+      "icon": "💫",
+      "color": "#9ca3af",
+      "description": "- An incapacitated creature can't take actions or reactions.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "cannot_act",
+          "target": "action"
+        },
+        {
+          "type": "cannot_act",
+          "target": "reaction"
+        }
+      ]
+    },
+    {
+      "id": "paralyzed",
+      "name": "麻痹",
+      "name_en": "Paralyzed",
+      "category": "condition",
+      "icon": "⚡",
+      "color": "#fbbf24",
+      "description": "- A paralyzed creature is incapacitated (see the condition) and can't move or speak.\n- The creature automatically fails Strength and Dexterity saving throws.\n- Attack rolls against the creature have advantage.\n- Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "incapacitated",
+          "target": "self"
+        },
+        {
+          "type": "speed_zero",
+          "target": "movement"
+        },
+        {
+          "type": "cannot_speak",
+          "target": "self"
+        },
+        {
+          "type": "auto_fail",
+          "target": "saving_throw",
+          "condition": {
+            "ability": [
+              "strength",
+              "dexterity"
+            ]
+          }
+        },
+        {
+          "type": "advantage",
+          "target": "incoming_attack"
+        },
+        {
+          "type": "auto_crit",
+          "target": "incoming_attack",
+          "condition": {
+            "range": "5ft"
+          }
+        }
+      ]
+    },
+    {
+      "id": "petrified",
+      "name": "石化",
+      "name_en": "Petrified",
+      "category": "condition",
+      "icon": "🗿",
+      "color": "#78716c",
+      "description": "- A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.\n- The creature is incapacitated (see the condition), can't move or speak, and is unaware of its surroundings.\n- Attack rolls against the creature have advantage.\n- The creature automatically fails Strength and Dexterity saving throws.\n- The creature has resistance to all damage.\n- The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "incapacitated",
+          "target": "self"
+        },
+        {
+          "type": "speed_zero",
+          "target": "movement"
+        },
+        {
+          "type": "auto_fail",
+          "target": "saving_throw",
+          "condition": {
+            "ability": [
+              "strength",
+              "dexterity"
+            ]
+          }
+        },
+        {
+          "type": "advantage",
+          "target": "incoming_attack"
+        },
+        {
+          "type": "resistance",
+          "target": "damage_taken",
+          "condition": {
+            "damage_type": "all"
+          }
+        },
+        {
+          "type": "immunity",
+          "target": "condition",
+          "condition": {
+            "type": "poison"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unconscious",
+      "name": "昏迷",
+      "name_en": "Unconscious",
+      "category": "condition",
+      "icon": "💤",
+      "color": "#1f2937",
+      "description": "- An unconscious creature is incapacitated (see the condition), can't move or speak, and is unaware of its surroundings.\n- The creature drops whatever it's holding and falls prone.\n- The creature automatically fails Strength and Dexterity saving throws.\n- Attack rolls against the creature have advantage.\n- Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.",
+      "action_type": "free",
+      "can_toggle": true,
+      "modifiers": [
+        {
+          "type": "incapacitated",
+          "target": "self"
+        },
+        {
+          "type": "prone",
+          "target": "self"
+        },
+        {
+          "type": "drop_held",
+          "target": "self"
+        },
+        {
+          "type": "auto_fail",
+          "target": "saving_throw",
+          "condition": {
+            "ability": [
+              "strength",
+              "dexterity"
+            ]
+          }
+        },
+        {
+          "type": "advantage",
+          "target": "incoming_attack"
+        },
+        {
+          "type": "auto_crit",
+          "target": "incoming_attack",
+          "condition": {
+            "range": "5ft"
+          }
+        }
+      ]
+    },
+    {
+      "id": "enhance_ability_bulls_strength",
+      "name": "牛之力量",
+      "name_en": "Bull's Strength",
+      "category": "spell",
+      "source": "enhance_ability",
+      "icon": "🐂",
+      "color": "#dc2626",
+      "can_toggle": true,
+      "modifiers": [
+        { "type": "advantage", "target": "ability_check", "condition": { "ability": "strength" } }
+      ]
+    },
+    {
+      "id": "enhance_ability_cats_grace",
+      "name": "猫之优雅",
+      "name_en": "Cat's Grace",
+      "category": "spell",
+      "source": "enhance_ability",
+      "icon": "🐱",
+      "color": "#f59e0b",
+      "can_toggle": true,
+      "modifiers": [
+        { "type": "advantage", "target": "ability_check", "condition": { "ability": "dexterity" } }
+      ]
+    },
+    {
+      "id": "enhance_ability_bears_endurance",
+      "name": "熊之坚韧",
+      "name_en": "Bear's Endurance",
+      "category": "spell",
+      "source": "enhance_ability",
+      "icon": "🐻",
+      "color": "#854d0e",
+      "can_toggle": true,
+      "modifiers": [
+        { "type": "advantage", "target": "ability_check", "condition": { "ability": "constitution" } }
+      ]
+    },
+    {
+      "id": "enhance_ability_foxs_cunning",
+      "name": "狐之狡黠",
+      "name_en": "Fox's Cunning",
+      "category": "spell",
+      "source": "enhance_ability",
+      "icon": "🦊",
+      "color": "#ea580c",
+      "can_toggle": true,
+      "modifiers": [
+        { "type": "advantage", "target": "ability_check", "condition": { "ability": "intelligence" } }
+      ]
+    },
+    {
+      "id": "enhance_ability_owls_wisdom",
+      "name": "枭之睿智",
+      "name_en": "Owl's Wisdom",
+      "category": "spell",
+      "source": "enhance_ability",
+      "icon": "🦉",
+      "color": "#7c3aed",
+      "can_toggle": true,
+      "modifiers": [
+        { "type": "advantage", "target": "ability_check", "condition": { "ability": "wisdom" } }
+      ]
+    },
+    {
+      "id": "enhance_ability_eagles_splendor",
+      "name": "鹰之威仪",
+      "name_en": "Eagle's Splendor",
+      "category": "spell",
+      "source": "enhance_ability",
+      "icon": "🦅",
+      "color": "#0ea5e9",
+      "can_toggle": true,
+      "modifiers": [
+        { "type": "advantage", "target": "ability_check", "condition": { "ability": "charisma" } }
+      ]
+    }
+  ],
+  "auras": [
+    {
+      "id": "aura_of_protection",
+      "name": "护卫灵光",
+      "name_en": "Aura of Protection",
+      "description": "6级起，当你或10尺内的友方生物进行豁免检定时，该生物的检定获得等同于你魅力调整值的加值（最低+1）。你必须保持清醒才能赋予该加值。",
+      "category": "class_feature",
+      "source": "paladin",
+      "icon": "🛡️",
+      "color": "#fbbf24",
+      "fill_color": "rgba(251, 191, 36, 0.15)",
+      "radius": 10,
+      "radius_18": 30,
+      "can_toggle": true,
+      "affects_self": true,
+      "affects_allies": true,
+      "affects_enemies": false,
+      "requires_conscious": true,
+      "modifiers": [
+        {
+          "type": "bonus",
+          "target": "saving_throw",
+          "value": "source_cha_mod",
+          "min_value": 1
+        }
+      ],
+      "prerequisites": {
+        "class": ["paladin"],
+        "level": 6
+      },
+      "level_scaling": {
+        "18": {
+          "radius": 30
+        }
+      }
+    },
+    {
+      "id": "aura_of_courage",
+      "name": "勇气灵光",
+      "name_en": "Aura of Courage",
+      "description": "10级起，你和10尺内的友方生物在你保持清醒时对恐惧免疫。",
+      "category": "class_feature",
+      "source": "paladin",
+      "icon": "🦁",
+      "color": "#ef4444",
+      "fill_color": "rgba(239, 68, 68, 0.15)",
+      "radius": 10,
+      "radius_18": 30,
+      "can_toggle": true,
+      "affects_self": true,
+      "affects_allies": true,
+      "affects_enemies": false,
+      "requires_conscious": true,
+      "modifiers": [
+        {
+          "type": "immunity",
+          "target": "condition",
+          "condition": {
+            "type": "frightened"
+          }
+        }
+      ],
+      "prerequisites": {
+        "class": ["paladin"],
+        "level": 10
+      },
+      "level_scaling": {
+        "18": {
+          "radius": 30
+        }
+      }
+    },
+    {
+      "id": "aura_of_devotion",
+      "name": "虔诚灵光",
+      "name_en": "Aura of Devotion",
+      "description": "7级起，你和10尺内的友方生物在你保持清醒时对魅惑免疫。",
+      "category": "class_feature",
+      "source": "paladin_devotion",
+      "icon": "✨",
+      "color": "#a855f7",
+      "fill_color": "rgba(168, 85, 247, 0.15)",
+      "radius": 10,
+      "radius_18": 30,
+      "can_toggle": true,
+      "affects_self": true,
+      "affects_allies": true,
+      "affects_enemies": false,
+      "requires_conscious": true,
+      "modifiers": [
+        {
+          "type": "immunity",
+          "target": "condition",
+          "condition": {
+            "type": "charmed"
+          }
+        }
+      ],
+      "prerequisites": {
+        "class": ["paladin"],
+        "subclass": ["devotion"],
+        "level": 7
+      },
+      "level_scaling": {
+        "18": {
+          "radius": 30
+        }
+      }
+    },
+    {
+      "id": "aura_of_warding",
+      "name": "守护灵光",
+      "name_en": "Aura of Warding",
+      "description": "7级起，你和10尺内的友方生物对法术伤害具有抗性。",
+      "category": "class_feature",
+      "source": "paladin_ancients",
+      "icon": "🌿",
+      "color": "#22c55e",
+      "fill_color": "rgba(34, 197, 94, 0.15)",
+      "radius": 10,
+      "radius_18": 30,
+      "can_toggle": true,
+      "affects_self": true,
+      "affects_allies": true,
+      "affects_enemies": false,
+      "requires_conscious": true,
+      "modifiers": [
+        {
+          "type": "resistance",
+          "target": "damage_taken",
+          "condition": {
+            "damage_source": "spell"
+          }
+        }
+      ],
+      "prerequisites": {
+        "class": ["paladin"],
+        "subclass": ["ancients"],
+        "level": 7
+      },
+      "level_scaling": {
+        "18": {
+          "radius": 30
+        }
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "id": "uncanny_dodge",
+      "name": "灵巧闪避",
+      "name_en": "Uncanny Dodge",
+      "description": "当你能看见的攻击者对你的攻击命中时，你可以用你的反应将此次攻击对你造成的伤害减半。",
+      "category": "class_feature",
+      "source": "rogue",
+      "icon": "🏃",
+      "color": "#6366f1",
+      "trigger": "on_hit",
+      "effect_type": "halve_damage",
+      "uses_per_round": 1,
+      "prerequisites": {
+        "class": ["rogue"],
+        "level": 5
+      }
+    },
+    {
+      "id": "deflect_missiles",
+      "name": "落石偏转",
+      "name_en": "Deflect Missiles",
+      "description": "当你被远程武器攻击命中时，你可以用你的反应偏转或接住飞射物，使此次攻击对你造成的伤害减少1d10+敏捷调整值+武僧等级。",
+      "category": "class_feature",
+      "source": "monk",
+      "icon": "🤚",
+      "color": "#14b8a6",
+      "trigger": "on_ranged_hit",
+      "effect_type": "reduce_damage",
+      "damage_reduction": "1d10+dex_mod+level",
+      "uses_per_round": 1,
+      "prerequisites": {
+        "class": ["monk"],
+        "level": 3
+      }
+    },
+    {
+      "id": "parry",
+      "name": "招架",
+      "name_en": "Parry",
+      "description": "当一个你能看见的生物用近战攻击对你造成伤害时，你可以用你的反应和消耗一个优势骰来将伤害减少该优势骰骰值+敏捷调整值。",
+      "category": "class_feature",
+      "source": "battle_master",
+      "icon": "⚔️",
+      "color": "#f59e0b",
+      "trigger": "on_melee_hit",
+      "effect_type": "reduce_damage",
+      "damage_reduction": "superiority_die+dex_mod",
+      "resource_cost": {
+        "resource_id": "superiority_dice",
+        "amount": 1
+      },
+      "uses_per_round": 1,
+      "prerequisites": {
+        "class": ["fighter"],
+        "subclass": ["battle_master"],
+        "level": 3
+      }
+    },
+    {
+      "id": "shield_spell",
+      "name": "护盾术",
+      "name_en": "Shield",
+      "description": "当你被攻击命中或成为魔法飞弹的目标时，你可以用你的反应获得+5AC加值直到下一回合开始，包括对触发此法术的攻击。",
+      "category": "spell_reaction",
+      "source": "wizard",
+      "icon": "🛡️",
+      "color": "#3b82f6",
+      "trigger": "on_hit_or_magic_missile",
+      "effect_type": "ac_bonus",
+      "ac_bonus": 5,
+      "duration_rounds": 1,
+      "spell_slot_cost": 1,
+      "prerequisites": {
+        "class": ["wizard", "sorcerer"],
+        "has_spell": "shield"
+      }
+    }
+  ]
+}

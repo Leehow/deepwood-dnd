@@ -1,0 +1,255 @@
+{
+  "overview": {
+    "description": "疾病是冒险者面临的另一种危险。瘟疫可以摧毁王国，诅咒可以通过接触传播。疾病通常需要体质豁免来抵抗，并可能造成长期的负面效果。",
+    "descriptionEn": "Diseases present another danger for adventurers. Plagues can devastate kingdoms, and curses can spread through contact. Diseases usually require Constitution saves to resist and can cause long-term negative effects."
+  },
+  "diseases": [
+    {
+      "id": "cackle_fever",
+      "name": "狂笑热",
+      "nameEn": "Cackle Fever",
+      "type": "disease",
+      "transmission": "接触感染者或其物品",
+      "incubation": "1d4天",
+      "dc": 13,
+      "description": "这种疾病主要影响类人生物，但侏儒对其免疫。处于这种疾病发作期的生物会无法自控地爆发笑声，因此得名狂笑热。",
+      "descriptionEn": "This disease targets humanoids, though gnomes are immune. While in the grips of this disease, victims frequently succumb to fits of mad laughter, giving the disease its name.",
+      "symptoms": [
+        "发热",
+        "无法控制的笑声发作",
+        "疲惫"
+      ],
+      "effects": [
+        {
+          "trigger": "每次长休结束",
+          "effect": "进行DC 13的体质豁免，失败则获得一级力竭"
+        },
+        {
+          "trigger": "进行需要集中精神的事情时",
+          "effect": "必须进行DC 13的体质豁免，失败则陷入无法控制的笑声发作，持续1分钟"
+        }
+      ],
+      "cure": "连续三次长休后的豁免成功，或者使用次级复原术"
+    },
+    {
+      "id": "sewer_plague",
+      "name": "下水道瘟疫",
+      "nameEn": "Sewer Plague",
+      "type": "disease",
+      "transmission": "接触被污染的水源或被携带者咬伤",
+      "incubation": "1d4天",
+      "dc": 11,
+      "description": "下水道瘟疫是一种总称，用于描述在下水道、垃圾堆和死水中繁殖的多种疾病。这种疾病通过被鼠群或类似生物咬伤，或与受污染的污物或腐肉接触而传播。",
+      "descriptionEn": "Sewer plague is a generic term for a broad category of illnesses that incubate in sewers, refuse heaps, and stagnant swamps. The disease is spread through bites from creatures that carry it, or contact with contaminated filth.",
+      "symptoms": [
+        "疲劳",
+        "抽筋",
+        "恢复力下降"
+      ],
+      "effects": [
+        {
+          "trigger": "感染后",
+          "effect": "只能恢复正常一半的HP（从HD恢复或其他方式）"
+        },
+        {
+          "trigger": "每次长休结束",
+          "effect": "进行DC 11的体质豁免，失败则获得一级力竭"
+        }
+      ],
+      "cure": "连续三次长休后的豁免成功，或者使用次级复原术"
+    },
+    {
+      "id": "sight_rot",
+      "name": "视腐病",
+      "nameEn": "Sight Rot",
+      "type": "disease",
+      "transmission": "饮用被污染的水",
+      "incubation": "1天",
+      "dc": 15,
+      "description": "这种痛苦的感染会导致眼睛出血，如果不治疗最终会导致失明。",
+      "descriptionEn": "This painful infection causes bleeding from the eyes and eventually blinds the victim.",
+      "symptoms": [
+        "眼睛出血",
+        "视力模糊",
+        "最终失明"
+      ],
+      "effects": [
+        {
+          "trigger": "感染后24小时",
+          "effect": "视力开始模糊，察觉检定-1"
+        },
+        {
+          "trigger": "每次长休结束，如果未治愈",
+          "effect": "察觉检定惩罚累加1点。当惩罚达到-5时，目标失明直到视力被魔法恢复"
+        }
+      ],
+      "cure": "使用泡在泪眼兽眼液中的布擦拭眼睛（需要短休），或者使用次级复原术"
+    },
+    {
+      "id": "bluerot",
+      "name": "蓝腐病",
+      "nameEn": "Bluerot",
+      "type": "disease",
+      "transmission": "被不死生物伤害或接触不死污染物",
+      "incubation": "即时",
+      "dc": 12,
+      "description": "这种疾病以其造成的皮肤变色命名，会逐渐使受害者的肉体腐烂。蓝腐病常见于被不死生物感染的地区。",
+      "descriptionEn": "Named for the discoloration it causes, this disease slowly rots the victim's flesh. Bluerot is commonly found in areas infested with undead.",
+      "symptoms": [
+        "皮肤出现蓝色斑点",
+        "肌肉组织腐烂",
+        "虚弱"
+      ],
+      "effects": [
+        {
+          "trigger": "感染后",
+          "effect": "无法恢复HP，除非通过魔法手段"
+        },
+        {
+          "trigger": "每次长休结束",
+          "effect": "HP上限减少1d6。当HP上限降至0时，目标死亡并在1d4小时后变成僵尸"
+        }
+      ],
+      "cure": "次级复原术或更强的治愈魔法"
+    },
+    {
+      "id": "filth_fever",
+      "name": "污秽热",
+      "nameEn": "Filth Fever",
+      "type": "disease",
+      "transmission": "被携带者咬伤或接触污物",
+      "incubation": "1d4天",
+      "dc": 11,
+      "description": "污秽热是一种由肮脏环境和害虫传播的常见疾病。它会导致高烧和极度疲劳。",
+      "descriptionEn": "Filth fever is a common disease spread by filthy conditions and vermin. It causes high fever and extreme fatigue.",
+      "symptoms": [
+        "高烧",
+        "极度疲劳",
+        "肌肉无力"
+      ],
+      "effects": [
+        {
+          "trigger": "感染后",
+          "effect": "力量检定和力量豁免有劣势"
+        },
+        {
+          "trigger": "每次长休结束",
+          "effect": "进行DC 11的体质豁免，失败则获得一级力竭"
+        }
+      ],
+      "cure": "连续两次长休后的豁免成功，或者使用次级复原术"
+    },
+    {
+      "id": "mindfire",
+      "name": "心灵之火",
+      "nameEn": "Mindfire",
+      "type": "disease",
+      "transmission": "接触感染者的体液",
+      "incubation": "1天",
+      "dc": 12,
+      "description": "心灵之火是一种影响心智的疾病，会导致混乱和智力下降。它特别常见于与心灵异常生物接触后。",
+      "descriptionEn": "Mindfire is a disease that affects the mind, causing confusion and decreased intelligence. It is particularly common after contact with aberrant creatures.",
+      "symptoms": [
+        "头痛",
+        "混乱",
+        "记忆力下降"
+      ],
+      "effects": [
+        {
+          "trigger": "感染后",
+          "effect": "智力检定和智力豁免有劣势；施法时必须进行DC 12的体质豁免，失败则法术失效"
+        }
+      ],
+      "cure": "连续两次长休后的豁免成功，或者使用次级复原术"
+    },
+    {
+      "id": "shakes",
+      "name": "颤抖症",
+      "nameEn": "Shakes",
+      "type": "disease",
+      "transmission": "被巨鼠或类似生物咬伤",
+      "incubation": "1天",
+      "dc": 13,
+      "description": "颤抖症导致不可控制的颤抖，使精细动作变得困难或不可能。",
+      "descriptionEn": "The shakes causes uncontrollable trembling, making fine motor control difficult or impossible.",
+      "symptoms": [
+        "手部颤抖",
+        "协调性下降",
+        "无法进行精细动作"
+      ],
+      "effects": [
+        {
+          "trigger": "感染后",
+          "effect": "敏捷检定有劣势；无法进行需要精细动作的活动（如开锁、书写）"
+        }
+      ],
+      "cure": "连续三次长休后的豁免成功，或者使用次级复原术"
+    },
+    {
+      "id": "red_ache",
+      "name": "红痛病",
+      "nameEn": "Red Ache",
+      "type": "disease",
+      "transmission": "接触被感染的血液",
+      "incubation": "1d3天",
+      "dc": 15,
+      "description": "红痛病以受害者皮肤上出现的红色疹子和剧烈的肌肉疼痛命名。这是一种严重的疾病，可能致命。",
+      "descriptionEn": "Red ache is named for the red rash that appears on the victim's skin and the severe muscle pain. This is a serious disease that can be fatal.",
+      "symptoms": [
+        "红色皮疹",
+        "剧烈肌肉疼痛",
+        "发热"
+      ],
+      "effects": [
+        {
+          "trigger": "感染后",
+          "effect": "力量值减少1d6（最低为1）"
+        },
+        {
+          "trigger": "每次长休结束",
+          "effect": "进行DC 15的体质豁免，失败则力量值再减少1d6。力量值降至0时死亡"
+        }
+      ],
+      "cure": "连续三次长休后的豁免成功（力量值不会自动恢复），或者使用高等复原术"
+    }
+  ],
+  "cureMethods": {
+    "magical": [
+      {
+        "spell": "lesser_restoration",
+        "name": "次级复原术",
+        "nameEn": "Lesser Restoration",
+        "level": 2,
+        "description": "可以治愈大多数疾病"
+      },
+      {
+        "spell": "greater_restoration",
+        "name": "高等复原术",
+        "nameEn": "Greater Restoration",
+        "level": 5,
+        "description": "可以治愈所有疾病并恢复因疾病降低的属性值"
+      },
+      {
+        "spell": "heal",
+        "name": "治疗术",
+        "nameEn": "Heal",
+        "level": 6,
+        "description": "治愈所有疾病"
+      }
+    ],
+    "nonMagical": [
+      {
+        "method": "rest_and_saves",
+        "name": "休息与豁免",
+        "nameEn": "Rest and Saves",
+        "description": "大多数疾病可以通过连续的长休和成功的体质豁免自然痊愈"
+      },
+      {
+        "method": "medicine_check",
+        "name": "医药检定",
+        "nameEn": "Medicine Check",
+        "description": "成功的医药检定可以为患者的豁免提供优势或暂时缓解症状"
+      }
+    ]
+  }
+}

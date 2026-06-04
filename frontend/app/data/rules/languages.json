@@ -1,0 +1,122 @@
+{
+  "languages": {
+    "standard": [
+      {
+        "id": "common",
+        "name": "通用语",
+        "nameEn": "Common",
+        "typicalSpeakers": ["人类"],
+        "script": "通用语文字"
+      },
+      {
+        "id": "dwarvish",
+        "name": "矮人语",
+        "nameEn": "Dwarvish",
+        "typicalSpeakers": ["矮人"],
+        "script": "矮人文字"
+      },
+      {
+        "id": "elvish",
+        "name": "精灵语",
+        "nameEn": "Elvish",
+        "typicalSpeakers": ["精灵"],
+        "script": "精灵文字"
+      },
+      {
+        "id": "giant",
+        "name": "巨人语",
+        "nameEn": "Giant",
+        "typicalSpeakers": ["食人魔", "巨人"],
+        "script": "矮人文字"
+      },
+      {
+        "id": "gnomish",
+        "name": "侏儒语",
+        "nameEn": "Gnomish",
+        "typicalSpeakers": ["侏儒"],
+        "script": "矮人文字"
+      },
+      {
+        "id": "goblin",
+        "name": "地精语",
+        "nameEn": "Goblin",
+        "typicalSpeakers": ["地精类"],
+        "script": "矮人文字"
+      },
+      {
+        "id": "halfling",
+        "name": "半身人语",
+        "nameEn": "Halfling",
+        "typicalSpeakers": ["半身人"],
+        "script": "通用语文字"
+      },
+      {
+        "id": "orc",
+        "name": "兽人语",
+        "nameEn": "Orc",
+        "typicalSpeakers": ["兽人"],
+        "script": "矮人文字"
+      }
+    ],
+    "exotic": [
+      {
+        "id": "abyssal",
+        "name": "深渊语",
+        "nameEn": "Abyssal",
+        "typicalSpeakers": ["恶魔"],
+        "script": "炼狱文字"
+      },
+      {
+        "id": "celestial",
+        "name": "天界语",
+        "nameEn": "Celestial",
+        "typicalSpeakers": ["天界生物"],
+        "script": "天界文字"
+      },
+      {
+        "id": "deep_speech",
+        "name": "深层语",
+        "nameEn": "Deep Speech",
+        "typicalSpeakers": ["废除者", "暗幕怪"],
+        "script": null
+      },
+      {
+        "id": "draconic",
+        "name": "龙语",
+        "nameEn": "Draconic",
+        "typicalSpeakers": ["龙", "龙裔"],
+        "script": "龙语文字",
+        "description": "龙语被认为是最古老的语言之一，常用于魔法研究。这种语言对大多数生物来说听起来刺耳，包含许多硬辅音和咝音。"
+      },
+      {
+        "id": "infernal",
+        "name": "炼狱语",
+        "nameEn": "Infernal",
+        "typicalSpeakers": ["魔鬼"],
+        "script": "炼狱文字"
+      },
+      {
+        "id": "primordial",
+        "name": "原初语",
+        "nameEn": "Primordial",
+        "typicalSpeakers": ["元素生物"],
+        "script": "矮人文字",
+        "dialects": ["水族语", "风族语", "土族语", "火族语"]
+      },
+      {
+        "id": "sylvan",
+        "name": "林地语",
+        "nameEn": "Sylvan",
+        "typicalSpeakers": ["精类生物"],
+        "script": "精灵文字"
+      },
+      {
+        "id": "undercommon",
+        "name": "地底通用语",
+        "nameEn": "Undercommon",
+        "typicalSpeakers": ["幽暗地域商人"],
+        "script": "精灵文字"
+      }
+    ]
+  }
+}

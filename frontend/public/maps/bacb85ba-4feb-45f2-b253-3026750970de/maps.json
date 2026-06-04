@@ -1,0 +1,194 @@
+[
+  {
+    "id": "map_1",
+    "name": "Introduction",
+    "name_en": "Introduction",
+    "category": "map",
+    "confidence": 1.0,
+    "description": "Map from: Introduction - Introduction",
+    "description_zh": "Introduction - Introduction地图",
+    "metadata": {
+      "filename": "bo_d3venpjef24c73d2igng_0_662_195_337_165_0.jpg",
+      "width": 337,
+      "height": 165,
+      "aspect_ratio": 2.04
+    },
+    "url": "/maps/bacb85ba-4feb-45f2-b253-3026750970de/bo_d3venpjef24c73d2igng_0_662_195_337_165_0.jpg",
+    "tags": [
+      "map",
+      "module",
+      "phandelver"
+    ],
+    "chapter": "Introduction",
+    "section": "Introduction",
+    "line_number": 3
+  },
+  {
+    "id": "map_2",
+    "name": "石丘旅馆 Stonehill Inn",
+    "name_en": "石丘旅馆 Stonehill Inn",
+    "category": "map",
+    "confidence": 1.0,
+    "description": "Map from: 石丘旅馆 Stonehill Inn - 石丘旅馆 Stonehill Inn",
+    "description_zh": "石丘旅馆 Stonehill Inn - 石丘旅馆 Stonehill Inn地图",
+    "metadata": {
+      "filename": "bo_d3venpjef24c73d2igng_14_133_255_1371_944_0.jpg",
+      "width": 1371,
+      "height": 944,
+      "aspect_ratio": 1.45
+    },
+    "url": "/maps/bacb85ba-4feb-45f2-b253-3026750970de/bo_d3venpjef24c73d2igng_14_133_255_1371_944_0.jpg",
+    "tags": [
+      "map",
+      "module",
+      "phandelver"
+    ],
+    "chapter": "石丘旅馆 Stonehill Inn",
+    "section": "石丘旅馆 Stonehill Inn",
+    "line_number": 677
+  },
+  {
+    "id": "map_3",
+    "name": "2. 营房 Barracks",
+    "name_en": "2. 营房 Barracks",
+    "category": "map",
+    "confidence": 1.0,
+    "description": "Map from: 2. 营房 Barracks - 2. 营房 Barracks",
+    "description_zh": "2. 营房 Barracks - 2. 营房 Barracks地图",
+    "metadata": {
+      "filename": "bo_d3venpjef24c73d2igng_19_142_289_1357_964_0.jpg",
+      "width": 1357,
+      "height": 964,
+      "aspect_ratio": 1.41
+    },
+    "url": "/maps/bacb85ba-4feb-45f2-b253-3026750970de/bo_d3venpjef24c73d2igng_19_142_289_1357_964_0.jpg",
+    "tags": [
+      "map",
+      "module",
+      "phandelver"
+    ],
+    "chapter": "2. 营房 Barracks",
+    "section": "2. 营房 Barracks",
+    "line_number": 891
+  },
+  {
+    "id": "map_4",
+    "name": "1. 最西边的小屋 Westernmost Cottage",
+    "name_en": "1. 最西边的小屋 Westernmost Cottage",
+    "category": "map",
+    "confidence": 1.0,
+    "description": "Map from: 1. 最西边的小屋 Westernmost Cottage - 1. 最西边的小屋 Westernmost Cottage",
+    "description_zh": "1. 最西边的小屋 Westernmost Cottage - 1. 最西边的小屋 Westernmost Cottage地图",
+    "metadata": {
+      "filename": "bo_d3venpjef24c73d2igng_28_133_253_1359_955_0.jpg",
+      "width": 1359,
+      "height": 955,
+      "aspect_ratio": 1.42
+    },
+    "url": "/maps/bacb85ba-4feb-45f2-b253-3026750970de/bo_d3venpjef24c73d2igng_28_133_253_1359_955_0.jpg",
+    "tags": [
+      "map",
+      "module",
+      "phandelver"
+    ],
+    "chapter": "1. 最西边的小屋 Westernmost Cottage",
+    "section": "1. 最西边的小屋 Westernmost Cottage",
+    "line_number": 1327
+  },
+  {
+    "id": "map_5",
+    "name": "1. 城堡入口 Castle Entrance",
+    "name_en": "1. 城堡入口 Castle Entrance",
+    "category": "map",
+    "confidence": 1.0,
+    "description": "Map from: 1. 城堡入口 Castle Entrance - 1. 城堡入口 Castle Entrance",
+    "description_zh": "1. 城堡入口 Castle Entrance - 1. 城堡入口 Castle Entrance地图",
+    "metadata": {
+      "filename": "bo_d3venpjef24c73d2igng_33_134_220_1358_952_0.jpg",
+      "width": 1358,
+      "height": 952,
+      "aspect_ratio": 1.43
+    },
+    "url": "/maps/bacb85ba-4feb-45f2-b253-3026750970de/bo_d3venpjef24c73d2igng_33_134_220_1358_952_0.jpg",
+    "tags": [
+      "map",
+      "module",
+      "phandelver"
+    ],
+    "chapter": "1. 城堡入口 Castle Entrance",
+    "section": "1. 城堡入口 Castle Entrance",
+    "line_number": 1603
+  },
+  {
+    "id": "map_6",
+    "name": "隆隆潮浪 Booming Waves",
+    "name_en": "隆隆潮浪 Booming Waves",
+    "category": "map",
+    "confidence": 1.0,
+    "description": "Map from: 隆隆潮浪 Booming Waves - 隆隆潮浪 Booming Waves",
+    "description_zh": "隆隆潮浪 Booming Waves - 隆隆潮浪 Booming Waves地图",
+    "metadata": {
+      "filename": "bo_d3venpjef24c73d2igng_39_162_219_1336_1875_0.jpg",
+      "width": 1336,
+      "height": 1875,
+      "aspect_ratio": 0.71
+    },
+    "url": "/maps/bacb85ba-4feb-45f2-b253-3026750970de/bo_d3venpjef24c73d2igng_39_162_219_1336_1875_0.jpg",
+    "tags": [
+      "map",
+      "module",
+      "phandelver"
+    ],
+    "chapter": "隆隆潮浪 Booming Waves",
+    "section": "隆隆潮浪 Booming Waves",
+    "line_number": 1901
+  },
+  {
+    "id": "map_7",
+    "name": "扮演与激励 Roleplaying and Inspiration",
+    "name_en": "扮演与激励 Roleplaying and Inspiration",
+    "category": "map",
+    "confidence": 1.0,
+    "description": "Map from: 扮演与激励 Roleplaying and Inspiration - 扮演与激励 Roleplaying and Inspiration",
+    "description_zh": "扮演与激励 Roleplaying and Inspiration - 扮演与激励 Roleplaying and Inspiration地图",
+    "metadata": {
+      "filename": "bo_d3venpjef24c73d2igng_4_148_232_1350_1879_0.jpg",
+      "width": 1350,
+      "height": 1879,
+      "aspect_ratio": 0.72
+    },
+    "url": "/maps/bacb85ba-4feb-45f2-b253-3026750970de/bo_d3venpjef24c73d2igng_4_148_232_1350_1879_0.jpg",
+    "tags": [
+      "map",
+      "module",
+      "phandelver"
+    ],
+    "chapter": "扮演与激励 Roleplaying and Inspiration",
+    "section": "扮演与激励 Roleplaying and Inspiration",
+    "line_number": 245
+  },
+  {
+    "id": "map_8",
+    "name": "发展 Development",
+    "name_en": "发展 Development",
+    "category": "map",
+    "confidence": 1.0,
+    "description": "Map from: 发展 Development - 发展 Development",
+    "description_zh": "发展 Development - 发展 Development地图",
+    "metadata": {
+      "filename": "bo_d3venpjef24c73d2igng_8_143_257_1349_946_0.jpg",
+      "width": 1349,
+      "height": 946,
+      "aspect_ratio": 1.43
+    },
+    "url": "/maps/bacb85ba-4feb-45f2-b253-3026750970de/bo_d3venpjef24c73d2igng_8_143_257_1349_946_0.jpg",
+    "tags": [
+      "map",
+      "module",
+      "phandelver"
+    ],
+    "chapter": "发展 Development",
+    "section": "发展 Development",
+    "line_number": 401
+  }
+]

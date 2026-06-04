@@ -1,0 +1,1169 @@
+{
+  "overview": {
+    "description": "通用NPC是城镇、村庄和冒险中常见的非玩家角色。这些模板可以快速用于遭遇或角色扮演场景。",
+    "descriptionEn": "Generic NPCs are common non-player characters found in towns, villages, and adventures. These templates can be quickly used for encounters or roleplay scenarios."
+  },
+  "npcs": [
+    {
+      "id": "commoner",
+      "name": "平民",
+      "nameEn": "Commoner",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意阵营",
+      "ac": 10,
+      "hp": 4,
+      "hpFormula": "1d8",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 10,
+        "dex": 10,
+        "con": 10,
+        "int": 10,
+        "wis": 10,
+        "cha": 10
+      },
+      "cr": "0",
+      "xp": 10,
+      "languages": [
+        "任意一种语言（通常是通用语）"
+      ],
+      "actions": [
+        {
+          "name": "木棒",
+          "nameEn": "Club",
+          "description": "近战武器攻击：+2命中，触及5尺，单一目标。命中：2（1d4）钝击伤害。"
+        }
+      ],
+      "description": "平民包括农夫、仆人、工匠和其他普通人。他们通常没有战斗训练。",
+      "defaultAvatarSmall": "/assets/npc-avatars/commoner_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/commoner_512.webp"
+    },
+    {
+      "id": "guard",
+      "name": "卫兵",
+      "nameEn": "Guard",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意阵营",
+      "ac": 16,
+      "acNote": "锁子甲、盾牌",
+      "hp": 11,
+      "hpFormula": "2d8+2",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 13,
+        "dex": 12,
+        "con": 12,
+        "int": 10,
+        "wis": 11,
+        "cha": 10
+      },
+      "skills": [
+        "察觉 +2"
+      ],
+      "cr": "1/8",
+      "xp": 25,
+      "languages": [
+        "任意一种语言（通常是通用语）"
+      ],
+      "actions": [
+        {
+          "name": "矛",
+          "nameEn": "Spear",
+          "description": "近战或远程武器攻击：+3命中，触及5尺或射程20/60尺，单一目标。命中：4（1d6+1）穿刺伤害，或双手持握时5（1d8+1）穿刺伤害。"
+        }
+      ],
+      "description": "卫兵是城镇和城市的基本执法力量。他们巡逻街道，守卫城门。",
+      "defaultAvatarSmall": "/assets/npc-avatars/guard_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/guard_512.webp"
+    },
+    {
+      "id": "bandit",
+      "name": "强盗",
+      "nameEn": "Bandit",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意非守序阵营",
+      "ac": 12,
+      "acNote": "皮甲",
+      "hp": 11,
+      "hpFormula": "2d8+2",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 11,
+        "dex": 12,
+        "con": 12,
+        "int": 10,
+        "wis": 10,
+        "cha": 10
+      },
+      "cr": "1/8",
+      "xp": 25,
+      "languages": [
+        "任意一种语言（通常是通用语）"
+      ],
+      "actions": [
+        {
+          "name": "弯刀",
+          "nameEn": "Scimitar",
+          "description": "近战武器攻击：+3命中，触及5尺，单一目标。命中：4（1d6+1）挥砍伤害。"
+        },
+        {
+          "name": "轻弩",
+          "nameEn": "Light Crossbow",
+          "description": "远程武器攻击：+3命中，射程80/320尺，单一目标。命中：5（1d8+1）穿刺伤害。"
+        }
+      ],
+      "description": "强盗在荒野中伏击旅行者，或在城市中进行小偷小摸。",
+      "defaultAvatarSmall": "/assets/npc-avatars/bandit_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/bandit_512.webp"
+    },
+    {
+      "id": "bandit_captain",
+      "name": "强盗头目",
+      "nameEn": "Bandit Captain",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意非守序阵营",
+      "ac": 15,
+      "acNote": "铆钉皮甲",
+      "hp": 65,
+      "hpFormula": "10d8+20",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 15,
+        "dex": 16,
+        "con": 14,
+        "int": 14,
+        "wis": 11,
+        "cha": 14
+      },
+      "savingThrows": [
+        "力量 +4",
+        "敏捷 +5",
+        "感知 +2"
+      ],
+      "skills": [
+        "运动 +4",
+        "欺骗 +4"
+      ],
+      "cr": "2",
+      "xp": 450,
+      "languages": [
+        "任意两种语言"
+      ],
+      "actions": [
+        {
+          "name": "多重攻击",
+          "nameEn": "Multiattack",
+          "description": "强盗头目进行三次近战攻击：两次用弯刀，一次用匕首。或者进行两次远程攻击用匕首。"
+        },
+        {
+          "name": "弯刀",
+          "nameEn": "Scimitar",
+          "description": "近战武器攻击：+5命中，触及5尺，单一目标。命中：6（1d6+3）挥砍伤害。"
+        },
+        {
+          "name": "匕首",
+          "nameEn": "Dagger",
+          "description": "近战或远程武器攻击：+5命中，触及5尺或射程20/60尺，单一目标。命中：5（1d4+3）穿刺伤害。"
+        }
+      ],
+      "reactions": [
+        {
+          "name": "招架",
+          "nameEn": "Parry",
+          "description": "强盗头目将AC增加2以抵御一次会击中它的近战攻击。它必须能看到攻击者并持有近战武器。"
+        }
+      ],
+      "description": "强盗头目是盗贼和亡命之徒的领袖，通常更加狡猾和危险。",
+      "defaultAvatarSmall": "/assets/npc-avatars/bandit_captain_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/bandit_captain_512.webp"
+    },
+    {
+      "id": "knight",
+      "name": "骑士",
+      "nameEn": "Knight",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意阵营",
+      "ac": 18,
+      "acNote": "板甲",
+      "hp": 52,
+      "hpFormula": "8d8+16",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 16,
+        "dex": 11,
+        "con": 14,
+        "int": 11,
+        "wis": 11,
+        "cha": 15
+      },
+      "savingThrows": [
+        "体质 +4",
+        "感知 +2"
+      ],
+      "cr": "3",
+      "xp": 700,
+      "languages": [
+        "任意一种语言（通常是通用语）"
+      ],
+      "specialAbilities": [
+        {
+          "name": "勇敢",
+          "nameEn": "Brave",
+          "description": "骑士对抗恐惧效果的豁免检定有优势。"
+        }
+      ],
+      "actions": [
+        {
+          "name": "多重攻击",
+          "nameEn": "Multiattack",
+          "description": "骑士进行两次近战攻击。"
+        },
+        {
+          "name": "巨剑",
+          "nameEn": "Greatsword",
+          "description": "近战武器攻击：+5命中，触及5尺，单一目标。命中：10（2d6+3）挥砍伤害。"
+        },
+        {
+          "name": "重弩",
+          "nameEn": "Heavy Crossbow",
+          "description": "远程武器攻击：+2命中，射程100/400尺，单一目标。命中：5（1d10）穿刺伤害。"
+        },
+        {
+          "name": "领导力",
+          "nameEn": "Leadership",
+          "description": "（1次/短休或长休）在1分钟内，骑士可以在每个回合发出一个命令或警告。30尺内能听到骑士的非敌对生物在进行攻击检定或豁免检定时可以加1d4。"
+        }
+      ],
+      "reactions": [
+        {
+          "name": "招架",
+          "nameEn": "Parry",
+          "description": "骑士将AC增加2以抵御一次会击中它的近战攻击。它必须能看到攻击者并持有近战武器。"
+        }
+      ],
+      "description": "骑士是贵族战士，受过专业的战斗训练，通常效忠于某位领主或王国。",
+      "defaultAvatarSmall": "/assets/npc-avatars/knight_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/knight_512.webp"
+    },
+    {
+      "id": "veteran",
+      "name": "老兵",
+      "nameEn": "Veteran",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意阵营",
+      "ac": 17,
+      "acNote": "挂甲",
+      "hp": 58,
+      "hpFormula": "9d8+18",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 16,
+        "dex": 13,
+        "con": 14,
+        "int": 10,
+        "wis": 11,
+        "cha": 10
+      },
+      "skills": [
+        "运动 +5",
+        "察觉 +2"
+      ],
+      "cr": "3",
+      "xp": 700,
+      "languages": [
+        "任意一种语言（通常是通用语）"
+      ],
+      "actions": [
+        {
+          "name": "多重攻击",
+          "nameEn": "Multiattack",
+          "description": "老兵进行两次长剑攻击。如果有短剑可用，也可以用短剑进行第三次攻击。"
+        },
+        {
+          "name": "长剑",
+          "nameEn": "Longsword",
+          "description": "近战武器攻击：+5命中，触及5尺，单一目标。命中：7（1d8+3）挥砍伤害，或双手持握时8（1d10+3）挥砍伤害。"
+        },
+        {
+          "name": "短剑",
+          "nameEn": "Shortsword",
+          "description": "近战武器攻击：+5命中，触及5尺，单一目标。命中：6（1d6+3）穿刺伤害。"
+        },
+        {
+          "name": "重弩",
+          "nameEn": "Heavy Crossbow",
+          "description": "远程武器攻击：+3命中，射程100/400尺，单一目标。命中：6（1d10+1）穿刺伤害。"
+        }
+      ],
+      "description": "老兵是经验丰富的战士，通常担任雇佣兵、卫队队长或军事顾问。",
+      "defaultAvatarSmall": "/assets/npc-avatars/veteran_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/veteran_512.webp"
+    },
+    {
+      "id": "mage",
+      "name": "法师",
+      "nameEn": "Mage",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意阵营",
+      "ac": 12,
+      "acNote": "15带法师护甲",
+      "hp": 40,
+      "hpFormula": "9d8",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 9,
+        "dex": 14,
+        "con": 11,
+        "int": 17,
+        "wis": 12,
+        "cha": 11
+      },
+      "savingThrows": [
+        "智力 +6",
+        "感知 +4"
+      ],
+      "skills": [
+        "奥秘 +6",
+        "历史 +6"
+      ],
+      "cr": "6",
+      "xp": 2300,
+      "languages": [
+        "任意四种语言"
+      ],
+      "spellcasting": {
+        "ability": "智力",
+        "dc": 14,
+        "attackBonus": 6,
+        "slots": {
+          "cantrips": [
+            "火焰箭",
+            "光亮术",
+            "法师之手",
+            "电爪"
+          ],
+          "1st": {
+            "slots": 4,
+            "spells": [
+              "侦测魔法",
+              "法师护甲",
+              "魔法飞弹",
+              "盾牌术"
+            ]
+          },
+          "2nd": {
+            "slots": 3,
+            "spells": [
+              "迷踪步",
+              "朦胧术",
+              "暗示术"
+            ]
+          },
+          "3rd": {
+            "slots": 3,
+            "spells": [
+              "反制法术",
+              "火球术",
+              "飞行术"
+            ]
+          },
+          "4th": {
+            "slots": 3,
+            "spells": [
+              "高等隐形术",
+              "冰风暴"
+            ]
+          },
+          "5th": {
+            "slots": 1,
+            "spells": [
+              "寒冰锥"
+            ]
+          }
+        }
+      },
+      "actions": [
+        {
+          "name": "匕首",
+          "nameEn": "Dagger",
+          "description": "近战或远程武器攻击：+5命中，触及5尺或射程20/60尺，单一目标。命中：4（1d4+2）穿刺伤害。"
+        }
+      ],
+      "description": "法师是专门研究奥术的施法者，通常在学院或塔楼中研究魔法。",
+      "defaultAvatarSmall": "/assets/npc-avatars/mage_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/mage_512.webp"
+    },
+    {
+      "id": "priest",
+      "name": "祭司",
+      "nameEn": "Priest",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意阵营",
+      "ac": 13,
+      "acNote": "锁子甲衬衣",
+      "hp": 27,
+      "hpFormula": "5d8+5",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 10,
+        "dex": 10,
+        "con": 12,
+        "int": 13,
+        "wis": 16,
+        "cha": 13
+      },
+      "skills": [
+        "医药 +7",
+        "说服 +3",
+        "宗教 +4"
+      ],
+      "cr": "2",
+      "xp": 450,
+      "languages": [
+        "任意两种语言"
+      ],
+      "spellcasting": {
+        "ability": "感知",
+        "dc": 13,
+        "attackBonus": 5,
+        "slots": {
+          "cantrips": [
+            "光亮术",
+            "神圣火焰",
+            "神导术"
+          ],
+          "1st": {
+            "slots": 4,
+            "spells": [
+              "治愈术",
+              "引导术"
+            ]
+          },
+          "2nd": {
+            "slots": 3,
+            "spells": [
+              "次级复原术",
+              "灵体武器"
+            ]
+          },
+          "3rd": {
+            "slots": 2,
+            "spells": [
+              "解除魔法",
+              "灵体卫士"
+            ]
+          }
+        }
+      },
+      "specialAbilities": [
+        {
+          "name": "神圣专注",
+          "nameEn": "Divine Eminence",
+          "description": "作为附赠动作，祭司可以消耗一个法术位使其近战武器攻击对一个目标造成额外10（3d6）光耀伤害。如果消耗2环或更高法术位，每高一环增加1d6伤害。"
+        }
+      ],
+      "actions": [
+        {
+          "name": "硬头锤",
+          "nameEn": "Mace",
+          "description": "近战武器攻击：+2命中，触及5尺，单一目标。命中：3（1d6）钝击伤害。"
+        }
+      ],
+      "description": "祭司是神职人员，服务于神庙和信徒，提供精神指导和治疗。",
+      "defaultAvatarSmall": "/assets/npc-avatars/priest_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/priest_512.webp"
+    },
+    {
+      "id": "acolyte",
+      "name": "侍僧",
+      "nameEn": "Acolyte",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意阵营",
+      "ac": 10,
+      "hp": 9,
+      "hpFormula": "2d8",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 10,
+        "dex": 10,
+        "con": 10,
+        "int": 10,
+        "wis": 14,
+        "cha": 11
+      },
+      "skills": [
+        "医药 +4",
+        "宗教 +2"
+      ],
+      "cr": "1/4",
+      "xp": 50,
+      "languages": [
+        "任意一种语言（通常是通用语）"
+      ],
+      "spellcasting": {
+        "ability": "感知",
+        "dc": 12,
+        "attackBonus": 4,
+        "slots": {
+          "cantrips": [
+            "光亮术",
+            "神圣火焰",
+            "神导术"
+          ],
+          "1st": {
+            "slots": 3,
+            "spells": [
+              "祝福术",
+              "治愈术",
+              "庇护术"
+            ]
+          }
+        }
+      },
+      "actions": [
+        {
+          "name": "木棒",
+          "nameEn": "Club",
+          "description": "近战武器攻击：+2命中，触及5尺，单一目标。命中：2（1d4）钝击伤害。"
+        }
+      ],
+      "description": "侍僧是神庙的学徒，学习宗教仪式和基础神术。",
+      "defaultAvatarSmall": "/assets/npc-avatars/acolyte_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/acolyte_512.webp"
+    },
+    {
+      "id": "noble",
+      "name": "贵族",
+      "nameEn": "Noble",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意阵营",
+      "ac": 15,
+      "acNote": "胸甲",
+      "hp": 9,
+      "hpFormula": "2d8",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 11,
+        "dex": 12,
+        "con": 11,
+        "int": 12,
+        "wis": 14,
+        "cha": 16
+      },
+      "skills": [
+        "欺骗 +5",
+        "洞悉 +4",
+        "说服 +5"
+      ],
+      "cr": "1/8",
+      "xp": 25,
+      "languages": [
+        "任意两种语言"
+      ],
+      "actions": [
+        {
+          "name": "细剑",
+          "nameEn": "Rapier",
+          "description": "近战武器攻击：+3命中，触及5尺，单一目标。命中：5（1d8+1）穿刺伤害。"
+        }
+      ],
+      "reactions": [
+        {
+          "name": "招架",
+          "nameEn": "Parry",
+          "description": "贵族将AC增加2以抵御一次会击中它的近战攻击。它必须能看到攻击者并持有近战武器。"
+        }
+      ],
+      "description": "贵族是社会上层人士，拥有财富、土地和政治影响力。",
+      "defaultAvatarSmall": "/assets/npc-avatars/noble_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/noble_512.webp"
+    },
+    {
+      "id": "spy",
+      "name": "间谍",
+      "nameEn": "Spy",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意阵营",
+      "ac": 12,
+      "hp": 27,
+      "hpFormula": "6d8",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 10,
+        "dex": 15,
+        "con": 10,
+        "int": 12,
+        "wis": 14,
+        "cha": 16
+      },
+      "skills": [
+        "欺骗 +5",
+        "洞悉 +4",
+        "调查 +5",
+        "察觉 +6",
+        "说服 +5",
+        "巧手 +4",
+        "隐匿 +4"
+      ],
+      "cr": "1",
+      "xp": 200,
+      "languages": [
+        "任意两种语言"
+      ],
+      "specialAbilities": [
+        {
+          "name": "狡猾行动",
+          "nameEn": "Cunning Action",
+          "description": "在每个回合，间谍可以用附赠动作进行冲刺、撤离或躲藏动作。"
+        },
+        {
+          "name": "偷袭",
+          "nameEn": "Sneak Attack",
+          "description": "每回合一次，当间谍对一个目标有优势或目标5尺内有间谍的非失能盟友时，间谍可以额外造成7（2d6）点伤害。"
+        }
+      ],
+      "actions": [
+        {
+          "name": "多重攻击",
+          "nameEn": "Multiattack",
+          "description": "间谍进行两次近战攻击。"
+        },
+        {
+          "name": "短剑",
+          "nameEn": "Shortsword",
+          "description": "近战武器攻击：+4命中，触及5尺，单一目标。命中：5（1d6+2）穿刺伤害。"
+        },
+        {
+          "name": "手弩",
+          "nameEn": "Hand Crossbow",
+          "description": "远程武器攻击：+4命中，射程30/120尺，单一目标。命中：5（1d6+2）穿刺伤害。"
+        }
+      ],
+      "description": "间谍是信息收集专家，为政府、行会或个人服务。",
+      "defaultAvatarSmall": "/assets/npc-avatars/spy_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/spy_512.webp"
+    },
+    {
+      "id": "assassin",
+      "name": "刺客",
+      "nameEn": "Assassin",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意非善良阵营",
+      "ac": 15,
+      "acNote": "铆钉皮甲",
+      "hp": 78,
+      "hpFormula": "12d8+24",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 11,
+        "dex": 16,
+        "con": 14,
+        "int": 13,
+        "wis": 11,
+        "cha": 10
+      },
+      "savingThrows": [
+        "敏捷 +6",
+        "智力 +4"
+      ],
+      "skills": [
+        "特技 +6",
+        "欺骗 +3",
+        "察觉 +3",
+        "隐匿 +9"
+      ],
+      "damageResistances": [
+        "毒素"
+      ],
+      "cr": "8",
+      "xp": 3900,
+      "languages": [
+        "盗贼暗语加任意两种语言"
+      ],
+      "specialAbilities": [
+        {
+          "name": "刺杀",
+          "nameEn": "Assassinate",
+          "description": "在第一轮战斗中，刺客对还未行动的生物有攻击优势。刺客对突袭目标的任何命中都是重击。"
+        },
+        {
+          "name": "闪避",
+          "nameEn": "Evasion",
+          "description": "如果刺客受到允许敏捷豁免减半伤害的效果，成功时不受伤害，失败时只受一半伤害。"
+        },
+        {
+          "name": "偷袭",
+          "nameEn": "Sneak Attack",
+          "description": "每回合一次，当刺客对一个目标有优势或目标5尺内有刺客的非失能盟友时，刺客可以额外造成14（4d6）点伤害。"
+        }
+      ],
+      "actions": [
+        {
+          "name": "多重攻击",
+          "nameEn": "Multiattack",
+          "description": "刺客进行两次短剑攻击。"
+        },
+        {
+          "name": "短剑",
+          "nameEn": "Shortsword",
+          "description": "近战武器攻击：+6命中，触及5尺，单一目标。命中：6（1d6+3）穿刺伤害，目标必须进行DC 15的体质豁免，失败则额外受到24（7d6）毒素伤害，成功则受一半伤害。"
+        },
+        {
+          "name": "轻弩",
+          "nameEn": "Light Crossbow",
+          "description": "远程武器攻击：+6命中，射程80/320尺，单一目标。命中：7（1d8+3）穿刺伤害，目标必须进行DC 15的体质豁免，失败则额外受到24（7d6）毒素伤害，成功则受一半伤害。"
+        }
+      ],
+      "description": "刺客是职业杀手，精通潜行、伪装和快速致命的攻击。",
+      "defaultAvatarSmall": "/assets/npc-avatars/assassin_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/assassin_512.webp"
+    },
+    {
+      "id": "thug",
+      "name": "恶棍",
+      "nameEn": "Thug",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意非善良阵营",
+      "ac": 11,
+      "acNote": "皮甲",
+      "hp": 32,
+      "hpFormula": "5d8+10",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 15,
+        "dex": 11,
+        "con": 14,
+        "int": 10,
+        "wis": 10,
+        "cha": 11
+      },
+      "skills": [
+        "威吓 +2"
+      ],
+      "cr": "1/2",
+      "xp": 100,
+      "languages": [
+        "任意一种语言（通常是通用语）"
+      ],
+      "specialAbilities": [
+        {
+          "name": "群殴战术",
+          "nameEn": "Pack Tactics",
+          "description": "当恶棍的非失能盟友在目标5尺内时，恶棍对该目标的攻击检定有优势。"
+        }
+      ],
+      "actions": [
+        {
+          "name": "多重攻击",
+          "nameEn": "Multiattack",
+          "description": "恶棍进行两次近战攻击。"
+        },
+        {
+          "name": "硬头锤",
+          "nameEn": "Mace",
+          "description": "近战武器攻击：+4命中，触及5尺，单一目标。命中：5（1d6+2）钝击伤害。"
+        },
+        {
+          "name": "重弩",
+          "nameEn": "Heavy Crossbow",
+          "description": "远程武器攻击：+2命中，射程100/400尺，单一目标。命中：5（1d10）穿刺伤害。"
+        }
+      ],
+      "description": "恶棍是犯罪组织的打手，用暴力解决问题。",
+      "defaultAvatarSmall": "/assets/npc-avatars/thug_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/thug_512.webp"
+    },
+    {
+      "id": "cult_fanatic",
+      "name": "狂热邪教徒",
+      "nameEn": "Cult Fanatic",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意非善良阵营",
+      "ac": 13,
+      "acNote": "皮甲",
+      "hp": 33,
+      "hpFormula": "6d8+6",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 11,
+        "dex": 14,
+        "con": 12,
+        "int": 10,
+        "wis": 13,
+        "cha": 14
+      },
+      "skills": [
+        "欺骗 +4",
+        "说服 +4",
+        "宗教 +2"
+      ],
+      "cr": "2",
+      "xp": 450,
+      "languages": [
+        "任意一种语言（通常是通用语）"
+      ],
+      "spellcasting": {
+        "ability": "感知",
+        "dc": 11,
+        "attackBonus": 3,
+        "slots": {
+          "cantrips": [
+            "光亮术",
+            "神圣火焰",
+            "神导术"
+          ],
+          "1st": {
+            "slots": 4,
+            "spells": [
+              "命令术",
+              "造成伤害",
+              "庇护术"
+            ]
+          },
+          "2nd": {
+            "slots": 3,
+            "spells": [
+              "定身人类",
+              "灵体武器"
+            ]
+          }
+        }
+      },
+      "specialAbilities": [
+        {
+          "name": "黑暗奉献",
+          "nameEn": "Dark Devotion",
+          "description": "狂热邪教徒对抗魅惑和恐惧效果的豁免检定有优势。"
+        }
+      ],
+      "actions": [
+        {
+          "name": "多重攻击",
+          "nameEn": "Multiattack",
+          "description": "狂热邪教徒进行两次近战攻击。"
+        },
+        {
+          "name": "匕首",
+          "nameEn": "Dagger",
+          "description": "近战或远程武器攻击：+4命中，触及5尺或射程20/60尺，单一目标。命中：4（1d4+2）穿刺伤害。"
+        }
+      ],
+      "description": "狂热邪教徒是邪教的领导者，用魔法和狂热推动邪恶事业。",
+      "defaultAvatarSmall": "/assets/npc-avatars/cult_fanatic_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/cult_fanatic_512.webp"
+    },
+    {
+      "id": "cultist",
+      "name": "邪教徒",
+      "nameEn": "Cultist",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意非善良阵营",
+      "ac": 12,
+      "acNote": "皮甲",
+      "hp": 9,
+      "hpFormula": "2d8",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 11,
+        "dex": 12,
+        "con": 10,
+        "int": 10,
+        "wis": 11,
+        "cha": 10
+      },
+      "skills": [
+        "欺骗 +2",
+        "宗教 +2"
+      ],
+      "cr": "1/8",
+      "xp": 25,
+      "languages": [
+        "任意一种语言（通常是通用语）"
+      ],
+      "specialAbilities": [
+        {
+          "name": "黑暗奉献",
+          "nameEn": "Dark Devotion",
+          "description": "邪教徒对抗魅惑和恐惧效果的豁免检定有优势。"
+        }
+      ],
+      "actions": [
+        {
+          "name": "弯刀",
+          "nameEn": "Scimitar",
+          "description": "近战武器攻击：+3命中，触及5尺，单一目标。命中：4（1d6+1）挥砍伤害。"
+        }
+      ],
+      "description": "邪教徒是邪教的普通成员，为黑暗力量服务。",
+      "defaultAvatarSmall": "/assets/npc-avatars/cultist_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/cultist_512.webp"
+    },
+    {
+      "id": "scout",
+      "name": "斥候",
+      "nameEn": "Scout",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意阵营",
+      "ac": 13,
+      "acNote": "皮甲",
+      "hp": 16,
+      "hpFormula": "3d8+3",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 11,
+        "dex": 14,
+        "con": 12,
+        "int": 11,
+        "wis": 13,
+        "cha": 11
+      },
+      "skills": [
+        "自然 +4",
+        "察觉 +5",
+        "隐匿 +6",
+        "生存 +5"
+      ],
+      "cr": "1/2",
+      "xp": 100,
+      "languages": [
+        "任意一种语言（通常是通用语）"
+      ],
+      "specialAbilities": [
+        {
+          "name": "敏锐听觉和视觉",
+          "nameEn": "Keen Hearing and Sight",
+          "description": "斥候依赖听觉或视觉的感知（察觉）检定有优势。"
+        }
+      ],
+      "actions": [
+        {
+          "name": "多重攻击",
+          "nameEn": "Multiattack",
+          "description": "斥候进行两次近战攻击或两次远程攻击。"
+        },
+        {
+          "name": "短剑",
+          "nameEn": "Shortsword",
+          "description": "近战武器攻击：+4命中，触及5尺，单一目标。命中：5（1d6+2）穿刺伤害。"
+        },
+        {
+          "name": "长弓",
+          "nameEn": "Longbow",
+          "description": "远程武器攻击：+4命中，射程150/600尺，单一目标。命中：6（1d8+2）穿刺伤害。"
+        }
+      ],
+      "description": "斥候是侦察和追踪专家，熟悉荒野生存。",
+      "defaultAvatarSmall": "/assets/npc-avatars/scout_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/scout_512.webp"
+    },
+    {
+      "id": "berserker",
+      "name": "狂战士",
+      "nameEn": "Berserker",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意混乱阵营",
+      "ac": 13,
+      "acNote": "兽皮甲",
+      "hp": 67,
+      "hpFormula": "9d8+27",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 16,
+        "dex": 12,
+        "con": 17,
+        "int": 9,
+        "wis": 11,
+        "cha": 9
+      },
+      "cr": "2",
+      "xp": 450,
+      "languages": [
+        "任意一种语言（通常是通用语）"
+      ],
+      "specialAbilities": [
+        {
+          "name": "鲁莽",
+          "nameEn": "Reckless",
+          "description": "在回合开始时，狂战士可以获得该回合所有近战武器攻击检定的优势，但针对它的攻击检定也获得优势直到下一回合开始。"
+        }
+      ],
+      "actions": [
+        {
+          "name": "巨斧",
+          "nameEn": "Greataxe",
+          "description": "近战武器攻击：+5命中，触及5尺，单一目标。命中：9（1d12+3）挥砍伤害。"
+        }
+      ],
+      "description": "狂战士是蛮族战士，在战斗中进入狂暴状态，不惧痛苦和死亡。",
+      "defaultAvatarSmall": "/assets/npc-avatars/berserker_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/berserker_512.webp"
+    },
+    {
+      "id": "tribal_warrior",
+      "name": "部落战士",
+      "nameEn": "Tribal Warrior",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意阵营",
+      "ac": 12,
+      "acNote": "兽皮甲",
+      "hp": 11,
+      "hpFormula": "2d8+2",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 13,
+        "dex": 11,
+        "con": 12,
+        "int": 8,
+        "wis": 11,
+        "cha": 8
+      },
+      "cr": "1/8",
+      "xp": 25,
+      "languages": [
+        "任意一种语言"
+      ],
+      "specialAbilities": [
+        {
+          "name": "群殴战术",
+          "nameEn": "Pack Tactics",
+          "description": "当部落战士的非失能盟友在目标5尺内时，部落战士对该目标的攻击检定有优势。"
+        }
+      ],
+      "actions": [
+        {
+          "name": "矛",
+          "nameEn": "Spear",
+          "description": "近战或远程武器攻击：+3命中，触及5尺或射程20/60尺，单一目标。命中：4（1d6+1）穿刺伤害，或双手持握时5（1d8+1）穿刺伤害。"
+        }
+      ],
+      "description": "部落战士是原始部落的成员，使用简单的武器保卫家园。",
+      "defaultAvatarSmall": "/assets/npc-avatars/tribal_warrior_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/tribal_warrior_512.webp"
+    },
+    {
+      "id": "druid",
+      "name": "德鲁伊",
+      "nameEn": "Druid",
+      "size": "中型",
+      "type": "人形生物",
+      "alignment": "任意阵营",
+      "ac": 11,
+      "acNote": "16带树肤术",
+      "hp": 27,
+      "hpFormula": "5d8+5",
+      "speed": {
+        "walk": 30
+      },
+      "abilityScores": {
+        "str": 10,
+        "dex": 12,
+        "con": 13,
+        "int": 12,
+        "wis": 15,
+        "cha": 11
+      },
+      "skills": [
+        "医药 +4",
+        "自然 +3",
+        "察觉 +4"
+      ],
+      "cr": "2",
+      "xp": 450,
+      "languages": [
+        "德鲁伊语加任意两种语言"
+      ],
+      "spellcasting": {
+        "ability": "感知",
+        "dc": 12,
+        "attackBonus": 4,
+        "slots": {
+          "cantrips": [
+            "德鲁伊伎俩",
+            "生产火焰",
+            "毒液喷溅"
+          ],
+          "1st": {
+            "slots": 4,
+            "spells": [
+              "纠缠术",
+              "荆棘丛生",
+              "雷鸣波",
+              "与动物交谈"
+            ]
+          },
+          "2nd": {
+            "slots": 3,
+            "spells": [
+              "动物信使",
+              "树肤术"
+            ]
+          }
+        }
+      },
+      "actions": [
+        {
+          "name": "四分之一杖",
+          "nameEn": "Quarterstaff",
+          "description": "近战武器攻击：+2命中（+4带西林术）触及5尺，单一目标。命中：3（1d6）钝击伤害，或4（1d8）钝击伤害如果双手持握，或6（1d8+2）钝击伤害带西林术。"
+        }
+      ],
+      "description": "德鲁伊是自然的守护者，使用自然魔法保护荒野和平衡。",
+      "defaultAvatarSmall": "/assets/npc-avatars/druid_128.webp",
+      "defaultAvatarLarge": "/assets/npc-avatars/druid_512.webp"
+    }
+  ]
+}

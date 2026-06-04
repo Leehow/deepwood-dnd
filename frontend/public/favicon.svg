@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- 缩放到中心区域，留出边距 -->
+  <g transform="translate(8, 4) scale(0.75)">
+    <!-- 巫师帽 - 尖顶弯曲 + 宽帽檐 -->
+    <path d="M32 2 Q38 8 36 14 L40 20 L24 20 L28 14 Q26 8 32 2" fill="#7c3aed"/>
+    <!-- 帽身 -->
+    <path d="M24 20 L18 24 L46 24 L40 20 Z" fill="#5b21b6"/>
+    <!-- 宽帽檐 -->
+    <ellipse cx="32" cy="24" rx="18" ry="5" fill="#4c1d95"/>
+    <!-- 帽子上的星星和月亮装饰 -->
+    <circle cx="34" cy="12" r="1.5" fill="#fcd34d"/>
+    <path d="M28 16 Q29 14 28 12 Q30 13 28 16" fill="#fcd34d"/>
+
+    <!-- 章鱼头部 -->
+    <ellipse cx="32" cy="34" rx="15" ry="12" fill="#f59e0b"/>
+
+    <!-- 眼睛 -->
+    <circle cx="26" cy="32" r="3" fill="#1a1a2e"/>
+    <circle cx="38" cy="32" r="3" fill="#1a1a2e"/>
+    <circle cx="27" cy="31" r="1" fill="white"/>
+    <circle cx="39" cy="31" r="1" fill="white"/>
+
+    <!-- 触手 - 简化的波浪线 -->
+    <path d="M17 44 Q13 50 17 56 Q20 59 18 62" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M23 45 Q19 52 23 57 Q26 60 24 63" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M29 46 Q27 53 30 58 Q32 61 30 64" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M35 46 Q37 53 34 58 Q32 61 34 64" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M41 45 Q45 52 41 57 Q38 60 40 63" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M47 44 Q51 50 47 56 Q44 59 46 62" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

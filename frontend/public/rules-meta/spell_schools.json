@@ -1,0 +1,13 @@
+{
+  "schools": [
+    { "id": "abjuration", "name": "防护", "nameEn": "Abjuration", "description": "防护法术阻挡、放逐、或保护" },
+    { "id": "conjuration", "name": "咒法", "nameEn": "Conjuration", "description": "咒法法术运输物件和生物" },
+    { "id": "divination", "name": "预言", "nameEn": "Divination", "description": "预言法术揭示信息" },
+    { "id": "enchantment", "name": "惑控", "nameEn": "Enchantment", "description": "惑控法术影响他人心智" },
+    { "id": "evocation", "name": "塑能", "nameEn": "Evocation", "description": "塑能法术操纵魔法能量产生效应" },
+    { "id": "illusion", "name": "幻术", "nameEn": "Illusion", "description": "幻术法术欺骗感官或心灵" },
+    { "id": "necromancy", "name": "死灵", "nameEn": "Necromancy", "description": "死灵法术操纵生命能量" },
+    { "id": "transmutation", "name": "变化", "nameEn": "Transmutation", "description": "变化法术改变物质或能量的属性" }
+  ]
+}
+

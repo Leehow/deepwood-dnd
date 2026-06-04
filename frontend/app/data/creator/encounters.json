@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "source": "D&D 5E 城主指南",
+    "chapter": "第3章 创建冒险",
+    "description": "遭遇设计相关的指南和难度计算"
+  },
+  "encounter_objectives": {
+    "description": "遭遇中角色的目标类型",
+    "items": [
+      {
+        "name": "和解",
+        "name_en": "Make Peace",
+        "description": "角色们必须说服两个对立的团体（或其领袖们）结束这场困扰双方的冲突。",
+        "complications": ["角色在某一方或双方中有敌人", "有人在煽动冲突"],
+        "type": "social"
+      },
+      {
+        "name": "保护NPC或物件",
+        "name_en": "Protect an NPC or Object",
+        "description": "角色们必须扮演保护者的角色来护卫被拘留的某人或某物。",
+        "complications": ["被保护的NPC可能陷入诅咒、疾病", "NPC年老或年幼无法战斗", "物件被诅咒或难以运输"],
+        "type": "combat"
+      },
+      {
+        "name": "回收一个物件",
+        "name_en": "Retrieve an Object",
+        "description": "冒险者们必须在遭遇区域里获取某个特殊物件的所有权，最好在战斗结束前完成。",
+        "complications": ["敌人也想要这个物件"],
+        "type": "exploration"
+      },
+      {
+        "name": "闯过一处关卡",
+        "name_en": "Run a Gauntlet",
+        "description": "冒险者们必须穿过一处危险区域。抵达出口的优先级高于杀死区域内的敌人。",
+        "complications": ["时间限制", "可能导致迷失的岔路", "陷阱、危害物和怪物"],
+        "type": "exploration"
+      },
+      {
+        "name": "潜入",
+        "name_en": "Sneak In",
+        "description": "冒险者们需要移动穿过遭遇区域而不在敌人面前暴露自己的存在。",
+        "complications": ["一旦被发现则要面临即将发生的难题"],
+        "type": "exploration"
+      },
+      {
+        "name": "中断一场仪式",
+        "name_en": "Stop a Ritual",
+        "description": "邪教领袖、恶毒邪术师和强大邪魔的阴谋通常都涉及一些必须被阻止的仪式。",
+        "complications": ["仪式接近完成时有时间限制", "仪式完成可能导致直接后果"],
+        "type": "combat"
+      },
+      {
+        "name": "打倒某个单一目标",
+        "name_en": "Take Out a Single Target",
+        "description": "反派被强大到足以杀死冒险者们的手下们簇拥着。角色们必须想办法攻击目标。",
+        "complications": ["手下可能是无辜的被控制者"],
+        "type": "combat"
+      }
+    ]
+  },
+  "difficulty_levels": {
+    "description": "遭遇难度等级",
+    "levels": [
+      {
+        "level": "简单",
+        "level_en": "Easy",
+        "description": "不会消耗角色们的资源或给他们带来严重的危险。他们可能会失去一点生命值，但胜利还是相当有保障的。"
+      },
+      {
+        "level": "中等",
+        "level_en": "Medium",
+        "description": "通常会让玩家们经历一两次惊心时刻，但是不会对角色们造成任何伤亡。只是其中若干人员可能会需要使用治疗资源。"
+      },
+      {
+        "level": "困难",
+        "level_en": "Hard",
+        "description": "可能会发展得很糟糕。较弱的角色可能会在战斗中被清除，甚至有较小的可能导致一个或多个角色因此死亡。"
+      },
+      {
+        "level": "致命",
+        "level_en": "Deadly",
+        "description": "可以造成足以致命的后果。需要优秀的策略和快速的思考才能确保生还，队伍失败时也必须承担相应的风险。"
+      }
+    ]
+  },
+  "xp_thresholds": {
+    "description": "角色等级对应的经验阈值",
+    "table": [
+      { "level": 1, "easy": 25, "medium": 50, "hard": 75, "deadly": 100 },
+      { "level": 2, "easy": 50, "medium": 100, "hard": 150, "deadly": 200 },
+      { "level": 3, "easy": 75, "medium": 150, "hard": 225, "deadly": 400 },
+      { "level": 4, "easy": 125, "medium": 250, "hard": 375, "deadly": 500 },
+      { "level": 5, "easy": 250, "medium": 500, "hard": 750, "deadly": 1100 },
+      { "level": 6, "easy": 300, "medium": 600, "hard": 900, "deadly": 1400 },
+      { "level": 7, "easy": 350, "medium": 750, "hard": 1100, "deadly": 1700 },
+      { "level": 8, "easy": 450, "medium": 900, "hard": 1400, "deadly": 2100 },
+      { "level": 9, "easy": 550, "medium": 1100, "hard": 1600, "deadly": 2400 },
+      { "level": 10, "easy": 600, "medium": 1200, "hard": 1900, "deadly": 2800 },
+      { "level": 11, "easy": 800, "medium": 1600, "hard": 2400, "deadly": 3600 },
+      { "level": 12, "easy": 1000, "medium": 2000, "hard": 3000, "deadly": 4500 },
+      { "level": 13, "easy": 1100, "medium": 2200, "hard": 3400, "deadly": 5100 },
+      { "level": 14, "easy": 1250, "medium": 2500, "hard": 3800, "deadly": 5700 },
+      { "level": 15, "easy": 1400, "medium": 2800, "hard": 4300, "deadly": 6400 },
+      { "level": 16, "easy": 1600, "medium": 3200, "hard": 4800, "deadly": 7200 },
+      { "level": 17, "easy": 2000, "medium": 3900, "hard": 5900, "deadly": 8800 },
+      { "level": 18, "easy": 2100, "medium": 4200, "hard": 6300, "deadly": 9500 },
+      { "level": 19, "easy": 2400, "medium": 4900, "hard": 7300, "deadly": 10900 },
+      { "level": 20, "easy": 2800, "medium": 5700, "hard": 8500, "deadly": 12700 }
+    ]
+  },
+  "encounter_multipliers": {
+    "description": "遭遇倍数 - 多个怪物时的XP调整",
+    "table": [
+      { "monster_count": "1", "multiplier": 1 },
+      { "monster_count": "2", "multiplier": 1.5 },
+      { "monster_count": "3-6", "multiplier": 2 },
+      { "monster_count": "7-10", "multiplier": 2.5 },
+      { "monster_count": "11-14", "multiplier": 3 },
+      { "monster_count": "15+", "multiplier": 4 }
+    ],
+    "party_size_adjustments": {
+      "small_party": "少于3人时使用下一个更高的倍数",
+      "large_party": "6人或更多时使用下一个更低的倍数（单一怪物用0.5倍）"
+    }
+  },
+  "adventuring_day_xp": {
+    "description": "当日冒险经验 - 角色每日可处理的遭遇总XP",
+    "table": [
+      { "level": 1, "daily_xp": 300 },
+      { "level": 2, "daily_xp": 600 },
+      { "level": 3, "daily_xp": 1200 },
+      { "level": 4, "daily_xp": 1700 },
+      { "level": 5, "daily_xp": 3500 },
+      { "level": 6, "daily_xp": 4000 },
+      { "level": 7, "daily_xp": 5000 },
+      { "level": 8, "daily_xp": 6000 },
+      { "level": 9, "daily_xp": 7500 },
+      { "level": 10, "daily_xp": 9000 },
+      { "level": 11, "daily_xp": 10500 },
+      { "level": 12, "daily_xp": 11500 },
+      { "level": 13, "daily_xp": 13500 },
+      { "level": 14, "daily_xp": 15000 },
+      { "level": 15, "daily_xp": 18000 },
+      { "level": 16, "daily_xp": 20000 },
+      { "level": 17, "daily_xp": 25000 },
+      { "level": 18, "daily_xp": 27000 },
+      { "level": 19, "daily_xp": 30000 },
+      { "level": 20, "daily_xp": 40000 }
+    ],
+    "notes": [
+      "大多数队伍可以在一日处理6-8次中等或困难难度的遭遇",
+      "队伍一般需要进行两次短休，在一天进程的三分之一和三分之二时"
+    ]
+  },
+  "encounter_outcomes": {
+    "description": "遭遇的三种可能结果",
+    "outcomes": [
+      {
+        "outcome": "成功",
+        "description": "角色完全达成目标",
+        "ai_prompt": "描述成功时玩家获得的奖励和后续影响"
+      },
+      {
+        "outcome": "部分成功",
+        "description": "角色部分达成目标，但付出代价",
+        "ai_prompt": "描述部分成功时的妥协和代价"
+      },
+      {
+        "outcome": "失败",
+        "description": "角色未能达成目标",
+        "ai_prompt": "描述失败的后果，但确保故事能继续"
+      }
+    ],
+    "note": "遭遇需要先考虑好所有三种可能，每种结果都会产生相应的后果，这样玩家们才能感觉到自己的成败至关重要。"
+  },
+  "encounter_design_tips": {
+    "description": "遭遇设计建议",
+    "tips": [
+      "清晰明了的目标可以降低玩家失去兴趣的风险",
+      "轻松和艰难的遭遇交替出现，鼓励角色调整策略",
+      "当玩家自己制造目标时，要允许他们尝试",
+      "加入一些让人分心的'红鲱鱼'和剧情转折",
+      "有时简单直接的遭遇就已经很有趣"
+    ]
+  },
+  "encounter_types": {
+    "description": "遭遇类型",
+    "types": [
+      {
+        "type": "战斗遭遇",
+        "type_en": "Combat Encounter",
+        "description": "需要通过战斗解决的遭遇",
+        "design_focus": ["怪物选择", "地形", "战术"]
+      },
+      {
+        "type": "社交遭遇",
+        "type_en": "Social Encounter",
+        "description": "需要通过谈判、说服或欺骗解决的遭遇",
+        "design_focus": ["NPC动机", "信息交换", "利益关系"]
+      },
+      {
+        "type": "探索遭遇",
+        "type_en": "Exploration Encounter",
+        "description": "需要解决谜题、寻找线索或穿越危险地形的遭遇",
+        "design_focus": ["环境描述", "隐藏信息", "技能挑战"]
+      },
+      {
+        "type": "陷阱遭遇",
+        "type_en": "Trap Encounter",
+        "description": "机关陷阱或环境危害",
+        "design_focus": ["触发条件", "效果", "破解方法"]
+      }
+    ]
+  }
+}

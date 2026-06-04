@@ -1,0 +1,425 @@
+{
+  "armor": {
+    "light": [
+      {
+        "id": "padded",
+        "name": "布甲",
+        "nameEn": "Padded",
+        "type": "light",
+        "ac": "11 + Dex调整值",
+        "acFormula": {"base": 11, "dexModifier": "full"},
+        "strengthRequired": null,
+        "stealthDisadvantage": true,
+        "weight": 8,
+        "cost": {"gp": 5},
+        "costCopper": 500
+      },
+      {
+        "id": "leather",
+        "name": "皮甲",
+        "nameEn": "Leather",
+        "type": "light",
+        "ac": "11 + Dex调整值",
+        "acFormula": {"base": 11, "dexModifier": "full"},
+        "strengthRequired": null,
+        "stealthDisadvantage": false,
+        "weight": 10,
+        "cost": {"gp": 10},
+        "costCopper": 1000
+      },
+      {
+        "id": "studded_leather",
+        "name": "镶钉皮甲",
+        "nameEn": "Studded Leather",
+        "type": "light",
+        "ac": "12 + Dex调整值",
+        "acFormula": {"base": 12, "dexModifier": "full"},
+        "strengthRequired": null,
+        "stealthDisadvantage": false,
+        "weight": 13,
+        "cost": {"gp": 45},
+        "costCopper": 4500
+      }
+    ],
+    "medium": [
+      {
+        "id": "hide",
+        "name": "兽皮甲",
+        "nameEn": "Hide",
+        "type": "medium",
+        "ac": "12 + Dex调整值(最大+2)",
+        "acFormula": {"base": 12, "dexModifier": "max2"},
+        "strengthRequired": null,
+        "stealthDisadvantage": false,
+        "weight": 12,
+        "cost": {"gp": 10},
+        "costCopper": 1000
+      },
+      {
+        "id": "chain_shirt",
+        "name": "链甲衫",
+        "nameEn": "Chain Shirt",
+        "type": "medium",
+        "ac": "13 + Dex调整值(最大+2)",
+        "acFormula": {"base": 13, "dexModifier": "max2"},
+        "strengthRequired": null,
+        "stealthDisadvantage": false,
+        "weight": 20,
+        "cost": {"gp": 50},
+        "costCopper": 5000
+      },
+      {
+        "id": "scale_mail",
+        "name": "鳞甲",
+        "nameEn": "Scale Mail",
+        "type": "medium",
+        "ac": "14 + Dex调整值(最大+2)",
+        "acFormula": {"base": 14, "dexModifier": "max2"},
+        "strengthRequired": null,
+        "stealthDisadvantage": true,
+        "weight": 45,
+        "cost": {"gp": 50},
+        "costCopper": 5000
+      },
+      {
+        "id": "breastplate",
+        "name": "胸甲",
+        "nameEn": "Breastplate",
+        "type": "medium",
+        "ac": "14 + Dex调整值(最大+2)",
+        "acFormula": {"base": 14, "dexModifier": "max2"},
+        "strengthRequired": null,
+        "stealthDisadvantage": false,
+        "weight": 20,
+        "cost": {"gp": 400},
+        "costCopper": 40000
+      },
+      {
+        "id": "half_plate",
+        "name": "半身板甲",
+        "nameEn": "Half Plate",
+        "type": "medium",
+        "ac": "15 + Dex调整值(最大+2)",
+        "acFormula": {"base": 15, "dexModifier": "max2"},
+        "strengthRequired": null,
+        "stealthDisadvantage": true,
+        "weight": 40,
+        "cost": {"gp": 750},
+        "costCopper": 75000
+      }
+    ],
+    "heavy": [
+      {
+        "id": "ring_mail",
+        "name": "环甲",
+        "nameEn": "Ring Mail",
+        "type": "heavy",
+        "ac": "14",
+        "acFormula": {"base": 14, "dexModifier": "none"},
+        "strengthRequired": null,
+        "stealthDisadvantage": true,
+        "weight": 40,
+        "cost": {"gp": 30},
+        "costCopper": 3000
+      },
+      {
+        "id": "chain_mail",
+        "name": "链甲",
+        "nameEn": "Chain Mail",
+        "type": "heavy",
+        "ac": "16",
+        "acFormula": {"base": 16, "dexModifier": "none"},
+        "strengthRequired": 13,
+        "stealthDisadvantage": true,
+        "weight": 55,
+        "cost": {"gp": 75},
+        "costCopper": 7500
+      },
+      {
+        "id": "splint",
+        "name": "板条甲",
+        "nameEn": "Splint",
+        "type": "heavy",
+        "ac": "17",
+        "acFormula": {"base": 17, "dexModifier": "none"},
+        "strengthRequired": 15,
+        "stealthDisadvantage": true,
+        "weight": 60,
+        "cost": {"gp": 200},
+        "costCopper": 20000
+      },
+      {
+        "id": "plate",
+        "name": "板甲",
+        "nameEn": "Plate",
+        "type": "heavy",
+        "ac": "18",
+        "acFormula": {"base": 18, "dexModifier": "none"},
+        "strengthRequired": 15,
+        "stealthDisadvantage": true,
+        "weight": 65,
+        "cost": {"gp": 1500},
+        "costCopper": 150000
+      }
+    ],
+    "shield": [
+      {
+        "id": "shield",
+        "name": "盾牌",
+        "nameEn": "Shield",
+        "type": "shield",
+        "acBonus": 2,
+        "strengthRequired": null,
+        "stealthDisadvantage": false,
+        "weight": 6,
+        "cost": {"gp": 10},
+        "costCopper": 1000
+      }
+    ]
+  },
+  "weapons": {
+    "simple": {
+      "melee": [
+        {"id": "club", "name": "短棒", "nameEn": "Club", "cost": {"sp": 1}, "costCopper": 10, "damage": "1d4", "damageType": "bludgeoning", "weight": 2, "properties": ["light"]},
+        {"id": "dagger", "name": "匕首", "nameEn": "Dagger", "cost": {"gp": 2}, "costCopper": 200, "damage": "1d4", "damageType": "piercing", "weight": 1, "properties": ["finesse", "light", "thrown"], "range": {"normal": 20, "long": 60}},
+        {"id": "greatclub", "name": "巨棒", "nameEn": "Greatclub", "cost": {"sp": 2}, "costCopper": 20, "damage": "1d8", "damageType": "bludgeoning", "weight": 10, "properties": ["two-handed"]},
+        {"id": "handaxe", "name": "手斧", "nameEn": "Handaxe", "cost": {"gp": 5}, "costCopper": 500, "damage": "1d6", "damageType": "slashing", "weight": 2, "properties": ["light", "thrown"], "range": {"normal": 20, "long": 60}},
+        {"id": "javelin", "name": "标枪", "nameEn": "Javelin", "cost": {"sp": 5}, "costCopper": 50, "damage": "1d6", "damageType": "piercing", "weight": 2, "properties": ["thrown"], "range": {"normal": 30, "long": 120}},
+        {"id": "light_hammer", "name": "轻锤", "nameEn": "Light Hammer", "cost": {"gp": 2}, "costCopper": 200, "damage": "1d4", "damageType": "bludgeoning", "weight": 2, "properties": ["light", "thrown"], "range": {"normal": 20, "long": 60}},
+        {"id": "mace", "name": "硬头锤", "nameEn": "Mace", "cost": {"gp": 5}, "costCopper": 500, "damage": "1d6", "damageType": "bludgeoning", "weight": 4, "properties": []},
+        {"id": "quarterstaff", "name": "长棍", "nameEn": "Quarterstaff", "cost": {"sp": 2}, "costCopper": 20, "damage": "1d6", "damageType": "bludgeoning", "weight": 4, "properties": ["versatile"], "versatileDamage": "1d8"},
+        {"id": "sickle", "name": "镰刀", "nameEn": "Sickle", "cost": {"gp": 1}, "costCopper": 100, "damage": "1d4", "damageType": "slashing", "weight": 2, "properties": ["light"]},
+        {"id": "spear", "name": "矛", "nameEn": "Spear", "cost": {"gp": 1}, "costCopper": 100, "damage": "1d6", "damageType": "piercing", "weight": 3, "properties": ["thrown", "versatile"], "range": {"normal": 20, "long": 60}, "versatileDamage": "1d8"}
+      ],
+      "ranged": [
+        {"id": "light_crossbow", "name": "轻弩", "nameEn": "Light Crossbow", "cost": {"gp": 25}, "costCopper": 2500, "damage": "1d8", "damageType": "piercing", "weight": 5, "properties": ["ammunition", "loading", "two-handed"], "range": {"normal": 80, "long": 320}},
+        {"id": "dart", "name": "飞镖", "nameEn": "Dart", "cost": {"cp": 5}, "costCopper": 5, "damage": "1d4", "damageType": "piercing", "weight": 0.25, "properties": ["finesse", "thrown"], "range": {"normal": 20, "long": 60}},
+        {"id": "shortbow", "name": "短弓", "nameEn": "Shortbow", "cost": {"gp": 25}, "costCopper": 2500, "damage": "1d6", "damageType": "piercing", "weight": 2, "properties": ["ammunition", "two-handed"], "range": {"normal": 80, "long": 320}},
+        {"id": "sling", "name": "投石索", "nameEn": "Sling", "cost": {"sp": 1}, "costCopper": 10, "damage": "1d4", "damageType": "bludgeoning", "weight": 0, "properties": ["ammunition"], "range": {"normal": 30, "long": 120}}
+      ]
+    },
+    "martial": {
+      "melee": [
+        {"id": "battleaxe", "name": "战斧", "nameEn": "Battleaxe", "cost": {"gp": 10}, "costCopper": 1000, "damage": "1d8", "damageType": "slashing", "weight": 4, "properties": ["versatile"], "versatileDamage": "1d10"},
+        {"id": "flail", "name": "链枷", "nameEn": "Flail", "cost": {"gp": 10}, "costCopper": 1000, "damage": "1d8", "damageType": "bludgeoning", "weight": 2, "properties": []},
+        {"id": "glaive", "name": "长柄刀", "nameEn": "Glaive", "cost": {"gp": 20}, "costCopper": 2000, "damage": "1d10", "damageType": "slashing", "weight": 6, "properties": ["heavy", "reach", "two-handed"]},
+        {"id": "greataxe", "name": "巨斧", "nameEn": "Greataxe", "cost": {"gp": 30}, "costCopper": 3000, "damage": "1d12", "damageType": "slashing", "weight": 7, "properties": ["heavy", "two-handed"]},
+        {"id": "greatsword", "name": "巨剑", "nameEn": "Greatsword", "cost": {"gp": 50}, "costCopper": 5000, "damage": "2d6", "damageType": "slashing", "weight": 6, "properties": ["heavy", "two-handed"]},
+        {"id": "halberd", "name": "戟", "nameEn": "Halberd", "cost": {"gp": 20}, "costCopper": 2000, "damage": "1d10", "damageType": "slashing", "weight": 6, "properties": ["heavy", "reach", "two-handed"]},
+        {"id": "lance", "name": "骑枪", "nameEn": "Lance", "cost": {"gp": 10}, "costCopper": 1000, "damage": "1d12", "damageType": "piercing", "weight": 6, "properties": ["reach", "special"]},
+        {"id": "longsword", "name": "长剑", "nameEn": "Longsword", "cost": {"gp": 15}, "costCopper": 1500, "damage": "1d8", "damageType": "slashing", "weight": 3, "properties": ["versatile"], "versatileDamage": "1d10"},
+        {"id": "maul", "name": "巨锤", "nameEn": "Maul", "cost": {"gp": 10}, "costCopper": 1000, "damage": "2d6", "damageType": "bludgeoning", "weight": 10, "properties": ["heavy", "two-handed"]},
+        {"id": "morningstar", "name": "钉头锤", "nameEn": "Morningstar", "cost": {"gp": 15}, "costCopper": 1500, "damage": "1d8", "damageType": "piercing", "weight": 4, "properties": []},
+        {"id": "pike", "name": "长矛", "nameEn": "Pike", "cost": {"gp": 5}, "costCopper": 500, "damage": "1d10", "damageType": "piercing", "weight": 18, "properties": ["heavy", "reach", "two-handed"]},
+        {"id": "rapier", "name": "刺剑", "nameEn": "Rapier", "cost": {"gp": 25}, "costCopper": 2500, "damage": "1d8", "damageType": "piercing", "weight": 2, "properties": ["finesse"]},
+        {"id": "scimitar", "name": "弯刀", "nameEn": "Scimitar", "cost": {"gp": 25}, "costCopper": 2500, "damage": "1d6", "damageType": "slashing", "weight": 3, "properties": ["finesse", "light"]},
+        {"id": "shortsword", "name": "短剑", "nameEn": "Shortsword", "cost": {"gp": 10}, "costCopper": 1000, "damage": "1d6", "damageType": "piercing", "weight": 2, "properties": ["finesse", "light"]},
+        {"id": "trident", "name": "三叉戟", "nameEn": "Trident", "cost": {"gp": 5}, "costCopper": 500, "damage": "1d6", "damageType": "piercing", "weight": 4, "properties": ["thrown", "versatile"], "range": {"normal": 20, "long": 60}, "versatileDamage": "1d8"},
+        {"id": "war_pick", "name": "战镐", "nameEn": "War Pick", "cost": {"gp": 5}, "costCopper": 500, "damage": "1d8", "damageType": "piercing", "weight": 2, "properties": []},
+        {"id": "warhammer", "name": "战锤", "nameEn": "Warhammer", "cost": {"gp": 15}, "costCopper": 1500, "damage": "1d8", "damageType": "bludgeoning", "weight": 2, "properties": ["versatile"], "versatileDamage": "1d10"},
+        {"id": "whip", "name": "鞭", "nameEn": "Whip", "cost": {"gp": 2}, "costCopper": 200, "damage": "1d4", "damageType": "slashing", "weight": 3, "properties": ["finesse", "reach"]}
+      ],
+      "ranged": [
+        {"id": "blowgun", "name": "吹箭筒", "nameEn": "Blowgun", "cost": {"gp": 10}, "costCopper": 1000, "damage": "1", "damageType": "piercing", "weight": 1, "properties": ["ammunition", "loading"], "range": {"normal": 25, "long": 100}},
+        {"id": "hand_crossbow", "name": "手弩", "nameEn": "Hand Crossbow", "cost": {"gp": 75}, "costCopper": 7500, "damage": "1d6", "damageType": "piercing", "weight": 3, "properties": ["ammunition", "light", "loading"], "range": {"normal": 30, "long": 120}},
+        {"id": "heavy_crossbow", "name": "重弩", "nameEn": "Heavy Crossbow", "cost": {"gp": 50}, "costCopper": 5000, "damage": "1d10", "damageType": "piercing", "weight": 18, "properties": ["ammunition", "heavy", "loading", "two-handed"], "range": {"normal": 100, "long": 400}},
+        {"id": "longbow", "name": "长弓", "nameEn": "Longbow", "cost": {"gp": 50}, "costCopper": 5000, "damage": "1d8", "damageType": "piercing", "weight": 2, "properties": ["ammunition", "heavy", "two-handed"], "range": {"normal": 150, "long": 600}},
+        {"id": "net", "name": "捕网", "nameEn": "Net", "cost": {"gp": 1}, "costCopper": 100, "damage": null, "damageType": null, "weight": 3, "properties": ["special", "thrown"], "range": {"normal": 5, "long": 15}}
+      ]
+    },
+    "weaponProperties": {
+      "ammunition": {"name": "弹药", "nameEn": "Ammunition", "description": "使用该武器发动远程攻击时需要弹药"},
+      "finesse": {"name": "灵巧", "nameEn": "Finesse", "description": "攻击和伤害掷骰可以用敏捷或力量调整值"},
+      "heavy": {"name": "重型", "nameEn": "Heavy", "description": "小型生物使用该武器攻击检定具有劣势"},
+      "light": {"name": "轻型", "nameEn": "Light", "description": "适合双武器战斗"},
+      "loading": {"name": "填弹", "nameEn": "Loading", "description": "每次只能发射一次，无论攻击次数多少"},
+      "range": {"name": "射程", "nameEn": "Range", "description": "有正常射程和远程射程"},
+      "reach": {"name": "触及", "nameEn": "Reach", "description": "攻击时触及距离增加5尺"},
+      "special": {"name": "特殊", "nameEn": "Special", "description": "该武器有特殊规则"},
+      "thrown": {"name": "投掷", "nameEn": "Thrown", "description": "可以投掷进行远程攻击"},
+      "two-handed": {"name": "双手", "nameEn": "Two-Handed", "description": "使用该武器需要双手"},
+      "versatile": {"name": "双用", "nameEn": "Versatile", "description": "可以单手或双手使用，双手伤害更高"}
+    }
+  },
+  "adventuringGear": {
+    "ammunition": [
+      {"id": "arrows", "name": "箭(20支)", "nameEn": "Arrows (20)", "cost": {"gp": 1}, "costCopper": 100, "weight": 1},
+      {"id": "blowgun_needles", "name": "吹矢(50支)", "nameEn": "Blowgun Needles (50)", "cost": {"gp": 1}, "costCopper": 100, "weight": 1},
+      {"id": "crossbow_bolts", "name": "弩矢(20支)", "nameEn": "Crossbow Bolts (20)", "cost": {"gp": 1}, "costCopper": 100, "weight": 1.5},
+      {"id": "sling_bullets", "name": "投石索弹丸(20颗)", "nameEn": "Sling Bullets (20)", "cost": {"cp": 4}, "costCopper": 4, "weight": 1.5}
+    ],
+    "arcaneFocus": [
+      {"id": "crystal", "name": "水晶", "nameEn": "Crystal", "cost": {"gp": 10}, "costCopper": 1000, "weight": 1},
+      {"id": "orb", "name": "法球", "nameEn": "Orb", "cost": {"gp": 20}, "costCopper": 2000, "weight": 3},
+      {"id": "rod", "name": "权杖", "nameEn": "Rod", "cost": {"gp": 10}, "costCopper": 1000, "weight": 2},
+      {"id": "staff", "name": "法杖", "nameEn": "Staff", "cost": {"gp": 5}, "costCopper": 500, "weight": 4},
+      {"id": "wand", "name": "魔杖", "nameEn": "Wand", "cost": {"gp": 10}, "costCopper": 1000, "weight": 1}
+    ],
+    "druidicFocus": [
+      {"id": "mistletoe_sprig", "name": "槲寄生枝条", "nameEn": "Sprig of Mistletoe", "cost": {"gp": 1}, "costCopper": 100, "weight": 0},
+      {"id": "totem", "name": "图腾", "nameEn": "Totem", "cost": {"gp": 1}, "costCopper": 100, "weight": 0},
+      {"id": "wooden_staff", "name": "木质法杖", "nameEn": "Wooden Staff", "cost": {"gp": 5}, "costCopper": 500, "weight": 4},
+      {"id": "yew_wand", "name": "紫衫魔杖", "nameEn": "Yew Wand", "cost": {"gp": 10}, "costCopper": 1000, "weight": 1}
+    ],
+    "holySymbol": [
+      {"id": "amulet", "name": "护符", "nameEn": "Amulet", "cost": {"gp": 5}, "costCopper": 500, "weight": 1},
+      {"id": "emblem", "name": "徽章", "nameEn": "Emblem", "cost": {"gp": 5}, "costCopper": 500, "weight": 0},
+      {"id": "reliquary", "name": "圣物匣", "nameEn": "Reliquary", "cost": {"gp": 5}, "costCopper": 500, "weight": 2}
+    ],
+    "potionsAndPoisons": [
+      {"id": "acid_vial", "name": "强酸(小瓶)", "nameEn": "Acid (vial)", "cost": {"gp": 25}, "costCopper": 2500, "weight": 1, "effect": "2d6强酸伤害", "consumable": {"type": "thrown", "action": "action", "consumed": true, "attack": "ranged", "range": {"normal": 20}, "damage": {"dice": "2d6", "type": "acid"}}},
+      {"id": "alchemists_fire", "name": "炽火胶(烧瓶)", "nameEn": "Alchemist's Fire (flask)", "cost": {"gp": 50}, "costCopper": 5000, "weight": 1, "effect": "1d4火焰伤害,持续燃烧", "consumable": {"type": "thrown", "action": "action", "consumed": true, "attack": "ranged", "range": {"normal": 20}, "damage": {"dice": "1d4", "type": "fire"}, "ongoing": {"dice": "1d4", "type": "fire", "save": {"ability": "dex", "dc": 10}}}},
+      {"id": "antitoxin", "name": "抗毒剂(小瓶)", "nameEn": "Antitoxin (vial)", "cost": {"gp": 50}, "costCopper": 5000, "weight": 0, "effect": "1小时内对毒素豁免具有优势", "consumable": {"type": "drink", "action": "action", "consumed": true, "buff": {"name": "抗毒", "duration": "1 hour", "effect": "对毒素豁免具有优势"}}},
+      {"id": "holy_water", "name": "圣水(烧瓶)", "nameEn": "Holy Water (flask)", "cost": {"gp": 25}, "costCopper": 2500, "weight": 1, "effect": "对不死生物和邪魔造成2d6光耀伤害", "consumable": {"type": "thrown", "action": "action", "consumed": true, "attack": "ranged", "range": {"normal": 5, "long": 20}, "damage": {"dice": "2d6", "type": "radiant", "target": ["fiend", "undead"]}}},
+      {"id": "potion_of_healing", "name": "治疗药水", "nameEn": "Potion of Healing", "cost": {"gp": 50}, "costCopper": 5000, "weight": 0.5, "effect": "恢复2d4+2生命值", "consumable": {"type": "drink", "action": "action", "consumed": true, "healing": {"dice": "2d4", "bonus": 2, "formula": "2d4+2"}}},
+      {"id": "basic_poison", "name": "基础毒药(小瓶)", "nameEn": "Basic Poison (vial)", "cost": {"gp": 100}, "costCopper": 10000, "weight": 0, "effect": "DC10体质豁免，失败受1d4毒素伤害", "consumable": {"type": "apply", "action": "action", "consumed": true, "applyTo": "weapon", "duration": "1 minute", "damage": {"dice": "1d4", "type": "poison", "save": {"ability": "con", "dc": 10}}}}
+    ],
+    "containers": [
+      {"id": "backpack", "name": "背包", "nameEn": "Backpack", "cost": {"gp": 2}, "costCopper": 200, "weight": 5, "capacity": "1立方尺/30磅"},
+      {"id": "barrel", "name": "粗腰桶", "nameEn": "Barrel", "cost": {"gp": 2}, "costCopper": 200, "weight": 70, "capacity": "40加仑液体/4立方尺固体"},
+      {"id": "basket", "name": "篮子", "nameEn": "Basket", "cost": {"sp": 4}, "costCopper": 40, "weight": 2, "capacity": "2立方尺/40磅"},
+      {"id": "bolt_case", "name": "弩矢匣", "nameEn": "Crossbow Bolt Case", "cost": {"gp": 1}, "costCopper": 100, "weight": 1, "capacity": "容纳20支弩矢"},
+      {"id": "bottle_glass", "name": "玻璃瓶", "nameEn": "Bottle, glass", "cost": {"gp": 2}, "costCopper": 200, "weight": 2, "capacity": "1.5品脱液体"},
+      {"id": "bucket", "name": "吊桶", "nameEn": "Bucket", "cost": {"cp": 5}, "costCopper": 5, "weight": 2, "capacity": "3加仑液体/1/2立方尺固体"},
+      {"id": "chest", "name": "箱子", "nameEn": "Chest", "cost": {"gp": 5}, "costCopper": 500, "weight": 25, "capacity": "12立方尺/300磅"},
+      {"id": "flask_tankard", "name": "扁瓶或大杯", "nameEn": "Flask or tankard", "cost": {"cp": 2}, "costCopper": 2, "weight": 1, "capacity": "1品脱液体"},
+      {"id": "jug_pitcher", "name": "壶或罐", "nameEn": "Jug or pitcher", "cost": {"cp": 2}, "costCopper": 2, "weight": 4, "capacity": "1加仑液体"},
+      {"id": "map_case", "name": "地图或卷轴匣", "nameEn": "Map or Scroll Case", "cost": {"gp": 1}, "costCopper": 100, "weight": 1, "capacity": "容纳10张卷起的纸张或5张卷起的羊皮纸"},
+      {"id": "pouch", "name": "小包", "nameEn": "Pouch", "cost": {"sp": 5}, "costCopper": 50, "weight": 1, "capacity": "1/5立方尺/6磅"},
+      {"id": "quiver", "name": "箭袋", "nameEn": "Quiver", "cost": {"gp": 1}, "costCopper": 100, "weight": 1, "capacity": "容纳20支箭"},
+      {"id": "sack", "name": "大袋子", "nameEn": "Sack", "cost": {"cp": 1}, "costCopper": 1, "weight": 0.5, "capacity": "1立方尺/30磅"},
+      {"id": "vial", "name": "小瓶", "nameEn": "Vial", "cost": {"gp": 1}, "costCopper": 100, "weight": 0, "capacity": "4盎司液体"},
+      {"id": "waterskin", "name": "水袋", "nameEn": "Waterskin", "cost": {"sp": 2}, "costCopper": 20, "weight": 5, "capacity": "4品脱液体"}
+    ],
+    "survival": [
+      {"id": "bedroll", "name": "铺盖", "nameEn": "Bedroll", "cost": {"gp": 1}, "costCopper": 100, "weight": 7},
+      {"id": "blanket", "name": "毯子", "nameEn": "Blanket", "cost": {"sp": 5}, "costCopper": 50, "weight": 3},
+      {"id": "climbers_kit", "name": "攀爬工具", "nameEn": "Climber's Kit", "cost": {"gp": 25}, "costCopper": 2500, "weight": 12},
+      {"id": "fishing_tackle", "name": "钓具", "nameEn": "Fishing Tackle", "cost": {"gp": 1}, "costCopper": 100, "weight": 4},
+      {"id": "healers_kit", "name": "医疗包", "nameEn": "Healer's Kit", "cost": {"gp": 5}, "costCopper": 500, "weight": 3, "uses": 10},
+      {"id": "hunting_trap", "name": "狩猎陷阱", "nameEn": "Hunting Trap", "cost": {"gp": 5}, "costCopper": 500, "weight": 25},
+      {"id": "mess_kit", "name": "餐具", "nameEn": "Mess Kit", "cost": {"sp": 2}, "costCopper": 20, "weight": 1},
+      {"id": "rations_1day", "name": "口粮(1天)", "nameEn": "Rations (1 day)", "cost": {"sp": 5}, "costCopper": 50, "weight": 2},
+      {"id": "rope_hempen_50ft", "name": "麻绳(50尺)", "nameEn": "Rope, hempen (50 feet)", "cost": {"gp": 1}, "costCopper": 100, "weight": 10},
+      {"id": "rope_silk_50ft", "name": "丝绳(50尺)", "nameEn": "Rope, silk (50 feet)", "cost": {"gp": 10}, "costCopper": 1000, "weight": 5},
+      {"id": "tent_two_person", "name": "双人帐篷", "nameEn": "Tent, two-person", "cost": {"gp": 2}, "costCopper": 200, "weight": 20},
+      {"id": "tinderbox", "name": "火绒盒", "nameEn": "Tinderbox", "cost": {"sp": 5}, "costCopper": 50, "weight": 1}
+    ],
+    "lightSources": [
+      {"id": "candle", "name": "蜡烛", "nameEn": "Candle", "cost": {"cp": 1}, "costCopper": 1, "weight": 0, "duration": "1小时", "radius": "5尺"},
+      {"id": "lamp", "name": "油灯", "nameEn": "Lamp", "cost": {"sp": 5}, "costCopper": 50, "weight": 1, "duration": "6小时/品脱", "radius": "15尺明亮+30尺微光"},
+      {"id": "lantern_bullseye", "name": "牛眼提灯", "nameEn": "Lantern, bullseye", "cost": {"gp": 10}, "costCopper": 1000, "weight": 2, "duration": "6小时/品脱", "radius": "60尺锥形明亮+60尺微光"},
+      {"id": "lantern_hooded", "name": "附盖提灯", "nameEn": "Lantern, hooded", "cost": {"gp": 5}, "costCopper": 500, "weight": 2, "duration": "6小时/品脱", "radius": "30尺明亮+30尺微光"},
+      {"id": "oil_flask", "name": "油(烧瓶)", "nameEn": "Oil (flask)", "cost": {"sp": 1}, "costCopper": 10, "weight": 1, "asLanternFuel": "6小时"},
+      {"id": "torch", "name": "火把", "nameEn": "Torch", "cost": {"cp": 1}, "costCopper": 1, "weight": 1, "duration": "1小时", "radius": "20尺明亮+20尺微光"}
+    ],
+    "tools": [
+      {"id": "crowbar", "name": "撬棍", "nameEn": "Crowbar", "cost": {"gp": 2}, "costCopper": 200, "weight": 5},
+      {"id": "grappling_hook", "name": "爪钩", "nameEn": "Grappling Hook", "cost": {"gp": 2}, "costCopper": 200, "weight": 4},
+      {"id": "hammer", "name": "锤子", "nameEn": "Hammer", "cost": {"gp": 1}, "costCopper": 100, "weight": 3},
+      {"id": "hammer_sledge", "name": "大锤", "nameEn": "Hammer, sledge", "cost": {"gp": 2}, "costCopper": 200, "weight": 10},
+      {"id": "ladder_10ft", "name": "爬梯(10尺)", "nameEn": "Ladder (10-foot)", "cost": {"sp": 1}, "costCopper": 10, "weight": 25},
+      {"id": "lock", "name": "锁", "nameEn": "Lock", "cost": {"gp": 10}, "costCopper": 1000, "weight": 1},
+      {"id": "manacles", "name": "镣铐", "nameEn": "Manacles", "cost": {"gp": 2}, "costCopper": 200, "weight": 6},
+      {"id": "pick_miners", "name": "矿工镐", "nameEn": "Pick, miner's", "cost": {"gp": 2}, "costCopper": 200, "weight": 10},
+      {"id": "piton", "name": "岩钉", "nameEn": "Piton", "cost": {"cp": 5}, "costCopper": 5, "weight": 0.25},
+      {"id": "pole_10ft", "name": "长杆(10尺)", "nameEn": "Pole (10-foot)", "cost": {"cp": 5}, "costCopper": 5, "weight": 7},
+      {"id": "ram_portable", "name": "便携式攻城锤", "nameEn": "Ram, portable", "cost": {"gp": 4}, "costCopper": 400, "weight": 35},
+      {"id": "shovel", "name": "铲子", "nameEn": "Shovel", "cost": {"gp": 2}, "costCopper": 200, "weight": 5},
+      {"id": "spyglass", "name": "望远镜", "nameEn": "Spyglass", "cost": {"gp": 1000}, "costCopper": 100000, "weight": 1},
+      {"id": "whetstone", "name": "磨刀石", "nameEn": "Whetstone", "cost": {"cp": 1}, "costCopper": 1, "weight": 1}
+    ],
+    "miscellaneous": [
+      {"id": "abacus", "name": "算盘", "nameEn": "Abacus", "cost": {"gp": 2}, "costCopper": 200, "weight": 2},
+      {"id": "ball_bearings", "name": "滚珠(1000颗)", "nameEn": "Ball bearings (bag of 1,000)", "cost": {"gp": 1}, "costCopper": 100, "weight": 2},
+      {"id": "bell", "name": "铃铛", "nameEn": "Bell", "cost": {"gp": 1}, "costCopper": 100, "weight": 0},
+      {"id": "block_and_tackle", "name": "滑轮组", "nameEn": "Block and Tackle", "cost": {"gp": 5}, "costCopper": 500, "weight": 5},
+      {"id": "book", "name": "书本", "nameEn": "Book", "cost": {"gp": 25}, "costCopper": 2500, "weight": 5},
+      {"id": "caltrops", "name": "铁蒺藜(20个)", "nameEn": "Caltrops (bag of 20)", "cost": {"gp": 1}, "costCopper": 100, "weight": 2},
+      {"id": "chain_10ft", "name": "链条(10尺)", "nameEn": "Chain (10 feet)", "cost": {"gp": 5}, "costCopper": 500, "weight": 10},
+      {"id": "chalk", "name": "粉笔(1支)", "nameEn": "Chalk (1 piece)", "cost": {"cp": 1}, "costCopper": 1, "weight": 0},
+      {"id": "hourglass", "name": "沙漏", "nameEn": "Hourglass", "cost": {"gp": 25}, "costCopper": 2500, "weight": 1},
+      {"id": "ink", "name": "墨水(1盎司瓶)", "nameEn": "Ink (1 ounce bottle)", "cost": {"gp": 10}, "costCopper": 1000, "weight": 0},
+      {"id": "ink_pen", "name": "墨笔", "nameEn": "Ink pen", "cost": {"cp": 2}, "costCopper": 2, "weight": 0},
+      {"id": "iron_spikes", "name": "长铁钉(10支)", "nameEn": "Iron Spikes (10)", "cost": {"gp": 1}, "costCopper": 100, "weight": 5},
+      {"id": "magnifying_glass", "name": "放大镜", "nameEn": "Magnifying glass", "cost": {"gp": 100}, "costCopper": 10000, "weight": 0},
+      {"id": "mirror_steel", "name": "钢面镜", "nameEn": "Mirror, steel", "cost": {"gp": 5}, "costCopper": 500, "weight": 0.5},
+      {"id": "paper", "name": "纸", "nameEn": "Paper (one sheet)", "cost": {"sp": 2}, "costCopper": 20, "weight": 0},
+      {"id": "parchment", "name": "羊皮纸", "nameEn": "Parchment (one sheet)", "cost": {"sp": 1}, "costCopper": 10, "weight": 0},
+      {"id": "perfume", "name": "香水(小瓶)", "nameEn": "Perfume (vial)", "cost": {"gp": 5}, "costCopper": 500, "weight": 0},
+      {"id": "scale_merchant", "name": "商用天平", "nameEn": "Merchant's Scale", "cost": {"gp": 5}, "costCopper": 500, "weight": 3},
+      {"id": "sealing_wax", "name": "封蜡", "nameEn": "Sealing Wax", "cost": {"sp": 5}, "costCopper": 50, "weight": 0},
+      {"id": "signal_whistle", "name": "信号笛", "nameEn": "Signal Whistle", "cost": {"cp": 5}, "costCopper": 5, "weight": 0},
+      {"id": "signet_ring", "name": "玺戒", "nameEn": "Signet Ring", "cost": {"gp": 5}, "costCopper": 500, "weight": 0},
+      {"id": "soap", "name": "肥皂", "nameEn": "Soap", "cost": {"cp": 2}, "costCopper": 2, "weight": 0},
+      {"id": "spellbook", "name": "法术书", "nameEn": "Spellbook", "cost": {"gp": 50}, "costCopper": 5000, "weight": 3}
+    ],
+    "clothing": [
+      {"id": "clothes_common", "name": "普通服装", "nameEn": "Clothes, Common", "cost": {"sp": 5}, "costCopper": 50, "weight": 3},
+      {"id": "clothes_costume", "name": "表演服装", "nameEn": "Clothes, Costume", "cost": {"gp": 5}, "costCopper": 500, "weight": 4},
+      {"id": "clothes_fine", "name": "高档服装", "nameEn": "Clothes, Fine", "cost": {"gp": 15}, "costCopper": 1500, "weight": 6},
+      {"id": "clothes_travelers", "name": "旅行者服装", "nameEn": "Clothes, Traveler's", "cost": {"gp": 2}, "costCopper": 200, "weight": 4},
+      {"id": "robes", "name": "长袍", "nameEn": "Robes", "cost": {"gp": 1}, "costCopper": 100, "weight": 4}
+    ],
+    "spellcastingEquipment": [
+      {"id": "component_pouch", "name": "材料包", "nameEn": "Component Pouch", "cost": {"gp": 25}, "costCopper": 2500, "weight": 2, "description": "包含施法材料，适用于所有需要材料成分的法术"}
+    ]
+  },
+  "tools": {
+    "artisansTools": [
+      {"id": "alchemists_supplies", "name": "炼金工具", "nameEn": "Alchemist's Supplies", "cost": {"gp": 50}, "costCopper": 5000, "weight": 8},
+      {"id": "brewers_supplies", "name": "酿酒工具", "nameEn": "Brewer's Supplies", "cost": {"gp": 20}, "costCopper": 2000, "weight": 9},
+      {"id": "calligraphers_supplies", "name": "书法工具", "nameEn": "Calligrapher's Supplies", "cost": {"gp": 10}, "costCopper": 1000, "weight": 5},
+      {"id": "carpenters_tools", "name": "木匠工具", "nameEn": "Carpenter's Tools", "cost": {"gp": 8}, "costCopper": 800, "weight": 6},
+      {"id": "cartographers_tools", "name": "制图工具", "nameEn": "Cartographer's Tools", "cost": {"gp": 15}, "costCopper": 1500, "weight": 6},
+      {"id": "cobblers_tools", "name": "鞋匠工具", "nameEn": "Cobbler's Tools", "cost": {"gp": 5}, "costCopper": 500, "weight": 5},
+      {"id": "cooks_utensils", "name": "厨师工具", "nameEn": "Cook's Utensils", "cost": {"gp": 1}, "costCopper": 100, "weight": 8},
+      {"id": "glassblowers_tools", "name": "玻璃匠工具", "nameEn": "Glassblower's Tools", "cost": {"gp": 30}, "costCopper": 3000, "weight": 5},
+      {"id": "jewelers_tools", "name": "珠宝匠工具", "nameEn": "Jeweler's Tools", "cost": {"gp": 25}, "costCopper": 2500, "weight": 2},
+      {"id": "leatherworkers_tools", "name": "皮匠工具", "nameEn": "Leatherworker's Tools", "cost": {"gp": 5}, "costCopper": 500, "weight": 5},
+      {"id": "masons_tools", "name": "泥瓦匠工具", "nameEn": "Mason's Tools", "cost": {"gp": 10}, "costCopper": 1000, "weight": 8},
+      {"id": "painters_supplies", "name": "画家工具", "nameEn": "Painter's Supplies", "cost": {"gp": 10}, "costCopper": 1000, "weight": 5},
+      {"id": "potters_tools", "name": "陶匠工具", "nameEn": "Potter's Tools", "cost": {"gp": 10}, "costCopper": 1000, "weight": 3},
+      {"id": "smiths_tools", "name": "铁匠工具", "nameEn": "Smith's Tools", "cost": {"gp": 20}, "costCopper": 2000, "weight": 8},
+      {"id": "tinkers_tools", "name": "修理工具", "nameEn": "Tinker's Tools", "cost": {"gp": 50}, "costCopper": 5000, "weight": 10},
+      {"id": "weavers_tools", "name": "织布工具", "nameEn": "Weaver's Tools", "cost": {"gp": 1}, "costCopper": 100, "weight": 5},
+      {"id": "woodcarvers_tools", "name": "木雕工具", "nameEn": "Woodcarver's Tools", "cost": {"gp": 1}, "costCopper": 100, "weight": 5}
+    ],
+    "specializedTools": [
+      {"id": "disguise_kit", "name": "易容工具", "nameEn": "Disguise Kit", "cost": {"gp": 25}, "costCopper": 2500, "weight": 3},
+      {"id": "forgery_kit", "name": "文书伪造工具", "nameEn": "Forgery Kit", "cost": {"gp": 15}, "costCopper": 1500, "weight": 5},
+      {"id": "herbalism_kit", "name": "草药工具", "nameEn": "Herbalism Kit", "cost": {"gp": 5}, "costCopper": 500, "weight": 3},
+      {"id": "navigators_tools", "name": "领航工具", "nameEn": "Navigator's Tools", "cost": {"gp": 25}, "costCopper": 2500, "weight": 2},
+      {"id": "poisoners_kit", "name": "制毒工具", "nameEn": "Poisoner's Kit", "cost": {"gp": 50}, "costCopper": 5000, "weight": 2},
+      {"id": "thieves_tools", "name": "盗贼工具", "nameEn": "Thieves' Tools", "cost": {"gp": 25}, "costCopper": 2500, "weight": 1}
+    ],
+    "gamingSets": [
+      {"id": "dice_set", "name": "整副骰子", "nameEn": "Dice Set", "cost": {"sp": 1}, "costCopper": 10, "weight": 0},
+      {"id": "dragonchess_set", "name": "整套龙棋", "nameEn": "Dragonchess Set", "cost": {"sp": 5}, "costCopper": 50, "weight": 0.5},
+      {"id": "playing_card_set", "name": "整副纸牌", "nameEn": "Playing Card Set", "cost": {"sp": 5}, "costCopper": 50, "weight": 0},
+      {"id": "three_dragon_ante_set", "name": "整副三龙牌", "nameEn": "Three-Dragon Ante Set", "cost": {"gp": 5}, "costCopper": 500, "weight": 3}
+    ],
+    "musicalInstruments": [
+      {"id": "bagpipes", "name": "风笛", "nameEn": "Bagpipes", "cost": {"gp": 30}, "costCopper": 3000, "weight": 6},
+      {"id": "drum", "name": "鼓", "nameEn": "Drum", "cost": {"gp": 6}, "costCopper": 600, "weight": 3},
+      {"id": "dulcimer", "name": "扬琴", "nameEn": "Dulcimer", "cost": {"gp": 25}, "costCopper": 2500, "weight": 10},
+      {"id": "flute", "name": "长笛", "nameEn": "Flute", "cost": {"gp": 2}, "costCopper": 200, "weight": 1},
+      {"id": "lute", "name": "鲁特琴", "nameEn": "Lute", "cost": {"gp": 35}, "costCopper": 3500, "weight": 2},
+      {"id": "lyre", "name": "里拉琴", "nameEn": "Lyre", "cost": {"gp": 30}, "costCopper": 3000, "weight": 2},
+      {"id": "horn", "name": "角号", "nameEn": "Horn", "cost": {"gp": 3}, "costCopper": 300, "weight": 2},
+      {"id": "pan_flute", "name": "排箫", "nameEn": "Pan Flute", "cost": {"gp": 12}, "costCopper": 1200, "weight": 2},
+      {"id": "shawm", "name": "芦笛", "nameEn": "Shawm", "cost": {"gp": 2}, "costCopper": 200, "weight": 1},
+      {"id": "viol", "name": "提琴", "nameEn": "Viol", "cost": {"gp": 30}, "costCopper": 3000, "weight": 1}
+    ]
+  },
+  "currency": {
+    "description": "货币系统",
+    "standardExchangeRates": {
+      "cp": {"name": "铜币", "nameEn": "Copper Piece", "value": 1},
+      "sp": {"name": "银币", "nameEn": "Silver Piece", "value": 10},
+      "ep": {"name": "电币", "nameEn": "Electrum Piece", "value": 50},
+      "gp": {"name": "金币", "nameEn": "Gold Piece", "value": 100},
+      "pp": {"name": "白金币", "nameEn": "Platinum Piece", "value": 1000}
+    }
+  }
+}

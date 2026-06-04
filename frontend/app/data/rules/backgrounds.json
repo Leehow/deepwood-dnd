@@ -1,0 +1,482 @@
+{
+  "backgrounds": [
+    {
+      "id": "acolyte",
+      "name": "侍僧",
+      "nameEn": "Acolyte",
+      "description": "你投身于服务某个神祇或某个神系的神庙。作为神域与俗世的中间人，你负责主持神圣仪式与安排对神祇的奉献，并引导信众感受神能的显灵。",
+      "skillProficiencies": [
+        "insight",
+        "religion"
+      ],
+      "toolProficiencies": [],
+      "languages": 2,
+      "equipment": [
+        "holy_symbol",
+        "prayer_book",
+        "incense:5",
+        "vestments",
+        "clothes_common",
+        "pouch_with_15gp"
+      ],
+      "feature": {
+        "name": "信仰庇护",
+        "nameEn": "Shelter of the Faithful",
+        "description": "作为一名侍僧，你与同一信仰的同志互相尊重，并且可以随时主持相应神祇的神圣仪式。当你与冒险同伴遇到你所信仰神祇的神庙、圣坛或其他机构时，你们可能会得到免费的治疗和照料。那些与同一信仰的同志会支持你最基本的生活需求。"
+      },
+      "suggestedCharacteristics": {
+        "traits": [
+          "我崇拜某个英雄，并时刻以其事迹作为榜样。",
+          "我能在最狂乱的敌人间寻找共鸣，然后感化他们一同为和平而努力。",
+          "我在每个事件和行动中看到预兆。神试图对我们说话，我们只需要听即可。",
+          "没有什么能动摇我的乐观态度。",
+          "我任何情况下都喜欢引用（或错引）圣典和格言。",
+          "我能容忍（或无法容忍）其它信仰并且尊重（或谴责）对其他神祇的崇拜。",
+          "我喜爱美食、饮料以及同信仰神庙中的精英分子们的高层圈子。粗野的生活令我烦躁。",
+          "我在神庙中生活的太久了，以至于我在与外面世界的人们打交道时缺乏实际经验。"
+        ],
+        "ideals": [
+          "传统。古代崇拜与献祭的传统必须被保护并维持。（守序）",
+          "仁爱。我总是试图帮助那些需要帮助的人，无论个人的花费如何。（善良）",
+          "改变。我们必须协助引发神在世界中一直为之工作的改变。（混乱）",
+          "权力。我希望有一天能够升格到所信仰宗教中等级的最高点。（守序）",
+          "信仰。我相信我的神祇会指引我的行动。我相信如果我努力工作，一切都会好起来。（守序）",
+          "抱负。我寻求证明自己配得上我的神祇的青睐，以匹配我的行动与他们的教导。（任意）"
+        ],
+        "bonds": [
+          "我会为了找回一件在我神庙中丢失的古老圣物而死。",
+          "我总有一天会为那些摧毁我神庙的腐败神庙等级制度复仇。",
+          "我欠我的生命给那个在我父母死后收留我的祭司。",
+          "我所做的一切都是为了平民百姓。",
+          "我会为我所服务的神庙做任何事。",
+          "我寻求保护一个曾经与我共享信仰的神圣文本。"
+        ],
+        "flaws": [
+          "我对那些不信仰我的神的人过于苛刻。",
+          "我过于信任那些拥有我的神庙或我的宗教权力的人。",
+          "我是教条主义者，我的思维僵化。",
+          "我对神祇和他们的追随者过于怀疑。",
+          "我一旦有了目标就会变得痴迷，而忽略其他一切。",
+          "我不能抗拒一张漂亮的脸。"
+        ]
+      }
+    },
+    {
+      "id": "criminal",
+      "name": "罪犯",
+      "nameEn": "Criminal",
+      "description": "你是一位有违法前科的罪犯。且曾经在罪犯群中生活过一段不短的时间，而现在则仍然与罪犯的地下世界保持着联系。",
+      "skillProficiencies": [
+        "deception",
+        "stealth"
+      ],
+      "toolProficiencies": [
+        "gaming_set",
+        "thieves_tools"
+      ],
+      "languages": 0,
+      "equipment": [
+        "crowbar",
+        "dark_common_clothes_with_hood",
+        "pouch_with_15gp"
+      ],
+      "feature": {
+        "name": "罪犯接头人",
+        "nameEn": "Criminal Contact",
+        "description": "你有一个可靠可信的接头人，来帮你组织进罪犯们组成的联系网中。即使遥隔千里你也知道如何从接头人处收发信息。此外，你还知道哪些人能为你捎信，他们可能是本地的信使、可贿赂的商队主管，或是衣衫褴褛的水手。"
+      },
+      "specialties": [
+        "敲诈犯",
+        "盗窃犯",
+        "斗殴犯",
+        "销赃犯",
+        "路匪",
+        "职业杀手",
+        "扒窃犯",
+        "走私犯"
+      ]
+    },
+    {
+      "id": "folk_hero",
+      "name": "平民英雄",
+      "nameEn": "Folk Hero",
+      "description": "你来自社会阶级的底层，但是却命中注定要经历许多磨难。家乡的人们已经将你视为他们的斗士，而命运也正感召着你去对抗各地压迫平民百姓的暴君和怪物。",
+      "skillProficiencies": [
+        "animal_handling",
+        "survival"
+      ],
+      "toolProficiencies": [
+        "artisan_tools",
+        "vehicles_land"
+      ],
+      "languages": 0,
+      "equipment": [
+        "artisan_tools",
+        "shovel",
+        "iron_pot",
+        "clothes_common",
+        "pouch_with_10gp"
+      ],
+      "feature": {
+        "name": "淳朴好客",
+        "nameEn": "Rustic Hospitality",
+        "description": "由于你来自平民阶层，你很容易融入平民之中。你可以在平民中找到藏身之处，除非你表现出对他们的威胁。他们会保护你不受法律或任何搜寻你的人的伤害，尽管他们不会为你冒生命危险。"
+      },
+      "definingEvents": [
+        "我挺身对抗某个暴君的代理人。",
+        "我从某个商人或贵族那里偷了东西救济穷人。",
+        "我带领民兵击退了入侵者。",
+        "我闯入某个暴君的城堡并偷走了用来帮助穷人的武器。",
+        "我训练农民们以农具作武器抵抗某位暴君的士兵们。",
+        "某位领主废除了一项不公正的法律，在我发起象征性抗议后。",
+        "一只天界生物、精类生物或是类似的其他生物赐我予祝福，或是揭示了我的秘密血统。",
+        "我被某个贵族招募加入军队。",
+        "一个疯狂的巫师、邪恶的妖精或残暴的恶魔摧毁了我的村庄。"
+      ]
+    },
+    {
+      "id": "noble",
+      "name": "贵族",
+      "nameEn": "Noble",
+      "description": "你熟悉财富、权力和特权的味道。你带着贵族的头衔，所在家族掌握着领地而征收税款并深刻的影响着社会政治。",
+      "skillProficiencies": [
+        "history",
+        "persuasion"
+      ],
+      "toolProficiencies": [
+        "gaming_set"
+      ],
+      "languages": 1,
+      "equipment": [
+        "fine_clothes",
+        "signet_ring",
+        "scroll_of_pedigree",
+        "pouch_with_25gp"
+      ],
+      "feature": {
+        "name": "特权地位",
+        "nameEn": "Position of Privilege",
+        "description": "由于你的贵族血统，人们总是会予你优待。高等社会愿意接纳你，人们认同你有权去任何你想去的地方。平民们会尽力满足你的要求，避免你产生任何不快，而那些同样出身高贵的人则会视你为同一个社会圈子的人。"
+      }
+    },
+    {
+      "id": "sage",
+      "name": "学者",
+      "nameEn": "Sage",
+      "description": "你花费多年来研究多元宇宙的学识。你搜寻手稿，研习卷轴，并听取所有相关学科权威的授课。最终你的努力使你成为所研究领域的大师。",
+      "skillProficiencies": [
+        "arcana",
+        "history"
+      ],
+      "toolProficiencies": [],
+      "languages": 2,
+      "equipment": [
+        "bottle_of_ink",
+        "quill",
+        "small_knife",
+        "letter_from_dead_colleague",
+        "clothes_common",
+        "pouch_with_10gp"
+      ],
+      "feature": {
+        "name": "研究员",
+        "nameEn": "Researcher",
+        "description": "当你试图学习或回忆一条学识时，如果你不知道那条信息，你通常知道在哪里以及从谁那里可以获得它。通常，这些信息来自图书馆、经文室、大学，或是其他学者和博学之人。你的DM可能裁定你寻找的学识被隐藏在几乎无法到达的地方，或者它根本无法被找到。"
+      },
+      "specialties": [
+        "炼金师",
+        "占星师",
+        "失权威学者",
+        "图书馆员",
+        "教授",
+        "研究员",
+        "法师学徒",
+        "书记员"
+      ]
+    },
+    {
+      "id": "soldier",
+      "name": "士兵",
+      "nameEn": "Soldier",
+      "description": "你记忆中的生活就只有战争。由于自幼受训，你学习了各种武器与护甲的使用方式，掌握了各种求生技巧，因而也懂得如何在战场中存活。",
+      "skillProficiencies": [
+        "athletics",
+        "intimidation"
+      ],
+      "toolProficiencies": [
+        "gaming_set",
+        "vehicles_land"
+      ],
+      "languages": 0,
+      "equipment": [
+        "insignia_of_rank",
+        "trophy_from_fallen_enemy",
+        "gaming_set_or_playing_cards",
+        "clothes_common",
+        "pouch_with_10gp"
+      ],
+      "feature": {
+        "name": "军衔",
+        "nameEn": "Military Rank",
+        "description": "你作为士兵时曾获得过军衔。那些忠于你之前所在组织的士兵仍会承认你的权威与影响，而其中军衔比你低的人甚至依然会遵从你的命令。凭借军衔的影响，你可以向其他士兵临时征用简单的装备或马匹。并且还可以凭此随意通过那些承认你军衔的友方军队大营和堡垒。"
+      },
+      "specialties": [
+        "军官",
+        "侦察兵",
+        "步兵",
+        "骑兵",
+        "医疗师",
+        "军需官",
+        "旗手",
+        "后勤人员"
+      ]
+    },
+    {
+      "id": "charlatan",
+      "name": "江湖骗子",
+      "nameEn": "Charlatan",
+      "description": "你总是擅长找到人们想要的东西，并将其提供给他们，或者至少让他们相信你能提供。你是一个骗子，一个说谎者，一个欺诈者。",
+      "skillProficiencies": [
+        "deception",
+        "sleight_of_hand"
+      ],
+      "toolProficiencies": [
+        "disguise_kit",
+        "forgery_kit"
+      ],
+      "languages": 0,
+      "equipment": [
+        "fine_clothes",
+        "disguise_kit",
+        "tools_of_con",
+        "pouch_with_15gp"
+      ],
+      "feature": {
+        "name": "虚假身份",
+        "nameEn": "False Identity",
+        "description": "你已经创建了第二个身份，包括文件、既定的熟人和伪装，允许你假装成那个人。此外，你可以伪造文件，包括官方文件和私人信件，只要你见过类似文件的例子或你试图复制的人的笔迹。"
+      },
+      "scams": [
+        "我欺骗人们购买毫无价值的商品。",
+        "我伪造文件。",
+        "我赌博作弊。",
+        "我假装成不同的人。",
+        "我操纵赌博游戏。",
+        "我出售假药。"
+      ]
+    },
+    {
+      "id": "entertainer",
+      "name": "艺人",
+      "nameEn": "Entertainer",
+      "description": "你在观众面前的表演生涯下成长。逐渐学会如何取悦他人，如何令他们着迷，甚至学会了如何激励他们。",
+      "skillProficiencies": [
+        "acrobatics",
+        "performance"
+      ],
+      "toolProficiencies": [
+        "disguise_kit",
+        "musical_instrument"
+      ],
+      "languages": 0,
+      "equipment": [
+        "musical_instrument",
+        "admirer_favor",
+        "costume",
+        "pouch_with_15gp"
+      ],
+      "feature": {
+        "name": "群众欢迎",
+        "nameEn": "By Popular Demand",
+        "description": "你总是能找到表演场地，通常是酒馆或者客栈，偶尔也会是马戏团、剧院，甚至是贵族厅堂。只要你每晚维持出演，就可以在表演地获得简朴或舒适水平的免费食宿。此外，表演生涯使你在当地获得一定名气。"
+      },
+      "routines": [
+        "演员",
+        "舞者",
+        "吞火艺人",
+        "小丑",
+        "魔术师",
+        "乐师",
+        "诗人",
+        "歌手",
+        "说书人",
+        "杂技演员"
+      ]
+    },
+    {
+      "id": "guild_artisan",
+      "name": "公会工匠",
+      "nameEn": "Guild Artisan",
+      "description": "身为工匠公会的一员，你非常擅长某项手艺，且与其他工匠关系密切。你是商业社会的基石，因天份和财富而从封建的阶级体系中解脱。",
+      "skillProficiencies": [
+        "insight",
+        "persuasion"
+      ],
+      "toolProficiencies": [
+        "artisan_tools"
+      ],
+      "languages": 1,
+      "equipment": [
+        "artisan_tools",
+        "letter_of_introduction_from_guild",
+        "travelers_clothes",
+        "pouch_with_15gp"
+      ],
+      "feature": {
+        "name": "公会成员",
+        "nameEn": "Guild Membership",
+        "description": "作为公会一员，你熟谙用原材料制造成品所需的技术，并且熟悉商贸的规则，还拥有做买卖的丰富经验。你的公会成员资格为你提供食宿和葬礼费用。在某些城市，公会会馆提供了一个结识其他成功商人的中心场所，这可能是获得重要政治或社会联系的好方法。"
+      },
+      "guilds": [
+        "炼金师、药剂师",
+        "盔甲工匠、锁匠、镀金师",
+        "酿酒师、蒸馏师、葡萄酒商",
+        "抄写员、书记员、公证人",
+        "木匠、屋顶工、泥水匠",
+        "制图师、测量师、图表制作者",
+        "鞋匠、皮革工",
+        "厨师、面包师",
+        "宝石匠、珠宝商",
+        "玻璃工、玻璃吹制工",
+        "泥瓦匠、石匠",
+        "画家、书法家、抄写员",
+        "陶工、瓦工",
+        "船匠、帆工",
+        "铁匠、锻工",
+        "修理工、锁匠、工程师",
+        "车厢工匠、轮匠",
+        "织布师、染布师",
+        "木雕师、桶匠、弓匠"
+      ]
+    },
+    {
+      "id": "hermit",
+      "name": "隐士",
+      "nameEn": "Hermit",
+      "description": "你过着隐居生活——栖身于修道院这种与世无争之地，或是孤身一人独自生活。在远离尘世纷扰的生活中，你获得了内心的平静与安宁，或许也从中领悟了苦苦追寻的人生真谛。",
+      "skillProficiencies": [
+        "medicine",
+        "religion"
+      ],
+      "toolProficiencies": [
+        "herbalism_kit"
+      ],
+      "languages": 1,
+      "equipment": [
+        "scroll_case_with_notes",
+        "winter_blanket",
+        "clothes_common",
+        "herbalism_kit",
+        "pouch_with_5gp"
+      ],
+      "feature": {
+        "name": "发现",
+        "nameEn": "Discovery",
+        "description": "你在隐居期间发现的独特而强大的发现的性质取决于你和你的DM共同决定的内容。它可能是一个伟大的真理，一个隐藏的地点，一个被遗忘已久的事实，或者挖掘出一些可能改变世界的遗物。"
+      },
+      "seclusions": [
+        "我在寻找精神启蒙。",
+        "我在与自然合一。",
+        "我在寻求远离罪恶的生活。",
+        "我在隐居中进入了一个独特的精神状态。",
+        "我被流放，因为我犯了罪。",
+        "我从社会中退隐，以逃避我曾服务的人的愤怒。",
+        "我是一个朝圣者，寻求一个神圣的地方。",
+        "我被驱逐出我的土地，因为犯罪。"
+      ]
+    },
+    {
+      "id": "outlander",
+      "name": "化外之民",
+      "nameEn": "Outlander",
+      "description": "你在荒野之中成长，远离文明科技以及都市生活的舒适便利。你曾经目睹过林海般的兽群迁徙，在城里人无法想象的风暴中幸存，还感受过方圆百里内无人回应孑然一身的孤寂。",
+      "skillProficiencies": [
+        "athletics",
+        "survival"
+      ],
+      "toolProficiencies": [
+        "musical_instrument"
+      ],
+      "languages": 1,
+      "equipment": [
+        "staff",
+        "hunting_trap",
+        "trophy_from_animal",
+        "travelers_clothes",
+        "pouch_with_10gp"
+      ],
+      "feature": {
+        "name": "流浪者",
+        "nameEn": "Wanderer",
+        "description": "你有出色的记忆力，可以记住地图和地理位置。此外，你每天可以为自己和最多五个同伴找到食物和淡水，只要土地提供浆果、小型猎物、水等。"
+      },
+      "origins": [
+        "护林员",
+        "陷阱猎人",
+        "定居者",
+        "向导",
+        "流亡者或流浪者",
+        "赏金猎人",
+        "朝圣者",
+        "部落游牧民",
+        "猎人采集者",
+        "部落掠夺者"
+      ]
+    },
+    {
+      "id": "sailor",
+      "name": "水手",
+      "nameEn": "Sailor",
+      "description": "你在船上航行了多年。在那段时间里，你面对过风暴，怪物，以及那些想要把你送入深海坟墓的人。你的第一份爱是远方的地平线，但是时候已经到了，你需要尝试其他的东西。",
+      "skillProficiencies": [
+        "athletics",
+        "perception"
+      ],
+      "toolProficiencies": [
+        "navigators_tools",
+        "vehicles_water"
+      ],
+      "languages": 0,
+      "equipment": [
+        "belaying_pin",
+        "50_feet_silk_rope",
+        "lucky_charm",
+        "clothes_common",
+        "pouch_with_10gp"
+      ],
+      "feature": {
+        "name": "船家路子",
+        "nameEn": "Ship's Passage",
+        "description": "在必要时，你可以为团队谋得免费的顺风船进行旅行。你可能是搭上曾经效力过的船只，也可能是遇到与你交好的另一艘船。因为你是请求对方帮助，所以你不能让行程和日程全然满足自己的要求。"
+      }
+    },
+    {
+      "id": "urchin",
+      "name": "流浪儿",
+      "nameEn": "Urchin",
+      "description": "你自幼父母双亡，一贫如洗，并且独自混迹街头。没有人抚养照顾你，所以你必须学会如何自己谋生。你为食物不惜打得头破血流，而为防止与你一样的可怜家伙来偷，你还必须时刻环顾四周。",
+      "skillProficiencies": [
+        "sleight_of_hand",
+        "stealth"
+      ],
+      "toolProficiencies": [
+        "disguise_kit",
+        "thieves_tools"
+      ],
+      "languages": 0,
+      "equipment": [
+        "small_knife",
+        "map_of_city",
+        "pet_mouse",
+        "token_of_parents",
+        "clothes_common",
+        "pouch_with_10gp"
+      ],
+      "feature": {
+        "name": "城市秘密",
+        "nameEn": "City Secrets",
+        "description": "你知道城市的秘密通道和路径，这些通道允许你在其他人会发现困难的地方旅行。当你不在战斗中时，你（以及你带领的同伴）可以在城市中以正常速度的两倍旅行。"
+      }
+    }
+  ]
+}

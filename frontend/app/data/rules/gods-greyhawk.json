@@ -1,0 +1,319 @@
+{
+  "pantheons": [
+    {
+      "id": "greyhawk",
+      "name": "灰鹰诸神",
+      "nameEn": "Deities of Greyhawk",
+      "world": "灰鹰 (Greyhawk)",
+      "description": "灰鹰诸神来自至少四个不同的神系，代表着数世纪以来居住在奥瑞克大陆各民族的不同信仰",
+      "deities": [
+        {
+          "id": "beory",
+          "name": "贝欧瑞",
+          "nameEn": "Beory",
+          "title": "自然女神",
+          "titleEn": "goddess of nature",
+          "alignment": "N",
+          "domains": [
+            "自然"
+          ],
+          "symbol": "绿盘"
+        },
+        {
+          "id": "boccob",
+          "name": "博卡布",
+          "nameEn": "Boccob",
+          "title": "魔法之神",
+          "titleEn": "god of magic",
+          "alignment": "N",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "五芒星中的眼睛"
+        },
+        {
+          "id": "celestian",
+          "name": "塞莱斯坦",
+          "nameEn": "Celestian",
+          "title": "繁星和流浪之神",
+          "titleEn": "god of stars & wanderers",
+          "alignment": "N",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "圆弧内的七颗星星"
+        },
+        {
+          "id": "ehlonna",
+          "name": "艾罗娜",
+          "nameEn": "Ehlonna",
+          "title": "林地女神",
+          "titleEn": "goddess of woodlands",
+          "alignment": "NG",
+          "domains": [
+            "生命",
+            "自然"
+          ],
+          "symbol": "独角兽角"
+        },
+        {
+          "id": "erythnul",
+          "name": "厄瑞斯努",
+          "nameEn": "Erythnul",
+          "title": "嫉妒和屠杀之神",
+          "titleEn": "god of envy & slaughter",
+          "alignment": "CE",
+          "domains": [
+            "战争"
+          ],
+          "symbol": "血滴"
+        },
+        {
+          "id": "fharlanghn",
+          "name": "法兰恩",
+          "nameEn": "Fharlanghn",
+          "title": "视野和旅行之神",
+          "titleEn": "god of horizons & travel",
+          "alignment": "NG",
+          "domains": [
+            "知识",
+            "诡术"
+          ],
+          "symbol": "弯曲的地平线"
+        },
+        {
+          "id": "heironeous",
+          "name": "海若尼斯",
+          "nameEn": "Heironeous",
+          "title": "骑士和勇气之神",
+          "titleEn": "god of chivalry & valor",
+          "alignment": "LG",
+          "domains": [
+            "战争"
+          ],
+          "symbol": "闪电"
+        },
+        {
+          "id": "hextor",
+          "name": "海克斯托",
+          "nameEn": "Hextor",
+          "title": "战争与不和之神",
+          "titleEn": "god of war & discord",
+          "alignment": "LE",
+          "domains": [
+            "战争"
+          ],
+          "symbol": "六支向下的箭矢形成扇形"
+        },
+        {
+          "id": "kord",
+          "name": "寇德",
+          "nameEn": "Kord",
+          "title": "运动和体育之神",
+          "titleEn": "god of athletics & sport",
+          "alignment": "CG",
+          "domains": [
+            "风暴",
+            "战争"
+          ],
+          "symbol": "从中间散开的四支矛或四把硬头锤"
+        },
+        {
+          "id": "incabulos",
+          "name": "英凯布居罗斯",
+          "nameEn": "Incabulos",
+          "title": "瘟疫和饥荒之神",
+          "titleEn": "god of plague & famine",
+          "alignment": "NE",
+          "domains": [
+            "死亡"
+          ],
+          "symbol": "水平菱形的爬虫类眼睛"
+        },
+        {
+          "id": "istus",
+          "name": "伊斯图丝",
+          "nameEn": "Istus",
+          "title": "命运女神",
+          "titleEn": "goddess of fate & destiny",
+          "alignment": "N",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "三股织机轴"
+        },
+        {
+          "id": "iuz",
+          "name": "鲁兹",
+          "nameEn": "Iuz",
+          "title": "痛苦和压迫之神",
+          "titleEn": "god of pain & oppression",
+          "alignment": "CE",
+          "domains": [
+            "死亡"
+          ],
+          "symbol": "嬉笑的人类颅骨"
+        },
+        {
+          "id": "nerull",
+          "name": "奈落",
+          "nameEn": "Nerull",
+          "title": "死亡之神",
+          "titleEn": "god of death",
+          "alignment": "NE",
+          "domains": [
+            "死亡"
+          ],
+          "symbol": "拿着镰刀或巨镰的骷髅"
+        },
+        {
+          "id": "obad_hai",
+          "name": "欧拜·亥",
+          "nameEn": "Obad-Hai",
+          "title": "自然之神",
+          "titleEn": "god of nature",
+          "alignment": "N",
+          "domains": [
+            "自然"
+          ],
+          "symbol": "橡树叶和橡子"
+        },
+        {
+          "id": "olidammara",
+          "name": "渥利达马拉",
+          "nameEn": "Olidammara",
+          "title": "狂欢之神",
+          "titleEn": "god of revelry",
+          "alignment": "CN",
+          "domains": [
+            "诡术"
+          ],
+          "symbol": "大笑的面具"
+        },
+        {
+          "id": "pelor",
+          "name": "培罗",
+          "nameEn": "Pelor",
+          "title": "太阳和医疗之神",
+          "titleEn": "god of the sun & healing",
+          "alignment": "NG",
+          "domains": [
+            "生命",
+            "光明"
+          ],
+          "symbol": "太阳"
+        },
+        {
+          "id": "pholtus",
+          "name": "佛尔图斯",
+          "nameEn": "Pholtus",
+          "title": "光明和律法之神",
+          "titleEn": "god of light & law",
+          "alignment": "LG",
+          "domains": [
+            "光明"
+          ],
+          "symbol": "银色太阳或者一个偏食一点的满月"
+        },
+        {
+          "id": "ralishaz",
+          "name": "罗尔刹",
+          "nameEn": "Ralishaz",
+          "title": "厄运和疯狂之神",
+          "titleEn": "god of ill luck & insanity",
+          "alignment": "CN",
+          "domains": [
+            "诡术"
+          ],
+          "symbol": "三叉骨"
+        },
+        {
+          "id": "rao",
+          "name": "拉奥",
+          "nameEn": "Rao",
+          "title": "和平和理智之神",
+          "titleEn": "god of peace & reason",
+          "alignment": "LG",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "白心"
+        },
+        {
+          "id": "st_cuthbert",
+          "name": "圣库斯伯特",
+          "nameEn": "St. Cuthbert",
+          "title": "常识和热情之神",
+          "titleEn": "god of common sense & zeal",
+          "alignment": "LN",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "一个星爆的中心圆"
+        },
+        {
+          "id": "tharizdun",
+          "name": "萨瑞兹顿",
+          "nameEn": "Tharizdun",
+          "title": "永恒黑暗之神",
+          "titleEn": "god of eternal darkness",
+          "alignment": "CE",
+          "domains": [
+            "诡术"
+          ],
+          "symbol": "黑暗螺旋或倒金字塔"
+        },
+        {
+          "id": "trithereon",
+          "name": "泰德里昂",
+          "nameEn": "Trithereon",
+          "title": "自由和报应之神",
+          "titleEn": "god of liberty & retribution",
+          "alignment": "CG",
+          "domains": [
+            "战争"
+          ],
+          "symbol": "三曲枝图"
+        },
+        {
+          "id": "ulaa",
+          "name": "欧拉",
+          "nameEn": "Ulaa",
+          "title": "山丘女神",
+          "titleEn": "goddess of hills & mountains",
+          "alignment": "LG",
+          "domains": [
+            "生命",
+            "战争"
+          ],
+          "symbol": "圆心有座山"
+        },
+        {
+          "id": "vecna",
+          "name": "维克那",
+          "nameEn": "Vecna",
+          "title": "邪恶秘密之神",
+          "titleEn": "god of evil secrets",
+          "alignment": "NE",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "手掌上的眼睛"
+        },
+        {
+          "id": "wee_jas",
+          "name": "维婕丝",
+          "nameEn": "Wee Jas",
+          "title": "魔法和死亡女神",
+          "titleEn": "goddess of magic & death",
+          "alignment": "LN",
+          "domains": [
+            "死亡",
+            "知识"
+          ],
+          "symbol": "火球前的红色骷髅"
+        }
+      ]
+    }
+  ]
+}

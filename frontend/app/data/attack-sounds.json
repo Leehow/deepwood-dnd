@@ -1,0 +1,82 @@
+{
+  "categories": {
+    "slashing": {
+      "name": "劈砍",
+      "sounds": ["slash_swing.mp3", "slash_hit.mp3"],
+      "keywords": ["劈砍", "斩", "剑", "刀", "斧", "镰", "sword", "axe", "scimitar", "longsword", "greatsword", "glaive", "halberd", "sickle"]
+    },
+    "piercing": {
+      "name": "穿刺",
+      "sounds": ["pierce_swing.mp3", "pierce_hit.mp3"],
+      "keywords": ["穿刺", "刺", "矛", "枪", "匕首", "弓", "弩", "箭", "spear", "rapier", "dagger", "arrow", "crossbow", "pike", "javelin", "shortbow", "longbow"]
+    },
+    "bludgeoning": {
+      "name": "钝击",
+      "sounds": ["blunt_swing.mp3", "blunt_hit.mp3"],
+      "keywords": ["钝击", "锤", "棍", "棒", "拳", "mace", "hammer", "club", "staff", "flail", "maul", "warhammer", "quarterstaff", "unarmed", "fist"]
+    },
+    "bite": {
+      "name": "啃咬",
+      "sounds": ["bite_attack.mp3", "bite_hit.mp3"],
+      "keywords": ["啃咬", "咬", "bite", "jaws", "fangs", "teeth"]
+    },
+    "claw": {
+      "name": "抓击",
+      "sounds": ["claw_attack.mp3", "claw_hit.mp3"],
+      "keywords": ["抓击", "爪", "claw", "claws", "talons", "scratch"]
+    },
+    "tail": {
+      "name": "尾击",
+      "sounds": ["tail_swing.mp3", "tail_hit.mp3"],
+      "keywords": ["尾击", "尾巴", "tail", "tail attack"]
+    },
+    "slam": {
+      "name": "猛击",
+      "sounds": ["slam_attack.mp3", "slam_hit.mp3"],
+      "keywords": ["猛击", "撞击", "slam", "pound", "smash", "crush"]
+    },
+    "sting": {
+      "name": "蛰刺",
+      "sounds": ["sting_attack.mp3", "sting_hit.mp3"],
+      "keywords": ["蛰刺", "刺", "毒刺", "sting", "stinger", "poison sting"]
+    },
+    "tentacle": {
+      "name": "触手",
+      "sounds": ["tentacle_attack.mp3", "tentacle_hit.mp3"],
+      "keywords": ["触手", "tentacle", "tendril", "appendage"]
+    },
+    "ranged": {
+      "name": "远程",
+      "sounds": ["arrow_loose.mp3", "arrow_hit.mp3"],
+      "keywords": ["远程", "投掷", "throw", "hurl", "rock", "boulder"]
+    },
+    "breath": {
+      "name": "吐息",
+      "sounds": ["breath_weapon.mp3", "breath_weapon.mp3"],
+      "keywords": ["吐息", "龙息", "breath weapon", "breath", "dragon breath", "火焰吐息", "寒冷吐息", "闪电吐息", "酸液吐息", "毒素吐息"]
+    }
+  },
+  "events": {
+    "swing": {
+      "description": "攻击挥动时播放",
+      "volume": 0.5
+    },
+    "hit": {
+      "description": "攻击命中时播放",
+      "volume": 0.7
+    },
+    "miss": {
+      "description": "攻击未命中时播放",
+      "volume": 0.4
+    },
+    "critical": {
+      "description": "暴击时播放",
+      "volume": 0.8
+    }
+  },
+  "settings": {
+    "enabled": true,
+    "masterVolume": 0.7,
+    "basePath": "/sounds/attacks/"
+  }
+}

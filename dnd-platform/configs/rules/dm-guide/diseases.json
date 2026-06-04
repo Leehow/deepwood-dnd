@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "source": "DMG Chapter 8",
+    "description": "D&D 5E 疾病规则与范例"
+  },
+  "cures": {
+    "lesserRestoration": {
+      "name": "次级复原术",
+      "nameEn": "Lesser Restoration",
+      "effect": "消除一种普通疾病"
+    },
+    "heal": {
+      "name": "医疗术",
+      "nameEn": "Heal",
+      "effect": "治愈疾病导致的失明等效应"
+    }
+  },
+  "diseases": [
+    {
+      "id": "cackle_fever",
+      "name": "失心疯",
+      "nameEn": "Cackle Fever",
+      "alias": "尖笑症 the shrieks",
+      "transmissionMethod": "类人生物间传播",
+      "immuneCreatures": ["侏儒"],
+      "incubationPeriod": "1d4小时",
+      "symptoms": ["发热", "方向感混乱"],
+      "initialEffect": {
+        "exhaustionLevel": 1,
+        "note": "只有在失心疯被治愈后此该力竭状态才能被移除"
+      },
+      "triggerConditions": ["参与战斗", "受到伤害", "陷入恐慌", "做噩梦"],
+      "triggerEffect": {
+        "saveDC": 13,
+        "saveType": "constitution",
+        "damage": "1d10",
+        "damageType": "psychic",
+        "condition": "失能1分钟（狂笑）",
+        "repeatSave": "每回合结束时再次尝试豁免"
+      },
+      "spreadMechanic": {
+        "range": "10尺",
+        "saveDC": 10,
+        "saveType": "constitution",
+        "immunityDuration": "豁免成功后24小时内免疫同一患病生物传染"
+      },
+      "recovery": {
+        "timing": "每次长休结束时",
+        "saveDC": 13,
+        "saveType": "constitution",
+        "onSuccess": "豁免DC和避免狂笑的DC均降低1d6",
+        "cureCondition": "当豁免DC降至0时痊愈",
+        "failureConsequence": "豁免失败三次将随机获得一种永久性疯狂"
+      },
+      "description": "这种疾病在类人生物间传播，但侏儒却神奇的对之免疫。由于患上这种病的生物常常会不由自主的狂笑，也有人昵它为"尖笑症"。"
+    },
+    {
+      "id": "sewer_plague",
+      "name": "下水道瘟疫",
+      "nameEn": "Sewer Plague",
+      "transmissionMethod": "接触污染物或被携带者咬伤",
+      "carriers": ["老鼠", "食腐兽 otyughs"],
+      "locations": ["下水道", "垃圾堆", "沼泽"],
+      "targetCreatures": ["类人生物"],
+      "infectionSave": {
+        "saveDC": 11,
+        "saveType": "constitution"
+      },
+      "incubationPeriod": "1d4日",
+      "symptoms": ["乏力", "抽搐"],
+      "initialEffect": {
+        "exhaustionLevel": 1,
+        "healingPenalty": "无法通过长休恢复生命值",
+        "hitDicePenalty": "使用生命骰时只能恢复数值的一半"
+      },
+      "recovery": {
+        "timing": "每次长休结束时",
+        "saveDC": 11,
+        "saveType": "constitution",
+        "onSuccess": "力竭状态降低一级",
+        "onFailure": "力竭状态再提升一级",
+        "cureCondition": "力竭状态等级低于1时痊愈"
+      },
+      "description": "下水道瘟疫是许多在下水道、垃圾堆和沼泽中滋生的疾病统称。生活在上述区域的生物，例如老鼠和食腐兽，通常是这类疾病的传染源。"
+    },
+    {
+      "id": "sight_rot",
+      "name": "腐眼症",
+      "nameEn": "Sight Rot",
+      "transmissionMethod": "饮用被污染的水",
+      "targetCreatures": ["野兽", "类人生物"],
+      "infectionSave": {
+        "saveDC": 15,
+        "saveType": "constitution"
+      },
+      "incubationPeriod": "1天",
+      "symptoms": ["眼部出血不止"],
+      "progression": {
+        "initialPenalty": -1,
+        "penaltyType": "攻击检定和进行依赖视力的属性检定",
+        "worseningTiming": "每次长休结束时",
+        "worseningAmount": -1,
+        "blindnessThreshold": -5
+      },
+      "cures": [
+        {
+          "spell": "次级复原术",
+          "spellEn": "Lesser Restoration",
+          "effect": "治愈失明"
+        },
+        {
+          "spell": "医疗术",
+          "spellEn": "Heal",
+          "effect": "治愈失明"
+        },
+        {
+          "item": "明目花",
+          "itemEn": "Eyebright",
+          "location": "沼泽",
+          "rarity": "稀有",
+          "craftRequirement": "草药工具熟练项",
+          "craftTime": "1小时",
+          "usage": "长休前将药膏敷在眼部",
+          "effect": "阻止腐眼症恶化",
+          "cureCondition": "使用三剂药膏后腐眼症将被治愈"
+        }
+      ],
+      "description": "腐眼症是一种极度痛苦的传染病。感染的生物眼部将出血不止，并最终失明。"
+    }
+  ]
+}

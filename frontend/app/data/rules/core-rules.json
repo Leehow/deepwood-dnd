@@ -1,0 +1,795 @@
+{
+  "overview": {
+    "description": "核心规则是DND游戏的基础机制，定义了游戏世界中如何解决不确定性和挑战",
+    "descriptionEn": "Core rules are the fundamental mechanics of DND, defining how to resolve uncertainty and challenges in the game world",
+    "purpose": "提供游戏的基本框架和裁定原则",
+    "relatedRules": [
+      "d20系统",
+      "属性检定",
+      "优势与劣势",
+      "豁免检定",
+      "时间",
+      "移动",
+      "环境"
+    ],
+    "quickReference": "核心机制：掷d20 + 调整值 ≥ 目标难度DC = 成功"
+  },
+  "gameBasics": {
+    "description": "DND游戏的基础概念和通用规则",
+    "d20System": {
+      "description": "d20系统是DND的核心机制",
+      "formula": "d20 + 调整值 + 熟练加值(如果有) ≥ DC(难度等级)",
+      "usage": [
+        "属性检定 - 尝试完成任务",
+        "攻击检定 - 尝试命中敌人",
+        "豁免检定 - 抵抗有害效应"
+      ],
+      "criticalSuccess": "天然20(骰出20)在攻击检定中造成暴击",
+      "criticalFailure": "天然1(骰出1)在攻击检定中自动未命中"
+    },
+    "advantageDisadvantage": {
+      "description": "优势与劣势反映了环境或情况对d20检定的影响",
+      "advantage": {
+        "name": "优势",
+        "nameEn": "Advantage",
+        "rule": "掷两次d20取较高值",
+        "sources": [
+          "有利的环境",
+          "盟友的帮助",
+          "目标处于不利状态"
+        ]
+      },
+      "disadvantage": {
+        "name": "劣势",
+        "nameEn": "Disadvantage",
+        "rule": "掷两次d20取较低值",
+        "sources": [
+          "不利的环境",
+          "你处于不利状态",
+          "目标有特殊防护"
+        ]
+      },
+      "important": [
+        "优势和劣势永不叠加 - 无论有多少来源，只掷两次骰子",
+        "如果同时有优势和劣势，它们相互抵消，正常掷一次骰"
+      ]
+    },
+    "roundingRules": {
+      "description": "当需要除法时，总是向下取整",
+      "examples": [
+        "生命值减半时向下取整",
+        "伤害减半时向下取整",
+        "属性调整值计算时向下取整"
+      ]
+    },
+    "difficultyClass": {
+      "description": "难度等级(DC)代表任务的困难程度",
+      "table": [
+        {
+          "dc": 5,
+          "difficulty": "非常简单",
+          "difficultyEn": "Very Easy"
+        },
+        {
+          "dc": 10,
+          "difficulty": "简单",
+          "difficultyEn": "Easy"
+        },
+        {
+          "dc": 15,
+          "difficulty": "中等",
+          "difficultyEn": "Medium"
+        },
+        {
+          "dc": 20,
+          "difficulty": "困难",
+          "difficultyEn": "Hard"
+        },
+        {
+          "dc": 25,
+          "difficulty": "非常困难",
+          "difficultyEn": "Very Hard"
+        },
+        {
+          "dc": 30,
+          "difficulty": "近乎不可能",
+          "difficultyEn": "Nearly Impossible"
+        }
+      ]
+    },
+    "proficiency": {
+      "description": "熟练加值应用于角色擅长的检定",
+      "applies": [
+        "熟练的技能检定",
+        "熟练的豁免检定",
+        "熟练的武器攻击检定",
+        "使用熟练工具进行的检定",
+        "自己的法术攻击检定",
+        "自己法术的豁免DC"
+      ],
+      "bonus": "熟练加值由角色等级决定，从+2(1-4级)到+6(17-20级)"
+    },
+    "time": {
+      "description": "DND游戏时间分为不同的单位",
+      "combat": {
+        "round": "1轮 = 约6秒",
+        "turn": "回合是一个生物在一轮中的行动时间"
+      },
+      "exploration": {
+        "minute": "1分钟 = 10轮",
+        "hour": "1小时 = 60分钟",
+        "day": "1天 = 24小时"
+      },
+      "travel": {
+        "description": "旅行以小时或天计算",
+        "pace": "见移动和探索规则"
+      }
+    }
+  },
+  "coreRules": {
+    "dice": {
+      "types": [
+        {
+          "name": "d4",
+          "sides": 4,
+          "description": "四面骰"
+        },
+        {
+          "name": "d6",
+          "sides": 6,
+          "description": "六面骰"
+        },
+        {
+          "name": "d8",
+          "sides": 8,
+          "description": "八面骰"
+        },
+        {
+          "name": "d10",
+          "sides": 10,
+          "description": "十面骰"
+        },
+        {
+          "name": "d12",
+          "sides": 12,
+          "description": "十二面骰"
+        },
+        {
+          "name": "d20",
+          "sides": 20,
+          "description": "二十面骰"
+        },
+        {
+          "name": "d100",
+          "sides": 100,
+          "description": "百分骰，用两个d10生成1-100的数值"
+        }
+      ],
+      "notation": {
+        "description": "骰子表示法使用'd'加面数表示",
+        "examples": [
+          {
+            "notation": "1d6",
+            "meaning": "投一个六面骰"
+          },
+          {
+            "notation": "3d8+5",
+            "meaning": "投三个八面骰，求和后加5"
+          },
+          {
+            "notation": "2d10",
+            "meaning": "投两个十面骰"
+          }
+        ]
+      }
+    },
+    "d20System": {
+      "description": "游戏的核心机制，使用d20来决定成败",
+      "procedure": [
+        "掷一枚d20并加上相应的调整值",
+        "视情况加入加值和减值",
+        "将总值跟目标值相比较"
+      ],
+      "types": [
+        {
+          "name": "属性检定",
+          "nameEn": "Ability Checks",
+          "targetValue": "难度等级(DC)",
+          "description": "测试角色或怪物在特定情况下为克服挑战所做出的努力"
+        },
+        {
+          "name": "攻击检定",
+          "nameEn": "Attack Rolls",
+          "targetValue": "护甲等级(AC)",
+          "description": "决定攻击是否命中目标"
+        },
+        {
+          "name": "豁免检定",
+          "nameEn": "Saving Throws",
+          "targetValue": "难度等级(DC)",
+          "description": "抵御各种威胁如法术、陷阱、毒素等"
+        }
+      ]
+    },
+    "advantageDisadvantage": {
+      "advantage": {
+        "name": "优势",
+        "nameEn": "Advantage",
+        "description": "投两个d20取较高值",
+        "notation": "投掷时额外掷一枚d20，取更高的值"
+      },
+      "disadvantage": {
+        "name": "劣势",
+        "nameEn": "Disadvantage",
+        "description": "投两个d20取较低值",
+        "notation": "投掷时额外掷一枚d20，取较低的值"
+      },
+      "rules": [
+        "优势和劣势不能叠加",
+        "如果同时具有优势和劣势，它们相互抵消，正常投掷",
+        "多个优势来源仍然只投两个骰子",
+        "多个劣势来源仍然只投两个骰子"
+      ]
+    },
+    "proficiencyBonus": {
+      "description": "熟练加值反映角色等级提升带来的能力提升",
+      "formula": "基于角色等级的固定加值",
+      "table": [
+        {
+          "level": "1-4",
+          "bonus": 2
+        },
+        {
+          "level": "5-8",
+          "bonus": 3
+        },
+        {
+          "level": "9-12",
+          "bonus": 4
+        },
+        {
+          "level": "13-16",
+          "bonus": 5
+        },
+        {
+          "level": "17-20",
+          "bonus": 6
+        }
+      ],
+      "appliesTo": [
+        "具有熟练项的技能检定",
+        "具有熟练项的豁免检定",
+        "具有熟练项的武器攻击检定",
+        "具有熟练项的工具使用",
+        "法术攻击检定",
+        "法术豁免DC"
+      ]
+    },
+    "inspiration": {
+      "name": "激励",
+      "nameEn": "Inspiration",
+      "description": "激励是DM奖励你扮演角色时真正符合其个性特征、理想、羁绊和缺陷的方式的规则",
+      "usage": "当你具有激励时，你可以消耗它来在攻击检定、豁免检定或属性检定上获得优势",
+      "gaining": "通过良好的角色扮演从DM处获得",
+      "limit": "一次只能有一个激励，不能累积"
+    },
+    "specificBeatsGeneral": {
+      "name": "特例优先于常规",
+      "nameEn": "Specific Beats General",
+      "description": "当有特殊规则违背了通用规则，使用特殊规则",
+      "examples": [
+        "一般冒险者无法穿墙，但某些法术可以",
+        "木精灵获得长弓熟练项，即使其职业通常不提供",
+        "大多数人无法隐形，但隐形术法术可以让其变为可能"
+      ]
+    },
+    "roundDown": {
+      "name": "向下取整",
+      "nameEn": "Round Down",
+      "description": "每当你在游戏中进行除法运算时，必须舍去所有小数，即使其数值大于0.5"
+    },
+    "time": {
+      "combat": {
+        "round": {
+          "name": "回合",
+          "nameEn": "Round",
+          "duration": "6秒",
+          "description": "战斗中每个回合代表6秒的游戏时间"
+        },
+        "turn": {
+          "name": "轮次",
+          "nameEn": "Turn",
+          "description": "每个生物在一个回合中的行动时段"
+        }
+      },
+      "exploration": {
+        "minute": {
+          "name": "分钟",
+          "duration": "60秒"
+        },
+        "hour": {
+          "name": "小时",
+          "duration": "60分钟"
+        },
+        "day": {
+          "name": "天",
+          "duration": "24小时"
+        },
+        "week": {
+          "name": "周",
+          "duration": "7天"
+        },
+        "month": {
+          "name": "月",
+          "duration": "30天"
+        },
+        "year": {
+          "name": "年",
+          "duration": "365天"
+        }
+      }
+    },
+    "movement": {
+      "speed": {
+        "description": "速度决定你在一回合内可以移动多远",
+        "units": "尺(5尺=1.5米)",
+        "commonSpeeds": [
+          {
+            "type": "矮人/半身人",
+            "speed": 25
+          },
+          {
+            "type": "人类/精灵",
+            "speed": 30
+          },
+          {
+            "type": "木精灵(轻捷步伐)",
+            "speed": 35
+          }
+        ]
+      },
+      "types": [
+        {
+          "name": "步行速度",
+          "nameEn": "Walking Speed",
+          "default": true
+        },
+        {
+          "name": "攀爬速度",
+          "nameEn": "Climbing Speed"
+        },
+        {
+          "name": "游泳速度",
+          "nameEn": "Swimming Speed"
+        },
+        {
+          "name": "飞行速度",
+          "nameEn": "Flying Speed"
+        },
+        {
+          "name": "掘地速度",
+          "nameEn": "Burrowing Speed"
+        }
+      ],
+      "difficultTerrain": {
+        "name": "困难地形",
+        "nameEn": "Difficult Terrain",
+        "description": "在困难地形中移动，每1尺移动消耗2尺移动力",
+        "examples": [
+          "浓密森林",
+          "开阔荒野",
+          "黏滑冰面",
+          "陡峭台阶",
+          "雪堆",
+          "浅沼泽"
+        ]
+      }
+    },
+    "vision": {
+      "brightLight": {
+        "name": "明亮光照",
+        "nameEn": "Bright Light",
+        "description": "大多数生物可以正常视物"
+      },
+      "dimLight": {
+        "name": "微光光照",
+        "nameEn": "Dim Light",
+        "description": "制造轻度遮蔽区域，生物进行依赖视觉的察觉检定时具有劣势"
+      },
+      "darkness": {
+        "name": "黑暗",
+        "nameEn": "Darkness",
+        "description": "制造重度遮蔽区域，该区域视为被严重遮蔽"
+      },
+      "darkvision": {
+        "name": "黑暗视觉",
+        "nameEn": "Darkvision",
+        "description": "在黑暗中视为微光光照，在微光光照中视为明亮光照。无法在黑暗中分辨颜色",
+        "commonRange": 60,
+        "superiorRange": 120
+      },
+      "blindsight": {
+        "name": "盲视",
+        "nameEn": "Blindsight",
+        "description": "在指定范围内无需依赖视觉就能感知周围环境"
+      },
+      "truesight": {
+        "name": "真实视觉",
+        "nameEn": "Truesight",
+        "description": "能看穿黑暗、隐形、幻术，看到事物的真实形态"
+      }
+    },
+    "cover": {
+      "half": {
+        "name": "半身掩护",
+        "nameEn": "Half Cover",
+        "acBonus": 2,
+        "savingThrowBonus": 2,
+        "description": "障碍物遮挡了目标至少一半身体，AC和敏捷豁免+2"
+      },
+      "threeQuarters": {
+        "name": "四分之三掩护",
+        "nameEn": "Three-Quarters Cover",
+        "acBonus": 5,
+        "savingThrowBonus": 5,
+        "description": "障碍物遮挡了目标四分之三身体，AC和敏捷豁免+5"
+      },
+      "total": {
+        "name": "全掩护",
+        "nameEn": "Total Cover",
+        "description": "目标完全被掩护，无法被直接攻击或瞄准"
+      }
+    },
+    "resting": {
+      "shortRest": {
+        "name": "短休",
+        "nameEn": "Short Rest",
+        "duration": "至少1小时",
+        "description": "短暂的休息期间，角色什么都不做除了吃饭、喝水、读书和处理伤口",
+        "benefits": [
+          "可以花费生命骰恢复生命值",
+          "某些职业特性和能力恢复"
+        ]
+      },
+      "longRest": {
+        "name": "长休",
+        "nameEn": "Long Rest",
+        "duration": "至少8小时",
+        "description": "延长的休息期间，角色至少睡眠6小时，最多进行2小时轻度活动",
+        "benefits": [
+          "恢复所有失去的生命值",
+          "恢复已消耗生命骰的数量，最多为等级的一半(至少恢复一个)",
+          "恢复所有法术位",
+          "恢复大部分职业特性和能力"
+        ],
+        "limit": "一个角色24小时内只能受益于一次长休"
+      }
+    },
+    "conditions": {
+      "description": "状态改变生物的能力，可能源自法术、职业特性、怪物攻击或其他效应",
+      "list": [
+        {
+          "id": "blinded",
+          "name": "目盲",
+          "nameEn": "Blinded",
+          "effects": [
+            "无法视物，任何依赖视觉的属性检定自动失败",
+            "对该生物的攻击检定具有优势",
+            "该生物的攻击检定具有劣势"
+          ]
+        },
+        {
+          "id": "charmed",
+          "name": "魅惑",
+          "nameEn": "Charmed",
+          "effects": [
+            "被魅惑的生物无法攻击魅惑者，也无法以魅惑者为目标施放有害法术或能力",
+            "魅惑者在与该生物进行社交互动的属性检定时具有优势"
+          ]
+        },
+        {
+          "id": "deafened",
+          "name": "耳聋",
+          "nameEn": "Deafened",
+          "effects": [
+            "无法听到声音，任何依赖听觉的属性检定自动失败"
+          ]
+        },
+        {
+          "id": "frightened",
+          "name": "恐惧",
+          "nameEn": "Frightened",
+          "effects": [
+            "当恐惧来源在该生物的视野内时，该生物的属性检定和攻击检定具有劣势",
+            "该生物无法自愿靠近恐惧来源"
+          ]
+        },
+        {
+          "id": "grappled",
+          "name": "擒抱",
+          "nameEn": "Grappled",
+          "effects": [
+            "被擒抱生物的速度变为0，且无法从任何速度加成中获益",
+            "如果擒抱者陷入失去行动能力状态，则该状态结束",
+            "如果某效应将被擒抱生物移出擒抱者的触及范围，则该状态结束"
+          ]
+        },
+        {
+          "id": "incapacitated",
+          "name": "失去行动能力",
+          "nameEn": "Incapacitated",
+          "effects": [
+            "无法使用动作或反应"
+          ]
+        },
+        {
+          "id": "invisible",
+          "name": "隐形",
+          "nameEn": "Invisible",
+          "effects": [
+            "在没有魔法或特殊感官帮助下无法被看到，仅可通过声音或留下的痕迹被察觉",
+            "对该生物的攻击检定具有劣势",
+            "该生物的攻击检定具有优势"
+          ]
+        },
+        {
+          "id": "paralyzed",
+          "name": "麻痹",
+          "nameEn": "Paralyzed",
+          "effects": [
+            "该生物失去行动能力，无法移动或说话",
+            "该生物的力量和敏捷豁免自动失败",
+            "对该生物的攻击检定具有优势",
+            "5尺内的攻击者对该生物造成的命中自动成为重击"
+          ]
+        },
+        {
+          "id": "petrified",
+          "name": "石化",
+          "nameEn": "Petrified",
+          "effects": [
+            "被石化的生物及其携带或穿戴的所有非魔法物品都变成固体无生命物质(通常是石头)",
+            "该生物的重量增加十倍，且停止衰老",
+            "该生物失去行动能力，无法移动或说话，且对周围环境没有意识",
+            "对该生物的攻击检定具有优势",
+            "该生物的力量和敏捷豁免自动失败",
+            "该生物对所有伤害具有抗性",
+            "该生物对毒素和疾病免疫(体内已有的毒素和疾病只是被暂停，而非被消除)"
+          ]
+        },
+        {
+          "id": "poisoned",
+          "name": "中毒",
+          "nameEn": "Poisoned",
+          "effects": [
+            "该生物的攻击检定和属性检定具有劣势"
+          ]
+        },
+        {
+          "id": "prone",
+          "name": "倒地",
+          "nameEn": "Prone",
+          "effects": [
+            "该生物的移动选项只有匍匐前进，除非站起来从而结束该状态",
+            "站起来需要消耗等于速度一半的移动力",
+            "该生物的攻击检定具有劣势",
+            "5尺内的攻击者对该生物的攻击检定具有优势，5尺外的攻击者则具有劣势"
+          ]
+        },
+        {
+          "id": "restrained",
+          "name": "束缚",
+          "nameEn": "Restrained",
+          "effects": [
+            "被束缚生物的速度变为0，且无法从任何速度加成中获益",
+            "对该生物的攻击检定具有优势",
+            "该生物的攻击检定具有劣势",
+            "该生物的敏捷豁免具有劣势"
+          ]
+        },
+        {
+          "id": "stunned",
+          "name": "震慑",
+          "nameEn": "Stunned",
+          "effects": [
+            "该生物失去行动能力，无法移动，且只能断断续续地说话",
+            "该生物的力量和敏捷豁免自动失败",
+            "对该生物的攻击检定具有优势"
+          ]
+        },
+        {
+          "id": "unconscious",
+          "name": "失去意识",
+          "nameEn": "Unconscious",
+          "effects": [
+            "该生物失去行动能力，无法移动或说话，且对周围环境没有意识",
+            "该生物掉落其手持的一切，并倒地",
+            "该生物的力量和敏捷豁免自动失败",
+            "对该生物的攻击检定具有优势",
+            "5尺内的攻击者对该生物造成的命中自动成为重击"
+          ]
+        },
+        {
+          "id": "exhaustion",
+          "name": "力竭",
+          "nameEn": "Exhaustion",
+          "description": "力竭有6个等级，效果累积叠加。长休恢复1级力竭(需要食物和水)。",
+          "levels": [
+            { "level": 1, "effect": "属性检定具有劣势" },
+            { "level": 2, "effect": "速度减半" },
+            { "level": 3, "effect": "攻击检定和豁免检定具有劣势" },
+            { "level": 4, "effect": "生命值上限减半" },
+            { "level": 5, "effect": "速度降为0" },
+            { "level": 6, "effect": "死亡" }
+          ]
+        }
+      ]
+    },
+    "damageTypes": {
+      "description": "D&D中有13种不同的伤害类型，分为物理伤害、元素伤害和魔法伤害三大类。",
+      "importantRule": {
+        "title": "伤害类型与特殊效果",
+        "content": "在D&D 5E规则中，伤害类型本身不会自动附带特殊效果。冰冻伤害不会自动减速，火焰伤害不会自动造成持续伤害，毒素伤害不会自动造成中毒状态。",
+        "clarification": "特殊效果由具体的法术、能力或攻击决定，而不是伤害类型。伤害类型的主要作用是与抗性(Resistance)、易伤(Vulnerability)和免疫(Immunity)互动。",
+        "examples": [
+          "冰冻射线(Ray of Frost)造成冰冻伤害并减速10尺——减速是法术效果，不是冰冻伤害的固有属性",
+          "炼金火(Alchemist's Fire)造成持续火焰伤害——持续伤害是物品效果，不是火焰伤害的固有属性",
+          "毒蛇咬伤造成穿刺伤害和毒素伤害，并可能造成中毒状态——中毒是毒蛇能力的效果，不是毒素伤害的固有属性"
+        ]
+      },
+      "physical": [
+        {
+          "type": "bludgeoning",
+          "name": "钝击",
+          "nameEn": "Bludgeoning",
+          "description": "由重击或挤压造成的伤害",
+          "sources": ["锤类武器", "棍棒", "坠落", "被挤压"],
+          "notes": "许多怪物对非魔法武器的钝击伤害具有抗性或免疫。骷髅对钝击伤害具有易伤。"
+        },
+        {
+          "type": "piercing",
+          "name": "穿刺",
+          "nameEn": "Piercing",
+          "description": "由刺穿或穿孔造成的伤害",
+          "sources": ["矛类武器", "箭矢", "弩矢", "尖牙和毒刺"],
+          "notes": "许多怪物对非魔法武器的穿刺伤害具有抗性或免疫。"
+        },
+        {
+          "type": "slashing",
+          "name": "挥砍",
+          "nameEn": "Slashing",
+          "description": "由切割或劈砍造成的伤害",
+          "sources": ["剑类武器", "斧类武器", "爪击"],
+          "notes": "许多怪物对非魔法武器的挥砍伤害具有抗性或免疫。泥怪类生物对挥砍伤害免疫。"
+        }
+      ],
+      "elemental": [
+        {
+          "type": "acid",
+          "name": "强酸",
+          "nameEn": "Acid",
+          "description": "由腐蚀性物质造成的伤害",
+          "sources": ["酸液法术", "黑龙吐息", "泥怪", "腐蚀陷阱"],
+          "notes": "可以腐蚀和溶解物体。某些怪物（如黑龙、泥怪）对强酸免疫。"
+        },
+        {
+          "type": "cold",
+          "name": "冷冻",
+          "nameEn": "Cold",
+          "description": "由极低温度造成的伤害",
+          "sources": ["寒冰法术", "白龙吐息", "冰元素", "极寒环境"],
+          "notes": "可以冻结水面、减缓敌人。火元素对冷冻伤害具有易伤。冰元素和白龙对冷冻免疫。"
+        },
+        {
+          "type": "fire",
+          "name": "火焰",
+          "nameEn": "Fire",
+          "description": "由高温和燃烧造成的伤害",
+          "sources": ["火焰法术", "红龙吐息", "火元素", "熔岩"],
+          "notes": "可以点燃易燃物品、照亮区域。巨魔无法再生火焰伤害。冰元素对火焰伤害具有易伤。是被抗性最多的伤害类型之一。"
+        },
+        {
+          "type": "lightning",
+          "name": "闪电",
+          "nameEn": "Lightning",
+          "description": "由电流通过造成的伤害",
+          "sources": ["闪电法术", "蓝龙吐息", "雷暴", "电击陷阱"],
+          "notes": "在水中可能传导。肉体魔像被闪电伤害治愈而非受伤。"
+        },
+        {
+          "type": "thunder",
+          "name": "雷鸣",
+          "nameEn": "Thunder",
+          "description": "由强烈声波震动造成的伤害",
+          "sources": ["音波法术", "雷击术", "破甲雷", "爆炸冲击"],
+          "notes": "声波伤害，可能震聋目标或震碎易碎物品。在真空中无效。相对较少被抗性。"
+        }
+      ],
+      "magical": [
+        {
+          "type": "force",
+          "name": "力场",
+          "nameEn": "Force",
+          "description": "由纯粹魔法能量造成的伤害，是最难抵抗的伤害类型",
+          "sources": ["魔法飞弹", "法师之手", "灵体武器", "力墙术"],
+          "notes": "几乎没有生物对力场伤害具有抗性或免疫，是最可靠的伤害类型。魔法飞弹必定命中。"
+        },
+        {
+          "type": "necrotic",
+          "name": "黯蚀",
+          "nameEn": "Necrotic",
+          "description": "由死灵能量造成的伤害，腐蚀生命力",
+          "sources": ["死灵法术", "不死生物攻击", "吸血鬼", "影魔触碰"],
+          "notes": "常常伴随降低生命值上限的效果。不死生物通常对黯蚀伤害免疫或具有抗性。某些黯蚀效果可以治愈不死生物。"
+        },
+        {
+          "type": "poison",
+          "name": "毒素",
+          "nameEn": "Poison",
+          "description": "由毒物和有害物质造成的伤害",
+          "sources": ["毒液", "毒气", "绿龙吐息", "毒蛇咬伤"],
+          "notes": "是被免疫最多的伤害类型。不死生物、构装体和许多怪物对毒素免疫。常伴随中毒状态。"
+        },
+        {
+          "type": "psychic",
+          "name": "心灵",
+          "nameEn": "Psychic",
+          "description": "由精神攻击和心智侵蚀造成的伤害",
+          "sources": ["心灵法术", "夺心魔", "灵吸怪", "幻术"],
+          "notes": "无智力的生物（如泥怪）通常对心灵伤害免疫。可以绕过物理护甲。"
+        },
+        {
+          "type": "radiant",
+          "name": "光耀",
+          "nameEn": "Radiant",
+          "description": "由神圣或纯净光芒造成的伤害，对不死生物尤其有效",
+          "sources": ["神圣法术", "天使攻击", "圣武器", "神圣惩击"],
+          "notes": "不死生物通常对光耀伤害具有易伤。某些光耀效果可以阻止不死生物再生。吸血鬼在阳光下受到光耀伤害。"
+        }
+      ]
+    },
+    "damageResistance": {
+      "resistance": {
+        "name": "抗性",
+        "nameEn": "Resistance",
+        "effect": "受到该类型伤害减半"
+      },
+      "vulnerability": {
+        "name": "易伤",
+        "nameEn": "Vulnerability",
+        "effect": "受到该类型伤害加倍"
+      },
+      "immunity": {
+        "name": "免疫",
+        "nameEn": "Immunity",
+        "effect": "不受该类型伤害影响"
+      }
+    },
+    "healingAndDying": {
+      "death": {
+        "deathSaves": {
+          "name": "死亡豁免",
+          "nameEn": "Death Saving Throws",
+          "description": "当生命值降至0时，每回合进行死亡豁免",
+          "success": "投出10或更高视为成功，累积3次成功则稳定",
+          "failure": "投出9或更低视为失败，累积3次失败则死亡",
+          "critical": "投出20自动恢复1点生命值，投出1计为2次失败"
+        },
+        "instantDeath": {
+          "name": "即死",
+          "nameEn": "Instant Death",
+          "description": "如果伤害使你的生命值降至0，且剩余伤害等于或超过你的生命值上限，你当场死亡"
+        }
+      },
+      "stabilizing": {
+        "name": "稳定生命",
+        "nameEn": "Stabilizing a Creature",
+        "methods": [
+          "使用动作进行DC10的感知(医药)检定",
+          "使用治疗法术或能力",
+          "使用医疗包"
+        ]
+      }
+    }
+  }
+}

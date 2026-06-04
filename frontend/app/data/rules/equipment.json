@@ -1,0 +1,5306 @@
+{
+  "overview": {
+    "description": "装备是冒险者的工具和防护，包括护甲、武器、冒险装备和工具。正确的装备能决定冒险的成败",
+    "descriptionEn": "Equipment consists of tools and protection for adventurers, including armor, weapons, adventuring gear, and tools. Proper equipment can determine success or failure",
+    "purpose": "为角色提供防护、武器和工具",
+    "relatedRules": [
+      "护甲等级AC",
+      "武器属性",
+      "负重",
+      "货币",
+      "魔法物品"
+    ],
+    "quickReference": "护甲提高AC，武器用于攻击，工具用于特定任务，起始金币由职业和背景决定"
+  },
+  "armor": {
+    "light": [
+      {
+        "id": "padded",
+        "name": "布甲",
+        "nameEn": "Padded",
+        "type": "light",
+        "ac": "11 + Dex调整值",
+        "acFormula": {
+          "base": 11,
+          "dexModifier": "full"
+        },
+        "strengthRequired": null,
+        "stealthDisadvantage": true,
+        "weight": 8,
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "iconPath": "/assets/equipment-icons/padded.png",
+        "description": "厚布甲层层缝垫，轻便保暖，挡住小刀擦伤与碎石飞溅。新手常穿它上路，至少不怕摔进沟里。"
+      },
+      {
+        "id": "leather",
+        "name": "皮甲",
+        "nameEn": "Leather",
+        "type": "light",
+        "ac": "11 + Dex调整值",
+        "acFormula": {
+          "base": 11,
+          "dexModifier": "full"
+        },
+        "strengthRequired": null,
+        "stealthDisadvantage": false,
+        "weight": 10,
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "iconPath": "/assets/equipment-icons/leather.png",
+        "description": "熟皮甲贴身灵活，奔走潜行不碍身法，挡住浅斩与箭擦。赏金猎人说它沾雨不重，追人更久。"
+      },
+      {
+        "id": "studded_leather",
+        "name": "镶钉皮甲",
+        "nameEn": "Studded Leather",
+        "type": "light",
+        "ac": "12 + Dex调整值",
+        "acFormula": {
+          "base": 12,
+          "dexModifier": "full"
+        },
+        "strengthRequired": null,
+        "stealthDisadvantage": false,
+        "weight": 13,
+        "cost": {
+          "gp": 45
+        },
+        "costCopper": 4500,
+        "iconPath": "/assets/equipment-icons/studded_leather.png",
+        "description": "镶钉皮甲以铆钉分散冲击，仍保轻巧，适合游斗与伏击。酒馆里常见它的主人背着未还的债。"
+      }
+    ],
+    "medium": [
+      {
+        "id": "hide",
+        "name": "兽皮甲",
+        "nameEn": "Hide",
+        "type": "medium",
+        "ac": "12 + Dex调整值(最大+2)",
+        "acFormula": {
+          "base": 12,
+          "dexModifier": "max2"
+        },
+        "strengthRequired": null,
+        "stealthDisadvantage": false,
+        "weight": 12,
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "iconPath": "/assets/equipment-icons/hide.png",
+        "description": "兽皮甲以厚毛与硬皮护体，适合荒野奔袭，抵住爪牙撕扯。蛮族夸它带着猎物的气味，野兽更迟疑。"
+      },
+      {
+        "id": "chain_shirt",
+        "name": "链甲衫",
+        "nameEn": "Chain Shirt",
+        "type": "medium",
+        "ac": "13 + Dex调整值(最大+2)",
+        "acFormula": {
+          "base": 13,
+          "dexModifier": "max2"
+        },
+        "strengthRequired": null,
+        "stealthDisadvantage": false,
+        "weight": 20,
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "iconPath": "/assets/equipment-icons/chain_shirt.png",
+        "description": "链甲衫覆于衣内，金属环吸收劈砍，行动仍算自如。老佣兵说它最适合常进窄巷的护卫。"
+      },
+      {
+        "id": "scale_mail",
+        "name": "鳞甲",
+        "nameEn": "Scale Mail",
+        "type": "medium",
+        "ac": "14 + Dex调整值(最大+2)",
+        "acFormula": {
+          "base": 14,
+          "dexModifier": "max2"
+        },
+        "strengthRequired": null,
+        "stealthDisadvantage": true,
+        "weight": 45,
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "iconPath": "/assets/equipment-icons/scale_mail.png",
+        "description": "鳞甲叠片如鱼鳞，护住躯干对抗斩击与飞矢，但行走叮当易暴露。传闻巡逻队靠这声响吓退盗匪。"
+      },
+      {
+        "id": "breastplate",
+        "name": "胸甲",
+        "nameEn": "Breastplate",
+        "type": "medium",
+        "ac": "14 + Dex调整值(最大+2)",
+        "acFormula": {
+          "base": 14,
+          "dexModifier": "max2"
+        },
+        "strengthRequired": null,
+        "stealthDisadvantage": false,
+        "weight": 20,
+        "cost": {
+          "gp": 400
+        },
+        "costCopper": 40000,
+        "iconPath": "/assets/equipment-icons/breastplate.png",
+        "description": "胸甲以整块金属守心肺，防护稳固且不似鳞甲那般喧响。许多贵族卫士穿它，既体面又好活命。"
+      },
+      {
+        "id": "half_plate",
+        "name": "半身板甲",
+        "nameEn": "Half Plate",
+        "type": "medium",
+        "ac": "15 + Dex调整值(最大+2)",
+        "acFormula": {
+          "base": 15,
+          "dexModifier": "max2"
+        },
+        "strengthRequired": null,
+        "stealthDisadvantage": true,
+        "weight": 40,
+        "cost": {
+          "gp": 750
+        },
+        "costCopper": 75000,
+        "iconPath": "/assets/equipment-icons/half_plate.png",
+        "description": "半身板甲覆盖躯干与四肢要害，战场正面硬扛极强，却沉重难隐匿。酒馆传言穿它睡觉也能挡刺客一刀。"
+      }
+    ],
+    "heavy": [
+      {
+        "id": "ring_mail",
+        "name": "环甲",
+        "nameEn": "Ring Mail",
+        "type": "heavy",
+        "ac": "14",
+        "acFormula": {
+          "base": 14,
+          "dexModifier": "none"
+        },
+        "strengthRequired": null,
+        "stealthDisadvantage": true,
+        "weight": 40,
+        "cost": {
+          "gp": 30
+        },
+        "costCopper": 3000,
+        "iconPath": "/assets/equipment-icons/ring_mail.png",
+        "description": "粗环以皮带串联成甲，行走叮当却耐磨，常见于佣兵卫队；酒馆说它能挡住第一支冷箭。"
+      },
+      {
+        "id": "chain_mail",
+        "name": "链甲",
+        "nameEn": "Chain Mail",
+        "type": "heavy",
+        "ac": "16",
+        "acFormula": {
+          "base": 16,
+          "dexModifier": "none"
+        },
+        "strengthRequired": 13,
+        "stealthDisadvantage": true,
+        "weight": 55,
+        "cost": {
+          "gp": 75
+        },
+        "costCopper": 7500,
+        "iconPath": "/assets/equipment-icons/chain_mail.png",
+        "description": "密链如鳞覆身，冲锋时可卸去大半劈砍，行军稍重；老兵笑称听见链响就知还活着。"
+      },
+      {
+        "id": "splint",
+        "name": "板条甲",
+        "nameEn": "Splint",
+        "type": "heavy",
+        "ac": "17",
+        "acFormula": {
+          "base": 17,
+          "dexModifier": "none"
+        },
+        "strengthRequired": 15,
+        "stealthDisadvantage": true,
+        "weight": 60,
+        "cost": {
+          "gp": 200
+        },
+        "costCopper": 20000,
+        "iconPath": "/assets/equipment-icons/splint.png",
+        "description": "铁条铆接成壁，专克斧刃与獠牙，虽笨重却可靠；曾有冒险者靠它硬顶巨魔三爪。"
+      },
+      {
+        "id": "plate",
+        "name": "板甲",
+        "nameEn": "Plate",
+        "type": "heavy",
+        "ac": "18",
+        "acFormula": {
+          "base": 18,
+          "dexModifier": "none"
+        },
+        "strengthRequired": 15,
+        "stealthDisadvantage": true,
+        "weight": 65,
+        "cost": {
+          "gp": 1500
+        },
+        "costCopper": 150000,
+        "iconPath": "/assets/equipment-icons/plate.png",
+        "description": "锻成一身钢壳，箭雨与长枪多被弹开，代价是沉重与昂贵；传闻国王的骑士洗甲如洗罪。"
+      }
+    ],
+    "shield": [
+      {
+        "id": "shield",
+        "name": "盾牌",
+        "nameEn": "Shield",
+        "type": "shield",
+        "acBonus": 2,
+        "strengthRequired": null,
+        "stealthDisadvantage": false,
+        "weight": 6,
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "iconPath": "/assets/equipment-icons/shield.png",
+        "description": "木铁相衬的臂盾，抬手便改写一击轨迹，掩护同伴亦可破门；酒馆赌徒说好盾胜半条命。"
+      }
+    ]
+  },
+  "weapons": {
+    "simple": {
+      "melee": [
+        {
+          "id": "club",
+          "name": "短棒",
+          "nameEn": "Club",
+          "cost": {
+            "sp": 1
+          },
+          "costCopper": 10,
+          "damage": "1d4",
+          "damageType": "bludgeoning",
+          "weight": 2,
+          "properties": [
+            "light"
+          ],
+          "iconPath": "/assets/equipment-icons/club.png",
+          "description": "沾着树脂的短棒，轻巧便携，破甲不如但敲昏最利索；酒馆里常说它比刀更适合收债。"
+        },
+        {
+          "id": "dagger",
+          "name": "匕首",
+          "nameEn": "Dagger",
+          "cost": {
+            "gp": 2
+          },
+          "costCopper": 200,
+          "damage": "1d4",
+          "damageType": "piercing",
+          "weight": 1,
+          "properties": [
+            "finesse",
+            "light",
+            "thrown"
+          ],
+          "range": {
+            "normal": 20,
+            "long": 60
+          },
+          "iconPath": "/assets/equipment-icons/dagger.png",
+          "description": "薄刃匕首贴腕如影，近身以敏捷刺喉，亦可掷出封路；老盗贼笑称它能打开任何“门”。"
+        },
+        {
+          "id": "greatclub",
+          "name": "巨棒",
+          "nameEn": "Greatclub",
+          "cost": {
+            "sp": 2
+          },
+          "costCopper": 20,
+          "damage": "1d8",
+          "damageType": "bludgeoning",
+          "weight": 10,
+          "properties": [
+            "two-handed"
+          ],
+          "iconPath": "/assets/equipment-icons/greatclub.png",
+          "description": "粗木巨棒需双手挥舞，一击如撞钟般震骨；据说山地蛮子用它把食人魔敲到失忆。"
+        },
+        {
+          "id": "handaxe",
+          "name": "手斧",
+          "nameEn": "Handaxe",
+          "cost": {
+            "gp": 5
+          },
+          "costCopper": 500,
+          "damage": "1d6",
+          "damageType": "slashing",
+          "weight": 2,
+          "properties": [
+            "light",
+            "thrown"
+          ],
+          "range": {
+            "normal": 20,
+            "long": 60
+          },
+          "iconPath": "/assets/equipment-icons/handaxe.png",
+          "description": "短柄手斧既可劈砍也能掷出，轻装游侠最爱；有人在营火旁吹嘘它曾钉住逃跑的豺狼人。"
+        },
+        {
+          "id": "javelin",
+          "name": "标枪",
+          "nameEn": "Javelin",
+          "cost": {
+            "sp": 5
+          },
+          "costCopper": 50,
+          "damage": "1d6",
+          "damageType": "piercing",
+          "weight": 2,
+          "properties": [
+            "thrown"
+          ],
+          "range": {
+            "normal": 30,
+            "long": 120
+          },
+          "iconPath": "/assets/equipment-icons/javelin.png",
+          "description": "标枪长直易抛，穿透力足以破皮甲，适合先手开战；老兵说第一支命中就能打散阵脚。"
+        },
+        {
+          "id": "light_hammer",
+          "name": "轻锤",
+          "nameEn": "Light Hammer",
+          "cost": {
+            "gp": 2
+          },
+          "costCopper": 200,
+          "damage": "1d4",
+          "damageType": "bludgeoning",
+          "weight": 2,
+          "properties": [
+            "light",
+            "thrown"
+          ],
+          "range": {
+            "normal": 20,
+            "long": 60
+          },
+          "iconPath": "/assets/equipment-icons/light_hammer.png",
+          "description": "轻锤短促却狠，投掷时像坠星砸骨，回收也方便；矮人矿工常用它敲醒贪睡的同伴。"
+        },
+        {
+          "id": "mace",
+          "name": "硬头锤",
+          "nameEn": "Mace",
+          "cost": {
+            "gp": 5
+          },
+          "costCopper": 500,
+          "damage": "1d6",
+          "damageType": "bludgeoning",
+          "weight": 4,
+          "properties": [],
+          "iconPath": "/assets/equipment-icons/mace.png",
+          "description": "硬头锤的金属棱齿专治甲胄，砸下去不流血也会碎骨；修士常携此物讨伐不死。"
+        },
+        {
+          "id": "quarterstaff",
+          "name": "长棍",
+          "nameEn": "Quarterstaff",
+          "cost": {
+            "sp": 2
+          },
+          "costCopper": 20,
+          "damage": "1d6",
+          "damageType": "bludgeoning",
+          "weight": 4,
+          "properties": [
+            "versatile"
+          ],
+          "versatileDamage": "1d8",
+          "iconPath": "/assets/equipment-icons/quarterstaff.png",
+          "description": "长棍朴素却多变，双手发力可挑可扫，守门与控距皆佳；传闻某僧以一棍挡三刃。"
+        },
+        {
+          "id": "sickle",
+          "name": "镰刀",
+          "nameEn": "Sickle",
+          "cost": {
+            "gp": 1
+          },
+          "costCopper": 100,
+          "damage": "1d4",
+          "damageType": "slashing",
+          "weight": 2,
+          "properties": [
+            "light"
+          ],
+          "iconPath": "/assets/equipment-icons/sickle.png",
+          "description": "弯刃镰刀原为收割，如今用于贴身割喉与拉倒敌足；乡野冒险者说它最懂“收账”。"
+        },
+        {
+          "id": "spear",
+          "name": "矛",
+          "nameEn": "Spear",
+          "cost": {
+            "gp": 1
+          },
+          "costCopper": 100,
+          "damage": "1d6",
+          "damageType": "piercing",
+          "weight": 3,
+          "properties": [
+            "thrown",
+            "versatile"
+          ],
+          "range": {
+            "normal": 20,
+            "long": 60
+          },
+          "versatileDamage": "1d8",
+          "iconPath": "/assets/equipment-icons/spear.png",
+          "description": "矛既能刺又能掷，双手握持更稳，适合保持距离压制；边境卫兵常靠它撑过第一波冲锋。"
+        }
+      ],
+      "ranged": [
+        {
+          "id": "light_crossbow",
+          "name": "轻弩",
+          "nameEn": "Light Crossbow",
+          "cost": {
+            "gp": 25
+          },
+          "costCopper": 2500,
+          "damage": "1d8",
+          "damageType": "piercing",
+          "weight": 5,
+          "properties": [
+            "ammunition",
+            "loading",
+            "two-handed"
+          ],
+          "range": {
+            "normal": 80,
+            "long": 320
+          },
+          "iconPath": "/assets/equipment-icons/light_crossbow.png",
+          "description": "轻弩上弦略慢却力道十足，双手稳持可远点穿透；酒馆传闻一箭钉住了狼人披风。"
+        },
+        {
+          "id": "dart",
+          "name": "飞镖",
+          "nameEn": "Dart",
+          "cost": {
+            "cp": 5
+          },
+          "costCopper": 5,
+          "damage": "1d4",
+          "damageType": "piercing",
+          "weight": 0.25,
+          "properties": [
+            "finesse",
+            "thrown"
+          ],
+          "range": {
+            "normal": 20,
+            "long": 60
+          },
+          "iconPath": "/assets/equipment-icons/dart.png",
+          "description": "小巧飞镖依手感取胜，可用敏捷掷刺要害，暗巷伏击最佳；赌徒爱在杯底藏它当筹码。"
+        },
+        {
+          "id": "shortbow",
+          "name": "短弓",
+          "nameEn": "Shortbow",
+          "cost": {
+            "gp": 25
+          },
+          "costCopper": 2500,
+          "damage": "1d6",
+          "damageType": "piercing",
+          "weight": 2,
+          "properties": [
+            "ammunition",
+            "two-handed"
+          ],
+          "range": {
+            "normal": 80,
+            "long": 320
+          },
+          "iconPath": "/assets/equipment-icons/shortbow.png",
+          "description": "短弓拉距不长却射速灵活，双手连发适合游走风筝；巡林客说树林里它比长弓更听话。"
+        },
+        {
+          "id": "sling",
+          "name": "投石索",
+          "nameEn": "Sling",
+          "cost": {
+            "sp": 1
+          },
+          "costCopper": 10,
+          "damage": "1d4",
+          "damageType": "bludgeoning",
+          "weight": 0,
+          "properties": [
+            "ammunition"
+          ],
+          "range": {
+            "normal": 30,
+            "long": 120
+          },
+          "iconPath": "/assets/equipment-icons/sling.png",
+          "description": "投石索不起眼却省弹易藏，石子也能砸碎颧骨并扰乱施法；牧童练熟后能打落乌鸦。"
+        }
+      ]
+    },
+    "martial": {
+      "melee": [
+        {
+          "id": "battleaxe",
+          "name": "战斧",
+          "nameEn": "Battleaxe",
+          "cost": {
+            "gp": 10
+          },
+          "costCopper": 1000,
+          "damage": "1d8",
+          "damageType": "slashing",
+          "weight": 4,
+          "properties": [
+            "versatile"
+          ],
+          "versatileDamage": "1d10",
+          "iconPath": "/assets/equipment-icons/battleaxe.png",
+          "description": "战斧刃宽势沉，单手便可劈开盾缘，双手更能断骨；矮人酒馆里夸它能“劈开争吵”。"
+        },
+        {
+          "id": "flail",
+          "name": "链枷",
+          "nameEn": "Flail",
+          "cost": {
+            "gp": 10
+          },
+          "costCopper": 1000,
+          "damage": "1d8",
+          "damageType": "bludgeoning",
+          "weight": 2,
+          "properties": [],
+          "iconPath": "/assets/equipment-icons/flail.png",
+          "description": "铁链甩动如蛇，锤首绕盾缘猛砸，专克甲胄与格挡；酒馆说它能打落骑士的骄傲。"
+        },
+        {
+          "id": "glaive",
+          "name": "长柄刀",
+          "nameEn": "Glaive",
+          "cost": {
+            "gp": 20
+          },
+          "costCopper": 2000,
+          "damage": "1d10",
+          "damageType": "slashing",
+          "weight": 6,
+          "properties": [
+            "heavy",
+            "reach",
+            "two-handed"
+          ],
+          "iconPath": "/assets/equipment-icons/glaive.png",
+          "description": "长柄弯刃扫出半月，凭长触及压制近身者，守门廊与壕沟皆利；老兵称一挥可断冲锋。"
+        },
+        {
+          "id": "greataxe",
+          "name": "巨斧",
+          "nameEn": "Greataxe",
+          "cost": {
+            "gp": 30
+          },
+          "costCopper": 3000,
+          "damage": "1d12",
+          "damageType": "slashing",
+          "weight": 7,
+          "properties": [
+            "heavy",
+            "two-handed"
+          ],
+          "iconPath": "/assets/equipment-icons/greataxe.png",
+          "description": "巨斧沉如山岳，双手劈落常一击见血，破木门与兽骨最擅；有人吹嘘曾斩下食人魔的角盔。"
+        },
+        {
+          "id": "greatsword",
+          "name": "巨剑",
+          "nameEn": "Greatsword",
+          "cost": {
+            "gp": 50
+          },
+          "costCopper": 5000,
+          "damage": "2d6",
+          "damageType": "slashing",
+          "weight": 6,
+          "properties": [
+            "heavy",
+            "two-handed"
+          ],
+          "iconPath": "/assets/equipment-icons/greatsword.png",
+          "description": "阔刃巨剑风声如雷，双手连斩能撕开阵线，适合正面破敌；传闻北境佣兵以此换来一城赏金。"
+        },
+        {
+          "id": "halberd",
+          "name": "戟",
+          "nameEn": "Halberd",
+          "cost": {
+            "gp": 20
+          },
+          "costCopper": 2000,
+          "damage": "1d10",
+          "damageType": "slashing",
+          "weight": 6,
+          "properties": [
+            "heavy",
+            "reach",
+            "two-handed"
+          ],
+          "iconPath": "/assets/equipment-icons/halberd.png",
+          "description": "戟刃兼钩兼斩，长柄让你先手逼退，亦可勾倒盾墙后的目标；守城人说它是巷战之王。"
+        },
+        {
+          "id": "lance",
+          "name": "骑枪",
+          "nameEn": "Lance",
+          "cost": {
+            "gp": 10
+          },
+          "costCopper": 1000,
+          "damage": "1d12",
+          "damageType": "piercing",
+          "weight": 6,
+          "properties": [
+            "reach",
+            "special"
+          ],
+          "iconPath": "/assets/equipment-icons/lance.png",
+          "description": "骑枪如长虹贯日，冲锋时穿甲贯胸，伸得远却不宜贴身；酒馆里总有人赌谁能一枪挑落巨人。"
+        },
+        {
+          "id": "longsword",
+          "name": "长剑",
+          "nameEn": "Longsword",
+          "cost": {
+            "gp": 15
+          },
+          "costCopper": 1500,
+          "damage": "1d8",
+          "damageType": "slashing",
+          "weight": 3,
+          "properties": [
+            "versatile"
+          ],
+          "versatileDamage": "1d10",
+          "iconPath": "/assets/equipment-icons/longsword.png",
+          "description": "长剑平衡如诗，单手配盾稳守，双手握更添破甲之力；老骑士常说它从不嫌弃出身卑微。"
+        },
+        {
+          "id": "maul",
+          "name": "巨锤",
+          "nameEn": "Maul",
+          "cost": {
+            "gp": 10
+          },
+          "costCopper": 1000,
+          "damage": "2d6",
+          "damageType": "bludgeoning",
+          "weight": 10,
+          "properties": [
+            "heavy",
+            "two-handed"
+          ],
+          "iconPath": "/assets/equipment-icons/maul.png",
+          "description": "巨锤落下似钟鸣，钝击震碎骨与盾，适合对付骸骨与重甲；矮人酒客夸它能把亡灵敲回坟里。"
+        },
+        {
+          "id": "morningstar",
+          "name": "钉头锤",
+          "nameEn": "Morningstar",
+          "cost": {
+            "gp": 15
+          },
+          "costCopper": 1500,
+          "damage": "1d8",
+          "damageType": "piercing",
+          "weight": 4,
+          "properties": [],
+          "iconPath": "/assets/equipment-icons/morningstar.png",
+          "description": "钉头锤尖刺咬入甲缝，旋砸穿肉见骨，近战缠斗极凶；有人说黑巷里一声闷响便定生死。"
+        },
+        {
+          "id": "pike",
+          "name": "长矛",
+          "nameEn": "Pike",
+          "cost": {
+            "gp": 5
+          },
+          "costCopper": 500,
+          "damage": "1d10",
+          "damageType": "piercing",
+          "weight": 18,
+          "properties": [
+            "heavy",
+            "reach",
+            "two-handed"
+          ],
+          "iconPath": "/assets/equipment-icons/pike.png",
+          "description": "长矛如林，重而远，列阵可止骑冲与巨兽扑击；老兵笑称握稳它，你就有了第二道城墙。"
+        },
+        {
+          "id": "rapier",
+          "name": "刺剑",
+          "nameEn": "Rapier",
+          "cost": {
+            "gp": 25
+          },
+          "costCopper": 2500,
+          "damage": "1d8",
+          "damageType": "piercing",
+          "weight": 2,
+          "properties": [
+            "finesse"
+          ],
+          "iconPath": "/assets/equipment-icons/rapier.png",
+          "description": "刺剑细刃如银蛇，靠精准穿刺要害，适合游斗与决斗；酒馆传闻某贵族用它在烛光下赢回姓氏。"
+        },
+        {
+          "id": "scimitar",
+          "name": "弯刀",
+          "nameEn": "Scimitar",
+          "cost": {
+            "gp": 25
+          },
+          "costCopper": 2500,
+          "damage": "1d6",
+          "damageType": "slashing",
+          "weight": 3,
+          "properties": [
+            "finesse",
+            "light"
+          ],
+          "iconPath": "/assets/equipment-icons/scimitar.png",
+          "description": "弯刀弧刃迅疾，轻巧易连斩，适合沙地奔袭与船上缠斗；水手说一转身便能割断缆绳与喉咙。"
+        },
+        {
+          "id": "shortsword",
+          "name": "短剑",
+          "nameEn": "Shortsword",
+          "cost": {
+            "gp": 10
+          },
+          "costCopper": 1000,
+          "damage": "1d6",
+          "damageType": "piercing",
+          "weight": 2,
+          "properties": [
+            "finesse",
+            "light"
+          ],
+          "iconPath": "/assets/equipment-icons/shortsword.png",
+          "description": "短剑易藏易拔，贴身突刺迅猛，适合潜行与狭窄巷道；盗贼们常把它叫作回家路上的保险。"
+        },
+        {
+          "id": "trident",
+          "name": "三叉戟",
+          "nameEn": "Trident",
+          "cost": {
+            "gp": 5
+          },
+          "costCopper": 500,
+          "damage": "1d6",
+          "damageType": "piercing",
+          "weight": 4,
+          "properties": [
+            "thrown",
+            "versatile"
+          ],
+          "range": {
+            "normal": 20,
+            "long": 60
+          },
+          "versatileDamage": "1d8",
+          "iconPath": "/assets/equipment-icons/trident.png",
+          "description": "三叉戟既可投掷亦能双手压制，叉尖能卡住兵刃与鱼怪肢体；渔村老人说海神偏爱它的回响。"
+        },
+        {
+          "id": "war_pick",
+          "name": "战镐",
+          "nameEn": "War Pick",
+          "cost": {
+            "gp": 5
+          },
+          "costCopper": 500,
+          "damage": "1d8",
+          "damageType": "piercing",
+          "weight": 2,
+          "properties": [],
+          "iconPath": "/assets/equipment-icons/war_pick.png",
+          "description": "战镐尖喙专啄甲缝，一记可破鳞甲与石皮，矿道战尤狠；传言矿工转职冒险者后更不肯放下它。"
+        },
+        {
+          "id": "warhammer",
+          "name": "战锤",
+          "nameEn": "Warhammer",
+          "cost": {
+            "gp": 15
+          },
+          "costCopper": 1500,
+          "damage": "1d8",
+          "damageType": "bludgeoning",
+          "weight": 2,
+          "properties": [
+            "versatile"
+          ],
+          "versatileDamage": "1d10",
+          "iconPath": "/assets/equipment-icons/warhammer.png",
+          "description": "沉铁战锤一击可碎骨破盾，双手挥舞更添势能。老兵说它最适合贴身冲阵，敲醒自负的骑士。"
+        },
+        {
+          "id": "whip",
+          "name": "鞭",
+          "nameEn": "Whip",
+          "cost": {
+            "gp": 2
+          },
+          "costCopper": 200,
+          "damage": "1d4",
+          "damageType": "slashing",
+          "weight": 3,
+          "properties": [
+            "finesse",
+            "reach"
+          ],
+          "iconPath": "/assets/equipment-icons/whip.png",
+          "description": "细鞭如蛇，远距抽裂皮肉，借巧劲牵扯武器与脚步。酒馆传闻一鞭能卷走赌徒的戒指不留痕。"
+        }
+      ],
+      "ranged": [
+        {
+          "id": "blowgun",
+          "name": "吹箭筒",
+          "nameEn": "Blowgun",
+          "cost": {
+            "gp": 10
+          },
+          "costCopper": 1000,
+          "damage": "1",
+          "damageType": "piercing",
+          "weight": 1,
+          "properties": [
+            "ammunition",
+            "loading"
+          ],
+          "range": {
+            "normal": 25,
+            "long": 100
+          },
+          "iconPath": "/assets/equipment-icons/blowgun.png",
+          "description": "竹骨吹箭筒无声吐针，伤口微小却便于涂毒与偷袭。密林猎手常靠它先放倒哨兵再动刀。"
+        },
+        {
+          "id": "hand_crossbow",
+          "name": "手弩",
+          "nameEn": "Hand Crossbow",
+          "cost": {
+            "gp": 75
+          },
+          "costCopper": 7500,
+          "damage": "1d6",
+          "damageType": "piercing",
+          "weight": 3,
+          "properties": [
+            "ammunition",
+            "light",
+            "loading"
+          ],
+          "range": {
+            "normal": 30,
+            "long": 120
+          },
+          "iconPath": "/assets/equipment-icons/hand_crossbow.png",
+          "description": "手弩短促有力，单手也能迸射穿甲弩矢，适合近巷缠斗。盗贼爱它因装填慢却能一击收账。"
+        },
+        {
+          "id": "heavy_crossbow",
+          "name": "重弩",
+          "nameEn": "Heavy Crossbow",
+          "cost": {
+            "gp": 50
+          },
+          "costCopper": 5000,
+          "damage": "1d10",
+          "damageType": "piercing",
+          "weight": 18,
+          "properties": [
+            "ammunition",
+            "heavy",
+            "loading",
+            "two-handed"
+          ],
+          "range": {
+            "normal": 100,
+            "long": 400
+          },
+          "iconPath": "/assets/equipment-icons/heavy_crossbow.png",
+          "description": "重弩需双手稳住，弩臂如弓弦巨蟒，远射可穿盾钉墙。守城者说它能让冲锋的兽人停步。"
+        },
+        {
+          "id": "longbow",
+          "name": "长弓",
+          "nameEn": "Longbow",
+          "cost": {
+            "gp": 50
+          },
+          "costCopper": 5000,
+          "damage": "1d8",
+          "damageType": "piercing",
+          "weight": 2,
+          "properties": [
+            "ammunition",
+            "heavy",
+            "two-handed"
+          ],
+          "range": {
+            "normal": 150,
+            "long": 600
+          },
+          "iconPath": "/assets/equipment-icons/longbow.png",
+          "description": "长弓张满如月，重箭远程点杀要害，需强臂与稳步。边境游侠常在百步外先取敌法师喉。"
+        },
+        {
+          "id": "net",
+          "name": "捕网",
+          "nameEn": "Net",
+          "cost": {
+            "gp": 1
+          },
+          "costCopper": 100,
+          "damage": null,
+          "damageType": null,
+          "weight": 3,
+          "properties": [
+            "special",
+            "thrown"
+          ],
+          "range": {
+            "normal": 5,
+            "long": 15
+          },
+          "iconPath": "/assets/equipment-icons/net.png",
+          "description": "结绳捕网抛出即缠，困住猎物手脚为同伴争取围殴良机。水手笑称它比刀更能让海盗闭嘴。"
+        }
+      ]
+    },
+    "weaponProperties": {
+      "ammunition": {
+        "name": "弹药",
+        "nameEn": "Ammunition",
+        "description": "使用该武器发动远程攻击时需要弹药"
+      },
+      "finesse": {
+        "name": "灵巧",
+        "nameEn": "Finesse",
+        "description": "攻击和伤害掷骰可以用敏捷或力量调整值"
+      },
+      "heavy": {
+        "name": "重型",
+        "nameEn": "Heavy",
+        "description": "小型生物使用该武器攻击检定具有劣势"
+      },
+      "light": {
+        "name": "轻型",
+        "nameEn": "Light",
+        "description": "适合双武器战斗"
+      },
+      "loading": {
+        "name": "填弹",
+        "nameEn": "Loading",
+        "description": "每次只能发射一次，无论攻击次数多少"
+      },
+      "range": {
+        "name": "射程",
+        "nameEn": "Range",
+        "description": "有正常射程和远程射程"
+      },
+      "reach": {
+        "name": "触及",
+        "nameEn": "Reach",
+        "description": "攻击时触及距离增加5尺"
+      },
+      "special": {
+        "name": "特殊",
+        "nameEn": "Special",
+        "description": "该武器有特殊规则"
+      },
+      "thrown": {
+        "name": "投掷",
+        "nameEn": "Thrown",
+        "description": "可以投掷进行远程攻击"
+      },
+      "two-handed": {
+        "name": "双手",
+        "nameEn": "Two-Handed",
+        "description": "使用该武器需要双手"
+      },
+      "versatile": {
+        "name": "双用",
+        "nameEn": "Versatile",
+        "description": "可以单手或双手使用，双手伤害更高"
+      }
+    }
+  },
+  "adventuringGear": {
+    "ammunition": [
+      {
+        "id": "arrows",
+        "name": "箭",
+        "nameEn": "Arrow",
+        "cost": {
+          "cp": 5
+        },
+        "costCopper": 5,
+        "weight": 0.05,
+        "defaultQuantity": 20,
+        "iconPath": "/assets/equipment-icons/arrows.png",
+        "description": "鹅羽定向的箭束，适合远射伏击，抹上毒更致命；猎人常讲风停那刻最易穿喉。"
+      },
+      {
+        "id": "blowgun_needles",
+        "name": "吹矢针",
+        "nameEn": "Blowgun Needle",
+        "cost": {
+          "cp": 2
+        },
+        "costCopper": 2,
+        "weight": 0.02,
+        "defaultQuantity": 50,
+        "iconPath": "/assets/equipment-icons/blowgun_needles.png",
+        "description": "细如发针的吹矢，静默无声，善涂麻痹或昏睡毒；盗贼爱在灯火外送人入梦。"
+      },
+      {
+        "id": "crossbow_bolts",
+        "name": "弩矢",
+        "nameEn": "Crossbow Bolt",
+        "cost": {
+          "cp": 5
+        },
+        "costCopper": 5,
+        "weight": 0.075,
+        "defaultQuantity": 20,
+        "iconPath": "/assets/equipment-icons/crossbow_bolts.png",
+        "description": "短粗弩矢穿甲有力，守门与巷战尤佳；听说矮人会在矢尾刻名，替债主催命。"
+      },
+      {
+        "id": "sling_bullets",
+        "name": "投石索弹丸",
+        "nameEn": "Sling Bullet",
+        "cost": {
+          "cp": 0.2
+        },
+        "costCopper": 0.2,
+        "weight": 0.075,
+        "defaultQuantity": 20,
+        "iconPath": "/assets/equipment-icons/sling_bullets.png",
+        "description": "圆铅弹易藏易补，抛射可破颅碎骨，打飞翼兽也常用；牧童夸口曾一弹打落鹰王。"
+      }
+    ],
+    "arcaneFocus": [
+      {
+        "id": "crystal",
+        "name": "水晶",
+        "nameEn": "Crystal",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/crystal.png",
+        "description": "澄澈水晶握于掌心，可折射奥术纹路，助你稳住咒式；有人说它会记住第一次施法的颤抖。"
+      },
+      {
+        "id": "orb",
+        "name": "法球",
+        "nameEn": "Orb",
+        "cost": {
+          "gp": 20
+        },
+        "costCopper": 2000,
+        "weight": 3,
+        "iconPath": "/assets/equipment-icons/orb.png",
+        "description": "抛光法球如月，聚拢元素于一线，适合爆裂与护盾术；酒馆传闻球内常映出未至的风暴。"
+      },
+      {
+        "id": "rod",
+        "name": "权杖",
+        "nameEn": "Rod",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/rod.png",
+        "description": "短权杖便于指挥法阵，敲地即可定下咒印边界；老法师说它比剑更懂得让人退后。"
+      },
+      {
+        "id": "staff",
+        "name": "法杖",
+        "nameEn": "Staff",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 4,
+        "iconPath": "/assets/equipment-icons/staff.png",
+        "description": "长杖兼作登山与撑步，施法时如导雷之桅，亦可格挡一击；旅人常把它当最后的同伴。"
+      },
+      {
+        "id": "wand",
+        "name": "魔杖",
+        "nameEn": "Wand",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/wand.png",
+        "description": "轻巧魔杖适合快速施法与偷袭，一指便放出精准咒线；传说某学徒靠它在决斗中翻盘成名。"
+      }
+    ],
+    "druidicFocus": [
+      {
+        "id": "mistletoe_sprig",
+        "name": "槲寄生枝条",
+        "nameEn": "Sprig of Mistletoe",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/mistletoe_sprig.png",
+        "description": "槲寄生枝条带着林间露气，引导自然祈祷与治愈，亦可平息兽性；德鲁伊说它是冬日的誓言。"
+      },
+      {
+        "id": "totem",
+        "name": "图腾",
+        "nameEn": "Totem",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/totem.png",
+        "description": "兽骨与羽饰编成的古老图腾，握于掌心可聚拢自然之语；据说夜宿林中能驱散饥狼的窥伺。"
+      },
+      {
+        "id": "wooden_staff",
+        "name": "木质法杖",
+        "nameEn": "Wooden Staff",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 4,
+        "iconPath": "/assets/equipment-icons/wooden_staff.png",
+        "description": "削自活树的木质法杖，既可撑行险地亦作施法媒介；老德鲁伊说它能记住每次落雷的方向。"
+      },
+      {
+        "id": "yew_wand",
+        "name": "紫衫魔杖",
+        "nameEn": "Yew Wand",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/yew_wand.png",
+        "description": "紫衫木魔杖纹理如暗红血丝，导引咒力更精准；酒馆传闻它在墓园点燃过幽光，吓退盗墓贼。"
+      }
+    ],
+    "holySymbol": [
+      {
+        "id": "amulet",
+        "name": "护符",
+        "nameEn": "Amulet",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/amulet.png",
+        "description": "刻有神徽的护符贴胸而悬，祷告时可作圣徽引导神术；不少冒险者靠它在绝境稳住心跳与信念。"
+      },
+      {
+        "id": "emblem",
+        "name": "徽章",
+        "nameEn": "Emblem",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/emblem.png",
+        "description": "金属徽章可别于盾或披风，抬手即成圣徽施法；前线牧师常说它让同袍一眼辨出你属于哪位神明。"
+      },
+      {
+        "id": "reliquary",
+        "name": "圣物匣",
+        "nameEn": "Reliquary",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/reliquary.png",
+        "description": "小巧圣物匣内藏碎骨或圣砂，祈祷时增添庄严与底气；有传言开匣于恶地，连阴影都会退后半步。"
+      }
+    ],
+    "potionsAndPoisons": [
+      {
+        "id": "acid_vial",
+        "name": "强酸(小瓶)",
+        "nameEn": "Acid (vial)",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 1,
+        "effect": "2d6强酸伤害",
+        "iconPath": "/assets/equipment-icons/acid_vial.png",
+        "consumable": {
+          "type": "thrown",
+          "action": "action",
+          "consumed": true,
+          "attack": "ranged",
+          "range": {
+            "normal": 20
+          },
+          "damage": {
+            "dice": "2d6",
+            "type": "acid"
+          }
+        },
+        "description": "封蜡小瓶盛着刺鼻强酸，泼洒可蚀锁断链、逼敌退避；盗贼们私下称它为不开锁的钥匙。"
+      },
+      {
+        "id": "alchemists_fire",
+        "name": "炽火胶(烧瓶)",
+        "nameEn": "Alchemist's Fire (flask)",
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "weight": 1,
+        "effect": "1d4火焰伤害,持续燃烧",
+        "iconPath": "/assets/equipment-icons/alchemists_fire.png",
+        "description": "一种粘稠的流体，接触空气就会引起自燃。投掷命中时，目标在每回合开始时受到1d4点火焰伤害。被命中生物可以用动作进行DC10敏捷检定扑灭火焰。",
+        "consumable": {
+          "type": "thrown",
+          "action": "action",
+          "consumed": true,
+          "attack": "ranged",
+          "range": {
+            "normal": 20
+          },
+          "damage": {
+            "dice": "1d4",
+            "type": "fire"
+          },
+          "ongoing": {
+            "dice": "1d4",
+            "type": "fire",
+            "save": {
+              "ability": "dex",
+              "dc": 10
+            }
+          }
+        }
+      },
+      {
+        "id": "antitoxin",
+        "name": "抗毒剂(小瓶)",
+        "nameEn": "Antitoxin (vial)",
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "weight": 0,
+        "effect": "1小时内对毒素豁免具有优势",
+        "iconPath": "/assets/equipment-icons/antitoxin.png",
+        "description": "喝下瓶内液体的生物在1小时内进行对抗毒素的豁免检定时具有优势。它无法为不死生物或构装生物提供任何增益。",
+        "consumable": {
+          "type": "drink",
+          "action": "action",
+          "consumed": true,
+          "buff": {
+            "name": "抗毒",
+            "duration": "1 hour",
+            "effect": "对毒素豁免具有优势"
+          }
+        }
+      },
+      {
+        "id": "holy_water",
+        "name": "圣水(烧瓶)",
+        "nameEn": "Holy Water (flask)",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 1,
+        "effect": "对不死生物和邪魔造成2d6光耀伤害",
+        "iconPath": "/assets/equipment-icons/holy_water.png",
+        "description": "你可以将圣水泼溅到5尺内或投掷到20尺远。视为远程攻击，命中邪魔或不死生物时造成2d6点光耀伤害。",
+        "consumable": {
+          "type": "thrown",
+          "action": "action",
+          "consumed": true,
+          "attack": "ranged",
+          "range": {
+            "normal": 5,
+            "long": 20
+          },
+          "damage": {
+            "dice": "2d6",
+            "type": "radiant",
+            "target": [
+              "fiend",
+              "undead"
+            ]
+          }
+        }
+      },
+      {
+        "id": "potion_of_healing",
+        "name": "治疗药水",
+        "nameEn": "Potion of Healing",
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "weight": 0.5,
+        "effect": "恢复2d4+2生命值",
+        "iconPath": "/assets/equipment-icons/potion_of_healing.png",
+        "description": "一种红色的魔力药剂，可以使饮用者恢复2d4+2的生命值。喝药或喂人喝药需要使用一个动作。",
+        "consumable": {
+          "type": "drink",
+          "action": "action",
+          "consumed": true,
+          "healing": {
+            "dice": "2d4",
+            "bonus": 2,
+            "formula": "2d4+2"
+          }
+        }
+      },
+      {
+        "id": "basic_poison",
+        "name": "基础毒药(小瓶)",
+        "nameEn": "Basic Poison (vial)",
+        "cost": {
+          "gp": 100
+        },
+        "costCopper": 10000,
+        "weight": 0,
+        "effect": "DC10体质豁免，失败受1d4毒素伤害",
+        "iconPath": "/assets/equipment-icons/basic_poison.png",
+        "consumable": {
+          "type": "apply",
+          "action": "action",
+          "consumed": true,
+          "applyTo": "weapon",
+          "duration": "1 minute",
+          "damage": {
+            "dice": "1d4",
+            "type": "poison",
+            "save": {
+              "ability": "con",
+              "dc": 10
+            }
+          }
+        },
+        "description": "基础毒药涂于刃上可令伤口麻痹迟滞，适合伏击与撤离；酒馆里常有人吹嘘靠它放倒过半兽人哨兵。"
+      }
+    ],
+    "containers": [
+      {
+        "id": "backpack",
+        "name": "背包",
+        "nameEn": "Backpack",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 5,
+        "capacity": "1立方尺/30磅",
+        "iconPath": "/assets/equipment-icons/backpack.png",
+        "description": "耐磨背包能妥善收纳绳索口粮与战利品，长途行军更省力；老冒险者总把它叫作第二条命。"
+      },
+      {
+        "id": "barrel",
+        "name": "粗腰桶",
+        "nameEn": "Barrel",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 70,
+        "capacity": "40加仑液体/4立方尺固体",
+        "iconPath": "/assets/equipment-icons/barrel.png",
+        "description": "粗腰木桶结实耐滚，装水酒粮或封存赃物皆宜；有人曾把同伴塞进桶里逃过城卫搜查。"
+      },
+      {
+        "id": "basket",
+        "name": "篮子",
+        "nameEn": "Basket",
+        "cost": {
+          "sp": 4
+        },
+        "costCopper": 40,
+        "weight": 2,
+        "capacity": "2立方尺/40磅",
+        "iconPath": "/assets/equipment-icons/basket.png",
+        "description": "编织篮子轻便透气，采集草药蘑菇或运送碎物最合适；德鲁伊学徒常用它装清晨的露水与苔藓。"
+      },
+      {
+        "id": "bolt_case",
+        "name": "弩矢匣",
+        "nameEn": "Crossbow Bolt Case",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 1,
+        "capacity": "容纳20支弩矢",
+        "iconPath": "/assets/equipment-icons/bolt_case.png",
+        "description": "弩矢匣能护住弩矢羽尾不受雨泥，便于快速取用补射；佣兵说它决定你能否多撑一轮齐射。"
+      },
+      {
+        "id": "bottle_glass",
+        "name": "玻璃瓶",
+        "nameEn": "Bottle, glass",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 2,
+        "capacity": "1.5品脱液体",
+        "iconPath": "/assets/equipment-icons/bottle_glass.png",
+        "description": "透明玻璃瓶可装圣水、样本或雾气药剂，便于观察沉淀与颜色；传闻炼金师靠它辨出假药商的伎俩。"
+      },
+      {
+        "id": "bucket",
+        "name": "吊桶",
+        "nameEn": "Bucket",
+        "cost": {
+          "cp": 5
+        },
+        "costCopper": 5,
+        "weight": 2,
+        "capacity": "3加仑液体/1/2立方尺固体",
+        "iconPath": "/assets/equipment-icons/bucket.png",
+        "description": "结实吊桶适合取水灭火、攀井传物，必要时也能作简易头盔；矿工酒馆里常拿它讲笑谈保命。"
+      },
+      {
+        "id": "chest",
+        "name": "箱子",
+        "nameEn": "Chest",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 25,
+        "capacity": "12立方尺/300磅",
+        "iconPath": "/assets/equipment-icons/chest.png",
+        "description": "厚木箱配铁箍与锁扣，可存放金币卷轴与敏感证据；许多队伍把它当营地里最值得守的宝物。"
+      },
+      {
+        "id": "flask_tankard",
+        "name": "扁瓶或大杯",
+        "nameEn": "Flask or tankard",
+        "cost": {
+          "cp": 2
+        },
+        "costCopper": 2,
+        "weight": 1,
+        "capacity": "1品脱液体",
+        "iconPath": "/assets/equipment-icons/flask_tankard.png",
+        "description": "扁瓶或大杯，贴身藏酒或盛水；战前一口定神。酒馆说它曾救过一名被毒箭放倒的游侠。"
+      },
+      {
+        "id": "jug_pitcher",
+        "name": "壶或罐",
+        "nameEn": "Jug or pitcher",
+        "cost": {
+          "cp": 2
+        },
+        "costCopper": 2,
+        "weight": 4,
+        "capacity": "1加仑液体",
+        "iconPath": "/assets/equipment-icons/jug_pitcher.png",
+        "description": "壶或罐，厚陶耐摔，装水装油皆宜；破门时可泼灯油点火。老板娘说它比誓言更能留人。"
+      },
+      {
+        "id": "map_case",
+        "name": "地图或卷轴匣",
+        "nameEn": "Map or Scroll Case",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 1,
+        "capacity": "容纳10张卷起的纸张或5张卷起的羊皮纸",
+        "iconPath": "/assets/equipment-icons/map_case.png",
+        "description": "地图或卷轴匣，蜡封防潮，护住航线与咒文；翻墙涉水也不怕糊字。老探子常把赎金条塞其中。"
+      },
+      {
+        "id": "pouch",
+        "name": "小包",
+        "nameEn": "Pouch",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 1,
+        "capacity": "1/5立方尺/6磅",
+        "iconPath": "/assets/equipment-icons/pouch.png",
+        "description": "小包，收纳硬币、粉末与符材；施法时一摸即取不误拍。赌徒传闻它能“吞”掉响声最脆的金币。"
+      },
+      {
+        "id": "quiver",
+        "name": "箭袋",
+        "nameEn": "Quiver",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 1,
+        "capacity": "容纳20支箭",
+        "iconPath": "/assets/equipment-icons/quiver.png",
+        "description": "箭袋，背负如影，抽箭顺手不挂弦；伏击时能让你多射出一轮。有人说它曾装过龙鳞箭头。"
+      },
+      {
+        "id": "sack",
+        "name": "大袋子",
+        "nameEn": "Sack",
+        "cost": {
+          "cp": 1
+        },
+        "costCopper": 1,
+        "weight": 0.5,
+        "capacity": "1立方尺/30磅",
+        "iconPath": "/assets/equipment-icons/sack.png",
+        "description": "大袋子，粗麻耐磨，可装粮、战利品或俘虏的头盔；临时当沙袋挡箭。港口苦力笑称它比队友可靠。"
+      },
+      {
+        "id": "vial",
+        "name": "小瓶",
+        "nameEn": "Vial",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 0,
+        "capacity": "4盎司液体",
+        "iconPath": "/assets/equipment-icons/vial.png",
+        "description": "小瓶，细口封蜡，盛酸液、解毒剂或圣水；投掷亦可碎裂溅洒。炼金学徒说别把它和烈酒弄混。"
+      },
+      {
+        "id": "waterskin",
+        "name": "水袋",
+        "nameEn": "Waterskin",
+        "cost": {
+          "sp": 2
+        },
+        "costCopper": 20,
+        "weight": 5,
+        "capacity": "4品脱液体",
+        "iconPath": "/assets/equipment-icons/waterskin.png",
+        "description": "水袋，皮革缝线紧密，荒野行军保命之物；湿布裹口可挡烟尘。老兵说空袋也能当枕头做梦。"
+      }
+    ],
+    "survival": [
+      {
+        "id": "bedroll",
+        "name": "铺盖",
+        "nameEn": "Bedroll",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 7,
+        "iconPath": "/assets/equipment-icons/bedroll.png",
+        "description": "铺盖，卷起轻便，露营时隔绝地寒与虫蠹；伏地伪装也能遮甲光。传闻某盗贼用它闷晕过守卫。"
+      },
+      {
+        "id": "blanket",
+        "name": "毯子",
+        "nameEn": "Blanket",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 3,
+        "iconPath": "/assets/equipment-icons/blanket.png",
+        "description": "毯子，厚毛御寒，夜守营火时防风；包裹伤员可止颤。旅店常说最贵的不是房间，是这一条温暖。"
+      },
+      {
+        "id": "climbers_kit",
+        "name": "攀爬工具",
+        "nameEn": "Climber's Kit",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 12,
+        "iconPath": "/assets/equipment-icons/climbers_kit.png",
+        "description": "一套攀爬工具包括特制岩钉、靴子包头、手套和系带。你可以用动作锚定自己，此时不会摔落超过25尺，且无法攀爬超过25尺直到解除锚定。"
+      },
+      {
+        "id": "fishing_tackle",
+        "name": "钓具",
+        "nameEn": "Fishing Tackle",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 4,
+        "iconPath": "/assets/equipment-icons/fishing_tackle.png",
+        "description": "钓具，钩线铅坠俱全，断粮时能从河里钓出活路；钩子也可做简易陷阱。渔夫夸它钓过鳄鱼。"
+      },
+      {
+        "id": "healers_kit",
+        "name": "医疗包",
+        "nameEn": "Healer's Kit",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 3,
+        "uses": 10,
+        "iconPath": "/assets/equipment-icons/healers_kit.png",
+        "description": "一个医疗用小皮包中装有绷带、药膏和夹板。可使用10次。你可以用一个动作花费一次使用次数为生命值为0的生物稳定伤势，无需进行感知(医药)检定。"
+      },
+      {
+        "id": "hunting_trap",
+        "name": "狩猎陷阱",
+        "nameEn": "Hunting Trap",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 25,
+        "iconPath": "/assets/equipment-icons/hunting_trap.png",
+        "description": "设置后形成锯齿钢圈。踩上的生物必须进行DC13敏捷豁免，失败则受到1d4点穿刺伤害并停止移动，移动范围被限制在链条长度内（通常3尺）。DC13力量检定可解脱。"
+      },
+      {
+        "id": "mess_kit",
+        "name": "餐具",
+        "nameEn": "Mess Kit",
+        "cost": {
+          "sp": 2
+        },
+        "costCopper": 20,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/mess_kit.png",
+        "description": "野炊工具锡盒包括一只茶杯和简易餐具。盒子夹在一起，一面可作煎锅，另一面作碟子或浅碗。"
+      },
+      {
+        "id": "rations_1day",
+        "name": "口粮(1天)",
+        "nameEn": "Rations (1 day)",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/rations_1day.png",
+        "description": "一日口粮，肉干与硬饼耐放，长途赶路不必生火暴露；饥饿时保持专注。有人用它贿赂过哥布林。"
+      },
+      {
+        "id": "rope_hempen_50ft",
+        "name": "麻绳(50尺)",
+        "nameEn": "Rope, hempen (50 feet)",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 10,
+        "iconPath": "/assets/equipment-icons/rope_hempen_50ft.png",
+        "description": "麻绳50尺，粗糙却结实，攀崖捆缚拖拽皆可；火把一烤也易断。酒馆墙上还挂着它救人的结。"
+      },
+      {
+        "id": "rope_silk_50ft",
+        "name": "丝绳(50尺)",
+        "nameEn": "Rope, silk (50 feet)",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/rope_silk_50ft.png",
+        "description": "丝绳50尺，轻巧无声，攀窗潜入不易磨损；打结更稳，适合高空作业。贵族窃贼爱用它不留痕。"
+      },
+      {
+        "id": "tent_two_person",
+        "name": "双人帐篷",
+        "nameEn": "Tent, two-person",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 20,
+        "iconPath": "/assets/equipment-icons/tent_two_person.png",
+        "description": "双人帐篷，支起成小堡垒，挡雨隔露并遮火光；夜袭时便于同伴互相照应。巡林员说它曾骗过狼群。"
+      },
+      {
+        "id": "tinderbox",
+        "name": "火绒盒",
+        "nameEn": "Tinderbox",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/tinderbox.png",
+        "description": "小巧的盒子里装有燧石、铁片和火绒。使用火绒盒点燃火把需要一个动作，点燃其他物品需要1分钟。"
+      }
+    ],
+    "lightSources": [
+      {
+        "id": "candle",
+        "name": "蜡烛",
+        "nameEn": "Candle",
+        "cost": {
+          "cp": 1
+        },
+        "costCopper": 1,
+        "weight": 0,
+        "duration": "1小时",
+        "radius": "5尺",
+        "iconPath": "/assets/equipment-icons/candle.png",
+        "description": "一只蜡烛可以为身边5尺半径范围提供明亮光照，以及该范围外5尺的微光光照。照明效果可持续1小时。"
+      },
+      {
+        "id": "lamp",
+        "name": "油灯",
+        "nameEn": "Lamp",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 1,
+        "duration": "6小时/品脱",
+        "radius": "15尺明亮+30尺微光",
+        "iconPath": "/assets/equipment-icons/lamp.png",
+        "description": "一只油灯可以为身边15尺半径范围提供明亮光照，以及该范围外30尺的微光光照。每6小时消耗一扁瓶灯油。"
+      },
+      {
+        "id": "lantern_bullseye",
+        "name": "牛眼提灯",
+        "nameEn": "Lantern, bullseye",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 2,
+        "duration": "6小时/品脱",
+        "radius": "60尺锥形明亮+60尺微光",
+        "iconPath": "/assets/equipment-icons/lantern_bullseye.png",
+        "description": "牛眼提灯可以为前方60尺锥状区域提供明亮光照，以及该范围外60尺的微光光照。每6小时消耗一扁瓶灯油。"
+      },
+      {
+        "id": "lantern_hooded",
+        "name": "附盖提灯",
+        "nameEn": "Lantern, hooded",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 2,
+        "duration": "6小时/品脱",
+        "radius": "30尺明亮+30尺微光",
+        "iconPath": "/assets/equipment-icons/lantern_hooded.png",
+        "description": "附盖提灯可以为身边30尺半径范围提供明亮光照，以及该范围外30尺的微光光照。每6小时消耗一扁瓶灯油。可用动作放下盖子减弱为5尺微光。"
+      },
+      {
+        "id": "oil_flask",
+        "name": "油(烧瓶)",
+        "nameEn": "Oil (flask)",
+        "cost": {
+          "sp": 1
+        },
+        "costCopper": 10,
+        "weight": 1,
+        "asLanternFuel": "6小时",
+        "iconPath": "/assets/equipment-icons/oil_flask.png",
+        "description": "琥珀油装在小烧瓶里，泼洒可引火成焰或点灯续明。酒馆说它曾逼退过潜伏下水道的鼠群。"
+      },
+      {
+        "id": "torch",
+        "name": "火把",
+        "nameEn": "Torch",
+        "cost": {
+          "cp": 1
+        },
+        "costCopper": 1,
+        "weight": 1,
+        "duration": "1小时",
+        "radius": "20尺明亮+20尺微光",
+        "iconPath": "/assets/equipment-icons/torch.png",
+        "description": "一支火把可以为身边20尺半径范围提供明亮光照，以及其外20尺的微光光照。照明效果可持续1小时。可用燃烧的火把发动近战攻击造成1点火焰伤害。"
+      }
+    ],
+    "tools": [
+      {
+        "id": "crowbar",
+        "name": "撬棍",
+        "nameEn": "Crowbar",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/crowbar.png",
+        "description": "在适当的地方使用撬棍时，可以让相应的力量检定具有优势。"
+      },
+      {
+        "id": "grappling_hook",
+        "name": "爪钩",
+        "nameEn": "Grappling Hook",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 4,
+        "iconPath": "/assets/equipment-icons/grappling_hook.png",
+        "description": "铁爪咬住檐角与树枝，配绳可攀墙越壕、拖拽战利品。老盗贼夸它能勾回坠落的同伴。"
+      },
+      {
+        "id": "hammer",
+        "name": "锤子",
+        "nameEn": "Hammer",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 3,
+        "iconPath": "/assets/equipment-icons/hammer.png",
+        "description": "短柄铁锤敲钉修甲、砸锁打楔皆宜，野外搭营最趁手。旅人说它的声响能吓退阴影里的东西。"
+      },
+      {
+        "id": "hammer_sledge",
+        "name": "大锤",
+        "nameEn": "Hammer, sledge",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 10,
+        "iconPath": "/assets/equipment-icons/hammer_sledge.png",
+        "description": "沉重大锤一击可碎石破门，开路或拆陷阱都见效。矮人矿队传闻它敲出的回音能辨空洞。"
+      },
+      {
+        "id": "ladder_10ft",
+        "name": "爬梯(10尺)",
+        "nameEn": "Ladder (10-foot)",
+        "cost": {
+          "sp": 1
+        },
+        "costCopper": 10,
+        "weight": 25,
+        "iconPath": "/assets/equipment-icons/ladder_10ft.png",
+        "description": "十尺木梯可跨沟登窗，潜入与撤离都多一条路。有人吹嘘靠它从男爵塔楼偷走了银杯。"
+      },
+      {
+        "id": "lock",
+        "name": "锁",
+        "nameEn": "Lock",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/lock.png",
+        "description": "每把锁与一把钥匙相配套。不使用钥匙时，具有盗贼工具熟练项的生物可以通过DC15敏捷检定撬开。"
+      },
+      {
+        "id": "manacles",
+        "name": "镣铐",
+        "nameEn": "Manacles",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 6,
+        "iconPath": "/assets/equipment-icons/manacles.png",
+        "description": "金属束具可以困住小型或中型生物。解开镣铐需DC20敏捷检定，破坏需DC20力量检定。不用钥匙时DC15敏捷检定可撬开。镣铐有15点生命值。"
+      },
+      {
+        "id": "pick_miners",
+        "name": "矿工镐",
+        "nameEn": "Pick, miner's",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 10,
+        "iconPath": "/assets/equipment-icons/pick_miners.png",
+        "description": "矿工镐尖利如獠，凿岩开隧道、撬开石板暗门很快。地底老手说它能听出矿脉的脉搏。"
+      },
+      {
+        "id": "piton",
+        "name": "岩钉",
+        "nameEn": "Piton",
+        "cost": {
+          "cp": 5
+        },
+        "costCopper": 5,
+        "weight": 0.25,
+        "iconPath": "/assets/equipment-icons/piton.png",
+        "description": "细长岩钉配锤可在石壁固定绳索，攀爬与设绊线都可靠。酒馆传闻某次雪崩里它救了一队人。"
+      },
+      {
+        "id": "pole_10ft",
+        "name": "长杆(10尺)",
+        "nameEn": "Pole (10-foot)",
+        "cost": {
+          "cp": 5
+        },
+        "costCopper": 5,
+        "weight": 7,
+        "iconPath": "/assets/equipment-icons/pole_10ft.png",
+        "description": "十尺长杆可探路试陷坑、拨开蛛网或顶开可疑门扇。冒险者笑称它比牧师更早发现诅咒。"
+      },
+      {
+        "id": "ram_portable",
+        "name": "便携式攻城锤",
+        "nameEn": "Ram, portable",
+        "cost": {
+          "gp": 4
+        },
+        "costCopper": 400,
+        "weight": 35,
+        "iconPath": "/assets/equipment-icons/ram_portable.png",
+        "description": "便携攻城锤合力一撞便撼动闸门与栅栏，破门突入极具战术价值。城卫记得它敲碎过走私仓。"
+      },
+      {
+        "id": "shovel",
+        "name": "铲子",
+        "nameEn": "Shovel",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/shovel.png",
+        "description": "坚实铲子能挖壕埋藏补给、清理塌方或掘出密室入口。盗墓贼常说，财富离土只差一铲。"
+      },
+      {
+        "id": "spyglass",
+        "name": "望远镜",
+        "nameEn": "Spyglass",
+        "cost": {
+          "gp": 1000
+        },
+        "costCopper": 100000,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/spyglass.png",
+        "description": "从望远镜中观察到的物品能放大两倍。"
+      },
+      {
+        "id": "whetstone",
+        "name": "磨刀石",
+        "nameEn": "Whetstone",
+        "cost": {
+          "cp": 1
+        },
+        "costCopper": 1,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/whetstone.png",
+        "description": "磨刀石沾水轻磨，刃口重归寒光，远行少受钝刃之苦。有人私语它能抚平剑上的血誓。"
+      }
+    ],
+    "miscellaneous": [
+      {
+        "id": "abacus",
+        "name": "算盘",
+        "nameEn": "Abacus",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/abacus.png",
+        "description": "木框算盘噼啪作响，算账分赃与补给清单一目了然。商旅传言，行会间谍靠它记住了暗号。"
+      },
+      {
+        "id": "ball_bearings",
+        "name": "滚珠(1000颗)",
+        "nameEn": "Ball bearings (bag of 1,000)",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/ball_bearings.png",
+        "description": "你可以用一个动作将滚珠洒出覆盖10尺方形区域。穿过该区域的生物必须进行DC10敏捷豁免，失败则摔至倒地。以半速穿过不需豁免。"
+      },
+      {
+        "id": "bell",
+        "name": "铃铛",
+        "nameEn": "Bell",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/bell.png",
+        "description": "小铃一响清脆，系在绊线可报敌踪，夜宿营地更安心。酒客说它曾惊醒沉睡的守墓者。"
+      },
+      {
+        "id": "block_and_tackle",
+        "name": "滑轮组",
+        "nameEn": "Block and Tackle",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/block_and_tackle.png",
+        "description": "一组滑轮组，配有绳索和系物钩子。滑轮组可以让你提起相当于你正常举重四倍重量的物件。"
+      },
+      {
+        "id": "book",
+        "name": "书本",
+        "nameEn": "Book",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/book.png",
+        "description": "厚皮书可记咒文、地图与债务，亦能压住风中翻卷的卷轴。有人在旧页夹层里找到通往遗迹的线索。"
+      },
+      {
+        "id": "caltrops",
+        "name": "铁蒺藜(20个)",
+        "nameEn": "Caltrops (bag of 20)",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/caltrops.png",
+        "description": "你可以用一个动作将铁蒺藜撒出覆盖5尺方形区域。进入该区域的生物必须进行DC15敏捷豁免，失败则停止移动并受到1点穿刺伤害，步行速度减少10尺直到恢复至少1点生命值。"
+      },
+      {
+        "id": "chain_10ft",
+        "name": "链条(10尺)",
+        "nameEn": "Chain (10 feet)",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 10,
+        "iconPath": "/assets/equipment-icons/chain_10ft.png",
+        "description": "十尺链条结实沉冷，可捆缚囚徒、锁门或与钩索加固攀爬。水手说它拴住过被诅咒的箱子。"
+      },
+      {
+        "id": "chalk",
+        "name": "粉笔(1支)",
+        "nameEn": "Chalk (1 piece)",
+        "cost": {
+          "cp": 1
+        },
+        "costCopper": 1,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/chalk.png",
+        "description": "一支粉笔可在石壁留记号、画符阵边界，黑暗迷宫里当路标。有人说它曾引出隐形门的轮廓。"
+      },
+      {
+        "id": "hourglass",
+        "name": "沙漏",
+        "nameEn": "Hourglass",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/hourglass.png",
+        "description": "细沙落尽如命运倒数，用来计时守夜、法术准备或谈判限时。老兵赌桌上只信它不信誓言。"
+      },
+      {
+        "id": "ink",
+        "name": "墨水(1盎司瓶)",
+        "nameEn": "Ink (1 ounce bottle)",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/ink.png",
+        "description": "一盎司墨水浓如夜潮，能誊写契约、绘制地图与符文笔记。酒馆传闻黑墨可遮去魔眼的窥视。"
+      },
+      {
+        "id": "ink_pen",
+        "name": "墨笔",
+        "nameEn": "Ink pen",
+        "cost": {
+          "cp": 2
+        },
+        "costCopper": 2,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/ink_pen.png",
+        "description": "墨笔锋利稳重，适合抄写卷轴、记录口供与密文。冒险者说它在暴雨中仍能写下求援坐标。"
+      },
+      {
+        "id": "iron_spikes",
+        "name": "长铁钉(10支)",
+        "nameEn": "Iron Spikes (10)",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/iron_spikes.png",
+        "description": "十支长铁钉可钉门、堵洞、固定绳索或当简易攀点。地城里常见它们救人于滑坠一瞬。"
+      },
+      {
+        "id": "magnifying_glass",
+        "name": "放大镜",
+        "nameEn": "Magnifying glass",
+        "cost": {
+          "gp": 100
+        },
+        "costCopper": 10000,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/magnifying_glass.png",
+        "description": "一枚用以详细观察小物件的透镜。生火时可代替燧石与铁片，需要约5分钟。检查细小或精细物件时属性检定具有优势。"
+      },
+      {
+        "id": "mirror_steel",
+        "name": "钢面镜",
+        "nameEn": "Mirror, steel",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 0.5,
+        "iconPath": "/assets/equipment-icons/mirror_steel.png",
+        "description": "钢面镜不惧摔碰，可拐角窥探、反射光束照暗室，也能对付蛇发女妖的目光。盗贼行话叫它保命牌。"
+      },
+      {
+        "id": "paper",
+        "name": "纸",
+        "nameEn": "Paper (one sheet)",
+        "cost": {
+          "sp": 2
+        },
+        "costCopper": 20,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/paper.png",
+        "description": "一张纸轻薄却值情报，可写信、画草图、折成火引或临时遮光。有人把藏宝线索藏在折痕里。"
+      },
+      {
+        "id": "parchment",
+        "name": "羊皮纸",
+        "nameEn": "Parchment (one sheet)",
+        "cost": {
+          "sp": 1
+        },
+        "costCopper": 10,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/parchment.png",
+        "description": "羊皮纸耐潮耐久，适合誊写法术、契约与王室敕令。传闻旧卷边缘常沾着亡者指骨的灰。"
+      },
+      {
+        "id": "perfume",
+        "name": "香水(小瓶)",
+        "nameEn": "Perfume (vial)",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/perfume.png",
+        "description": "小瓶香水掩去血腥与墓土味，宴会中加魅力，亦可作追踪标记。酒馆里说它能骗过嗅猎犬一夜。"
+      },
+      {
+        "id": "scale_merchant",
+        "name": "商用天平",
+        "nameEn": "Merchant's Scale",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 3,
+        "iconPath": "/assets/equipment-icons/scale_merchant.png",
+        "description": "商用天平衡量金币与宝石真伪，讨价还价时是你的证据。老行商笑道：秤一响，谎就轻了。"
+      },
+      {
+        "id": "sealing_wax",
+        "name": "封蜡",
+        "nameEn": "Sealing Wax",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/sealing_wax.png",
+        "description": "封蜡融化后可封信、封箱并留印记，防篡改亦可设陷阱提示。冒险队常用它判定夜里有人翻包。"
+      },
+      {
+        "id": "signal_whistle",
+        "name": "信号笛",
+        "nameEn": "Signal Whistle",
+        "cost": {
+          "cp": 5
+        },
+        "costCopper": 5,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/signal_whistle.png",
+        "description": "信号笛尖响穿雾，可远距集结、报警或传递简单暗号。传闻三短一长，是黑港水手的求救魂音。"
+      },
+      {
+        "id": "signet_ring",
+        "name": "玺戒",
+        "nameEn": "Signet Ring",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/signet_ring.png",
+        "description": "玺戒刻家徽与誓约，可压封蜡昭示权威，也能在城门前换得一线通行。有人靠它假冒伯爵脱身。"
+      },
+      {
+        "id": "soap",
+        "name": "肥皂",
+        "nameEn": "Soap",
+        "cost": {
+          "cp": 2
+        },
+        "costCopper": 2,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/soap.png",
+        "description": "肥皂去污除味，洗去血迹与沼泽泥，减少被追踪的气味。老猎人说：干净的手更握得住匕首。"
+      },
+      {
+        "id": "spellbook",
+        "name": "法术书",
+        "nameEn": "Spellbook",
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "weight": 3,
+        "iconPath": "/assets/equipment-icons/spellbook.png",
+        "description": "硬皮封面的法术书是法师们的必须品，通常有100张羊皮纸空书页用于记录法术。"
+      }
+    ],
+    "clothing": [
+      {
+        "id": "clothes_common",
+        "name": "普通服装",
+        "nameEn": "Clothes, Common",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 3,
+        "iconPath": "/assets/equipment-icons/clothes_common.png",
+        "description": "普通服装朴素耐穿，融入市集与旅店不惹眼，便于潜行侦查。常有冒险者靠一身平民衣躲过通缉。"
+      },
+      {
+        "id": "clothes_costume",
+        "name": "表演服装",
+        "nameEn": "Clothes, Costume",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 4,
+        "iconPath": "/assets/equipment-icons/clothes_costume.png",
+        "description": "亮片与羽饰缝出千面身份，舞台上夺目，巷口里也能混入贵客队伍；酒馆传闻它曾骗过一位伯爵的眼。"
+      },
+      {
+        "id": "clothes_fine",
+        "name": "高档服装",
+        "nameEn": "Clothes, Fine",
+        "cost": {
+          "gp": 15
+        },
+        "costCopper": 1500,
+        "weight": 6,
+        "iconPath": "/assets/equipment-icons/clothes_fine.png",
+        "description": "丝绸与金线映出体面与威势，面见领主或谈判时更易赢得尊重；据说穿它走进会堂，守卫都先行礼半步。"
+      },
+      {
+        "id": "clothes_travelers",
+        "name": "旅行者服装",
+        "nameEn": "Clothes, Traveler's",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 4,
+        "iconPath": "/assets/equipment-icons/clothes_travelers.png",
+        "description": "耐磨外衣配暗袋与披肩，挡风避雨又便于藏匕首与地图；老行商说这身衣救过他三次，从不问价。"
+      },
+      {
+        "id": "robes",
+        "name": "长袍",
+        "nameEn": "Robes",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 4,
+        "iconPath": "/assets/equipment-icons/robes.png",
+        "description": "宽袖长袍便于藏符材与卷轴，施法时动作更顺，夜里还能当薄毯；有学徒吹嘘它沾过一滴真龙血墨。"
+      }
+    ],
+    "spellcastingEquipment": [
+      {
+        "id": "component_pouch",
+        "name": "材料包",
+        "nameEn": "Component Pouch",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 2,
+        "description": "一个小型防水皮囊，内含施法所需的各种常见材料。可替代所有无金币价格要求的材料成分（M）",
+        "iconPath": "/assets/equipment-icons/component_pouch.png"
+      }
+    ],
+    "spellComponents": [
+      {
+        "id": "diamond_50gp",
+        "name": "钻石(50gp)",
+        "nameEn": "Diamond",
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "weight": 0,
+        "description": "一颗至少价值50gp的钻石",
+        "consumed": false,
+        "usedBy": [
+          "Chromatic Orb"
+        ]
+      },
+      {
+        "id": "diamond_300gp",
+        "name": "钻石(300gp)",
+        "nameEn": "Diamond",
+        "cost": {
+          "gp": 300
+        },
+        "costCopper": 30000,
+        "weight": 0,
+        "description": "总价值至少300gp的钻石",
+        "consumed": true,
+        "usedBy": [
+          "Revivify"
+        ]
+      },
+      {
+        "id": "diamond_500gp",
+        "name": "钻石(500gp)",
+        "nameEn": "Diamond",
+        "cost": {
+          "gp": 500
+        },
+        "costCopper": 50000,
+        "weight": 0,
+        "description": "至少价值500gp的钻石",
+        "consumed": true,
+        "usedBy": [
+          "Raise Dead"
+        ]
+      },
+      {
+        "id": "diamond_1000gp",
+        "name": "钻石(1000gp)",
+        "nameEn": "Diamond",
+        "cost": {
+          "gp": 1000
+        },
+        "costCopper": 100000,
+        "weight": 0,
+        "description": "至少价值1000gp的钻石",
+        "consumed": true,
+        "usedBy": [
+          "Resurrection",
+          "Clone"
+        ]
+      },
+      {
+        "id": "diamond_5000gp",
+        "name": "钻石(5000gp)",
+        "nameEn": "Diamond",
+        "cost": {
+          "gp": 5000
+        },
+        "costCopper": 500000,
+        "weight": 0,
+        "description": "价值至少5000gp的钻石",
+        "consumed": false,
+        "usedBy": [
+          "Gate"
+        ]
+      },
+      {
+        "id": "diamond_holy_water_25000gp",
+        "name": "钻石与圣水(25000gp)",
+        "nameEn": "Diamond and Holy Water",
+        "cost": {
+          "gp": 25000
+        },
+        "costCopper": 2500000,
+        "weight": 0,
+        "description": "圣水和至少价值25000gp的钻石",
+        "consumed": true,
+        "usedBy": [
+          "True Resurrection"
+        ]
+      },
+      {
+        "id": "diamond_dust_25gp",
+        "name": "钻石粉(25gp)",
+        "nameEn": "Diamond Dust",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 0,
+        "description": "价值至少25gp的钻石粉末",
+        "consumed": true,
+        "usedBy": [
+          "Nondetection"
+        ]
+      },
+      {
+        "id": "diamond_dust_100gp",
+        "name": "钻石粉(100gp)",
+        "nameEn": "Diamond Dust",
+        "cost": {
+          "gp": 100
+        },
+        "costCopper": 10000,
+        "weight": 0,
+        "description": "价值至少100gp的钻石粉",
+        "consumed": true,
+        "usedBy": [
+          "Greater Restoration",
+          "Stoneskin"
+        ]
+      },
+      {
+        "id": "diamond_dust_incense_200gp",
+        "name": "钻石粉与熏香(200gp)",
+        "nameEn": "Diamond Dust and Incense",
+        "cost": {
+          "gp": 200
+        },
+        "costCopper": 20000,
+        "weight": 0,
+        "description": "熏香和至少价值200gp的钻石粉",
+        "consumed": true,
+        "usedBy": [
+          "Glyph of Warding"
+        ]
+      },
+      {
+        "id": "diamond_opal_dust_1000gp",
+        "name": "钻石与蛋白石粉末(1000gp)",
+        "nameEn": "Diamond and Opal Dust",
+        "cost": {
+          "gp": 1000
+        },
+        "costCopper": 100000,
+        "weight": 0,
+        "description": "水银、磷以及价值至少1000gp的钻石和蛋白石粉末",
+        "consumed": true,
+        "usedBy": [
+          "Symbol"
+        ]
+      },
+      {
+        "id": "ruby_dust_50gp",
+        "name": "红宝石粉(50gp)",
+        "nameEn": "Ruby Dust",
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "weight": 0,
+        "description": "价值50gp的红宝石粉末",
+        "consumed": true,
+        "usedBy": [
+          "Continual Flame"
+        ]
+      },
+      {
+        "id": "ruby_dust_1500gp",
+        "name": "红宝石粉(1500gp)",
+        "nameEn": "Ruby Dust",
+        "cost": {
+          "gp": 1500
+        },
+        "costCopper": 150000,
+        "weight": 0,
+        "description": "价值1500gp的红宝石粉",
+        "consumed": false,
+        "usedBy": [
+          "Simulacrum",
+          "Forcecage"
+        ]
+      },
+      {
+        "id": "pearl_100gp",
+        "name": "珍珠(100gp)",
+        "nameEn": "Pearl",
+        "cost": {
+          "gp": 100
+        },
+        "costCopper": 10000,
+        "weight": 0,
+        "description": "价值至少100gp的珍珠和猫头鹰羽毛",
+        "consumed": false,
+        "usedBy": [
+          "Identify"
+        ]
+      },
+      {
+        "id": "black_pearl_powder_500gp",
+        "name": "黑珍珠粉(500gp)",
+        "nameEn": "Black Pearl Powder",
+        "cost": {
+          "gp": 500
+        },
+        "costCopper": 50000,
+        "weight": 0,
+        "description": "研磨过的黑珍珠粉(500gp)",
+        "consumed": false,
+        "usedBy": [
+          "Circle of Death"
+        ]
+      },
+      {
+        "id": "sapphire_1000gp",
+        "name": "蓝宝石(1000gp)",
+        "nameEn": "Sapphire",
+        "cost": {
+          "gp": 1000
+        },
+        "costCopper": 100000,
+        "weight": 0,
+        "description": "价值1000gp的蓝宝石",
+        "consumed": false,
+        "usedBy": [
+          "Drawmij's Instant Summons"
+        ]
+      },
+      {
+        "id": "agate_1000gp",
+        "name": "玛瑙(1000gp)",
+        "nameEn": "Agate",
+        "cost": {
+          "gp": 1000
+        },
+        "costCopper": 100000,
+        "weight": 0,
+        "description": "价值至少1000gp的玛瑙",
+        "consumed": true,
+        "usedBy": [
+          "Awaken"
+        ]
+      },
+      {
+        "id": "black_onyx_150gp",
+        "name": "黑玛瑙(150gp)",
+        "nameEn": "Black Onyx",
+        "cost": {
+          "gp": 150
+        },
+        "costCopper": 15000,
+        "weight": 0,
+        "description": "每具尸体150gp的黑玛瑙",
+        "consumed": true,
+        "usedBy": [
+          "Create Undead"
+        ]
+      },
+      {
+        "id": "red_zircon_1000gp",
+        "name": "红锆石(1000gp)",
+        "nameEn": "Red Zircon",
+        "cost": {
+          "gp": 1000
+        },
+        "costCopper": 100000,
+        "weight": 0,
+        "description": "每人一枚至少1000gp的红锆石",
+        "consumed": true,
+        "usedBy": [
+          "Astral Projection"
+        ]
+      },
+      {
+        "id": "gold_dust_25gp",
+        "name": "金粉(25gp)",
+        "nameEn": "Gold Dust",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 0,
+        "description": "至少价值25gp的金粉",
+        "consumed": true,
+        "usedBy": [
+          "Arcane Lock"
+        ]
+      },
+      {
+        "id": "jade_dust_10gp",
+        "name": "翡翠粉(10gp)",
+        "nameEn": "Jade Dust",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 0,
+        "description": "蜂窝和至少价值10gp的翡翠粉",
+        "consumed": true,
+        "usedBy": [
+          "Magic Mouth"
+        ]
+      },
+      {
+        "id": "jade_dust_25gp",
+        "name": "玉尘(25gp)",
+        "nameEn": "Jade Dust",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 0,
+        "description": "至少价值25gp的玉尘",
+        "consumed": false,
+        "usedBy": [
+          "Programmed Illusion"
+        ]
+      },
+      {
+        "id": "platinum_ring_50gp",
+        "name": "铂金戒指(50gp)",
+        "nameEn": "Platinum Ring",
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "weight": 0,
+        "description": "单个价值至少50gp的铂金戒指(一对)",
+        "consumed": false,
+        "usedBy": [
+          "Warding Bond"
+        ]
+      },
+      {
+        "id": "jade_ring_1500gp",
+        "name": "玉环(1500gp)",
+        "nameEn": "Jade Circlet",
+        "cost": {
+          "gp": 1500
+        },
+        "costCopper": 150000,
+        "weight": 0,
+        "description": "至少价值1500gp的玉环",
+        "consumed": false,
+        "usedBy": [
+          "Shapechange"
+        ]
+      },
+      {
+        "id": "ivory_statuette_1500gp",
+        "name": "象牙雕像(1500gp)",
+        "nameEn": "Ivory Statuette",
+        "cost": {
+          "gp": 1500
+        },
+        "costCopper": 150000,
+        "weight": 0,
+        "description": "至少价值1500gp的象牙雕像",
+        "consumed": false,
+        "usedBy": [
+          "Contingency"
+        ]
+      },
+      {
+        "id": "scrying_focus_1000gp",
+        "name": "聚焦镜(1000gp)",
+        "nameEn": "Scrying Focus",
+        "cost": {
+          "gp": 1000
+        },
+        "costCopper": 100000,
+        "weight": 0,
+        "description": "至少价值1000gp的聚焦镜",
+        "consumed": false,
+        "usedBy": [
+          "Scrying"
+        ]
+      },
+      {
+        "id": "gem_container_500gp",
+        "name": "宝石容器(500gp)",
+        "nameEn": "Gem Container",
+        "cost": {
+          "gp": 500
+        },
+        "costCopper": 50000,
+        "weight": 0,
+        "description": "宝石、水晶或圣物匣(不低于500gp)",
+        "consumed": false,
+        "usedBy": [
+          "Magic Jar"
+        ]
+      },
+      {
+        "id": "forked_metal_rod_250gp",
+        "name": "分叉金属短棒(250gp)",
+        "nameEn": "Forked Metal Rod",
+        "cost": {
+          "gp": 250
+        },
+        "costCopper": 25000,
+        "weight": 0,
+        "description": "价值至少250gp的分叉金属短棒",
+        "consumed": false,
+        "usedBy": [
+          "Plane Shift"
+        ]
+      },
+      {
+        "id": "platinum_sword_250gp",
+        "name": "铂金微缩剑(250gp)",
+        "nameEn": "Platinum Miniature Sword",
+        "cost": {
+          "gp": 250
+        },
+        "costCopper": 25000,
+        "weight": 0,
+        "description": "铂金微缩剑(250gp)",
+        "consumed": false,
+        "usedBy": [
+          "Mordenkainen's Sword"
+        ]
+      },
+      {
+        "id": "incense_ivory_250gp",
+        "name": "熏香与象牙板(250gp)",
+        "nameEn": "Incense and Ivory Strips",
+        "cost": {
+          "gp": 250
+        },
+        "costCopper": 25000,
+        "weight": 0,
+        "description": "价值至少250gp的熏香和50gp的象牙板",
+        "consumed": true,
+        "usedBy": [
+          "Legend Lore"
+        ]
+      },
+      {
+        "id": "herbs_oils_incense_1000gp",
+        "name": "草药油与熏香(1000gp)",
+        "nameEn": "Herbs, Oils and Incense",
+        "cost": {
+          "gp": 1000
+        },
+        "costCopper": 100000,
+        "weight": 0,
+        "description": "价值至少1000gp的草药、油与熏香",
+        "consumed": true,
+        "usedBy": [
+          "Hallow"
+        ]
+      },
+      {
+        "id": "gems_1000gp",
+        "name": "宝石(1000gp)",
+        "nameEn": "Gems",
+        "cost": {
+          "gp": 1000
+        },
+        "costCopper": 100000,
+        "weight": 0,
+        "description": "价值至少1000gp的宝石",
+        "consumed": true,
+        "usedBy": [
+          "Planar Binding"
+        ]
+      },
+      {
+        "id": "rare_oils_1000gp",
+        "name": "稀有油膏(1000gp)",
+        "nameEn": "Rare Oils and Unguents",
+        "cost": {
+          "gp": 1000
+        },
+        "costCopper": 100000,
+        "weight": 0,
+        "description": "价值至少1000gp的稀有油和软膏",
+        "consumed": true,
+        "usedBy": [
+          "Reincarnate"
+        ]
+      },
+      {
+        "id": "jeweled_bowl_1000gp",
+        "name": "镶宝石碗(1000gp)",
+        "nameEn": "Gem-encrusted Bowl",
+        "cost": {
+          "gp": 1000
+        },
+        "costCopper": 100000,
+        "weight": 0,
+        "description": "价值至少1000gp的镶饰宝石的碗",
+        "consumed": true,
+        "usedBy": [
+          "Heroes' Feast"
+        ]
+      },
+      {
+        "id": "silver_rod_10gp",
+        "name": "银权杖(10gp)",
+        "nameEn": "Silver Rod",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 0,
+        "description": "至少价值10gp的小型银权杖",
+        "consumed": false,
+        "usedBy": [
+          "Guards and Wards"
+        ]
+      },
+      {
+        "id": "elaborate_chest_5000gp",
+        "name": "精致箱子(5000gp)",
+        "nameEn": "Elaborate Chest",
+        "cost": {
+          "gp": 5000
+        },
+        "costCopper": 500000,
+        "weight": 0,
+        "description": "稀有材料精致箱子(5000gp)和微缩模型(50gp)",
+        "consumed": false,
+        "usedBy": [
+          "Leomund's Secret Chest"
+        ]
+      },
+      {
+        "id": "small_reliquary_1000gp",
+        "name": "小圣物箱(1000gp)",
+        "nameEn": "Small Reliquary",
+        "cost": {
+          "gp": 1000
+        },
+        "costCopper": 100000,
+        "weight": 0,
+        "description": "价值至少1000gp的小圣物箱",
+        "consumed": false,
+        "usedBy": [
+          "Holy Aura"
+        ]
+      },
+      {
+        "id": "ivory_arch_5gp",
+        "name": "象牙拱门模型(5gp)",
+        "nameEn": "Ivory Portal Miniature",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 0,
+        "description": "象牙拱门模型、大理石、微型银汤匙(每件至少5gp)",
+        "consumed": false,
+        "usedBy": [
+          "Mordenkainen's Magnificent Mansion"
+        ]
+      },
+      {
+        "id": "charcoal_incense_herbs_10gp",
+        "name": "木炭焚香与香草(10gp)",
+        "nameEn": "Charcoal, Incense and Herbs",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 0,
+        "description": "价值10gp的木炭、焚香以及香草",
+        "consumed": true,
+        "usedBy": [
+          "Find Familiar"
+        ]
+      },
+      {
+        "id": "lead_ink_10gp",
+        "name": "铅料墨水(10gp)",
+        "nameEn": "Lead-based Ink",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 0,
+        "description": "价值至少10gp的铅料墨水",
+        "consumed": true,
+        "usedBy": [
+          "Illusory Script"
+        ]
+      },
+      {
+        "id": "holy_water_silver_100gp",
+        "name": "圣水与银铁粉(100gp)",
+        "nameEn": "Holy Water and Silver/Iron Powder",
+        "cost": {
+          "gp": 100
+        },
+        "costCopper": 10000,
+        "weight": 0,
+        "description": "总价值至少100gp的圣水或银、铁粉",
+        "consumed": true,
+        "usedBy": [
+          "Magic Circle"
+        ]
+      },
+      {
+        "id": "clairvoyance_focus_100gp",
+        "name": "法器(100gp)",
+        "nameEn": "Focus",
+        "cost": {
+          "gp": 100
+        },
+        "costCopper": 10000,
+        "weight": 0,
+        "description": "价值至少100gp的法器",
+        "consumed": false,
+        "usedBy": [
+          "Clairvoyance"
+        ]
+      },
+      {
+        "id": "divination_supplies_25gp",
+        "name": "熏香与祭品(25gp)",
+        "nameEn": "Incense and Sacrifice",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 0,
+        "description": "熏香和祭品(25gp)",
+        "consumed": true,
+        "usedBy": [
+          "Divination"
+        ]
+      },
+      {
+        "id": "augury_tools_25gp",
+        "name": "占卜工具(25gp)",
+        "nameEn": "Divining Tools",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 0,
+        "description": "特制的骨棒、卡片等占卜工具(25gp)",
+        "consumed": false,
+        "usedBy": [
+          "Augury"
+        ]
+      },
+      {
+        "id": "eye_salve_25gp",
+        "name": "眼药膏(25gp)",
+        "nameEn": "Eye Ointment",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 0,
+        "description": "蘑菇粉、藏红花和油脂制成的眼药膏(25gp)",
+        "consumed": true,
+        "usedBy": [
+          "True Seeing"
+        ]
+      },
+      {
+        "id": "gem_ink_50gp",
+        "name": "宝石墨水(50gp)",
+        "nameEn": "Gem-soaked Ink",
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "weight": 0,
+        "description": "价值50gp珍稀宝石浸泡的墨水",
+        "consumed": true,
+        "usedBy": [
+          "Teleportation Circle"
+        ]
+      },
+      {
+        "id": "imprisonment_components_500gp",
+        "name": "禁锢材料(500gp)",
+        "nameEn": "Imprisonment Components",
+        "cost": {
+          "gp": 500
+        },
+        "costCopper": 50000,
+        "weight": 0,
+        "description": "牛皮纸、雕像加特殊材料(每HD 500gp)",
+        "consumed": false,
+        "usedBy": [
+          "Imprisonment"
+        ]
+      }
+    ],
+    "consumables": [
+      {
+        "id": "holy_water_flask",
+        "name": "圣水(瓶)",
+        "nameEn": "Holy water (flask)",
+        "cost": {
+          "gp": 25
+        },
+        "weight": 1,
+        "description": "As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon."
+      },
+      {
+        "id": "perfume_vial",
+        "name": "香水(瓶)",
+        "nameEn": "Perfume (vial)",
+        "cost": {
+          "gp": 5
+        },
+        "weight": 0,
+        "description": "一抹幽香可掩血腥与泥土味，社交场合增添好感，也能作简易标记气味；听说某盗贼靠它躲过猎犬追踪。"
+      },
+      {
+        "id": "antitoxin_vial",
+        "name": "解毒剂(瓶)",
+        "nameEn": "Antitoxin (vial)",
+        "cost": {
+          "gp": 50
+        },
+        "weight": 0,
+        "description": "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs."
+      },
+      {
+        "id": "flask_or_tankard",
+        "name": "酒壶/大杯",
+        "nameEn": "Flask or tankard",
+        "cost": {
+          "cp": 2
+        },
+        "weight": 1,
+        "description": "耐摔的酒壶或大杯装烈酒与清水皆宜，寒夜提神，亦可作临时量杯；酒馆里常说它比誓言更可靠。"
+      },
+      {
+        "id": "poison_basic_vial",
+        "name": "基础毒药(瓶)",
+        "nameEn": "Poison, basic (vial)",
+        "cost": {
+          "gp": 100
+        },
+        "weight": 0,
+        "description": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying."
+      },
+      {
+        "id": "alchemists_fire_flask",
+        "name": "炼金术士之火(瓶)",
+        "nameEn": "Alchemist's fire (flask)",
+        "cost": {
+          "gp": 50
+        },
+        "weight": 1,
+        "description": "This sticky, adhesive fluid ignites when exposed to air."
+      }
+    ],
+    "misc": [
+      {
+        "id": "rope_hempen_50_feet",
+        "name": "麻绳(50尺)",
+        "nameEn": "Rope, hempen (50 feet)",
+        "cost": {
+          "gp": 1
+        },
+        "weight": 10,
+        "description": "粗麻绳结实好抓，攀墙下井、捆绑俘虏都稳当；许多冒险者认定：没带它，地下城就会长牙。"
+      },
+      {
+        "id": "chalk_1_piece",
+        "name": "粉笔(1支)",
+        "nameEn": "Chalk (1 piece)",
+        "cost": {
+          "cp": 1
+        },
+        "weight": 0,
+        "description": "白粉易折却好用，能在石壁留路标、画警戒圈或标出陷阱边缘；老手笑称粉笔是最廉价的第二条命。"
+      },
+      {
+        "id": "scale_merchants",
+        "name": "商人秤",
+        "nameEn": "Scale, merchant's",
+        "cost": {
+          "gp": 5
+        },
+        "weight": 3,
+        "description": "折叠小秤精确到分，交易验货不吃亏，也能称药材与毒粉；有传闻它曾揭穿一名矮人假金的把戏。"
+      },
+      {
+        "id": "spike_iron",
+        "name": "铁钉",
+        "nameEn": "Spike, iron",
+        "cost": {
+          "sp": 1
+        },
+        "weight": 5,
+        "description": "铁钉可楔门阻敌、固定绳索或搭临时攀爬点，必要时也能当简易武器；酒馆里说它钉住过一只幽魂的影子。"
+      },
+      {
+        "id": "rope_silk_50_feet",
+        "name": "丝绳(50尺)",
+        "nameEn": "Rope, silk (50 feet)",
+        "cost": {
+          "gp": 10
+        },
+        "weight": 5,
+        "description": "丝绳轻巧却韧，攀爬更静，适合潜行与高空摆荡；盗贼圈传闻：它在月光下几乎看不见，像一缕雾。"
+      },
+      {
+        "id": "censer",
+        "name": "香炉",
+        "nameEn": "Censer",
+        "cost": {
+          "cp": 0
+        },
+        "weight": 0,
+        "description": "香炉摇晃吐出缕缕烟雾，驱散腐臭、配合仪式或掩护行动；神殿守夜人说，烟里能听见旧神的低语。"
+      },
+      {
+        "id": "ink_1_ounce_bottle",
+        "name": "墨水(1盎司瓶)",
+        "nameEn": "Ink (1 ounce bottle)",
+        "cost": {
+          "gp": 10
+        },
+        "weight": 0,
+        "description": "黑墨浓稠耐久，抄写卷轴、记契约或绘符阵都可靠；书吏常告诫：一滴墨能买命，一纸字能卖魂。"
+      },
+      {
+        "id": "little_bag_of_sand",
+        "name": "小袋沙子",
+        "nameEn": "Little bag of sand",
+        "cost": {
+          "cp": 0
+        },
+        "weight": 0,
+        "description": "细沙可撒地显隐形脚印、压住压力板替代宝物，亦能灭小火；不少冒险者说，沙袋比剑更懂陷阱。"
+      },
+      {
+        "id": "parchment_one_sheet",
+        "name": "羊皮纸",
+        "nameEn": "Parchment (one sheet)",
+        "cost": {
+          "sp": 1
+        },
+        "weight": 0,
+        "description": "坚韧羊皮纸适合绘图、写咒文或签盟约，遇潮也不易糊；传言有人用一张纸换来整座地城的入口。"
+      },
+      {
+        "id": "sprig_of_mistletoe",
+        "name": "槲寄生枝",
+        "nameEn": "Sprig of mistletoe",
+        "cost": {
+          "gp": 1
+        },
+        "weight": 0,
+        "description": "翠绿槲寄生枝常作德鲁伊施法材料，轻触可引自然祝福；酒馆传闻它能换来林中精灵一笑。"
+      },
+      {
+        "id": "saddlebags",
+        "name": "鞍袋",
+        "nameEn": "Saddlebags",
+        "cost": {
+          "gp": 4
+        },
+        "weight": 8,
+        "description": "厚皮鞍袋稳挂马侧，分格收纳口粮与绳钩不易散失；赶夜路时它的扣带声像在提醒别落队。"
+      },
+      {
+        "id": "saddle_exotic",
+        "name": "异兽鞍",
+        "nameEn": "Saddle, Exotic",
+        "cost": {
+          "gp": 60
+        },
+        "weight": 50,
+        "description": "为狮鹫、巨蜥等异兽打造的鞍具，束带多点固定便于空中急转；老猎手说系错一扣就会被甩进云里。"
+      },
+      {
+        "id": "stabling_1_day",
+        "name": "马厩费(1天)",
+        "nameEn": "Stabling (1 day)",
+        "cost": {
+          "sp": 5
+        },
+        "weight": 0,
+        "description": "付一日马厩费，坐骑得干草与遮风棚，免遭贼手与雨病；许多冒险者宁可少喝一杯也不省这钱。"
+      },
+      {
+        "id": "animal_feed_1_day",
+        "name": "动物饲料(1天)",
+        "nameEn": "Animal Feed (1 day)",
+        "cost": {
+          "cp": 5
+        },
+        "weight": 10,
+        "description": "一日动物饲料含谷粒与盐块，能稳住坐骑体力与心性；赶长途时喂得好，逃命也跑得更久。"
+      },
+      {
+        "id": "block_of_incense",
+        "name": "熏香块",
+        "nameEn": "Block of incense",
+        "cost": {
+          "cp": 0
+        },
+        "weight": 0,
+        "description": "熏香块点燃后烟雾袅绕，可遮掩异味并助冥想祷告；传闻在古墓里点它能让不安灵体暂缓靠近。"
+      },
+      {
+        "id": "small_knife",
+        "name": "小刀",
+        "nameEn": "Small knife",
+        "cost": {
+          "cp": 0
+        },
+        "weight": 0,
+        "description": "短小利刃便于割绳剥皮与近身自卫，藏靴筒也不碍事；有人靠它在酒馆桌下割断赌徒的钱袋绳。"
+      },
+      {
+        "id": "vestments",
+        "name": "祭服",
+        "nameEn": "Vestments",
+        "cost": {
+          "cp": 0
+        },
+        "weight": 0,
+        "description": "庄严祭服彰显神祇权柄，主持仪式或交涉更易取信于人；据说穿着它在战场祈祷，箭雨都会偏一寸。"
+      },
+      {
+        "id": "saddle_military",
+        "name": "军用鞍",
+        "nameEn": "Saddle, Military",
+        "cost": {
+          "gp": 20
+        },
+        "weight": 30,
+        "description": "军用鞍高前后桥稳固骑姿，冲锋挥砍不易失衡；老兵说它救过无数命——把你牢牢钉在马背上。"
+      },
+      {
+        "id": "string_10_feet",
+        "name": "细绳(10尺)",
+        "nameEn": "String (10 feet)",
+        "cost": {
+          "cp": 0
+        },
+        "weight": 0,
+        "description": "十尺细绳轻便却用途百般，可设简易陷阱、绑扎伤口或系门铃；新手常忘带，老手从不嫌多。"
+      },
+      {
+        "id": "saddle_pack",
+        "name": "驮鞍",
+        "nameEn": "Saddle, Pack",
+        "cost": {
+          "gp": 5
+        },
+        "weight": 15,
+        "description": "驮鞍专为载货，挂钩与侧梁分担重量，长途搬运不伤兽背；商队领队爱它胜过一切华丽马具。"
+      },
+      {
+        "id": "chain_10_feet",
+        "name": "链条(10尺)",
+        "nameEn": "Chain (10 feet)",
+        "cost": {
+          "gp": 5
+        },
+        "weight": 10,
+        "description": "十尺铁链沉重耐拉，可锁门缚囚或攀援固定锚点；地城里听见链声拖行，往往比怪物更让人发寒。"
+      },
+      {
+        "id": "alms_box",
+        "name": "施舍箱",
+        "nameEn": "Alms box",
+        "cost": {
+          "cp": 0
+        },
+        "weight": 0,
+        "description": "施舍箱带小锁与狭口，收拢铜币银币便于携行也不易被掏；某些教堂说，满箱之夜神迹更易降临。"
+      },
+      {
+        "id": "case_map_or_scroll",
+        "name": "地图/卷轴筒",
+        "nameEn": "Case, map or scroll",
+        "cost": {
+          "gp": 1
+        },
+        "weight": 1,
+        "description": "硬皮卷轴筒防潮抗压，护住地图与法术卷免遭雨淋火星；老向导总说，迷路时它比剑更值钱。"
+      },
+      {
+        "id": "rations_1_day",
+        "name": "口粮(1天)",
+        "nameEn": "Rations (1 day)",
+        "cost": {
+          "sp": 5
+        },
+        "weight": 2,
+        "description": "一日口粮多为干肉硬饼与少许果干，耐放便携；在地城里嚼下去的每一口，都是继续活着的理由。"
+      },
+      {
+        "id": "saddle_riding",
+        "name": "骑乘鞍",
+        "nameEn": "Saddle, Riding",
+        "cost": {
+          "gp": 10
+        },
+        "weight": 25,
+        "description": "厚皮骑乘鞍稳固腰胯，长途疾驰也不易坠马；老佣兵说它救过他躲过一次狼群围追。"
+      },
+      {
+        "id": "pole_10_foot",
+        "name": "撑杆(10尺)",
+        "nameEn": "Pole (10-foot)",
+        "cost": {
+          "cp": 5
+        },
+        "weight": 7,
+        "description": "十尺撑杆探路破机关，先挑地砖再试深坑；地城老手常用它隔着毒雾拨开暗门缝。"
+      },
+      {
+        "id": "paper_one_sheet",
+        "name": "纸张",
+        "nameEn": "Paper (one sheet)",
+        "cost": {
+          "sp": 2
+        },
+        "weight": 0,
+        "description": "单张纸轻薄却值千金，可写契约、绘符阵、拓印铭文；酒馆传闻有人靠一页地图换到宝藏。"
+      },
+      {
+        "id": "bit_and_bridle",
+        "name": "马嚼子和缰绑",
+        "nameEn": "Bit and bridle",
+        "cost": {
+          "gp": 2
+        },
+        "weight": 1,
+        "description": "马嚼子与缰绑驯服烈性坐骑，急转冲刺更听号令；据说北境驿卒用它压住过受惊战马。"
+      },
+      {
+        "id": "ladder_10_foot",
+        "name": "梯子(10尺)",
+        "nameEn": "Ladder (10-foot)",
+        "cost": {
+          "sp": 1
+        },
+        "weight": 25,
+        "description": "十尺木梯搭墙越沟，攀上城垛或井口都稳当；盗贼笑称它比锁匠更快带你进屋。"
+      },
+      {
+        "id": "ball_bearings_bag_of_1000",
+        "name": "滚珠(1000颗袋装)",
+        "nameEn": "Ball bearings (bag of 1,000)",
+        "cost": {
+          "gp": 1
+        },
+        "weight": 2,
+        "description": "一袋千颗滚珠撒在狭道，追兵脚下一滑阵形尽乱；有人在酒馆吹嘘靠它放倒整队卫兵。"
+      },
+      {
+        "id": "jug_or_pitcher",
+        "name": "水壶/水罐",
+        "nameEn": "Jug or pitcher",
+        "cost": {
+          "cp": 2
+        },
+        "weight": 4,
+        "description": "粗陶水壶耐摔可盛水酒，行军煮汤也能当简易量具；旅人常把它塞满井水换一夜床铺。"
+      },
+      {
+        "id": "pot_iron",
+        "name": "铁锅",
+        "nameEn": "Pot, iron",
+        "cost": {
+          "gp": 2
+        },
+        "weight": 10,
+        "description": "厚重铁锅可炖肉熬药，露营时还能当临时盾挡碎片；矮人厨子说它煮过巨蛛腿也无异味。"
+      }
+    ],
+    "foodAndDrink": [
+      {
+        "id": "ale_mug",
+        "name": "麦酒(一杯)",
+        "nameEn": "Ale (mug)",
+        "cost": {
+          "cp": 4
+        },
+        "costCopper": 4,
+        "weight": 1,
+        "description": "一杯麦酒泡沫翻涌，暖胃也壮胆；不少冒险者靠它在酒馆套出地下墓穴的入口传闻。"
+      },
+      {
+        "id": "ale_gallon",
+        "name": "麦酒(一加仑)",
+        "nameEn": "Ale (gallon)",
+        "cost": {
+          "sp": 2
+        },
+        "costCopper": 20,
+        "weight": 8,
+        "description": "一加仑麦酒够整队畅饮，庆功或贿赂守门都好使；据说某次围城是靠它买通哨兵开门。"
+      },
+      {
+        "id": "wine_common",
+        "name": "普通葡萄酒(一壶)",
+        "nameEn": "Wine, common (pitcher)",
+        "cost": {
+          "sp": 2
+        },
+        "costCopper": 20,
+        "weight": 4,
+        "description": "普通葡萄酒酸甜适口，佐干粮解乏；行脚僧常用它换取情报，酒渍里也能显出隐墨。"
+      },
+      {
+        "id": "wine_fine",
+        "name": "上等葡萄酒(一瓶)",
+        "nameEn": "Wine, fine (bottle)",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 3,
+        "description": "上等葡萄酒香气深沉，是宴席与交易的利器；传闻贵族愿为一瓶好年份多吐出半句真话。"
+      },
+      {
+        "id": "mead_mug",
+        "name": "蜂蜜酒(一杯)",
+        "nameEn": "Mead (mug)",
+        "cost": {
+          "sp": 4
+        },
+        "costCopper": 40,
+        "weight": 1,
+        "description": "蜂蜜酒甘香黏唇，寒夜喝下暖到骨里；北地猎人说它能让你在雪暴前听见风的预告。"
+      },
+      {
+        "id": "spirits_glass",
+        "name": "烈酒(一杯)",
+        "nameEn": "Spirits (glass)",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 0.5,
+        "description": "一杯烈酒如火入喉，驱寒止痛也可消毒伤口；酒馆里有人用它点燃泼洒的酒作火线。"
+      },
+      {
+        "id": "bread_chunk",
+        "name": "面包(一块)",
+        "nameEn": "Bread, chunk",
+        "cost": {
+          "cp": 2
+        },
+        "costCopper": 2,
+        "weight": 0.5,
+        "description": "一块面包耐放顶饿，抹肉汁就是行军佳餐；老冒险者常把它掰碎诱出洞里的鼠与陷阱。"
+      },
+      {
+        "id": "cheese_chunk",
+        "name": "奶酪(一块)",
+        "nameEn": "Cheese, chunk",
+        "cost": {
+          "sp": 1
+        },
+        "costCopper": 10,
+        "weight": 0.5,
+        "description": "蜡封奶酪块，盐香耐放；行军充饥不占火。酒馆传闻有队人靠它撑过七日迷雾沼泽。"
+      },
+      {
+        "id": "meat_chunk",
+        "name": "肉(一块)",
+        "nameEn": "Meat, chunk",
+        "cost": {
+          "sp": 3
+        },
+        "costCopper": 30,
+        "weight": 0.5,
+        "description": "风干肉块油脂厚实，嚼下能顶一整段急行；也可作诱饵引狼。老猎人说别在夜里烤它。"
+      },
+      {
+        "id": "meal_poor",
+        "name": "简陋餐食",
+        "nameEn": "Meal, poor",
+        "cost": {
+          "cp": 6
+        },
+        "costCopper": 6,
+        "weight": 0,
+        "description": "稀粥或面包配水，勉强果腹。"
+      },
+      {
+        "id": "meal_modest",
+        "name": "普通餐食",
+        "nameEn": "Meal, modest",
+        "cost": {
+          "sp": 3
+        },
+        "costCopper": 30,
+        "weight": 0,
+        "description": "热菜配面包和麦酒，分量适中。"
+      },
+      {
+        "id": "meal_comfortable",
+        "name": "舒适餐食",
+        "nameEn": "Meal, comfortable",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 0,
+        "description": "丰盛的炖菜、烤肉配上好面包和美酒。"
+      },
+      {
+        "id": "meal_wealthy",
+        "name": "奢华餐食",
+        "nameEn": "Meal, wealthy",
+        "cost": {
+          "sp": 8
+        },
+        "costCopper": 80,
+        "weight": 0,
+        "description": "精致多道菜品，佐以上等葡萄酒和甜点。"
+      },
+      {
+        "id": "banquet",
+        "name": "宴席(每人)",
+        "nameEn": "Banquet (per person)",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 0,
+        "description": "全套豪华宴席，包含各种佳肴美酒和乐队演奏。"
+      }
+    ],
+    "lodging": [
+      {
+        "id": "inn_poor",
+        "name": "简陋客房(每晚)",
+        "nameEn": "Inn stay, poor (per night)",
+        "cost": {
+          "cp": 7
+        },
+        "costCopper": 7,
+        "weight": 0,
+        "description": "大通铺或地板上的位置，可能有虫子。提供一条破旧毯子。"
+      },
+      {
+        "id": "inn_modest",
+        "name": "普通客房(每晚)",
+        "nameEn": "Inn stay, modest (per night)",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 0,
+        "description": "干净的小房间，带一张简单的床、一个脸盆和一支蜡烛。"
+      },
+      {
+        "id": "inn_comfortable",
+        "name": "舒适客房(每晚)",
+        "nameEn": "Inn stay, comfortable (per night)",
+        "cost": {
+          "sp": 8
+        },
+        "costCopper": 80,
+        "weight": 0,
+        "description": "宽敞的私人房间，带一张舒适的床、壁炉、桌椅和干净的寝具。"
+      },
+      {
+        "id": "inn_wealthy",
+        "name": "奢华客房(每晚)",
+        "nameEn": "Inn stay, wealthy (per night)",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 0,
+        "description": "豪华套房，配有四柱大床、精致家具、热水浴缸和专属侍者。"
+      },
+      {
+        "id": "inn_aristocratic",
+        "name": "贵族套房(每晚)",
+        "nameEn": "Inn stay, aristocratic (per night)",
+        "cost": {
+          "gp": 4
+        },
+        "costCopper": 400,
+        "weight": 0,
+        "description": "最顶级的住宿体验——独立起居室、精美丝质寝具、丰盛早餐和全天候服务。"
+      },
+      {
+        "id": "stable_1day",
+        "name": "马厩寄养(每天)",
+        "nameEn": "Stabling (per day)",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 0,
+        "description": "为坐骑提供草料、饮水和遮风避雨的马厩。"
+      }
+    ]
+  },
+  "packs": [
+    {
+      "id": "explorers_pack",
+      "name": "探险者套装",
+      "nameEn": "Explorer's Pack",
+      "cost": {
+        "gp": 10
+      },
+      "costCopper": 1000,
+      "weight": 59,
+      "description": "包含背包、睡袋、餐具、10支火把、10天口粮、水袋、50尺麻绳",
+      "contents": [
+        {
+          "item": "backpack",
+          "quantity": 1
+        },
+        {
+          "item": "bedroll",
+          "quantity": 1
+        },
+        {
+          "item": "mess_kit",
+          "quantity": 1
+        },
+        {
+          "item": "tinderbox",
+          "quantity": 1
+        },
+        {
+          "item": "torch",
+          "quantity": 10
+        },
+        {
+          "item": "rations",
+          "quantity": 10
+        },
+        {
+          "item": "waterskin",
+          "quantity": 1
+        },
+        {
+          "item": "rope_hempen",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "dungeoneers_pack",
+      "name": "地下城探险套装",
+      "nameEn": "Dungeoneer's Pack",
+      "cost": {
+        "gp": 12
+      },
+      "costCopper": 1200,
+      "weight": 61.5,
+      "description": "包含背包、撬棍、锤子、10根铁钉、10支火把、10天口粮、水袋、50尺麻绳",
+      "contents": [
+        {
+          "item": "backpack",
+          "quantity": 1
+        },
+        {
+          "item": "crowbar",
+          "quantity": 1
+        },
+        {
+          "item": "hammer",
+          "quantity": 1
+        },
+        {
+          "item": "piton",
+          "quantity": 10
+        },
+        {
+          "item": "torch",
+          "quantity": 10
+        },
+        {
+          "item": "tinderbox",
+          "quantity": 1
+        },
+        {
+          "item": "rations",
+          "quantity": 10
+        },
+        {
+          "item": "waterskin",
+          "quantity": 1
+        },
+        {
+          "item": "rope_hempen",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "priests_pack",
+      "name": "牧师套装",
+      "nameEn": "Priest's Pack",
+      "cost": {
+        "gp": 19
+      },
+      "costCopper": 1900,
+      "weight": 24,
+      "description": "包含背包、毯子、10支蜡烛、火绒盒、施舍盒、2块熏香、香炉、法衣、2天口粮、水袋",
+      "contents": [
+        {
+          "item": "backpack",
+          "quantity": 1
+        },
+        {
+          "item": "blanket",
+          "quantity": 1
+        },
+        {
+          "item": "candle",
+          "quantity": 10
+        },
+        {
+          "item": "tinderbox",
+          "quantity": 1
+        },
+        {
+          "item": "alms_box",
+          "quantity": 1
+        },
+        {
+          "item": "incense",
+          "quantity": 2
+        },
+        {
+          "item": "censer",
+          "quantity": 1
+        },
+        {
+          "item": "vestments",
+          "quantity": 1
+        },
+        {
+          "item": "rations",
+          "quantity": 2
+        },
+        {
+          "item": "waterskin",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "scholars_pack",
+      "name": "学者套装",
+      "nameEn": "Scholar's Pack",
+      "cost": {
+        "gp": 40
+      },
+      "costCopper": 4000,
+      "weight": 10,
+      "description": "包含背包、学术书籍、墨水瓶、墨水笔、10张羊皮纸、小袋沙子、小刀",
+      "contents": [
+        {
+          "item": "backpack",
+          "quantity": 1
+        },
+        {
+          "item": "book",
+          "quantity": 1
+        },
+        {
+          "item": "ink",
+          "quantity": 1
+        },
+        {
+          "item": "ink_pen",
+          "quantity": 1
+        },
+        {
+          "item": "parchment",
+          "quantity": 10
+        },
+        {
+          "item": "sand_bag",
+          "quantity": 1
+        },
+        {
+          "item": "knife",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "diplomats_pack",
+      "name": "外交官套装",
+      "nameEn": "Diplomat's Pack",
+      "cost": {
+        "gp": 39
+      },
+      "costCopper": 3900,
+      "weight": 39,
+      "description": "包含箱子、2个地图或卷轴盒、精致衣服、墨水瓶、墨水笔、灯笼、2瓶油、5张纸、香水小瓶、封蜡、肥皂",
+      "contents": [
+        {
+          "item": "chest",
+          "quantity": 1
+        },
+        {
+          "item": "map_case",
+          "quantity": 2
+        },
+        {
+          "item": "fine_clothes",
+          "quantity": 1
+        },
+        {
+          "item": "ink",
+          "quantity": 1
+        },
+        {
+          "item": "ink_pen",
+          "quantity": 1
+        },
+        {
+          "item": "lamp",
+          "quantity": 1
+        },
+        {
+          "item": "oil_flask",
+          "quantity": 2
+        },
+        {
+          "item": "paper",
+          "quantity": 5
+        },
+        {
+          "item": "perfume",
+          "quantity": 1
+        },
+        {
+          "item": "sealing_wax",
+          "quantity": 1
+        },
+        {
+          "item": "soap",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "entertainers_pack",
+      "name": "表演者套装",
+      "nameEn": "Entertainer's Pack",
+      "cost": {
+        "gp": 40
+      },
+      "costCopper": 4000,
+      "weight": 38,
+      "description": "包含背包、睡袋、2套服装、5支蜡烛、5天口粮、水袋、化妆工具",
+      "contents": [
+        {
+          "item": "backpack",
+          "quantity": 1
+        },
+        {
+          "item": "bedroll",
+          "quantity": 1
+        },
+        {
+          "item": "costume",
+          "quantity": 2
+        },
+        {
+          "item": "candle",
+          "quantity": 5
+        },
+        {
+          "item": "rations",
+          "quantity": 5
+        },
+        {
+          "item": "waterskin",
+          "quantity": 1
+        },
+        {
+          "item": "disguise_kit",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "burglars_pack",
+      "name": "盗贼套装",
+      "nameEn": "Burglar's Pack",
+      "cost": {
+        "gp": 16
+      },
+      "costCopper": 1600,
+      "weight": 46.5,
+      "description": "包含背包、1000个滚珠、10尺绳索、铃铛、5支蜡烛、撬棍、锤子、10根铁钉、提灯、2瓶油、5天口粮、火绒盒、水袋、50尺麻绳",
+      "contents": [
+        {
+          "item": "backpack",
+          "quantity": 1
+        },
+        {
+          "item": "ball_bearings",
+          "quantity": 1
+        },
+        {
+          "item": "string",
+          "quantity": 1
+        },
+        {
+          "item": "bell",
+          "quantity": 1
+        },
+        {
+          "item": "candle",
+          "quantity": 5
+        },
+        {
+          "item": "crowbar",
+          "quantity": 1
+        },
+        {
+          "item": "hammer",
+          "quantity": 1
+        },
+        {
+          "item": "piton",
+          "quantity": 10
+        },
+        {
+          "item": "lantern_hooded",
+          "quantity": 1
+        },
+        {
+          "item": "oil_flask",
+          "quantity": 2
+        },
+        {
+          "item": "rations",
+          "quantity": 5
+        },
+        {
+          "item": "tinderbox",
+          "quantity": 1
+        },
+        {
+          "item": "waterskin",
+          "quantity": 1
+        },
+        {
+          "item": "rope_hempen",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "tools": {
+    "artisansTools": [
+      {
+        "id": "alchemists_supplies",
+        "name": "炼金工具",
+        "nameEn": "Alchemist's Supplies",
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "weight": 8,
+        "iconPath": "/assets/equipment-icons/alchemists_supplies.png",
+        "description": "一套炼金工具，包含各种烧杯、试管、蒸馏器和其他炼金设备。拥有炼金工具熟练项的角色，在使用该工具进行炼金相关的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "brewers_supplies",
+        "name": "酿酒工具",
+        "nameEn": "Brewer's Supplies",
+        "cost": {
+          "gp": 20
+        },
+        "costCopper": 2000,
+        "weight": 9,
+        "iconPath": "/assets/equipment-icons/brewers_supplies.png",
+        "description": "一套酿酒工具，包含发酵桶、量杯和各种酿酒设备。拥有酿酒工具熟练项的角色，在使用该工具进行酿酒相关的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "calligraphers_supplies",
+        "name": "书法工具",
+        "nameEn": "Calligrapher's Supplies",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/calligraphers_supplies.png",
+        "description": "一套书法工具，包含墨水、笔和特制纸张。拥有书法工具熟练项的角色，在使用该工具进行书写或鉴定书法的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "carpenters_tools",
+        "name": "木匠工具",
+        "nameEn": "Carpenter's Tools",
+        "cost": {
+          "gp": 8
+        },
+        "costCopper": 800,
+        "weight": 6,
+        "iconPath": "/assets/equipment-icons/carpenters_tools.png",
+        "description": "一套木匠工具，包含锯子、锤子、刨子和其他木工设备。拥有木匠工具熟练项的角色，在使用该工具进行木工相关的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "cartographers_tools",
+        "name": "制图工具",
+        "nameEn": "Cartographer's Tools",
+        "cost": {
+          "gp": 15
+        },
+        "costCopper": 1500,
+        "weight": 6,
+        "iconPath": "/assets/equipment-icons/cartographers_tools.png",
+        "description": "一套制图工具，包含羊皮纸、墨水、羽毛笔、圆规和尺子。拥有制图工具熟练项的角色，在使用该工具进行绘制或阅读地图的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "cobblers_tools",
+        "name": "鞋匠工具",
+        "nameEn": "Cobbler's Tools",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/cobblers_tools.png",
+        "description": "一套鞋匠工具，包含锤子、皮革、鞋钉和其他制鞋设备。拥有鞋匠工具熟练项的角色，在使用该工具进行制作或修理鞋类的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "cooks_utensils",
+        "name": "厨师工具",
+        "nameEn": "Cook's Utensils",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 8,
+        "iconPath": "/assets/equipment-icons/cooks_utensils.png",
+        "description": "一套厨师工具，包含锅、勺、刀和各种调味料容器。拥有厨师工具熟练项的角色，在使用该工具进行烹饪相关的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "glassblowers_tools",
+        "name": "玻璃匠工具",
+        "nameEn": "Glassblower's Tools",
+        "cost": {
+          "gp": 30
+        },
+        "costCopper": 3000,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/glassblowers_tools.png",
+        "description": "一套玻璃匠工具，包含吹管、模具和其他玻璃制作设备。拥有玻璃匠工具熟练项的角色，在使用该工具进行玻璃制作的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "jewelers_tools",
+        "name": "珠宝匠工具",
+        "nameEn": "Jeweler's Tools",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/jewelers_tools.png",
+        "description": "一套珠宝匠工具，包含小锤、钳子、放大镜和其他珠宝制作设备。拥有珠宝匠工具熟练项的角色，在使用该工具进行珠宝制作或鉴定的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "leatherworkers_tools",
+        "name": "皮匠工具",
+        "nameEn": "Leatherworker's Tools",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/leatherworkers_tools.png",
+        "description": "一套皮匠工具，包含刀具、穿孔器和其他皮革加工设备。拥有皮匠工具熟练项的角色，在使用该工具进行皮革制品制作的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "masons_tools",
+        "name": "泥瓦匠工具",
+        "nameEn": "Mason's Tools",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 8,
+        "iconPath": "/assets/equipment-icons/masons_tools.png",
+        "description": "一套泥瓦匠工具，包含铲子、抹刀和其他砌筑设备。拥有泥瓦匠工具熟练项的角色，在使用该工具进行石材或砖块建筑的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "painters_supplies",
+        "name": "画家工具",
+        "nameEn": "Painter's Supplies",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/painters_supplies.png",
+        "description": "一套画家工具，包含画笔、颜料和画布。拥有画家工具熟练项的角色，在使用该工具进行绘画相关的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "potters_tools",
+        "name": "陶匠工具",
+        "nameEn": "Potter's Tools",
+        "cost": {
+          "gp": 10
+        },
+        "costCopper": 1000,
+        "weight": 3,
+        "iconPath": "/assets/equipment-icons/potters_tools.png",
+        "description": "一套陶匠工具，包含转轮、模具和其他陶艺设备。拥有陶匠工具熟练项的角色，在使用该工具进行陶器制作的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "smiths_tools",
+        "name": "铁匠工具",
+        "nameEn": "Smith's Tools",
+        "cost": {
+          "gp": 20
+        },
+        "costCopper": 2000,
+        "weight": 8,
+        "iconPath": "/assets/equipment-icons/smiths_tools.png",
+        "description": "一套铁匠工具，包含锤子、钳子、铁砧和其他锻造设备。拥有铁匠工具熟练项的角色，在使用该工具进行金属锻造的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "tinkers_tools",
+        "name": "修理工具",
+        "nameEn": "Tinker's Tools",
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "weight": 10,
+        "iconPath": "/assets/equipment-icons/tinkers_tools.png",
+        "description": "一套修理工具，包含各种小工具、零件和修理设备。拥有修理工具熟练项的角色，在使用该工具进行修理或制作小型机械装置的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "weavers_tools",
+        "name": "织布工具",
+        "nameEn": "Weaver's Tools",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/weavers_tools.png",
+        "description": "一套织布工具，包含织布机、梭子和其他纺织设备。拥有织布工具熟练项的角色，在使用该工具进行纺织相关的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "woodcarvers_tools",
+        "name": "木雕工具",
+        "nameEn": "Woodcarver's Tools",
+        "cost": {
+          "gp": 1
+        },
+        "costCopper": 100,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/woodcarvers_tools.png",
+        "description": "一套木雕工具，包含刻刀、凿子和其他雕刻设备。拥有木雕工具熟练项的角色，在使用该工具进行木雕相关的属性检定时，可以将其熟练加值加入检定结果中。"
+      }
+    ],
+    "specializedTools": [
+      {
+        "id": "disguise_kit",
+        "name": "易容工具",
+        "nameEn": "Disguise Kit",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 3,
+        "iconPath": "/assets/equipment-icons/disguise_kit.png",
+        "description": "袋装的工具包里包含了化妆品、染发剂以及一些可以物理性的改变容貌的小道具。拥有易容工具熟练项的角色，在使用该工具进行视觉伪装的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "forgery_kit",
+        "name": "文书伪造工具",
+        "nameEn": "Forgery Kit",
+        "cost": {
+          "gp": 15
+        },
+        "costCopper": 1500,
+        "weight": 5,
+        "iconPath": "/assets/equipment-icons/forgery_kit.png",
+        "description": "盒装的工具包内装着各种纸和羊皮纸、笔墨、印章、封蜡、金银叶饰，以及其他用以伪造信用文书的用品。拥有文书伪造工具熟练项的角色，在使用该工具进行伪造实物式信用文书的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "herbalism_kit",
+        "name": "草药工具",
+        "nameEn": "Herbalism Kit",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 3,
+        "iconPath": "/assets/equipment-icons/herbalism_kit.png",
+        "description": "一整副的工具包里包含一系列器具如钳剪、杵磨、袋子、瓶子，以供草药师制作药膏和药水。拥有草药工具熟练项的角色，在使用该工具进行鉴别或应用草药的属性检定时，可以将其熟练加值加入检定结果中。另外，你要拥有草药工具的熟练项才可制作抗毒剂或治疗药水。"
+      },
+      {
+        "id": "navigators_tools",
+        "name": "领航工具",
+        "nameEn": "Navigator's Tools",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/navigators_tools.png",
+        "description": "一整副的领航工具被用于海上航行的导航工作。拥有领航工具熟练项的角色，在使用该工具进行绘制航线和跟随航线的属性检定时，可以将其熟练加值加入检定结果中。此外，在进行避免在海上迷失方向的属性检定时，拥有该熟练项的角色也可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "poisoners_kit",
+        "name": "制毒工具",
+        "nameEn": "Poisoner's Kit",
+        "cost": {
+          "gp": 50
+        },
+        "costCopper": 5000,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/poisoners_kit.png",
+        "description": "一整副的工具包里包含了若干小瓶、各种化学品，以及其他用以制造毒药的必须用具。拥有制毒工具熟练项的角色，在使用该工具进行制造或使用毒药的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "thieves_tools",
+        "name": "盗贼工具",
+        "nameEn": "Thieves' Tools",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/thieves_tools.png",
+        "description": "这套工具包含一把小锉刀、一套开锁器、一面小镜子、一把窄刃剪刀和一把镊子。熟练使用这些工具可以让你为拆卸陷阱或开锁的敏捷检定加上熟练加值。撬锁的唯一方法。"
+      }
+    ],
+    "gamingSets": [
+      {
+        "id": "dice_set",
+        "name": "整副骰子",
+        "nameEn": "Dice Set",
+        "cost": {
+          "sp": 1
+        },
+        "costCopper": 10,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/dice_set.png",
+        "description": "一套骰子，可用于各种赌博游戏。拥有赌具熟练项的角色，在使用相应赌具进行赌博的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "dragonchess_set",
+        "name": "整套龙棋",
+        "nameEn": "Dragonchess Set",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 0.5,
+        "iconPath": "/assets/equipment-icons/dragonchess_set.png",
+        "description": "一套龙棋，是一种流行于D&D世界的复杂棋类游戏。拥有赌具熟练项的角色，在使用相应赌具进行游戏的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "playing_card_set",
+        "name": "整副纸牌",
+        "nameEn": "Playing Card Set",
+        "cost": {
+          "sp": 5
+        },
+        "costCopper": 50,
+        "weight": 0,
+        "iconPath": "/assets/equipment-icons/playing_card_set.png",
+        "description": "一副纸牌，可用于各种牌类游戏。拥有赌具熟练项的角色，在使用相应赌具进行赌博的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "three_dragon_ante_set",
+        "name": "整副三龙牌",
+        "nameEn": "Three-Dragon Ante Set",
+        "cost": {
+          "gp": 5
+        },
+        "costCopper": 500,
+        "weight": 3,
+        "iconPath": "/assets/equipment-icons/three_dragon_ante_set.png",
+        "description": "一套三龙牌，是D&D世界中流行的纸牌游戏。拥有赌具熟练项的角色，在使用相应赌具进行游戏的属性检定时，可以将其熟练加值加入检定结果中。"
+      }
+    ],
+    "musicalInstruments": [
+      {
+        "id": "bagpipes",
+        "name": "风笛",
+        "nameEn": "Bagpipes",
+        "cost": {
+          "gp": 30
+        },
+        "costCopper": 3000,
+        "weight": 6,
+        "iconPath": "/assets/equipment-icons/bagpipes.png",
+        "description": "风笛，一种管乐器。拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "drum",
+        "name": "鼓",
+        "nameEn": "Drum",
+        "cost": {
+          "gp": 6
+        },
+        "costCopper": 600,
+        "weight": 3,
+        "iconPath": "/assets/equipment-icons/drum.png",
+        "description": "鼓，一种打击乐器。拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "dulcimer",
+        "name": "扬琴",
+        "nameEn": "Dulcimer",
+        "cost": {
+          "gp": 25
+        },
+        "costCopper": 2500,
+        "weight": 10,
+        "iconPath": "/assets/equipment-icons/dulcimer.png",
+        "description": "扬琴，一种弦乐器。拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "flute",
+        "name": "长笛",
+        "nameEn": "Flute",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/flute.png",
+        "description": "长笛，一种管乐器。拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "lute",
+        "name": "鲁特琴",
+        "nameEn": "Lute",
+        "cost": {
+          "gp": 35
+        },
+        "costCopper": 3500,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/lute.png",
+        "description": "鲁特琴，一种弦乐器。拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "lyre",
+        "name": "里拉琴",
+        "nameEn": "Lyre",
+        "cost": {
+          "gp": 30
+        },
+        "costCopper": 3000,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/lyre.png",
+        "description": "里拉琴，一种弦乐器。拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "horn",
+        "name": "角号",
+        "nameEn": "Horn",
+        "cost": {
+          "gp": 3
+        },
+        "costCopper": 300,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/horn.png",
+        "description": "角号，一种管乐器。拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "pan_flute",
+        "name": "排箫",
+        "nameEn": "Pan Flute",
+        "cost": {
+          "gp": 12
+        },
+        "costCopper": 1200,
+        "weight": 2,
+        "iconPath": "/assets/equipment-icons/pan_flute.png",
+        "description": "排箫，一种管乐器。拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "shawm",
+        "name": "芦笛",
+        "nameEn": "Shawm",
+        "cost": {
+          "gp": 2
+        },
+        "costCopper": 200,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/shawm.png",
+        "description": "芦笛，一种管乐器。拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。"
+      },
+      {
+        "id": "viol",
+        "name": "提琴",
+        "nameEn": "Viol",
+        "cost": {
+          "gp": 30
+        },
+        "costCopper": 3000,
+        "weight": 1,
+        "iconPath": "/assets/equipment-icons/viol.png",
+        "description": "提琴，一种弦乐器。拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。"
+      }
+    ]
+  },
+  "currency": {
+    "description": "货币系统",
+    "standardExchangeRates": {
+      "cp": {
+        "name": "铜币",
+        "nameEn": "Copper Piece",
+        "value": 1
+      },
+      "sp": {
+        "name": "银币",
+        "nameEn": "Silver Piece",
+        "value": 10
+      },
+      "ep": {
+        "name": "电币",
+        "nameEn": "Electrum Piece",
+        "value": 50
+      },
+      "gp": {
+        "name": "金币",
+        "nameEn": "Gold Piece",
+        "value": 100
+      },
+      "pp": {
+        "name": "白金币",
+        "nameEn": "Platinum Piece",
+        "value": 1000
+      }
+    }
+  },
+  "mounts": {
+    "description": "坐骑和役用动物",
+    "descriptionEn": "Mounts and pack animals",
+    "animals": [
+      {
+        "id": "mastiff",
+        "name": "獒犬",
+        "nameEn": "Mastiff",
+        "cost": {
+          "gp": 25
+        },
+        "weight": 0,
+        "speed": 40,
+        "capacity": "195 lb."
+      },
+      {
+        "id": "horse_draft",
+        "name": "挽马",
+        "nameEn": "Horse, draft",
+        "cost": {
+          "gp": 50
+        },
+        "weight": 0,
+        "speed": 40,
+        "capacity": "540 lb."
+      },
+      {
+        "id": "pony",
+        "name": "矮种马",
+        "nameEn": "Pony",
+        "cost": {
+          "gp": 30
+        },
+        "weight": 0,
+        "speed": 40,
+        "capacity": "225 lb."
+      },
+      {
+        "id": "donkey",
+        "name": "驴",
+        "nameEn": "Donkey",
+        "cost": {
+          "gp": 8
+        },
+        "weight": 0,
+        "speed": 40,
+        "capacity": "420 lb."
+      },
+      {
+        "id": "horse_riding",
+        "name": "骑乘马",
+        "nameEn": "Horse, riding",
+        "cost": {
+          "gp": 75
+        },
+        "weight": 0,
+        "speed": 60,
+        "capacity": "480 lb."
+      },
+      {
+        "id": "elephant",
+        "name": "大象",
+        "nameEn": "Elephant",
+        "cost": {
+          "gp": 200
+        },
+        "weight": 0,
+        "speed": 40,
+        "capacity": "1,320 lb."
+      },
+      {
+        "id": "warhorse",
+        "name": "战马",
+        "nameEn": "Warhorse",
+        "cost": {
+          "gp": 400
+        },
+        "weight": 0,
+        "speed": 60,
+        "capacity": "540 lb."
+      },
+      {
+        "id": "camel",
+        "name": "骆驼",
+        "nameEn": "Camel",
+        "cost": {
+          "gp": 50
+        },
+        "weight": 0,
+        "speed": 50,
+        "capacity": "480 lb."
+      },
+      {
+        "id": "mule",
+        "name": "骡子",
+        "nameEn": "Mule",
+        "cost": {
+          "gp": 8
+        },
+        "weight": 0,
+        "speed": 40,
+        "capacity": "420 lb."
+      }
+    ]
+  },
+  "barding": {
+    "description": "坐骑护具，价格为普通护甲的4倍",
+    "descriptionEn": "Barding is armor designed for mounts, costing 4x normal armor price",
+    "items": [
+      {
+        "id": "barding_scale_mail",
+        "name": "坐骑鳞甲",
+        "nameEn": "Barding: Scale mail",
+        "cost": {
+          "gp": 200
+        },
+        "weight": 90
+      },
+      {
+        "id": "barding_hide",
+        "name": "坐骑兽皮甲",
+        "nameEn": "Barding: Hide",
+        "cost": {
+          "gp": 40
+        },
+        "weight": 24
+      },
+      {
+        "id": "barding_splint",
+        "name": "坐骑夹板甲",
+        "nameEn": "Barding: Splint",
+        "cost": {
+          "gp": 800
+        },
+        "weight": 120
+      },
+      {
+        "id": "barding_breastplate",
+        "name": "坐骑胸甲",
+        "nameEn": "Barding: Breastplate",
+        "cost": {
+          "gp": 1600
+        },
+        "weight": 40
+      },
+      {
+        "id": "barding_studded_leather",
+        "name": "坐骑镶嵌皮甲",
+        "nameEn": "Barding: Studded Leather",
+        "cost": {
+          "gp": 180
+        },
+        "weight": 26
+      },
+      {
+        "id": "barding_padded",
+        "name": "坐骑棉甲",
+        "nameEn": "Barding: Padded",
+        "cost": {
+          "gp": 20
+        },
+        "weight": 16
+      },
+      {
+        "id": "barding_ring_mail",
+        "name": "坐骑环甲",
+        "nameEn": "Barding: Ring mail",
+        "cost": {
+          "gp": 12
+        },
+        "weight": 80
+      },
+      {
+        "id": "barding_plate",
+        "name": "坐骑板甲",
+        "nameEn": "Barding: Plate",
+        "cost": {
+          "gp": 6000
+        },
+        "weight": 130
+      },
+      {
+        "id": "barding_leather",
+        "name": "坐骑皮甲",
+        "nameEn": "Barding: Leather",
+        "cost": {
+          "gp": 40
+        },
+        "weight": 20
+      },
+      {
+        "id": "barding_chain_shirt",
+        "name": "坐骑链甲衫",
+        "nameEn": "Barding: Chain shirt",
+        "cost": {
+          "gp": 200
+        },
+        "weight": 40
+      },
+      {
+        "id": "barding_chain_mail",
+        "name": "坐骑链甲",
+        "nameEn": "Barding: Chain mail",
+        "cost": {
+          "gp": 300
+        },
+        "weight": 110
+      },
+      {
+        "id": "barding_half_plate",
+        "name": "坐骑半身板甲",
+        "nameEn": "Barding: Half plate",
+        "cost": {
+          "gp": 3000
+        },
+        "weight": 80
+      }
+    ]
+  },
+  "vehicles": {
+    "description": "陆地和水上载具",
+    "descriptionEn": "Land and water vehicles",
+    "land": [
+      {
+        "id": "carriage",
+        "name": "马车",
+        "nameEn": "Carriage",
+        "cost": {
+          "gp": 100
+        },
+        "weight": 600,
+        "description": "覆顶马车减风避雨，适合贵客与易碎货；转弯笨重却稳。传闻某公爵曾藏在夹层逃过追杀。"
+      },
+      {
+        "id": "sled",
+        "name": "雪橇",
+        "nameEn": "Sled",
+        "cost": {
+          "gp": 20
+        },
+        "weight": 300,
+        "description": "木橇配铁滑条，雪原上拖货胜过车轮；下坡可疾冲撤离。北境冒险者常把它当临时担架。"
+      },
+      {
+        "id": "wagon",
+        "name": "货车",
+        "nameEn": "Wagon",
+        "cost": {
+          "gp": 35
+        },
+        "weight": 400,
+        "description": "结实货车载重惊人，绑绳加篷能护物资与伤员；泥地需良驭马术。商队说它比誓言更可靠。"
+      },
+      {
+        "id": "chariot",
+        "name": "战车",
+        "nameEn": "Chariot",
+        "cost": {
+          "gp": 250
+        },
+        "weight": 100,
+        "description": "轻快战车适合平原冲锋与掠袭，弓手可边驰边射；但在林地易翻。有人夸它是骑士的第二双腿。"
+      },
+      {
+        "id": "cart",
+        "name": "手推车",
+        "nameEn": "Cart",
+        "cost": {
+          "gp": 15
+        },
+        "weight": 200,
+        "description": "小手推车穿巷入洞都方便，搬战利品省力；吱呀声却易暴露行踪。盗贼爱给轮轴抹油当暗号。"
+      }
+    ],
+    "water": [
+      {
+        "id": "keelboat",
+        "name": "龙骨船",
+        "nameEn": "Keelboat",
+        "cost": {
+          "gp": 3000
+        },
+        "weight": 0,
+        "speed": 1,
+        "description": "龙骨船吃水浅却稳，适合河道载货与拖航；有桨有帆进退自如。河盗见它常改口谈价。"
+      },
+      {
+        "id": "sailing_ship",
+        "name": "帆船",
+        "nameEn": "Sailing ship",
+        "cost": {
+          "gp": 10000
+        },
+        "weight": 0,
+        "speed": 2,
+        "description": "远航帆船借风破浪，装载充足补给与火力；顺风追击、逆风需耐心。水手常在桅顶挂护身符。"
+      },
+      {
+        "id": "warship",
+        "name": "战船",
+        "nameEn": "Warship",
+        "cost": {
+          "gp": 25000
+        },
+        "weight": 0,
+        "speed": 2.5,
+        "description": "战船厚舷配弩炮与撞角，靠近即可压制登船；维护昂贵却威慑十足。老兵说它的阴影比旗帜更可怕。"
+      },
+      {
+        "id": "galley",
+        "name": "大帆船",
+        "nameEn": "Galley",
+        "cost": {
+          "gp": 30000
+        },
+        "weight": 0,
+        "speed": 4,
+        "description": "大帆船兼具风帆与长桨，狭海无风也能疾进；适合运兵与登舰战。港口传闻它曾拖走过巨鲸尸。"
+      },
+      {
+        "id": "longship",
+        "name": "长船",
+        "nameEn": "Longship",
+        "cost": {
+          "gp": 10000
+        },
+        "weight": 0,
+        "speed": 3,
+        "description": "长船船身狭长，浅滩可直上岸突袭；桨手齐划如鼓点。北地人夸它能把雷声送到敌营门口。"
+      },
+      {
+        "id": "rowboat",
+        "name": "划艇",
+        "nameEn": "Rowboat",
+        "cost": {
+          "gp": 50
+        },
+        "weight": 0,
+        "speed": 1.5,
+        "description": "小划艇静如影，适合夜渡、侦察与靠岸潜入；装载有限但易藏。渔夫说别在月黑时数水纹。"
+      }
+    ]
+  },
+  "backgroundItems": [
+    {
+      "id": "insignia_of_rank",
+      "name": "军衔徽章",
+      "nameEn": "Insignia of Rank",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 0,
+      "description": "代表你在军队中曾经服役的军衔标识",
+      "iconPath": "/assets/equipment-icons/insignia_of_rank.png"
+    },
+    {
+      "id": "trophy_from_fallen_enemy",
+      "name": "战利品",
+      "nameEn": "Trophy from Fallen Enemy",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 0.5,
+      "description": "从击败的敌人身上取得的战利品，如匕首、折断的刀剑或旗帜碎片",
+      "iconPath": "/assets/equipment-icons/trophy_from_fallen_enemy.png"
+    },
+    {
+      "id": "gaming_set_or_playing_cards",
+      "name": "骰子或纸牌",
+      "nameEn": "Gaming Set or Playing Cards",
+      "cost": {
+        "sp": 1
+      },
+      "costCopper": 10,
+      "weight": 0,
+      "description": "用于消遣和赌博的骰子或纸牌",
+      "iconPath": "/assets/equipment-icons/gaming_set_or_playing_cards.png"
+    },
+    {
+      "id": "holy_symbol",
+      "name": "圣徽",
+      "nameEn": "Holy Symbol",
+      "cost": {
+        "gp": 5
+      },
+      "costCopper": 500,
+      "weight": 1,
+      "description": "神圣的宗教象征物，施法焦点。注：施法焦点可替代法术中无标价的材料成分，牧师/圣武士必备，不会消耗。",
+      "iconPath": "/assets/equipment-icons/holy_symbol.png"
+    },
+    {
+      "id": "prayer_book",
+      "name": "祈祷书",
+      "nameEn": "Prayer Book",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 0.5,
+      "description": "记载祈祷文和宗教经文的书籍",
+      "iconPath": "/assets/equipment-icons/prayer_book.png"
+    },
+    {
+      "id": "incense",
+      "name": "熏香",
+      "nameEn": "Incense",
+      "cost": {
+        "cp": 1
+      },
+      "costCopper": 1,
+      "weight": 0,
+      "description": "用于宗教仪式的香料",
+      "iconPath": "/assets/equipment-icons/incense.png"
+    },
+    {
+      "id": "vestments",
+      "name": "法衣",
+      "nameEn": "Vestments",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 3,
+      "description": "宗教仪式使用的礼服",
+      "iconPath": "/assets/equipment-icons/vestments.png"
+    },
+    {
+      "id": "pouch_with_15gp",
+      "name": "钱袋(15gp)",
+      "nameEn": "Pouch with 15gp",
+      "cost": {
+        "gp": 15
+      },
+      "costCopper": 1500,
+      "weight": 0.5,
+      "description": "装有15金币的小钱袋",
+      "iconPath": "/assets/equipment-icons/pouch_with_15gp.png"
+    },
+    {
+      "id": "pouch_with_10gp",
+      "name": "钱袋(10gp)",
+      "nameEn": "Pouch with 10gp",
+      "cost": {
+        "gp": 10
+      },
+      "costCopper": 1000,
+      "weight": 0.5,
+      "description": "装有10金币的小钱袋",
+      "iconPath": "/assets/equipment-icons/pouch_with_15gp.png"
+    },
+    {
+      "id": "pouch_with_25gp",
+      "name": "钱袋(25gp)",
+      "nameEn": "Pouch with 25gp",
+      "cost": {
+        "gp": 25
+      },
+      "costCopper": 2500,
+      "weight": 0.5,
+      "description": "装有25金币的小钱袋",
+      "iconPath": "/assets/equipment-icons/pouch_with_15gp.png"
+    },
+    {
+      "id": "pouch_with_5gp",
+      "name": "钱袋(5gp)",
+      "nameEn": "Pouch with 5gp",
+      "cost": {
+        "gp": 5
+      },
+      "costCopper": 500,
+      "weight": 0.5,
+      "description": "装有5金币的小钱袋",
+      "iconPath": "/assets/equipment-icons/pouch_with_15gp.png"
+    },
+    {
+      "id": "dark_common_clothes_with_hood",
+      "name": "带兜帽的深色普通服装",
+      "nameEn": "Dark Common Clothes with Hood",
+      "cost": {
+        "sp": 5
+      },
+      "costCopper": 50,
+      "weight": 3,
+      "description": "适合隐匿行动的深色服装",
+      "iconPath": "/assets/equipment-icons/dark_common_clothes_with_hood.png"
+    },
+    {
+      "id": "fine_clothes",
+      "name": "高档服装",
+      "nameEn": "Fine Clothes",
+      "cost": {
+        "gp": 15
+      },
+      "costCopper": 1500,
+      "weight": 6,
+      "description": "华丽精致的服装",
+      "iconPath": "/assets/equipment-icons/fine_clothes.png"
+    },
+    {
+      "id": "scroll_of_pedigree",
+      "name": "家谱卷轴",
+      "nameEn": "Scroll of Pedigree",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 0,
+      "description": "记载家族血统的卷轴",
+      "iconPath": "/assets/equipment-icons/scroll_of_pedigree.png"
+    },
+    {
+      "id": "bottle_of_ink",
+      "name": "墨水瓶",
+      "nameEn": "Bottle of Ink",
+      "cost": {
+        "gp": 10
+      },
+      "costCopper": 1000,
+      "weight": 0,
+      "description": "1盎司墨水",
+      "iconPath": "/assets/equipment-icons/bottle_of_ink.png"
+    },
+    {
+      "id": "quill",
+      "name": "羽毛笔",
+      "nameEn": "Quill",
+      "cost": {
+        "cp": 2
+      },
+      "costCopper": 2,
+      "weight": 0,
+      "description": "用于书写的羽毛笔",
+      "iconPath": "/assets/equipment-icons/quill.png"
+    },
+    {
+      "id": "small_knife",
+      "name": "小刀",
+      "nameEn": "Small Knife",
+      "cost": {
+        "cp": 5
+      },
+      "costCopper": 5,
+      "weight": 0.25,
+      "description": "用于削笔、切割等日常用途",
+      "iconPath": "/assets/equipment-icons/small_knife.png"
+    },
+    {
+      "id": "letter_from_dead_colleague",
+      "name": "已故同事的信件",
+      "nameEn": "Letter from Dead Colleague",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 0,
+      "description": "来自一位已故同事的信件，其中的问题你尚未找到答案",
+      "iconPath": "/assets/equipment-icons/letter_from_dead_colleague.png"
+    },
+    {
+      "id": "tools_of_con",
+      "name": "骗子工具",
+      "nameEn": "Tools of the Con",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 1,
+      "description": "十套加了配重的骰子、一副标记的纸牌或一枚带有两面相同图案的假钱",
+      "iconPath": "/assets/equipment-icons/tools_of_con.png"
+    },
+    {
+      "id": "musical_instrument",
+      "name": "乐器",
+      "nameEn": "Musical Instrument",
+      "cost": {
+        "gp": 2
+      },
+      "costCopper": 200,
+      "weight": 2,
+      "description": "一种自选乐器",
+      "iconPath": "/assets/equipment-icons/musical_instrument.png"
+    },
+    {
+      "id": "admirer_favor",
+      "name": "崇拜者赠品",
+      "nameEn": "Admirer's Favor",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 0,
+      "description": "来自崇拜者的爱慕之物，如情书、发丝或小饰品",
+      "iconPath": "/assets/equipment-icons/admirer_favor.png"
+    },
+    {
+      "id": "costume",
+      "name": "戏服",
+      "nameEn": "Costume",
+      "cost": {
+        "gp": 5
+      },
+      "costCopper": 500,
+      "weight": 4,
+      "description": "表演用的戏服",
+      "iconPath": "/assets/equipment-icons/costume.png"
+    },
+    {
+      "id": "artisan_tools",
+      "name": "工匠工具",
+      "nameEn": "Artisan's Tools",
+      "cost": {
+        "gp": 15
+      },
+      "costCopper": 1500,
+      "weight": 5,
+      "description": "一套自选的工匠工具",
+      "iconPath": "/assets/equipment-icons/artisan_tools.png"
+    },
+    {
+      "id": "letter_of_introduction_from_guild",
+      "name": "公会介绍信",
+      "nameEn": "Letter of Introduction from Guild",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 0,
+      "description": "来自你所属公会的介绍信",
+      "iconPath": "/assets/equipment-icons/letter_of_introduction_from_guild.png"
+    },
+    {
+      "id": "travelers_clothes",
+      "name": "旅行者服装",
+      "nameEn": "Traveler's Clothes",
+      "cost": {
+        "gp": 2
+      },
+      "costCopper": 200,
+      "weight": 4,
+      "description": "适合长途旅行的耐穿服装",
+      "iconPath": "/assets/equipment-icons/travelers_clothes.png"
+    },
+    {
+      "id": "scroll_case_with_notes",
+      "name": "装有笔记的卷轴盒",
+      "nameEn": "Scroll Case with Notes",
+      "cost": {
+        "gp": 1
+      },
+      "costCopper": 100,
+      "weight": 1,
+      "description": "装有你隐居期间祈祷和学习笔记的卷轴盒",
+      "iconPath": "/assets/equipment-icons/scroll_case_with_notes.png"
+    },
+    {
+      "id": "winter_blanket",
+      "name": "冬用毯子",
+      "nameEn": "Winter Blanket",
+      "cost": {
+        "sp": 5
+      },
+      "costCopper": 50,
+      "weight": 3,
+      "description": "保暖的厚毯子",
+      "iconPath": "/assets/equipment-icons/winter_blanket.png"
+    },
+    {
+      "id": "trophy_from_animal",
+      "name": "动物战利品",
+      "nameEn": "Trophy from Animal",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 0.5,
+      "description": "从你猎杀的动物身上取得的战利品，如爪子、牙齿或羽毛",
+      "iconPath": "/assets/equipment-icons/trophy_from_animal.png"
+    },
+    {
+      "id": "50_feet_silk_rope",
+      "name": "丝绳(50尺)",
+      "nameEn": "50 Feet of Silk Rope",
+      "cost": {
+        "gp": 10
+      },
+      "costCopper": 1000,
+      "weight": 5,
+      "description": "50尺长的丝绳",
+      "iconPath": "/assets/equipment-icons/50_feet_silk_rope.png"
+    },
+    {
+      "id": "belaying_pin",
+      "name": "系缆栓",
+      "nameEn": "Belaying Pin",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 1,
+      "description": "船上用于固定绳索的木棍，也可作为简易武器",
+      "iconPath": "/assets/equipment-icons/belaying_pin.png"
+    },
+    {
+      "id": "lucky_charm",
+      "name": "幸运符",
+      "nameEn": "Lucky Charm",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 0,
+      "description": "一个幸运符，如兔脚或刻有命运之轮的小石头",
+      "iconPath": "/assets/equipment-icons/lucky_charm.png"
+    },
+    {
+      "id": "map_of_city",
+      "name": "城市地图",
+      "nameEn": "Map of the City",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 0,
+      "description": "你成长的城市地图",
+      "iconPath": "/assets/equipment-icons/map_of_city.png"
+    },
+    {
+      "id": "pet_mouse",
+      "name": "宠物鼠",
+      "nameEn": "Pet Mouse",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 0,
+      "description": "一只小老鼠宠物",
+      "iconPath": "/assets/equipment-icons/pet_mouse.png"
+    },
+    {
+      "id": "token_of_parents",
+      "name": "父母的信物",
+      "nameEn": "Token to Remember Parents",
+      "cost": {
+        "gp": 0
+      },
+      "costCopper": 0,
+      "weight": 0,
+      "description": "用来纪念父母的信物",
+      "iconPath": "/assets/equipment-icons/token_of_parents.png"
+    },
+    {
+      "id": "iron_pot",
+      "name": "铁锅",
+      "nameEn": "Iron Pot",
+      "cost": {
+        "gp": 2
+      },
+      "costCopper": 200,
+      "weight": 10,
+      "description": "用于烹饪的铁锅",
+      "iconPath": "/assets/equipment-icons/iron_pot.png"
+    }
+  ]
+}

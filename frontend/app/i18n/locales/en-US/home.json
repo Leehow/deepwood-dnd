@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Campaign Lobby — Deepwood",
+    "description": "An online tabletop platform built on D&D 5E rules."
+  },
+  "brand": {
+    "tagline": "DND"
+  },
+  "userMenu": {
+    "fallbackName": "Guest",
+    "profile": "Profile Settings",
+    "myCharacters": "My Characters",
+    "spellbook": "Spell Compendium",
+    "mapLibrary": "Map Library",
+    "modules": "Manage Modules",
+    "apiSettings": "API Settings",
+    "apiUsage": "API Usage",
+    "logout": "Sign out"
+  },
+  "hero": {
+    "title": "Your adventure begins here",
+    "subtitle": "Real-time maps · Combat tracking · AI assistant",
+    "roleDm": "👑 I am the Game Master",
+    "rolePlayer": "🎭 I am a Player",
+    "dmStepsLabel": "Upload module → AI extracts content → Create campaign → Pick a module → One-tap import",
+    "playerStepsLabel": "Pick a campaign below → Create your character → Wait for the DM to start",
+    "dmSteps": {
+      "upload": "Upload module",
+      "ai": "AI parsing",
+      "create": "Create campaign",
+      "pick": "Choose module",
+      "import": "Import resources"
+    },
+    "playerSteps": {
+      "join": "Join a campaign",
+      "createCharacter": "Create a character",
+      "begin": "Begin the adventure"
+    },
+    "actions": {
+      "uploadModule": "Upload module",
+      "createCampaign": "Create campaign",
+      "playerHint": "↓ Pick a campaign from the list below to join"
+    }
+  },
+  "campaigns": {
+    "sectionTitle": "Active campaigns",
+    "empty": "No campaigns yet",
+    "emptyCta": "Start a new adventure",
+    "loadFailed": "Failed to load campaigns",
+    "connectFailed": "Failed to connect to server",
+    "joinFailed": "Failed to join campaign",
+    "deleteFailed": "Failed to delete campaign",
+    "deleteConfirm": "Delete campaign \"{{name}}\"? This cannot be undone.",
+    "statusInProgress": "⚔️ In progress",
+    "statusRecruiting": "📜 Recruiting",
+    "dmBadge": "👑 DM",
+    "hostLabel": "Host: {{name}}",
+    "levelLabel": "Lv.{{range}}",
+    "buttons": {
+      "enter": "Enter campaign",
+      "continue": "Continue adventure",
+      "join": "Join the party",
+      "full": "Party is full"
+    }
+  },
+  "sharedTemplates": {
+    "sectionTitle": "Shared campaign templates",
+    "sharedByBadge": "Shared by {{name}}",
+    "view": "View template",
+    "delete": "Delete template",
+    "addToLibrary": "Add to my library",
+    "cloneSuccess": "Added to your template library. You can use it when creating a new campaign.",
+    "cloneOwnError": "This is your own template; no need to clone.",
+    "cloneFailed": "Failed to add template",
+    "deleteConfirm": "Delete shared template \"{{name}}\"? This cannot be undone.",
+    "deleteFailed": "Failed to delete template",
+    "defaultDm": "DM"
+  },
+  "footer": {
+    "fanContentPolicy": "Fan Content Policy",
+    "disclaimer": "This platform is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC."
+  }
+}

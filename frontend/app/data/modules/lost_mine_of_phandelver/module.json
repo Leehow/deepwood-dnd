@@ -1,0 +1,11 @@
+{
+  "id": "lost_mine_of_phandelver",
+  "title": "凡戴尔的失落矿坑",
+  "title_en": "Lost Mine of Phandelver",
+  "description": "官方D&D 5E入门冒险模组",
+  "version": "1.0.0",
+  "author": "Wizards of the Coast",
+  "level_range": "1-5",
+  "player_count": "4-5",
+  "estimated_time": "20-30 hours"
+}

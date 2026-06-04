@@ -1,0 +1,74 @@
+{
+  "prerequisites": {
+    "barbarian": {
+      "strength": 13
+    },
+    "bard": {
+      "charisma": 13
+    },
+    "cleric": {
+      "wisdom": 13
+    },
+    "druid": {
+      "wisdom": 13
+    },
+    "fighter": {
+      "or": [
+        { "strength": 13 },
+        { "dexterity": 13 }
+      ]
+    },
+    "monk": {
+      "dexterity": 13,
+      "wisdom": 13
+    },
+    "paladin": {
+      "strength": 13,
+      "charisma": 13
+    },
+    "ranger": {
+      "dexterity": 13,
+      "wisdom": 13
+    },
+    "rogue": {
+      "dexterity": 13
+    },
+    "sorcerer": {
+      "charisma": 13
+    },
+    "warlock": {
+      "charisma": 13
+    },
+    "wizard": {
+      "intelligence": 13
+    }
+  },
+  "classNames": {
+    "barbarian": "野蛮人",
+    "bard": "吟游诗人",
+    "cleric": "牧师",
+    "druid": "德鲁伊",
+    "fighter": "战士",
+    "monk": "武僧",
+    "paladin": "圣武士",
+    "ranger": "游侠",
+    "rogue": "游荡者",
+    "sorcerer": "术士",
+    "warlock": "邪术师",
+    "wizard": "法师"
+  },
+  "hitDice": {
+    "barbarian": 12,
+    "fighter": 10,
+    "paladin": 10,
+    "ranger": 10,
+    "bard": 8,
+    "cleric": 8,
+    "druid": 8,
+    "monk": 8,
+    "rogue": 8,
+    "warlock": 8,
+    "sorcerer": 6,
+    "wizard": 6
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "equipment": [
+    {
+      "item": "Arrow",
+      "field": "cost",
+      "srd": "100cp (1 gp)",
+      "ours": "5cp",
+      "cn_name": "箭"
+    },
+    {
+      "item": "Arrow",
+      "field": "weight",
+      "srd": 1,
+      "ours": 0.05,
+      "cn_name": "箭"
+    },
+    {
+      "item": "Blowgun needle",
+      "field": "cost",
+      "srd": "100cp (1 gp)",
+      "ours": "2cp",
+      "cn_name": "吹矢针"
+    },
+    {
+      "item": "Blowgun needle",
+      "field": "weight",
+      "srd": 1,
+      "ours": 0.02,
+      "cn_name": "吹矢针"
+    },
+    {
+      "item": "Crossbow bolt",
+      "field": "cost",
+      "srd": "100cp (1 gp)",
+      "ours": "5cp",
+      "cn_name": "弩矢"
+    },
+    {
+      "item": "Crossbow bolt",
+      "field": "weight",
+      "srd": 1.5,
+      "ours": 0.075,
+      "cn_name": "弩矢"
+    },
+    {
+      "item": "Sling bullet",
+      "field": "cost",
+      "srd": "4cp (4 cp)",
+      "ours": "0.2cp",
+      "cn_name": "投石索弹丸"
+    },
+    {
+      "item": "Sling bullet",
+      "field": "weight",
+      "srd": 1.5,
+      "ours": 0.075,
+      "cn_name": "投石索弹丸"
+    }
+  ],
+  "magic_items": [
+    {
+      "item": "Oil of Etherealness",
+      "field": "category",
+      "srd": "potion",
+      "ours": "wondrous items",
+      "cn_name": "虚界油"
+    },
+    {
+      "item": "Oil of Sharpness",
+      "field": "category",
+      "srd": "potion",
+      "ours": "wondrous items",
+      "cn_name": "锋利油"
+    },
+    {
+      "item": "Oil of Slipperiness",
+      "field": "category",
+      "srd": "potion",
+      "ours": "wondrous items",
+      "cn_name": "滑腻油"
+    },
+    {
+      "item": "Potion of Healing",
+      "field": "rarity",
+      "srd": "varies",
+      "ours": "common",
+      "cn_name": "治疗药水"
+    }
+  ],
+  "monsters": []
+}

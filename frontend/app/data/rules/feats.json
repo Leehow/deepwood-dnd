@@ -1,0 +1,1045 @@
+{
+  "version": "1.1.0",
+  "effectTypes": {
+    "passive": "被动加成，始终生效，可直接计算到角色面板",
+    "resource": "可消耗资源，需要追踪使用次数",
+    "combat_option": "战斗中的主动选项，由玩家决定是否使用",
+    "combat_trigger": "战斗中的被动触发效果",
+    "proficiency_grant": "授予新的熟练项",
+    "rule_override": "修改规则的运作方式"
+  },
+  "feats": {
+    "alert": {
+      "id": "alert",
+      "name": "警觉",
+      "nameEn": "Alert",
+      "description": "你时刻保持警觉",
+      "benefits": [
+        "你在先攻检定上获得+5加值",
+        "你无法被突袭",
+        "隐形生物攻击你时不会获得优势"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "passive": {
+          "initiative_bonus": 5
+        },
+        "rule_override": [
+          "cannot_be_surprised",
+          "invisible_no_advantage_against_you"
+        ]
+      }
+    },
+    "athlete": {
+      "id": "athlete",
+      "name": "运动健将",
+      "nameEn": "Athlete",
+      "description": "你接受过特殊的体能训练",
+      "benefits": [
+        "力量或敏捷+1（至多20）",
+        "站起只消耗5尺移动力",
+        "攀爬不会消耗额外移动力",
+        "跳远时，助跑距离只需5尺"
+      ],
+      "prerequisites": null,
+      "abilityIncrease": {
+        "choices": ["strength", "dexterity"],
+        "amount": 1
+      },
+      "effects": {
+        "passive": {
+          "stand_up_cost_ft": 5
+        },
+        "rule_override": [
+          "climbing_no_extra_movement",
+          "running_jump_5ft_start"
+        ]
+      }
+    },
+    "lucky": {
+      "id": "lucky",
+      "name": "幸运",
+      "nameEn": "Lucky",
+      "description": "你拥有超乎寻常的运气",
+      "benefits": [
+        "你获得3点幸运点数",
+        "可在攻击检定、属性检定或豁免检定时消耗1点幸运点数投掷额外d20",
+        "当有攻击检定对你投掷时也可使用",
+        "长休后恢复所有幸运点数"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "resource": [
+          {
+            "name": "幸运点数",
+            "nameEn": "Luck Points",
+            "max": 3,
+            "recharge": "long_rest",
+            "usage": "extra_d20_on_attack_ability_save"
+          }
+        ]
+      }
+    },
+    "mobile": {
+      "id": "mobile",
+      "name": "机动",
+      "nameEn": "Mobile",
+      "description": "你异常敏捷灵活",
+      "benefits": [
+        "速度增加10尺",
+        "冲刺时困难地形不影响你",
+        "对生物进行近战攻击后，该生物本轮无法借机攻击你"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "passive": {
+          "speed_bonus": 10
+        },
+        "rule_override": [
+          "dash_ignores_difficult_terrain",
+          "no_opportunity_attack_after_melee"
+        ]
+      }
+    },
+    "observant": {
+      "id": "observant",
+      "name": "观察入微",
+      "nameEn": "Observant",
+      "description": "你的观察力过人",
+      "benefits": [
+        "智力或感知+1（至多20）",
+        "你可以读唇语",
+        "被动察觉和被动调查+5"
+      ],
+      "prerequisites": null,
+      "abilityIncrease": {
+        "choices": ["intelligence", "wisdom"],
+        "amount": 1
+      },
+      "effects": {
+        "passive": {
+          "passive_perception_bonus": 5,
+          "passive_investigation_bonus": 5
+        },
+        "rule_override": [
+          "lip_reading"
+        ]
+      }
+    },
+    "tough": {
+      "id": "tough",
+      "name": "坚韧",
+      "nameEn": "Tough",
+      "description": "你的生命力异常顽强",
+      "benefits": [
+        "生命值上限增加等级×2",
+        "每次升级额外获得2点生命值"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "passive": {
+          "hp_per_level": 2
+        }
+      }
+    },
+    "war_caster": {
+      "id": "war_caster",
+      "name": "战斗施法者",
+      "nameEn": "War Caster",
+      "description": "你擅长在战斗中施法",
+      "benefits": [
+        "维持专注法术的体质豁免有优势",
+        "双手持有武器或盾牌时也能做法术动作成分",
+        "使用借机攻击时可施展戏法代替武器攻击"
+      ],
+      "prerequisites": {
+        "description": "能够施展至少一个法术"
+      },
+      "effects": {
+        "passive": {
+          "advantage": ["concentration_save"]
+        },
+        "rule_override": [
+          "somatic_with_hands_full",
+          "cantrip_as_opportunity_attack"
+        ]
+      }
+    },
+    "great_weapon_master": {
+      "id": "great_weapon_master",
+      "name": "巨武器大师",
+      "nameEn": "Great Weapon Master",
+      "description": "你精通巨型武器的使用",
+      "benefits": [
+        "用近战武器重击或降敌至0生命值时，可用附赠动作进行一次近战武器攻击",
+        "攻击前可选择-5命中换取+10伤害（重型武器）"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "combat_trigger": [
+          {
+            "trigger": "crit_or_reduce_to_0",
+            "effect": "bonus_action_melee_attack"
+          }
+        ],
+        "combat_option": [
+          {
+            "name": "强力打击",
+            "nameEn": "Power Attack",
+            "attack_penalty": -5,
+            "damage_bonus": 10,
+            "condition": "heavy_melee_weapon"
+          }
+        ]
+      }
+    },
+    "sharpshooter": {
+      "id": "sharpshooter",
+      "name": "神射手",
+      "nameEn": "Sharpshooter",
+      "description": "你是远程武器大师",
+      "benefits": [
+        "远程武器攻击忽略半身掩护和四分之三掩护",
+        "远程武器的远射程不造成劣势",
+        "攻击前可选择-5命中换取+10伤害（远程武器）"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "rule_override": [
+          "ignore_half_and_three_quarters_cover_ranged",
+          "no_long_range_disadvantage"
+        ],
+        "combat_option": [
+          {
+            "name": "精准射击",
+            "nameEn": "Precise Shot",
+            "attack_penalty": -5,
+            "damage_bonus": 10,
+            "condition": "ranged_weapon"
+          }
+        ]
+      }
+    },
+    "sentinel": {
+      "id": "sentinel",
+      "name": "哨兵",
+      "nameEn": "Sentinel",
+      "description": "你擅长锁定敌人",
+      "benefits": [
+        "借机攻击命中时，目标速度降为0",
+        "即使敌人使用脱离动作你也可以借机攻击",
+        "5尺内的生物攻击除你之外的目标时，你可以对其进行借机攻击"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "combat_trigger": [
+          {
+            "trigger": "opportunity_attack_hit",
+            "effect": "target_speed_to_0"
+          },
+          {
+            "trigger": "enemy_disengage_within_reach",
+            "effect": "can_opportunity_attack"
+          },
+          {
+            "trigger": "ally_attacked_within_5ft",
+            "effect": "reaction_melee_attack"
+          }
+        ]
+      }
+    },
+    "polearm_master": {
+      "id": "polearm_master",
+      "name": "长柄武器大师",
+      "nameEn": "Polearm Master",
+      "description": "你掌握长柄武器的战斗技巧",
+      "benefits": [
+        "使用长戟、战戟、长枪或四分之一杖时，可用附赠动作进行一次1d4的另一端攻击",
+        "持有长柄武器时，生物进入你触及范围可进行借机攻击"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "combat_option": [
+          {
+            "name": "柄端攻击",
+            "nameEn": "Butt End Attack",
+            "action": "bonus_action",
+            "damage_die": "1d4",
+            "damage_type": "bludgeoning",
+            "condition": "wielding_polearm"
+          }
+        ],
+        "combat_trigger": [
+          {
+            "trigger": "creature_enters_reach",
+            "effect": "opportunity_attack",
+            "condition": "wielding_polearm"
+          }
+        ]
+      }
+    },
+    "dual_wielder": {
+      "id": "dual_wielder",
+      "name": "双武器战斗",
+      "nameEn": "Dual Wielder",
+      "description": "你精通双武器战斗",
+      "benefits": [
+        "双持武器时AC+1",
+        "可用双手武器战斗，不需要轻武器属性",
+        "可以在同一回合拔出或收起两把单手武器"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "passive": {
+          "ac_bonus": { "value": 1, "condition": "dual_wielding" }
+        },
+        "rule_override": [
+          "twf_no_light_requirement",
+          "draw_stow_two_weapons"
+        ]
+      }
+    },
+    "heavily_armored": {
+      "id": "heavily_armored",
+      "name": "重甲专精",
+      "nameEn": "Heavily Armored",
+      "description": "你训练过穿着重甲",
+      "benefits": [
+        "力量+1（至多20）",
+        "获得重甲熟练"
+      ],
+      "prerequisites": {
+        "description": "熟练中甲"
+      },
+      "abilityIncrease": {
+        "choices": ["strength"],
+        "amount": 1
+      },
+      "effects": {
+        "proficiency_grant": {
+          "armor": ["heavy"]
+        }
+      }
+    },
+    "medium_armor_master": {
+      "id": "medium_armor_master",
+      "name": "中甲大师",
+      "nameEn": "Medium Armor Master",
+      "description": "你精通中甲的使用",
+      "benefits": [
+        "穿中甲时敏捷加值上限+1（从+2变为+3）",
+        "穿中甲时不会因护甲造成潜行劣势"
+      ],
+      "prerequisites": {
+        "description": "熟练中甲"
+      },
+      "effects": {
+        "passive": {
+          "medium_armor_dex_cap_bonus": 1
+        },
+        "rule_override": [
+          "no_stealth_disadvantage_medium_armor"
+        ]
+      }
+    },
+    "spell_sniper": {
+      "id": "spell_sniper",
+      "name": "法术狙击手",
+      "nameEn": "Spell Sniper",
+      "description": "你擅长远程施法",
+      "benefits": [
+        "需要攻击检定的法术射程翻倍",
+        "你的法术攻击忽略半身和四分之三掩护",
+        "学习一个需要攻击检定的戏法"
+      ],
+      "prerequisites": {
+        "description": "能够施展至少一个法术"
+      },
+      "effects": {
+        "rule_override": [
+          "double_spell_attack_range",
+          "ignore_half_and_three_quarters_cover_spell"
+        ],
+        "proficiency_grant": {
+          "cantrips": 1
+        }
+      }
+    },
+    "elemental_adept": {
+      "id": "elemental_adept",
+      "name": "元素专家",
+      "nameEn": "Elemental Adept",
+      "description": "你精通某种元素魔法",
+      "benefits": [
+        "选择一种元素类型（强酸、寒冷、火焰、闪电、雷鸣）",
+        "该类型法术忽略抗性",
+        "该类型法术伤害骰1视为2"
+      ],
+      "prerequisites": {
+        "description": "能够施展至少一个法术"
+      },
+      "choice": {
+        "type": "element",
+        "options": ["acid", "cold", "fire", "lightning", "thunder"]
+      },
+      "effects": {
+        "rule_override": [
+          "ignore_resistance_chosen_element",
+          "min_damage_die_2_chosen_element"
+        ]
+      }
+    },
+    "resilient": {
+      "id": "resilient",
+      "name": "坚毅",
+      "nameEn": "Resilient",
+      "description": "你增强了某项属性的韧性",
+      "benefits": [
+        "选择一项属性+1（至多20）",
+        "获得该属性的豁免熟练"
+      ],
+      "prerequisites": null,
+      "abilityIncrease": {
+        "choices": ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"],
+        "amount": 1,
+        "mustChoose": true
+      },
+      "effects": {
+        "proficiency_grant": {
+          "saving_throw": "chosen_ability"
+        }
+      }
+    },
+    "skilled": {
+      "id": "skilled",
+      "name": "技能专家",
+      "nameEn": "Skilled",
+      "description": "你接受过广泛训练",
+      "benefits": [
+        "获得3项技能或工具的熟练"
+      ],
+      "prerequisites": null,
+      "choice": {
+        "type": "skills_or_tools",
+        "count": 3
+      },
+      "effects": {
+        "proficiency_grant": {
+          "skills_or_tools": 3
+        }
+      }
+    },
+    "tavern_brawler": {
+      "id": "tavern_brawler",
+      "name": "酒馆斗殴者",
+      "nameEn": "Tavern Brawler",
+      "description": "你擅长街头打斗",
+      "benefits": [
+        "力量或体质+1（至多20）",
+        "徒手打击和即兴武器熟练",
+        "徒手打击伤害骰为1d4",
+        "附赠动作使用徒手打击或即兴武器命中后可尝试擒抱"
+      ],
+      "prerequisites": null,
+      "abilityIncrease": {
+        "choices": ["strength", "constitution"],
+        "amount": 1
+      },
+      "effects": {
+        "passive": {
+          "unarmed_damage_die": "1d4"
+        },
+        "proficiency_grant": {
+          "weapon": ["unarmed", "improvised"]
+        },
+        "combat_trigger": [
+          {
+            "trigger": "unarmed_or_improvised_hit",
+            "effect": "bonus_action_grapple"
+          }
+        ]
+      }
+    },
+    "mage_slayer": {
+      "id": "mage_slayer",
+      "name": "法师杀手",
+      "nameEn": "Mage Slayer",
+      "description": "你训练过对抗施法者",
+      "benefits": [
+        "5尺内生物施法时可用反应进行借机攻击",
+        "命中专注施法者时，其专注检定DC增加",
+        "5尺内生物施法时你的豁免有优势"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "combat_trigger": [
+          {
+            "trigger": "creature_casts_within_5ft",
+            "effect": "reaction_melee_attack"
+          },
+          {
+            "trigger": "hit_concentrating_caster",
+            "effect": "concentration_dc_disadvantage"
+          }
+        ],
+        "passive": {
+          "advantage": ["save_vs_spell_within_5ft"]
+        }
+      }
+    },
+    "actor": {
+      "id": "actor",
+      "name": "演员",
+      "nameEn": "Actor",
+      "description": "你是模仿和表演大师",
+      "benefits": [
+        "魅力+1（至多20）",
+        "伪装成他人时，唬骗和表演检定有优势",
+        "可以模仿其他生物的语音或声音"
+      ],
+      "prerequisites": null,
+      "abilityIncrease": {
+        "choices": ["charisma"],
+        "amount": 1
+      },
+      "effects": {
+        "passive": {
+          "advantage": ["deception_disguise", "performance_disguise"]
+        },
+        "rule_override": [
+          "mimic_speech"
+        ]
+      }
+    },
+    "charger": {
+      "id": "charger",
+      "name": "冲锋者",
+      "nameEn": "Charger",
+      "description": "你擅长冲锋攻击",
+      "benefits": [
+        "冲刺后可用附赠动作进行近战攻击或推撞",
+        "若攻击命中，伤害+5"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "combat_option": [
+          {
+            "name": "冲锋打击",
+            "nameEn": "Charge Attack",
+            "action": "bonus_action",
+            "damage_bonus": 5,
+            "condition": "after_dash_10ft_straight"
+          }
+        ]
+      }
+    },
+    "crossbow_expert": {
+      "id": "crossbow_expert",
+      "name": "弩专家",
+      "nameEn": "Crossbow Expert",
+      "description": "你精通弩类武器",
+      "benefits": [
+        "忽略弩类武器的装填属性",
+        "5尺内进行远程攻击不会造成劣势",
+        "使用单手武器攻击后可用附赠动作用手弩攻击"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "rule_override": [
+          "ignore_loading_crossbow",
+          "no_disadvantage_ranged_within_5ft"
+        ],
+        "combat_option": [
+          {
+            "name": "手弩附赠攻击",
+            "nameEn": "Hand Crossbow Bonus Attack",
+            "action": "bonus_action",
+            "condition": "attacked_with_one_handed_weapon"
+          }
+        ]
+      }
+    },
+    "defensive_duelist": {
+      "id": "defensive_duelist",
+      "name": "防御决斗者",
+      "nameEn": "Defensive Duelist",
+      "description": "你擅长用轻武器防御",
+      "benefits": [
+        "持有灵巧武器时，可用反应将AC增加熟练加值"
+      ],
+      "prerequisites": {
+        "description": "敏捷13或更高"
+      },
+      "effects": {
+        "combat_option": [
+          {
+            "name": "灵巧格挡",
+            "nameEn": "Parry",
+            "action": "reaction",
+            "ac_bonus": "proficiency_bonus",
+            "condition": "wielding_finesse_weapon"
+          }
+        ]
+      }
+    },
+    "dungeon_delver": {
+      "id": "dungeon_delver",
+      "name": "地城探险者",
+      "nameEn": "Dungeon Delver",
+      "description": "你是地下城探险专家",
+      "benefits": [
+        "侦测秘门的感知（察觉）和智力（调查）检定有优势",
+        "避免陷阱的豁免有优势，且陷阱对你造成的伤害有抗性",
+        "以正常速度搜索陷阱"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "passive": {
+          "advantage": ["perception_secret_doors", "investigation_secret_doors", "save_vs_traps"],
+          "damage_resistance": ["traps"]
+        },
+        "rule_override": [
+          "search_traps_normal_speed"
+        ]
+      }
+    },
+    "durable": {
+      "id": "durable",
+      "name": "耐久",
+      "nameEn": "Durable",
+      "description": "你恢复力强",
+      "benefits": [
+        "体质+1（至多20）",
+        "短休投HD恢复生命时，最小回复值为体质调整值的两倍"
+      ],
+      "prerequisites": null,
+      "abilityIncrease": {
+        "choices": ["constitution"],
+        "amount": 1
+      },
+      "effects": {
+        "rule_override": [
+          "hit_die_min_double_con_mod"
+        ]
+      }
+    },
+    "grappler": {
+      "id": "grappler",
+      "name": "擒抱者",
+      "nameEn": "Grappler",
+      "description": "你擅长近身擒抱",
+      "benefits": [
+        "攻击你擒抱的生物时有优势",
+        "可以用动作束缚你擒抱的生物（双方都处于被擒抱状态）"
+      ],
+      "prerequisites": {
+        "description": "力量13或更高"
+      },
+      "effects": {
+        "passive": {
+          "advantage": ["attack_grappled_creature"]
+        },
+        "combat_option": [
+          {
+            "name": "束缚擒抱",
+            "nameEn": "Pin",
+            "action": "action",
+            "condition": "grappling_creature",
+            "effect": "both_restrained"
+          }
+        ]
+      }
+    },
+    "healer": {
+      "id": "healer",
+      "name": "治疗师",
+      "nameEn": "Healer",
+      "description": "你精通医疗救治",
+      "benefits": [
+        "使用治疗包可让生物恢复1点HP",
+        "使用治疗包可恢复1d6+4+目标HD上限的HP（每次短休一次）"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "combat_option": [
+          {
+            "name": "急救",
+            "nameEn": "First Aid",
+            "action": "action",
+            "heal": "stabilize_1hp",
+            "condition": "has_healers_kit"
+          },
+          {
+            "name": "治疗",
+            "nameEn": "Treat Wounds",
+            "action": "action",
+            "heal": "1d6+4+target_max_hd",
+            "condition": "has_healers_kit",
+            "limit": "once_per_creature_per_short_rest"
+          }
+        ]
+      }
+    },
+    "inspiring_leader": {
+      "id": "inspiring_leader",
+      "name": "鼓舞人心的领袖",
+      "nameEn": "Inspiring Leader",
+      "description": "你善于激励他人",
+      "benefits": [
+        "花10分钟鼓舞最多6名友方生物",
+        "每个生物获得等于你等级+魅力调整值的临时生命值",
+        "每次短休只能受益一次"
+      ],
+      "prerequisites": {
+        "description": "魅力13或更高"
+      },
+      "effects": {
+        "combat_option": [
+          {
+            "name": "激励演说",
+            "nameEn": "Inspiring Speech",
+            "action": "10_minutes",
+            "targets": 6,
+            "temp_hp": "level+charisma_mod",
+            "limit": "once_per_creature_per_short_rest"
+          }
+        ]
+      }
+    },
+    "keen_mind": {
+      "id": "keen_mind",
+      "name": "敏锐心智",
+      "nameEn": "Keen Mind",
+      "description": "你拥有非凡的记忆力",
+      "benefits": [
+        "智力+1（至多20）",
+        "总是知道北方在哪",
+        "总是知道下次日出或日落的时间",
+        "能准确回忆过去一个月内看到或听到的任何事物"
+      ],
+      "prerequisites": null,
+      "abilityIncrease": {
+        "choices": ["intelligence"],
+        "amount": 1
+      },
+      "effects": {
+        "rule_override": [
+          "always_know_north",
+          "know_sunrise_sunset",
+          "perfect_recall_1_month"
+        ]
+      }
+    },
+    "lightly_armored": {
+      "id": "lightly_armored",
+      "name": "轻甲专精",
+      "nameEn": "Lightly Armored",
+      "description": "你训练过穿着轻甲",
+      "benefits": [
+        "力量或敏捷+1（至多20）",
+        "获得轻甲熟练"
+      ],
+      "prerequisites": null,
+      "abilityIncrease": {
+        "choices": ["strength", "dexterity"],
+        "amount": 1
+      },
+      "effects": {
+        "proficiency_grant": {
+          "armor": ["light"]
+        }
+      }
+    },
+    "linguist": {
+      "id": "linguist",
+      "name": "语言学家",
+      "nameEn": "Linguist",
+      "description": "你精通多种语言",
+      "benefits": [
+        "智力+1（至多20）",
+        "学会三种语言",
+        "可以创造只有你和指定的人能理解的密文"
+      ],
+      "prerequisites": null,
+      "abilityIncrease": {
+        "choices": ["intelligence"],
+        "amount": 1
+      },
+      "effects": {
+        "proficiency_grant": {
+          "languages": 3
+        },
+        "rule_override": [
+          "create_cipher"
+        ]
+      }
+    },
+    "magic_initiate": {
+      "id": "magic_initiate",
+      "name": "魔法学徒",
+      "nameEn": "Magic Initiate",
+      "description": "你学会了基础魔法",
+      "benefits": [
+        "选择一个职业：吟游诗人、牧师、德鲁伊、术士、邪术师或法师",
+        "学会该职业法术列表中的两个戏法",
+        "学会该职业法术列表中的一个1环法术，每日可施展一次"
+      ],
+      "prerequisites": null,
+      "choice": {
+        "type": "class",
+        "options": ["bard", "cleric", "druid", "sorcerer", "warlock", "wizard"]
+      },
+      "effects": {
+        "proficiency_grant": {
+          "cantrips": 2,
+          "spells_1st": 1
+        },
+        "resource": [
+          {
+            "name": "魔法学徒法术",
+            "nameEn": "Magic Initiate Spell",
+            "max": 1,
+            "recharge": "long_rest",
+            "usage": "cast_chosen_1st_level_spell"
+          }
+        ]
+      }
+    },
+    "martial_adept": {
+      "id": "martial_adept",
+      "name": "武艺专家",
+      "nameEn": "Martial Adept",
+      "description": "你学会了战斗技巧",
+      "benefits": [
+        "学会两个战技（来自战斗大师子职业）",
+        "获得一个优势骰（d6），用于战技",
+        "优势骰在短休或长休后恢复"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "proficiency_grant": {
+          "maneuvers": 2
+        },
+        "resource": [
+          {
+            "name": "优势骰",
+            "nameEn": "Superiority Dice",
+            "max": 1,
+            "die": "d6",
+            "recharge": "short_rest",
+            "usage": "fuel_maneuvers"
+          }
+        ]
+      }
+    },
+    "moderately_armored": {
+      "id": "moderately_armored",
+      "name": "中甲专精",
+      "nameEn": "Moderately Armored",
+      "description": "你训练过穿着中甲",
+      "benefits": [
+        "力量或敏捷+1（至多20）",
+        "获得中甲和盾牌熟练"
+      ],
+      "prerequisites": {
+        "description": "熟练轻甲"
+      },
+      "abilityIncrease": {
+        "choices": ["strength", "dexterity"],
+        "amount": 1
+      },
+      "effects": {
+        "proficiency_grant": {
+          "armor": ["medium", "shield"]
+        }
+      }
+    },
+    "mounted_combatant": {
+      "id": "mounted_combatant",
+      "name": "骑乘战斗者",
+      "nameEn": "Mounted Combatant",
+      "description": "你精通骑乘作战",
+      "benefits": [
+        "攻击比坐骑小的未骑乘生物时有优势",
+        "可以将针对坐骑的攻击转移到自己身上",
+        "坐骑的敏捷豁免成功时不受伤害，失败时只受一半伤害"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "passive": {
+          "advantage": ["attack_smaller_unmounted"]
+        },
+        "combat_trigger": [
+          {
+            "trigger": "mount_targeted_by_attack",
+            "effect": "redirect_attack_to_self"
+          }
+        ],
+        "rule_override": [
+          "mount_evasion"
+        ]
+      }
+    },
+    "ritual_caster": {
+      "id": "ritual_caster",
+      "name": "仪式施法者",
+      "nameEn": "Ritual Caster",
+      "description": "你学会了仪式施法",
+      "benefits": [
+        "选择一个职业：吟游诗人、牧师、德鲁伊、术士、邪术师或法师",
+        "获得一本仪式书，包含两个1环仪式法术",
+        "可以将找到的仪式法术抄入仪式书"
+      ],
+      "prerequisites": {
+        "description": "智力或感知13或更高"
+      },
+      "choice": {
+        "type": "class",
+        "options": ["bard", "cleric", "druid", "sorcerer", "warlock", "wizard"]
+      },
+      "effects": {
+        "proficiency_grant": {
+          "ritual_spells_1st": 2
+        },
+        "rule_override": [
+          "ritual_casting_from_book",
+          "copy_ritual_spells_to_book"
+        ]
+      }
+    },
+    "savage_attacker": {
+      "id": "savage_attacker",
+      "name": "野蛮攻击者",
+      "nameEn": "Savage Attacker",
+      "description": "你的攻击格外凶猛",
+      "benefits": [
+        "每回合一次，近战武器攻击伤害骰可重投一次，取较高值"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "rule_override": [
+          "reroll_melee_damage_once_per_turn"
+        ]
+      }
+    },
+    "shield_master": {
+      "id": "shield_master",
+      "name": "盾牌大师",
+      "nameEn": "Shield Master",
+      "description": "你精通盾牌战斗",
+      "benefits": [
+        "攻击后可用附赠动作尝试推撞",
+        "将盾牌AC加值加到敏捷豁免上（针对只影响你的效果）",
+        "敏捷豁免成功时，可用反应将伤害降为0"
+      ],
+      "prerequisites": null,
+      "effects": {
+        "passive": {
+          "dex_save_bonus": { "value": "shield_ac", "condition": "single_target_effect" }
+        },
+        "combat_option": [
+          {
+            "name": "盾击推撞",
+            "nameEn": "Shield Shove",
+            "action": "bonus_action",
+            "condition": "after_attack_action"
+          }
+        ],
+        "combat_trigger": [
+          {
+            "trigger": "dex_save_success",
+            "effect": "no_damage",
+            "action": "reaction",
+            "condition": "has_shield"
+          }
+        ]
+      }
+    },
+    "skulker": {
+      "id": "skulker",
+      "name": "潜行者",
+      "nameEn": "Skulker",
+      "description": "你是潜行专家",
+      "benefits": [
+        "在微光中尝试躲藏时，可以在轻度遮蔽下躲藏",
+        "远程武器攻击失手时不会暴露位置",
+        "黑暗对你的察觉检定没有劣势"
+      ],
+      "prerequisites": {
+        "description": "敏捷13或更高"
+      },
+      "effects": {
+        "rule_override": [
+          "hide_in_light_obscurement",
+          "ranged_miss_no_reveal",
+          "no_perception_disadvantage_in_darkness"
+        ]
+      }
+    },
+    "weapon_master": {
+      "id": "weapon_master",
+      "name": "武器大师",
+      "nameEn": "Weapon Master",
+      "description": "你训练过多种武器",
+      "benefits": [
+        "力量或敏捷+1（至多20）",
+        "获得4种武器的熟练"
+      ],
+      "prerequisites": null,
+      "abilityIncrease": {
+        "choices": ["strength", "dexterity"],
+        "amount": 1
+      },
+      "effects": {
+        "proficiency_grant": {
+          "weapons": 4
+        }
+      }
+    },
+    "heavy_armor_master": {
+      "id": "heavy_armor_master",
+      "name": "重甲大师",
+      "nameEn": "Heavy Armor Master",
+      "description": "你精通重甲防御",
+      "benefits": [
+        "力量+1（至多20）",
+        "穿重甲时，非魔法的钝击、穿刺和挥砍伤害减少3点"
+      ],
+      "prerequisites": {
+        "description": "熟练重甲"
+      },
+      "abilityIncrease": {
+        "choices": ["strength"],
+        "amount": 1
+      },
+      "effects": {
+        "passive": {
+          "damage_reduction": {
+            "amount": 3,
+            "types": ["bludgeoning", "piercing", "slashing"],
+            "condition": "heavy_armor_nonmagical"
+          }
+        }
+      }
+    },
+    "light_armor_master": {
+      "id": "light_armor_master",
+      "name": "轻甲大师",
+      "nameEn": "Light Armor Master",
+      "description": "你精通轻甲使用",
+      "benefits": [
+        "穿轻甲时，敏捷加值上限提高1点",
+        "穿轻甲时，AC+1"
+      ],
+      "prerequisites": {
+        "description": "熟练轻甲"
+      },
+      "effects": {
+        "passive": {
+          "ac_bonus": { "value": 1, "condition": "light_armor" },
+          "light_armor_dex_cap_bonus": 1
+        }
+      }
+    }
+  }
+}

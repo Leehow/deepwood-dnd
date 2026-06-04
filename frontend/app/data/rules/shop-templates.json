@@ -1,0 +1,1806 @@
+{
+  "templates": [
+    {
+      "id": "anvil-weaponry",
+      "name": "铁砧武器坊",
+      "nameEn": "The Anvil Weaponry",
+      "description": "这间武器铺由退役的矮人战士经营，空气中弥漫着铁锈和炉火的气息。墙壁上挂满了各式锻造精良的武器，从朴实的匕首到华丽的巨剑应有尽有。",
+      "appearanceDescription": "石砌门面，铁砧招牌悬挂在门口，门前陈列着打磨锃亮的武器。烟囱冒出缕缕黑烟，锤击声此起彼伏。",
+      "goldGp": 2000,
+      "discountRate": 0.5,
+      "acceptsSelling": true,
+      "inventory": [
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "club",
+          "quantity": 8
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "dagger",
+          "quantity": 15
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "greatclub",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "handaxe",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "javelin",
+          "quantity": 12
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "light_hammer",
+          "quantity": 6
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "mace",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "quarterstaff",
+          "quantity": 8
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "sickle",
+          "quantity": 4
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "spear",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "battleaxe",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "flail",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "glaive",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "greataxe",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "greatsword",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "halberd",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "longsword",
+          "quantity": 4
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "maul",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "morningstar",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "rapier",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "scimitar",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "shortsword",
+          "quantity": 4
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "trident",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "war_pick",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "warhammer",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "whip",
+          "quantity": 2
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "javelin-of-lightning",
+          "quantity": 1,
+          "priceGp": 300
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "flame-tongue",
+          "quantity": 1,
+          "priceGp": 1500
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_0_1f37897b_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_0_1f37897b_512.webp"
+    },
+    {
+      "id": "ironwall-armory",
+      "name": "铁壁护甲店",
+      "nameEn": "The Iron Wall Armory",
+      "description": "这家护甲店以其精湛的防具工艺闻名。店内陈列着从简单的皮甲到厚重的板甲在内的各类防具，每一件都经过严格的质量检验。老板是一位银发精灵女匠师。",
+      "appearanceDescription": "坚固的石造建筑，门口矗立着两具穿戴全套板甲的假人模特。招牌是一面闪亮的银色盾牌浮雕。",
+      "goldGp": 3000,
+      "discountRate": 0.5,
+      "acceptsSelling": true,
+      "inventory": [
+        {
+          "source": "equipment",
+          "sourcePath": "armor.light",
+          "sourceId": "padded",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.light",
+          "sourceId": "leather",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.light",
+          "sourceId": "studded_leather",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.medium",
+          "sourceId": "hide",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.medium",
+          "sourceId": "chain_shirt",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.medium",
+          "sourceId": "scale_mail",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.medium",
+          "sourceId": "breastplate",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.medium",
+          "sourceId": "half_plate",
+          "quantity": 1
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.heavy",
+          "sourceId": "ring_mail",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.heavy",
+          "sourceId": "chain_mail",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.heavy",
+          "sourceId": "splint",
+          "quantity": 1
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.heavy",
+          "sourceId": "plate",
+          "quantity": 1
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.shield",
+          "sourceId": "shield",
+          "quantity": 6
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "mithral-armor",
+          "quantity": 1,
+          "priceGp": 400
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "adamantine-armor",
+          "quantity": 1,
+          "priceGp": 500
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_1_038bfbf3_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_1_038bfbf3_512.webp"
+    },
+    {
+      "id": "traveler-general-store",
+      "name": "旅人杂货铺",
+      "nameEn": "The Traveler's General Store",
+      "description": "这间杂货铺就像一个小型仓库，从地板到天花板堆满了各种各样的冒险用品。绳索、火把、背包、干粮……冒险者出发前需要的一切都能在这里找到。",
+      "appearanceDescription": "木质门面，色彩鲜艳的招牌上画着一个背着巨大背包的旅人。门口摆放着成捆的绳索和一桶桶的火把。",
+      "goldGp": 500,
+      "discountRate": 0.5,
+      "acceptsSelling": true,
+      "inventory": [
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "backpack",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "barrel",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "chest",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "pouch",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "quiver",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "sack",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "waterskin",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lightSources",
+          "sourceId": "candle",
+          "quantity": 20
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lightSources",
+          "sourceId": "lamp",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lightSources",
+          "sourceId": "lantern_bullseye",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lightSources",
+          "sourceId": "lantern_hooded",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lightSources",
+          "sourceId": "oil_flask",
+          "quantity": 15
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lightSources",
+          "sourceId": "torch",
+          "quantity": 20
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "bedroll",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "blanket",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "climbers_kit",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "fishing_tackle",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "hunting_trap",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "mess_kit",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "rations_1day",
+          "quantity": 30
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "rope_hempen_50ft",
+          "quantity": 8
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "rope_silk_50ft",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "tent_two_person",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "tinderbox",
+          "quantity": 8
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.tools",
+          "sourceId": "crowbar",
+          "quantity": 4
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.tools",
+          "sourceId": "grappling_hook",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.tools",
+          "sourceId": "hammer",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.tools",
+          "sourceId": "piton",
+          "quantity": 20
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.tools",
+          "sourceId": "shovel",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.ammunition",
+          "sourceId": "arrows",
+          "quantity": 200
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_2_a027348b_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_2_a027348b_512.webp"
+    },
+    {
+      "id": "arcane-emporium",
+      "name": "秘法奥术商店",
+      "nameEn": "The Arcane Emporium",
+      "description": "踏入这间商店，空气中弥漫着薰香与魔力的气息。水晶球在柜台上缓缓旋转，魔法卷轴在架子上微微发光。店主是一位神秘的提夫林法师，对每件魔法物品都了如指掌。",
+      "appearanceDescription": "紫色尖顶建筑，门口浮着发光的符文。橱窗里展示着旋转的水晶球和闪光的魔法物品。神秘的紫色帘幕遮住了内部。",
+      "goldGp": 5000,
+      "discountRate": 0.4,
+      "acceptsSelling": true,
+      "inventory": [
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.arcaneFocus",
+          "sourceId": "crystal",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.arcaneFocus",
+          "sourceId": "orb",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.arcaneFocus",
+          "sourceId": "rod",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.arcaneFocus",
+          "sourceId": "staff",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.arcaneFocus",
+          "sourceId": "wand",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.spellcastingEquipment",
+          "sourceId": "component_pouch",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "book",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "ink",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "ink_pen",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "parchment",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "spellbook",
+          "quantity": 2
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "bag-of-holding",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "cloak-of-protection",
+          "quantity": 1,
+          "priceGp": 600
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "pearl-of-power",
+          "quantity": 1,
+          "priceGp": 800
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "wand-of-magic-missiles",
+          "quantity": 1,
+          "priceGp": 400
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "ring-of-protection",
+          "quantity": 1,
+          "priceGp": 700
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "hat-of-disguise",
+          "quantity": 1,
+          "priceGp": 300
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "goggles-of-night",
+          "quantity": 1,
+          "priceGp": 250
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "lantern-of-revealing",
+          "quantity": 1,
+          "priceGp": 200
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "cloak-of-elvenkind",
+          "quantity": 1,
+          "priceGp": 350
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_3_69e8f6c4_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_3_69e8f6c4_512.webp"
+    },
+    {
+      "id": "herb-potion-shop",
+      "name": "草药与药剂铺",
+      "nameEn": "The Herb & Potion Shop",
+      "description": "这间小店弥漫着草药和花朵的芬芳。架子上摆满了五颜六色的药水瓶，柜台后的半精灵药剂师正在用研钵研磨草药。各种治疗用品和解毒剂应有尽有。",
+      "appearanceDescription": "绿色藤蔓缠绕的木屋，门口挂着干草药束。透过玻璃窗可以看到各种彩色药水瓶和冒着蒸汽的坩埚。",
+      "goldGp": 1500,
+      "discountRate": 0.5,
+      "acceptsSelling": true,
+      "inventory": [
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.potionsAndPoisons",
+          "sourceId": "antitoxin",
+          "quantity": 8
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.potionsAndPoisons",
+          "sourceId": "holy_water",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.potionsAndPoisons",
+          "sourceId": "acid_vial",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.potionsAndPoisons",
+          "sourceId": "alchemists_fire",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.potionsAndPoisons",
+          "sourceId": "basic_poison",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "healers_kit",
+          "quantity": 5
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-healing-common",
+          "quantity": 10,
+          "priceGp": 50
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-healing-greater",
+          "quantity": 5,
+          "priceGp": 150
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-healing-superior",
+          "quantity": 2,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-resistance-fire",
+          "quantity": 2,
+          "priceGp": 200
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-water-breathing",
+          "quantity": 3,
+          "priceGp": 150
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-climbing",
+          "quantity": 3,
+          "priceGp": 100
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-heroism",
+          "quantity": 2,
+          "priceGp": 200
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-invisibility",
+          "quantity": 1,
+          "priceGp": 400
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-speed",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-growth",
+          "quantity": 2,
+          "priceGp": 150
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "oil-of-slipperiness",
+          "quantity": 2,
+          "priceGp": 250
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "restorative-ointment",
+          "quantity": 1,
+          "priceGp": 300
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-poison",
+          "quantity": 2,
+          "priceGp": 100
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_4_58f601a8_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_4_58f601a8_512.webp"
+    },
+    {
+      "id": "hunter-archery",
+      "name": "猎人弓箭行",
+      "nameEn": "The Hunter's Archery",
+      "description": "这间店铺专营远程武器和弹药。墙上挂满了各种弓弩，从简易的短弓到精工的重弩。柜台上整齐排列着各种箭矢和弩矢，店主是一位独眼的游侠老兵。",
+      "appearanceDescription": "门口挂着一张巨大的弓，屋顶上有一支箭形风向标。木制招牌上画着一只瞄准的鹰眼。",
+      "goldGp": 1000,
+      "discountRate": 0.5,
+      "acceptsSelling": true,
+      "inventory": [
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.ranged",
+          "sourceId": "light_crossbow",
+          "quantity": 4
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.ranged",
+          "sourceId": "dart",
+          "quantity": 30
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.ranged",
+          "sourceId": "shortbow",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.ranged",
+          "sourceId": "sling",
+          "quantity": 4
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.ranged",
+          "sourceId": "hand_crossbow",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.ranged",
+          "sourceId": "heavy_crossbow",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.ranged",
+          "sourceId": "longbow",
+          "quantity": 4
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "dagger",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "handaxe",
+          "quantity": 6
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.ammunition",
+          "sourceId": "arrows",
+          "quantity": 400
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.ammunition",
+          "sourceId": "crossbow_bolts",
+          "quantity": 300
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.ammunition",
+          "sourceId": "blowgun_needles",
+          "quantity": 200
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.ammunition",
+          "sourceId": "sling_bullets",
+          "quantity": 300
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "quiver",
+          "quantity": 8
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "bracers-of-archery",
+          "quantity": 1,
+          "priceGp": 500
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_5_4ef71b64_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_5_4ef71b64_512.webp"
+    },
+    {
+      "id": "shadow-black-market",
+      "name": "暗巷黑市",
+      "nameEn": "The Shadow Market",
+      "description": "隐藏在城市地下的秘密商铺，只有知道暗号的人才能进入。昏暗的灯光下摆满了来路不明的商品——毒药、潜行工具、伪装用品。店主是一位面容模糊的换面人，从不透露真名。",
+      "appearanceDescription": "不起眼的地窖入口，需要敲三下暗门。室内烛火摇曳，黑色帷幕将空间分隔成数个隐密角落，货架上的物品用黑布半遮着。",
+      "goldGp": 2000,
+      "discountRate": 0.3,
+      "acceptsSelling": true,
+      "inventory": [
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.potionsAndPoisons",
+          "sourceId": "basic_poison",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "caltrops",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "ball_bearings",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.tools",
+          "sourceId": "crowbar",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.tools",
+          "sourceId": "lock",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.tools",
+          "sourceId": "manacles",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.simple.melee",
+          "sourceId": "dagger",
+          "quantity": 15
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "shortsword",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.melee",
+          "sourceId": "rapier",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "weapons.martial.ranged",
+          "sourceId": "hand_crossbow",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "vial",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.clothing",
+          "sourceId": "clothes_costume",
+          "quantity": 5
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "dagger-of-venom",
+          "quantity": 1,
+          "priceGp": 2500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "hat-of-disguise",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "cloak-of-elvenkind",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "boots-of-elvenkind",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "dust-of-disappearance",
+          "quantity": 2,
+          "priceGp": 300
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "eyes-of-charming",
+          "quantity": 1,
+          "priceGp": 300
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "gloves-of-missile-snaring",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "slippers-of-spider-climbing",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "bag-of-holding",
+          "quantity": 1,
+          "priceGp": 400
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "rope-of-climbing",
+          "quantity": 1,
+          "priceGp": 300
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_6_affec5cb_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_6_affec5cb_512.webp"
+    },
+    {
+      "id": "sacred-temple",
+      "name": "圣光神殿",
+      "nameEn": "Temple of Sacred Light",
+      "description": "这座神殿供奉着光明与生命之神。殿内回荡着低沉的祈祷声，牧师们在此提供治疗服务和神圣物品。圣水池闪烁着微光，治疗药膏和护身符整齐陈列在祭坛两侧。",
+      "appearanceDescription": "白石建造的庄严殿堂，尖顶上矗立着金色圣徽。彩色玻璃窗映射出七彩光芒，大门两侧燃烧着永不熄灭的圣火。",
+      "goldGp": 3000,
+      "discountRate": 0.6,
+      "acceptsSelling": false,
+      "inventory": [
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.potionsAndPoisons",
+          "sourceId": "holy_water",
+          "quantity": 15
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.potionsAndPoisons",
+          "sourceId": "antitoxin",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "healers_kit",
+          "quantity": 8
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.holySymbol",
+          "sourceId": "amulet",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.holySymbol",
+          "sourceId": "emblem",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.holySymbol",
+          "sourceId": "reliquary",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lightSources",
+          "sourceId": "candle",
+          "quantity": 30
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-healing-common",
+          "quantity": 15,
+          "priceGp": 50
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-healing-greater",
+          "quantity": 5,
+          "priceGp": 150
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-healing-superior",
+          "quantity": 2,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "restorative-ointment",
+          "quantity": 3,
+          "priceGp": 200
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "periapt-of-health",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "periapt-of-wound-closure",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "necklace-of-prayer-beads",
+          "quantity": 1,
+          "priceGp": 2000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "staff-of-healing",
+          "quantity": 1,
+          "priceGp": 4000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-resistance-necrotic",
+          "quantity": 3,
+          "priceGp": 150
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "potion-of-resistance-poison",
+          "quantity": 3,
+          "priceGp": 150
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_7_aec2987d_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_7_aec2987d_512.webp"
+    },
+    {
+      "id": "gem-jewelry-shop",
+      "name": "宝石与珠宝行",
+      "nameEn": "The Gilded Gemstone",
+      "description": "这间精致的珠宝店由一位侏儒工匠经营，橱窗里陈列着令人目眩的戒指、护身符和宝石。每件饰品都蕴含着微妙的魔力，从简单的幸运石到强大的防护戒指应有尽有。",
+      "appearanceDescription": "镶金门框，橱窗内衬黑色天鹅绒，各种宝石在魔法灯光下折射出璀璨光芒。门口站着一尊石像守卫。",
+      "goldGp": 8000,
+      "discountRate": 0.4,
+      "acceptsSelling": true,
+      "inventory": [
+        {
+          "source": "magic-items",
+          "sourceId": "ring-of-jumping",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "ring-of-swimming",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "ring-of-warmth",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "ring-of-water-walking",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "ring-of-mind-shielding",
+          "quantity": 1,
+          "priceGp": 1000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "ring-of-protection",
+          "quantity": 1,
+          "priceGp": 3500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "ring-of-feather-falling",
+          "quantity": 1,
+          "priceGp": 2000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "ring-of-evasion",
+          "quantity": 1,
+          "priceGp": 5000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "ring-of-spell-storing",
+          "quantity": 1,
+          "priceGp": 5000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "amulet-of-health",
+          "quantity": 1,
+          "priceGp": 4000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "amulet-of-proof-against-detection-and-location",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "brooch-of-shielding",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "circlet-of-blasting",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "medallion-of-thoughts",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "pearl-of-power",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "stone-of-good-luck-luckstone",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "gem-of-brightness",
+          "quantity": 1,
+          "priceGp": 300
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "gem-of-seeing",
+          "quantity": 1,
+          "priceGp": 3000
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_8_991562b3_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_8_991562b3_512.webp"
+    },
+    {
+      "id": "scroll-tome-shop",
+      "name": "卷轴与书卷阁",
+      "nameEn": "The Scroll & Tome Emporium",
+      "description": "这间古老的书店从地板到天花板都堆满了书籍和卷轴。空气中弥漫着羊皮纸和旧墨水的味道。白发苍苍的店主是一位退休的法师学院教授，能准确找到你需要的任何知识。",
+      "appearanceDescription": "窄小的门面，门楣上刻着古老的奥术符文。透过布满灰尘的橱窗，可以看到高耸的书架和发光的卷轴。一只猫头鹰蹲在招牌上。",
+      "goldGp": 5000,
+      "discountRate": 0.3,
+      "acceptsSelling": true,
+      "inventory": [
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "book",
+          "quantity": 15
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "ink",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "ink_pen",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "paper",
+          "quantity": 30
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "parchment",
+          "quantity": 30
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "sealing_wax",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.miscellaneous",
+          "sourceId": "spellbook",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "map_case",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.spellcastingEquipment",
+          "sourceId": "component_pouch",
+          "quantity": 5
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "spell-scroll-cantrip",
+          "quantity": 5,
+          "priceGp": 25
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "spell-scroll-1st",
+          "quantity": 5,
+          "priceGp": 75
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "spell-scroll-2nd",
+          "quantity": 3,
+          "priceGp": 150
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "spell-scroll-3rd",
+          "quantity": 2,
+          "priceGp": 300
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "spell-scroll-4th",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "headband-of-intellect",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "helm-of-comprehending-languages",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "eyes-of-minute-seeing",
+          "quantity": 1,
+          "priceGp": 250
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "necklace-of-adaptation",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "deck-of-illusions",
+          "quantity": 1,
+          "priceGp": 300
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_9_f21bebcf_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_9_f21bebcf_512.webp"
+    },
+    {
+      "id": "leather-clothier",
+      "name": "皮匠与缝纫铺",
+      "nameEn": "The Leather & Clothier",
+      "description": "这间店铺一半是皮匠工坊，一半是高级裁缝店。左边挂满了各种皮甲和皮革制品，右边展示着从普通旅行装到精致华服的各类服饰。地下室里藏着一些附了魔的精品。",
+      "appearanceDescription": "温暖的木质建筑，门口挂着一卷精制皮革和一匹丝绸做招牌。橱窗里展示着一套华丽的精灵斗篷和一双做工精细的靴子。",
+      "goldGp": 1500,
+      "discountRate": 0.5,
+      "acceptsSelling": true,
+      "inventory": [
+        {
+          "source": "equipment",
+          "sourcePath": "armor.light",
+          "sourceId": "leather",
+          "quantity": 6
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.light",
+          "sourceId": "studded_leather",
+          "quantity": 4
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.light",
+          "sourceId": "padded",
+          "quantity": 4
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "armor.medium",
+          "sourceId": "hide",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.clothing",
+          "sourceId": "clothes_common",
+          "quantity": 20
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.clothing",
+          "sourceId": "clothes_fine",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.clothing",
+          "sourceId": "clothes_travelers",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.clothing",
+          "sourceId": "clothes_costume",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.clothing",
+          "sourceId": "robes",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "backpack",
+          "quantity": 8
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "pouch",
+          "quantity": 15
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "sack",
+          "quantity": 15
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "waterskin",
+          "quantity": 10
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "glamoured-studded-leather-armor",
+          "quantity": 1,
+          "priceGp": 2000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "boots-of-elvenkind",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "boots-of-striding-and-springing",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "boots-of-the-winterlands",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "cloak-of-the-manta-ray",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "gloves-of-swimming-and-climbing",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "winged-boots",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "robe-of-useful-items",
+          "quantity": 1,
+          "priceGp": 500
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_10_b900fb5c_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_10_b900fb5c_512.webp"
+    },
+    {
+      "id": "curiosity-cabinet",
+      "name": "奇物与收藏阁",
+      "nameEn": "The Cabinet of Curiosities",
+      "description": "这间古怪的收藏店里堆满了来自世界各地的稀奇物品。会飞的扫帚靠在墙角，便携洞挂在展示架上，不灭瓶在角落冒烟。店主是一位年迈的地精收藏家，对每件宝贝都如数家珍。",
+      "appearanceDescription": "歪歪扭扭的三层小楼，每扇窗户里都透出不同颜色的光。门口悬浮着一个旋转的魔法球体，招牌上写着'不买也请来看看'。",
+      "goldGp": 10000,
+      "discountRate": 0.35,
+      "acceptsSelling": true,
+      "inventory": [
+        {
+          "source": "magic-items",
+          "sourceId": "bag-of-holding",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "bag-of-tricks-gray",
+          "quantity": 1,
+          "priceGp": 300
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "broom-of-flying",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "decanter-of-endless-water",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "eversmoking-bottle",
+          "quantity": 1,
+          "priceGp": 300
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "folding-boat",
+          "quantity": 1,
+          "priceGp": 3000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "gauntlets-of-ogre-power",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "handy-haversack",
+          "quantity": 1,
+          "priceGp": 2000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "helm-of-telepathy",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "immovable-rod",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "instant-fortress",
+          "quantity": 1,
+          "priceGp": 5000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "portable-hole",
+          "quantity": 1,
+          "priceGp": 4000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "rope-of-entanglement",
+          "quantity": 1,
+          "priceGp": 2000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "wind-fan",
+          "quantity": 1,
+          "priceGp": 300
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "chime-of-opening",
+          "quantity": 1,
+          "priceGp": 1500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "figurine-of-wondrous-power-silver-raven",
+          "quantity": 1,
+          "priceGp": 500
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "necklace-of-fireballs",
+          "quantity": 1,
+          "priceGp": 3000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "dimensional-shackles",
+          "quantity": 1,
+          "priceGp": 3000
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "pipes-of-haunting",
+          "quantity": 1,
+          "priceGp": 300
+        },
+        {
+          "source": "magic-items",
+          "sourceId": "cape-of-the-mountebank",
+          "quantity": 1,
+          "priceGp": 2000
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_11_46b2fbf3_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_11_46b2fbf3_512.webp"
+    },
+    {
+      "id": "tavern-inn",
+      "name": "醉龙酒馆与旅店",
+      "nameEn": "The Drunken Dragon Inn",
+      "description": "这间热闹的酒馆兼旅店是冒险者最爱的落脚点。一楼大厅弥漫着烤肉和麦酒的香气，吟游诗人在角落弹唱，楼上提供从通铺到豪华套房的各档客房。老板是一位红脸膛的退役冒险家，总爱说'来了就是朋友'。",
+      "appearanceDescription": "两层木石建筑，门口挂着一块画着醉酒巨龙的木质招牌。暖黄色灯光从窗户透出，门缝里飘出欢声笑语和食物的香气。二楼有一排带阳台的客房。",
+      "goldGp": 300,
+      "discountRate": 0.5,
+      "acceptsSelling": false,
+      "inventory": [
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "ale_mug",
+          "quantity": 50,
+          "nameOverride": "麦酒",
+          "nameEnOverride": "Ale"
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "ale_gallon",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "wine_common",
+          "quantity": 20
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "wine_fine",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "mead_mug",
+          "quantity": 30,
+          "nameOverride": "蜂蜜酒",
+          "nameEnOverride": "Mead"
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "spirits_glass",
+          "quantity": 20,
+          "nameOverride": "烈酒",
+          "nameEnOverride": "Spirits"
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "bread_chunk",
+          "quantity": 30,
+          "nameOverride": "面包",
+          "nameEnOverride": "Bread"
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "cheese_chunk",
+          "quantity": 20,
+          "nameOverride": "奶酪",
+          "nameEnOverride": "Cheese"
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "meat_chunk",
+          "quantity": 20,
+          "nameOverride": "肉",
+          "nameEnOverride": "Meat"
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "meal_poor",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "meal_modest",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "meal_comfortable",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "meal_wealthy",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.foodAndDrink",
+          "sourceId": "banquet",
+          "quantity": 1
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lodging",
+          "sourceId": "inn_poor",
+          "quantity": 6
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lodging",
+          "sourceId": "inn_modest",
+          "quantity": 4
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lodging",
+          "sourceId": "inn_comfortable",
+          "quantity": 3
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lodging",
+          "sourceId": "inn_wealthy",
+          "quantity": 2
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lodging",
+          "sourceId": "inn_aristocratic",
+          "quantity": 1
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.lodging",
+          "sourceId": "stable_1day",
+          "quantity": 6
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.survival",
+          "sourceId": "rations_1day",
+          "quantity": 20
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "flask_tankard",
+          "quantity": 10
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "bottle_glass",
+          "quantity": 5
+        },
+        {
+          "source": "equipment",
+          "sourcePath": "adventuringGear.containers",
+          "sourceId": "jug_pitcher",
+          "quantity": 5
+        }
+      ],
+      "avatarUrl": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_12_7484bfea_128.webp",
+      "avatarUrlLarge": "https://deepwood.oss-cn-beijing.aliyuncs.com/dnd-avatars/shop-template/2026/02/22/shop-tpl_12_7484bfea_512.webp"
+    }
+  ]
+}

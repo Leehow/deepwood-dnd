@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "source": "D&D 5E 城主指南",
+    "chapter": "第5章 冒险环境",
+    "description": "地下城创建相关的随机表和指南"
+  },
+  "dungeon_location": {
+    "description": "地下城所在地",
+    "dice": "d100",
+    "items": [
+      { "roll": [1, 4], "location": "某城市里的建筑", "environment": "城市" },
+      { "roll": [5, 8], "location": "某城市地底的下水道或地下墓穴", "environment": "城市" },
+      { "roll": [9, 12], "location": "某农舍地底", "environment": "乡村" },
+      { "roll": [13, 16], "location": "某墓地地底", "environment": "乡村" },
+      { "roll": [17, 22], "location": "某城堡废墟地底", "environment": "废墟" },
+      { "roll": [23, 26], "location": "某城市废墟地底", "environment": "废墟" },
+      { "roll": [27, 30], "location": "某神庙地底", "environment": "宗教" },
+      { "roll": [31, 34], "location": "某裂谷里", "environment": "自然" },
+      { "roll": [35, 38], "location": "某悬崖石壁上", "environment": "自然" },
+      { "roll": [39, 42], "location": "某沙漠里", "environment": "自然" },
+      { "roll": [43, 46], "location": "某森林里", "environment": "自然" },
+      { "roll": [47, 50], "location": "某冰川里", "environment": "自然" },
+      { "roll": [51, 54], "location": "某峡谷里", "environment": "自然" },
+      { "roll": [55, 58], "location": "某丛林里", "environment": "自然" },
+      { "roll": [59, 62], "location": "某山隘口中", "environment": "自然" },
+      { "roll": [63, 66], "location": "某沼泽里", "environment": "自然" },
+      { "roll": [67, 70], "location": "某台地的地底或顶上", "environment": "自然" },
+      { "roll": [71, 74], "location": "海洋洞穴里", "environment": "海洋" },
+      { "roll": [75, 78], "location": "若干相连的台地上", "environment": "自然" },
+      { "roll": [79, 82], "location": "某山峰上", "environment": "自然" },
+      { "roll": [83, 86], "location": "某海岬上", "environment": "海洋" },
+      { "roll": [87, 90], "location": "某座岛上", "environment": "海洋" },
+      { "roll": [91, 95], "location": "水下", "environment": "海洋" },
+      { "roll": [96, 100], "location": "奇异地点（骰奇异地点表）", "environment": "奇异" }
+    ]
+  },
+  "exotic_location": {
+    "description": "奇异地点",
+    "dice": "d20",
+    "items": [
+      { "roll": 1, "location": "某棵树的树枝后面" },
+      { "roll": 2, "location": "某间歇泉旁" },
+      { "roll": 3, "location": "某瀑布后" },
+      { "roll": 4, "location": "埋在某处雪崩下" },
+      { "roll": 5, "location": "埋在某处沙尘暴里" },
+      { "roll": 6, "location": "埋在某火山灰中" },
+      { "roll": 7, "location": "沉没在某沼泽里的城堡或建筑物" },
+      { "roll": 8, "location": "某沉洞底部的城堡或建筑物" },
+      { "roll": 9, "location": "漂浮在海上" },
+      { "roll": 10, "location": "在某颗陨石上" },
+      { "roll": 11, "location": "在某半位面或某口袋异次元中" },
+      { "roll": 12, "location": "在某个被魔法灾难毁灭的区域里" },
+      { "roll": 13, "location": "在某朵云中" },
+      { "roll": 14, "location": "在妖精荒野" },
+      { "roll": 15, "location": "在堕影冥界" },
+      { "roll": 16, "location": "在某地下海的某座岛上" },
+      { "roll": 17, "location": "在某座火山里" },
+      { "roll": 18, "location": "在某个超巨型活体生物的背上" },
+      { "roll": 19, "location": "密禁在某个魔力穹顶里" },
+      { "roll": 20, "location": "在某个摩邓肯豪宅术里" }
+    ]
+  },
+  "dungeon_creator": {
+    "description": "地下城建造者",
+    "dice": "d20",
+    "items": [
+      { "roll": [1], "creator": "眼魔", "features": ["不自然的光滑墙壁", "连接不同层面的垂直竖井"] },
+      { "roll": [2, 3, 4], "creator": "异教或宗教组织", "features": ["祭坛", "宗教符号", "仪式房间"], "subtable": "cults_religions" },
+      { "roll": [5, 6, 7, 8], "creator": "矮人", "features": ["精美的石雕", "坚固的结构", "宽阔的大厅"] },
+      { "roll": [9], "creator": "精灵（包括卓尔）", "features": ["优雅的曲线", "与自然融合", "魔法照明"] },
+      { "roll": [10], "creator": "巨人", "features": ["巨大的门道", "高大的阶梯", "宏伟的比例"] },
+      { "roll": [11], "creator": "大地精", "features": ["军事化布局", "防御工事", "整洁有序"] },
+      { "roll": [12, 13, 14, 15], "creator": "人类", "features": ["多样的风格", "实用的设计"], "subtable": "npc_alignment_class" },
+      { "roll": [16], "creator": "寇涛鱼人", "features": ["水体通道", "潮湿环境", "水下入口"] },
+      { "roll": [17], "creator": "巫妖", "features": ["魔法陷阱", "不死守卫", "神秘符文"] },
+      { "roll": [18], "creator": "夺心魔", "features": ["有机的曲线", "黏液覆盖", "心灵控制装置"] },
+      { "roll": [19], "creator": "蛇人", "features": ["斜坡代替阶梯", "蛇形装饰", "温暖潮湿"] },
+      { "roll": [20], "creator": "无建造者（自然洞窟）", "features": ["不规则形状", "天然通道", "钟乳石"] }
+    ]
+  },
+  "cults_religions": {
+    "description": "异教与宗教组织",
+    "dice": "d20",
+    "items": [
+      { "roll": [1], "type": "崇拜恶魔的邪教" },
+      { "roll": [2], "type": "崇拜魔鬼的邪教" },
+      { "roll": [3, 4], "type": "气元素异教" },
+      { "roll": [5, 6], "type": "土元素异教" },
+      { "roll": [7, 8], "type": "火元素异教" },
+      { "roll": [9, 10], "type": "水元素异教" },
+      { "roll": [11, 12, 13, 14, 15], "type": "崇拜某邪恶神祇" },
+      { "roll": [16, 17], "type": "崇拜某善良神祇" },
+      { "roll": [18, 19, 20], "type": "崇拜某中立神祇" }
+    ]
+  },
+  "dungeon_purpose": {
+    "description": "地下城用途",
+    "dice": "d20",
+    "items": [
+      {
+        "roll": [1],
+        "purpose": "死亡困境",
+        "purpose_en": "Death Trap",
+        "description": "用来消灭任何胆敢进入其内的生物。可能用来保护失心法师的宝藏，或设计用来将冒险者带往死地。",
+        "features": ["致命陷阱", "没有明显出口", "迷惑性设计"]
+      },
+      {
+        "roll": [2, 3, 4, 5],
+        "purpose": "巢穴",
+        "purpose_en": "Lair",
+        "description": "怪物居住的地方。典型的巢穴包括有各种废墟和洞穴。",
+        "features": ["怪物生活痕迹", "食物储存", "巢穴"]
+      },
+      {
+        "roll": [6],
+        "purpose": "迷宫",
+        "purpose_en": "Maze",
+        "description": "旨在欺骗或迷惑进入其中的人。有些是为保护宝藏而设计，另一些是为了将囚犯流放其内。",
+        "features": ["死胡同", "相似的通道", "迷惑性岔路"]
+      },
+      {
+        "roll": [7, 8, 9],
+        "purpose": "矿场",
+        "purpose_en": "Mine",
+        "description": "废弃的矿场很快就会充斥着各种怪物，挖得太深的矿工还可能连通到幽暗地域。",
+        "features": ["矿道", "矿车轨道", "支撑结构"]
+      },
+      {
+        "roll": [10],
+        "purpose": "异界之门",
+        "purpose_en": "Planar Gate",
+        "description": "建在异界之门周围的地下城经常因传送门中渗出的位面能量而发生变化。",
+        "features": ["位面能量影响", "异界生物", "不稳定的现实"]
+      },
+      {
+        "roll": [11, 12, 13, 14],
+        "purpose": "要塞",
+        "purpose_en": "Stronghold",
+        "description": "反派和怪物们的安全基地。由一名强大的个体统治，比普通的巢穴更庞大、更复杂。",
+        "features": ["防御工事", "军事化布局", "统治者居所"]
+      },
+      {
+        "roll": [15, 16, 17],
+        "purpose": "神庙或圣地",
+        "purpose_en": "Temple or Shrine",
+        "description": "受神祇或其他位面实体感召。崇拜者控制着地下城，在其中举行各种仪式。",
+        "features": ["祭坛", "宗教雕像", "仪式空间"]
+      },
+      {
+        "roll": [18, 19],
+        "purpose": "陵墓",
+        "purpose_en": "Tomb",
+        "description": "吸引着寻宝者，同时也吸引着垂涎死者骸骨的饥饿怪物。",
+        "features": ["棺椁", "陪葬品", "不死守卫"]
+      },
+      {
+        "roll": [20],
+        "purpose": "宝库",
+        "purpose_en": "Treasure Vault",
+        "description": "为了保护强大的魔法物品和巨大物质财富而建成，由大量的怪物和陷阱守卫着。",
+        "features": ["金库", "魔法防护", "复杂陷阱"]
+      }
+    ]
+  },
+  "dungeon_history": {
+    "description": "地下城历史 - 将地点从原本用途转变为冒险地点的重要事件",
+    "dice": "d20",
+    "items": [
+      { "roll": [1, 2, 3], "event": "被建造者遗弃", "implications": "可能留下了有价值的物品" },
+      { "roll": [4], "event": "由于瘟疫而被遗弃", "implications": "可能有不死生物或疾病危害" },
+      { "roll": [5, 6, 7, 8], "event": "被入侵者占领", "implications": "新的占领者改变了地下城" },
+      { "roll": [9, 10], "event": "建造者因迎击入侵者而灭亡", "implications": "可能有战斗痕迹和两方遗物" },
+      { "roll": [11], "event": "建造者因该处发现的某事物而灭亡", "implications": "深处有危险的秘密" },
+      { "roll": [12], "event": "建造者因内部冲突而灭亡", "implications": "可能有对立派系的痕迹" },
+      { "roll": [13], "event": "建造者因魔法灾难而灭亡", "implications": "可能有残留的魔法效果" },
+      { "roll": [14, 15], "event": "建造者因自然灾害而灭亡", "implications": "结构可能受损" },
+      { "roll": [16], "event": "所在地被众神诅咒并受众神离弃", "implications": "可能有诅咒效果" },
+      { "roll": [17, 18], "event": "原建造者仍控制该地", "implications": "可以与建造者互动" },
+      { "roll": [19], "event": "被异界生物占领", "implications": "有位面相关的危险" },
+      { "roll": [20], "event": "某伟大奇迹的所在地", "implications": "可能有独特的魔法或神圣力量" }
+    ]
+  },
+  "dungeon_design_tips": {
+    "description": "地下城设计建议",
+    "tips": [
+      {
+        "tip": "使用非对称的布局",
+        "reason": "避免地下城显得单调乏味"
+      },
+      {
+        "tip": "从三维空间的角度进行思考",
+        "reason": "楼梯、斜坡、平台、凸台、阳台、陷坑等高差地形让地下城更有趣"
+      },
+      {
+        "tip": "给地下城布置一些损毁的场景",
+        "reason": "倒塌的通道、地震裂谷可以作为障碍增加趣味"
+      },
+      {
+        "tip": "在建筑内布置一些自然特征物",
+        "reason": "比如一条地下河贯穿矮人要塞"
+      },
+      {
+        "tip": "加入复数的出入口",
+        "reason": "让玩家冒险时作出更多选择"
+      },
+      {
+        "tip": "加入密门和密室",
+        "reason": "奖励积极搜索的玩家"
+      }
+    ]
+  }
+}

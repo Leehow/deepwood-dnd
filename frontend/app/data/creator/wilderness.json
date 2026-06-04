@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "source": "D&D 5E 城主指南",
+    "chapter": "第5章 冒险环境",
+    "description": "野外旅行和荒野冒险相关的指南"
+  },
+  "travel_approaches": {
+    "description": "野外旅行的两种方式",
+    "approaches": [
+      {
+        "name": "剪影式推进",
+        "nameEn": "Travel-Montage Approach",
+        "usage": "当目的地比旅途更重要时",
+        "description": "用几句描述性的语句在玩家头脑中描绘出野外旅程的画面，然后继续前进",
+        "tips": [
+          "把注意力集中到某些强化情绪的细节里",
+          "留意不同寻常的地形特征物",
+          "描述值得注意的气味和声响",
+          "用天气来加强旅程的印象"
+        ],
+        "example_bad": "你走了几里路，却没遇到什么有趣的东西",
+        "example_good": "你往北走的时候，一场小雨将起伏的平原弄得湿漉漉的。而你直到正午时分才找到一棵独树，并在其下休息和吃午餐。"
+      },
+      {
+        "name": "线性式推进",
+        "nameEn": "Hour-by-Hour Approach",
+        "usage": "当旅行过程与目的地一样重要时",
+        "description": "掌握队伍的行进队列，随时准备好发生遭遇",
+        "tips": [
+          "让玩家决定队伍的行进队列",
+          "前排角色先注意到地标和地形特征物",
+          "后排角色负责确保队伍不被尾随",
+          "中排角色可以进行地图制作和觅食等活动"
+        ]
+      }
+    ]
+  },
+  "weather": {
+    "description": "天气随机表",
+    "temperature": {
+      "dice": "d20",
+      "results": [
+        { "roll": [1, 14], "result": "当季正常气温" },
+        { "roll": [15, 17], "result": "比正常温度低1d4×10华氏度" },
+        { "roll": [18, 20], "result": "比正常温度高1d4×10华氏度" }
+      ]
+    },
+    "wind": {
+      "dice": "d20",
+      "results": [
+        { "roll": [1, 12], "result": "无风" },
+        { "roll": [13, 17], "result": "微风" },
+        { "roll": [18, 20], "result": "强风" }
+      ]
+    },
+    "precipitation": {
+      "dice": "d20",
+      "results": [
+        { "roll": [1, 12], "result": "无雨" },
+        { "roll": [13, 17], "result": "小雨或小雪" },
+        { "roll": [18, 20], "result": "大雨或大雪" }
+      ]
+    },
+    "effects": {
+      "extreme_cold": {
+        "condition": "温度达到或低于华氏0度",
+        "effect": "每经过一小时必须成功通过DC 10的体质豁免，否则提升一级力竭状态",
+        "immunity": "冷冻伤害抗性/免疫、穿着冷天用具、自然适应寒冷气候"
+      },
+      "extreme_heat": {
+        "condition": "温度达到或超过华氏100度",
+        "effect": "每经过一小时必须成功通过体质豁免（DC从5开始每小时+1），否则提升一级力竭",
+        "disadvantage": "着装中型或重型护甲，或着装厚重衣服",
+        "immunity": "火焰伤害抗性/免疫、自然适应炎热气候"
+      },
+      "strong_wind": {
+        "effects": [
+          "远程武器攻击和感知(察觉)检定具有劣势",
+          "吹熄开放的火焰，驱散浓雾",
+          "使所有非魔法的飞行手段无效化",
+          "沙漠中会造成沙尘暴"
+        ]
+      },
+      "heavy_precipitation": {
+        "effects": [
+          "所有东西都陷入轻度遮蔽",
+          "依赖视觉的感知(察觉)检定具有劣势",
+          "大雨会熄灭火焰",
+          "依赖听觉的感知(察觉)检定具有劣势"
+        ]
+      },
+      "high_altitude": {
+        "condition": "1万尺或更高",
+        "effect": "旅行时间翻倍（1小时的距离需要2小时）",
+        "adaptation": "在高海拔地区停留30日以上可以适应（2万尺以上无法适应）"
+      }
+    }
+  },
+  "navigation": {
+    "description": "野外导航",
+    "dice": "感知(求生)检定",
+    "terrain_dc": [
+      { "terrain": "森林、丛林、沼泽、山地，或开放海洋（阴云密布且视野内见不到陆地）", "dc": 15 },
+      { "terrain": "极地、荒漠、丘陵，或开放海洋（天上晴朗无云且视野内见不到陆地）", "dc": 10 },
+      { "terrain": "草原、洼地、农场", "dc": 5 }
+    ],
+    "modifiers": {
+      "slow_pace": "+5加值",
+      "fast_pace": "-5罚值",
+      "accurate_map": "优势",
+      "can_see_sun_or_stars": "优势"
+    },
+    "failure": "队伍无意中走错方向而迷路，必须再花费1d6小时的时间寻路继续前进"
+  },
+  "foraging": {
+    "description": "觅食",
+    "dice": "感知(求生)检定",
+    "dc_table": [
+      { "supply": "充分来源", "dc": 10 },
+      { "supply": "有限来源", "dc": 15 },
+      { "supply": "能找到但非常稀少的来源", "dc": 20 }
+    ],
+    "success": "骰1d6+感知调整值决定找到的食物(磅)和水(加仑)数量",
+    "note": "队伍以正常或慢速步调旅行时才能觅食"
+  },
+  "food_and_water": {
+    "description": "饮食需求表",
+    "table": [
+      { "size": "微型", "food": "1/4磅", "water": "1/4加仑" },
+      { "size": "小型", "food": "1磅", "water": "1加仑" },
+      { "size": "中型", "food": "1磅", "water": "1加仑" },
+      { "size": "大型", "food": "4磅", "water": "4加仑" },
+      { "size": "巨型", "food": "16磅", "water": "16加仑" },
+      { "size": "超巨型", "food": "64磅", "water": "64加仑" }
+    ],
+    "note": "天气炎热时，需水的数量要翻倍计算"
+  },
+  "hazards": {
+    "description": "野外危害物",
+    "items": [
+      {
+        "name": "亵渎之地",
+        "nameEn": "Desecrated Ground",
+        "effect": "站在亵渎之地上的不死生物其所有豁免具有优势",
+        "detection": "侦测善恶",
+        "removal": "圣水可以净化10平方尺，或施展圣居hallow"
+      },
+      {
+        "name": "冰水",
+        "nameEn": "Frigid Water",
+        "effect": "可以浸泡等于体质值的分钟数，此后每分钟DC 10体质豁免否则提升一级力竭",
+        "immunity": "冷冻伤害抗性/免疫、自然适应冰冷水体"
+      },
+      {
+        "name": "流沙",
+        "nameEn": "Quicksand",
+        "size": "10平方尺，通常深10尺",
+        "effect": "坠入1d4+1尺，被束缚，每回合开始再下陷1d4尺",
+        "escape": "使用动作进行力量检定，DC为10+已沉入的尺数"
+      },
+      {
+        "name": "剃刀藤",
+        "nameEn": "Razorvine",
+        "stats": "AC 11, 25 HP",
+        "immunity": "钝击、刺穿和心灵伤害",
+        "effect": "接触时DC 10敏捷豁免，否则受5(1d10)挥砍伤害"
+      },
+      {
+        "name": "光滑冰面",
+        "nameEn": "Slippery Ice",
+        "terrain": "困难地形",
+        "effect": "第一次移动时DC 10敏捷(体操)检定，否则摔倒"
+      },
+      {
+        "name": "薄冰",
+        "nameEn": "Thin Ice",
+        "capacity": "每10平方尺可承重3d10×10磅",
+        "effect": "超重时冰面破裂，所有生物坠落"
+      }
+    ]
+  },
+  "monuments": {
+    "description": "野外遗迹随机表",
+    "dice": "d20",
+    "items": [
+      { "roll": 1, "monument": "被封闭后掩埋的坟丘或金字塔" },
+      { "roll": 2, "monument": "被掠夺后掩埋的坟丘或金字塔" },
+      { "roll": 3, "monument": "雕刻在山腰或悬崖上的面孔" },
+      { "roll": 4, "monument": "从山腰或悬崖上凿出的巨大雕像" },
+      { "roll": [5, 6], "monument": "完整的黑曜石蚀刻，讲述了一个警告、历史迭闻、奉献或宗教肖像" },
+      { "roll": [7, 8], "monument": "毁坏或倾倒的方尖碑" },
+      { "roll": [9, 10], "monument": "完整的人物或神祇的雕像" },
+      { "roll": [11, 13], "monument": "毁坏或倾倒的人物或神祇的雕像" },
+      { "roll": 14, "monument": "完整的大石墙，每隔一里都设有塔楼作为防御工事" },
+      { "roll": 15, "monument": "废墟中的大石墙" },
+      { "roll": 16, "monument": "大石拱" },
+      { "roll": 17, "monument": "喷泉" },
+      { "roll": 18, "monument": "完整的立石阵" },
+      { "roll": 19, "monument": "毁坏或倾倒的立石阵" },
+      { "roll": 20, "monument": "图腾柱" }
+    ]
+  },
+  "weird_locales": {
+    "description": "诡异地点随机表",
+    "dice": "d20",
+    "items": [
+      { "roll": [1, 2], "locale": "死寂魔法区（类似于反魔力场antimagic field）" },
+      { "roll": 3, "locale": "狂野魔法区（骰狂野魔法浪潮表）" },
+      { "roll": 4, "locale": "巨石雕刻着一张会说话的面孔" },
+      { "roll": 5, "locale": "水晶洞窟会神秘的回答问题" },
+      { "roll": 6, "locale": "古树内困着一个精魂" },
+      { "roll": [7, 8], "locale": "战场中挥之不去的浓雾偶尔凝聚成类人的形态" },
+      { "roll": [9, 10], "locale": "永固的传送门连通了另一个存在位面" },
+      { "roll": 11, "locale": "许愿井" },
+      { "roll": 12, "locale": "巨大的水晶碎片从地面突起" },
+      { "roll": 13, "locale": "船只残骸，而四周可能并无水域" },
+      { "roll": [14, 15], "locale": "闹鬼的山丘或古坟堆" },
+      { "roll": 16, "locale": "河流的船渡，其向导是一位骷髅船长" },
+      { "roll": 17, "locale": "旷野上一些被石化的士兵或其他生物" },
+      { "roll": 18, "locale": "森林中一些树木被石化或被启蒙" },
+      { "roll": 19, "locale": "峡谷中有一条龙的墓地" },
+      { "roll": 20, "locale": "浮空的土地其上立着一座塔楼" }
+    ]
+  },
+  "wilderness_features": {
+    "description": "野外地图特征物建议",
+    "for_50_mile_area": {
+      "monster_lairs": "约6个，不超过1个顶级掠食者",
+      "settlements": "1个城市、若干乡土小镇、零散的村庄和贸易站",
+      "strongholds": "取决于社会制度、人口、战略重要性和土地富饶程度",
+      "ruins": "破碎的塔楼、远古的神庙、被夷为平地的城市",
+      "total_locations": "约12个值得发现的地点"
+    }
+  },
+  "ai_usage": {
+    "description": "AI使用这些内容的建议",
+    "tips": [
+      "根据冒险需要选择剪影式或线性式推进",
+      "天气可以增加旅途的戏剧性",
+      "野外危害物不只是战斗，也考验玩家的解决问题能力",
+      "诡异地点可以为世界增添奇幻色彩",
+      "让遗迹和地标有故事，而不只是地图上的点"
+    ],
+    "example_descriptions": [
+      "第三天的黄昏，你们看到远处山腰上雕刻着一张巨大的面孔，那是某位被遗忘的君王...",
+      "暴风雨持续了整整一天，你们不得不在一棵巨大的橡树下躲避，雷声震耳欲聋...",
+      "森林变得越来越浓密，阳光几乎无法穿透树冠，空气中弥漫着腐叶的气味..."
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "run_date": "2026-05-30",
+  "phase": "Phase 0 self-test gate",
+  "campaign_id": 8,
+  "harness": "QA_MODE backend + forced-roll seam + arena seed/reset/snapshot",
+  "execution_note": "Self-test mechanisms validated through the REAL spell pipeline via /api/spells/cast with forced rolls (qa_randint seam). Visual in-browser click-path not completed this run: Claude-in-Chrome extension offline, and dw-browser-test logs in as a non-member user (token injection 200s on data but the app render gate stays on the stale user). Backend serves all 24 tokens correctly for the active map (map-bulk-data 200) — the render gap is a frontend/session issue, not a harness defect.",
+  "results": [
+    {
+      "spell_id": "firebolt", "name": "火焰箭", "category": ["damage", "attack"],
+      "path": "api_cast_forced_roll", "caster_token_id": 610,
+      "cases": [
+        {"forced_d20": 18, "target": "low_ac_target(AC5)", "expected": "hit", "actual_total_damage": 3, "verdict": "HIT"},
+        {"forced_d20": 2, "target": "high_ac_target(AC25)", "expected": "miss", "actual_total_damage": 0, "verdict": "MISS"}
+      ],
+      "status": "PASS",
+      "notes": "Attack d20 deterministic via qa_randint. Damage dice (1d10) remain RNG by design (Task 3 scoped forcing to d20 only)."
+    },
+    {
+      "spell_id": "sacred_flame", "name": "圣焰", "category": ["damage", "save"],
+      "path": "api_cast_forced_roll", "caster_token_id": 610,
+      "cases": [
+        {"forced_save_d20": 3, "target": "low_save_target", "expected": "fail->damage", "actual_total_damage": 4, "verdict": "FAIL_SAVE_TOOK_DAMAGE"},
+        {"forced_save_d20": 19, "target": "high_save_target", "expected": "success->no damage", "actual_total_damage": 0, "verdict": "SAVE_SUCCESS_NO_DAMAGE"}
+      ],
+      "status": "PASS",
+      "notes": "Save d20 deterministic via qa_randint (spell_resolver save path)."
+    },
+    {
+      "spell_id": "cure_wounds", "name": "治疗真言", "category": ["healing"],
+      "path": "api_cast", "caster_token_id": 610, "target": "qa_low_hp_ally(613)",
+      "cases": [
+        {"hp_before": 10, "hp_after": 22, "healing": 12, "verdict": "HEALED"}
+      ],
+      "status": "PASS",
+      "notes": "Healing applied, HP increased within max."
+    },
+    {
+      "spell_id": "firebolt", "name": "火焰箭 (determinism)", "category": ["determinism"],
+      "path": "api_cast_forced_roll",
+      "cases": [
+        {"forced_d20": 18, "run": 1, "hit": true},
+        {"forced_d20": 18, "run": 2, "hit": true}
+      ],
+      "status": "PASS",
+      "notes": "Hit/miss reproducible across identical forced-roll queues. Damage amount still varies (1d10 RNG)."
+    },
+    {
+      "spell_id": "fireball", "name": "火球术 (visual area cast)", "category": ["damage", "save", "area"],
+      "path": "browser_dm_cast",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "notes": "Area cast uses the separate area-cast path + canvas template placement; deferred to the in-browser run once the extension is back."
+    }
+  ],
+  "mechanism_coverage_api": {
+    "direct_attack": "PASS (firebolt)",
+    "save_damage": "PASS (sacred_flame)",
+    "healing": "PASS (cure_wounds)",
+    "determinism": "PASS (forced-roll seam controls hit/miss)"
+  },
+  "open_items": [
+    "Visual in-browser cast (Fire Bolt/Cure Wounds/Fireball) pending Claude-in-Chrome extension reconnect.",
+    "Frontend: seeded tokens not rendering as Konva groups in automated sessions despite correct backend data — investigate render gate / token avatar resolution.",
+    "Damage-dice determinism (beyond d20) — known follow-up if exact-damage assertions are wanted."
+  ]
+}

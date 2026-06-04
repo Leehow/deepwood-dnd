@@ -1,0 +1,577 @@
+{
+  "overview": {
+    "description": "战斗规则定义了DND中战斗遭遇的运作方式，采用回合制系统让每个参与者依次行动",
+    "descriptionEn": "Combat rules define how combat encounters work in DND, using a turn-based system where each participant acts in sequence",
+    "purpose": "管理战斗遭遇的时间流、行动顺序和战术选择",
+    "relatedRules": [
+      "先攻",
+      "动作经济",
+      "移动",
+      "攻击",
+      "生命值",
+      "状态"
+    ],
+    "quickReference": "战斗流程：确定突袭→确定位置→掷先攻→依先攻顺序行动→一方胜利或逃跑"
+  },
+  "combatFlow": {
+    "description": "战斗按以下步骤进行，从遭遇开始到结束",
+    "phases": [
+      {
+        "step": 1,
+        "name": "确定突袭",
+        "nameEn": "Determine Surprise",
+        "description": "DM判断是否有突袭情况。被突袭的生物在第一轮无法移动或进行动作"
+      },
+      {
+        "step": 2,
+        "name": "确立位置",
+        "nameEn": "Establish Positions",
+        "description": "DM决定所有角色和怪物的位置。冒险者在行军序列中的位置决定了他们距离敌人的距离"
+      },
+      {
+        "step": 3,
+        "name": "掷先攻",
+        "nameEn": "Roll Initiative",
+        "description": "所有参与战斗的人掷先攻(d20+敏捷调整值)。DM为怪物或怪物群掷先攻"
+      },
+      {
+        "step": 4,
+        "name": "轮到回合",
+        "nameEn": "Take Turns",
+        "description": "每个参与者按先攻顺序依次行动。在回合内可以移动和进行动作"
+      },
+      {
+        "step": 5,
+        "name": "开始下一轮",
+        "nameEn": "Begin Next Round",
+        "description": "当所有人都行动后，该轮结束。如果战斗尚未结束，回到步骤4开始新一轮"
+      }
+    ],
+    "round": {
+      "description": "一轮代表战斗中约6秒的时间，在这期间所有战斗者都行动一次",
+      "duration": "约6秒游戏时间"
+    },
+    "turn": {
+      "description": "回合是战斗者在一轮中的行动时间",
+      "components": [
+        "移动",
+        "动作",
+        "附赠动作(如果有)",
+        "反应(可在任何人回合使用)"
+      ]
+    },
+    "quickReference": {
+      "actions": [
+        "攻击 - 进行一次近战或远程攻击",
+        "施法 - 施放一个施法时间为1动作的法术",
+        "冲刺 - 本回合获得额外移动距离",
+        "脱离 - 移动时不引发借机攻击",
+        "闪避 - 专注防御，攻击者对你劣势",
+        "帮助 - 帮助盟友进行检定或攻击",
+        "躲藏 - 进行敏捷(隐匿)检定尝试躲藏",
+        "准备 - 准备在特定触发条件下行动",
+        "搜寻 - 尝试发现隐藏的东西",
+        "使用物品 - 与物品或环境互动"
+      ],
+      "bonusActions": [
+        "某些职业特性、法术或特殊能力提供附赠动作",
+        "在你的回合只能使用一次附赠动作",
+        "必须有能力明确说明可以用附赠动作才能使用"
+      ],
+      "reactions": [
+        "借机攻击 - 敌人离开你的触及范围时攻击",
+        "某些法术和能力可以用反应施放/使用",
+        "每轮只能使用一次反应"
+      ],
+      "movement": [
+        "可以在回合中的任意时刻移动",
+        "可以分割移动(例如移动10尺→攻击→移动20尺)",
+        "移动出敌人触及范围会引发借机攻击(除非使用脱离动作)",
+        "困难地形花费额外移动力(每1尺困难地形消耗2尺移动力)"
+      ]
+    }
+  },
+  "combat": {
+    "initiative": {
+      "name": "先攻顺序",
+      "nameEn": "Initiative",
+      "description": "决定战斗中生物行动的顺序",
+      "roll": "1d20 + 敏捷调整值",
+      "procedure": [
+        "战斗开始时，每个参与者掷先攻",
+        "DM按从高到低的顺序排列所有战斗者",
+        "这就是战斗中的行动顺序（称为先攻顺序）",
+        "每个回合中，所有人依此顺序行动",
+        "先攻顺序在战斗中保持不变"
+      ],
+      "ties": "先攻相同时，由DM决定顺序，或由相关生物各投一次d20决定"
+    },
+    "surprise": {
+      "name": "突袭",
+      "nameEn": "Surprise",
+      "description": "战斗开始时可能出现的特殊情况",
+      "procedure": [
+        "DM确定是否有任何参与者被突袭",
+        "被突袭的生物在第一回合中无法移动或使用动作",
+        "被突袭的生物在第一回合结束时不再被突袭",
+        "成员可以使用反应（如果有），但只能在其第一回合结束后"
+      ],
+      "detection": "通过敏捷(隐匿)检定与感知(察觉)检定对抗来决定"
+    },
+    "combatRound": {
+      "name": "回合",
+      "nameEn": "Round",
+      "duration": "约6秒游戏时间",
+      "description": "战斗中的一个时间单位，每个战斗者都有机会行动一次"
+    },
+    "turn": {
+      "name": "轮次",
+      "nameEn": "Turn",
+      "description": "在一个回合中，每个生物的行动时段"
+    },
+    "actions": {
+      "description": "在你的轮次中，你可以使用一个动作",
+      "types": [
+        {
+          "id": "attack",
+          "name": "攻击",
+          "nameEn": "Attack",
+          "description": "进行一次近战或远程攻击",
+          "details": "某些特性允许你在使用攻击动作时进行多次攻击"
+        },
+        {
+          "id": "cast_a_spell",
+          "name": "施法",
+          "nameEn": "Cast a Spell",
+          "description": "施展一个施法时间为1动作的法术"
+        },
+        {
+          "id": "dash",
+          "name": "冲刺",
+          "nameEn": "Dash",
+          "description": "在本回合中获得额外的移动力，数值等于你的速度（应用任何调整值）"
+        },
+        {
+          "id": "disengage",
+          "name": "脱离",
+          "nameEn": "Disengage",
+          "description": "你在本回合的移动不会引发借机攻击"
+        },
+        {
+          "id": "dodge",
+          "name": "闪避",
+          "nameEn": "Dodge",
+          "description": "直到你的下个轮次开始，对你发动的任何攻击检定都具有劣势（如果你能看到攻击者），并且你的敏捷豁免检定具有优势"
+        },
+        {
+          "id": "help",
+          "name": "援助",
+          "nameEn": "Help",
+          "description": "帮助另一个生物完成任务，或在攻击中帮助友方",
+          "details": "被帮助的生物在下次针对该目标的攻击检定具有优势（如果该攻击在你的下个轮次开始前进行）"
+        },
+        {
+          "id": "hide",
+          "name": "躲藏",
+          "nameEn": "Hide",
+          "description": "进行敏捷(隐匿)检定来尝试躲藏"
+        },
+        {
+          "id": "ready",
+          "name": "准备",
+          "nameEn": "Ready",
+          "description": "准备在特定触发条件下执行动作或移动",
+          "details": "你可以准备一个动作，在特定触发条件发生时使用你的反应来执行它"
+        },
+        {
+          "id": "search",
+          "name": "搜索",
+          "nameEn": "Search",
+          "description": "进行感知(察觉)或智力(调查)检定来寻找某物"
+        },
+        {
+          "id": "use_an_object",
+          "name": "使用物品",
+          "nameEn": "Use an Object",
+          "description": "与一个物品或环境特征互动"
+        },
+        {
+          "id": "improvise",
+          "name": "即兴动作",
+          "nameEn": "Improvise",
+          "description": "执行其他未列出的动作，由DM裁定如何处理"
+        }
+      ]
+    },
+    "bonusActions": {
+      "name": "附赠动作",
+      "nameEn": "Bonus Action",
+      "description": "某些职业特性、法术或其他能力可以让你使用附赠动作",
+      "rules": [
+        "你只能在具有明确允许的特性或法术时使用附赠动作",
+        "在一个轮次中只能使用一个附赠动作",
+        "你选择何时使用附赠动作，除非特性指定了时机",
+        "如果无法使用附赠动作，你就失去了它"
+      ]
+    },
+    "reactions": {
+      "name": "反应",
+      "nameEn": "Reaction",
+      "description": "某些特殊能力、法术和情况允许你使用反应",
+      "rules": [
+        "反应是对某种触发条件的即时响应",
+        "借机攻击是最常见的反应类型",
+        "在一个回合中只能使用一个反应",
+        "反应可以在你自己或他人的轮次中发生",
+        "使用反应后，必须等到下个轮次开始才能再次使用反应"
+      ],
+      "opportunityAttack": {
+        "name": "借机攻击",
+        "nameEn": "Opportunity Attack",
+        "trigger": "当敌对生物离开你的触及范围时",
+        "action": "使用你的反应进行一次近战攻击",
+        "avoidance": "使用脱离动作可以避免引发借机攻击"
+      }
+    },
+    "movement": {
+      "description": "在你的轮次中，你可以移动等同于你速度的距离",
+      "rules": [
+        "你可以在动作前、后或动作之间移动",
+        "你的移动可以包括跳跃、攀爬和游泳",
+        "这些不同的移动模式可以在一次移动中组合",
+        "在困难地形中移动，每1尺移动消耗2尺移动力"
+      ],
+      "breakingUpMovement": {
+        "name": "分段移动",
+        "nameEn": "Breaking Up Your Move",
+        "description": "你可以在动作前后分配你的移动",
+        "example": "如果你有30尺速度，你可以移动10尺，进行攻击动作，然后再移动20尺"
+      },
+      "movingBetweenAttacks": {
+        "name": "在攻击之间移动",
+        "nameEn": "Moving Between Attacks",
+        "description": "如果你在一次动作中进行多次攻击，你可以在这些攻击之间移动"
+      },
+      "usingDifferentSpeeds": {
+        "name": "使用不同速度",
+        "nameEn": "Using Different Speeds",
+        "description": "如果你有多种移动速度（如步行和飞行），你可以在移动中切换它们",
+        "rule": "切换速度时，从新速度中减去已用移动力来确定剩余移动力"
+      },
+      "difficultTerrain": {
+        "name": "困难地形",
+        "nameEn": "Difficult Terrain",
+        "cost": "每1尺困难地形消耗2尺移动力",
+        "examples": [
+          "浓密森林",
+          "开阔荒野",
+          "黏滑冰面",
+          "陡峭台阶"
+        ]
+      },
+      "climbingSwimmingCrawling": {
+        "climbing": {
+          "name": "攀爬",
+          "nameEn": "Climbing",
+          "cost": "每1尺攀爬消耗2尺移动力（除非有攀爬速度）"
+        },
+        "swimming": {
+          "name": "游泳",
+          "nameEn": "Swimming",
+          "cost": "每1尺游泳消耗2尺移动力（除非有游泳速度）"
+        },
+        "crawling": {
+          "name": "匍匐",
+          "nameEn": "Crawling",
+          "cost": "每1尺匍匐消耗2尺移动力",
+          "note": "倒地时移动视为匍匐"
+        }
+      },
+      "jumping": {
+        "longJump": {
+          "name": "跳远",
+          "nameEn": "Long Jump",
+          "description": "助跑至少10尺后，你可以跳跃等同于你力量值的尺数",
+          "standingJump": "原地跳远只能跳跃一半距离",
+          "cost": "跳跃的每一尺都从你的移动力中扣除"
+        },
+        "highJump": {
+          "name": "跳高",
+          "nameEn": "High Jump",
+          "description": "助跑至少10尺后，你可以跳跃3 + 力量调整值的尺数",
+          "standingJump": "原地跳高只能跳跃一半高度",
+          "reach": "跳跃中你可以触及高于你的距离等于跳跃高度的1.5倍"
+        }
+      },
+      "pronePosition": {
+        "name": "倒地",
+        "nameEn": "Prone",
+        "standUp": "从倒地站起消耗等同于你速度一半的移动力",
+        "crawling": "倒地时移动必须匍匐，或使用魔法如传送"
+      }
+    },
+    "attacking": {
+      "attackRolls": {
+        "name": "攻击检定",
+        "nameEn": "Attack Roll",
+        "formula": "1d20 + 属性调整值 + 熟练加值（如有） + 其他调整值",
+        "melee": {
+          "name": "近战攻击",
+          "nameEn": "Melee Attack",
+          "modifier": "力量调整值（灵巧武器可用敏捷）",
+          "reach": "通常为5尺，有触及属性的武器为10尺"
+        },
+        "ranged": {
+          "name": "远程攻击",
+          "nameEn": "Ranged Attack",
+          "modifier": "敏捷调整值（投掷武器可用力量）",
+          "range": "武器有正常射程和远程射程",
+          "longRange": "攻击远程射程内的目标具有劣势",
+          "adjacentFoes": "近战范围内有敌对生物时，远程攻击具有劣势"
+        }
+      },
+      "unseenTargets": {
+        "name": "看不见的目标",
+        "nameEn": "Unseen Attackers and Targets",
+        "unseenAttacker": "攻击看不见你的目标时，攻击检定具有优势",
+        "unseenTarget": "攻击看不见的目标时，攻击检定具有劣势",
+        "location": "如果不知道目标位置，无法攻击"
+      },
+      "meleeAttacks": {
+        "name": "近战攻击",
+        "nameEn": "Melee Attacks",
+        "weaponAttack": {
+          "name": "近战武器攻击",
+          "nameEn": "Melee Weapon Attack",
+          "description": "使用手持武器进行近战攻击"
+        },
+        "unarmedStrike": {
+          "name": "徒手打击",
+          "nameEn": "Unarmed Strike",
+          "damage": "1 + 力量调整值",
+          "damageType": "钝击",
+          "proficiency": "所有人都擅长徒手打击"
+        },
+        "grappling": {
+          "name": "擒抱",
+          "nameEn": "Grappling",
+          "action": "使用攻击动作，用至少一只空手",
+          "contest": "你的力量(运动) vs 目标的力量(运动)或敏捷(杂技)",
+          "success": "目标速度变为0，直到擒抱结束",
+          "escape": "使用动作进行对抗检定逃脱",
+          "moving": "擒抱目标时移动速度减半",
+          "size": "目标体型不能超过你一级"
+        },
+        "shoving": {
+          "name": "推撞",
+          "nameEn": "Shoving a Creature",
+          "action": "使用攻击动作",
+          "contest": "你的力量(运动) vs 目标的力量(运动)或敏捷(杂技)",
+          "success": "将目标推开5尺或使其倒地",
+          "size": "目标体型不能超过你一级"
+        }
+      },
+      "rangedAttacks": {
+        "name": "远程攻击",
+        "nameEn": "Ranged Attacks",
+        "range": {
+          "normal": "正常射程内攻击无减值",
+          "long": "远程射程内攻击具有劣势",
+          "beyond": "无法攻击超出远程射程的目标"
+        },
+        "adjacentFoes": "触及范围内有敌对生物时，远程攻击具有劣势"
+      },
+      "twoWeaponFighting": {
+        "name": "双武器战斗",
+        "nameEn": "Two-Weapon Fighting",
+        "requirement": "使用攻击动作用轻型近战武器攻击",
+        "bonusAction": "可以用附赠动作用另一只手持的轻型近战武器攻击",
+        "modifier": "附赠动作攻击的伤害掷骰不加属性调整值（除非调整值为负）"
+      }
+    },
+    "cover": {
+      "description": "障碍物可以为目标提供对抗攻击和某些法术的掩护",
+      "types": [
+        {
+          "type": "half",
+          "name": "半身掩护",
+          "nameEn": "Half Cover",
+          "bonus": {
+            "ac": 2,
+            "dexSave": 2
+          },
+          "condition": "障碍物遮挡了目标至少一半身体"
+        },
+        {
+          "type": "threeQuarters",
+          "name": "四分之三掩护",
+          "nameEn": "Three-Quarters Cover",
+          "bonus": {
+            "ac": 5,
+            "dexSave": 5
+          },
+          "condition": "障碍物遮挡了目标约四分之三身体"
+        },
+        {
+          "type": "total",
+          "name": "全掩护",
+          "nameEn": "Total Cover",
+          "effect": "完全无法被直接作为攻击或法术的目标",
+          "condition": "目标完全被障碍物遮挡"
+        }
+      ]
+    },
+    "damage": {
+      "damageRolls": {
+        "name": "伤害掷骰",
+        "nameEn": "Damage Rolls",
+        "formula": "武器伤害骰 + 属性调整值",
+        "spells": "法术说明其伤害骰",
+        "criticalHits": {
+          "name": "重击",
+          "nameEn": "Critical Hits",
+          "trigger": "攻击检定d20掷出20",
+          "effect": "额外掷一次伤害骰并加到伤害中"
+        }
+      },
+      "damageTypes": {
+        "description": "不同类型的伤害",
+        "types": [
+          "强酸",
+          "钝击",
+          "冷冻",
+          "火焰",
+          "力场",
+          "闪电",
+          "黯蚀",
+          "穿刺",
+          "毒素",
+          "心灵",
+          "光耀",
+          "挥砍",
+          "雷鸣"
+        ]
+      },
+      "damageResistanceVulnerability": {
+        "resistance": {
+          "name": "伤害抗性",
+          "nameEn": "Damage Resistance",
+          "effect": "受到的该类型伤害减半"
+        },
+        "vulnerability": {
+          "name": "伤害易伤",
+          "nameEn": "Damage Vulnerability",
+          "effect": "受到的该类型伤害加倍"
+        },
+        "immunity": {
+          "name": "伤害免疫",
+          "nameEn": "Damage Immunity",
+          "effect": "不受该类型伤害影响"
+        }
+      }
+    },
+    "healing": {
+      "name": "治疗",
+      "nameEn": "Healing",
+      "description": "恢复生命值",
+      "cannotExceedMax": "生命值无法超过生命值上限",
+      "deadCreatures": "生命值为0的生物无法恢复生命值，除非法术或能力明确说明可以复活死者"
+    },
+    "droppingTo0HitPoints": {
+      "name": "生命值降至0",
+      "nameEn": "Dropping to 0 Hit Points",
+      "instantDeath": {
+        "name": "即死",
+        "nameEn": "Instant Death",
+        "condition": "伤害使你降至0点生命值，且剩余伤害等于或超过你的生命值上限"
+      },
+      "unconscious": {
+        "name": "失去意识",
+        "nameEn": "Falling Unconscious",
+        "effect": "生命值降至0且未即死时，陷入失去意识状态"
+      },
+      "deathSavingThrows": {
+        "name": "死亡豁免",
+        "nameEn": "Death Saving Throws",
+        "whenToRoll": "在你的轮次开始时掷d20",
+        "dc": 10,
+        "success": "投出10或更高算1次成功，累积3次成功则稳定",
+        "failure": "投出9或更低算1次失败，累积3次失败则死亡",
+        "rolling1or20": {
+          "nat1": "投出1算2次失败",
+          "nat20": "投出20则恢复1点生命值"
+        }
+      },
+      "stabilizing": {
+        "name": "稳定生命",
+        "nameEn": "Stabilizing a Creature",
+        "methods": [
+          "使用动作进行DC10的感知(医药)检定",
+          "使用治疗法术或能力",
+          "使用医疗包（不需要检定）"
+        ],
+        "stableCreature": "稳定的生物不需要进行死亡豁免，但仍处于失去意识状态",
+        "recovery": "1d4小时后恢复1点生命值"
+      },
+      "monstersAndDeath": {
+        "name": "怪物与死亡",
+        "nameEn": "Monsters and Death",
+        "description": "大多数DM让怪物在降至0生命值时死亡，而非陷入失去意识或进行死亡豁免"
+      }
+    },
+    "knockingCreatureOut": {
+      "name": "击晕生物",
+      "nameEn": "Knocking a Creature Out",
+      "description": "当近战攻击使生物生命值降至0时，你可以选择击晕而非杀死",
+      "effect": "目标陷入失去意识且稳定"
+    },
+    "temporaryHitPoints": {
+      "name": "临时生命值",
+      "nameEn": "Temporary Hit Points",
+      "description": "某些法术和能力给予临时生命值",
+      "rules": [
+        "临时生命值不是真实生命值，是一个缓冲",
+        "受到伤害时，先失去临时生命值",
+        "临时生命值不能与真实生命值叠加",
+        "不同来源的临时生命值不能叠加，只保留最高值",
+        "临时生命值不能通过治疗恢复",
+        "休息不会恢复临时生命值"
+      ]
+    },
+    "mountedCombat": {
+      "name": "骑乘战斗",
+      "nameEn": "Mounted Combat",
+      "mounting": "骑上或下来消耗等同于你速度一半的移动力",
+      "controllingMount": {
+        "independent": {
+          "name": "独立坐骑",
+          "nameEn": "Independent Mount",
+          "description": "有自己的先攻顺序，可以自由移动和行动"
+        },
+        "controlled": {
+          "name": "受控坐骑",
+          "nameEn": "Controlled Mount",
+          "description": "在你的轮次中移动，只能采取冲刺、脱离和闪避动作"
+        }
+      },
+      "combatBenefits": "骑乘时可以控制坐骑的移动和动作",
+      "mountAttacked": {
+        "description": "如果坐骑被击倒或移走，你会掉下来",
+        "fallDamage": "如果你愿意，可以尝试优雅着陆（DC15敏捷豁免避免倒地）"
+      }
+    },
+    "underwaterCombat": {
+      "name": "水下战斗",
+      "nameEn": "Underwater Combat",
+      "meleeAttacks": {
+        "disadvantage": "生物在水中进行近战武器攻击时具有劣势",
+        "exception": "除非生物有游泳速度或武器是匕首、标枪、短剑、矛或三叉戟"
+      },
+      "rangedAttacks": {
+        "disadvantage": "远程武器攻击在水下自动未命中，超出正常射程",
+        "underwater": "水下的远程攻击只能在正常射程内进行且具有劣势"
+      },
+      "fireResistance": "生物和物体在完全浸没在水中时对火焰伤害有抗性"
+    }
+  }
+}

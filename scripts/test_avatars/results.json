@@ -1,0 +1,42 @@
+[
+  {
+    "id": "goblin",
+    "name": "地精",
+    "nameEn": "Goblin",
+    "small": "scripts/test_avatars/goblin_128.webp",
+    "large": "scripts/test_avatars/goblin_512.webp",
+    "status": "success"
+  },
+  {
+    "id": "minotaur",
+    "name": "牛头人",
+    "nameEn": "Minotaur",
+    "small": "scripts/test_avatars/minotaur_128.webp",
+    "large": "scripts/test_avatars/minotaur_512.webp",
+    "status": "success"
+  },
+  {
+    "id": "owlbear",
+    "name": "枭熊",
+    "nameEn": "Owlbear",
+    "small": "scripts/test_avatars/owlbear_128.webp",
+    "large": "scripts/test_avatars/owlbear_512.webp",
+    "status": "success"
+  },
+  {
+    "id": "skeletons",
+    "name": "骷髅",
+    "nameEn": "Skeletons",
+    "small": "scripts/test_avatars/skeletons_128.webp",
+    "large": "scripts/test_avatars/skeletons_512.webp",
+    "status": "success"
+  },
+  {
+    "id": "troll",
+    "name": "巨魔",
+    "nameEn": "Troll",
+    "small": "scripts/test_avatars/troll_128.webp",
+    "large": "scripts/test_avatars/troll_512.webp",
+    "status": "success"
+  }
+]

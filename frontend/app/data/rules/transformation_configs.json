@@ -1,0 +1,193 @@
+{
+  "description": "通用变化系统配置 - 定义所有变化类法术和职业特性的机械规则",
+  "version": "1.0",
+  "configs": {
+    "wild_shape": {
+      "type": "full_replace",
+      "sourceType": "class_feature",
+      "name": "野性形态",
+      "nameEn": "Wild Shape",
+      "creaturePool": {
+        "types": ["beast"],
+        "crLimit": { "formula": "wild_shape_cr_table" },
+        "movementGates": {
+          "fly": { "minLevel": 8 },
+          "swim": { "minLevel": 4 }
+        }
+      },
+      "statRules": {
+        "replacePhysical": true,
+        "replaceMental": false,
+        "retainProficiencies": true,
+        "retainClassFeatures": true
+      },
+      "hpRules": { "overflowDamage": true, "revertOnZeroHP": true },
+      "restrictions": { "canCastSpells": false, "equipmentMerges": true },
+      "subclassOverrides": {
+        "moon": {
+          "crLimit": { "formula": "moon_druid_cr_table" },
+          "canCastSpells": { "minLevel": 18 }
+        }
+      }
+    },
+
+    "polymorph": {
+      "type": "full_replace",
+      "sourceType": "spell",
+      "name": "变形术",
+      "nameEn": "Polymorph",
+      "creaturePool": {
+        "types": ["beast"],
+        "crLimit": { "formula": "target_level_or_cr" }
+      },
+      "statRules": {
+        "replacePhysical": true,
+        "replaceMental": true,
+        "retainProficiencies": false,
+        "retainClassFeatures": false
+      },
+      "hpRules": { "overflowDamage": true, "revertOnZeroHP": true },
+      "restrictions": { "canCastSpells": false, "canSpeak": false, "equipmentMerges": true },
+      "allowSave": { "ability": "wis", "negates": true }
+    },
+
+    "true_polymorph": {
+      "type": "full_replace",
+      "sourceType": "spell",
+      "name": "完全变形术",
+      "nameEn": "True Polymorph",
+      "creaturePool": {
+        "types": ["any"],
+        "crLimit": { "formula": "target_level_or_cr" }
+      },
+      "statRules": {
+        "replacePhysical": true,
+        "replaceMental": true,
+        "retainProficiencies": false,
+        "retainClassFeatures": false
+      },
+      "hpRules": { "overflowDamage": true, "revertOnZeroHP": true },
+      "canBePermanent": true,
+      "restrictions": { "canCastSpells": false, "equipmentMerges": true },
+      "allowSave": { "ability": "wis", "negates": true }
+    },
+
+    "shapechange": {
+      "type": "full_replace",
+      "sourceType": "spell",
+      "name": "形体变化",
+      "nameEn": "Shapechange",
+      "creaturePool": {
+        "types": ["any_non_construct_undead"],
+        "crLimit": { "formula": "caster_level" },
+        "requireSeen": true
+      },
+      "statRules": {
+        "replacePhysical": true,
+        "replaceMental": false,
+        "retainProficiencies": true,
+        "retainClassFeatures": true
+      },
+      "hpRules": { "overflowDamage": true, "revertOnZeroHP": true },
+      "canSwitchForm": true,
+      "restrictions": { "canCastSpells": false, "equipmentMerges": true }
+    },
+
+    "animal_shapes": {
+      "type": "full_replace",
+      "sourceType": "spell",
+      "name": "动物形态",
+      "nameEn": "Animal Shapes",
+      "targets": "multiple",
+      "creaturePool": {
+        "types": ["beast"],
+        "crLimit": { "formula": "fixed", "value": 4 },
+        "sizeLimit": "large"
+      },
+      "statRules": {
+        "replacePhysical": true,
+        "replaceMental": true,
+        "retainProficiencies": false,
+        "retainClassFeatures": false
+      },
+      "hpRules": { "overflowDamage": true, "revertOnZeroHP": true },
+      "restrictions": { "canCastSpells": false, "equipmentMerges": true }
+    },
+
+    "giant_insect": {
+      "type": "full_replace",
+      "sourceType": "spell",
+      "name": "巨虫术",
+      "nameEn": "Giant Insect",
+      "targets": "summon",
+      "creaturePool": {
+        "types": ["beast"],
+        "fixedOptions": ["giant_centipede", "giant_spider", "giant_wasp", "giant_scorpion"]
+      },
+      "statRules": { "replacePhysical": true, "replaceMental": true },
+      "hpRules": { "revertOnZeroHP": false }
+    },
+
+    "alter_self": {
+      "type": "modifier",
+      "sourceType": "spell",
+      "name": "变身术",
+      "nameEn": "Alter Self",
+      "modes": [
+        {
+          "id": "aquatic",
+          "name": "水栖适应",
+          "modifiers": [
+            { "stat": "swim_speed", "operation": "set_equal", "value": "walk_speed" },
+            { "stat": "water_breathing", "operation": "grant" }
+          ]
+        },
+        {
+          "id": "appearance",
+          "name": "改变外貌",
+          "modifiers": [
+            { "stat": "appearance", "operation": "change" }
+          ]
+        },
+        {
+          "id": "natural_weapons",
+          "name": "天生武器",
+          "modifiers": [
+            { "stat": "unarmed_damage", "operation": "set", "value": "1d6" },
+            { "stat": "unarmed_magic", "operation": "grant" }
+          ]
+        }
+      ],
+      "canSwitchMode": true
+    },
+
+    "gaseous_form": {
+      "type": "special_form",
+      "sourceType": "spell",
+      "name": "气化形体",
+      "nameEn": "Gaseous Form",
+      "formOverrides": {
+        "speed": { "walk": 0, "fly": 10 },
+        "resistances": ["nonmagical_bps"],
+        "immunities": ["grappled", "paralyzed", "petrified", "poisoned", "prone", "restrained", "unconscious"],
+        "canPassThroughCracks": true
+      },
+      "restrictions": { "canCastSpells": false, "canAttack": false }
+    },
+
+    "flesh_to_stone": {
+      "type": "condition",
+      "sourceType": "spell",
+      "name": "石化术",
+      "nameEn": "Flesh to Stone",
+      "appliesCondition": "petrified",
+      "progressionSaves": {
+        "ability": "con",
+        "successesNeeded": 3,
+        "failuresNeeded": 3,
+        "frequency": "end_of_turn"
+      },
+      "allowSave": { "ability": "con" }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+# Normalize line endings: let Git decide text vs binary, check out LF.
+* text=auto eol=lf
+
+# Shell scripts must stay LF.
+*.sh text eol=lf
+
+# Explicitly binary assets (never diff/merge or normalize EOL).
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.svg  text
+*.pdf  binary
+*.chm  binary
+*.mp3  binary
+*.wav  binary
+*.ogg  binary
+*.mp4  binary
+*.mov  binary
+*.zip  binary
+*.gz   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+
+# Lockfiles: treated as generated, collapsed in diffs and PR reviews.
+package-lock.json   linguist-generated=true
+frontend/package-lock.json linguist-generated=true
+backend/requirements.txt   -linguist-detectable
+
+# Large SRD / rules reference data — vendored/generated for GitHub language stats.
+dnd-platform/references/** linguist-vendored=true
+frontend/app/data/**       linguist-generated=true

@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "source": "DMG Chapter 8",
+    "description": "D&D 5E 毒药规则与范例"
+  },
+  "poisonTypes": [
+    {
+      "id": "contact",
+      "name": "接触",
+      "nameEn": "Contact",
+      "description": "接触毒药可以涂抹于一个物件，并维持其毒性直至被洗刷干净。生物裸露的皮肤接触到毒药时便要承受其效应。"
+    },
+    {
+      "id": "ingested",
+      "name": "服用",
+      "nameEn": "Ingested",
+      "description": "这种毒药必须让生物吞下整一个剂量才能发挥效应。这一剂量可以被施放于食物或液体中。"
+    },
+    {
+      "id": "inhaled",
+      "name": "吸入",
+      "nameEn": "Inhaled",
+      "description": "这些毒药是吸入时生效的粉末或气体。吹散粉末或释放气体可以让5立方尺里的生物受其效应影响。屏住呼吸并不能使吸入式毒药无害化。"
+    },
+    {
+      "id": "injury",
+      "name": "损伤",
+      "nameEn": "Injury",
+      "description": "损伤式毒药可以作用于武器、弹药、陷阱组件和其他可造成穿刺或挥砍伤害的物件上，并维持其毒性直至被伤口吸收或被洗刷干净。"
+    }
+  ],
+  "poisons": [
+    {
+      "id": "assassins_blood",
+      "name": "刺客之血",
+      "nameEn": "Assassin's Blood",
+      "type": "ingested",
+      "priceGp": 150,
+      "saveDC": 10,
+      "saveType": "constitution",
+      "damage": "1d12",
+      "damageType": "poison",
+      "effect": "中毒24小时",
+      "onSuccess": "伤害减半且不会中毒",
+      "description": "服用这种毒药的生物必须进行一次DC 10的体质豁免，豁免失败则受6(1d12)的毒素伤害并中毒24小时。豁免成功则伤害减半且不会中毒。"
+    },
+    {
+      "id": "burnt_othur_fumes",
+      "name": "焦引熏烟",
+      "nameEn": "Burnt Othur Fumes",
+      "type": "inhaled",
+      "priceGp": 500,
+      "saveDC": 13,
+      "saveType": "constitution",
+      "damage": "3d6",
+      "damageType": "poison",
+      "effect": "每轮开始时再次豁免，失败受1d6毒素伤害",
+      "onSuccess": "三次成功豁免后毒药的效应终止",
+      "description": "受害于该毒药的生物必须进行一次DC 13的体质豁免，豁免失败则受10(3d6)的毒素伤害，并且必须在随后每个其自己回合开始时，再进行一次该豁免，每次豁免失败都将受3(1d6)的毒素伤害。三次成功豁免后毒药的效应终止。"
+    },
+    {
+      "id": "carrion_crawler_mucus",
+      "name": "食腐虫粘液",
+      "nameEn": "Carrion Crawler Mucus",
+      "type": "contact",
+      "priceGp": 200,
+      "saveDC": 13,
+      "saveType": "constitution",
+      "effect": "中毒1分钟，陷入麻痹",
+      "source": "死亡或陷入失能的食腐虫",
+      "description": "这种毒必须从死亡或陷入失能的食腐虫身上获取。接触到这种毒药的生物必须进行一次DC 13的体质豁免，豁免失败则中毒1分钟。因此中毒的生物陷入麻痹。该生物在每个其自己回合结束时，再进行一次该豁免，豁免成功则终止自己身上的相应效应。"
+    },
+    {
+      "id": "drow_poison",
+      "name": "卓尔毒药",
+      "nameEn": "Drow Poison",
+      "type": "injury",
+      "priceGp": 200,
+      "saveDC": 13,
+      "saveType": "constitution",
+      "effect": "中毒1小时",
+      "criticalFail": "如果豁免失败且骰值比DC相差5或更多，则该生物同时陷入昏迷",
+      "wakeCondition": "该生物在受到伤害时苏醒，或由其它生物花费动作来摇醒自己",
+      "description": "这种毒药通常只由卓尔精灵在远离阳光的地方制作而成。遭受这种毒药影响的生物必须进行一次DC 13的体质豁免，豁免失败则中毒1小时。如果豁免失败且骰值比DC相差5或更多，则该生物同时陷入昏迷。该生物在受到伤害时苏醒，或由其它生物花费动作来摇醒自己。"
+    },
+    {
+      "id": "essence_of_ether",
+      "name": "乙太精",
+      "nameEn": "Essence of Ether",
+      "type": "inhaled",
+      "priceGp": 300,
+      "saveDC": 15,
+      "saveType": "constitution",
+      "effect": "中毒8小时，陷入昏迷",
+      "wakeCondition": "直至其受到伤害，或者由其它生物使用动作来将其摇醒",
+      "description": "吸入这种毒药的生物必须进行一次DC 15的体质豁免，豁免失败则中毒8小时。因此中毒的生物陷入昏迷，直至其受到伤害，或者由其它生物使用动作来将其摇醒。"
+    },
+    {
+      "id": "malice",
+      "name": "怨恨",
+      "nameEn": "Malice",
+      "type": "inhaled",
+      "priceGp": 250,
+      "saveDC": 15,
+      "saveType": "constitution",
+      "effect": "中毒1小时，陷入目盲",
+      "description": "吸入这种毒药的生物必须进行一次DC 15的体质豁免，豁免失败则中毒1小时，因此中毒的生物同时陷入目盲。"
+    },
+    {
+      "id": "midnight_tears",
+      "name": "午夜之泪",
+      "nameEn": "Midnight Tears",
+      "type": "ingested",
+      "priceGp": 1500,
+      "saveDC": 17,
+      "saveType": "constitution",
+      "damage": "9d6",
+      "damageType": "poison",
+      "delayedEffect": true,
+      "triggerTime": "午夜钟声敲响时",
+      "onSuccess": "伤害减半",
+      "description": "服用这种毒药的生物不会立即出现异样，其症状会一直潜伏到午夜钟声敲响时。如果毒素在此之前尚未中和，该生物就必须进行一次DC 17的体质豁免，豁免失败则受到31(9d6)的毒素伤害，豁免成功则伤害减半。"
+    },
+    {
+      "id": "oil_of_taggit",
+      "name": "腐精之油",
+      "nameEn": "Oil of Taggit",
+      "type": "contact",
+      "priceGp": 400,
+      "saveDC": 13,
+      "saveType": "constitution",
+      "effect": "中毒24小时，陷入昏迷",
+      "wakeCondition": "直至其受到伤害才会惊醒",
+      "description": "接触到这种毒药的生物必须进行一次DC 13的体质豁免，豁免失败则中毒24小时。因此中毒的生物将陷入昏迷，直至其受到伤害才会惊醒。"
+    },
+    {
+      "id": "pale_tincture",
+      "name": "苍白酊剂",
+      "nameEn": "Pale Tincture",
+      "type": "ingested",
+      "priceGp": 250,
+      "saveDC": 16,
+      "saveType": "constitution",
+      "damage": "1d6",
+      "damageType": "poison",
+      "effect": "中毒，每24小时再次豁免，伤害无法恢复",
+      "cureCondition": "成功豁免七次后，该效应终止",
+      "description": "服用这种毒药的生物必须进行一次DC 16的体质豁免，豁免失败则受3(1d6)的毒素伤害并陷入中毒。该中毒生物每24小时必须再进行一次该豁免，每次豁免失败都将受3(1d6)的毒素伤害。该中毒效应终止前，该毒素造成的伤害无法以任何方式恢复。成功豁免七次后，该效应终止，此时该生物才能如常治愈伤害。"
+    },
+    {
+      "id": "purple_worm_poison",
+      "name": "紫虫毒液",
+      "nameEn": "Purple Worm Poison",
+      "type": "injury",
+      "priceGp": 2000,
+      "saveDC": 19,
+      "saveType": "constitution",
+      "damage": "12d6",
+      "damageType": "poison",
+      "source": "死亡或陷入失能的紫虫",
+      "onSuccess": "伤害减半",
+      "description": "该毒药必须从死亡或陷入失能的紫虫中提取。受该毒药影响的生物必须进行一次DC 19的体质豁免，豁免失败则受42(12d6)的毒素伤害，豁免成功则伤害减半。"
+    },
+    {
+      "id": "serpent_venom",
+      "name": "蛇毒",
+      "nameEn": "Serpent Venom",
+      "type": "injury",
+      "priceGp": 200,
+      "saveDC": 11,
+      "saveType": "constitution",
+      "damage": "3d6",
+      "damageType": "poison",
+      "source": "死亡或陷入失能的巨毒蛇",
+      "onSuccess": "伤害减半",
+      "description": "该毒药必须从死亡或陷入失能的巨毒蛇身上提取，受该毒药影响的生物必须进行一次DC 11的体质豁免，豁免失败则受10(3d6)的毒素伤害，豁免成功则伤害减半。"
+    },
+    {
+      "id": "torpor",
+      "name": "蒙汗药",
+      "nameEn": "Torpor",
+      "type": "ingested",
+      "priceGp": 600,
+      "saveDC": 15,
+      "saveType": "constitution",
+      "effect": "中毒4d6小时，陷入失能",
+      "description": "服用这种毒药的生物必须进行一次DC 15的体质豁免，豁免失败则中毒4d6小时，该中毒生物陷入失能。"
+    },
+    {
+      "id": "truth_serum",
+      "name": "真理血清",
+      "nameEn": "Truth Serum",
+      "type": "ingested",
+      "priceGp": 150,
+      "saveDC": 11,
+      "saveType": "constitution",
+      "effect": "中毒1小时，不能故意说谎",
+      "relatedSpell": "诚实之域 zone of truth",
+      "description": "服用该毒药的生物必须进行一次DC 11的体质豁免，豁免失败则中毒1小时，该中毒生物不能故意说谎，如同受法术诚实之域效应影响一般。"
+    },
+    {
+      "id": "wyvern_poison",
+      "name": "飞龙毒液",
+      "nameEn": "Wyvern Poison",
+      "type": "injury",
+      "priceGp": 1200,
+      "saveDC": 15,
+      "saveType": "constitution",
+      "damage": "7d6",
+      "damageType": "poison",
+      "source": "死亡或陷入失能的飞龙",
+      "onSuccess": "伤害减半",
+      "description": "这种毒药必须从死亡或陷入失能的飞龙身上提取，受这种毒药影响的生物必须进行一次DC 15的体质豁免，豁免失败则受24(7d6)的毒素伤害，豁免成功则伤害减半。"
+    }
+  ],
+  "harvestingRules": {
+    "requirement": "生物死亡或陷入失能时才能提取",
+    "time": "1d6分钟",
+    "checkDC": 20,
+    "checkType": "智力(自然)检定，或制毒工具检定",
+    "criticalFail": "如果失败骰值比DC相差5或更多，则该角色还要受到相应毒药的影响"
+  }
+}

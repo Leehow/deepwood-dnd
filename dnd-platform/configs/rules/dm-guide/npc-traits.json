@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "source": "DMG Chapter 4",
+    "description": "D&D 5E NPC特征生成随机表"
+  },
+  "npcComponents": [
+    "工作与来历",
+    "外貌",
+    "属性",
+    "天赋",
+    "癖好",
+    "与人互动",
+    "有用知识",
+    "理想",
+    "牵绊",
+    "缺点或秘密"
+  ],
+  "appearance": {
+    "name": "角色外貌",
+    "nameEn": "NPC Appearance",
+    "dieType": "d20",
+    "options": [
+      { "roll": 1, "trait": "独特的珠宝：耳环、项链、戒指、手镯" },
+      { "roll": 2, "trait": "身体穿刺饰品" },
+      { "roll": 3, "trait": "华丽或古怪的衣着" },
+      { "roll": 4, "trait": "正式、干净的衣着" },
+      { "roll": 5, "trait": "褴褛、肮脏的衣着" },
+      { "roll": 6, "trait": "明显的疤痕" },
+      { "roll": 7, "trait": "缺牙" },
+      { "roll": 8, "trait": "缺手指" },
+      { "roll": 9, "trait": "罕见的瞳色（或异色瞳）" },
+      { "roll": 10, "trait": "纹身" },
+      { "roll": 11, "trait": "胎记" },
+      { "roll": 12, "trait": "罕见的肤色" },
+      { "roll": 13, "trait": "秃头" },
+      { "roll": 14, "trait": "编头发或编胡子" },
+      { "roll": 15, "trait": "罕见的发色" },
+      { "roll": 16, "trait": "神经性眼睑痉挛" },
+      { "roll": 17, "trait": "独特的鼻子" },
+      { "roll": 18, "trait": "独特的姿势（驼背或僵直）" },
+      { "roll": 19, "trait": "特别漂亮" },
+      { "roll": 20, "trait": "特别丑" }
+    ]
+  },
+  "abilities": {
+    "name": "角色属性",
+    "nameEn": "NPC Abilities",
+    "high": {
+      "dieType": "d6",
+      "options": [
+        { "roll": 1, "ability": "strength", "description": "力量——有力，肌肉发达，健壮如牛" },
+        { "roll": 2, "ability": "dexterity", "description": "敏捷——轻盈，灵活，优雅" },
+        { "roll": 3, "ability": "constitution", "description": "体质——坚韧，健康，精力充沛" },
+        { "roll": 4, "ability": "intelligence", "description": "智力——博学，聪慧，见多识广" },
+        { "roll": 5, "ability": "wisdom", "description": "感知——睿智，有洞察力，注意细节" },
+        { "roll": 6, "ability": "charisma", "description": "魅力——有说服力，据理力争，天生的领袖" }
+      ]
+    },
+    "low": {
+      "dieType": "d6",
+      "options": [
+        { "roll": 1, "ability": "strength", "description": "力量——软弱，瘦小" },
+        { "roll": 2, "ability": "dexterity", "description": "敏捷——笨拙，迟钝" },
+        { "roll": 3, "ability": "constitution", "description": "体质——多病，苍白" },
+        { "roll": 4, "ability": "intelligence", "description": "智力——愚蠢，无知" },
+        { "roll": 5, "ability": "wisdom", "description": "感知——迟钝，容易分心" },
+        { "roll": 6, "ability": "charisma", "description": "魅力——粗鲁，不讨喜" }
+      ]
+    }
+  },
+  "talents": {
+    "name": "角色天赋",
+    "nameEn": "NPC Talents",
+    "dieType": "d20",
+    "options": [
+      { "roll": 1, "talent": "演奏一种乐器" },
+      { "roll": 2, "talent": "流利的说若干种语言" },
+      { "roll": 3, "talent": "难以置信的运气" },
+      { "roll": 4, "talent": "完美记忆力" },
+      { "roll": 5, "talent": "擅长对待动物" },
+      { "roll": 6, "talent": "擅长对待孩子" },
+      { "roll": 7, "talent": "擅长处理谜题" },
+      { "roll": 8, "talent": "擅长某个游戏" },
+      { "roll": 9, "talent": "擅长模仿表演" },
+      { "roll": 10, "talent": "手绘非常漂亮" },
+      { "roll": 11, "talent": "涂画非常漂亮" },
+      { "roll": 12, "talent": "唱歌非常好听" },
+      { "roll": 13, "talent": "把所有人都喝趴" },
+      { "roll": 14, "talent": "木匠专家" },
+      { "roll": 15, "talent": "烹饪专家" },
+      { "roll": 16, "talent": "飞镖和投石游戏专家" },
+      { "roll": 17, "talent": "杂耍专家" },
+      { "roll": 18, "talent": "老练的演员和伪装大师" },
+      { "roll": 19, "talent": "老练的舞者" },
+      { "roll": 20, "talent": "掌握盗贼黑话" }
+    ]
+  },
+  "mannerisms": {
+    "name": "角色癖好",
+    "nameEn": "NPC Mannerisms",
+    "dieType": "d20",
+    "options": [
+      { "roll": 1, "mannerism": "时常唱歌，吹口哨，或哼小调" },
+      { "roll": 2, "mannerism": "用押韵或其他特殊的方式说话" },
+      { "roll": 3, "mannerism": "音调特别低或特别高" },
+      { "roll": 4, "mannerism": "口齿不清，大舌头，或口吃" },
+      { "roll": 5, "mannerism": "突显吐字清晰" },
+      { "roll": 6, "mannerism": "说话大声" },
+      { "roll": 7, "mannerism": "耳语" },
+      { "roll": 8, "mannerism": "用浮夸的词或长词" },
+      { "roll": 9, "mannerism": "频繁使用错误的词" },
+      { "roll": 10, "mannerism": "用华美的誓言和感叹" },
+      { "roll": 11, "mannerism": "不断地讲笑话或双关语" },
+      { "roll": 12, "mannerism": "时常预测末日" },
+      { "roll": 13, "mannerism": "坐立不安" },
+      { "roll": 14, "mannerism": "斜视" },
+      { "roll": 15, "mannerism": "凝视远方" },
+      { "roll": 16, "mannerism": "嚼东西" },
+      { "roll": 17, "mannerism": "踱步" },
+      { "roll": 18, "mannerism": "弹手指" },
+      { "roll": 19, "mannerism": "咬指甲" },
+      { "roll": 20, "mannerism": "撩头发或拽胡须" }
+    ]
+  },
+  "interactionTraits": {
+    "name": "角色互动特质",
+    "nameEn": "NPC Interaction Traits",
+    "dieType": "d12",
+    "options": [
+      { "roll": 1, "trait": "好辩", "traitEn": "Argumentative" },
+      { "roll": 2, "trait": "傲慢", "traitEn": "Arrogant" },
+      { "roll": 3, "trait": "咄咄逼人", "traitEn": "Blustering" },
+      { "roll": 4, "trait": "粗鲁", "traitEn": "Rude" },
+      { "roll": 5, "trait": "好奇", "traitEn": "Curious" },
+      { "roll": 6, "trait": "亲切", "traitEn": "Friendly" },
+      { "roll": 7, "trait": "诚实", "traitEn": "Honest" },
+      { "roll": 8, "trait": "急躁", "traitEn": "Hot-tempered" },
+      { "roll": 9, "trait": "易怒", "traitEn": "Irritable" },
+      { "roll": 10, "trait": "沉闷", "traitEn": "Ponderous" },
+      { "roll": 11, "trait": "安静", "traitEn": "Quiet" },
+      { "roll": 12, "trait": "多疑", "traitEn": "Suspicious" }
+    ]
+  },
+  "ideals": {
+    "name": "角色理想",
+    "nameEn": "NPC Ideals",
+    "good": {
+      "dieType": "d6",
+      "options": [
+        { "roll": 1, "ideal": "美好", "idealEn": "Beauty" },
+        { "roll": 2, "ideal": "慈善", "idealEn": "Charity" },
+        { "roll": 3, "ideal": "大义", "idealEn": "Greater good" },
+        { "roll": 4, "ideal": "生命", "idealEn": "Life" },
+        { "roll": 5, "ideal": "尊重", "idealEn": "Respect" },
+        { "roll": 6, "ideal": "自我牺牲", "idealEn": "Self-sacrifice" }
+      ]
+    },
+    "evil": {
+      "dieType": "d6",
+      "options": [
+        { "roll": 1, "ideal": "支配", "idealEn": "Domination" },
+        { "roll": 2, "ideal": "贪婪", "idealEn": "Greed" },
+        { "roll": 3, "ideal": "力量", "idealEn": "Might" },
+        { "roll": 4, "ideal": "痛苦", "idealEn": "Pain" },
+        { "roll": 5, "ideal": "惩罚", "idealEn": "Retribution" },
+        { "roll": 6, "ideal": "杀戮", "idealEn": "Slaughter" }
+      ]
+    },
+    "lawful": {
+      "dieType": "d6",
+      "options": [
+        { "roll": 1, "ideal": "团结", "idealEn": "Community" },
+        { "roll": 2, "ideal": "公正", "idealEn": "Fairness" },
+        { "roll": 3, "ideal": "荣誉", "idealEn": "Honor" },
+        { "roll": 4, "ideal": "逻辑", "idealEn": "Logic" },
+        { "roll": 5, "ideal": "尽责", "idealEn": "Responsibility" },
+        { "roll": 6, "ideal": "传统", "idealEn": "Tradition" }
+      ]
+    },
+    "chaotic": {
+      "dieType": "d6",
+      "options": [
+        { "roll": 1, "ideal": "转变", "idealEn": "Change" },
+        { "roll": 2, "ideal": "创造性", "idealEn": "Creativity" },
+        { "roll": 3, "ideal": "自由", "idealEn": "Freedom" },
+        { "roll": 4, "ideal": "自主", "idealEn": "Independence" },
+        { "roll": 5, "ideal": "无下限", "idealEn": "No limits" },
+        { "roll": 6, "ideal": "稀奇古怪", "idealEn": "Whimsy" }
+      ]
+    },
+    "neutral": {
+      "dieType": "d6",
+      "options": [
+        { "roll": 1, "ideal": "平衡", "idealEn": "Balance" },
+        { "roll": 2, "ideal": "知识", "idealEn": "Knowledge" },
+        { "roll": 3, "ideal": "和平共存", "idealEn": "Live and let live" },
+        { "roll": 4, "ideal": "节制", "idealEn": "Moderation" },
+        { "roll": 5, "ideal": "中立", "idealEn": "Neutrality" },
+        { "roll": 6, "ideal": "人民", "idealEn": "People" }
+      ]
+    },
+    "other": {
+      "dieType": "d6",
+      "options": [
+        { "roll": 1, "ideal": "抱负", "idealEn": "Aspiration" },
+        { "roll": 2, "ideal": "发现", "idealEn": "Discovery" },
+        { "roll": 3, "ideal": "荣耀", "idealEn": "Glory" },
+        { "roll": 4, "ideal": "国家", "idealEn": "Nation" },
+        { "roll": 5, "ideal": "报偿", "idealEn": "Redemption" },
+        { "roll": 6, "ideal": "自知之明", "idealEn": "Self-knowledge" }
+      ]
+    }
+  },
+  "bonds": {
+    "name": "角色牵绊",
+    "nameEn": "NPC Bonds",
+    "dieType": "d10",
+    "options": [
+      { "roll": 1, "bond": "致力于实现某个人人生目标" },
+      { "roll": 2, "bond": "保护亲密的家人" },
+      { "roll": 3, "bond": "保护同事或同胞" },
+      { "roll": 4, "bond": "忠诚于金主、主顾或雇主" },
+      { "roll": 5, "bond": "沉迷浪漫" },
+      { "roll": 6, "bond": "被吸引前去某个特别的地方" },
+      { "roll": 7, "bond": "保护某个情感纪念品" },
+      { "roll": 8, "bond": "保护某个值钱的所有物" },
+      { "roll": 9, "bond": "前往复仇" },
+      { "roll": 10, "bond": "骰两次，并跳过骰值10", "special": true }
+    ]
+  },
+  "flawsAndSecrets": {
+    "name": "角色缺点或秘密",
+    "nameEn": "NPC Flaws and Secrets",
+    "dieType": "d12",
+    "options": [
+      { "roll": 1, "flaw": "禁忌的爱情或易被浪漫打动" },
+      { "roll": 2, "flaw": "喜欢颓废的乐趣" },
+      { "roll": 3, "flaw": "傲慢" },
+      { "roll": 4, "flaw": "羡慕另一个生物的财产或地位" },
+      { "roll": 5, "flaw": "压倒性的贪婪" },
+      { "roll": 6, "flaw": "时常发怒" },
+      { "roll": 7, "flaw": "有一个强大的敌人" },
+      { "roll": 8, "flaw": "特殊的恐惧症" },
+      { "roll": 9, "flaw": "羞耻或令人愤慨的经历" },
+      { "roll": 10, "flaw": "不可告人的罪行或恶行" },
+      { "roll": 11, "flaw": "拥有禁忌的学识" },
+      { "roll": 12, "flaw": "勇敢而鲁莽" }
+    ]
+  },
+  "villainSchemes": {
+    "name": "反派的计谋",
+    "nameEn": "Villain's Scheme",
+    "categories": [
+      {
+        "id": "immortality",
+        "name": "不朽",
+        "nameEn": "Immortality",
+        "dieType": "d4",
+        "options": [
+          { "roll": 1, "scheme": "获得传奇物品来延长生命" },
+          { "roll": 2, "scheme": "晋升神格" },
+          { "roll": 3, "scheme": "成为不死生物或者获得一个年轻的身体" },
+          { "roll": 4, "scheme": "偷走一个位面生物的精华" }
+        ]
+      },
+      {
+        "id": "influence",
+        "name": "影响力",
+        "nameEn": "Influence",
+        "dieType": "d4",
+        "options": [
+          { "roll": 1, "scheme": "夺取一个权位或头衔的位置" },
+          { "roll": 2, "scheme": "赢取一次比试或竞技" },
+          { "roll": 3, "scheme": "赢得一个强大个体的青睐" },
+          { "roll": 4, "scheme": "将一名小卒安排到一个权力位置" }
+        ]
+      },
+      {
+        "id": "magic",
+        "name": "魔法",
+        "nameEn": "Magic",
+        "dieType": "d6",
+        "options": [
+          { "roll": 1, "scheme": "获取一件远古的神器" },
+          { "roll": 2, "scheme": "组装一个构装体或魔法设备" },
+          { "roll": 3, "scheme": "实现一个神祇的意愿" },
+          { "roll": 4, "scheme": "向一名神祇供奉祭品" },
+          { "roll": 5, "scheme": "连接一个失落的神祇或原力" },
+          { "roll": 6, "scheme": "打开通向另一个世界的大门" }
+        ]
+      },
+      {
+        "id": "mayhem",
+        "name": "骚乱",
+        "nameEn": "Mayhem",
+        "dieType": "d6",
+        "options": [
+          { "roll": 1, "scheme": "兑现一个世界末日的预言" },
+          { "roll": 2, "scheme": "作为一个神祇或主顾的复仇代理" },
+          { "roll": 3, "scheme": "扩散一场邪秽的传染病" },
+          { "roll": 4, "scheme": "推翻一个政府" },
+          { "roll": 5, "scheme": "引发一场自然灾害" },
+          { "roll": 6, "scheme": "灭绝一个血统或氏族" }
+        ]
+      },
+      {
+        "id": "passion",
+        "name": "激情",
+        "nameEn": "Passion",
+        "dieType": "d4",
+        "options": [
+          { "roll": 1, "scheme": "延长爱人的生命" },
+          { "roll": 2, "scheme": "证明值得他人的爱" },
+          { "roll": 3, "scheme": "复活或恢复死去的爱人" },
+          { "roll": 4, "scheme": "为另一个人的感情摧毁竞争对手" }
+        ]
+      },
+      {
+        "id": "power",
+        "name": "权力",
+        "nameEn": "Power",
+        "dieType": "d4",
+        "options": [
+          { "roll": 1, "scheme": "征服一个地区或煽动一场叛乱" },
+          { "roll": 2, "scheme": "夺取一支军队的控制权" },
+          { "roll": 3, "scheme": "成为王座的幕后掌权者" },
+          { "roll": 4, "scheme": "获得统治者的青睐" }
+        ]
+      },
+      {
+        "id": "revenge",
+        "name": "复仇",
+        "nameEn": "Revenge",
+        "dieType": "d4",
+        "options": [
+          { "roll": 1, "scheme": "为过去的羞辱或侮辱报仇" },
+          { "roll": 2, "scheme": "为过去的监禁或受伤报仇" },
+          { "roll": 3, "scheme": "为爱人之死报仇" },
+          { "roll": 4, "scheme": "回收被偷的财物并惩罚偷取者" }
+        ]
+      },
+      {
+        "id": "wealth",
+        "name": "财富",
+        "nameEn": "Wealth",
+        "dieType": "d4",
+        "options": [
+          { "roll": 1, "scheme": "控制自然资源或商贸" },
+          { "roll": 2, "scheme": "嫁入豪门" },
+          { "roll": 3, "scheme": "洗劫远古遗迹" },
+          { "roll": 4, "scheme": "盗取土地、货物或金钱" }
+        ]
+      }
+    ]
+  },
+  "villainWeaknesses": {
+    "name": "反派的弱点",
+    "nameEn": "Villain's Weakness",
+    "dieType": "d8",
+    "options": [
+      { "roll": 1, "weakness": "一个容纳着反派灵魂的隐藏物件" },
+      { "roll": 2, "weakness": "如果反派真爱的死仇得报，则他的力量也将被打破" },
+      { "roll": 3, "weakness": "一个特定的神器出现时，该反派也将被削弱" },
+      { "roll": 4, "weakness": "用一把特殊的武器对付该反派时将造成额外的伤害" },
+      { "roll": 5, "weakness": "说出该反派的真名就会将其摧毁" },
+      { "roll": 6, "weakness": "一则远古的预言或谜语可以揭示如何推翻该反派" },
+      { "roll": 7, "weakness": "如果一名远古的敌人原谅其过去的所为，则该反派将因此陨落" },
+      { "roll": 8, "weakness": "如果很久以前定案的一场神秘交易得以完成，则该反派将因此失去它的力量" }
+    ]
+  }
+}

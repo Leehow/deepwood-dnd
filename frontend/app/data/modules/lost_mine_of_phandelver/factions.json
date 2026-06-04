@@ -1,0 +1,62 @@
+[
+  {
+    "id": "redbrand",
+    "name": "红标帮",
+    "name_en": "Redbrand",
+    "description": "红标帮恶霸 Redbrand Ruffians\n\n红标帮窝点 Redbrand Hideout\n\n第 3 部分: 蜘蛛之网 The Spider's Web\n\n三猪小径 Triboar Trail\n\n兔莓与阿加莎的巢穴 Conyberry and Agatha's Lair\n\n古枭井 Old Owl Well\n\n雷树废墟 Ruins of Thundertree\n\n飞龙岩 Wyvern Tor\n\n克拉摩堡 Cragmaw Castle\n\n第 4 部分: 潮音洞穴 Wave Echo Cave\n\n角色等级 Character Level\n\n经验奖励 Experience Point Awards\n\n游荡怪物 Wandering Monsters\n\n通用特征物 General Features\n\n关键遭遇 Keyed Encounters\n\n结局 Conclusion\n\n附录 A: 魔法物品 Magic Items\n\n使用魔法物品 Using a Magic Item\n\n物品详述 Item Descriptions\n\n附录 B: 怪物 Monsters\n\n资料 Statistics\n\n怪物详述 Monster Descriptions\n\n规则索引 Rules Index\n\n## 关于翻译\n\n本文对应《五版龙与地下城新手套装 Dungeons & Dragons Starter Set》的模组部分。",
+    "goals": [],
+    "members": [],
+    "leader": null,
+    "alignment": "neutral",
+    "headquarters": null,
+    "relationships": {}
+  },
+  {
+    "id": "lords_alliance",
+    "name": "领主联盟",
+    "name_en": "Lords Alliance",
+    "description": "领主联盟 Lord's Alliance 的一名特工。",
+    "goals": [],
+    "members": [],
+    "leader": null,
+    "alignment": "neutral",
+    "headquarters": null,
+    "relationships": {}
+  },
+  {
+    "id": "zhentarim",
+    "name": "散塔林会",
+    "name_en": "Zhentarim",
+    "description": "散塔林会 Zhentarim 的成员, 可以给队伍 Halia Thornton 提供一项任务。",
+    "goals": [],
+    "members": [],
+    "leader": null,
+    "alignment": "neutral",
+    "headquarters": null,
+    "relationships": {}
+  },
+  {
+    "id": "order_of_the_gauntlet",
+    "name": "铁手教团",
+    "name_en": "Order of the Gauntlet",
+    "description": "铁手教团 Order of the Gauntlet 的成员, Daran Edermath 可以给队伍提供一项任务。",
+    "goals": [],
+    "members": [],
+    "leader": null,
+    "alignment": "neutral",
+    "headquarters": null,
+    "relationships": {}
+  },
+  {
+    "id": "harpers",
+    "name": "竖琴手同盟",
+    "name_en": "Harpers",
+    "description": "竖琴手同盟 Harpers 成员, 竖琴手同盟是一个松散的冒险者与密探组织, 他们行动隐蔽, 主张人人平等反对滥权。",
+    "goals": [],
+    "members": [],
+    "leader": null,
+    "alignment": "neutral",
+    "headquarters": null,
+    "relationships": {}
+  }
+]

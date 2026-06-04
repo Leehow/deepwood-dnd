@@ -1,0 +1,294 @@
+{
+  "overview": {
+    "description": "随机遭遇表可帮助DM快速生成适合特定环境和等级的遭遇。按CR和环境分类，方便快速查找。",
+    "descriptionEn": "Random encounter tables help DMs quickly generate encounters appropriate for specific environments and levels. Organized by CR and environment for quick lookup."
+  },
+  "environments": {
+    "forest": {
+      "id": "forest",
+      "name": "森林",
+      "nameEn": "Forest",
+      "description": "包括温带森林、热带雨林和针叶林",
+      "encounters": {
+        "cr0-1": [
+          { "roll": "1-5", "encounter": "1d6 巨鼠", "encounterEn": "1d6 giant rats" },
+          { "roll": "6-10", "encounter": "2d4 狼", "encounterEn": "2d4 wolves" },
+          { "roll": "11-15", "encounter": "1d4 地精", "encounterEn": "1d4 goblins" },
+          { "roll": "16-20", "encounter": "1 褐熊", "encounterEn": "1 brown bear" },
+          { "roll": "21-25", "encounter": "1d6 树精", "encounterEn": "1d6 pixies" },
+          { "roll": "26-30", "encounter": "1 枭熊幼崽", "encounterEn": "1 owlbear cub" },
+          { "roll": "31-40", "encounter": "友善的旅行者或德鲁伊", "encounterEn": "Friendly traveler or druid" },
+          { "roll": "41-50", "encounter": "1d4 强盗", "encounterEn": "1d4 bandits" }
+        ],
+        "cr2-4": [
+          { "roll": "1-10", "encounter": "1 枭熊", "encounterEn": "1 owlbear" },
+          { "roll": "11-20", "encounter": "2d4 地精 + 1 地精首领", "encounterEn": "2d4 goblins + 1 goblin boss" },
+          { "roll": "21-30", "encounter": "1d4 狼人", "encounterEn": "1d4 werewolves" },
+          { "roll": "31-40", "encounter": "1 巨蜘蛛 + 1d4 大型蜘蛛", "encounterEn": "1 giant spider + 1d4 giant wolf spiders" },
+          { "roll": "41-50", "encounter": "1 绿龙雏龙", "encounterEn": "1 green dragon wyrmling" },
+          { "roll": "51-60", "encounter": "1d4 强盗 + 1 强盗头目", "encounterEn": "1d4 bandits + 1 bandit captain" },
+          { "roll": "61-70", "encounter": "1 树人", "encounterEn": "1 treant" },
+          { "roll": "71-80", "encounter": "1d6 半人马", "encounterEn": "1d6 centaurs" }
+        ],
+        "cr5-10": [
+          { "roll": "1-15", "encounter": "1 幼年绿龙", "encounterEn": "1 young green dragon" },
+          { "roll": "16-30", "encounter": "1d4 树人", "encounterEn": "1d4 treants" },
+          { "roll": "31-45", "encounter": "1 独角兽", "encounterEn": "1 unicorn" },
+          { "roll": "46-60", "encounter": "2d4 枭熊", "encounterEn": "2d4 owlbears" },
+          { "roll": "61-75", "encounter": "1 绿色巫妖", "encounterEn": "1 green hag coven" },
+          { "roll": "76-90", "encounter": "1d4 野蛮人狂战士", "encounterEn": "1d4 berserkers" }
+        ]
+      }
+    },
+    "mountains": {
+      "id": "mountains",
+      "name": "山地",
+      "nameEn": "Mountains",
+      "description": "高海拔地区，包括山脉、悬崖和高原",
+      "encounters": {
+        "cr0-1": [
+          { "roll": "1-10", "encounter": "1d6 山羊", "encounterEn": "1d6 goats" },
+          { "roll": "11-20", "encounter": "1d4 狮鹫幼崽", "encounterEn": "1d4 stirges" },
+          { "roll": "21-30", "encounter": "2d4 狗头人", "encounterEn": "2d4 kobolds" },
+          { "roll": "31-40", "encounter": "1 巨鹰", "encounterEn": "1 giant eagle" },
+          { "roll": "41-50", "encounter": "1d4 半兽人", "encounterEn": "1d4 orcs" }
+        ],
+        "cr2-4": [
+          { "roll": "1-15", "encounter": "1 狮鹫", "encounterEn": "1 griffon" },
+          { "roll": "16-30", "encounter": "1d4 半兽人 + 1 半兽人战争头领", "encounterEn": "1d4 orcs + 1 orc war chief" },
+          { "roll": "31-45", "encounter": "1 巨人蜥蜴", "encounterEn": "1 giant lizard" },
+          { "roll": "46-60", "encounter": "1d4 驭风术士", "encounterEn": "1d4 harpies" },
+          { "roll": "61-75", "encounter": "1 角怪", "encounterEn": "1 peryton" },
+          { "roll": "76-90", "encounter": "1d4 狗头人 + 1 翼龙", "encounterEn": "1d4 kobolds + 1 pteranodon" }
+        ],
+        "cr5-10": [
+          { "roll": "1-20", "encounter": "1 石巨人", "encounterEn": "1 stone giant" },
+          { "roll": "21-40", "encounter": "1d4 狮鹫", "encounterEn": "1d4 griffons" },
+          { "roll": "41-60", "encounter": "1 幼年红龙", "encounterEn": "1 young red dragon" },
+          { "roll": "61-80", "encounter": "1 洛克鸟", "encounterEn": "1 roc" },
+          { "roll": "81-100", "encounter": "1d4 巨人", "encounterEn": "1d4 giants (varied)" }
+        ]
+      }
+    },
+    "swamp": {
+      "id": "swamp",
+      "name": "沼泽",
+      "nameEn": "Swamp",
+      "description": "湿地、沼泽和死水区域",
+      "encounters": {
+        "cr0-1": [
+          { "roll": "1-10", "encounter": "1d6 巨青蛙", "encounterEn": "1d6 giant frogs" },
+          { "roll": "11-20", "encounter": "1d4 巨蜥蜴", "encounterEn": "1d4 giant lizards" },
+          { "roll": "21-30", "encounter": "2d4 毒蛇", "encounterEn": "2d4 poisonous snakes" },
+          { "roll": "31-40", "encounter": "1d4 蜥蜴人", "encounterEn": "1d4 lizardfolk" },
+          { "roll": "41-50", "encounter": "1 鬼火", "encounterEn": "1 will-o'-wisp" }
+        ],
+        "cr2-4": [
+          { "roll": "1-15", "encounter": "1 巨鳄鱼", "encounterEn": "1 giant crocodile" },
+          { "roll": "16-30", "encounter": "2d4 蜥蜴人 + 1 蜥蜴人首领", "encounterEn": "2d4 lizardfolk + 1 lizardfolk shaman" },
+          { "roll": "31-45", "encounter": "1 黑龙雏龙", "encounterEn": "1 black dragon wyrmling" },
+          { "roll": "46-60", "encounter": "1d4 沼泽巫妖", "encounterEn": "1d4 sea hags" },
+          { "roll": "61-75", "encounter": "1 九头蛇", "encounterEn": "1 hydra" },
+          { "roll": "76-90", "encounter": "1d6 僵尸", "encounterEn": "1d6 zombies" }
+        ],
+        "cr5-10": [
+          { "roll": "1-20", "encounter": "1 幼年黑龙", "encounterEn": "1 young black dragon" },
+          { "roll": "21-40", "encounter": "1 九头蛇", "encounterEn": "1 hydra" },
+          { "roll": "41-60", "encounter": "1d4 食人魔", "encounterEn": "1d4 trolls" },
+          { "roll": "61-80", "encounter": "1 沼泽巫妖集会", "encounterEn": "1 hag coven" },
+          { "roll": "81-100", "encounter": "1 沙华鱼人男爵", "encounterEn": "1 sahuagin baron + 2d6 sahuagin" }
+        ]
+      }
+    },
+    "desert": {
+      "id": "desert",
+      "name": "沙漠",
+      "nameEn": "Desert",
+      "description": "干旱地区，包括沙漠、荒地和干燥平原",
+      "encounters": {
+        "cr0-1": [
+          { "roll": "1-15", "encounter": "1d6 巨蝎子", "encounterEn": "1d6 giant scorpions" },
+          { "roll": "16-30", "encounter": "2d4 土狼", "encounterEn": "2d4 hyenas" },
+          { "roll": "31-45", "encounter": "1d4 响尾蛇", "encounterEn": "1d4 giant poisonous snakes" },
+          { "roll": "46-60", "encounter": "1d6 狮鹫幼崽", "encounterEn": "1d6 stirges" },
+          { "roll": "61-75", "encounter": "1d4 干尸", "encounterEn": "1d4 mummies" }
+        ],
+        "cr2-4": [
+          { "roll": "1-20", "encounter": "1 蓝龙雏龙", "encounterEn": "1 blue dragon wyrmling" },
+          { "roll": "21-40", "encounter": "1d4 地精骑着狼", "encounterEn": "1d4 gnolls on hyenas" },
+          { "roll": "41-60", "encounter": "1 狮身人面像", "encounterEn": "1 lamia" },
+          { "roll": "61-80", "encounter": "1 木乃伊", "encounterEn": "1 mummy" },
+          { "roll": "81-100", "encounter": "1d4 巨蝎子", "encounterEn": "1d4 giant scorpions" }
+        ],
+        "cr5-10": [
+          { "roll": "1-25", "encounter": "1 幼年蓝龙", "encounterEn": "1 young blue dragon" },
+          { "roll": "26-50", "encounter": "1 狮身人面怪", "encounterEn": "1 gynosphinx" },
+          { "roll": "51-75", "encounter": "1d4 木乃伊领主", "encounterEn": "1d4 mummy lords" },
+          { "roll": "76-100", "encounter": "1 火元素", "encounterEn": "1 fire elemental" }
+        ]
+      }
+    },
+    "underdark": {
+      "id": "underdark",
+      "name": "幽暗地域",
+      "nameEn": "Underdark",
+      "description": "地下世界，包括洞穴、隧道和地下城市",
+      "encounters": {
+        "cr0-1": [
+          { "roll": "1-10", "encounter": "2d4 巨蜈蚣", "encounterEn": "2d4 giant centipedes" },
+          { "roll": "11-20", "encounter": "1d6 巨蜘蛛", "encounterEn": "1d6 giant wolf spiders" },
+          { "roll": "21-30", "encounter": "1d4 灰矮人", "encounterEn": "1d4 duergar" },
+          { "roll": "31-40", "encounter": "2d4 地精", "encounterEn": "2d4 goblins" },
+          { "roll": "41-50", "encounter": "1 卓尔巡逻队", "encounterEn": "1 drow patrol (1d4 drow)" }
+        ],
+        "cr2-4": [
+          { "roll": "1-15", "encounter": "1 钩爪怪", "encounterEn": "1 hook horror" },
+          { "roll": "16-30", "encounter": "1d4 卓尔精灵战士", "encounterEn": "1d4 drow elite warriors" },
+          { "roll": "31-45", "encounter": "1 凝视魔", "encounterEn": "1 spectator" },
+          { "roll": "46-60", "encounter": "1 深渊魔鱼", "encounterEn": "1 aboleth" },
+          { "roll": "61-75", "encounter": "1d4 双头怪", "encounterEn": "1d4 ettins" },
+          { "roll": "76-90", "encounter": "1 黑布丁怪", "encounterEn": "1 black pudding" }
+        ],
+        "cr5-10": [
+          { "roll": "1-15", "encounter": "1 遮蔽魔", "encounterEn": "1 cloaker" },
+          { "roll": "16-30", "encounter": "1d4 深渊魔鱼", "encounterEn": "1d4 aboleths" },
+          { "roll": "31-45", "encounter": "1 紫虫", "encounterEn": "1 purple worm" },
+          { "roll": "46-60", "encounter": "1 卓尔圣武士 + 2d6 卓尔", "encounterEn": "1 drow priestess + 2d6 drow" },
+          { "roll": "61-75", "encounter": "1d4 灰矮人领主", "encounterEn": "1d4 duergar warlords" },
+          { "roll": "76-90", "encounter": "1 深渊魔鱼", "encounterEn": "1 aboleth" }
+        ]
+      }
+    },
+    "urban": {
+      "id": "urban",
+      "name": "城市",
+      "nameEn": "Urban",
+      "description": "城镇、城市和人口密集区",
+      "encounters": {
+        "cr0-1": [
+          { "roll": "1-15", "encounter": "1d4 恶棍", "encounterEn": "1d4 thugs" },
+          { "roll": "16-30", "encounter": "1d6 卫兵巡逻", "encounterEn": "1d6 guards on patrol" },
+          { "roll": "31-45", "encounter": "1 间谍", "encounterEn": "1 spy" },
+          { "roll": "46-60", "encounter": "1d4 强盗", "encounterEn": "1d4 bandits" },
+          { "roll": "61-75", "encounter": "1 贵族及随从", "encounterEn": "1 noble with retinue" },
+          { "roll": "76-90", "encounter": "2d4 平民骚乱", "encounterEn": "2d4 commoners in a riot" }
+        ],
+        "cr2-4": [
+          { "roll": "1-20", "encounter": "1d4 狂热邪教徒", "encounterEn": "1d4 cult fanatics" },
+          { "roll": "21-40", "encounter": "1 吸血鬼之子", "encounterEn": "1 vampire spawn" },
+          { "roll": "41-60", "encounter": "1 刺客", "encounterEn": "1 assassin" },
+          { "roll": "61-80", "encounter": "1d4 老兵卫队", "encounterEn": "1d4 veterans" },
+          { "roll": "81-100", "encounter": "1 法师及学徒", "encounterEn": "1 mage with apprentices" }
+        ],
+        "cr5-10": [
+          { "roll": "1-25", "encounter": "1 刺客公会突袭", "encounterEn": "Assassin guild strike team" },
+          { "roll": "26-50", "encounter": "1 吸血鬼", "encounterEn": "1 vampire" },
+          { "roll": "51-75", "encounter": "邪教集会", "encounterEn": "Cult gathering (1 cult fanatic + 2d6 cultists)" },
+          { "roll": "76-100", "encounter": "1 大法师", "encounterEn": "1 archmage" }
+        ]
+      }
+    },
+    "coastal": {
+      "id": "coastal",
+      "name": "海岸",
+      "nameEn": "Coastal",
+      "description": "海滨、海岛和近海区域",
+      "encounters": {
+        "cr0-1": [
+          { "roll": "1-15", "encounter": "1d6 巨螃蟹", "encounterEn": "1d6 giant crabs" },
+          { "roll": "16-30", "encounter": "2d4 沙华鱼人", "encounterEn": "2d4 sahuagin" },
+          { "roll": "31-45", "encounter": "1d4 人鱼", "encounterEn": "1d4 merfolk" },
+          { "roll": "46-60", "encounter": "1 海精灵", "encounterEn": "1 sea elf scout" },
+          { "roll": "61-75", "encounter": "1d6 蒸汽水母", "encounterEn": "1d6 steam mephits" }
+        ],
+        "cr2-4": [
+          { "roll": "1-20", "encounter": "1 巨鲨", "encounterEn": "1 hunter shark" },
+          { "roll": "21-40", "encounter": "1d4 沙华鱼人 + 1 沙华鱼人祭司", "encounterEn": "1d4 sahuagin + 1 sahuagin priestess" },
+          { "roll": "41-60", "encounter": "1 水元素", "encounterEn": "1 water elemental" },
+          { "roll": "61-80", "encounter": "1 海妖", "encounterEn": "1 harpy" },
+          { "roll": "81-100", "encounter": "1d4 人鱼骑士", "encounterEn": "1d4 merrow" }
+        ],
+        "cr5-10": [
+          { "roll": "1-25", "encounter": "1 幼年青铜龙", "encounterEn": "1 young bronze dragon" },
+          { "roll": "26-50", "encounter": "1 海怪", "encounterEn": "1 sea hag coven" },
+          { "roll": "51-75", "encounter": "1d4 巨鳗", "encounterEn": "1d4 giant eels" },
+          { "roll": "76-100", "encounter": "1 海妖王", "encounterEn": "1 marid" }
+        ]
+      }
+    }
+  },
+  "specialEncounters": {
+    "description": "特殊事件或剧情钩子，可在任何环境中使用",
+    "encounters": [
+      {
+        "id": "merchant_caravan",
+        "name": "商队",
+        "nameEn": "Merchant Caravan",
+        "description": "一支商队正在旅行，可能需要护卫或提供交易机会",
+        "hostility": "友好"
+      },
+      {
+        "id": "lost_traveler",
+        "name": "迷路的旅行者",
+        "nameEn": "Lost Traveler",
+        "description": "一位迷路的旅行者请求帮助找到正确的方向",
+        "hostility": "友好"
+      },
+      {
+        "id": "ambush",
+        "name": "伏击",
+        "nameEn": "Ambush",
+        "description": "敌人预先设下陷阱等待冒险者",
+        "hostility": "敌对"
+      },
+      {
+        "id": "ancient_ruins",
+        "name": "古代遗迹",
+        "nameEn": "Ancient Ruins",
+        "description": "发现被遗忘的遗迹，可能藏有宝藏或危险",
+        "hostility": "中立"
+      },
+      {
+        "id": "territorial_beast",
+        "name": "领地生物",
+        "nameEn": "Territorial Beast",
+        "description": "一只生物正在保护其领地或巢穴",
+        "hostility": "敌对"
+      },
+      {
+        "id": "weather_event",
+        "name": "天气事件",
+        "nameEn": "Weather Event",
+        "description": "突发的暴风雨、沙尘暴或其他极端天气",
+        "hostility": "环境"
+      },
+      {
+        "id": "patrol",
+        "name": "巡逻队",
+        "nameEn": "Patrol",
+        "description": "当地势力的巡逻队，可能友好也可能敌对",
+        "hostility": "取决于派系关系"
+      },
+      {
+        "id": "refugee_camp",
+        "name": "难民营",
+        "nameEn": "Refugee Camp",
+        "description": "一群逃离灾难或战争的难民",
+        "hostility": "友好"
+      }
+    ]
+  },
+  "usageGuide": {
+    "howToUse": [
+      "选择适当的环境类型",
+      "根据队伍等级选择合适的CR范围",
+      "投掷d100或选择合适的遭遇",
+      "根据情况调整遭遇难度（添加或减少怪物数量）"
+    ],
+    "difficultyAdjustment": {
+      "easy": "减少25%的怪物或降低一个CR等级",
+      "hard": "增加50%的怪物或提高一个CR等级",
+      "deadly": "翻倍怪物数量或添加一个精英怪物"
+    }
+  }
+}

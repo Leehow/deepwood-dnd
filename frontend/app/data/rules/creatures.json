@@ -1,0 +1,166 @@
+{
+  "overview": {
+    "description": "一些法术和职业特性允许角色变成动物，召唤生物作魔宠，或是创造不死生物。这些生物的资料被分类列在这个附录中",
+    "descriptionEn": "Some spells and class features allow characters to transform into animals, summon creatures as familiars, or create undead",
+    "note": "使用这些资料板的详细方式可参阅《怪物图鉴》的相关内容。如有冲突也以图鉴的内容为主"
+  },
+  "creatureCategories": [
+    {
+      "category": "野兽",
+      "categoryEn": "Beasts",
+      "usedFor": ["野性形态 (Wild Shape)", "召唤动物 (Conjure Animals)", "寻找魔宠 (Find Familiar)"],
+      "creatures": [
+        {"id": "bat", "name": "蝙蝠", "nameEn": "Bat", "size": "微型", "cr": "0"},
+        {"id": "black_bear", "name": "黑熊", "nameEn": "Black Bear", "size": "中型", "cr": "1/2"},
+        {"id": "boar", "name": "野猪", "nameEn": "Boar", "size": "中型", "cr": "1/4"},
+        {"id": "brown_bear", "name": "棕熊", "nameEn": "Brown Bear", "size": "大型", "cr": "1"},
+        {"id": "constrictor_snake", "name": "蟒蛇", "nameEn": "Constrictor Snake", "size": "大型", "cr": "1/4"},
+        {"id": "crocodile", "name": "鳄鱼", "nameEn": "Crocodile", "size": "大型", "cr": "1/2"},
+        {"id": "dire_wolf", "name": "恐狼", "nameEn": "Dire Wolf", "size": "大型", "cr": "1"},
+        {"id": "frog", "name": "青蛙", "nameEn": "Frog", "size": "超微型", "cr": "0"},
+        {"id": "giant_eagle", "name": "巨鹰", "nameEn": "Giant Eagle", "size": "大型", "cr": "1"},
+        {"id": "giant_spider", "name": "巨蜘蛛", "nameEn": "Giant Spider", "size": "大型", "cr": "1"},
+        {"id": "hawk", "name": "猎鹰(鹰隼)", "nameEn": "Hawk", "size": "超微型", "cr": "0"},
+        {"id": "lion", "name": "狮子", "nameEn": "Lion", "size": "大型", "cr": "1"},
+        {"id": "mastiff", "name": "獒犬", "nameEn": "Mastiff", "size": "中型", "cr": "1/8"},
+        {"id": "mule", "name": "骡子", "nameEn": "Mule", "size": "中型", "cr": "1/8"},
+        {"id": "owl", "name": "猫头鹰", "nameEn": "Owl", "size": "超微型", "cr": "0"},
+        {"id": "panther", "name": "黑豹", "nameEn": "Panther", "size": "中型", "cr": "1/4"},
+        {"id": "poisonous_snake", "name": "毒蛇", "nameEn": "Poisonous Snake", "size": "超微型", "cr": "1/8"},
+        {"id": "rat", "name": "老鼠", "nameEn": "Rat", "size": "超微型", "cr": "0"},
+        {"id": "raven", "name": "渡鸦", "nameEn": "Raven", "size": "超微型", "cr": "0"},
+        {"id": "reef_shark", "name": "礁鲨", "nameEn": "Reef Shark", "size": "中型", "cr": "1/2"},
+        {"id": "riding_horse", "name": "乘用马", "nameEn": "Riding Horse", "size": "大型", "cr": "1/4"}
+      ]
+    },
+    {
+      "category": "邪魔",
+      "categoryEn": "Fiends",
+      "usedFor": ["寻找魔宠 (Find Familiar) - 术士/邪术师", "魔宠变体选项"],
+      "creatures": [
+        {"id": "imp", "name": "小魔鬼", "nameEn": "Imp", "size": "超微型", "cr": "1", "type": "邪魔 (魔鬼)"},
+        {"id": "quasit", "name": "夸塞魔", "nameEn": "Quasit", "size": "超微型", "cr": "1", "type": "邪魔 (恶魔)"}
+      ]
+    },
+    {
+      "category": "龙类",
+      "categoryEn": "Dragons",
+      "usedFor": ["寻找魔宠 (Find Familiar) - 特殊选项"],
+      "creatures": [
+        {"id": "pseudodragon", "name": "伪龙", "nameEn": "Pseudodragon", "size": "超微型", "cr": "1/4", "type": "龙"}
+      ]
+    },
+    {
+      "category": "精类",
+      "categoryEn": "Fey",
+      "usedFor": ["寻找魔宠 (Find Familiar) - 德鲁伊/术士选项", "召唤精类生物"],
+      "creatures": [
+        {"id": "sprite", "name": "小妖精", "nameEn": "Sprite", "size": "超微型", "cr": "1/4", "type": "精类"}
+      ]
+    },
+    {
+      "category": "不死生物",
+      "categoryEn": "Undead",
+      "usedFor": ["操纵死灵 (Animate Dead)", "创造不死生物法术"],
+      "creatures": [
+        {"id": "skeleton", "name": "骷髅", "nameEn": "Skeleton", "size": "中型", "cr": "1/4"},
+        {"id": "zombie", "name": "僵尸", "nameEn": "Zombie", "size": "中型", "cr": "1/4"}
+      ]
+    }
+  ],
+  "creatureSizeCategories": {
+    "超微型": {"nameEn": "Tiny", "space": "2.5×2.5尺", "examples": ["蝙蝠", "猫头鹰", "老鼠", "小魔鬼"]},
+    "小型": {"nameEn": "Small", "space": "5×5尺", "examples": ["小妖精"]},
+    "中型": {"nameEn": "Medium", "space": "5×5尺", "examples": ["黑熊", "野猪", "獒犬", "骷髅"]},
+    "大型": {"nameEn": "Large", "space": "10×10尺", "examples": ["棕熊", "鳄鱼", "恐狼", "巨鹰", "巨蜘蛛", "狮子"]},
+    "超大型": {"nameEn": "Huge", "space": "15×15尺"},
+    "巨型": {"nameEn": "Gargantuan", "space": "20×20尺或更大"}
+  },
+  "challengeRating": {
+    "description": "挑战等级 (Challenge Rating, CR) 表示生物对适当等级冒险队伍构成的威胁",
+    "scale": [
+      {"cr": "0", "xp": "0或10", "description": "无威胁或极弱"},
+      {"cr": "1/8", "xp": "25", "description": "极弱"},
+      {"cr": "1/4", "xp": "50", "description": "弱"},
+      {"cr": "1/2", "xp": "100", "description": "低威胁"},
+      {"cr": "1", "xp": "200", "description": "低等威胁"},
+      {"cr": "2", "xp": "450", "description": "中等威胁"},
+      {"cr": "3+", "description": "更高威胁"}
+    ]
+  },
+  "commonFamiliars": {
+    "description": "寻找魔宠 (Find Familiar) 法术可召唤的常见魔宠",
+    "normal": [
+      {"id": "bat", "name": "蝙蝠", "nameEn": "Bat", "benefit": "盲视，飞行"},
+      {"id": "cat", "name": "猫", "nameEn": "Cat", "benefit": "敏捷，黑暗视觉"},
+      {"id": "frog", "name": "青蛙", "nameEn": "Frog", "benefit": "两栖，跳跃"},
+      {"id": "hawk", "name": "猎鹰", "nameEn": "Hawk", "benefit": "飞行，敏锐视觉"},
+      {"id": "owl", "name": "猫头鹰", "nameEn": "Owl", "benefit": "飞行，敏锐听觉和视觉"},
+      {"id": "rat", "name": "老鼠", "nameEn": "Rat", "benefit": "小型，灵巧"},
+      {"id": "raven", "name": "渡鸦", "nameEn": "Raven", "benefit": "飞行，模仿"},
+      {"id": "spider", "name": "蜘蛛", "nameEn": "Spider", "benefit": "攀爬，蛛网感知"}
+    ],
+    "variant": [
+      {"id": "imp", "name": "小魔鬼", "nameEn": "Imp", "requirement": "术士/邪术师魔宠变体", "benefit": "隐形，变形，毒刺"},
+      {"id": "pseudodragon", "name": "伪龙", "nameEn": "Pseudodragon", "requirement": "特殊选项", "benefit": "飞行，魔法抗性，心灵感应"},
+      {"id": "quasit", "name": "夸塞魔", "nameEn": "Quasit", "requirement": "术士/邪术师魔宠变体", "benefit": "隐形，变形，毒爪"},
+      {"id": "sprite", "name": "小妖精", "nameEn": "Sprite", "requirement": "德鲁伊/精类术士", "benefit": "飞行，隐形，心灵感应"}
+    ]
+  },
+  "wildShapeOptions": {
+    "description": "德鲁伊野性形态可变身的常见动物",
+    "lowLevel": [
+      {"name": "野猪", "nameEn": "Boar", "cr": "1/4", "benefit": "冲锋攻击"},
+      {"name": "黑豹", "nameEn": "Panther", "cr": "1/4", "benefit": "攀爬，扑击"},
+      {"name": "恐狼", "nameEn": "Dire Wolf", "cr": "1", "benefit": "群狼战术，高伤害"}
+    ],
+    "swimming": [
+      {"name": "鳄鱼", "nameEn": "Crocodile", "cr": "1/2", "benefit": "水陆两栖，擒抱"},
+      {"name": "礁鲨", "nameEn": "Reef Shark", "cr": "1/2", "benefit": "水栖，血腥狂暴"}
+    ],
+    "flying": [
+      {"name": "巨鹰", "nameEn": "Giant Eagle", "cr": "1", "benefit": "飞行，敏锐视觉，载重"}
+    ],
+    "combat": [
+      {"name": "棕熊", "nameEn": "Brown Bear", "cr": "1", "benefit": "高HP，多重攻击"},
+      {"name": "恐狼", "nameEn": "Dire Wolf", "cr": "1", "benefit": "群狼战术，扑击"},
+      {"name": "巨蜘蛛", "nameEn": "Giant Spider", "cr": "1", "benefit": "蛛网，毒素，攀爬"}
+    ]
+  },
+  "summoningSpells": {
+    "conjureAnimals": {
+      "name": "召唤动物",
+      "nameEn": "Conjure Animals",
+      "level": 3,
+      "class": ["德鲁伊", "游侠"],
+      "options": [
+        "1个CR 2的野兽",
+        "2个CR 1的野兽",
+        "4个CR 1/2的野兽",
+        "8个CR 1/4的野兽"
+      ],
+      "commonChoices": ["恐狼", "巨鹰", "棕熊", "鳄鱼"]
+    },
+    "findFamiliar": {
+      "name": "寻找魔宠",
+      "nameEn": "Find Familiar",
+      "level": 1,
+      "class": ["法师"],
+      "ritual": true,
+      "options": ["蝙蝠", "猫", "青蛙", "猎鹰", "猫头鹰", "老鼠", "渡鸦", "蜘蛛"],
+      "variantOptions": ["小魔鬼", "伪龙", "夸塞魔", "小妖精"]
+    },
+    "animateDead": {
+      "name": "操纵死灵",
+      "nameEn": "Animate Dead",
+      "level": 3,
+      "class": ["牧师", "法师"],
+      "creates": ["骷髅", "僵尸"],
+      "duration": "24小时（需每天重新施法维持控制）"
+    }
+  },
+  "note": {
+    "fullStats": "完整的生物数据（HP、AC、属性、动作等）请参阅《怪物图鉴》或PHB附录D的详细资料板",
+    "dmReference": "DM可以根据游戏需要调整生物数据，以图鉴为准"
+  }
+}

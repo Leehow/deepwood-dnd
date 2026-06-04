@@ -1,0 +1,158 @@
+# Environment variables / secrets (never commit; .env.example templates ARE tracked)
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+*.env.local
+.env.local
+.env.*.local
+secrets.*
+*.secrets
+*credentials*.json
+
+# Configuration files with sensitive data
+config/ai_settings.json
+config/*.local.json
+setup-claude.sh
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+ENV/
+env/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.history/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+tmp/
+output/
+
+# Build outputs
+dist/
+build/
+frontend/build.predeploy.*/
+*.min.js
+*.min.css
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Debug
+debug/test_parse_output/
+debug/*.log
+debug/*.png
+debug/*.html
+debug/parse_output/
+debug/prox/
+debug/test/
+debug/.playwright-mcp/
+.playwright-mcp/
+.playwright-cli/
+
+# Runtime module working dirs (recreated on demand; never commit uploaded or
+# parsed/converted book/module content — copyright-sensitive)
+dnd-platform/upload/
+dnd-platform/configs/modules/
+dnd-platform/modules/
+__MACOSX/
+
+# Browser / E2E caches and reports
+playwright-report/
+blob-report/
+.playwright/
+
+# Archives
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+
+# Certificates and keys
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Copyright-sensitive / large media (book scans, PDFs, help files, audio, video).
+# Product sound assets under frontend/public are re-included below.
+*.pdf
+*.chm
+*.epub
+*.mobi
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.mp4
+*.mov
+*.webm
+!frontend/public/**/*.mp3
+!frontend/public/**/*.wav
+!frontend/public/**/*.ogg
+
+# Books / converted source material
+docs/books/
+docs/example/*.pdf
+trpg/
+
+# Scratch / private throwaway files (do not republish)
+/x.md
+/x2.md
+/top.tsx
+/bottom.tsx
+/little-pig.svg
+*.bak
+*.bak[0-9]
+
+# Test results
+test-results/

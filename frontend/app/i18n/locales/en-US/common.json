@@ -1,0 +1,378 @@
+{
+  "app": {
+    "name": "Deepwood",
+    "tagline": "D&D 5E online tabletop platform",
+    "shortName": "DW"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "back": "Back",
+    "close": "Close",
+    "retry": "Retry",
+    "loading": "Loading..."
+  },
+  "language": {
+    "label": "Language",
+    "en-US": "English",
+    "zh-CN": "Chinese (Simplified)"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "networkUnavailable": "Cannot connect to the server."
+  },
+  "spellCard": {
+    "badges": {
+      "concentration": "Concentration",
+      "ritual": "Ritual"
+    },
+    "tts": {
+      "readDescription": "Read spell description",
+      "stopReading": "Stop reading"
+    },
+    "labels": {
+      "castingTime": "Casting Time",
+      "range": "Range",
+      "duration": "Duration",
+      "target": "Target",
+      "components": "Components",
+      "description": "Spell Description",
+      "availableClasses": "Available Classes",
+      "damage": "Damage",
+      "healing": "Healing",
+      "saveCheck": "Saving Throw",
+      "areaOfEffect": "Area of Effect"
+    },
+    "saveEffect": {
+      "halfSuffix": " (half damage)"
+    },
+    "tooltips": {
+      "viewDetails": "View spell details"
+    },
+    "sections": {
+      "combatEffects": "Combat Effects",
+      "spellEffects": "Spell Effects",
+      "mechanicalEffects": "Mechanical Effects",
+      "atHigherLevels": "At Higher Levels",
+      "atHigherLevelsShort": "Higher Level",
+      "cantripScaling": "Cantrip Scaling",
+      "statusEffects": "Status Effects",
+      "creatureTypes": "Affected Creatures",
+      "invocationBoost": "Eldritch Invocation"
+    },
+    "saveSuccess": {
+      "half": "Success: half damage",
+      "none": "Success: no effect",
+      "partial": "Success: partial effect"
+    },
+    "area": {
+      "upTo": "up to ",
+      "feet": " ft"
+    },
+    "zone": {
+      "heavyObscurement": "Heavy Obscurement",
+      "lightObscurement": "Light Obscurement",
+      "difficultTerrain": "Difficult Terrain"
+    },
+    "castOption": {
+      "enlarge": "Enlarge",
+      "reduce": "Reduce"
+    }
+  },
+  "statusEffectsDialog": {
+    "title": "Status Effects",
+    "closeTitle": "Close",
+    "listSeparator": ", ",
+    "breakConditions": {
+      "damage": "damage taken",
+      "shaken": "being shaken",
+      "template": "Ends when: {{list}}"
+    },
+    "toolbar": {
+      "advanceRound": "Local -1 Round",
+      "advanceRoundHint": "Local manual upkeep only: decrements this panel's tracked status durations by 1 round. Does NOT advance world time or settle spell runtime; use the top-bar +1 Round for global time.",
+      "shortRest": "Short Rest (1h)",
+      "longRest": "Long Rest (8h)"
+    },
+    "concentration": {
+      "label": "Concentration",
+      "helpTitle": "What is concentration?",
+      "helpBody1": "Some spells require you to maintain concentration to keep their effects active. When you take damage you must make a Constitution save (DC 10 or half the damage, whichever is higher); failure ends concentration.",
+      "helpBody2": "You can only concentrate on one spell at a time; casting a new concentration spell automatically ends the current one.",
+      "cantrip": "Cantrip",
+      "levelN": "Lv {{n}}",
+      "viewSpellDetail": "View spell details",
+      "break": "Break",
+      "breakTitle": "Break concentration",
+      "rounds": "{{n}} rd",
+      "roundsOf": "{{n}}/{{total}} rd",
+      "arrow": "→"
+    },
+    "incomingBuffs": {
+      "title": "Incoming Spell Buffs",
+      "fromCaster": "From {{name}}",
+      "rounds": "{{n}} rd"
+    },
+    "advDisadv": {
+      "title": "Advantage / Disadvantage",
+      "categories": {
+        "checks": "Checks",
+        "attacks": "Attacks",
+        "beingAttacked": "Incoming",
+        "saves": "Saves"
+      },
+      "states": {
+        "both": "Adv + Disadv (cancel)",
+        "adv": "⬆ Advantage",
+        "disadv": "⬇ Disadvantage"
+      },
+      "tipAdv": "Advantage: {{src}}",
+      "tipDisadv": "Disadvantage: {{src}}",
+      "sources": {
+        "exhaustion": "Exhaustion {{lv}}",
+        "blinded": "Blinded",
+        "frightened": "Frightened",
+        "invisible": "Invisible",
+        "poisoned": "Poisoned",
+        "prone": "Prone",
+        "proneMelee": "Prone (melee)",
+        "restrained": "Restrained",
+        "restrainedDex": "Restrained (Dex)",
+        "stunned": "Stunned",
+        "unconscious": "Unconscious",
+        "paralyzed": "Paralyzed",
+        "petrified": "Petrified",
+        "favoredEnemy": "Favored Enemy (Survival tracking / Int recall)",
+        "favoredTerrain": "Favored Terrain (Int/Wis)",
+        "circleLand": "Circle of the Land (Nature/Survival)",
+        "effectParam": "{{name}} ({{param}})"
+      }
+    },
+    "specialBuffs": {
+      "title": "Special Buffs",
+      "knowledgeTitle": "Knowledge from the Ages: {{label}}",
+      "knowledgeDesc": "Gain {{kind}} proficiency",
+      "knowledgeRemainingSuffix": " · {{remaining}} remaining",
+      "favoredEnemyTitle": "Favored Enemy: {{detail}}",
+      "favoredEnemyDesc": "Advantage on tracking and recall checks",
+      "favoredEnemyHumanoidDetail": "{{label}} ({{races}})",
+      "favoredTerrainTitle": "Favored Terrain: {{label}}",
+      "favoredTerrainDesc": "Advantage on terrain-related exploration checks",
+      "circleLandTitle": "Circle of the Land: {{label}}",
+      "circleLandDesc": "Advantage on Nature/Survival checks",
+      "match": "(matches environment)",
+      "skill": "Skill",
+      "tool": "Tool",
+      "on": "ON",
+      "off": "OFF"
+    },
+    "addEffect": "+ Add Effect",
+    "proficiencyWarnings": { "title": "Unproficient Equipment" },
+    "customEffects": {
+      "title": "Custom Effects",
+      "advShort": "⬆ Adv",
+      "disadvShort": "⬇ Disadv",
+      "aura": "Aura {{radius}} ft",
+      "auraWithTargets": "Aura {{radius}} ft · {{targets}}",
+      "applies": "Applies: {{list}}",
+      "removeTitle": "Delete effect"
+    },
+    "conditions": {
+      "title": "Active Conditions",
+      "quickRef": "Quick Reference",
+      "quickRefHint": "(click to toggle)",
+      "addExhaustion": "+ Exhaustion",
+      "removeTitle": "Remove",
+      "spellProjectedSuffix": " (from spell)",
+      "sourceLabels": {
+        "spell": "Spell",
+        "dm": "DM",
+        "ability": "Ability",
+        "item": "Item",
+        "environment": "Environment"
+      },
+      "casterSeparator": " · "
+    },
+    "removal": {
+      "concentration": "Concentration",
+      "save": "Save",
+      "duration": "Limited",
+      "spellEnd": "Spell End",
+      "manual": "Manual",
+      "saveDC": "DC {{dc}}",
+      "expiresAt": "Expires day {{day}} {{hour}}:{{minute}}:{{second}}",
+      "roundsValue": "{{n}} rd",
+      "remainingPrefix": "Remaining {{label}}"
+    },
+    "duration": {
+      "permanent": "Permanent",
+      "permanentLabel": "Duration: permanent",
+      "label": "Duration: {{remaining}} / {{total}}",
+      "rounds": "rounds",
+      "minutes": "minutes",
+      "hours": "hours",
+      "equalsRounds": "= {{n}} rd",
+      "roundUnit": "rd",
+      "minuteUnit": "min",
+      "hourUnit": "h",
+      "zeroRounds": "0 rd"
+    },
+    "exhaustion": {
+      "title": "Exhaustion Lv {{n}}",
+      "dying": "(near death)",
+      "levels": {
+        "1": { "desc": "Disadvantage on ability checks", "tag": "⬇ Checks" },
+        "2": { "desc": "Speed halved", "tag": "½ Speed" },
+        "3": { "desc": "Disadvantage on attacks and saves", "tag": "⬇ Attack/Save" },
+        "4": { "desc": "HP maximum halved", "tag": "½ HP" },
+        "5": { "desc": "Speed reduced to 0", "tag": "⛔ Speed" },
+        "6": { "desc": "Death", "tag": "💀" }
+      }
+    },
+    "empty": {
+      "title": "No active status effects",
+      "hint": "The DM can add effects here for the character."
+    },
+    "saveAbilities": {
+      "strength": "Strength",
+      "dexterity": "Dexterity",
+      "constitution": "Constitution",
+      "intelligence": "Intelligence",
+      "wisdom": "Wisdom",
+      "charisma": "Charisma",
+      "fallback": "Save"
+    },
+    "form": {
+      "namePlaceholder": "Effect name (e.g. Bless, Faerie Fire)",
+      "modifiersLabel": "Modifiers:",
+      "helpTitle": "Usage notes",
+      "helpIntro": "Each row has three buttons to pick the effect type:",
+      "helpBonus": "Numeric — directly add/subtract a stat (e.g. AC+2, Attack -1)",
+      "helpAdv": "Advantage — roll 2d20, take the higher",
+      "helpDisadv": "Disadvantage — roll 2d20, take the lower",
+      "helpRight": "The dropdown on the right picks which stat is affected.",
+      "advShort": "⬆ Advantage",
+      "disadvShort": "⬇ Disadvantage",
+      "addRow": "+ Add modifier",
+      "auraToggleTitle": "Use as aura",
+      "auraToggleDesc": "When active, surrounding tokens automatically gain the selected conditions",
+      "auraRadius": "Radius (ft)",
+      "auraIcon": "Icon",
+      "auraColor": "Color",
+      "auraDescription": "Description (optional)",
+      "auraDescPlaceholder": "e.g. Enemies in range are frightened",
+      "auraAffects": "Affects",
+      "auraSelf": "Self",
+      "auraAllies": "Allies",
+      "auraEnemies": "Enemies",
+      "auraConscious": "Requires conscious",
+      "applyConditions": "Applied conditions",
+      "applyConditionsCount": "{{n}} selected",
+      "durationLabel": "Duration:",
+      "durPermanent": "Permanent",
+      "durRounds": "rounds",
+      "durMinutes": "minutes",
+      "durHours": "hours",
+      "equalsRounds": "= {{n}} rd",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "bonusTitle": "Numeric",
+      "advTitle": "Advantage",
+      "disadvTitle": "Disadvantage",
+      "deleteRow": "Delete"
+    },
+    "modifierGroups": {
+      "core": "Core",
+      "abilities": "Abilities",
+      "saves": "Saves",
+      "skills": "Skills"
+    },
+    "params": {
+      "ac": "AC",
+      "hp_max": "HP Max",
+      "attack": "Attack",
+      "being_attacked": "Incoming",
+      "damage": "Damage",
+      "speed": "Speed",
+      "initiative": "Initiative",
+      "strength": "Strength",
+      "dexterity": "Dexterity",
+      "constitution": "Constitution",
+      "intelligence": "Intelligence",
+      "wisdom": "Wisdom",
+      "charisma": "Charisma",
+      "str_save": "Strength Save",
+      "dex_save": "Dexterity Save",
+      "con_save": "Constitution Save",
+      "int_save": "Intelligence Save",
+      "wis_save": "Wisdom Save",
+      "cha_save": "Charisma Save",
+      "all_saves": "All Saves",
+      "athletics": "Athletics",
+      "acrobatics": "Acrobatics",
+      "sleight_of_hand": "Sleight of Hand",
+      "stealth": "Stealth",
+      "arcana": "Arcana",
+      "history": "History",
+      "investigation": "Investigation",
+      "nature": "Nature",
+      "religion": "Religion",
+      "animal_handling": "Animal Handling",
+      "insight": "Insight",
+      "medicine": "Medicine",
+      "perception": "Perception",
+      "survival": "Survival",
+      "deception": "Deception",
+      "intimidation": "Intimidation",
+      "performance": "Performance",
+      "persuasion": "Persuasion",
+      "all_checks": "All Checks"
+    },
+    "conditionNames": {
+      "blinded": "Blinded",
+      "charmed": "Charmed",
+      "deafened": "Deafened",
+      "exhaustion": "Exhaustion",
+      "frightened": "Frightened",
+      "grappled": "Grappled",
+      "incapacitated": "Incapacitated",
+      "invisible": "Invisible",
+      "paralyzed": "Paralyzed",
+      "petrified": "Petrified",
+      "poisoned": "Poisoned",
+      "prone": "Prone",
+      "restrained": "Restrained",
+      "stunned": "Stunned",
+      "unconscious": "Unconscious",
+      "silenced": "Silenced",
+      "diseased": "Diseased",
+      "sleep": "Sleep",
+      "aging": "Aging",
+      "confused": "Confused"
+    },
+    "conditionDesc": {
+      "blinded": "Attacks disadvantage, attackers advantage",
+      "charmed": "Cannot attack the charmer",
+      "deafened": "Cannot hear",
+      "exhaustion": "6 levels, increasingly severe",
+      "frightened": "Disadvantage on attacks and checks",
+      "grappled": "Speed 0",
+      "incapacitated": "Cannot act or react",
+      "invisible": "Attacks advantage, attackers disadvantage",
+      "paralyzed": "Incapacitated; Str/Dex saves auto-fail",
+      "petrified": "Petrified; resist all damage",
+      "poisoned": "Disadvantage on attacks and checks",
+      "prone": "Attacks disadvantage; melee attackers advantage",
+      "restrained": "Speed 0, attacks disadvantage",
+      "stunned": "Incapacitated; Str/Dex saves auto-fail",
+      "unconscious": "Melee hits become auto-crits",
+      "silenced": "Cannot cast spells with V components",
+      "diseased": "Varies by disease",
+      "sleep": "Wake on damage or being shaken",
+      "aging": "Accelerated aging",
+      "confused": "Random actions, no reaction"
+    }
+  }
+}

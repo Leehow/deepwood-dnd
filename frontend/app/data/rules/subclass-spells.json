@@ -1,0 +1,399 @@
+{
+  "cleric": {
+    "knowledge": {
+      "id": "knowledge",
+      "name": "知识领域",
+      "nameEn": "Knowledge Domain",
+      "domainSpells": {
+        "1": [
+          "command",
+          "identify"
+        ],
+        "3": [
+          "augury",
+          "suggestion"
+        ],
+        "5": [
+          "nondetection",
+          "speak_with_dead"
+        ],
+        "7": [
+          "arcane_eye",
+          "confusion"
+        ],
+        "9": [
+          "legend_lore",
+          "scrying"
+        ]
+      }
+    },
+    "life": {
+      "id": "life",
+      "name": "生命领域",
+      "nameEn": "Life Domain",
+      "domainSpells": {
+        "1": [
+          "bless",
+          "cure_wounds"
+        ],
+        "3": [
+          "lesser_restoration",
+          "spiritual_weapon"
+        ],
+        "5": [
+          "beacon_of_hope",
+          "revivify"
+        ],
+        "7": [
+          "death_ward",
+          "guardian_of_faith"
+        ],
+        "9": [
+          "mass_cure_wounds",
+          "raise_dead"
+        ]
+      }
+    },
+    "light": {
+      "id": "light",
+      "name": "光明领域",
+      "nameEn": "Light Domain",
+      "domainSpells": {
+        "1": [
+          "burning_hands",
+          "faerie_fire"
+        ],
+        "3": [
+          "flaming_sphere",
+          "scorching_ray"
+        ],
+        "5": [
+          "daylight",
+          "fireball"
+        ],
+        "7": [
+          "guardian_of_faith",
+          "wall_of_fire"
+        ],
+        "9": [
+          "flame_strike",
+          "scrying"
+        ]
+      }
+    },
+    "nature": {
+      "id": "nature",
+      "name": "自然领域",
+      "nameEn": "Nature Domain",
+      "domainSpells": {
+        "1": [
+          "animal_friendship",
+          "speak_with_animals"
+        ],
+        "3": [
+          "barkskin",
+          "spike_growth"
+        ],
+        "5": [
+          "plant_growth",
+          "wind_wall"
+        ],
+        "7": [
+          "dominate_beast",
+          "grasping_vine"
+        ],
+        "9": [
+          "insect_plague",
+          "tree_stride"
+        ]
+      }
+    },
+    "tempest": {
+      "id": "tempest",
+      "name": "风暴领域",
+      "nameEn": "Tempest Domain",
+      "domainSpells": {
+        "1": [
+          "fog_cloud",
+          "thunderwave"
+        ],
+        "3": [
+          "gust_of_wind",
+          "shatter"
+        ],
+        "5": [
+          "call_lightning",
+          "sleet_storm"
+        ],
+        "7": [
+          "control_water",
+          "ice_storm"
+        ],
+        "9": [
+          "destructive_wave",
+          "insect_plague"
+        ]
+      }
+    },
+    "trickery": {
+      "id": "trickery",
+      "name": "诡术领域",
+      "nameEn": "Trickery Domain",
+      "domainSpells": {
+        "1": [
+          "charm_person",
+          "disguise_self"
+        ],
+        "3": [
+          "mirror_image",
+          "pass_without_trace"
+        ],
+        "5": [
+          "blink",
+          "dispel_magic"
+        ],
+        "7": [
+          "dimension_door",
+          "polymorph"
+        ],
+        "9": [
+          "dominate_person",
+          "modify_memory"
+        ]
+      }
+    },
+    "war": {
+      "id": "war",
+      "name": "战争领域",
+      "nameEn": "War Domain",
+      "domainSpells": {
+        "1": [
+          "divine_favor",
+          "shield_of_faith"
+        ],
+        "3": [
+          "magic_weapon",
+          "spiritual_weapon"
+        ],
+        "5": [
+          "crusaders_mantle",
+          "spirit_guardians"
+        ],
+        "7": [
+          "freedom_of_movement",
+          "stoneskin"
+        ],
+        "9": [
+          "flame_strike",
+          "hold_monster"
+        ]
+      }
+    }
+  },
+  "paladin": {
+    "devotion": {
+      "id": "devotion",
+      "name": "奉献誓约",
+      "nameEn": "Oath of Devotion",
+      "oathSpells": {
+        "3": [
+          "protection_from_evil_and_good",
+          "sanctuary"
+        ],
+        "5": [
+          "lesser_restoration",
+          "zone_of_truth"
+        ],
+        "9": [
+          "beacon_of_hope",
+          "dispel_magic"
+        ],
+        "13": [
+          "freedom_of_movement",
+          "guardian_of_faith"
+        ],
+        "17": [
+          "commune",
+          "flame_strike"
+        ]
+      }
+    },
+    "ancients": {
+      "id": "ancients",
+      "name": "先古誓约",
+      "nameEn": "Oath of the Ancients",
+      "oathSpells": {
+        "3": [
+          "ensnaring_strike",
+          "speak_with_animals"
+        ],
+        "5": [
+          "moonbeam",
+          "misty_step"
+        ],
+        "9": [
+          "plant_growth",
+          "protection_from_energy"
+        ],
+        "13": [
+          "ice_storm",
+          "stoneskin"
+        ],
+        "17": [
+          "commune_with_nature",
+          "tree_stride"
+        ]
+      }
+    },
+    "vengeance": {
+      "id": "vengeance",
+      "name": "复仇誓约",
+      "nameEn": "Oath of Vengeance",
+      "oathSpells": {
+        "3": [
+          "bane",
+          "hunters_mark"
+        ],
+        "5": [
+          "hold_person",
+          "misty_step"
+        ],
+        "9": [
+          "haste",
+          "protection_from_energy"
+        ],
+        "13": [
+          "banishment",
+          "dimension_door"
+        ],
+        "17": [
+          "hold_monster",
+          "scrying"
+        ]
+      }
+    }
+  },
+  "warlock": {
+    "archfey": {
+      "id": "archfey",
+      "name": "精类领主",
+      "nameEn": "The Archfey",
+      "expandedSpells": {
+        "1": [
+          "faerie_fire",
+          "sleep"
+        ],
+        "2": [
+          "calm_emotions",
+          "phantasmal_force"
+        ],
+        "3": [
+          "blink",
+          "plant_growth"
+        ],
+        "4": [
+          "dominate_beast",
+          "greater_invisibility"
+        ],
+        "5": [
+          "dominate_person",
+          "seeming"
+        ]
+      }
+    },
+    "fiend": {
+      "id": "fiend",
+      "name": "邪魔",
+      "nameEn": "The Fiend",
+      "expandedSpells": {
+        "1": [
+          "burning_hands",
+          "command"
+        ],
+        "2": [
+          "blindness-deafness",
+          "scorching_ray"
+        ],
+        "3": [
+          "fireball",
+          "stinking_cloud"
+        ],
+        "4": [
+          "fire_shield",
+          "wall_of_fire"
+        ],
+        "5": [
+          "flame_strike",
+          "hallow"
+        ]
+      }
+    },
+    "great_old_one": {
+      "id": "great_old_one",
+      "name": "旧日支配者",
+      "nameEn": "The Great Old One",
+      "expandedSpells": {
+        "1": [
+          "dissonant_whispers",
+          "tashas_hideous_laughter"
+        ],
+        "2": [
+          "detect_thoughts",
+          "phantasmal_force"
+        ],
+        "3": [
+          "clairvoyance",
+          "sending"
+        ],
+        "4": [
+          "dominate_beast",
+          "evards_black_tentacles"
+        ],
+        "5": [
+          "dominate_person",
+          "telekinesis"
+        ]
+      }
+    }
+  },
+  "fighter": {
+    "eldritch_knight": {
+      "id": "eldritch_knight",
+      "name": "诡术师",
+      "nameEn": "Eldritch Knight",
+      "expandedSpells": {
+        "1": [
+          "cure_wounds",
+          "bless",
+          "burning_hands",
+          "faerie_fire"
+        ],
+        "2": [
+          "sleep",
+          "command",
+          "dissonant_whispers",
+          "tashas_hideous_laughter"
+        ]
+      }
+    }
+  },
+  "rogue": {
+    "arcane_trickster": {
+      "id": "arcane_trickster",
+      "name": "秘法诡术师",
+      "nameEn": "Arcane Trickster",
+      "expandedSpells": {
+        "1": [
+          "sleep",
+          "faerie_fire",
+          "bless",
+          "command",
+          "cure_wounds",
+          "dissonant_whispers",
+          "light",
+          "tashas_hideous_laughter"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "description": "预设冒险模板，用于AI引导用户快速创建模组"
+  },
+  "templates": [
+    {
+      "id": "classic_dungeon",
+      "name": "经典地下城",
+      "name_en": "Classic Dungeon Crawl",
+      "type": "location_based",
+      "icon": "🏰",
+      "description": "传统的地下城探索冒险，包含多层结构、陷阱、怪物和宝藏",
+      "recommended_level": { "min": 1, "max": 5 },
+      "estimated_sessions": "3-5",
+      "structure": {
+        "chapters": [
+          { "title": "冒险背景", "type": "beginning", "content_hint": "地下城的历史、为什么冒险者要去那里" },
+          { "title": "入口层", "type": "middle", "content_hint": "第一层探索，相对简单的遭遇" },
+          { "title": "深层探索", "type": "middle", "content_hint": "主要挑战区域，难度逐渐提升" },
+          { "title": "最深处", "type": "ending", "content_hint": "Boss战和最终宝藏" }
+        ],
+        "suggested_encounters": [
+          { "type": "combat", "difficulty": "easy", "count": 2 },
+          { "type": "exploration", "count": 2 },
+          { "type": "combat", "difficulty": "medium", "count": 3 },
+          { "type": "combat", "difficulty": "hard", "count": 1 },
+          { "type": "combat", "difficulty": "deadly", "count": 1, "note": "Boss战" }
+        ]
+      },
+      "default_goals": ["获取宝藏", "杀死一头龙或其他具有挑战性的怪物", "清除废墟"],
+      "ai_prompts": {
+        "start": "让我们创建一个经典地下城冒险。首先，这个地下城位于哪里？它是谁建造的？",
+        "villain": "地下城的主人或Boss是什么？它为什么在这里？",
+        "treasure": "冒险者最终能获得什么宝藏？"
+      }
+    },
+    {
+      "id": "wilderness_journey",
+      "name": "野外旅行",
+      "name_en": "Wilderness Journey",
+      "type": "location_based",
+      "icon": "🌲",
+      "description": "穿越危险荒野的探险之旅，包含随机遭遇、地标和目的地",
+      "recommended_level": { "min": 3, "max": 8 },
+      "estimated_sessions": "4-6",
+      "structure": {
+        "chapters": [
+          { "title": "旅程起点", "type": "beginning", "content_hint": "为什么要踏上旅途，目的地是哪里" },
+          { "title": "旅途中", "type": "middle", "content_hint": "多个旅途节点，每个有独特遭遇" },
+          { "title": "目的地", "type": "ending", "content_hint": "到达目的地后的挑战" }
+        ],
+        "suggested_encounters": [
+          { "type": "exploration", "count": 3, "note": "有趣的地标" },
+          { "type": "social", "count": 2, "note": "旅途中遇到的NPC" },
+          { "type": "combat", "difficulty": "medium", "count": 3, "note": "随机遭遇" },
+          { "type": "combat", "difficulty": "hard", "count": 1, "note": "目的地挑战" }
+        ]
+      },
+      "default_goals": ["把一名NPC护送到目标地", "寻找一处新地点", "从遥远的地方回到家"],
+      "ai_prompts": {
+        "start": "让我们创建一个野外旅行冒险。冒险者要去哪里？为什么？",
+        "journey": "旅途中会经过哪些有趣的地点？",
+        "dangers": "旅途中最大的危险是什么？"
+      }
+    },
+    {
+      "id": "villain_pursuit",
+      "name": "追踪反派",
+      "name_en": "Villain Pursuit",
+      "type": "event_based",
+      "icon": "🕵️",
+      "description": "以反派为核心的事件型冒险，追踪并阻止反派的邪恶计划",
+      "recommended_level": { "min": 5, "max": 10 },
+      "estimated_sessions": "4-8",
+      "structure": {
+        "chapters": [
+          { "title": "发现威胁", "type": "beginning", "content_hint": "冒险者如何发现反派的存在" },
+          { "title": "追踪调查", "type": "middle", "content_hint": "收集线索，了解反派的计划" },
+          { "title": "挫败阴谋", "type": "middle", "content_hint": "干扰反派的行动" },
+          { "title": "最终对决", "type": "ending", "content_hint": "与反派的决战" }
+        ],
+        "villain_action_types": ["步进行动", "腐化蔓延", "大事件"],
+        "suggested_encounters": [
+          { "type": "social", "count": 3, "note": "收集情报" },
+          { "type": "exploration", "count": 2, "note": "调查犯罪现场" },
+          { "type": "combat", "difficulty": "medium", "count": 2, "note": "反派手下" },
+          { "type": "combat", "difficulty": "deadly", "count": 1, "note": "反派本人" }
+        ]
+      },
+      "default_goals": ["将反派绳之以法", "挫败一名反派的邪恶阴谋", "确定反派的身份"],
+      "ai_prompts": {
+        "start": "让我们创建一个追踪反派的冒险。反派是谁？他的目标是什么？",
+        "plan": "反派打算如何实现目标？他的行动时间线是怎样的？",
+        "weakness": "反派有什么弱点或可以被利用的缺陷？"
+      }
+    },
+    {
+      "id": "political_intrigue",
+      "name": "政治阴谋",
+      "name_en": "Political Intrigue",
+      "type": "event_based",
+      "icon": "🎭",
+      "description": "充满阴谋诡计的城市冒险，涉及多个派系和复杂的利益关系",
+      "recommended_level": { "min": 5, "max": 12 },
+      "estimated_sessions": "5-10",
+      "structure": {
+        "chapters": [
+          { "title": "卷入漩涡", "type": "beginning", "content_hint": "冒险者如何被卷入政治斗争" },
+          { "title": "认识派系", "type": "middle", "content_hint": "了解各方势力和他们的目标" },
+          { "title": "选择立场", "type": "middle", "content_hint": "冒险者必须做出选择" },
+          { "title": "尘埃落定", "type": "ending", "content_hint": "政治斗争的最终结果" }
+        ],
+        "suggested_encounters": [
+          { "type": "social", "count": 5, "note": "与各派系的互动" },
+          { "type": "exploration", "count": 2, "note": "调查和搜集情报" },
+          { "type": "combat", "difficulty": "medium", "count": 2, "note": "暗杀和刺杀" }
+        ]
+      },
+      "default_goals": ["揭开一场颠覆统治者的阴谋", "为敌对的国家或家族进行和谈", "获得统治者的援助"],
+      "ai_prompts": {
+        "start": "让我们创建一个政治阴谋冒险。主要的派系有哪些？",
+        "conflict": "他们之间的核心冲突是什么？",
+        "player_role": "冒险者在这场斗争中扮演什么角色？"
+      }
+    },
+    {
+      "id": "oneshot",
+      "name": "单次任务",
+      "name_en": "One-Shot Adventure",
+      "type": "mixed",
+      "icon": "⚔️",
+      "description": "简单直接的单次冒险，适合1-2次聚会完成",
+      "recommended_level": { "min": 1, "max": 20 },
+      "estimated_sessions": "1-2",
+      "structure": {
+        "chapters": [
+          { "title": "任务起因", "type": "beginning", "content_hint": "简短的背景和任务描述" },
+          { "title": "任务过程", "type": "middle", "content_hint": "2-3个遭遇" },
+          { "title": "任务完成", "type": "ending", "content_hint": "简单的结局" }
+        ],
+        "suggested_encounters": [
+          { "type": "combat", "difficulty": "medium", "count": 2 },
+          { "type": "exploration", "count": 1 },
+          { "type": "combat", "difficulty": "hard", "count": 1 }
+        ]
+      },
+      "default_goals": ["拯救一名俘虏", "获取宝藏", "阻止怪物劫掠"],
+      "ai_prompts": {
+        "start": "让我们创建一个简单的单次任务。冒险者要完成什么任务？",
+        "location": "任务发生在哪里？",
+        "reward": "完成任务后的奖励是什么？"
+      }
+    },
+    {
+      "id": "mystery_investigation",
+      "name": "神秘调查",
+      "name_en": "Mystery Investigation",
+      "type": "event_based",
+      "icon": "🔍",
+      "description": "调查神秘事件的冒险，需要收集线索、分析证据、找出真相",
+      "recommended_level": { "min": 3, "max": 10 },
+      "estimated_sessions": "3-5",
+      "structure": {
+        "chapters": [
+          { "title": "神秘事件", "type": "beginning", "content_hint": "发生了什么奇怪的事" },
+          { "title": "收集线索", "type": "middle", "content_hint": "调查现场，询问证人" },
+          { "title": "揭露真相", "type": "ending", "content_hint": "发现真凶并解决问题" }
+        ],
+        "suggested_encounters": [
+          { "type": "exploration", "count": 3, "note": "调查场景" },
+          { "type": "social", "count": 3, "note": "询问NPC" },
+          { "type": "combat", "difficulty": "hard", "count": 1, "note": "面对真凶" }
+        ]
+      },
+      "default_goals": ["查明一处奇异地点或现象的本质与源头", "查明前一个冒险队伍的命运", "为一名无辜的NPC洗刷罪名"],
+      "ai_prompts": {
+        "start": "让我们创建一个神秘调查冒险。发生了什么神秘事件？",
+        "clues": "冒险者可以发现哪些线索？",
+        "truth": "事件的真相是什么？"
+      }
+    }
+  ],
+  "template_usage": {
+    "description": "模板使用说明",
+    "steps": [
+      "1. 用户选择一个模板或让AI推荐",
+      "2. AI按照模板的ai_prompts逐步引导用户",
+      "3. 根据用户回答填充模板的structure",
+      "4. 使用其他JSON文件中的随机表补充细节",
+      "5. 生成完整的自定义模组"
+    ]
+  }
+}

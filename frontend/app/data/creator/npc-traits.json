@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "source": "D&D 5E 城主指南",
+    "chapter": "第4章 创建非玩家角色",
+    "description": "NPC创建要素的随机表和指南"
+  },
+  "npc_creation_guide": {
+    "description": "详实NPC的十大要素",
+    "elements": [
+      "工作与来历",
+      "外貌",
+      "属性",
+      "天赋",
+      "癖好",
+      "与人互动",
+      "有用知识",
+      "理想",
+      "牵绊",
+      "缺点或秘密"
+    ],
+    "ai_prompt": "为重要NPC填充这10个要素，次要NPC只需1-2个特征"
+  },
+  "appearance": {
+    "description": "角色外貌特征",
+    "dice": "d20",
+    "items": [
+      { "roll": 1, "trait": "独特的珠宝：耳环、项链、戒指、手镯" },
+      { "roll": 2, "trait": "身体穿刺饰品" },
+      { "roll": 3, "trait": "华丽或古怪的衣着" },
+      { "roll": 4, "trait": "正式、干净的衣着" },
+      { "roll": 5, "trait": "褴褛、肮脏的衣着" },
+      { "roll": 6, "trait": "明显的疤痕" },
+      { "roll": 7, "trait": "缺牙" },
+      { "roll": 8, "trait": "缺手指" },
+      { "roll": 9, "trait": "罕见的瞳色（或异色瞳）" },
+      { "roll": 10, "trait": "纹身" },
+      { "roll": 11, "trait": "胎记" },
+      { "roll": 12, "trait": "罕见的肤色" },
+      { "roll": 13, "trait": "秃头" },
+      { "roll": 14, "trait": "编头发或编胡子" },
+      { "roll": 15, "trait": "罕见的发色" },
+      { "roll": 16, "trait": "神经性眼睑痉挛" },
+      { "roll": 17, "trait": "独特的鼻子" },
+      { "roll": 18, "trait": "独特的姿势（驼背或僵直）" },
+      { "roll": 19, "trait": "特别漂亮" },
+      { "roll": 20, "trait": "特别丑" }
+    ]
+  },
+  "abilities": {
+    "description": "NPC突出的属性",
+    "high_abilities": {
+      "dice": "d6",
+      "items": [
+        { "roll": 1, "ability": "力量", "description": "有力，肌肉发达，健壮如牛" },
+        { "roll": 2, "ability": "敏捷", "description": "轻盈，灵活，优雅" },
+        { "roll": 3, "ability": "体质", "description": "坚韧，健康，能承受痛苦" },
+        { "roll": 4, "ability": "智力", "description": "聪明，博学，善于分析" },
+        { "roll": 5, "ability": "感知", "description": "警觉，直觉敏锐，洞察力强" },
+        { "roll": 6, "ability": "魅力", "description": "有说服力，据理力争，天生的领袖" }
+      ]
+    },
+    "low_abilities": {
+      "dice": "d6",
+      "items": [
+        { "roll": 1, "ability": "力量", "description": "虚弱，瘦小" },
+        { "roll": 2, "ability": "敏捷", "description": "笨拙，动作迟缓" },
+        { "roll": 3, "ability": "体质", "description": "体弱多病，容易疲劳" },
+        { "roll": 4, "ability": "智力", "description": "愚笨，无知" },
+        { "roll": 5, "ability": "感知", "description": "粗心大意，容易被骗" },
+        { "roll": 6, "ability": "魅力", "description": "粗鲁，不善交际" }
+      ]
+    }
+  },
+  "talents": {
+    "description": "NPC的特殊天赋",
+    "dice": "d20",
+    "items": [
+      { "roll": 1, "talent": "演奏一种乐器" },
+      { "roll": 2, "talent": "流利地说若干种语言" },
+      { "roll": 3, "talent": "难以置信的运气" },
+      { "roll": 4, "talent": "完美记忆力" },
+      { "roll": 5, "talent": "擅长对待动物" },
+      { "roll": 6, "talent": "擅长对待孩子" },
+      { "roll": 7, "talent": "擅长处理谜题" },
+      { "roll": 8, "talent": "擅长某个游戏" },
+      { "roll": 9, "talent": "擅长模仿表演" },
+      { "roll": 10, "talent": "手绘非常漂亮" },
+      { "roll": 11, "talent": "涂画非常漂亮" },
+      { "roll": 12, "talent": "唱歌非常好听" },
+      { "roll": 13, "talent": "把所有人都喝趴" },
+      { "roll": 14, "talent": "木匠专家" },
+      { "roll": 15, "talent": "烹饪专家" },
+      { "roll": 16, "talent": "飞镖和投石游戏专家" },
+      { "roll": 17, "talent": "杂耍专家" },
+      { "roll": 18, "talent": "老练的演员和伪装大师" },
+      { "roll": 19, "talent": "老练的舞者" },
+      { "roll": 20, "talent": "掌握盗贼黑话" }
+    ]
+  },
+  "mannerisms": {
+    "description": "NPC的癖好",
+    "dice": "d20",
+    "items": [
+      { "roll": 1, "mannerism": "时常唱歌、吹口哨或哼小调" },
+      { "roll": 2, "mannerism": "用押韵或其他特殊的方式说话" },
+      { "roll": 3, "mannerism": "音调特别低或特别高" },
+      { "roll": 4, "mannerism": "口齿不清、大舌头或口吃" },
+      { "roll": 5, "mannerism": "突显吐字清晰" },
+      { "roll": 6, "mannerism": "说话大声" },
+      { "roll": 7, "mannerism": "耳语" },
+      { "roll": 8, "mannerism": "用浮夸的词或长词" },
+      { "roll": 9, "mannerism": "频繁使用错误的词" },
+      { "roll": 10, "mannerism": "用华美的誓言和感叹" },
+      { "roll": 11, "mannerism": "不断地讲笑话或双关语" },
+      { "roll": 12, "mannerism": "时常预测末日" },
+      { "roll": 13, "mannerism": "坐立不安" },
+      { "roll": 14, "mannerism": "斜视" },
+      { "roll": 15, "mannerism": "凝视远方" },
+      { "roll": 16, "mannerism": "嚼东西" },
+      { "roll": 17, "mannerism": "踱步" },
+      { "roll": 18, "mannerism": "弹手指" },
+      { "roll": 19, "mannerism": "咬指甲" },
+      { "roll": 20, "mannerism": "撩头发或拽胡须" }
+    ]
+  },
+  "interaction_traits": {
+    "description": "NPC与人互动的特质",
+    "dice": "d12",
+    "items": [
+      { "roll": 1, "trait": "好辩", "description": "喜欢争论和辩论" },
+      { "roll": 2, "trait": "傲慢", "description": "自视甚高，看不起他人" },
+      { "roll": 3, "trait": "咄咄逼人", "description": "强势，不给人喘息空间" },
+      { "roll": 4, "trait": "粗鲁", "description": "不讲礼貌，直接" },
+      { "roll": 5, "trait": "好奇", "description": "对一切都感兴趣" },
+      { "roll": 6, "trait": "亲切", "description": "友善，让人感到舒适" },
+      { "roll": 7, "trait": "诚实", "description": "不撒谎，直言不讳" },
+      { "roll": 8, "trait": "急躁", "description": "没有耐心，容易焦躁" },
+      { "roll": 9, "trait": "易怒", "description": "脾气暴躁，容易发火" },
+      { "roll": 10, "trait": "沉闷", "description": "无趣，缺乏热情" },
+      { "roll": 11, "trait": "安静", "description": "少言寡语，沉默" },
+      { "roll": 12, "trait": "多疑", "description": "不信任他人，总是怀疑" }
+    ]
+  },
+  "ideals": {
+    "description": "NPC的理想",
+    "categories": {
+      "good": {
+        "name": "善良理想",
+        "dice": "d6",
+        "items": [
+          { "roll": 1, "ideal": "美好" },
+          { "roll": 2, "ideal": "慈善" },
+          { "roll": 3, "ideal": "大义" },
+          { "roll": 4, "ideal": "生命" },
+          { "roll": 5, "ideal": "尊重" },
+          { "roll": 6, "ideal": "自我牺牲" }
+        ]
+      },
+      "evil": {
+        "name": "邪恶理想",
+        "dice": "d6",
+        "items": [
+          { "roll": 1, "ideal": "支配" },
+          { "roll": 2, "ideal": "贪婪" },
+          { "roll": 3, "ideal": "力量" },
+          { "roll": 4, "ideal": "痛苦" },
+          { "roll": 5, "ideal": "惩罚" },
+          { "roll": 6, "ideal": "杀戮" }
+        ]
+      },
+      "lawful": {
+        "name": "守序理想",
+        "dice": "d6",
+        "items": [
+          { "roll": 1, "ideal": "团结" },
+          { "roll": 2, "ideal": "公正" },
+          { "roll": 3, "ideal": "荣誉" },
+          { "roll": 4, "ideal": "逻辑" },
+          { "roll": 5, "ideal": "尽责" },
+          { "roll": 6, "ideal": "传统" }
+        ]
+      },
+      "chaotic": {
+        "name": "混乱理想",
+        "dice": "d6",
+        "items": [
+          { "roll": 1, "ideal": "转变" },
+          { "roll": 2, "ideal": "创造性" },
+          { "roll": 3, "ideal": "自由" },
+          { "roll": 4, "ideal": "自主" },
+          { "roll": 5, "ideal": "无下限" },
+          { "roll": 6, "ideal": "稀奇古怪" }
+        ]
+      },
+      "neutral": {
+        "name": "中立理想",
+        "dice": "d6",
+        "items": [
+          { "roll": 1, "ideal": "平衡" },
+          { "roll": 2, "ideal": "知识" },
+          { "roll": 3, "ideal": "和平共存" },
+          { "roll": 4, "ideal": "节制" },
+          { "roll": 5, "ideal": "中立" },
+          { "roll": 6, "ideal": "人民" }
+        ]
+      },
+      "other": {
+        "name": "其他理想",
+        "dice": "d6",
+        "items": [
+          { "roll": 1, "ideal": "抱负" },
+          { "roll": 2, "ideal": "发现" },
+          { "roll": 3, "ideal": "荣耀" },
+          { "roll": 4, "ideal": "国家" },
+          { "roll": 5, "ideal": "报偿" },
+          { "roll": 6, "ideal": "自知之明" }
+        ]
+      }
+    }
+  },
+  "bonds": {
+    "description": "NPC的牵绊",
+    "dice": "d10",
+    "items": [
+      { "roll": 1, "bond": "致力于实现某个人生目标" },
+      { "roll": 2, "bond": "保护亲密的家人" },
+      { "roll": 3, "bond": "保护同事或同胞" },
+      { "roll": 4, "bond": "忠诚于金主、主顾或雇主" },
+      { "roll": 5, "bond": "沉迷浪漫" },
+      { "roll": 6, "bond": "被吸引前去某个特别的地方" },
+      { "roll": 7, "bond": "保护某个情感纪念品" },
+      { "roll": 8, "bond": "保护某个值钱的所有物" },
+      { "roll": 9, "bond": "前往复仇" },
+      { "roll": 10, "bond": "骰两次，组合牵绊" }
+    ]
+  },
+  "flaws_secrets": {
+    "description": "NPC的缺点或秘密",
+    "dice": "d12",
+    "items": [
+      { "roll": 1, "flaw": "禁忌的爱情或易被浪漫打动" },
+      { "roll": 2, "flaw": "喜欢颓废的乐趣" },
+      { "roll": 3, "flaw": "傲慢" },
+      { "roll": 4, "flaw": "羡慕另一个生物的财产或地位" },
+      { "roll": 5, "flaw": "压倒性的贪婪" },
+      { "roll": 6, "flaw": "时常发怒" },
+      { "roll": 7, "flaw": "有一个强大的敌人" },
+      { "roll": 8, "flaw": "特殊的恐惧症" },
+      { "roll": 9, "flaw": "羞耻或令人愤慨的经历" },
+      { "roll": 10, "flaw": "不可告人的罪行或恶行" },
+      { "roll": 11, "flaw": "拥有禁忌的学识" },
+      { "roll": 12, "flaw": "勇敢而鲁莽" }
+    ]
+  },
+  "npc_roles": {
+    "description": "NPC在冒险中的角色定位",
+    "roles": [
+      {
+        "role": "反派",
+        "importance": "最高",
+        "detail_level": "完整的10要素",
+        "ai_prompt": "为反派生成完整的背景、动机和行动计划"
+      },
+      {
+        "role": "主顾",
+        "importance": "高",
+        "detail_level": "7-8个要素",
+        "ai_prompt": "重点关注其委托动机、有用知识和可能的秘密"
+      },
+      {
+        "role": "盟友",
+        "importance": "中",
+        "detail_level": "5-6个要素",
+        "ai_prompt": "重点关注其能力、牵绊和潜在的缺点"
+      },
+      {
+        "role": "次要NPC",
+        "importance": "低",
+        "detail_level": "2-3个要素",
+        "ai_prompt": "只需外貌特征和一个记忆点（癖好或天赋）"
+      }
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "source": "D&D 5E 城主指南",
+    "chapter": "第3章 创建冒险",
+    "description": "反派类型、行动模式和相关NPC"
+  },
+  "villain_types": {
+    "description": "冒险反派类型",
+    "dice": "d20",
+    "items": [
+      { "roll": [1], "type": "无特定行为趋向的野兽或怪兽", "alignment": "中立", "motivation": "本能", "keywords": ["野兽", "怪物", "无智"] },
+      { "roll": [2], "type": "执意堕落或统治一方的异怪", "alignment": "混乱邪恶", "motivation": "统治/腐化", "keywords": ["异怪", "疯狂", "统治"] },
+      { "roll": [3], "type": "执意堕落并毁灭一切的邪魔", "alignment": "混乱邪恶", "motivation": "毁灭", "keywords": ["恶魔", "毁灭", "混乱"] },
+      { "roll": [4], "type": "执意掠夺并统治一方的巨龙", "alignment": "多样", "motivation": "贪婪/统治", "keywords": ["龙", "贪婪", "力量"] },
+      { "roll": [5], "type": "执意投身掠夺的巨人", "alignment": "多样", "motivation": "掠夺", "keywords": ["巨人", "掠夺", "力量"] },
+      { "roll": [6, 7], "type": "任何行为趋向的不死生物", "alignment": "多样", "motivation": "多样", "keywords": ["不死", "吸血鬼", "巫妖"] },
+      { "roll": [8], "type": "带着神秘目标的精类生物", "alignment": "混乱中立", "motivation": "神秘", "keywords": ["精类", "神秘", "诡计"] },
+      { "roll": [9, 10], "type": "类人生物邪教徒", "alignment": "邪恶", "motivation": "信仰", "keywords": ["邪教", "信仰", "献祭"] },
+      { "roll": [11, 12], "type": "类人生物征服者", "alignment": "守序邪恶", "motivation": "征服", "keywords": ["征服", "帝国", "战争"] },
+      { "roll": [13], "type": "类人生物复仇者", "alignment": "多样", "motivation": "复仇", "keywords": ["复仇", "仇恨", "正义"] },
+      { "roll": [14, 15], "type": "意图夺权的类人生物阴谋主使", "alignment": "守序邪恶", "motivation": "权力", "keywords": ["阴谋", "政治", "权力"] },
+      { "roll": [16], "type": "类人生物犯罪策划者", "alignment": "中立邪恶", "motivation": "财富", "keywords": ["犯罪", "盗贼", "黑帮"] },
+      { "roll": [17, 18], "type": "类人生物劫掠者或破坏者", "alignment": "混乱邪恶", "motivation": "破坏", "keywords": ["劫掠", "破坏", "混乱"] },
+      { "roll": [19], "type": "受某诅咒的类人生物", "alignment": "多样", "motivation": "解除诅咒", "keywords": ["诅咒", "悲剧", "转变"] },
+      { "roll": [20], "type": "被误导的类人生物狂信者", "alignment": "多样", "motivation": "信仰", "keywords": ["狂信", "误导", "信念"] }
+    ]
+  },
+  "villain_actions": {
+    "description": "基于事件的反派行为类型",
+    "dice": "d6",
+    "items": [
+      {
+        "roll": 1,
+        "type": "大事件",
+        "type_en": "Big Event",
+        "description": "反派的计划打算在某节日、某占星事件、某仪式、某王室婚礼、某孩子的诞生日等特定时间实行。所有活动都围绕该事件准备。",
+        "timeline_hint": "设定一个具体的日期作为反派计划的完成时间",
+        "ai_prompt": "问用户：反派计划在什么特殊日子/事件时实施计划？"
+      },
+      {
+        "roll": 2,
+        "type": "肆意犯罪",
+        "type_en": "Crime Spree",
+        "description": "反派的行为会随着时间的推移变得愈加大胆和邪恶。一位杀手可能会先瞄准城市贫民窟的贫民，然后再升级到市场上屠杀。",
+        "timeline_hint": "设计一系列逐渐升级的犯罪事件",
+        "ai_prompt": "设计3-5个逐渐升级的犯罪事件，从小到大"
+      },
+      {
+        "roll": 3,
+        "type": "腐化蔓延",
+        "type_en": "Growing Corruption",
+        "description": "随着时间推移，反派的力量与影响不断扩张并影响了更多的受害者。可能以军队征服新领土，以邪教组织招募新成员，或是制作一场不断蔓延的瘟疫。",
+        "timeline_hint": "设计反派影响力扩张的阶段",
+        "ai_prompt": "描述反派的影响力如何逐步扩大"
+      },
+      {
+        "roll": 4,
+        "type": "单次罪行",
+        "type_en": "One and Done",
+        "description": "反派犯下一项罪行，然后试图逃避其后果。反派的目的不是继续实施更多的罪行，而是保持低调并逃离现场。",
+        "timeline_hint": "设计一个高价值目标和逃跑路线",
+        "ai_prompt": "反派的目标是什么？犯罪后打算如何逃脱？"
+      },
+      {
+        "roll": 5,
+        "type": "连环犯罪",
+        "type_en": "Serial Crimes",
+        "description": "反派接连的犯罪，但本质只是在不断重复。抓住这样反派的诀窍在于确定罪行背后的模式。例如连环杀手、连环纵火犯、针对某类商人的窃贼。",
+        "timeline_hint": "设计犯罪模式和规律",
+        "ai_prompt": "反派的犯罪有什么规律或模式？"
+      },
+      {
+        "roll": 6,
+        "type": "步进行动",
+        "type_en": "Step by Step",
+        "description": "反派在追求目的的过程中按特定的顺序执行一系列特定行动。例如法师偷取制造命匣的物品，邪教徒绑架七个善神的祭司作祭品。",
+        "timeline_hint": "设计反派需要完成的步骤清单",
+        "ai_prompt": "反派需要按什么顺序完成哪些步骤才能达成目标？"
+      }
+    ]
+  },
+  "allies": {
+    "description": "冒险盟友",
+    "dice": "d12",
+    "items": [
+      { "roll": 1, "type": "老练冒险者", "description": "经验丰富的冒险者，可能认识队伍中某人" },
+      { "roll": 2, "type": "新手冒险者", "description": "初出茅庐的冒险者，需要指导" },
+      { "roll": 3, "type": "热心的平民", "description": "热心帮忙但能力有限的普通人" },
+      { "roll": 4, "type": "士兵", "description": "军队成员，可能有自己的命令" },
+      { "roll": 5, "type": "祭司", "description": "神职人员，有自己的信仰" },
+      { "roll": 6, "type": "智者", "description": "博学之人，提供知识和建议" },
+      { "roll": 7, "type": "复仇者", "description": "有私人恩怨要报的人" },
+      { "roll": 8, "type": "咆哮的失心者", "description": "精神不稳定但有关键信息的人" },
+      { "roll": 9, "type": "天界生物盟友", "description": "来自上层位面的生物" },
+      { "roll": 10, "type": "精类生物盟友", "description": "来自妖精荒野的生物" },
+      { "roll": 11, "type": "伪装的怪物", "description": "假装成盟友的怪物" },
+      { "roll": 12, "type": "装成盟友的反派", "description": "潜伏在队伍中的敌人" }
+    ]
+  },
+  "patrons": {
+    "description": "冒险主顾 - 委托冒险的人",
+    "dice": "d20",
+    "items": [
+      { "roll": [1, 2], "type": "退休的冒险者", "description": "曾经的冒险者，有丰富经验" },
+      { "roll": [3, 4], "type": "本土管治者", "description": "当地领主或官员" },
+      { "roll": [5, 6], "type": "军官", "description": "军队指挥官" },
+      { "roll": [7, 8], "type": "神庙机构", "description": "宗教组织" },
+      { "roll": [9, 10], "type": "智者", "description": "学者或法师" },
+      { "roll": [11, 12], "type": "受敬仰的长者", "description": "社区中受尊敬的老人" },
+      { "roll": [13], "type": "神祇或天界生物", "description": "直接来自神明的任务" },
+      { "roll": [14], "type": "神秘的精类生物", "description": "来自妖精荒野的委托" },
+      { "roll": [15], "type": "老朋友", "description": "角色的旧识" },
+      { "roll": [16], "type": "曾经的老师", "description": "角色的导师" },
+      { "roll": [17], "type": "父母或其他家庭成员", "description": "家族的请求" },
+      { "roll": [18], "type": "绝望的平民", "description": "走投无路的普通人" },
+      { "roll": [19], "type": "参战的商人", "description": "有商业利益的商人" },
+      { "roll": [20], "type": "装成主顾的反派", "description": "伪装成委托人的敌人" }
+    ]
+  },
+  "villain_motivations": {
+    "description": "反派动机 - 帮助AI生成反派背景",
+    "categories": [
+      {
+        "category": "个人动机",
+        "items": ["复仇", "野心", "贪婪", "恐惧", "疯狂", "爱情", "嫉妒", "骄傲"]
+      },
+      {
+        "category": "理念动机",
+        "items": ["信仰", "使命", "正义（扭曲的）", "秩序", "混乱", "进化", "净化", "平衡"]
+      },
+      {
+        "category": "外部动机",
+        "items": ["被迫", "受控制", "交易", "诅咒", "预言", "命运", "生存", "保护他人"]
+      }
+    ]
+  }
+}

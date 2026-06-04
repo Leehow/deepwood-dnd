@@ -1,0 +1,1560 @@
+{
+  "aboleth": {
+    "id": "aboleth",
+    "name_en": "Aboleth",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: CON",
+        "value": 6
+      },
+      {
+        "name": "Saving Throw: INT",
+        "value": 8
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 6
+      },
+      {
+        "name": "Skill: History",
+        "value": 12
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 10
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The aboleth makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Swipe",
+        "desc": "The aboleth makes one tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Psychic Drain (Costs 2 Actions)",
+        "desc": "One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "psychic",
+              "name": "Psychic",
+              "url": "/api/2014/damage-types/psychic"
+            },
+            "damage_dice": "3d6"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": null,
+    "senses": {
+      "darkvision": "120 ft.",
+      "passive_perception": 20
+    }
+  },
+  "acolyte": {
+    "id": "acolyte",
+    "name_en": "Acolyte",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Skill: Medicine",
+        "value": 4
+      },
+      {
+        "name": "Skill: Religion",
+        "value": 2
+      }
+    ],
+    "legendary_actions": [],
+    "legendary_resistance": null,
+    "senses": {
+      "passive_perception": 12
+    }
+  },
+  "adult-black-dragon": {
+    "id": "adult-black-dragon",
+    "name_en": "Adult Black Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "acid"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 7
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 10
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 6
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 8
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 11
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 7
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 19,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+6"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 21
+    }
+  },
+  "adult-blue-dragon": {
+    "id": "adult-blue-dragon",
+    "name_en": "Adult Blue Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "lightning"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 5
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 11
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 7
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 9
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 12
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 5
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 20,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+6"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 22
+    }
+  },
+  "adult-brass-dragon": {
+    "id": "adult-brass-dragon",
+    "name_en": "Adult Brass Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "fire"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 5
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 10
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 6
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 8
+      },
+      {
+        "name": "Skill: History",
+        "value": 7
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 11
+      },
+      {
+        "name": "Skill: Persuasion",
+        "value": 8
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 5
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 19,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+6"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 21
+    }
+  },
+  "adult-bronze-dragon": {
+    "id": "adult-bronze-dragon",
+    "name_en": "Adult Bronze Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "lightning"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 5
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 11
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 7
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 9
+      },
+      {
+        "name": "Skill: Insight",
+        "value": 7
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 12
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 5
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 20,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+7"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 22
+    }
+  },
+  "adult-copper-dragon": {
+    "id": "adult-copper-dragon",
+    "name_en": "Adult Copper Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "acid"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 6
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 10
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 7
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 8
+      },
+      {
+        "name": "Skill: Deception",
+        "value": 8
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 12
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 6
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 19,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "13d6+6"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 22
+    }
+  },
+  "adult-gold-dragon": {
+    "id": "adult-gold-dragon",
+    "name_en": "Adult Gold Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "fire"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 8
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 13
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 8
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 13
+      },
+      {
+        "name": "Skill: Insight",
+        "value": 8
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 14
+      },
+      {
+        "name": "Skill: Persuasion",
+        "value": 13
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 8
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 22,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+8"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 24
+    }
+  },
+  "adult-green-dragon": {
+    "id": "adult-green-dragon",
+    "name_en": "Adult Green Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "poison"
+    ],
+    "condition_immunities": [
+      "poisoned"
+    ],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 6
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 10
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 7
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 8
+      },
+      {
+        "name": "Skill: Deception",
+        "value": 8
+      },
+      {
+        "name": "Skill: Insight",
+        "value": 7
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 12
+      },
+      {
+        "name": "Skill: Persuasion",
+        "value": 8
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 6
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 19,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+6"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 22
+    }
+  },
+  "adult-red-dragon": {
+    "id": "adult-red-dragon",
+    "name_en": "Adult Red Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "fire"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 6
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 13
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 7
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 11
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 13
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 6
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 22,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+8"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 23
+    }
+  },
+  "adult-silver-dragon": {
+    "id": "adult-silver-dragon",
+    "name_en": "Adult Silver Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "cold"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 5
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 12
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 6
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 10
+      },
+      {
+        "name": "Skill: Arcana",
+        "value": 8
+      },
+      {
+        "name": "Skill: History",
+        "value": 8
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 11
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 5
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 22,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+8"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 21
+    }
+  },
+  "adult-white-dragon": {
+    "id": "adult-white-dragon",
+    "name_en": "Adult White Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "cold"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 5
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 11
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 6
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 6
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 11
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 5
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 19,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+6"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 21
+    }
+  },
+  "air-elemental": {
+    "id": "air-elemental",
+    "name_en": "Air Elemental",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [
+      "lightning",
+      "thunder",
+      "bludgeoning, piercing, and slashing from nonmagical weapons"
+    ],
+    "damage_immunities": [
+      "poison"
+    ],
+    "condition_immunities": [
+      "exhaustion",
+      "grappled",
+      "paralyzed",
+      "petrified",
+      "poisoned",
+      "prone",
+      "restrained",
+      "unconscious"
+    ],
+    "proficiencies": [],
+    "legendary_actions": [],
+    "legendary_resistance": null,
+    "senses": {
+      "darkvision": "60 ft.",
+      "passive_perception": 10
+    }
+  },
+  "ancient-black-dragon": {
+    "id": "ancient-black-dragon",
+    "name_en": "Ancient Black Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "acid"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 9
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 14
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 9
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 11
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 16
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 9
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 23,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+8"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 26
+    }
+  },
+  "ancient-blue-dragon": {
+    "id": "ancient-blue-dragon",
+    "name_en": "Ancient Blue Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "lightning"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 7
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 15
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 10
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 12
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 17
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 7
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 24,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+9"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 27
+    }
+  },
+  "ancient-brass-dragon": {
+    "id": "ancient-brass-dragon",
+    "name_en": "Ancient Brass Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "fire"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 6
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 13
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 8
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 10
+      },
+      {
+        "name": "Skill: History",
+        "value": 9
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 14
+      },
+      {
+        "name": "Skill: Persuasion",
+        "value": 10
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 6
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 22,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+8"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 24
+    }
+  },
+  "ancient-bronze-dragon": {
+    "id": "ancient-bronze-dragon",
+    "name_en": "Ancient Bronze Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "lightning"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 7
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 15
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 10
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 12
+      },
+      {
+        "name": "Skill: Insight",
+        "value": 10
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 17
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 7
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 24,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+9"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 27
+    }
+  },
+  "ancient-copper-dragon": {
+    "id": "ancient-copper-dragon",
+    "name_en": "Ancient Copper Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "acid"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 8
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 14
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 10
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 11
+      },
+      {
+        "name": "Skill: Deception",
+        "value": 11
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 17
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 8
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 23,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+8"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 27
+    }
+  },
+  "ancient-gold-dragon": {
+    "id": "ancient-gold-dragon",
+    "name_en": "Ancient Gold Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "fire"
+    ],
+    "condition_immunities": [],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 9
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 16
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 10
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 16
+      },
+      {
+        "name": "Skill: Insight",
+        "value": 10
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 17
+      },
+      {
+        "name": "Skill: Persuasion",
+        "value": 16
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 9
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 25,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+10"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 27
+    }
+  },
+  "ancient-green-dragon": {
+    "id": "ancient-green-dragon",
+    "name_en": "Ancient Green Dragon",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+      "poison"
+    ],
+    "condition_immunities": [
+      "poisoned"
+    ],
+    "proficiencies": [
+      {
+        "name": "Saving Throw: DEX",
+        "value": 8
+      },
+      {
+        "name": "Saving Throw: CON",
+        "value": 14
+      },
+      {
+        "name": "Saving Throw: WIS",
+        "value": 10
+      },
+      {
+        "name": "Saving Throw: CHA",
+        "value": 11
+      },
+      {
+        "name": "Skill: Deception",
+        "value": 11
+      },
+      {
+        "name": "Skill: Insight",
+        "value": 10
+      },
+      {
+        "name": "Skill: Perception",
+        "value": 17
+      },
+      {
+        "name": "Skill: Persuasion",
+        "value": 11
+      },
+      {
+        "name": "Skill: Stealth",
+        "value": 8
+      }
+    ],
+    "legendary_actions": [
+      {
+        "name": "Detect",
+        "desc": "The dragon makes a Wisdom (Perception) check.",
+        "damage": []
+      },
+      {
+        "name": "Tail Attack",
+        "desc": "The dragon makes a tail attack.",
+        "damage": []
+      },
+      {
+        "name": "Wing Attack (Costs 2 Actions)",
+        "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "dc": {
+          "dc_type": {
+            "index": "dex",
+            "name": "DEX",
+            "url": "/api/2014/ability-scores/dex"
+          },
+          "dc_value": 23,
+          "success_type": "none"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+8"
+          }
+        ]
+      }
+    ],
+    "legendary_resistance": {
+      "times": 3,
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    "senses": {
+      "blindsight": "60 ft.",
+      "darkvision": "120 ft.",
+      "passive_perception": 27
+    }
+  }
+}

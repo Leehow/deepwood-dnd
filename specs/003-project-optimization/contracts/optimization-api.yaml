@@ -1,0 +1,395 @@
+openapi: 3.0.0
+info:
+  title: Project Optimization API
+  version: 1.0.0
+  description: API contracts for project optimization features including metrics, testing, and code analysis
+
+servers:
+  - url: http://localhost:8174/api
+    description: Development server
+
+paths:
+  /optimization/metrics:
+    get:
+      summary: Get performance metrics
+      operationId: getPerformanceMetrics
+      parameters:
+        - name: component
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [map, websocket, database, frontend]
+        - name: metric_type
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [fps, latency, query_count, response_time]
+        - name: from
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date-time
+        - name: to
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date-time
+      responses:
+        200:
+          description: Performance metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MetricsResponse'
+
+    post:
+      summary: Record performance metric
+      operationId: recordPerformanceMetric
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MetricRecord'
+      responses:
+        201:
+          description: Metric recorded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PerformanceMetric'
+
+  /optimization/code-analysis:
+    post:
+      summary: Analyze code for refactoring opportunities
+      operationId: analyzeCode
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                file_path:
+                  type: string
+                  description: Path to file to analyze
+                check_types:
+                  type: array
+                  items:
+                    type: string
+                    enum: [line_count, complexity, dependencies, test_coverage]
+              required:
+                - file_path
+      responses:
+        200:
+          description: Analysis results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CodeAnalysisResult'
+
+  /optimization/refactor:
+    post:
+      summary: Execute code refactoring
+      operationId: refactorCode
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                source_file:
+                  type: string
+                refactor_type:
+                  type: string
+                  enum: [split_file, extract_handlers, modularize]
+                target_directory:
+                  type: string
+              required:
+                - source_file
+                - refactor_type
+      responses:
+        200:
+          description: Refactoring complete
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RefactorResult'
+
+  /optimization/test-coverage:
+    get:
+      summary: Get test coverage report
+      operationId: getTestCoverage
+      parameters:
+        - name: module
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: type
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [unit, integration, e2e]
+      responses:
+        200:
+          description: Test coverage report
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TestCoverageReport'
+
+  /optimization/errors/recovery:
+    post:
+      summary: Report error and get recovery action
+      operationId: reportError
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ErrorReport'
+      responses:
+        200:
+          description: Recovery action
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorRecoveryResponse'
+
+  /optimization/websocket/handlers:
+    get:
+      summary: Get WebSocket handler registry
+      operationId: getWebSocketHandlers
+      responses:
+        200:
+          description: Handler registry
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  handlers:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/WebSocketHandler'
+
+    post:
+      summary: Register WebSocket handler
+      operationId: registerWebSocketHandler
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WebSocketHandler'
+      responses:
+        201:
+          description: Handler registered
+
+components:
+  schemas:
+    PerformanceMetric:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        metric_type:
+          type: string
+          enum: [fps, latency, query_count, response_time]
+        component:
+          type: string
+        value:
+          type: number
+        unit:
+          type: string
+        threshold:
+          type: number
+        measured_at:
+          type: string
+          format: date-time
+        environment:
+          type: string
+          enum: [development, staging, production]
+        context:
+          type: object
+      required:
+        - metric_type
+        - component
+        - value
+        - unit
+
+    MetricsResponse:
+      type: object
+      properties:
+        metrics:
+          type: array
+          items:
+            $ref: '#/components/schemas/PerformanceMetric'
+        summary:
+          type: object
+          properties:
+            avg_value:
+              type: number
+            min_value:
+              type: number
+            max_value:
+              type: number
+            violations:
+              type: integer
+              description: Count of threshold violations
+
+    MetricRecord:
+      type: object
+      properties:
+        metric_type:
+          type: string
+          enum: [fps, latency, query_count, response_time]
+        component:
+          type: string
+        value:
+          type: number
+        unit:
+          type: string
+        context:
+          type: object
+      required:
+        - metric_type
+        - component
+        - value
+        - unit
+
+    CodeAnalysisResult:
+      type: object
+      properties:
+        file_path:
+          type: string
+        line_count:
+          type: integer
+        complexity_score:
+          type: number
+        dependencies:
+          type: array
+          items:
+            type: string
+        test_coverage:
+          type: number
+        refactoring_suggestions:
+          type: array
+          items:
+            type: object
+            properties:
+              type:
+                type: string
+              description:
+                type: string
+              priority:
+                type: string
+                enum: [high, medium, low]
+
+    RefactorResult:
+      type: object
+      properties:
+        original_file:
+          type: string
+        new_files:
+          type: array
+          items:
+            type: object
+            properties:
+              path:
+                type: string
+              line_count:
+                type: integer
+              type:
+                type: string
+        tests_passing:
+          type: boolean
+        rollback_available:
+          type: boolean
+
+    TestCoverageReport:
+      type: object
+      properties:
+        overall_coverage:
+          type: number
+        backend_coverage:
+          type: number
+        frontend_coverage:
+          type: number
+        modules:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              coverage:
+                type: number
+              test_count:
+                type: integer
+              passing_count:
+                type: integer
+
+    ErrorReport:
+      type: object
+      properties:
+        error_type:
+          type: string
+        component:
+          type: string
+        message:
+          type: string
+        stack_trace:
+          type: string
+        context:
+          type: object
+      required:
+        - error_type
+        - component
+        - message
+
+    ErrorRecoveryResponse:
+      type: object
+      properties:
+        error_id:
+          type: string
+          format: uuid
+        recovery_action:
+          type: string
+          enum: [retry, refresh, fallback, manual]
+        retry_after_ms:
+          type: integer
+        user_message:
+          type: string
+        technical_details:
+          type: string
+
+    WebSocketHandler:
+      type: object
+      properties:
+        message_type:
+          type: string
+        handler_module:
+          type: string
+        handler_class:
+          type: string
+        avg_processing_ms:
+          type: number
+        message_count:
+          type: integer
+        error_count:
+          type: integer
+        batch_capable:
+          type: boolean
+      required:
+        - message_type
+        - handler_module
+        - handler_class

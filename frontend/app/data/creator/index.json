@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "name": "D&D 5E 模组创建知识库",
+    "description": "AI 内部参考资料 - 基于城主指南的冒险设计知识库。这些数据是给 AI 消化学习用的，不是直接展示给用户的。",
+    "source": "D&D 5E 城主指南 (Dungeon Master's Guide)",
+    "version": "1.0.0",
+    "created": "2026-01-29",
+    "usage": "AI 应先阅读 AI_GUIDE.md 了解如何使用这些知识，然后内化这些内容，用自然对话的方式帮助用户创建冒险。",
+    "important": "不要直接向用户展示这些表格或选项列表，而是将知识融入对话中。"
+  },
+  "files": {
+    "adventure-goals.json": {
+      "description": "冒险目标随机表",
+      "contents": ["地下城目标 d20", "野外目标 d20", "其他目标 d12", "基于事件的目标 d20"],
+      "usage": "AI引导用户选择冒险目标时使用"
+    },
+    "adventure-structure.json": {
+      "description": "冒险结构和框架",
+      "contents": ["大冒险要素", "故事结构(开头/中间/结尾)", "开场方式 d12", "高潮场景 d12", "冒险类型"],
+      "usage": "AI设计冒险整体框架时使用"
+    },
+    "villains-npcs.json": {
+      "description": "反派和关键NPC",
+      "contents": ["反派类型 d20", "反派行动类型 d6", "盟友 d12", "主顾 d20", "反派动机"],
+      "usage": "AI创建反派和重要NPC时使用"
+    },
+    "npc-traits.json": {
+      "description": "NPC特征随机表",
+      "contents": ["外貌 d20", "属性", "天赋 d20", "癖好 d20", "互动特质 d12", "理想", "牵绊 d10", "缺点 d12"],
+      "usage": "AI生成NPC细节时使用"
+    },
+    "dungeons.json": {
+      "description": "地下城创建指南",
+      "contents": ["所在地 d100", "奇异地点 d20", "建造者 d20", "用途 d20", "历史 d20", "设计建议"],
+      "usage": "AI创建地下城时使用"
+    },
+    "encounters.json": {
+      "description": "遭遇设计指南",
+      "contents": ["遭遇目标", "难度等级", "XP阈值表", "遭遇倍数", "当日冒险XP", "遭遇结果"],
+      "usage": "AI设计战斗和非战斗遭遇时使用"
+    },
+    "planes.json": {
+      "description": "位面系统",
+      "contents": ["位面分类", "外层位面", "回响位面", "位面旅行", "宇宙模型"],
+      "usage": "AI创建跨位面冒险时使用"
+    },
+    "templates.json": {
+      "description": "预设冒险模板",
+      "contents": ["经典地下城", "野外旅行", "追踪反派", "政治阴谋", "单次任务", "神秘调查"],
+      "usage": "AI快速引导用户创建模组时使用"
+    },
+    "treasure-rewards.json": {
+      "description": "宝藏与奖励系统",
+      "contents": ["个人宝藏表(按CR)", "财宝堆表(按CR)", "宝石价值表", "艺术品表", "魔法物品稀有度"],
+      "usage": "AI设计奖励和宝藏时使用，参考CR和队伍等级"
+    },
+    "complications.json": {
+      "description": "冒险复杂化元素",
+      "contents": ["道德困境 d20", "转折 d10", "支线任务 d8", "事件框架 d100", "反派诡计/手法/弱点"],
+      "usage": "AI为冒险增加深度和意外时使用"
+    },
+    "wilderness.json": {
+      "description": "野外旅行指南",
+      "contents": ["旅行方式", "天气表 d20", "导航DC", "觅食规则", "野外危害物", "遗迹/诡异地点 d20"],
+      "usage": "AI设计野外冒险和旅行场景时使用"
+    },
+    "settlements.json": {
+      "description": "聚落与城镇设计",
+      "contents": ["聚落类型", "种族关系 d20", "统治者状态 d20", "著名特点 d20", "随机建筑 d20", "酒馆名字生成器", "城市遭遇 d12+d8"],
+      "usage": "AI创建城镇、村庄和城市时使用"
+    }
+  },
+  "related_resources": {
+    "dm_guide": {
+      "path": "../rules/dm-guide/",
+      "description": "运行时规则参考（毒药、疾病、疯狂、陷阱等）",
+      "files": {
+        "poisons.json": "毒药类型、DC、效果",
+        "diseases.json": "疾病种类和症状",
+        "madness.json": "疯狂等级和效果",
+        "traps.json": "陷阱设计和触发",
+        "npc-traits.json": "NPC特征快速参考"
+      },
+      "usage": "这些是游戏运行时的规则参考，AI应在需要具体规则数据时查阅"
+    }
+  },
+  "ai_workflow": {
+    "description": "AI创建模组的推荐工作流程",
+    "steps": [
+      {
+        "step": 1,
+        "name": "选择模板或类型",
+        "files": ["templates.json"],
+        "action": "让用户选择预设模板，或选择基于地点/基于事件的冒险类型"
+      },
+      {
+        "step": 2,
+        "name": "确定冒险目标",
+        "files": ["adventure-goals.json"],
+        "action": "根据冒险类型，从对应的目标表中选择或随机生成"
+      },
+      {
+        "step": 3,
+        "name": "创建反派",
+        "files": ["villains-npcs.json", "complications.json"],
+        "action": "确定反派类型、动机、行动计划、诡计手法和弱点"
+      },
+      {
+        "step": 4,
+        "name": "设计地点",
+        "files": ["dungeons.json", "planes.json", "settlements.json", "wilderness.json"],
+        "action": "根据冒险类型创建地下城、城镇聚落或野外区域"
+      },
+      {
+        "step": 5,
+        "name": "创建NPC",
+        "files": ["npc-traits.json", "villains-npcs.json"],
+        "action": "为重要NPC生成特征和背景"
+      },
+      {
+        "step": 6,
+        "name": "设计遭遇",
+        "files": ["encounters.json", "complications.json", "wilderness.json"],
+        "action": "根据队伍等级设计遭遇，加入道德困境、转折和野外危害"
+      },
+      {
+        "step": 7,
+        "name": "构建故事结构",
+        "files": ["adventure-structure.json", "complications.json"],
+        "action": "确定开场、中间和高潮，设计转折和支线任务"
+      },
+      {
+        "step": 8,
+        "name": "设计奖励",
+        "files": ["treasure-rewards.json"],
+        "action": "根据队伍等级和冒险难度设计宝藏、魔法物品等奖励"
+      }
+    ]
+  },
+  "random_roll_helper": {
+    "description": "随机骰子辅助函数说明",
+    "usage": "所有带dice字段的表都可以用对应骰子随机选择",
+    "example": {
+      "table": "dungeon_goals",
+      "dice": "d20",
+      "roll_result": 8,
+      "selected": "拯救一名俘虏"
+    }
+  }
+}

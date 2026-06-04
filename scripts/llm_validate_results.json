@@ -1,0 +1,5939 @@
+{
+  "monsters": [
+    {
+      "nameEn": "Angels",
+      "field": "nameEn",
+      "ourValue": "Angels",
+      "correctValue": "Deva",
+      "note": "Official MM/SRD monster is Deva; there is no generic monster entry named 'Angels' with these statistics."
+    },
+    {
+      "nameEn": "炽天神侍",
+      "field": "nameEn",
+      "ourValue": "炽天神侍",
+      "correctValue": "Solar",
+      "note": "Official English monster name is Solar."
+    },
+    {
+      "nameEn": "炽天神侍",
+      "field": "xp",
+      "ourValue": 33,
+      "correctValue": 33000,
+      "note": "Solar is CR 21 and worth 33,000 XP."
+    },
+    {
+      "nameEn": "Animated Objects",
+      "field": "nameEn",
+      "ourValue": "Animated Objects",
+      "correctValue": "Animated Armor",
+      "note": "The provided statistics match Animated Armor, not a generic 'Animated Objects' entry."
+    },
+    {
+      "nameEn": "Aninmated Armor",
+      "field": "nameEn",
+      "ourValue": "Aninmated Armor",
+      "correctValue": "Animated Armor",
+      "note": "Official English monster name is Animated Armor."
+    },
+    {
+      "nameEn": "Banshee",
+      "field": "speed",
+      "ourValue": {
+        "walk": 0
+      },
+      "correctValue": {
+        "walk": 0,
+        "fly": 40
+      },
+      "note": "Banshee has fly 40 ft. (hover) in official MM/SRD data."
+    },
+    {
+      "nameEn": "Banshee",
+      "field": "str",
+      "ourValue": -5,
+      "correctValue": 1,
+      "note": "Ability scores are raw scores, not modifiers. Banshee STR is 1."
+    },
+    {
+      "nameEn": "Banshee",
+      "field": "dex",
+      "ourValue": 2,
+      "correctValue": 14,
+      "note": "Ability scores are raw scores, not modifiers. Banshee DEX is 14."
+    },
+    {
+      "nameEn": "Banshee",
+      "field": "int",
+      "ourValue": 1,
+      "correctValue": 12,
+      "note": "Ability scores are raw scores, not modifiers. Banshee INT is 12."
+    },
+    {
+      "nameEn": "Banshee",
+      "field": "cha",
+      "ourValue": 3,
+      "correctValue": 17,
+      "note": "Ability scores are raw scores, not modifiers. Banshee CHA is 17."
+    },
+    {
+      "nameEn": "Beholder",
+      "field": "hp",
+      "ourValue": 180,
+      "correctValue": 180,
+      "note": "Official hit points are 180 (19d10+76), but the Beholder's speed is incomplete; it should also have fly 20 ft. No numerical error in HP itself."
+    },
+    {
+      "nameEn": "Beholder",
+      "field": "speed",
+      "ourValue": {
+        "walk": 0
+      },
+      "correctValue": {
+        "walk": 0,
+        "fly": 20
+      },
+      "note": "Official speed is 0 ft., fly 20 ft. (hover)."
+    },
+    {
+      "nameEn": "Death Tyrant",
+      "field": "speed",
+      "ourValue": null,
+      "correctValue": {
+        "walk": 0,
+        "fly": 20
+      },
+      "note": "Official speed is 0 ft., fly 20 ft. (hover)."
+    },
+    {
+      "nameEn": "Spectator",
+      "field": "speed",
+      "ourValue": {
+        "walk": 0,
+        "fly": 30
+      },
+      "correctValue": {
+        "walk": 0,
+        "fly": 30
+      },
+      "note": "Official speed is 0 ft., fly 30 ft. (hover). If hover is not tracked, numerical values are correct."
+    },
+    {
+      "nameEn": "Blights",
+      "field": "nameEn",
+      "ourValue": "Blights",
+      "correctValue": "Twig Blight / Needle Blight / Vine Blight",
+      "note": "There is no official Monster Manual monster named exactly 'Blights'; blights are separate monsters with different numerical stat blocks."
+    },
+    {
+      "nameEn": "Blights",
+      "field": "hp",
+      "ourValue": 18,
+      "correctValue": "varies",
+      "note": "Twig Blight has 4 HP, Needle Blight has 11 HP, Vine Blight has 26 HP."
+    },
+    {
+      "nameEn": "Blights",
+      "field": "hpFormula",
+      "ourValue": "4d6 + 4",
+      "correctValue": "varies",
+      "note": "Twig Blight: 1d6+1; Needle Blight: 2d8+2; Vine Blight: 4d8+8."
+    },
+    {
+      "nameEn": "Blights",
+      "field": "cr",
+      "ourValue": 0.25,
+      "correctValue": "varies",
+      "note": "Twig Blight CR 1/8, Needle Blight CR 1/4, Vine Blight CR 1/2."
+    },
+    {
+      "nameEn": "Blights",
+      "field": "xp",
+      "ourValue": 50,
+      "correctValue": "varies",
+      "note": "Twig Blight 25 XP, Needle Blight 50 XP, Vine Blight 100 XP."
+    },
+    {
+      "nameEn": "Blights",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": "varies",
+      "note": "Twig Blight 20 ft.; Needle Blight 30 ft.; Vine Blight 10 ft."
+    },
+    {
+      "nameEn": "Blights",
+      "field": "str",
+      "ourValue": 8,
+      "correctValue": "varies",
+      "note": "Twig Blight STR 6; Needle Blight STR 12; Vine Blight STR 15."
+    },
+    {
+      "nameEn": "Blights",
+      "field": "dex",
+      "ourValue": 14,
+      "correctValue": "varies",
+      "note": "Twig Blight DEX 13; Needle Blight DEX 12; Vine Blight DEX 8."
+    },
+    {
+      "nameEn": "Blights",
+      "field": "con",
+      "ourValue": 12,
+      "correctValue": "varies",
+      "note": "Twig Blight CON 12; Needle Blight CON 13; Vine Blight CON 14."
+    },
+    {
+      "nameEn": "Blights",
+      "field": "int",
+      "ourValue": 2,
+      "correctValue": "varies",
+      "note": "Twig Blight INT 4; Needle Blight INT 4; Vine Blight INT 5."
+    },
+    {
+      "nameEn": "Blights",
+      "field": "wis",
+      "ourValue": 10,
+      "correctValue": "varies",
+      "note": "Twig Blight WIS 8; Needle Blight WIS 8; Vine Blight WIS 10."
+    },
+    {
+      "nameEn": "Bugbears",
+      "field": "nameEn",
+      "ourValue": "Bugbears",
+      "correctValue": "Bugbear Chief",
+      "note": "The listed numbers match Bugbear Chief, not the standard Bugbear. Official Monster Manual monster name is singular 'Bugbear Chief'."
+    },
+    {
+      "nameEn": "Cambion",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 30,
+        "fly": 60
+      },
+      "note": "Official speed is 30 ft., fly 60 ft."
+    },
+    {
+      "nameEn": "Carrion Crawler",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 30,
+        "climb": 30
+      },
+      "note": "Official speed is 30 ft., climb 30 ft."
+    },
+    {
+      "nameEn": "Crawling Claw",
+      "field": "ac",
+      "ourValue": 14,
+      "correctValue": 12,
+      "note": "Official Crawling Claw AC is 12."
+    },
+    {
+      "nameEn": "Crawling Claw",
+      "field": "hp",
+      "ourValue": 138,
+      "correctValue": 2,
+      "note": "Official Crawling Claw HP is 2."
+    },
+    {
+      "nameEn": "Crawling Claw",
+      "field": "hpFormula",
+      "ourValue": "12d12+60",
+      "correctValue": "1d4",
+      "note": "Official Crawling Claw hit point formula is 1d4."
+    },
+    {
+      "nameEn": "Crawling Claw",
+      "field": "cr",
+      "ourValue": 6,
+      "correctValue": 0,
+      "note": "Official Crawling Claw CR is 0."
+    },
+    {
+      "nameEn": "Crawling Claw",
+      "field": "xp",
+      "ourValue": 2300,
+      "correctValue": 10,
+      "note": "Official Crawling Claw XP is 10."
+    },
+    {
+      "nameEn": "Crawling Claw",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 20,
+        "climb": 20
+      },
+      "note": "Official Crawling Claw speed is 20 ft., climb 20 ft."
+    },
+    {
+      "nameEn": "Crawling Claw",
+      "field": "str",
+      "ourValue": 20,
+      "correctValue": 13,
+      "note": "Official Crawling Claw STR is 13."
+    },
+    {
+      "nameEn": "Crawling Claw",
+      "field": "dex",
+      "ourValue": 11,
+      "correctValue": 14,
+      "note": "Official Crawling Claw DEX is 14."
+    },
+    {
+      "nameEn": "Crawling Claw",
+      "field": "con",
+      "ourValue": 20,
+      "correctValue": 11,
+      "note": "Official Crawling Claw CON is 11."
+    },
+    {
+      "nameEn": "Crawling Claw",
+      "field": "int",
+      "ourValue": 8,
+      "correctValue": 5,
+      "note": "Official Crawling Claw INT is 5."
+    },
+    {
+      "nameEn": "Crawling Claw",
+      "field": "wis",
+      "ourValue": 6,
+      "correctValue": 10,
+      "note": "Official Crawling Claw WIS is 10."
+    },
+    {
+      "nameEn": "Crawling Claw",
+      "field": "cha",
+      "ourValue": 10,
+      "correctValue": 4,
+      "note": "Official Crawling Claw CHA is 4."
+    },
+    {
+      "nameEn": "Cyclops",
+      "field": "xp",
+      "ourValue": 2,
+      "correctValue": 2300,
+      "note": "Official Cyclops XP is 2,300."
+    },
+    {
+      "nameEn": "Death Knight",
+      "field": "dex",
+      "ourValue": null,
+      "correctValue": 11,
+      "note": "Official Death Knight DEX is 11."
+    },
+    {
+      "nameEn": "Death Knight",
+      "field": "con",
+      "ourValue": null,
+      "correctValue": 20,
+      "note": "Official Death Knight CON is 20."
+    },
+    {
+      "nameEn": "Death Knight",
+      "field": "cha",
+      "ourValue": null,
+      "correctValue": 18,
+      "note": "Official Death Knight CHA is 18."
+    },
+    {
+      "nameEn": "Lord Soth",
+      "field": "cr",
+      "ourValue": 17,
+      "correctValue": 19,
+      "note": "Official Lord Soth CR is 19."
+    },
+    {
+      "nameEn": "Lord Soth",
+      "field": "xp",
+      "ourValue": 18000,
+      "correctValue": 22000,
+      "note": "Official Lord Soth XP is 22,000."
+    },
+    {
+      "nameEn": "Lord Soth",
+      "field": "hp",
+      "ourValue": 180,
+      "correctValue": 228,
+      "note": "Official Lord Soth HP is 228."
+    },
+    {
+      "nameEn": "Lord Soth",
+      "field": "hpFormula",
+      "ourValue": "19d8+95",
+      "correctValue": "24d8+120",
+      "note": "Official Lord Soth hit point formula is 24d8+120."
+    },
+    {
+      "nameEn": "Lord Soth",
+      "field": "int",
+      "ourValue": 12,
+      "correctValue": 16,
+      "note": "Official Lord Soth INT is 16."
+    },
+    {
+      "nameEn": "Lord Soth",
+      "field": "wis",
+      "ourValue": 16,
+      "correctValue": 12,
+      "note": "Official Lord Soth WIS is 12."
+    },
+    {
+      "nameEn": "Demilich",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "fly": 30
+      },
+      "note": "Official Demilich speed is fly 30 ft. only."
+    },
+    {
+      "nameEn": "Acererak and His Disciples",
+      "field": "nameEn",
+      "ourValue": "Acererak and His Disciples",
+      "correctValue": "Acererak",
+      "note": "Official Monster Manual / SRD monster is Acererak, not 'Acererak and His Disciples'."
+    },
+    {
+      "nameEn": "Acererak and His Disciples",
+      "field": "ac",
+      "ourValue": 20,
+      "correctValue": 21,
+      "note": "Official Acererak AC is 21."
+    },
+    {
+      "nameEn": "Acererak and His Disciples",
+      "field": "hp",
+      "ourValue": 80,
+      "correctValue": 285,
+      "note": "Official Acererak HP is 285."
+    },
+    {
+      "nameEn": "Acererak and His Disciples",
+      "field": "hpFormula",
+      "ourValue": "20d4",
+      "correctValue": "30d8+150",
+      "note": "Official Acererak hit point formula is 30d8+150."
+    },
+    {
+      "nameEn": "Acererak and His Disciples",
+      "field": "speed",
+      "ourValue": {
+        "walk": 0,
+        "fly": 30
+      },
+      "correctValue": {
+        "walk": 30
+      },
+      "note": "Official Acererak speed is 30 ft."
+    },
+    {
+      "nameEn": "Acererak and His Disciples",
+      "field": "str",
+      "ourValue": 1,
+      "correctValue": 13,
+      "note": "Official Acererak STR is 13."
+    },
+    {
+      "nameEn": "Acererak and His Disciples",
+      "field": "dex",
+      "ourValue": 20,
+      "correctValue": 16,
+      "note": "Official Acererak DEX is 16."
+    },
+    {
+      "nameEn": "Acererak and His Disciples",
+      "field": "con",
+      "ourValue": 10,
+      "correctValue": 20,
+      "note": "Official Acererak CON is 20."
+    },
+    {
+      "nameEn": "Acererak and His Disciples",
+      "field": "wis",
+      "ourValue": 17,
+      "correctValue": 17,
+      "note": "No error in WIS; omitted per instructions."
+    },
+    {
+      "nameEn": "Demons",
+      "field": "nameEn",
+      "ourValue": "Demons",
+      "correctValue": "Nalfeshnee",
+      "note": "The provided stats correspond to no official MM/SRD monster named 'Demons'; official MM/SRD stat block matching these broad values is not a valid monster entry."
+    },
+    {
+      "nameEn": "Demons",
+      "field": "ac",
+      "ourValue": 19,
+      "correctValue": 18,
+      "note": "Closest official MM/SRD match is Nalfeshnee, which has AC 18."
+    },
+    {
+      "nameEn": "Demons",
+      "field": "hp",
+      "ourValue": 250,
+      "correctValue": 184,
+      "note": "Closest official MM/SRD match is Nalfeshnee, which has 184 HP."
+    },
+    {
+      "nameEn": "Demons",
+      "field": "hpFormula",
+      "ourValue": "18d10+144",
+      "correctValue": "16d10+96",
+      "note": "Closest official MM/SRD match is Nalfeshnee, which has hit point formula 16d10+96."
+    },
+    {
+      "nameEn": "Demons",
+      "field": "speed",
+      "ourValue": {
+        "walk": 40
+      },
+      "correctValue": {
+        "walk": 20,
+        "fly": 30
+      },
+      "note": "Closest official MM/SRD match is Nalfeshnee, which has speed 20 ft., fly 30 ft."
+    },
+    {
+      "nameEn": "Demons",
+      "field": "dex",
+      "ourValue": 12,
+      "correctValue": 10,
+      "note": "Closest official MM/SRD match is Nalfeshnee, which has DEX 10."
+    },
+    {
+      "nameEn": "Demons",
+      "field": "int",
+      "ourValue": 16,
+      "correctValue": 19,
+      "note": "Closest official MM/SRD match is Nalfeshnee, which has INT 19."
+    },
+    {
+      "nameEn": "Demons",
+      "field": "wis",
+      "ourValue": 14,
+      "correctValue": 12,
+      "note": "Closest official MM/SRD match is Nalfeshnee, which has WIS 12."
+    },
+    {
+      "nameEn": "Demon Lords",
+      "field": "nameEn",
+      "ourValue": "Demon Lords",
+      "correctValue": "Glabrezu",
+      "note": "The provided stats correspond to no official MM/SRD monster named 'Demon Lords'; closest official MM/SRD match is Glabrezu."
+    },
+    {
+      "nameEn": "Demon Lords",
+      "field": "ac",
+      "ourValue": 17,
+      "correctValue": 17,
+      "note": "No error in AC; omitted per instructions."
+    },
+    {
+      "nameEn": "Demon Lords",
+      "field": "hp",
+      "ourValue": 250,
+      "correctValue": 157,
+      "note": "Closest official MM/SRD match is Glabrezu, which has 157 HP."
+    },
+    {
+      "nameEn": "Demon Lords",
+      "field": "hpFormula",
+      "ourValue": "18d10+144",
+      "correctValue": "15d10+75",
+      "note": "Closest official MM/SRD match is Glabrezu, which has hit point formula 15d10+75."
+    },
+    {
+      "nameEn": "Demon Lords",
+      "field": "cr",
+      "ourValue": 9,
+      "correctValue": 9,
+      "note": "No error in CR; omitted per instructions."
+    },
+    {
+      "nameEn": "Demon Lords",
+      "field": "xp",
+      "ourValue": 6400,
+      "correctValue": 5000,
+      "note": "Closest official MM/SRD match is Glabrezu, which grants 5,000 XP."
+    },
+    {
+      "nameEn": "Demon Lords",
+      "field": "speed",
+      "ourValue": {
+        "walk": 40
+      },
+      "correctValue": {
+        "walk": 40
+      },
+      "note": "No error in speed; omitted per instructions."
+    },
+    {
+      "nameEn": "Demon Lords",
+      "field": "str",
+      "ourValue": 22,
+      "correctValue": 20,
+      "note": "Closest official MM/SRD match is Glabrezu, which has STR 20."
+    },
+    {
+      "nameEn": "Demon Lords",
+      "field": "dex",
+      "ourValue": 16,
+      "correctValue": 15,
+      "note": "Closest official MM/SRD match is Glabrezu, which has DEX 15."
+    },
+    {
+      "nameEn": "Demon Lords",
+      "field": "con",
+      "ourValue": 20,
+      "correctValue": 21,
+      "note": "Closest official MM/SRD match is Glabrezu, which has CON 21."
+    },
+    {
+      "nameEn": "Demon Lords",
+      "field": "wis",
+      "ourValue": 14,
+      "correctValue": 16,
+      "note": "Closest official MM/SRD match is Glabrezu, which has WIS 16."
+    },
+    {
+      "nameEn": "Baphomet",
+      "field": "cr",
+      "ourValue": 9,
+      "correctValue": 23,
+      "note": "Official Baphomet CR is 23."
+    },
+    {
+      "nameEn": "Baphomet",
+      "field": "xp",
+      "ourValue": 5000,
+      "correctValue": 50000,
+      "note": "Official Baphomet XP is 50,000."
+    },
+    {
+      "nameEn": "Baphomet",
+      "field": "ac",
+      "ourValue": 14,
+      "correctValue": 22,
+      "note": "Official Baphomet AC is 22."
+    },
+    {
+      "nameEn": "Baphomet",
+      "field": "hp",
+      "ourValue": 200,
+      "correctValue": 319,
+      "note": "Official Baphomet HP is 319."
+    },
+    {
+      "nameEn": "Baphomet",
+      "field": "hpFormula",
+      "ourValue": "16d12+96",
+      "correctValue": "22d12+176",
+      "note": "Official Baphomet hit point formula is 22d12+176."
+    },
+    {
+      "nameEn": "Baphomet",
+      "field": "str",
+      "ourValue": 27,
+      "correctValue": 30,
+      "note": "Official Baphomet STR is 30."
+    },
+    {
+      "nameEn": "Baphomet",
+      "field": "dex",
+      "ourValue": 10,
+      "correctValue": 14,
+      "note": "Official Baphomet DEX is 14."
+    },
+    {
+      "nameEn": "Baphomet",
+      "field": "con",
+      "ourValue": 22,
+      "correctValue": 26,
+      "note": "Official Baphomet CON is 26."
+    },
+    {
+      "nameEn": "Baphomet",
+      "field": "int",
+      "ourValue": 12,
+      "correctValue": 18,
+      "note": "Official Baphomet INT is 18."
+    },
+    {
+      "nameEn": "Baphomet",
+      "field": "cha",
+      "ourValue": 16,
+      "correctValue": 24,
+      "note": "Official Baphomet CHA is 24."
+    },
+    {
+      "nameEn": "Demogorgon",
+      "field": "ac",
+      "ourValue": 14,
+      "correctValue": 22,
+      "note": "Official Demogorgon AC is 22."
+    },
+    {
+      "nameEn": "Demogorgon",
+      "field": "hp",
+      "ourValue": 114,
+      "correctValue": 464,
+      "note": "Official Demogorgon HP is 464."
+    },
+    {
+      "nameEn": "Demogorgon",
+      "field": "hpFormula",
+      "ourValue": "12d10+48",
+      "correctValue": "27d12+297",
+      "note": "Official Demogorgon hit point formula is 27d12+297."
+    },
+    {
+      "nameEn": "Demogorgon",
+      "field": "cr",
+      "ourValue": 6,
+      "correctValue": 26,
+      "note": "Official Demogorgon CR is 26."
+    },
+    {
+      "nameEn": "Demogorgon",
+      "field": "xp",
+      "ourValue": 2300,
+      "correctValue": 90000,
+      "note": "Official Demogorgon XP is 90,000."
+    },
+    {
+      "nameEn": "Demogorgon",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 50,
+        "swim": 50
+      },
+      "note": "Official Demogorgon speed is 50 ft., swim 50 ft."
+    },
+    {
+      "nameEn": "Demogorgon",
+      "field": "str",
+      "ourValue": 19,
+      "correctValue": 29,
+      "note": "Official Demogorgon STR is 29."
+    },
+    {
+      "nameEn": "Demogorgon",
+      "field": "dex",
+      "ourValue": 11,
+      "correctValue": 14,
+      "note": "Official Demogorgon DEX is 14."
+    },
+    {
+      "nameEn": "Demogorgon",
+      "field": "con",
+      "ourValue": 19,
+      "correctValue": 26,
+      "note": "Official Demogorgon CON is 26."
+    },
+    {
+      "nameEn": "Demogorgon",
+      "field": "int",
+      "ourValue": 3,
+      "correctValue": 20,
+      "note": "Official Demogorgon INT is 20."
+    },
+    {
+      "nameEn": "Demogorgon",
+      "field": "wis",
+      "ourValue": 14,
+      "correctValue": 17,
+      "note": "Official Demogorgon WIS is 17."
+    },
+    {
+      "nameEn": "Demogorgon",
+      "field": "cha",
+      "ourValue": 10,
+      "correctValue": 25,
+      "note": "Official Demogorgon CHA is 25."
+    },
+    {
+      "nameEn": "Graz'zt",
+      "field": "hp",
+      "ourValue": 310,
+      "correctValue": 346,
+      "note": "Official Graz'zt HP is 346."
+    },
+    {
+      "nameEn": "Graz'zt",
+      "field": "hpFormula",
+      "ourValue": "23d10+161",
+      "correctValue": "28d10+192",
+      "note": "Official Graz'zt hit point formula is 28d10+192."
+    },
+    {
+      "nameEn": "Graz'zt",
+      "field": "speed",
+      "ourValue": {
+        "walk": null
+      },
+      "correctValue": {
+        "walk": 40
+      },
+      "note": "Official Graz'zt speed is 40 ft."
+    },
+    {
+      "nameEn": "Juiblex",
+      "field": "ac",
+      "ourValue": 7,
+      "correctValue": 18,
+      "note": "Official Juiblex AC is 18."
+    },
+    {
+      "nameEn": "Juiblex",
+      "field": "hp",
+      "ourValue": 85,
+      "correctValue": 350,
+      "note": "Official Juiblex HP is 350."
+    },
+    {
+      "nameEn": "Juiblex",
+      "field": "hpFormula",
+      "ourValue": "10d10+30",
+      "correctValue": "20d12+220",
+      "note": "Official Juiblex hit point formula is 20d12+220."
+    },
+    {
+      "nameEn": "Juiblex",
+      "field": "cr",
+      "ourValue": 4,
+      "correctValue": 23,
+      "note": "Official Juiblex CR is 23."
+    },
+    {
+      "nameEn": "Juiblex",
+      "field": "xp",
+      "ourValue": 1100,
+      "correctValue": 50000,
+      "note": "Official Juiblex XP is 50,000."
+    },
+    {
+      "nameEn": "Juiblex",
+      "field": "speed",
+      "ourValue": {
+        "walk": 20
+      },
+      "correctValue": {
+        "walk": 30
+      },
+      "note": "Official Juiblex speed is 30 ft."
+    },
+    {
+      "nameEn": "Juiblex",
+      "field": "str",
+      "ourValue": 16,
+      "correctValue": 24,
+      "note": "Official Juiblex STR is 24."
+    },
+    {
+      "nameEn": "Juiblex",
+      "field": "dex",
+      "ourValue": 5,
+      "correctValue": 10,
+      "note": "Official Juiblex DEX is 10."
+    },
+    {
+      "nameEn": "Juiblex",
+      "field": "con",
+      "ourValue": 16,
+      "correctValue": 23,
+      "note": "Official Juiblex CON is 23."
+    },
+    {
+      "nameEn": "Juiblex",
+      "field": "int",
+      "ourValue": 1,
+      "correctValue": 20,
+      "note": "Official Juiblex INT is 20."
+    },
+    {
+      "nameEn": "Juiblex",
+      "field": "wis",
+      "ourValue": 6,
+      "correctValue": 20,
+      "note": "Official Juiblex WIS is 20."
+    },
+    {
+      "nameEn": "Juiblex",
+      "field": "cha",
+      "ourValue": 1,
+      "correctValue": 16,
+      "note": "Official Juiblex CHA is 16."
+    },
+    {
+      "nameEn": "Lolth",
+      "field": "ac",
+      "ourValue": 15,
+      "correctValue": 19,
+      "note": "Official Lolth AC is 19."
+    },
+    {
+      "nameEn": "Lolth",
+      "field": "hp",
+      "ourValue": 13,
+      "correctValue": 341,
+      "note": "Official Lolth HP is 341."
+    },
+    {
+      "nameEn": "Lolth",
+      "field": "hpFormula",
+      "ourValue": "3d8",
+      "correctValue": "22d12+198",
+      "note": "Official Lolth hit point formula is 22d12+198."
+    },
+    {
+      "nameEn": "Lolth",
+      "field": "cr",
+      "ourValue": 0.25,
+      "correctValue": 22,
+      "note": "Official Lolth CR is 22."
+    },
+    {
+      "nameEn": "Lolth",
+      "field": "xp",
+      "ourValue": 50,
+      "correctValue": 41000,
+      "note": "Official Lolth XP is 41,000."
+    },
+    {
+      "nameEn": "Lolth",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 40,
+        "climb": 40
+      },
+      "note": "Official Lolth speed is 40 ft., climb 40 ft."
+    },
+    {
+      "nameEn": "Lolth",
+      "field": "str",
+      "ourValue": 10,
+      "correctValue": 21,
+      "note": "Official Lolth STR is 21."
+    },
+    {
+      "nameEn": "Lolth",
+      "field": "dex",
+      "ourValue": 14,
+      "correctValue": 21,
+      "note": "Official Lolth DEX is 21."
+    },
+    {
+      "nameEn": "Lolth",
+      "field": "con",
+      "ourValue": 10,
+      "correctValue": 29,
+      "note": "Official Lolth CON is 29."
+    },
+    {
+      "nameEn": "Lolth",
+      "field": "int",
+      "ourValue": 11,
+      "correctValue": 20,
+      "note": "Official Lolth INT is 20."
+    },
+    {
+      "nameEn": "Lolth",
+      "field": "wis",
+      "ourValue": 11,
+      "correctValue": 17,
+      "note": "Official Lolth WIS is 17."
+    },
+    {
+      "nameEn": "Lolth",
+      "field": "cha",
+      "ourValue": 12,
+      "correctValue": 25,
+      "note": "Official Lolth CHA is 25."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "nameEn",
+      "ourValue": "Orucs",
+      "correctValue": "Orcus",
+      "note": "Official monster name is Orcus."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "ac",
+      "ourValue": 13,
+      "correctValue": 17,
+      "note": "Official Orcus AC is 17."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "hp",
+      "ourValue": 15,
+      "correctValue": 405,
+      "note": "Official Orcus HP is 405."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "hpFormula",
+      "ourValue": "2d8+6",
+      "correctValue": "30d12+210",
+      "note": "Official Orcus hit point formula is 30d12+210."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "cr",
+      "ourValue": 0.5,
+      "correctValue": 26,
+      "note": "Official Orcus CR is 26."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "xp",
+      "ourValue": 100,
+      "correctValue": 90000,
+      "note": "Official Orcus XP is 90,000."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "speed",
+      "ourValue": {},
+      "correctValue": {
+        "walk": 40,
+        "fly": 40
+      },
+      "note": "Official Orcus speed is 40 ft., fly 40 ft."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "str",
+      "ourValue": 16,
+      "correctValue": 22,
+      "note": "Official Orcus STR is 22."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "dex",
+      "ourValue": 12,
+      "correctValue": 16,
+      "note": "Official Orcus DEX is 16."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "con",
+      "ourValue": 16,
+      "correctValue": 25,
+      "note": "Official Orcus CON is 25."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "int",
+      "ourValue": 7,
+      "correctValue": 20,
+      "note": "Official Orcus INT is 20."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "wis",
+      "ourValue": 11,
+      "correctValue": 18,
+      "note": "Official Orcus WIS is 18."
+    },
+    {
+      "nameEn": "Orucs",
+      "field": "cha",
+      "ourValue": 10,
+      "correctValue": 25,
+      "note": "Official Orcus CHA is 25."
+    },
+    {
+      "nameEn": "Yeenoghu",
+      "field": "ac",
+      "ourValue": 12,
+      "correctValue": 20,
+      "note": "Official Yeenoghu AC is 20."
+    },
+    {
+      "nameEn": "Yeenoghu",
+      "field": "hp",
+      "ourValue": 22,
+      "correctValue": 333,
+      "note": "Official Yeenoghu HP is 333."
+    },
+    {
+      "nameEn": "Yeenoghu",
+      "field": "hpFormula",
+      "ourValue": "5d8",
+      "correctValue": "26d12+156",
+      "note": "Official Yeenoghu hit point formula is 26d12+156."
+    },
+    {
+      "nameEn": "Yeenoghu",
+      "field": "cr",
+      "ourValue": 1,
+      "correctValue": 24,
+      "note": "Official Yeenoghu CR is 24."
+    },
+    {
+      "nameEn": "Yeenoghu",
+      "field": "xp",
+      "ourValue": 200,
+      "correctValue": 62000,
+      "note": "Official Yeenoghu XP is 62,000."
+    },
+    {
+      "nameEn": "Yeenoghu",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 50
+      },
+      "note": "Official Yeenoghu speed is 50 ft."
+    },
+    {
+      "nameEn": "Yeenoghu",
+      "field": "str",
+      "ourValue": 13,
+      "correctValue": 29,
+      "note": "Official Yeenoghu STR is 29."
+    },
+    {
+      "nameEn": "Yeenoghu",
+      "field": "dex",
+      "ourValue": 15,
+      "correctValue": 16,
+      "note": "Official Yeenoghu DEX is 16."
+    },
+    {
+      "nameEn": "Yeenoghu",
+      "field": "con",
+      "ourValue": 10,
+      "correctValue": 23,
+      "note": "Official Yeenoghu CON is 23."
+    },
+    {
+      "nameEn": "Yeenoghu",
+      "field": "int",
+      "ourValue": 7,
+      "correctValue": 15,
+      "note": "Official Yeenoghu INT is 15."
+    },
+    {
+      "nameEn": "Yeenoghu",
+      "field": "wis",
+      "ourValue": 10,
+      "correctValue": 24,
+      "note": "Official Yeenoghu WIS is 24."
+    },
+    {
+      "nameEn": "Yeenoghu",
+      "field": "cha",
+      "ourValue": 6,
+      "correctValue": 15,
+      "note": "Official Yeenoghu CHA is 15."
+    },
+    {
+      "nameEn": "Chasme",
+      "field": "speed",
+      "ourValue": {
+        "walk": 20
+      },
+      "correctValue": {
+        "walk": 20,
+        "fly": 60
+      },
+      "note": "Official Chasme speed is 20 ft., fly 60 ft."
+    },
+    {
+      "nameEn": "Dretch",
+      "field": "ac",
+      "ourValue": 11,
+      "correctValue": 11,
+      "note": "Official Dretch AC 11 is correct, but HP formula-derived average differs elsewhere; AC itself is not incorrect."
+    },
+    {
+      "nameEn": "Dretch",
+      "field": "speed",
+      "ourValue": {
+        "walk": 20
+      },
+      "correctValue": {
+        "walk": 20
+      },
+      "note": "Official Dretch speed 20 ft. is correct; no numerical error present for speed."
+    },
+    {
+      "nameEn": "Glabrezu",
+      "field": "cr",
+      "ourValue": 9,
+      "correctValue": 13,
+      "note": "Official Glabrezu CR is 13."
+    },
+    {
+      "nameEn": "Glabrezu",
+      "field": "xp",
+      "ourValue": 5000,
+      "correctValue": 10000,
+      "note": "Official Glabrezu XP is 10,000."
+    },
+    {
+      "nameEn": "Hezrou",
+      "field": "ac",
+      "ourValue": 16,
+      "correctValue": 16,
+      "note": "Official Hezrou AC 16 is correct, but other stats differ; AC itself is not incorrect."
+    },
+    {
+      "nameEn": "Hezrou",
+      "field": "dex",
+      "ourValue": 17,
+      "correctValue": 17,
+      "note": "Official Hezrou DEX 17 is correct; no numerical error present for this field."
+    },
+    {
+      "nameEn": "Manes",
+      "field": "ac",
+      "ourValue": 19,
+      "correctValue": 9,
+      "note": "Official Manes AC is 9."
+    },
+    {
+      "nameEn": "Manes",
+      "field": "hp",
+      "ourValue": 262,
+      "correctValue": 9,
+      "note": "Official Manes HP is 9."
+    },
+    {
+      "nameEn": "Manes",
+      "field": "hpFormula",
+      "ourValue": "21d12+126",
+      "correctValue": "2d8",
+      "note": "Official Manes hit point formula is 2d8."
+    },
+    {
+      "nameEn": "Manes",
+      "field": "cr",
+      "ourValue": 19,
+      "correctValue": 0.125,
+      "note": "Official Manes CR is 1/8."
+    },
+    {
+      "nameEn": "Manes",
+      "field": "xp",
+      "ourValue": 22000,
+      "correctValue": 25,
+      "note": "Official Manes XP is 25."
+    },
+    {
+      "nameEn": "Manes",
+      "field": "speed",
+      "ourValue": {
+        "walk": 40
+      },
+      "correctValue": {
+        "walk": 20
+      },
+      "note": "Official Manes speed is 20 ft."
+    },
+    {
+      "nameEn": "Manes",
+      "field": "str",
+      "ourValue": 22,
+      "correctValue": 10,
+      "note": "Official Manes STR is 10."
+    },
+    {
+      "nameEn": "Manes",
+      "field": "dex",
+      "ourValue": 14,
+      "correctValue": 9,
+      "note": "Official Manes DEX is 9."
+    },
+    {
+      "nameEn": "Manes",
+      "field": "con",
+      "ourValue": 22,
+      "correctValue": 13,
+      "note": "Official Manes CON is 13."
+    },
+    {
+      "nameEn": "Manes",
+      "field": "int",
+      "ourValue": 18,
+      "correctValue": 3,
+      "note": "Official Manes INT is 3."
+    },
+    {
+      "nameEn": "Manes",
+      "field": "wis",
+      "ourValue": 16,
+      "correctValue": 8,
+      "note": "Official Manes WIS is 8."
+    },
+    {
+      "nameEn": "Manes",
+      "field": "cha",
+      "ourValue": 22,
+      "correctValue": 4,
+      "note": "Official Manes CHA is 4."
+    },
+    {
+      "nameEn": "Quasit",
+      "field": "cr",
+      "ourValue": 1,
+      "correctValue": 1,
+      "note": "Official CR is 1, but Quasit XP should be 200; CR itself is correct, so no CR error. Actual errors are HP formula and speed."
+    },
+    {
+      "nameEn": "Quasit",
+      "field": "hpFormula",
+      "ourValue": "3d4",
+      "correctValue": "3d4+3",
+      "note": "Official Monster Manual/SRD Quasit has 7 HP (3d4+3)."
+    },
+    {
+      "nameEn": "Quasit",
+      "field": "speed",
+      "ourValue": {
+        "walk": 40
+      },
+      "correctValue": {
+        "walk": 40,
+        "fly": 40
+      },
+      "note": "Official Quasit speed is 40 ft., fly 40 ft."
+    },
+    {
+      "nameEn": "Shadow Demon",
+      "field": "str",
+      "ourValue": -5,
+      "correctValue": 1,
+      "note": "Official Shadow Demon Strength is 1."
+    },
+    {
+      "nameEn": "Shadow Demon",
+      "field": "dex",
+      "ourValue": 5,
+      "correctValue": 19,
+      "note": "Official Shadow Demon Dexterity is 19."
+    },
+    {
+      "nameEn": "Shadow Demon",
+      "field": "int",
+      "ourValue": 2,
+      "correctValue": 14,
+      "note": "Official Shadow Demon Intelligence is 14."
+    },
+    {
+      "nameEn": "Yochlol",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 30,
+        "climb": 30
+      },
+      "note": "Official Yochlol speed is 30 ft., climb 30 ft."
+    },
+    {
+      "nameEn": "Devils",
+      "field": "nameEn",
+      "ourValue": "Devils",
+      "correctValue": null,
+      "note": "This is not a specific Monster Manual monster entry, so official AC/HP/CR/XP/speed/ability scores cannot be verified against a single creature stat block."
+    },
+    {
+      "nameEn": "Barbed Devil(哈玛魔 Hamatula)",
+      "field": "dex",
+      "ourValue": 17,
+      "correctValue": 15,
+      "note": "Official Barbed Devil Dexterity is 15."
+    },
+    {
+      "nameEn": "Bearded Devil(巴霸魔 Barbazu)",
+      "field": "con",
+      "ourValue": 15,
+      "correctValue": 14,
+      "note": "Official Bearded Devil Constitution is 15? No—official stat block is CON 15? If using MM/SRD, other listed values match; however HP formula below is incorrect."
+    },
+    {
+      "nameEn": "Bearded Devil(巴霸魔 Barbazu)",
+      "field": "hp",
+      "ourValue": 52,
+      "correctValue": 52,
+      "note": "Official HP is 52, but formula should be 8d8+16. HP itself is correct, so no HP error."
+    },
+    {
+      "nameEn": "Chain Devil (基顿魔 Kyton)",
+      "field": "hp",
+      "ourValue": 85,
+      "correctValue": 85,
+      "note": "Official HP is 85, but formula is 10d8+40; HP itself is correct, so no HP error."
+    },
+    {
+      "nameEn": "Horned Devil (雄霸魔 Malebranche)",
+      "field": "speed",
+      "ourValue": {
+        "walk": 20,
+        "fly": 60
+      },
+      "correctValue": {
+        "walk": 20,
+        "fly": 60
+      },
+      "note": "Official speed matches; no speed error."
+    },
+    {
+      "nameEn": "Imp",
+      "field": "cr",
+      "ourValue": 1,
+      "correctValue": 1,
+      "note": "Official CR is 1, but Imp XP should be 200; CR itself is correct, so no CR error. Actual error is speed."
+    },
+    {
+      "nameEn": "Imp",
+      "field": "speed",
+      "ourValue": {
+        "walk": 20,
+        "fly": 40
+      },
+      "correctValue": {
+        "walk": 20,
+        "fly": 40
+      },
+      "note": "Official Imp also has climb 20 ft."
+    },
+    {
+      "nameEn": "Lemure",
+      "field": "hpFormula",
+      "ourValue": "3d8",
+      "correctValue": "3d8",
+      "note": "Official Lemure HP is 13 (3d8), so this is correct; no error."
+    },
+    {
+      "nameEn": "Spined Devil(斯皮纳魔 Spinagon)",
+      "field": "hp",
+      "ourValue": 110,
+      "correctValue": 22,
+      "note": "Official Spined Devil has 22 HP."
+    },
+    {
+      "nameEn": "Spined Devil(斯皮纳魔 Spinagon)",
+      "field": "hpFormula",
+      "ourValue": "13d8+52",
+      "correctValue": "5d8",
+      "note": "Official Spined Devil hit dice are 5d8."
+    },
+    {
+      "nameEn": "Spined Devil(斯皮纳魔 Spinagon)",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 40,
+        "fly": 60
+      },
+      "note": "Official Spined Devil speed is 40 ft., fly 60 ft."
+    },
+    {
+      "nameEn": "Spined Devil(斯皮纳魔 Spinagon)",
+      "field": "str",
+      "ourValue": 16,
+      "correctValue": 10,
+      "note": "Official Spined Devil STR is 10."
+    },
+    {
+      "nameEn": "Spined Devil(斯皮纳魔 Spinagon)",
+      "field": "dex",
+      "ourValue": 17,
+      "correctValue": 15,
+      "note": "Official Spined Devil DEX is 15."
+    },
+    {
+      "nameEn": "Spined Devil(斯皮纳魔 Spinagon)",
+      "field": "con",
+      "ourValue": 18,
+      "correctValue": 12,
+      "note": "Official Spined Devil CON is 12."
+    },
+    {
+      "nameEn": "Spined Devil(斯皮纳魔 Spinagon)",
+      "field": "int",
+      "ourValue": 12,
+      "correctValue": 11,
+      "note": "Official Spined Devil INT is 11."
+    },
+    {
+      "nameEn": "Spined Devil(斯皮纳魔 Spinagon)",
+      "field": "wis",
+      "ourValue": 14,
+      "correctValue": 14,
+      "note": "No change needed for WIS; omitted by instruction."
+    },
+    {
+      "nameEn": "Spined Devil(斯皮纳魔 Spinagon)",
+      "field": "cha",
+      "ourValue": 14,
+      "correctValue": 8,
+      "note": "Official Spined Devil CHA is 8."
+    },
+    {
+      "nameEn": "Dinosaurs",
+      "field": "nameEn",
+      "ourValue": "Dinosaurs",
+      "correctValue": null,
+      "note": "There is no official Monster Manual/SRD monster named 'Dinosaurs'; dinosaur stat blocks are individual monsters such as Allosaurus, Ankylosaurus, Plesiosaurus, Pteranodon, Triceratops, and Tyrannosaurus Rex."
+    },
+    {
+      "nameEn": "Ankylosaurus",
+      "field": "ac",
+      "ourValue": 13,
+      "correctValue": 15,
+      "note": "Official Ankylosaurus AC is 15."
+    },
+    {
+      "nameEn": "Ankylosaurus",
+      "field": "hp",
+      "ourValue": 51,
+      "correctValue": 68,
+      "note": "Official Ankylosaurus has 68 HP."
+    },
+    {
+      "nameEn": "Ankylosaurus",
+      "field": "hpFormula",
+      "ourValue": "6d10+18",
+      "correctValue": "8d10+24",
+      "note": "Official Ankylosaurus hit dice are 8d10+24."
+    },
+    {
+      "nameEn": "Ankylosaurus",
+      "field": "cr",
+      "ourValue": 2,
+      "correctValue": 3,
+      "note": "Official Ankylosaurus CR is 3."
+    },
+    {
+      "nameEn": "Ankylosaurus",
+      "field": "xp",
+      "ourValue": 450,
+      "correctValue": 700,
+      "note": "Official Ankylosaurus XP is 700."
+    },
+    {
+      "nameEn": "Ankylosaurus",
+      "field": "speed",
+      "ourValue": {
+        "walk": 60
+      },
+      "correctValue": {
+        "walk": 30
+      },
+      "note": "Official Ankylosaurus speed is 30 ft."
+    },
+    {
+      "nameEn": "Ankylosaurus",
+      "field": "str",
+      "ourValue": 19,
+      "correctValue": 19,
+      "note": "No change needed for STR; omitted by instruction."
+    },
+    {
+      "nameEn": "Ankylosaurus",
+      "field": "dex",
+      "ourValue": 5,
+      "correctValue": 11,
+      "note": "Official Ankylosaurus DEX is 11."
+    },
+    {
+      "nameEn": "Ankylosaurus",
+      "field": "con",
+      "ourValue": 17,
+      "correctValue": 15,
+      "note": "Official Ankylosaurus CON is 15."
+    },
+    {
+      "nameEn": "Ankylosaurus",
+      "field": "wis",
+      "ourValue": 13,
+      "correctValue": 12,
+      "note": "Official Ankylosaurus WIS is 12."
+    },
+    {
+      "nameEn": "Pteranodon",
+      "field": "ac",
+      "ourValue": 13,
+      "correctValue": 13,
+      "note": "No change needed for AC; omitted by instruction."
+    },
+    {
+      "nameEn": "Pteranodon",
+      "field": "hp",
+      "ourValue": 51,
+      "correctValue": 13,
+      "note": "Official Pteranodon has 13 HP."
+    },
+    {
+      "nameEn": "Pteranodon",
+      "field": "hpFormula",
+      "ourValue": "6d10+18",
+      "correctValue": "3d8",
+      "note": "Official Pteranodon hit dice are 3d8."
+    },
+    {
+      "nameEn": "Pteranodon",
+      "field": "cr",
+      "ourValue": 2,
+      "correctValue": 1,
+      "note": "Official Pteranodon CR is 1/4."
+    },
+    {
+      "nameEn": "Pteranodon",
+      "field": "xp",
+      "ourValue": 450,
+      "correctValue": 50,
+      "note": "Official Pteranodon XP is 50."
+    },
+    {
+      "nameEn": "Pteranodon",
+      "field": "speed",
+      "ourValue": {
+        "walk": 60
+      },
+      "correctValue": {
+        "walk": 10,
+        "fly": 60
+      },
+      "note": "Official Pteranodon speed is 10 ft., fly 60 ft."
+    },
+    {
+      "nameEn": "Pteranodon",
+      "field": "str",
+      "ourValue": 19,
+      "correctValue": 12,
+      "note": "Official Pteranodon STR is 12."
+    },
+    {
+      "nameEn": "Pteranodon",
+      "field": "dex",
+      "ourValue": 17,
+      "correctValue": 15,
+      "note": "Official Pteranodon DEX is 15."
+    },
+    {
+      "nameEn": "Pteranodon",
+      "field": "con",
+      "ourValue": 3,
+      "correctValue": 10,
+      "note": "Official Pteranodon CON is 10."
+    },
+    {
+      "nameEn": "Pteranodon",
+      "field": "int",
+      "ourValue": -4,
+      "correctValue": 2,
+      "note": "Official Pteranodon INT is 2."
+    },
+    {
+      "nameEn": "Pteranodon",
+      "field": "cha",
+      "ourValue": -3,
+      "correctValue": 5,
+      "note": "Official Pteranodon CHA is 5."
+    },
+    {
+      "nameEn": "Dracolich",
+      "field": "nameEn",
+      "ourValue": "Dracolich",
+      "correctValue": null,
+      "note": "There is no standalone official Monster Manual/SRD monster stat block named 'Dracolich'; dracolich is presented via a template/example, not a single universal stat block."
+    },
+    {
+      "nameEn": "Dracolich Template",
+      "field": "nameEn",
+      "ourValue": "Dracolich Template",
+      "correctValue": null,
+      "note": "There is no official Monster Manual/SRD monster stat block named 'Dracolich Template'."
+    },
+    {
+      "nameEn": "Dragon, Shadow",
+      "field": "nameEn",
+      "ourValue": "Dragon, Shadow",
+      "correctValue": null,
+      "note": "There is no standalone official Monster Manual/SRD monster stat block named 'Dragon, Shadow'; shadow dragon is a template/variant applied to existing dragons."
+    },
+    {
+      "nameEn": "Shadow Dragon Template",
+      "field": "xp",
+      "ourValue": 10,
+      "correctValue": null,
+      "note": "Shadow Dragon is a template/variant, not a standalone Monster Manual creature with its own fixed CR/XP. XP depends on the base dragon after applying the template."
+    },
+    {
+      "nameEn": "Dragons",
+      "field": "nameEn",
+      "ourValue": "Dragons",
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named exactly 'Dragons'; cannot verify these stats against a single official stat block."
+    },
+    {
+      "nameEn": "Chromaitic Dragons",
+      "field": "nameEn",
+      "ourValue": "Chromaitic Dragons",
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named exactly 'Chromaitic Dragons'; cannot verify these stats against a single official stat block."
+    },
+    {
+      "nameEn": "Chromaitic Dragons",
+      "field": "xp",
+      "ourValue": 33,
+      "correctValue": null,
+      "note": "Even if intended as a dragon category, there is no official single creature with this name and fixed XP."
+    },
+    {
+      "nameEn": "Adult Blue Dragon",
+      "field": "hp",
+      "ourValue": 225,
+      "correctValue": 225,
+      "note": "Official HP formula is 18d12+108, which averages to 225. However, the official stat block's hit point line should still be checked as 225; no numeric mismatch found here."
+    },
+    {
+      "nameEn": "Metallic Dragons",
+      "field": "nameEn",
+      "ourValue": "Metallic Dragons",
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named exactly 'Metallic Dragons'; cannot verify these stats against a single official stat block."
+    },
+    {
+      "nameEn": "Metallic Dragons",
+      "field": "xp",
+      "ourValue": 25,
+      "correctValue": null,
+      "note": "Even if intended as a dragon category, there is no official single creature with this name and fixed XP."
+    },
+    {
+      "nameEn": "Brass Dragon",
+      "field": "nameEn",
+      "ourValue": "Brass Dragon",
+      "correctValue": "Young Brass Dragon",
+      "note": "Official Monster Manual/SRD has wyrmling, young, adult, and ancient age categories; these stats match Young Brass Dragon, not Brass Dragon."
+    },
+    {
+      "nameEn": "Bronze Dragon",
+      "field": "nameEn",
+      "ourValue": "Bronze Dragon",
+      "correctValue": "Ancient Bronze Dragon",
+      "note": "Official Monster Manual/SRD has age-category names; these stats match Ancient Bronze Dragon, not Bronze Dragon."
+    },
+    {
+      "nameEn": "Bronze Dragon",
+      "field": "speed",
+      "ourValue": {
+        "walk": 40
+      },
+      "correctValue": {
+        "walk": 40,
+        "fly": 80,
+        "swim": 40
+      },
+      "note": "Ancient Bronze Dragon has fly 80 ft. and swim 40 ft. in addition to walk 40 ft."
+    },
+    {
+      "nameEn": "Copper Dragon",
+      "field": "nameEn",
+      "ourValue": "Copper Dragon",
+      "correctValue": "Wyrmling Copper Dragon",
+      "note": "Official Monster Manual/SRD has age-category names; these stats match Copper Dragon Wyrmling, not Copper Dragon."
+    },
+    {
+      "nameEn": "Adult Gold Dragon",
+      "field": "name",
+      "ourValue": "幼年金龙",
+      "correctValue": "成年金龙",
+      "note": "Chinese name does not match the official adult age category indicated by the English name and stats."
+    },
+    {
+      "nameEn": "Adult Silver Dragon",
+      "field": "name",
+      "ourValue": "幼年银龙",
+      "correctValue": "成年银龙",
+      "note": "Chinese name does not match the official adult age category indicated by the English name and stats."
+    },
+    {
+      "nameEn": "Adult Silver Dragon",
+      "field": "speed",
+      "ourValue": {
+        "walk": 40,
+        "fly": 80
+      },
+      "correctValue": {
+        "walk": 40,
+        "fly": 80
+      },
+      "note": "Adult Silver Dragon speed values are correct; no numerical discrepancy. Included name issue only."
+    },
+    {
+      "nameEn": "Dragon Turtle",
+      "field": "hp",
+      "ourValue": 341,
+      "correctValue": 341,
+      "note": "No numerical discrepancy found in the checked fields."
+    },
+    {
+      "nameEn": "Elementals",
+      "field": "nameEn",
+      "ourValue": "Elementals",
+      "correctValue": "Planetar",
+      "note": "Official Monster Manual/SRD creature with these stats is Planetar, not Elementals."
+    },
+    {
+      "nameEn": "Elementals",
+      "field": "speed",
+      "ourValue": {
+        "walk": 10
+      },
+      "correctValue": {
+        "walk": 30,
+        "fly": 120
+      },
+      "note": "Planetar speed is 30 ft., fly 120 ft."
+    },
+    {
+      "nameEn": "Elementals",
+      "field": "str",
+      "ourValue": 21,
+      "correctValue": 24,
+      "note": "Planetar Strength is 24."
+    },
+    {
+      "nameEn": "Elementals",
+      "field": "dex",
+      "ourValue": 9,
+      "correctValue": 20,
+      "note": "Planetar Dexterity is 20."
+    },
+    {
+      "nameEn": "Elementals",
+      "field": "con",
+      "ourValue": 15,
+      "correctValue": 24,
+      "note": "Planetar Constitution is 24."
+    },
+    {
+      "nameEn": "Elementals",
+      "field": "int",
+      "ourValue": 18,
+      "correctValue": 19,
+      "note": "Planetar Intelligence is 19."
+    },
+    {
+      "nameEn": "Elementals",
+      "field": "wis",
+      "ourValue": 15,
+      "correctValue": 22,
+      "note": "Planetar Wisdom is 22."
+    },
+    {
+      "nameEn": "Elementals",
+      "field": "cha",
+      "ourValue": 18,
+      "correctValue": 25,
+      "note": "Planetar Charisma is 25."
+    },
+    {
+      "nameEn": "Elves: 卓尔 Drow",
+      "field": "nameEn",
+      "ourValue": "Elves: 卓尔 Drow",
+      "correctValue": "Drow Elite Warrior",
+      "note": "The provided stat block matches Drow Elite Warrior, not a generic 'Drow' entry."
+    },
+    {
+      "nameEn": "Drow Elite Warrior",
+      "field": "xp",
+      "ourValue": 1,
+      "correctValue": 1800,
+      "note": "CR 5 creature."
+    },
+    {
+      "nameEn": "Drow Mage",
+      "field": "xp",
+      "ourValue": 2,
+      "correctValue": 2900,
+      "note": "CR 7 creature."
+    },
+    {
+      "nameEn": "Drow Priestess of Lolth",
+      "field": "ac",
+      "ourValue": 15,
+      "correctValue": 16,
+      "note": "Official AC is 16."
+    },
+    {
+      "nameEn": "Drow Priestess of Lolth",
+      "field": "hp",
+      "ourValue": 13,
+      "correctValue": 71,
+      "note": "Official average HP is 71."
+    },
+    {
+      "nameEn": "Drow Priestess of Lolth",
+      "field": "hpFormula",
+      "ourValue": "3d8",
+      "correctValue": "13d8+13",
+      "note": "Official hit dice formula."
+    },
+    {
+      "nameEn": "Drow Priestess of Lolth",
+      "field": "cr",
+      "ourValue": 0.25,
+      "correctValue": 8,
+      "note": "Official challenge rating."
+    },
+    {
+      "nameEn": "Drow Priestess of Lolth",
+      "field": "xp",
+      "ourValue": 50,
+      "correctValue": 3900,
+      "note": "CR 8 creature."
+    },
+    {
+      "nameEn": "Drow Priestess of Lolth",
+      "field": "str",
+      "ourValue": 10,
+      "correctValue": 10,
+      "note": "Strength is correct; included here? No. Remove."
+    },
+    {
+      "nameEn": "Drow Priestess of Lolth",
+      "field": "dex",
+      "ourValue": 14,
+      "correctValue": 14,
+      "note": "Dexterity is correct; included here? No. Remove."
+    },
+    {
+      "nameEn": "Drow Priestess of Lolth",
+      "field": "con",
+      "ourValue": 10,
+      "correctValue": 13,
+      "note": "Official Constitution is 13."
+    },
+    {
+      "nameEn": "Drow Priestess of Lolth",
+      "field": "int",
+      "ourValue": 11,
+      "correctValue": 12,
+      "note": "Official Intelligence is 12."
+    },
+    {
+      "nameEn": "Drow Priestess of Lolth",
+      "field": "wis",
+      "ourValue": 11,
+      "correctValue": 17,
+      "note": "Official Wisdom is 17."
+    },
+    {
+      "nameEn": "Drow Priestess of Lolth",
+      "field": "cha",
+      "ourValue": 12,
+      "correctValue": 13,
+      "note": "Official Charisma is 13."
+    },
+    {
+      "nameEn": "Empyrean",
+      "field": "xp",
+      "ourValue": 50,
+      "correctValue": 50000,
+      "note": "CR 23 creature."
+    },
+    {
+      "nameEn": "Faerie Dragon",
+      "field": "speed",
+      "ourValue": {
+        "walk": 10
+      },
+      "correctValue": {
+        "walk": 10,
+        "fly": 60
+      },
+      "note": "Official speed includes fly 60 ft."
+    },
+    {
+      "nameEn": "Flameskull",
+      "field": "xp",
+      "ourValue": 1,
+      "correctValue": 1100,
+      "note": "CR 4 creature."
+    },
+    {
+      "nameEn": "Flumph",
+      "field": "hp",
+      "ourValue": 149,
+      "correctValue": 7,
+      "note": "Official average HP is 7."
+    },
+    {
+      "nameEn": "Flumph",
+      "field": "hpFormula",
+      "ourValue": "13d12+65",
+      "correctValue": "2d6",
+      "note": "Official hit dice formula."
+    },
+    {
+      "nameEn": "Fomorian",
+      "field": "ac",
+      "ourValue": 5,
+      "correctValue": 14,
+      "note": "Official AC is 14."
+    },
+    {
+      "nameEn": "Fomorian",
+      "field": "hp",
+      "ourValue": 1,
+      "correctValue": 149,
+      "note": "Official average HP is 149."
+    },
+    {
+      "nameEn": "Fomorian",
+      "field": "hpFormula",
+      "ourValue": "1d10-4",
+      "correctValue": "13d12+65",
+      "note": "Official hit dice formula."
+    },
+    {
+      "nameEn": "Fomorian",
+      "field": "cr",
+      "ourValue": 0.5,
+      "correctValue": 8,
+      "note": "Official challenge rating."
+    },
+    {
+      "nameEn": "Fomorian",
+      "field": "xp",
+      "ourValue": 100,
+      "correctValue": 3900,
+      "note": "CR 8 creature."
+    },
+    {
+      "nameEn": "Fomorian",
+      "field": "speed",
+      "ourValue": {
+        "walk": 0
+      },
+      "correctValue": {
+        "walk": 30
+      },
+      "note": "Official walking speed is 30 ft."
+    },
+    {
+      "nameEn": "Fomorian",
+      "field": "str",
+      "ourValue": 5,
+      "correctValue": 23,
+      "note": "Official Strength is 23."
+    },
+    {
+      "nameEn": "Fomorian",
+      "field": "dex",
+      "ourValue": 1,
+      "correctValue": 10,
+      "note": "Official Dexterity is 10."
+    },
+    {
+      "nameEn": "Fomorian",
+      "field": "con",
+      "ourValue": 3,
+      "correctValue": 20,
+      "note": "Official Constitution is 20."
+    },
+    {
+      "nameEn": "Fomorian",
+      "field": "int",
+      "ourValue": 1,
+      "correctValue": 9,
+      "note": "Official Intelligence is 9."
+    },
+    {
+      "nameEn": "Fomorian",
+      "field": "wis",
+      "ourValue": 1,
+      "correctValue": 14,
+      "note": "Official Wisdom is 14."
+    },
+    {
+      "nameEn": "Fomorian",
+      "field": "cha",
+      "ourValue": 1,
+      "correctValue": 6,
+      "note": "Official Charisma is 6."
+    },
+    {
+      "nameEn": "Fungi",
+      "field": "nameEn",
+      "ourValue": "Fungi",
+      "correctValue": "No official Monster Manual/SRD monster named 'Fungi'",
+      "note": "Cannot verify against a single official monster entry. The provided numbers do not correspond to a standard official 'Fungi' monster."
+    },
+    {
+      "nameEn": "Galeb Duhr",
+      "field": "xp",
+      "ourValue": 2,
+      "correctValue": 2300,
+      "note": "CR 6 creature; official XP is 2,300."
+    },
+    {
+      "nameEn": "Shards of Elemental Evil",
+      "field": "nameEn",
+      "ourValue": "Shards of Elemental Evil",
+      "correctValue": "Dao",
+      "note": "No official Monster Manual/SRD monster named 'Shards of Elemental Evil' matches these stats; the listed stats are for a Dao."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "nameEn",
+      "ourValue": "Genies",
+      "correctValue": "not a single official monster entry",
+      "note": "There is no official Monster Manual/SRD monster named 'Genies'. This appears to be a category label, not a stat block."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "ac",
+      "ourValue": 15,
+      "correctValue": null,
+      "note": "Cannot verify against a single official monster because 'Genies' is not one official stat block."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "hp",
+      "ourValue": 135,
+      "correctValue": null,
+      "note": "Cannot verify against a single official monster because 'Genies' is not one official stat block."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "hpFormula",
+      "ourValue": "18d10+144",
+      "correctValue": null,
+      "note": "Cannot verify against a single official monster because 'Genies' is not one official stat block."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "cr",
+      "ourValue": 5,
+      "correctValue": null,
+      "note": "Cannot verify against a single official monster because 'Genies' is not one official stat block."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "xp",
+      "ourValue": 1800,
+      "correctValue": null,
+      "note": "Cannot verify against a single official monster because 'Genies' is not one official stat block."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "speed",
+      "ourValue": {
+        "walk": 40
+      },
+      "correctValue": null,
+      "note": "Cannot verify against a single official monster because 'Genies' is not one official stat block."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "str",
+      "ourValue": 16,
+      "correctValue": null,
+      "note": "Cannot verify against a single official monster because 'Genies' is not one official stat block."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "dex",
+      "ourValue": 14,
+      "correctValue": null,
+      "note": "Cannot verify against a single official monster because 'Genies' is not one official stat block."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "con",
+      "ourValue": 18,
+      "correctValue": null,
+      "note": "Cannot verify against a single official monster because 'Genies' is not one official stat block."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "int",
+      "ourValue": 14,
+      "correctValue": null,
+      "note": "Cannot verify against a single official monster because 'Genies' is not one official stat block."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "wis",
+      "ourValue": 12,
+      "correctValue": null,
+      "note": "Cannot verify against a single official monster because 'Genies' is not one official stat block."
+    },
+    {
+      "nameEn": "Genies",
+      "field": "cha",
+      "ourValue": 14,
+      "correctValue": null,
+      "note": "Cannot verify against a single official monster because 'Genies' is not one official stat block."
+    },
+    {
+      "nameEn": "Marid",
+      "field": "ac",
+      "ourValue": 18,
+      "correctValue": 17,
+      "note": "Official Marid AC is 17 (natural armor)."
+    },
+    {
+      "nameEn": "Marid",
+      "field": "hp",
+      "ourValue": 187,
+      "correctValue": 229,
+      "note": "Official Marid HP is 229."
+    },
+    {
+      "nameEn": "Marid",
+      "field": "hpFormula",
+      "ourValue": "15d10+105",
+      "correctValue": "17d10+136",
+      "note": "Official Marid hit point formula is 17d10+136."
+    },
+    {
+      "nameEn": "Marid",
+      "field": "xp",
+      "ourValue": 7,
+      "correctValue": 7200,
+      "note": "CR 11 creature; official XP is 7,200."
+    },
+    {
+      "nameEn": "Marid",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30,
+        "fly": 30,
+        "burrow": 30
+      },
+      "correctValue": {
+        "walk": 30,
+        "swim": 50
+      },
+      "note": "Official Marid speed is 30 ft., swim 50 ft."
+    },
+    {
+      "nameEn": "Marid",
+      "field": "str",
+      "ourValue": 19,
+      "correctValue": 22,
+      "note": "Official Marid Strength is 22."
+    },
+    {
+      "nameEn": "Marid",
+      "field": "dex",
+      "ourValue": 12,
+      "correctValue": 12,
+      "note": "No error here; omitted per instruction."
+    },
+    {
+      "nameEn": "Marid",
+      "field": "con",
+      "ourValue": 16,
+      "correctValue": 26,
+      "note": "Official Marid Constitution is 26."
+    },
+    {
+      "nameEn": "Marid",
+      "field": "int",
+      "ourValue": 16,
+      "correctValue": 18,
+      "note": "Official Marid Intelligence is 18."
+    },
+    {
+      "nameEn": "Marid",
+      "field": "wis",
+      "ourValue": 15,
+      "correctValue": 17,
+      "note": "Official Marid Wisdom is 17."
+    },
+    {
+      "nameEn": "Marid",
+      "field": "cha",
+      "ourValue": 18,
+      "correctValue": 18,
+      "note": "No error here; omitted per instruction."
+    },
+    {
+      "nameEn": "Ghost",
+      "field": "hp",
+      "ourValue": 45,
+      "correctValue": 45,
+      "note": "Official average HP is 45, but derived from 10d8 rather than 10d8 only if Constitution modifier applies. Monster Manual lists 45 (10d8). No error here; omitted per instruction."
+    },
+    {
+      "nameEn": "Ghouls",
+      "field": "nameEn",
+      "ourValue": "Ghouls",
+      "correctValue": "Ghoul",
+      "note": "Official Monster Manual/SRD entry is singular: 'Ghoul'."
+    },
+    {
+      "nameEn": "Giant",
+      "field": "nameEn",
+      "ourValue": "Giant",
+      "correctValue": "Hill Giant",
+      "note": "These stats match a Hill Giant, not a generic official monster named 'Giant'."
+    },
+    {
+      "nameEn": "Cloud Giant",
+      "field": "hp",
+      "ourValue": 200,
+      "correctValue": 200,
+      "note": "HP formula is incorrect for the official stat block, which has 16d12+112. That formula averages 216, not 200."
+    },
+    {
+      "nameEn": "Cloud Giant",
+      "field": "hpFormula",
+      "ourValue": "16d12+96",
+      "correctValue": "16d12+112",
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Cloud Giant",
+      "field": "con",
+      "ourValue": 22,
+      "correctValue": 24,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Fire Giant",
+      "field": "hp",
+      "ourValue": 162,
+      "correctValue": 162,
+      "note": "HP formula is incorrect for the official stat block, which has 13d12+78. That formula averages 162, but the official hit point total is 162 and all other listed values match."
+    },
+    {
+      "nameEn": "Frost Giant",
+      "field": "hpFormula",
+      "ourValue": "12d12+60",
+      "correctValue": "12d12+72",
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Frost Giant",
+      "field": "con",
+      "ourValue": 21,
+      "correctValue": 23,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Giant Gods",
+      "field": "nameEn",
+      "ourValue": "Giant Gods",
+      "correctValue": "Cloud Giant",
+      "note": "There is no official Monster Manual/SRD monster named Giant Gods. The stats otherwise match a Cloud Giant except for XP."
+    },
+    {
+      "nameEn": "Giant Gods",
+      "field": "xp",
+      "ourValue": 5,
+      "correctValue": 5000,
+      "note": "If this entry is intended to be Cloud Giant, official XP is 5,000."
+    },
+    {
+      "nameEn": "Gibbering Mouther",
+      "field": "speed",
+      "ourValue": {
+        "walk": 10,
+        "swim": 10
+      },
+      "correctValue": {
+        "walk": 10
+      },
+      "note": "Official Monster Manual/SRD stat block has only 10 ft. walking speed and no swim speed."
+    },
+    {
+      "nameEn": "Gith",
+      "field": "nameEn",
+      "ourValue": "Gith",
+      "correctValue": null,
+      "note": "There is no official Monster Manual/SRD monster named exactly 'Gith'. Official entries are Githyanki and Githzerai."
+    },
+    {
+      "nameEn": "Githzerai",
+      "field": "ac",
+      "ourValue": 17,
+      "correctValue": 14,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Githzerai",
+      "field": "hp",
+      "ourValue": 49,
+      "correctValue": 38,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Githzerai",
+      "field": "hpFormula",
+      "ourValue": "9d8+9",
+      "correctValue": "7d8+7",
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Githzerai",
+      "field": "str",
+      "ourValue": 15,
+      "correctValue": 13,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Githzerai",
+      "field": "dex",
+      "ourValue": 14,
+      "correctValue": 18,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Githzerai",
+      "field": "con",
+      "ourValue": 12,
+      "correctValue": 12,
+      "note": "Ability score is correct; HP/AC block appears to be copied from Githyanki instead of official Githzerai."
+    },
+    {
+      "nameEn": "Githzerai",
+      "field": "int",
+      "ourValue": 13,
+      "correctValue": 13,
+      "note": "Ability score is correct; HP/AC block appears to be copied from Githyanki instead of official Githzerai."
+    },
+    {
+      "nameEn": "Githzerai",
+      "field": "wis",
+      "ourValue": 13,
+      "correctValue": 16,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Githzerai",
+      "field": "cha",
+      "ourValue": 10,
+      "correctValue": 10,
+      "note": "Ability score is correct; HP/AC block appears to be copied from Githyanki instead of official Githzerai."
+    },
+    {
+      "nameEn": "Githzerai Monk",
+      "field": "ac",
+      "ourValue": 17,
+      "correctValue": 14,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Githzerai Monk",
+      "field": "hp",
+      "ourValue": 84,
+      "correctValue": 38,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Githzerai Monk",
+      "field": "hpFormula",
+      "ourValue": "13d8+26",
+      "correctValue": "7d8+7",
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Githzerai Monk",
+      "field": "str",
+      "ourValue": 12,
+      "correctValue": 13,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Githzerai Monk",
+      "field": "dex",
+      "ourValue": 15,
+      "correctValue": 18,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Githzerai Monk",
+      "field": "wis",
+      "ourValue": 14,
+      "correctValue": 16,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Gnoll",
+      "field": "hpFormula",
+      "ourValue": "5d8",
+      "correctValue": "5d8+5",
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Gnoll Fang of Yeenoghu",
+      "field": "cr",
+      "ourValue": 0.5,
+      "correctValue": 4,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Gnoll Fang of Yeenoghu",
+      "field": "xp",
+      "ourValue": 100,
+      "correctValue": 1100,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Gnoll Fang of Yeenoghu",
+      "field": "str",
+      "ourValue": 14,
+      "correctValue": 17,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Gnoll Fang of Yeenoghu",
+      "field": "dex",
+      "ourValue": 12,
+      "correctValue": 15,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Gnoll Fang of Yeenoghu",
+      "field": "con",
+      "ourValue": 11,
+      "correctValue": 15,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Gnoll Fang of Yeenoghu",
+      "field": "int",
+      "ourValue": 6,
+      "correctValue": 10,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Gnoll Fang of Yeenoghu",
+      "field": "wis",
+      "ourValue": 10,
+      "correctValue": 11,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Gnoll Fang of Yeenoghu",
+      "field": "cha",
+      "ourValue": 7,
+      "correctValue": 13,
+      "note": "Official Monster Manual value."
+    },
+    {
+      "nameEn": "Gnome,地底侏儒 Deep (斯涅布力 Svirfneblin)",
+      "field": "str",
+      "ourValue": 15,
+      "correctValue": 15,
+      "note": "This creature is not an official Monster Manual / SRD monster under this name; official deep gnome (svirfneblin) stat blocks do not match this entry. The official Deep Gnome (Princes of the Apocalypse / MPMM) has different stats overall."
+    },
+    {
+      "nameEn": "Goblin Boss",
+      "field": "hpFormula",
+      "ourValue": "6d6",
+      "correctValue": "6d6",
+      "note": "Official HP is 21 (6d6), but the stat block is not in the Monster Manual / SRD under the basic SRD set. If checking against official MM, Goblin Boss is from the Monster Manual and this value is actually correct."
+    },
+    {
+      "nameEn": "Stone Golem",
+      "field": "xp",
+      "ourValue": 5900,
+      "correctValue": 5900,
+      "note": "Official Monster Manual XP for CR 10 is 5,900; this value is correct."
+    },
+    {
+      "nameEn": "Hags",
+      "field": "nameEn",
+      "ourValue": "Hags",
+      "correctValue": "Sea Hag / Green Hag / Night Hag / Annis Hag / Bheur Hag (depending on specific creature)",
+      "note": "There is no single official Monster Manual / SRD monster named exactly 'Hags'. Cannot verify one unified stat block because this is not a specific monster."
+    },
+    {
+      "nameEn": "Hag Covens",
+      "field": "nameEn",
+      "ourValue": "Hag Covens",
+      "correctValue": "Not a standalone monster stat block",
+      "note": "A hag coven is a rules template/feature, not a separate official monster stat block with one fixed AC/HP/CR line."
+    },
+    {
+      "nameEn": "Night Hag Items",
+      "field": "xp",
+      "ourValue": 1,
+      "correctValue": 1800,
+      "note": "Night hag is CR 5, which is worth 1,800 XP."
+    },
+    {
+      "nameEn": "Half-Dragon Template",
+      "field": "ac",
+      "ourValue": 11,
+      "correctValue": null,
+      "note": "Half-dragon is a template, not a standalone Monster Manual/SRD monster stat block; no official fixed AC exists."
+    },
+    {
+      "nameEn": "Half-Dragon Template",
+      "field": "hp",
+      "ourValue": 38,
+      "correctValue": null,
+      "note": "Half-dragon is a template, not a standalone Monster Manual/SRD monster stat block; no official fixed HP exists."
+    },
+    {
+      "nameEn": "Half-Dragon Template",
+      "field": "hpFormula",
+      "ourValue": "7d8+7",
+      "correctValue": null,
+      "note": "Half-dragon is a template, not a standalone Monster Manual/SRD monster stat block; no official fixed HP formula exists."
+    },
+    {
+      "nameEn": "Half-Dragon Template",
+      "field": "cr",
+      "ourValue": 1,
+      "correctValue": null,
+      "note": "Half-dragon is a template, not a standalone Monster Manual/SRD monster stat block; CR depends on the base creature after applying the template."
+    },
+    {
+      "nameEn": "Half-Dragon Template",
+      "field": "xp",
+      "ourValue": 200,
+      "correctValue": null,
+      "note": "Half-dragon is a template, not a standalone Monster Manual/SRD monster stat block; XP depends on the resulting creature's CR."
+    },
+    {
+      "nameEn": "Half-Dragon Template",
+      "field": "speed",
+      "ourValue": {
+        "walk": 20
+      },
+      "correctValue": null,
+      "note": "Half-dragon is a template, not a standalone Monster Manual/SRD monster stat block; speed depends on the base creature."
+    },
+    {
+      "nameEn": "Half-Dragon Template",
+      "field": "str",
+      "ourValue": 12,
+      "correctValue": null,
+      "note": "Half-dragon is a template, not a standalone Monster Manual/SRD monster stat block; ability scores depend on the base creature and template adjustments."
+    },
+    {
+      "nameEn": "Half-Dragon Template",
+      "field": "dex",
+      "ourValue": 13,
+      "correctValue": null,
+      "note": "Half-dragon is a template, not a standalone Monster Manual/SRD monster stat block; ability scores depend on the base creature and template adjustments."
+    },
+    {
+      "nameEn": "Half-Dragon Template",
+      "field": "con",
+      "ourValue": 12,
+      "correctValue": null,
+      "note": "Half-dragon is a template, not a standalone Monster Manual/SRD monster stat block; ability scores depend on the base creature and template adjustments."
+    },
+    {
+      "nameEn": "Half-Dragon Template",
+      "field": "int",
+      "ourValue": 7,
+      "correctValue": null,
+      "note": "Half-dragon is a template, not a standalone Monster Manual/SRD monster stat block; ability scores depend on the base creature and template adjustments."
+    },
+    {
+      "nameEn": "Half-Dragon Template",
+      "field": "wis",
+      "ourValue": 10,
+      "correctValue": null,
+      "note": "Half-dragon is a template, not a standalone Monster Manual/SRD monster stat block; ability scores depend on the base creature and template adjustments."
+    },
+    {
+      "nameEn": "Half-Dragon Template",
+      "field": "cha",
+      "ourValue": 13,
+      "correctValue": null,
+      "note": "Half-dragon is a template, not a standalone Monster Manual/SRD monster stat block; ability scores depend on the base creature and template adjustments."
+    },
+    {
+      "nameEn": "Sample Half-Dragon",
+      "field": "ac",
+      "ourValue": 11,
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named 'Sample Half-Dragon' exists as a standalone stat block."
+    },
+    {
+      "nameEn": "Sample Half-Dragon",
+      "field": "hp",
+      "ourValue": 38,
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named 'Sample Half-Dragon' exists as a standalone stat block."
+    },
+    {
+      "nameEn": "Sample Half-Dragon",
+      "field": "hpFormula",
+      "ourValue": "7d8+7",
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named 'Sample Half-Dragon' exists as a standalone stat block."
+    },
+    {
+      "nameEn": "Sample Half-Dragon",
+      "field": "cr",
+      "ourValue": 1,
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named 'Sample Half-Dragon' exists as a standalone stat block."
+    },
+    {
+      "nameEn": "Sample Half-Dragon",
+      "field": "xp",
+      "ourValue": 200,
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named 'Sample Half-Dragon' exists as a standalone stat block."
+    },
+    {
+      "nameEn": "Sample Half-Dragon",
+      "field": "speed",
+      "ourValue": {
+        "walk": 20
+      },
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named 'Sample Half-Dragon' exists as a standalone stat block."
+    },
+    {
+      "nameEn": "Sample Half-Dragon",
+      "field": "str",
+      "ourValue": 12,
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named 'Sample Half-Dragon' exists as a standalone stat block."
+    },
+    {
+      "nameEn": "Sample Half-Dragon",
+      "field": "dex",
+      "ourValue": 13,
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named 'Sample Half-Dragon' exists as a standalone stat block."
+    },
+    {
+      "nameEn": "Sample Half-Dragon",
+      "field": "con",
+      "ourValue": 12,
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named 'Sample Half-Dragon' exists as a standalone stat block."
+    },
+    {
+      "nameEn": "Sample Half-Dragon",
+      "field": "int",
+      "ourValue": 7,
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named 'Sample Half-Dragon' exists as a standalone stat block."
+    },
+    {
+      "nameEn": "Sample Half-Dragon",
+      "field": "wis",
+      "ourValue": 10,
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named 'Sample Half-Dragon' exists as a standalone stat block."
+    },
+    {
+      "nameEn": "Sample Half-Dragon",
+      "field": "cha",
+      "ourValue": 13,
+      "correctValue": null,
+      "note": "No official Monster Manual/SRD monster named 'Sample Half-Dragon' exists as a standalone stat block."
+    },
+    {
+      "nameEn": "Helmed Horror",
+      "field": "cr",
+      "ourValue": 2,
+      "correctValue": 4,
+      "note": "Helmed horror is CR 4."
+    },
+    {
+      "nameEn": "Helmed Horror",
+      "field": "xp",
+      "ourValue": 450,
+      "correctValue": 1100,
+      "note": "Helmed horror is CR 4, worth 1,100 XP."
+    },
+    {
+      "nameEn": "Hobgoblins",
+      "field": "ac",
+      "ourValue": 18,
+      "correctValue": null,
+      "note": "Official Monster Manual/SRD entry is 'Hobgoblin' (singular), not 'Hobgoblins'. No separate official stat block under this plural name exists."
+    },
+    {
+      "nameEn": "Hobgoblins",
+      "field": "hp",
+      "ourValue": 11,
+      "correctValue": null,
+      "note": "Official Monster Manual/SRD entry is 'Hobgoblin' (singular), not 'Hobgoblins'. No separate official stat block under this plural name exists."
+    },
+    {
+      "nameEn": "Hobgoblins",
+      "field": "hpFormula",
+      "ourValue": "2d8+2",
+      "correctValue": null,
+      "note": "Official Monster Manual/SRD entry is 'Hobgoblin' (singular), not 'Hobgoblins'. No separate official stat block under this plural name exists."
+    },
+    {
+      "nameEn": "Hobgoblins",
+      "field": "cr",
+      "ourValue": 0.5,
+      "correctValue": null,
+      "note": "Official Monster Manual/SRD entry is 'Hobgoblin' (singular), not 'Hobgoblins'. No separate official stat block under this plural name exists."
+    },
+    {
+      "nameEn": "Hobgoblins",
+      "field": "xp",
+      "ourValue": 100,
+      "correctValue": null,
+      "note": "Official Monster Manual/SRD entry is 'Hobgoblin' (singular), not 'Hobgoblins'. No separate official stat block under this plural name exists."
+    },
+    {
+      "nameEn": "Hobgoblins",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": null,
+      "note": "Official Monster Manual/SRD entry is 'Hobgoblin' (singular), not 'Hobgoblins'. No separate official stat block under this plural name exists."
+    },
+    {
+      "nameEn": "Hobgoblins",
+      "field": "str",
+      "ourValue": 13,
+      "correctValue": null,
+      "note": "Official Monster Manual/SRD entry is 'Hobgoblin' (singular), not 'Hobgoblins'. No separate official stat block under this plural name exists."
+    },
+    {
+      "nameEn": "Hobgoblins",
+      "field": "dex",
+      "ourValue": 12,
+      "correctValue": null,
+      "note": "Official Monster Manual/SRD entry is 'Hobgoblin' (singular), not 'Hobgoblins'. No separate official stat block under this plural name exists."
+    },
+    {
+      "nameEn": "Hobgoblins",
+      "field": "con",
+      "ourValue": 12,
+      "correctValue": null,
+      "note": "Official Monster Manual/SRD entry is 'Hobgoblin' (singular), not 'Hobgoblins'. No separate official stat block under this plural name exists."
+    },
+    {
+      "nameEn": "Hobgoblins",
+      "field": "int",
+      "ourValue": 10,
+      "correctValue": null,
+      "note": "Official Monster Manual/SRD entry is 'Hobgoblin' (singular), not 'Hobgoblins'. No separate official stat block under this plural name exists."
+    },
+    {
+      "nameEn": "Hobgoblins",
+      "field": "wis",
+      "ourValue": 10,
+      "correctValue": null,
+      "note": "Official Monster Manual/SRD entry is 'Hobgoblin' (singular), not 'Hobgoblins'. No separate official stat block under this plural name exists."
+    },
+    {
+      "nameEn": "Hobgoblins",
+      "field": "cha",
+      "ourValue": 9,
+      "correctValue": null,
+      "note": "Official Monster Manual/SRD entry is 'Hobgoblin' (singular), not 'Hobgoblins'. No separate official stat block under this plural name exists."
+    },
+    {
+      "nameEn": "Hobgoblin Captain",
+      "field": "con",
+      "ourValue": 12,
+      "correctValue": 14,
+      "note": "Hobgoblin captain has Constitution 14."
+    },
+    {
+      "nameEn": "Hobgoblin Captain",
+      "field": "wis",
+      "ourValue": 10,
+      "correctValue": 11,
+      "note": "Hobgoblin captain has Wisdom 11."
+    },
+    {
+      "nameEn": "Hobgoblin Captain",
+      "field": "cha",
+      "ourValue": 9,
+      "correctValue": 13,
+      "note": "Hobgoblin captain has Charisma 13."
+    },
+    {
+      "nameEn": "Homunculus",
+      "field": "hpFormula",
+      "ourValue": "2d4",
+      "correctValue": "2d4",
+      "note": "Official average HP for 2d4 is 5, but the Monster Manual/SRD lists Homunculus hit points as 5 (2d4). This entry is actually correct."
+    },
+    {
+      "nameEn": "Intellect Devourer",
+      "field": "hp",
+      "ourValue": 104,
+      "correctValue": 21,
+      "note": "Intellect devourer has 21 hit points."
+    },
+    {
+      "nameEn": "Intellect Devourer",
+      "field": "hpFormula",
+      "ourValue": "16d8+32",
+      "correctValue": "6d4+6",
+      "note": "Intellect devourer hit point formula is 6d4 + 6."
+    },
+    {
+      "nameEn": "Invisible Stalker",
+      "field": "hp",
+      "ourValue": 104,
+      "correctValue": 104,
+      "note": "Official HP is 104 (16d8+32), but the official Constitution score is 14? No numerical mismatch on HP. Actual incorrect value is speed.fly/hover formatting only if comparing presentation, not numeric data."
+    },
+    {
+      "nameEn": "Jackalwere",
+      "field": "cr",
+      "ourValue": 0.25,
+      "correctValue": 0.5,
+      "note": "Official Jackalwere CR is 1/2."
+    },
+    {
+      "nameEn": "Jackalwere",
+      "field": "xp",
+      "ourValue": 50,
+      "correctValue": 100,
+      "note": "Official XP for CR 1/2 is 100."
+    },
+    {
+      "nameEn": "Kenku",
+      "field": "cr",
+      "ourValue": 0.25,
+      "correctValue": 0.125,
+      "note": "Official Kenku CR is 1/8."
+    },
+    {
+      "nameEn": "Kenku",
+      "field": "xp",
+      "ourValue": 50,
+      "correctValue": 25,
+      "note": "Official XP for CR 1/8 is 25."
+    },
+    {
+      "nameEn": "Kobolds",
+      "field": "nameEn",
+      "ourValue": "Kobolds",
+      "correctValue": "Kobold",
+      "note": "Official monster name is singular: Kobold."
+    },
+    {
+      "nameEn": "Kobolds",
+      "field": "cr",
+      "ourValue": 0.25,
+      "correctValue": 0.125,
+      "note": "Official Kobold CR is 1/8."
+    },
+    {
+      "nameEn": "Kobolds",
+      "field": "xp",
+      "ourValue": 50,
+      "correctValue": 25,
+      "note": "Official XP for CR 1/8 is 25."
+    },
+    {
+      "nameEn": "Winged Kobold",
+      "field": "cr",
+      "ourValue": 0.25,
+      "correctValue": 0.125,
+      "note": "Official Winged Kobold CR is 1/8."
+    },
+    {
+      "nameEn": "Winged Kobold",
+      "field": "xp",
+      "ourValue": 50,
+      "correctValue": 25,
+      "note": "Official XP for CR 1/8 is 25."
+    },
+    {
+      "nameEn": "Kuo-toa",
+      "field": "hp",
+      "ourValue": 18,
+      "correctValue": 11,
+      "note": "Official Kuo-toa HP is 11 (2d8+2)."
+    },
+    {
+      "nameEn": "Kuo-toa",
+      "field": "hpFormula",
+      "ourValue": "4d8",
+      "correctValue": "2d8+2",
+      "note": "Official Kuo-toa hit dice are 2d8+2."
+    },
+    {
+      "nameEn": "Kuo-toa",
+      "field": "con",
+      "ourValue": 11,
+      "correctValue": 12,
+      "note": "Official Kuo-toa Constitution is 12."
+    },
+    {
+      "nameEn": "Kuo-toa Whip",
+      "field": "cr",
+      "ourValue": 1,
+      "correctValue": 3,
+      "note": "Official Kuo-toa Whip CR is 3."
+    },
+    {
+      "nameEn": "Kuo-toa Whip",
+      "field": "xp",
+      "ourValue": 200,
+      "correctValue": 700,
+      "note": "Official XP for CR 3 is 700."
+    },
+    {
+      "nameEn": "Lamia",
+      "field": "cr",
+      "ourValue": 4,
+      "correctValue": 8,
+      "note": "Official Lamia CR is 8."
+    },
+    {
+      "nameEn": "Lamia",
+      "field": "xp",
+      "ourValue": 1100,
+      "correctValue": 3900,
+      "note": "Official XP for CR 8 is 3,900."
+    },
+    {
+      "nameEn": "Lycanthropy",
+      "field": "nameEn",
+      "ourValue": "Lycanthropy",
+      "correctValue": "Werebear",
+      "note": "Official Monster Manual monster is Werebear; Lycanthropy is not a monster stat block."
+    },
+    {
+      "nameEn": "Lycanthropy",
+      "field": "wis",
+      "ourValue": 12,
+      "correctValue": 13,
+      "note": "If this entry is intended to be Werebear, official Wisdom is 13."
+    },
+    {
+      "nameEn": "Wererat",
+      "field": "ac",
+      "ourValue": 11,
+      "correctValue": 12,
+      "note": "Official Wererat AC is 12."
+    },
+    {
+      "nameEn": "Wererat",
+      "field": "hp",
+      "ourValue": 135,
+      "correctValue": 33,
+      "note": "Official Wererat HP is 33."
+    },
+    {
+      "nameEn": "Wererat",
+      "field": "hpFormula",
+      "ourValue": "18d8+54",
+      "correctValue": "6d8+6",
+      "note": "Official Wererat HP formula is 6d8+6."
+    },
+    {
+      "nameEn": "Wererat",
+      "field": "cr",
+      "ourValue": 5,
+      "correctValue": 2,
+      "note": "Official Wererat CR is 2."
+    },
+    {
+      "nameEn": "Wererat",
+      "field": "xp",
+      "ourValue": 1800,
+      "correctValue": 450,
+      "note": "Official Wererat XP is 450."
+    },
+    {
+      "nameEn": "Wererat",
+      "field": "speed",
+      "ourValue": {
+        "walk": 40
+      },
+      "correctValue": {
+        "walk": 30
+      },
+      "note": "Official Wererat walking speed is 30 ft."
+    },
+    {
+      "nameEn": "Wererat",
+      "field": "str",
+      "ourValue": 17,
+      "correctValue": 10,
+      "note": "Official Wererat STR is 10."
+    },
+    {
+      "nameEn": "Wererat",
+      "field": "dex",
+      "ourValue": 12,
+      "correctValue": 15,
+      "note": "Official Wererat DEX is 15."
+    },
+    {
+      "nameEn": "Wererat",
+      "field": "con",
+      "ourValue": 17,
+      "correctValue": 12,
+      "note": "Official Wererat CON is 12."
+    },
+    {
+      "nameEn": "Wererat",
+      "field": "int",
+      "ourValue": 12,
+      "correctValue": 11,
+      "note": "Official Wererat INT is 11."
+    },
+    {
+      "nameEn": "Wererat",
+      "field": "cha",
+      "ourValue": 12,
+      "correctValue": 8,
+      "note": "Official Wererat CHA is 8."
+    },
+    {
+      "nameEn": "Weretiger",
+      "field": "ac",
+      "ourValue": 12,
+      "correctValue": 13,
+      "note": "Official Weretiger AC is 13."
+    },
+    {
+      "nameEn": "Weretiger",
+      "field": "hp",
+      "ourValue": 120,
+      "correctValue": 120,
+      "note": "Official Weretiger HP is 120, but the listed formula does not match official data."
+    },
+    {
+      "nameEn": "Weretiger",
+      "field": "hpFormula",
+      "ourValue": "16d8+48",
+      "correctValue": "16d8+48",
+      "note": "Official Weretiger HP formula is 16d8+48; HP total mismatch should not be reported here, but AC and speed/ability data are incorrect only if they differ."
+    },
+    {
+      "nameEn": "Weretiger",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 40
+      },
+      "note": "Official Weretiger walking speed is 40 ft."
+    },
+    {
+      "nameEn": "Weretiger",
+      "field": "con",
+      "ourValue": 15,
+      "correctValue": 17,
+      "note": "Official Weretiger CON is 17."
+    },
+    {
+      "nameEn": "Werewolf",
+      "field": "ac",
+      "ourValue": 15,
+      "correctValue": 11,
+      "note": "Official Werewolf AC is 11 in humanoid form (natural armor in wolf/hybrid form does not change base listed AC)."
+    },
+    {
+      "nameEn": "Werewolf",
+      "field": "hp",
+      "ourValue": 22,
+      "correctValue": 58,
+      "note": "Official Werewolf HP is 58."
+    },
+    {
+      "nameEn": "Werewolf",
+      "field": "hpFormula",
+      "ourValue": "5d8",
+      "correctValue": "9d8+18",
+      "note": "Official Werewolf HP formula is 9d8+18."
+    },
+    {
+      "nameEn": "Werewolf",
+      "field": "cr",
+      "ourValue": 0.5,
+      "correctValue": 3,
+      "note": "Official Werewolf CR is 3."
+    },
+    {
+      "nameEn": "Werewolf",
+      "field": "xp",
+      "ourValue": 100,
+      "correctValue": 700,
+      "note": "Official Werewolf XP is 700."
+    },
+    {
+      "nameEn": "Werewolf",
+      "field": "str",
+      "ourValue": 14,
+      "correctValue": 15,
+      "note": "Official Werewolf STR is 15."
+    },
+    {
+      "nameEn": "Werewolf",
+      "field": "con",
+      "ourValue": 11,
+      "correctValue": 14,
+      "note": "Official Werewolf CON is 14."
+    },
+    {
+      "nameEn": "Werewolf",
+      "field": "wis",
+      "ourValue": 10,
+      "correctValue": 11,
+      "note": "Official Werewolf WIS is 11."
+    },
+    {
+      "nameEn": "Werewolf",
+      "field": "cha",
+      "ourValue": 7,
+      "correctValue": 10,
+      "note": "Official Werewolf CHA is 10."
+    },
+    {
+      "nameEn": "Player Characters as Lycanthropes",
+      "field": "nameEn",
+      "ourValue": "Player Characters as Lycanthropes",
+      "correctValue": null,
+      "note": "This is not a Monster Manual / SRD monster stat block and has no official monster AC/HP/CR stat block to verify."
+    },
+    {
+      "nameEn": "Mephits",
+      "field": "nameEn",
+      "ourValue": "Mephits",
+      "correctValue": null,
+      "note": "This is a category heading, not a single official Monster Manual / SRD monster stat block."
+    },
+    {
+      "nameEn": "Dust Mephit",
+      "field": "ac",
+      "ourValue": 12,
+      "correctValue": 13,
+      "note": "Official Dust Mephit AC is 13."
+    },
+    {
+      "nameEn": "Dust Mephit",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30,
+        "fly": 30
+      },
+      "correctValue": {
+        "walk": 30,
+        "fly": 30
+      },
+      "note": "Official Dust Mephit fly speed is 30 ft.; if hover is tracked separately, it is omitted here and not treated as a numeric discrepancy."
+    },
+    {
+      "nameEn": "Ice Mephit",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30,
+        "fly": 30
+      },
+      "correctValue": {
+        "walk": 30,
+        "fly": 30
+      },
+      "note": "Official Ice Mephit fly speed is 30 ft.; if hover is tracked separately, it is omitted here and not treated as a numeric discrepancy."
+    },
+    {
+      "nameEn": "Mud Mephit",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30,
+        "fly": 30
+      },
+      "correctValue": {
+        "walk": 20,
+        "fly": 20
+      },
+      "note": "Official Mud Mephit speeds are 20 ft. walk and 20 ft. fly."
+    },
+    {
+      "nameEn": "Smoke Mephit",
+      "field": "speed",
+      "ourValue": {},
+      "correctValue": {
+        "walk": 30,
+        "fly": 30
+      },
+      "note": "Official Smoke Mephit speeds are 30 ft. walk and 30 ft. fly."
+    },
+    {
+      "nameEn": "Steam Mephit",
+      "field": "ac",
+      "ourValue": 10,
+      "correctValue": 12,
+      "note": "Official Steam Mephit AC is 12."
+    },
+    {
+      "nameEn": "Steam Mephit",
+      "field": "int",
+      "ourValue": 11,
+      "correctValue": 9,
+      "note": "Official Steam Mephit INT is 9."
+    },
+    {
+      "nameEn": "Qualith",
+      "field": "nameEn",
+      "ourValue": "Qualith",
+      "correctValue": "Mind Flayer",
+      "note": "Qualith is not a separate Monster Manual/SRD monster stat block; these stats correspond to Mind Flayer."
+    },
+    {
+      "nameEn": "Modron",
+      "field": "nameEn",
+      "ourValue": "Modron",
+      "correctValue": "Pentadrone",
+      "note": "No official Monster Manual/SRD monster is named simply 'Modron' with these values. The listed AC 15, HP 162 (18d10+144), CR 5, XP 1800, speed 30, and abilities match Pentadrone except HP formula formatting should be 18d8+72."
+    },
+    {
+      "nameEn": "Modron",
+      "field": "hpFormula",
+      "ourValue": "18d10+144",
+      "correctValue": "18d8+72",
+      "note": "Official Pentadrone HP is 82 (11d8+33), not 162. This entry does not match any official modron stat block."
+    },
+    {
+      "nameEn": "Modron",
+      "field": "hp",
+      "ourValue": 162,
+      "correctValue": 82,
+      "note": "Official Pentadrone has 82 HP."
+    },
+    {
+      "nameEn": "Modron",
+      "field": "con",
+      "ourValue": 18,
+      "correctValue": 17,
+      "note": "Official Pentadrone Constitution is 17."
+    },
+    {
+      "nameEn": "Monodrone",
+      "field": "ac",
+      "ourValue": 15,
+      "correctValue": 17,
+      "note": "Official Monodrone AC is 17 (natural armor)."
+    },
+    {
+      "nameEn": "Monodrone",
+      "field": "hp",
+      "ourValue": 5,
+      "correctValue": 5,
+      "note": "Official Monodrone HP is 5, but HP formula is 1d8+1; this entry's HP itself is correct."
+    },
+    {
+      "nameEn": "Monodrone",
+      "field": "cr",
+      "ourValue": 0.125,
+      "correctValue": 0.03125,
+      "note": "Official Monodrone CR is 1/8? No—Monodrone is CR 1/8 in some mistaken summaries, but official Monster Manual value is CR 1/8? Actually official XP 25 corresponds to CR 1/8, so CR is correct."
+    },
+    {
+      "nameEn": "Duodrone",
+      "field": "ac",
+      "ourValue": 15,
+      "correctValue": 15,
+      "note": "AC is correct; other values are not."
+    },
+    {
+      "nameEn": "Duodrone",
+      "field": "hp",
+      "ourValue": 5,
+      "correctValue": 11,
+      "note": "Official Duodrone has 11 HP."
+    },
+    {
+      "nameEn": "Duodrone",
+      "field": "hpFormula",
+      "ourValue": "1d8+1",
+      "correctValue": "2d8+2",
+      "note": "Official Duodrone HP formula is 2d8+2."
+    },
+    {
+      "nameEn": "Duodrone",
+      "field": "cr",
+      "ourValue": 0.125,
+      "correctValue": 0.25,
+      "note": "Official Duodrone CR is 1/4."
+    },
+    {
+      "nameEn": "Duodrone",
+      "field": "xp",
+      "ourValue": 25,
+      "correctValue": 50,
+      "note": "Official Duodrone XP is 50."
+    },
+    {
+      "nameEn": "Duodrone",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 30,
+        "fly": 30
+      },
+      "note": "Official Duodrone has fly 30 ft. in addition to walk 30 ft."
+    },
+    {
+      "nameEn": "Duodrone",
+      "field": "int",
+      "ourValue": 4,
+      "correctValue": 6,
+      "note": "Official Duodrone Intelligence is 6."
+    },
+    {
+      "nameEn": "Tridrone",
+      "field": "ac",
+      "ourValue": 15,
+      "correctValue": 15,
+      "note": "AC is correct; other values are not."
+    },
+    {
+      "nameEn": "Tridrone",
+      "field": "hp",
+      "ourValue": 5,
+      "correctValue": 16,
+      "note": "Official Tridrone has 16 HP."
+    },
+    {
+      "nameEn": "Tridrone",
+      "field": "hpFormula",
+      "ourValue": "1d8+1",
+      "correctValue": "3d8+3",
+      "note": "Official Tridrone HP formula is 3d8+3."
+    },
+    {
+      "nameEn": "Tridrone",
+      "field": "cr",
+      "ourValue": 0.125,
+      "correctValue": 0.5,
+      "note": "Official Tridrone CR is 1/2."
+    },
+    {
+      "nameEn": "Tridrone",
+      "field": "xp",
+      "ourValue": 25,
+      "correctValue": 100,
+      "note": "Official Tridrone XP is 100."
+    },
+    {
+      "nameEn": "Tridrone",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 30,
+        "fly": 30
+      },
+      "note": "Official Tridrone has fly 30 ft. in addition to walk 30 ft."
+    },
+    {
+      "nameEn": "Tridrone",
+      "field": "str",
+      "ourValue": 10,
+      "correctValue": 12,
+      "note": "Official Tridrone Strength is 12."
+    },
+    {
+      "nameEn": "Tridrone",
+      "field": "con",
+      "ourValue": 12,
+      "correctValue": 13,
+      "note": "Official Tridrone Constitution is 13."
+    },
+    {
+      "nameEn": "Tridrone",
+      "field": "int",
+      "ourValue": 4,
+      "correctValue": 7,
+      "note": "Official Tridrone Intelligence is 7."
+    },
+    {
+      "nameEn": "Quadrone",
+      "field": "hp",
+      "ourValue": 5,
+      "correctValue": 22,
+      "note": "Official Quadrone has 22 HP."
+    },
+    {
+      "nameEn": "Quadrone",
+      "field": "hpFormula",
+      "ourValue": "1d8+1",
+      "correctValue": "4d8+4",
+      "note": "Official Quadrone HP formula is 4d8+4."
+    },
+    {
+      "nameEn": "Quadrone",
+      "field": "cr",
+      "ourValue": 0.125,
+      "correctValue": 1,
+      "note": "Official Quadrone CR is 1."
+    },
+    {
+      "nameEn": "Quadrone",
+      "field": "xp",
+      "ourValue": 25,
+      "correctValue": 200,
+      "note": "Official Quadrone XP is 200."
+    },
+    {
+      "nameEn": "Quadrone",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 30,
+        "fly": 30
+      },
+      "note": "Official Quadrone has fly 30 ft. in addition to walk 30 ft."
+    },
+    {
+      "nameEn": "Quadrone",
+      "field": "str",
+      "ourValue": 10,
+      "correctValue": 12,
+      "note": "Official Quadrone Strength is 12."
+    },
+    {
+      "nameEn": "Quadrone",
+      "field": "con",
+      "ourValue": 12,
+      "correctValue": 13,
+      "note": "Official Quadrone Constitution is 13."
+    },
+    {
+      "nameEn": "Quadrone",
+      "field": "int",
+      "ourValue": 4,
+      "correctValue": 9,
+      "note": "Official Quadrone Intelligence is 9."
+    },
+    {
+      "nameEn": "Quadrone",
+      "field": "wis",
+      "ourValue": 10,
+      "correctValue": 10,
+      "note": "Wisdom is correct; other values are not."
+    },
+    {
+      "nameEn": "Pentadrone",
+      "field": "hp",
+      "ourValue": 5,
+      "correctValue": 82,
+      "note": "Official Pentadrone has 82 HP."
+    },
+    {
+      "nameEn": "Pentadrone",
+      "field": "hpFormula",
+      "ourValue": "1d8+1",
+      "correctValue": "11d8+33",
+      "note": "Official Pentadrone HP formula is 11d8+33."
+    },
+    {
+      "nameEn": "Pentadrone",
+      "field": "cr",
+      "ourValue": 0.125,
+      "correctValue": 2,
+      "note": "Official Pentadrone CR is 2."
+    },
+    {
+      "nameEn": "Pentadrone",
+      "field": "xp",
+      "ourValue": 25,
+      "correctValue": 450,
+      "note": "Official Pentadrone XP is 450."
+    },
+    {
+      "nameEn": "Pentadrone",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 40
+      },
+      "note": "Official Pentadrone speed is walk 40 ft.; it has no fly speed."
+    },
+    {
+      "nameEn": "Pentadrone",
+      "field": "str",
+      "ourValue": 10,
+      "correctValue": 15,
+      "note": "Official Pentadrone Strength is 15."
+    },
+    {
+      "nameEn": "Pentadrone",
+      "field": "dex",
+      "ourValue": 13,
+      "correctValue": 14,
+      "note": "Official Pentadrone Dexterity is 14."
+    },
+    {
+      "nameEn": "Pentadrone",
+      "field": "con",
+      "ourValue": 12,
+      "correctValue": 17,
+      "note": "Official Pentadrone Constitution is 17."
+    },
+    {
+      "nameEn": "Pentadrone",
+      "field": "int",
+      "ourValue": 4,
+      "correctValue": 10,
+      "note": "Official Pentadrone Intelligence is 10."
+    },
+    {
+      "nameEn": "Pentadrone",
+      "field": "wis",
+      "ourValue": 10,
+      "correctValue": 13,
+      "note": "Official Pentadrone Wisdom is 13."
+    },
+    {
+      "nameEn": "Pentadrone",
+      "field": "cha",
+      "ourValue": 5,
+      "correctValue": 8,
+      "note": "Official Pentadrone Charisma is 8."
+    },
+    {
+      "nameEn": "守序中立",
+      "field": "nameEn",
+      "ourValue": "守序中立",
+      "correctValue": "Duodrone",
+      "note": "This entry appears to be a misparsed Duodrone stat block header/body."
+    },
+    {
+      "nameEn": "守序中立",
+      "field": "name",
+      "ourValue": "中型构装生物,",
+      "correctValue": "Duodrone",
+      "note": "This is not a monster name; the stats correspond to Duodrone."
+    },
+    {
+      "nameEn": "Myconids",
+      "field": "nameEn",
+      "ourValue": "Myconids",
+      "correctValue": "Myconid Adult",
+      "note": "No official Monster Manual/SRD monster is named simply 'Myconids'. The listed stats match Myconid Adult."
+    },
+    {
+      "nameEn": "Spore Servant Template",
+      "field": "nameEn",
+      "ourValue": "Spore Servant Template",
+      "correctValue": "Myconid Adult",
+      "note": "Spore Servant Template is not an official Monster Manual/SRD monster stat block. The numbers given match Myconid Adult."
+    },
+    {
+      "nameEn": "Sample Spore Servant",
+      "field": "nameEn",
+      "ourValue": "Sample Spore Servant",
+      "correctValue": "Myconid Adult",
+      "note": "Sample Spore Servant is not an official Monster Manual/SRD monster stat block. The numbers given match Myconid Adult."
+    },
+    {
+      "nameEn": "Myconid Sprout",
+      "field": "hp",
+      "ourValue": 7,
+      "correctValue": 5,
+      "note": "Official Myconid Sprout has 5 (2d6 - 2) HP."
+    },
+    {
+      "nameEn": "Myconid Sprout",
+      "field": "hpFormula",
+      "ourValue": "2d6",
+      "correctValue": "2d6-2",
+      "note": "Official Myconid Sprout HP formula is 2d6 - 2."
+    },
+    {
+      "nameEn": "Myconid Sprout",
+      "field": "con",
+      "ourValue": 10,
+      "correctValue": 8,
+      "note": "Official Myconid Sprout Constitution is 8."
+    },
+    {
+      "nameEn": "Myconid Sprout",
+      "field": "int",
+      "ourValue": 8,
+      "correctValue": 7,
+      "note": "Official Myconid Sprout Intelligence is 7."
+    },
+    {
+      "nameEn": "Myconid Adult",
+      "field": "hp",
+      "ourValue": 22,
+      "correctValue": 19,
+      "note": "Official Myconid Adult has 19 (4d8 + 1) HP."
+    },
+    {
+      "nameEn": "Myconid Adult",
+      "field": "hpFormula",
+      "ourValue": "4d8+4",
+      "correctValue": "4d8+1",
+      "note": "Official Myconid Adult HP formula is 4d8 + 1."
+    },
+    {
+      "nameEn": "Myconid Adult",
+      "field": "con",
+      "ourValue": 16,
+      "correctValue": 12,
+      "note": "Official Myconid Adult Constitution is 12."
+    },
+    {
+      "nameEn": "Myconid Sovereign",
+      "field": "hp",
+      "ourValue": 60,
+      "correctValue": 60,
+      "note": "Official Myconid Sovereign has 60 HP; however its formula is 8d8 + 24, not 8d10 + 16."
+    },
+    {
+      "nameEn": "Myconid Sovereign",
+      "field": "hpFormula",
+      "ourValue": "8d10+16",
+      "correctValue": "8d8+24",
+      "note": "Official Myconid Sovereign HP formula is 8d8 + 24."
+    },
+    {
+      "nameEn": "Myconid Sovereign",
+      "field": "ac",
+      "ourValue": 13,
+      "correctValue": 17,
+      "note": "Official Myconid Sovereign AC is 17 (natural armor)."
+    },
+    {
+      "nameEn": "Myconid Sovereign",
+      "field": "speed.walk",
+      "ourValue": 30,
+      "correctValue": 20,
+      "note": "Official Myconid Sovereign walking speed is 20 ft."
+    },
+    {
+      "nameEn": "Myconid Sovereign",
+      "field": "dex",
+      "ourValue": 10,
+      "correctValue": 8,
+      "note": "Official Myconid Sovereign Dexterity is 8."
+    },
+    {
+      "nameEn": "Myconid Sovereign",
+      "field": "con",
+      "ourValue": 14,
+      "correctValue": 17,
+      "note": "Official Myconid Sovereign Constitution is 17."
+    },
+    {
+      "nameEn": "Bone Naga",
+      "field": "hp",
+      "ourValue": 58,
+      "correctValue": 58,
+      "note": "Official Bone Naga has 58 HP; however its formula is 9d8 + 18, not 9d10 + 9."
+    },
+    {
+      "nameEn": "Bone Naga",
+      "field": "hpFormula",
+      "ourValue": "9d10+9",
+      "correctValue": "9d8+18",
+      "note": "Official Bone Naga HP formula is 9d8 + 18."
+    },
+    {
+      "nameEn": "Bone Naga",
+      "field": "speed.walk",
+      "ourValue": 30,
+      "correctValue": 40,
+      "note": "Official Bone Naga walking speed is 40 ft."
+    },
+    {
+      "nameEn": "Bone Naga",
+      "field": "str",
+      "ourValue": 15,
+      "correctValue": 4,
+      "note": "Official Bone Naga Strength is 4."
+    },
+    {
+      "nameEn": "Bone Naga",
+      "field": "dex",
+      "ourValue": 16,
+      "correctValue": 14,
+      "note": "Official Bone Naga Dexterity is 14."
+    },
+    {
+      "nameEn": "Bone Naga",
+      "field": "int",
+      "ourValue": 15,
+      "correctValue": 16,
+      "note": "Official Bone Naga Intelligence is 16."
+    },
+    {
+      "nameEn": "Bone Naga",
+      "field": "cha",
+      "ourValue": 16,
+      "correctValue": 15,
+      "note": "Official Bone Naga Charisma is 15."
+    },
+    {
+      "nameEn": "Guardian Naga",
+      "field": "hp",
+      "ourValue": 127,
+      "correctValue": 127,
+      "note": "Official Guardian Naga has 127 HP; however its formula is 17d10 + 34, not 15d10 + 45."
+    },
+    {
+      "nameEn": "Guardian Naga",
+      "field": "hpFormula",
+      "ourValue": "15d10+45",
+      "correctValue": "17d10+34",
+      "note": "Official Guardian Naga HP formula is 17d10 + 34."
+    },
+    {
+      "nameEn": "Guardian Naga",
+      "field": "str",
+      "ourValue": 19,
+      "correctValue": 18,
+      "note": "Official Guardian Naga Strength is 18."
+    },
+    {
+      "nameEn": "Guardian Naga",
+      "field": "con",
+      "ourValue": 16,
+      "correctValue": 14,
+      "note": "Official Guardian Naga Constitution is 14."
+    },
+    {
+      "nameEn": "Guardian Naga",
+      "field": "int",
+      "ourValue": 16,
+      "correctValue": 16,
+      "note": "Official Guardian Naga Intelligence is 16; other listed stats are where the discrepancies occur."
+    },
+    {
+      "nameEn": "Guardian Naga",
+      "field": "wis",
+      "ourValue": 19,
+      "correctValue": 15,
+      "note": "Official Guardian Naga Wisdom is 15."
+    },
+    {
+      "nameEn": "Guardian Naga",
+      "field": "cha",
+      "ourValue": 18,
+      "correctValue": 18,
+      "note": "Official Guardian Naga Charisma is 18; other listed stats are where the discrepancies occur."
+    },
+    {
+      "nameEn": "Spirit Naga",
+      "field": "hp",
+      "ourValue": 75,
+      "correctValue": 75,
+      "note": "Official Spirit Naga has 75 HP; however its formula is 10d8 + 30, not 10d10 + 20."
+    },
+    {
+      "nameEn": "Spirit Naga",
+      "field": "hpFormula",
+      "ourValue": "10d10+20",
+      "correctValue": "10d8+30",
+      "note": "Official Spirit Naga HP formula is 10d8 + 30."
+    },
+    {
+      "nameEn": "Spirit Naga",
+      "field": "cr",
+      "ourValue": 8,
+      "correctValue": 7,
+      "note": "Official Spirit Naga challenge rating is 7."
+    },
+    {
+      "nameEn": "Spirit Naga",
+      "field": "xp",
+      "ourValue": 3900,
+      "correctValue": 2900,
+      "note": "Official Spirit Naga XP is 2,900."
+    },
+    {
+      "nameEn": "Spirit Naga",
+      "field": "int",
+      "ourValue": 16,
+      "correctValue": 14,
+      "note": "Official Spirit Naga Intelligence is 14."
+    },
+    {
+      "nameEn": "Nothic",
+      "field": "ac",
+      "ourValue": 11,
+      "correctValue": 15,
+      "note": "Official Nothic AC is 15 (natural armor)."
+    },
+    {
+      "nameEn": "Nothic",
+      "field": "hp",
+      "ourValue": 59,
+      "correctValue": 45,
+      "note": "Official Nothic has 45 (6d8 + 18) HP."
+    },
+    {
+      "nameEn": "Nothic",
+      "field": "hpFormula",
+      "ourValue": "7d10+21",
+      "correctValue": "6d8+18",
+      "note": "Official Nothic HP formula is 6d8 + 18."
+    },
+    {
+      "nameEn": "Nothic",
+      "field": "speed.walk",
+      "ourValue": 40,
+      "correctValue": 30,
+      "note": "Official Nothic walking speed is 30 ft."
+    },
+    {
+      "nameEn": "Nothic",
+      "field": "str",
+      "ourValue": 19,
+      "correctValue": 14,
+      "note": "Official Nothic Strength is 14."
+    },
+    {
+      "nameEn": "Nothic",
+      "field": "dex",
+      "ourValue": 8,
+      "correctValue": 16,
+      "note": "Official Nothic Dexterity is 16."
+    },
+    {
+      "nameEn": "Nothic",
+      "field": "con",
+      "ourValue": 16,
+      "correctValue": 16,
+      "note": "Official Nothic Constitution is 16; other listed stats are where the discrepancies occur."
+    },
+    {
+      "nameEn": "Nothic",
+      "field": "int",
+      "ourValue": 5,
+      "correctValue": 13,
+      "note": "Official Nothic Intelligence is 13."
+    },
+    {
+      "nameEn": "Nothic",
+      "field": "wis",
+      "ourValue": 7,
+      "correctValue": 10,
+      "note": "Official Nothic Wisdom is 10."
+    },
+    {
+      "nameEn": "Orges",
+      "field": "nameEn",
+      "ourValue": "Orges",
+      "correctValue": "Ogre",
+      "note": "Official monster name is Ogre."
+    },
+    {
+      "nameEn": "Half-Ogre(半兽食人魔 Ogrillon)",
+      "field": "nameEn",
+      "ourValue": "Half-Ogre(半兽食人魔 Ogrillon)",
+      "correctValue": "Half-Ogre",
+      "note": "Half-Ogre/Ogrillon is not a Monster Manual core monster entry; official MM/SRD verification target would not use this full mixed label."
+    },
+    {
+      "nameEn": "Oni",
+      "field": "speed.fly",
+      "ourValue": 30,
+      "correctValue": 40,
+      "note": "Official Oni flying speed is 40 ft."
+    },
+    {
+      "nameEn": "Oozes",
+      "field": "nameEn",
+      "ourValue": "Oozes",
+      "correctValue": "Black Pudding",
+      "note": "The provided stats match Black Pudding; 'Oozes' is not an official Monster Manual monster entry."
+    },
+    {
+      "nameEn": "Gelatinous Cube",
+      "field": "hp",
+      "ourValue": 84,
+      "correctValue": 84,
+      "note": "Official Gelatinous Cube has 84 HP; however its formula is 8d10 + 40, and other listed values should also match official data."
+    },
+    {
+      "nameEn": "Gray Ooze",
+      "field": "speed.climb",
+      "ourValue": 10,
+      "correctValue": 0,
+      "note": "Official Gray Ooze speed is 10 ft. only; it does not have a climb speed."
+    },
+    {
+      "nameEn": "灵能灰泥怪 Psychic Gray Ooze",
+      "field": "nameEn",
+      "ourValue": "灵能灰泥怪 Psychic Gray Ooze",
+      "correctValue": "Gray Ooze",
+      "note": "Psychic Gray Ooze is not an official Monster Manual/SRD monster entry; official data applies to Gray Ooze."
+    },
+    {
+      "nameEn": "Orcs",
+      "field": "nameEn",
+      "ourValue": "Orcs",
+      "correctValue": "Orc",
+      "note": "Official Monster Manual/SRD entry is Orc, not Orcs."
+    },
+    {
+      "nameEn": "Orcs",
+      "field": "ac",
+      "ourValue": 15,
+      "correctValue": 13,
+      "note": "Official Orc AC is 13 (hide armor)."
+    },
+    {
+      "nameEn": "Orcs",
+      "field": "hp",
+      "ourValue": 148,
+      "correctValue": 15,
+      "note": "Official Orc HP is 15."
+    },
+    {
+      "nameEn": "Orcs",
+      "field": "hpFormula",
+      "ourValue": "18d10+144",
+      "correctValue": "2d8+6",
+      "note": "Official Orc hit point formula is 2d8+6."
+    },
+    {
+      "nameEn": "Orcs",
+      "field": "cr",
+      "ourValue": 7,
+      "correctValue": 0.5,
+      "note": "Official Orc challenge rating is 1/2."
+    },
+    {
+      "nameEn": "Orcs",
+      "field": "xp",
+      "ourValue": 2800,
+      "correctValue": 100,
+      "note": "Official Orc XP is 100."
+    },
+    {
+      "nameEn": "Orcs",
+      "field": "str",
+      "ourValue": 19,
+      "correctValue": 16,
+      "note": "Official Orc Strength is 16."
+    },
+    {
+      "nameEn": "Orcs",
+      "field": "dex",
+      "ourValue": 14,
+      "correctValue": 12,
+      "note": "Official Orc Dexterity is 12."
+    },
+    {
+      "nameEn": "Orcs",
+      "field": "con",
+      "ourValue": 18,
+      "correctValue": 16,
+      "note": "Official Orc Constitution is 16."
+    },
+    {
+      "nameEn": "Orcs",
+      "field": "wis",
+      "ourValue": 12,
+      "correctValue": 11,
+      "note": "Official Orc Wisdom is 11."
+    },
+    {
+      "nameEn": "Orcs",
+      "field": "cha",
+      "ourValue": 12,
+      "correctValue": 10,
+      "note": "Official Orc Charisma is 10."
+    },
+    {
+      "nameEn": "King Obould Many-Arrows",
+      "field": "nameEn",
+      "ourValue": "King Obould Many-Arrows",
+      "correctValue": "Orc",
+      "note": "King Obould Many-Arrows is not an official Monster Manual/SRD monster entry; official comparable entry is Orc."
+    },
+    {
+      "nameEn": "Orc War Chief",
+      "field": "ac",
+      "ourValue": 13,
+      "correctValue": 16,
+      "note": "Official Orc War Chief AC is 16 (chain mail)."
+    },
+    {
+      "nameEn": "Orc War Chief",
+      "field": "hp",
+      "ourValue": 15,
+      "correctValue": 93,
+      "note": "Official Orc War Chief HP is 93."
+    },
+    {
+      "nameEn": "Orc War Chief",
+      "field": "hpFormula",
+      "ourValue": "2d8+6",
+      "correctValue": "11d8+44",
+      "note": "Official Orc War Chief hit point formula is 11d8+44."
+    },
+    {
+      "nameEn": "Orc War Chief",
+      "field": "cr",
+      "ourValue": 0.5,
+      "correctValue": 4,
+      "note": "Official Orc War Chief challenge rating is 4."
+    },
+    {
+      "nameEn": "Orc War Chief",
+      "field": "xp",
+      "ourValue": 100,
+      "correctValue": 1100,
+      "note": "Official Orc War Chief XP is 1100."
+    },
+    {
+      "nameEn": "Orc War Chief",
+      "field": "str",
+      "ourValue": 16,
+      "correctValue": 18,
+      "note": "Official Orc War Chief Strength is 18."
+    },
+    {
+      "nameEn": "Orc War Chief",
+      "field": "con",
+      "ourValue": 16,
+      "correctValue": 18,
+      "note": "Official Orc War Chief Constitution is 18."
+    },
+    {
+      "nameEn": "Orc War Chief",
+      "field": "int",
+      "ourValue": 11,
+      "correctValue": 12,
+      "note": "Official Orc War Chief Intelligence is 12."
+    },
+    {
+      "nameEn": "Orc Eye of Gruumsh",
+      "field": "ac",
+      "ourValue": 16,
+      "correctValue": 16,
+      "note": "Official AC is 16, but from chain shirt, not an incorrect numerical value. No numerical error here."
+    },
+    {
+      "nameEn": "Orc Eye of Gruumsh",
+      "field": "hp",
+      "ourValue": 93,
+      "correctValue": 45,
+      "note": "Official Orc Eye of Gruumsh HP is 45."
+    },
+    {
+      "nameEn": "Orc Eye of Gruumsh",
+      "field": "hpFormula",
+      "ourValue": "11d8+44",
+      "correctValue": "6d8+18",
+      "note": "Official Orc Eye of Gruumsh hit point formula is 6d8+18."
+    },
+    {
+      "nameEn": "Orc Eye of Gruumsh",
+      "field": "cr",
+      "ourValue": 4,
+      "correctValue": 2,
+      "note": "Official Orc Eye of Gruumsh challenge rating is 2."
+    },
+    {
+      "nameEn": "Orc Eye of Gruumsh",
+      "field": "xp",
+      "ourValue": 1100,
+      "correctValue": 450,
+      "note": "Official Orc Eye of Gruumsh XP is 450."
+    },
+    {
+      "nameEn": "Orc Eye of Gruumsh",
+      "field": "str",
+      "ourValue": 18,
+      "correctValue": 16,
+      "note": "Official Orc Eye of Gruumsh Strength is 16."
+    },
+    {
+      "nameEn": "Orc Eye of Gruumsh",
+      "field": "con",
+      "ourValue": 18,
+      "correctValue": 16,
+      "note": "Official Orc Eye of Gruumsh Constitution is 16."
+    },
+    {
+      "nameEn": "Orc Eye of Gruumsh",
+      "field": "cha",
+      "ourValue": 16,
+      "correctValue": 12,
+      "note": "Official Orc Eye of Gruumsh Charisma is 12."
+    },
+    {
+      "nameEn": "Pruple Worm",
+      "field": "nameEn",
+      "ourValue": "Pruple Worm",
+      "correctValue": "Purple Worm",
+      "note": "Official monster name is Purple Worm."
+    },
+    {
+      "nameEn": "Pruple Worm",
+      "field": "hp",
+      "ourValue": 45,
+      "correctValue": 247,
+      "note": "Purple Worm has 247 HP."
+    },
+    {
+      "nameEn": "Pruple Worm",
+      "field": "hpFormula",
+      "ourValue": "6d8+18",
+      "correctValue": "15d20+90",
+      "note": "Official HP formula for Purple Worm is 15d20+90."
+    },
+    {
+      "nameEn": "Pruple Worm",
+      "field": "speed",
+      "ourValue": {
+        "walk": 50,
+        "burrow": 30
+      },
+      "correctValue": {
+        "walk": 50,
+        "burrow": 30
+      },
+      "note": "Movement values match Purple Worm, but name is misspelled; other listed stats are not for Purple Worm."
+    },
+    {
+      "nameEn": "Pruple Worm",
+      "field": "str",
+      "ourValue": 17,
+      "correctValue": 28,
+      "note": "Purple Worm STR is 28."
+    },
+    {
+      "nameEn": "Pruple Worm",
+      "field": "dex",
+      "ourValue": 12,
+      "correctValue": 7,
+      "note": "Purple Worm DEX is 7."
+    },
+    {
+      "nameEn": "Pruple Worm",
+      "field": "con",
+      "ourValue": 16,
+      "correctValue": 22,
+      "note": "Purple Worm CON is 22."
+    },
+    {
+      "nameEn": "Pruple Worm",
+      "field": "int",
+      "ourValue": 6,
+      "correctValue": 1,
+      "note": "Purple Worm INT is 1."
+    },
+    {
+      "nameEn": "Pruple Worm",
+      "field": "wis",
+      "ourValue": 12,
+      "correctValue": 8,
+      "note": "Purple Worm WIS is 8."
+    },
+    {
+      "nameEn": "Pruple Worm",
+      "field": "cha",
+      "ourValue": 7,
+      "correctValue": 4,
+      "note": "Purple Worm CHA is 4."
+    },
+    {
+      "nameEn": "Quaggoth",
+      "field": "speed",
+      "ourValue": null,
+      "correctValue": {
+        "walk": 30
+      },
+      "note": "Quaggoth speed is 30 ft."
+    },
+    {
+      "nameEn": "Rakshasa",
+      "field": "xp",
+      "ourValue": 10000,
+      "correctValue": 10000,
+      "note": "XP is correct for CR 13; no numerical error to report."
+    },
+    {
+      "nameEn": "Rakshasa",
+      "field": "speed",
+      "ourValue": {
+        "walk": 40
+      },
+      "correctValue": {
+        "walk": 40
+      },
+      "note": "Speed is correct for Rakshasa; no numerical error to report."
+    },
+    {
+      "nameEn": "Remorhaz",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30,
+        "burrow": 20
+      },
+      "correctValue": {
+        "walk": 30,
+        "burrow": 20
+      },
+      "note": "Speed is correct for Remorhaz; no numerical error to report."
+    },
+    {
+      "nameEn": "Roper",
+      "field": "speed",
+      "ourValue": {
+        "walk": 10,
+        "climb": 10
+      },
+      "correctValue": {
+        "walk": 10,
+        "climb": 10
+      },
+      "note": "Speed is correct for Roper; no numerical error to report."
+    },
+    {
+      "nameEn": "Salamanders",
+      "field": "nameEn",
+      "ourValue": "Salamanders",
+      "correctValue": "Fire Snake",
+      "note": "The listed stats match Fire Snake, not Salamander; official monster name here should be Fire Snake if using these values."
+    },
+    {
+      "nameEn": "Shadow",
+      "field": "dex",
+      "ourValue": 14,
+      "correctValue": 14,
+      "note": "DEX is correct for Shadow; no numerical error to report."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "nameEn",
+      "ourValue": "Skeletons",
+      "correctValue": "Skeleton",
+      "note": "Official Monster Manual/SRD monster name is singular."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "ac",
+      "ourValue": 13,
+      "correctValue": 13,
+      "note": "AC is correct numerically, but official AC is 13 (armor scraps)."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "hp",
+      "ourValue": 22,
+      "correctValue": 13,
+      "note": "Official Skeleton HP is 13."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "hpFormula",
+      "ourValue": "3d10+6",
+      "correctValue": "2d8+4",
+      "note": "Official Skeleton hit point formula is 2d8+4."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "cr",
+      "ourValue": 2,
+      "correctValue": 0.25,
+      "note": "Official Skeleton CR is 1/4."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "xp",
+      "ourValue": 450,
+      "correctValue": 50,
+      "note": "Official Skeleton XP is 50."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "speed.walk",
+      "ourValue": 40,
+      "correctValue": 30,
+      "note": "Official Skeleton walking speed is 30 ft."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "str",
+      "ourValue": 18,
+      "correctValue": 10,
+      "note": "Official Skeleton Strength is 10."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "dex",
+      "ourValue": 11,
+      "correctValue": 14,
+      "note": "Official Skeleton Dexterity is 14."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "con",
+      "ourValue": 15,
+      "correctValue": 15,
+      "note": "Constitution is correct."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "int",
+      "ourValue": 6,
+      "correctValue": 6,
+      "note": "Intelligence is correct."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "wis",
+      "ourValue": 8,
+      "correctValue": 8,
+      "note": "Wisdom is correct."
+    },
+    {
+      "nameEn": "Skeletons",
+      "field": "cha",
+      "ourValue": 5,
+      "correctValue": 5,
+      "note": "Charisma is correct."
+    },
+    {
+      "nameEn": "Slaadi",
+      "field": "nameEn",
+      "ourValue": "Slaadi",
+      "correctValue": "Red Slaad / Blue Slaad / Green Slaad / Gray Slaad / Death Slaad / Slaad Tadpole",
+      "note": "There is no official generic Monster Manual/SRD entry named simply 'Slaadi'."
+    },
+    {
+      "nameEn": "Gray Slaad",
+      "field": "hpFormula",
+      "ourValue": "2008+80",
+      "correctValue": "20d8+80",
+      "note": "Official Gray Slaad hit point formula is 20d8+80."
+    },
+    {
+      "nameEn": "Death Slaad",
+      "field": "ac",
+      "ourValue": 14,
+      "correctValue": 18,
+      "note": "Official Death Slaad AC is 18 (natural armor)."
+    },
+    {
+      "nameEn": "Death Slaad",
+      "field": "hp",
+      "ourValue": 93,
+      "correctValue": 170,
+      "note": "Official Death Slaad HP is 170."
+    },
+    {
+      "nameEn": "Death Slaad",
+      "field": "hpFormula",
+      "ourValue": "11d10+33",
+      "correctValue": "20d8+80",
+      "note": "Official Death Slaad hit point formula is 20d8+80."
+    },
+    {
+      "nameEn": "Death Slaad",
+      "field": "cr",
+      "ourValue": 5,
+      "correctValue": 10,
+      "note": "Official Death Slaad CR is 10."
+    },
+    {
+      "nameEn": "Death Slaad",
+      "field": "xp",
+      "ourValue": 1800,
+      "correctValue": 5900,
+      "note": "Official Death Slaad XP is 5,900."
+    },
+    {
+      "nameEn": "Death Slaad",
+      "field": "str",
+      "ourValue": 16,
+      "correctValue": 20,
+      "note": "Official Death Slaad Strength is 20."
+    },
+    {
+      "nameEn": "Death Slaad",
+      "field": "dex",
+      "ourValue": 7,
+      "correctValue": 15,
+      "note": "Official Death Slaad Dexterity is 15."
+    },
+    {
+      "nameEn": "Death Slaad",
+      "field": "int",
+      "ourValue": 6,
+      "correctValue": 15,
+      "note": "Official Death Slaad Intelligence is 15."
+    },
+    {
+      "nameEn": "Death Slaad",
+      "field": "wis",
+      "ourValue": 12,
+      "correctValue": 10,
+      "note": "Official Death Slaad Wisdom is 10."
+    },
+    {
+      "nameEn": "Death Slaad",
+      "field": "cha",
+      "ourValue": 7,
+      "correctValue": 16,
+      "note": "Official Death Slaad Charisma is 16."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "nameEn",
+      "ourValue": "Sphinxes",
+      "correctValue": "Androsphinx / Gynosphinx",
+      "note": "There is no official generic Monster Manual/SRD entry named simply 'Sphinxes'."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "ac",
+      "ourValue": 16,
+      "correctValue": null,
+      "note": "No official generic 'Sphinxes' stat block exists to support this value."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "hp",
+      "ourValue": 150,
+      "correctValue": null,
+      "note": "No official generic 'Sphinxes' stat block exists to support this value."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "hpFormula",
+      "ourValue": "18d10+144",
+      "correctValue": null,
+      "note": "No official generic 'Sphinxes' stat block exists to support this value."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "cr",
+      "ourValue": 7,
+      "correctValue": null,
+      "note": "No official generic 'Sphinxes' stat block exists to support this value."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "xp",
+      "ourValue": 2800,
+      "correctValue": null,
+      "note": "No official generic 'Sphinxes' stat block exists to support this value."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "speed.walk",
+      "ourValue": 30,
+      "correctValue": null,
+      "note": "No official generic 'Sphinxes' stat block exists to support this value."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "str",
+      "ourValue": 16,
+      "correctValue": null,
+      "note": "No official generic 'Sphinxes' stat block exists to support this value."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "dex",
+      "ourValue": 14,
+      "correctValue": null,
+      "note": "No official generic 'Sphinxes' stat block exists to support this value."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "con",
+      "ourValue": 18,
+      "correctValue": null,
+      "note": "No official generic 'Sphinxes' stat block exists to support this value."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "int",
+      "ourValue": 18,
+      "correctValue": null,
+      "note": "No official generic 'Sphinxes' stat block exists to support this value."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "wis",
+      "ourValue": 16,
+      "correctValue": null,
+      "note": "No official generic 'Sphinxes' stat block exists to support this value."
+    },
+    {
+      "nameEn": "Sphinxes",
+      "field": "cha",
+      "ourValue": 18,
+      "correctValue": null,
+      "note": "No official generic 'Sphinxes' stat block exists to support this value."
+    },
+    {
+      "nameEn": "Strahd von Zarovich",
+      "field": "hp",
+      "ourValue": 144,
+      "correctValue": 180,
+      "note": "Official Curse of Strahd stat block lists 180 HP."
+    },
+    {
+      "nameEn": "Strahd von Zarovich",
+      "field": "hpFormula",
+      "ourValue": "14d8+68",
+      "correctValue": "19d8+95",
+      "note": "Official Curse of Strahd stat block uses 19d8+95."
+    },
+    {
+      "nameEn": "Strahd von Zarovich",
+      "field": "cr",
+      "ourValue": 13,
+      "correctValue": 15,
+      "note": "Official Curse of Strahd stat block lists CR 15."
+    },
+    {
+      "nameEn": "Strahd von Zarovich",
+      "field": "xp",
+      "ourValue": 10000,
+      "correctValue": 13000,
+      "note": "CR 15 corresponds to 13,000 XP."
+    },
+    {
+      "nameEn": "Yeti",
+      "field": "ac",
+      "ourValue": 15,
+      "correctValue": 12,
+      "note": "Yeti has AC 12 (natural armor), not 15."
+    },
+    {
+      "nameEn": "Yeti",
+      "field": "hp",
+      "ourValue": 137,
+      "correctValue": 51,
+      "note": "Yeti has 51 hit points."
+    },
+    {
+      "nameEn": "Yeti",
+      "field": "hpFormula",
+      "ourValue": "11d12+66",
+      "correctValue": "6d10+18",
+      "note": "Yeti hit point formula is 6d10+18."
+    },
+    {
+      "nameEn": "Yeti",
+      "field": "cr",
+      "ourValue": 9,
+      "correctValue": 3,
+      "note": "Yeti challenge rating is 3."
+    },
+    {
+      "nameEn": "Yeti",
+      "field": "xp",
+      "ourValue": 5000,
+      "correctValue": 700,
+      "note": "CR 3 corresponds to 700 XP."
+    },
+    {
+      "nameEn": "Yeti",
+      "field": "str",
+      "ourValue": 24,
+      "correctValue": 18,
+      "note": "Yeti Strength is 18."
+    },
+    {
+      "nameEn": "Yeti",
+      "field": "con",
+      "ourValue": 22,
+      "correctValue": 16,
+      "note": "Yeti Constitution is 16."
+    },
+    {
+      "nameEn": "Yeti",
+      "field": "int",
+      "ourValue": 9,
+      "correctValue": 8,
+      "note": "Yeti Intelligence is 8."
+    },
+    {
+      "nameEn": "Yeti",
+      "field": "wis",
+      "ourValue": 13,
+      "correctValue": 12,
+      "note": "Yeti Wisdom is 12."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "nameEn",
+      "ourValue": "Yuan-ti",
+      "correctValue": "Yuan-ti Pureblood",
+      "note": "Official Monster Manual entry is Yuan-ti Pureblood."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "ac",
+      "ourValue": 15,
+      "correctValue": 11,
+      "note": "Yuan-ti Pureblood has AC 11."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "hp",
+      "ourValue": 127,
+      "correctValue": 40,
+      "note": "Yuan-ti Pureblood has 40 hit points."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "hpFormula",
+      "ourValue": "15d10+45",
+      "correctValue": "9d8",
+      "note": "Yuan-ti Pureblood hit point formula is 9d8."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "cr",
+      "ourValue": 7,
+      "correctValue": 1,
+      "note": "Yuan-ti Pureblood challenge rating is 1."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "xp",
+      "ourValue": 2,
+      "correctValue": 200,
+      "note": "CR 1 corresponds to 200 XP."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "speed",
+      "ourValue": {},
+      "correctValue": {
+        "walk": 30
+      },
+      "note": "Yuan-ti Pureblood speed is 30 ft."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "str",
+      "ourValue": 10,
+      "correctValue": 11,
+      "note": "Yuan-ti Pureblood Strength is 11."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "dex",
+      "ourValue": 14,
+      "correctValue": 12,
+      "note": "Yuan-ti Pureblood Dexterity is 12."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "con",
+      "ourValue": 12,
+      "correctValue": 11,
+      "note": "Yuan-ti Pureblood Constitution is 11."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "int",
+      "ourValue": 12,
+      "correctValue": 13,
+      "note": "Yuan-ti Pureblood Intelligence is 13."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "wis",
+      "ourValue": 11,
+      "correctValue": 12,
+      "note": "Yuan-ti Pureblood Wisdom is 12."
+    },
+    {
+      "nameEn": "Yuan-ti",
+      "field": "cha",
+      "ourValue": 14,
+      "correctValue": 14,
+      "note": "Stat block matches Pureblood Charisma; included here only because the monster identification is incorrect."
+    },
+    {
+      "nameEn": "型动作",
+      "field": "nameEn",
+      "ourValue": "型动作",
+      "correctValue": "Yuan-ti Pureblood",
+      "note": "This does not match any official Monster Manual / SRD monster; the provided stats match Yuan-ti Pureblood."
+    },
+    {
+      "nameEn": "Serpent Gods",
+      "field": "nameEn",
+      "ourValue": "Serpent Gods",
+      "correctValue": "Yuan-ti Pureblood",
+      "note": "This does not match any official Monster Manual / SRD monster; the provided stats match Yuan-ti Pureblood."
+    },
+    {
+      "nameEn": "Yugoloths",
+      "field": "nameEn",
+      "ourValue": "Yugoloths",
+      "correctValue": "Barlgura",
+      "note": "Yugoloths is a creature group, not a single official monster stat block. The provided numbers match neither a yugoloth stat block nor a valid MM/SRD monster."
+    },
+    {
+      "nameEn": "Yugoloths",
+      "field": "ac",
+      "ourValue": 16,
+      "correctValue": 15,
+      "note": "If intended as Barlgura, AC is 15."
+    },
+    {
+      "nameEn": "Yugoloths",
+      "field": "hp",
+      "ourValue": 135,
+      "correctValue": 68,
+      "note": "If intended as Barlgura, HP is 68."
+    },
+    {
+      "nameEn": "Yugoloths",
+      "field": "hpFormula",
+      "ourValue": "18d10+144",
+      "correctValue": "8d10+24",
+      "note": "If intended as Barlgura, hit point formula is 8d10+24."
+    },
+    {
+      "nameEn": "Yugoloths",
+      "field": "cr",
+      "ourValue": 5,
+      "correctValue": 5,
+      "note": "CR matches Barlgura, but the rest of the stat block does not match any official yugoloth."
+    },
+    {
+      "nameEn": "Yugoloths",
+      "field": "xp",
+      "ourValue": 1800,
+      "correctValue": 1800,
+      "note": "XP matches CR 5, but the creature identification is still incorrect."
+    },
+    {
+      "nameEn": "Yugoloths",
+      "field": "speed",
+      "ourValue": {
+        "walk": 30
+      },
+      "correctValue": {
+        "walk": 40,
+        "climb": 40
+      },
+      "note": "No official yugoloth has this exact stat line; if intended as Barlgura, speed is 40 ft., climb 40 ft."
+    },
+    {
+      "nameEn": "Yugoloths",
+      "field": "dex",
+      "ourValue": 14,
+      "correctValue": 15,
+      "note": "If intended as Barlgura, Dexterity is 15."
+    },
+    {
+      "nameEn": "Yugoloths",
+      "field": "con",
+      "ourValue": 20,
+      "correctValue": 16,
+      "note": "If intended as Barlgura, Constitution is 16."
+    },
+    {
+      "nameEn": "Yugoloths",
+      "field": "int",
+      "ourValue": 12,
+      "correctValue": 7,
+      "note": "If intended as Barlgura, Intelligence is 7."
+    },
+    {
+      "nameEn": "Yugoloths",
+      "field": "wis",
+      "ourValue": 12,
+      "correctValue": 14,
+      "note": "If intended as Barlgura, Wisdom is 14."
+    },
+    {
+      "nameEn": "Yugoloths",
+      "field": "cha",
+      "ourValue": 14,
+      "correctValue": 9,
+      "note": "If intended as Barlgura, Charisma is 9."
+    },
+    {
+      "nameEn": "Arcanaloth",
+      "field": "xp",
+      "ourValue": 8,
+      "correctValue": 8400,
+      "note": "CR 12 corresponds to 8,400 XP."
+    },
+    {
+      "nameEn": "Mezzoloth",
+      "field": "ac",
+      "ourValue": 18,
+      "correctValue": 18,
+      "note": "AC is correct, but the rest of the stat block is not Mezzoloth."
+    },
+    {
+      "nameEn": "Mezzoloth",
+      "field": "hp",
+      "ourValue": 75,
+      "correctValue": 75,
+      "note": "HP is correct, but the rest of the stat block is not Mezzoloth."
+    },
+    {
+      "nameEn": "Mezzoloth",
+      "field": "hpFormula",
+      "ourValue": "10d8+30",
+      "correctValue": "10d8+30",
+      "note": "HP formula is correct, but the rest of the stat block is not Mezzoloth."
+    },
+    {
+      "nameEn": "Mezzoloth",
+      "field": "str",
+      "ourValue": 17,
+      "correctValue": 18,
+      "note": "Mezzoloth Strength is 18."
+    },
+    {
+      "nameEn": "Mezzoloth",
+      "field": "dex",
+      "ourValue": 12,
+      "correctValue": 11,
+      "note": "Mezzoloth Dexterity is 11."
+    },
+    {
+      "nameEn": "Mezzoloth",
+      "field": "con",
+      "ourValue": 14,
+      "correctValue": 16,
+      "note": "Mezzoloth Constitution is 16."
+    },
+    {
+      "nameEn": "Mezzoloth",
+      "field": "int",
+      "ourValue": 20,
+      "correctValue": 7,
+      "note": "Mezzoloth Intelligence is 7."
+    },
+    {
+      "nameEn": "Mezzoloth",
+      "field": "wis",
+      "ourValue": 16,
+      "correctValue": 10,
+      "note": "Mezzoloth Wisdom is 10."
+    },
+    {
+      "nameEn": "Mezzoloth",
+      "field": "cha",
+      "ourValue": 17,
+      "correctValue": 11,
+      "note": "Mezzoloth Charisma is 11."
+    },
+    {
+      "nameEn": "Nycaloth",
+      "field": "xp",
+      "ourValue": 5,
+      "correctValue": 5000,
+      "note": "CR 9 corresponds to 5,000 XP."
+    },
+    {
+      "nameEn": "Ultroloth",
+      "field": "xp",
+      "ourValue": 10,
+      "correctValue": 10000,
+      "note": "CR 13 corresponds to 10,000 XP."
+    },
+    {
+      "nameEn": "Zombie",
+      "field": "speed",
+      "ourValue": {},
+      "correctValue": {
+        "walk": 20
+      },
+      "note": "Zombie speed is 20 ft."
+    },
+    {
+      "nameEn": "Beholder Zombie",
+      "field": "str",
+      "ourValue": 16,
+      "correctValue": 10,
+      "note": "Beholder Zombie Strength is 10."
+    },
+    {
+      "nameEn": "Beholder Zombie",
+      "field": "con",
+      "ourValue": 16,
+      "correctValue": 18,
+      "note": "Beholder Zombie Constitution is 18."
+    },
+    {
+      "nameEn": "Beholder Zombie",
+      "field": "int",
+      "ourValue": 3,
+      "correctValue": 3,
+      "note": "Intelligence is correct, but other ability scores are not."
+    },
+    {
+      "nameEn": "Beholder Zombie",
+      "field": "wis",
+      "ourValue": 6,
+      "correctValue": 8,
+      "note": "Beholder Zombie Wisdom is 8."
+    },
+    {
+      "nameEn": "Beholder Zombie",
+      "field": "cha",
+      "ourValue": 5,
+      "correctValue": 5,
+      "note": "Charisma is correct, but other ability scores are not."
+    },
+    {
+      "nameEn": "Frog",
+      "field": "xp",
+      "ourValue": 0,
+      "correctValue": 10,
+      "note": "Frog is CR 0, which grants 10 XP in official 5E data."
+    },
+    {
+      "nameEn": "Giant Eagle",
+      "field": "xp",
+      "ourValue": 200,
+      "correctValue": 450,
+      "note": "CR 1 monsters are worth 450 XP in official 5E data."
+    },
+    {
+      "nameEn": "Giant Frog",
+      "field": "hp",
+      "ourValue": 18,
+      "correctValue": 11,
+      "note": "Official Giant Frog HP is 11 (2d8+2)."
+    },
+    {
+      "nameEn": "Giant Frog",
+      "field": "hpFormula",
+      "ourValue": "4d8",
+      "correctValue": "2d8+2",
+      "note": "Official Giant Frog hit point formula is 2d8+2."
+    },
+    {
+      "nameEn": "Giant Octopus",
+      "field": "hp",
+      "ourValue": 52,
+      "correctValue": 52,
+      "note": "HP total matches, but official formula is 8d10+8 rather than 8d10+8 only if checking exact printed data; no error here."
+    },
+    {
+      "nameEn": "Giant Sea Horse",
+      "field": "hp",
+      "ourValue": 16,
+      "correctValue": 13,
+      "note": "Official Giant Sea Horse HP is 13 (3d10-3)."
+    },
+    {
+      "nameEn": "Giant Sea Horse",
+      "field": "hpFormula",
+      "ourValue": "3d10",
+      "correctValue": "3d10-3",
+      "note": "Official Giant Sea Horse hit point formula is 3d10-3."
+    },
+    {
+      "nameEn": "Giant Spider",
+      "field": "speed.climb",
+      "ourValue": 30,
+      "correctValue": 40,
+      "note": "Official Giant Spider climb speed is 40 ft."
+    },
+    {
+      "nameEn": "Giant Wasp",
+      "field": "speed.swim",
+      "ourValue": 50,
+      "correctValue": null,
+      "note": "Official Giant Wasp has no swim speed."
+    },
+    {
+      "nameEn": "Mammoth",
+      "field": "hpFormula",
+      "ourValue": "11d12+55",
+      "correctValue": "11d12+44",
+      "note": "Official Mammoth hit points are 126 (11d12 + 44)."
+    },
+    {
+      "nameEn": "Panther",
+      "field": "hpFormula",
+      "ourValue": "3d8",
+      "correctValue": "3d8+3",
+      "note": "Official Panther hit points are 13 (3d8+3)."
+    },
+    {
+      "nameEn": "Riding Horse",
+      "field": "xp",
+      "ourValue": 25,
+      "correctValue": 50,
+      "note": "CR 1/4 creatures are worth 50 XP; official Riding Horse is CR 1/4, 50 XP."
+    },
+    {
+      "nameEn": "Sea Horse",
+      "field": "xp",
+      "ourValue": 0,
+      "correctValue": 10,
+      "note": "Sea Horse is CR 0 but still awards 10 XP in official 5E data."
+    },
+    {
+      "nameEn": "Swarm of Bats",
+      "field": "fly",
+      "ourValue": 30,
+      "correctValue": 40,
+      "note": "Official speed is 0 ft., fly 40 ft."
+    },
+    {
+      "nameEn": "The Nature of Swarms",
+      "field": "nameEn",
+      "ourValue": "The Nature of Swarms",
+      "correctValue": null,
+      "note": "This is not an official Monster Manual/SRD monster stat block; it is a rules section heading, not a monster."
+    },
+    {
+      "nameEn": "Swarm of Poisonous Snakes",
+      "field": "hp",
+      "ourValue": 36,
+      "correctValue": 28,
+      "note": "Official hit points are 28 (8d8 - 8)."
+    },
+    {
+      "nameEn": "Swarm of Poisonous Snakes",
+      "field": "hpFormula",
+      "ourValue": "8d8",
+      "correctValue": "8d8-8",
+      "note": "Official hit point formula is 8d8 - 8."
+    },
+    {
+      "nameEn": "Warhorse",
+      "field": "hp",
+      "ourValue": 19,
+      "correctValue": 19,
+      "note": "Official average HP is 19, but the official formula is 3d10 + 3; this entry's HP is numerically correct."
+    },
+    {
+      "nameEn": "B: 非玩家角色 Nonplayer Characters",
+      "field": "nameEn",
+      "ourValue": "B: 非玩家角色 Nonplayer Characters",
+      "correctValue": null,
+      "note": "This is an appendix/header entry, not an official Monster Manual/SRD monster stat block."
+    },
+    {
+      "nameEn": "Customizing NPCs",
+      "field": "nameEn",
+      "ourValue": "Customizing NPCs",
+      "correctValue": null,
+      "note": "This is a section heading, not an official Monster Manual/SRD monster stat block."
+    },
+    {
+      "nameEn": "Cult Fanatic",
+      "field": "hp",
+      "ourValue": 22,
+      "correctValue": 33,
+      "note": "Official HP is 33."
+    },
+    {
+      "nameEn": "Cult Fanatic",
+      "field": "hpFormula",
+      "ourValue": "6d8-5",
+      "correctValue": "6d8+6",
+      "note": "Official HP formula is 6d8+6."
+    },
+    {
+      "nameEn": "Cult Fanatic",
+      "field": "con",
+      "ourValue": 12,
+      "correctValue": 13,
+      "note": "Official Constitution score is 13."
+    },
+    {
+      "nameEn": "Guard",
+      "field": "ac",
+      "ourValue": 16,
+      "correctValue": 16,
+      "note": "Official AC 16 is specifically from chain shirt and shield."
+    },
+    {
+      "nameEn": "Noble",
+      "field": "ac",
+      "ourValue": 15,
+      "correctValue": 14,
+      "note": "Official Noble AC is 14 (breastplate)."
+    },
+    {
+      "nameEn": "Priest",
+      "field": "speed.walk",
+      "ourValue": 25,
+      "correctValue": 30,
+      "note": "Official Priest walking speed is 30 ft."
+    },
+    {
+      "nameEn": "Spy",
+      "field": "ac",
+      "ourValue": 12,
+      "correctValue": 14,
+      "note": "Official Spy AC is 14 (leather armor)."
+    },
+    {
+      "nameEn": "Spy",
+      "field": "hp",
+      "ourValue": 27,
+      "correctValue": 27,
+      "note": "Official Spy hit points are 27, but the listed HP formula is incorrect, indicating a data mismatch."
+    },
+    {
+      "nameEn": "Spy",
+      "field": "hpFormula",
+      "ourValue": "6d8",
+      "correctValue": "6d8",
+      "note": "Official Spy has 27 (6d8) hit points; however, official Constitution is 10, so HP value is consistent. No correction needed to formula itself."
+    },
+    {
+      "nameEn": "Thug",
+      "field": "ac",
+      "ourValue": 11,
+      "correctValue": 11,
+      "note": "Official Thug AC is 11, but only while not using armor calculation changes; no numerical correction needed."
+    }
+  ],
+  "equipment": [
+    {
+      "nameEn": "Club",
+      "field": "cost_gp",
+      "ourValue": null,
+      "correctValue": 0.1,
+      "note": "Club costs 1 sp in the PHB, which equals 0.1 gp."
+    },
+    {
+      "nameEn": "Dagger",
+      "field": "properties",
+      "ourValue": [
+        "finesse",
+        "light",
+        "thrown"
+      ],
+      "correctValue": [
+        "finesse",
+        "light",
+        "thrown (20/60)"
+      ],
+      "note": "Dagger has the thrown property with range 20/60."
+    },
+    {
+      "nameEn": "Greatclub",
+      "field": "cost_gp",
+      "ourValue": null,
+      "correctValue": 0.2,
+      "note": "Greatclub costs 2 sp in the PHB, which equals 0.2 gp."
+    },
+    {
+      "nameEn": "Handaxe",
+      "field": "properties",
+      "ourValue": [
+        "light",
+        "thrown"
+      ],
+      "correctValue": [
+        "light",
+        "thrown (20/60)"
+      ],
+      "note": "Handaxe has the thrown property with range 20/60."
+    },
+    {
+      "nameEn": "Javelin",
+      "field": "cost_gp",
+      "ourValue": null,
+      "correctValue": 0.5,
+      "note": "Javelin costs 5 sp in the PHB, which equals 0.5 gp."
+    },
+    {
+      "nameEn": "Javelin",
+      "field": "properties",
+      "ourValue": [
+        "thrown"
+      ],
+      "correctValue": [
+        "thrown (30/120)"
+      ],
+      "note": "Javelin has the thrown property with range 30/120."
+    },
+    {
+      "nameEn": "Light Hammer",
+      "field": "properties",
+      "ourValue": [
+        "light",
+        "thrown"
+      ],
+      "correctValue": [
+        "light",
+        "thrown (20/60)"
+      ],
+      "note": "Light hammer has the thrown property with range 20/60."
+    },
+    {
+      "nameEn": "Quarterstaff",
+      "field": "cost_gp",
+      "ourValue": null,
+      "correctValue": 0.2,
+      "note": "Quarterstaff costs 2 sp in the PHB, which equals 0.2 gp."
+    },
+    {
+      "nameEn": "Quarterstaff",
+      "field": "properties",
+      "ourValue": [
+        "versatile"
+      ],
+      "correctValue": [
+        "versatile (1d8)"
+      ],
+      "note": "Quarterstaff has the versatile property with 1d8 damage when used two-handed."
+    },
+    {
+      "nameEn": "Spear",
+      "field": "properties",
+      "ourValue": [
+        "thrown",
+        "versatile"
+      ],
+      "correctValue": [
+        "thrown",
+        "versatile",
+        "range (20/60)"
+      ],
+      "note": "Official PHB spear properties include thrown with range 20/60 and versatile."
+    },
+    {
+      "nameEn": "Light Crossbow",
+      "field": "properties",
+      "ourValue": [
+        "ammunition",
+        "loading",
+        "two-handed"
+      ],
+      "correctValue": [
+        "ammunition",
+        "loading",
+        "range (80/320)",
+        "two-handed"
+      ],
+      "note": "Official PHB light crossbow properties include ammunition with range 80/320, loading, and two-handed."
+    },
+    {
+      "nameEn": "Dart",
+      "field": "cost_gp",
+      "ourValue": null,
+      "correctValue": 0.05,
+      "note": "Official PHB cost is 5 cp, which equals 0.05 gp."
+    },
+    {
+      "nameEn": "Dart",
+      "field": "properties",
+      "ourValue": [
+        "finesse",
+        "thrown"
+      ],
+      "correctValue": [
+        "finesse",
+        "thrown",
+        "range (20/60)"
+      ],
+      "note": "Official PHB dart properties include finesse and thrown with range 20/60."
+    },
+    {
+      "nameEn": "Shortbow",
+      "field": "properties",
+      "ourValue": [
+        "ammunition",
+        "two-handed"
+      ],
+      "correctValue": [
+        "ammunition",
+        "range (80/320)",
+        "two-handed"
+      ],
+      "note": "Official PHB shortbow properties include ammunition with range 80/320 and two-handed."
+    },
+    {
+      "nameEn": "Sling",
+      "field": "cost_gp",
+      "ourValue": null,
+      "correctValue": 0.1,
+      "note": "Official PHB cost is 1 sp, which equals 0.1 gp."
+    },
+    {
+      "nameEn": "Sling",
+      "field": "weight",
+      "ourValue": 0,
+      "correctValue": 0,
+      "note": "Official PHB weight is listed as —, not a numeric 0."
+    },
+    {
+      "nameEn": "Sling",
+      "field": "properties",
+      "ourValue": [
+        "ammunition"
+      ],
+      "correctValue": [
+        "ammunition",
+        "range (30/120)"
+      ],
+      "note": "Official PHB sling properties include ammunition with range 30/120."
+    },
+    {
+      "nameEn": "Battleaxe",
+      "field": "properties",
+      "ourValue": [
+        "versatile"
+      ],
+      "correctValue": [
+        "versatile (1d10)"
+      ],
+      "note": "Official PHB battleaxe has versatile damage 1d10."
+    },
+    {
+      "nameEn": "Flail",
+      "field": "weight",
+      "ourValue": 2,
+      "correctValue": 4,
+      "note": "Official PHB flail weight is 4 lb."
+    },
+    {
+      "nameEn": "Lance",
+      "field": "properties",
+      "ourValue": [
+        "reach",
+        "special"
+      ],
+      "correctValue": [
+        "reach",
+        "special"
+      ],
+      "note": "Official PHB lance also has a special rule: you have disadvantage when attacking a target within 5 feet, and it requires two hands when not mounted."
+    },
+    {
+      "nameEn": "Longsword",
+      "field": "weight",
+      "ourValue": 3,
+      "correctValue": 4,
+      "note": "Official PHB longsword weight is 4 lb."
+    },
+    {
+      "nameEn": "Longsword",
+      "field": "properties",
+      "ourValue": [
+        "versatile"
+      ],
+      "correctValue": [
+        "versatile (1d10)"
+      ],
+      "note": "Official PHB longsword has versatile damage 1d10."
+    },
+    {
+      "nameEn": "Trident",
+      "field": "cost_gp",
+      "ourValue": 5,
+      "correctValue": 5,
+      "note": "Official PHB cost is 5 sp, not 5 gp."
+    },
+    {
+      "nameEn": "Trident",
+      "field": "properties",
+      "ourValue": [
+        "thrown",
+        "versatile"
+      ],
+      "correctValue": [
+        "thrown",
+        "versatile"
+      ],
+      "note": "Official PHB properties also include thrown range (20/60) and versatile damage (1d8)."
+    },
+    {
+      "nameEn": "Warhammer",
+      "field": "weight",
+      "ourValue": 2,
+      "correctValue": 2,
+      "note": "Official PHB weight is 2 lb."
+    },
+    {
+      "nameEn": "Warhammer",
+      "field": "properties",
+      "ourValue": [
+        "versatile"
+      ],
+      "correctValue": [
+        "versatile"
+      ],
+      "note": "Official PHB versatile damage is 1d10."
+    },
+    {
+      "nameEn": "Whip",
+      "field": "cost_gp",
+      "ourValue": 2,
+      "correctValue": 2,
+      "note": "Official PHB cost is 2 gp."
+    },
+    {
+      "nameEn": "Blowgun",
+      "field": "properties",
+      "ourValue": [
+        "ammunition",
+        "loading"
+      ],
+      "correctValue": [
+        "ammunition",
+        "loading"
+      ],
+      "note": "Official PHB also includes range (25/100)."
+    },
+    {
+      "nameEn": "Hand Crossbow",
+      "field": "properties",
+      "ourValue": [
+        "ammunition",
+        "light",
+        "loading"
+      ],
+      "correctValue": [
+        "ammunition",
+        "light",
+        "loading"
+      ],
+      "note": "Official PHB also includes range (30/120)."
+    },
+    {
+      "nameEn": "Heavy Crossbow",
+      "field": "properties",
+      "ourValue": [
+        "ammunition",
+        "heavy",
+        "loading",
+        "two-handed"
+      ],
+      "correctValue": [
+        "ammunition",
+        "heavy",
+        "loading",
+        "two-handed"
+      ],
+      "note": "Official PHB also includes range (100/400)."
+    },
+    {
+      "nameEn": "Longbow",
+      "field": "properties",
+      "ourValue": [
+        "ammunition",
+        "heavy",
+        "two-handed"
+      ],
+      "correctValue": [
+        "ammunition",
+        "heavy",
+        "range"
+      ],
+      "note": "Official PHB properties are ammunition, heavy, two-handed; it also has range (150/600)."
+    },
+    {
+      "nameEn": "Net",
+      "field": "damage",
+      "ourValue": null,
+      "correctValue": 0,
+      "note": "A net deals no damage rather than having a damage value."
+    },
+    {
+      "nameEn": "Net",
+      "field": "properties",
+      "ourValue": [
+        "special",
+        "thrown"
+      ],
+      "correctValue": [
+        "special",
+        "thrown"
+      ],
+      "note": "Official PHB also includes thrown range (5/15)."
+    }
+  ],
+  "magic_items": [
+    {
+      "nameEn": "Bowl of Commanding Water Elementals",
+      "field": "rarity",
+      "ourValue": "Rare",
+      "correctValue": "Uncommon",
+      "note": "Official DMG lists Bowl of Commanding Water Elementals as uncommon."
+    },
+    {
+      "nameEn": "Bowl of Commanding Water Elementals",
+      "field": "requiresAttunement",
+      "ourValue": false,
+      "correctValue": true,
+      "note": "Official DMG requires attunement for Bowl of Commanding Water Elementals."
+    },
+    {
+      "nameEn": "Brazier of Commanding Fire Elementals",
+      "field": "rarity",
+      "ourValue": "Rare",
+      "correctValue": "Uncommon",
+      "note": "Official DMG lists Brazier of Commanding Fire Elementals as uncommon."
+    },
+    {
+      "nameEn": "Brazier of Commanding Fire Elementals",
+      "field": "requiresAttunement",
+      "ourValue": false,
+      "correctValue": true,
+      "note": "Official DMG requires attunement for Brazier of Commanding Fire Elementals."
+    },
+    {
+      "nameEn": "Brooch of Shielding",
+      "field": "requiresAttunement",
+      "ourValue": true,
+      "correctValue": false,
+      "note": "Official DMG does not require attunement for Brooch of Shielding."
+    },
+    {
+      "nameEn": "Candle of Invocation",
+      "field": "requiresAttunement",
+      "ourValue": true,
+      "correctValue": false,
+      "note": "Official DMG does not require attunement for Candle of Invocation."
+    },
+    {
+      "nameEn": "Censer of Controlling Air Elementals",
+      "field": "rarity",
+      "ourValue": "Rare",
+      "correctValue": "Uncommon",
+      "note": "Official DMG lists Censer of Controlling Air Elementals as uncommon."
+    },
+    {
+      "nameEn": "Censer of Controlling Air Elementals",
+      "field": "requiresAttunement",
+      "ourValue": false,
+      "correctValue": true,
+      "note": "Official DMG requires attunement for Censer of Controlling Air Elementals."
+    },
+    {
+      "nameEn": "Circlet of Blasting",
+      "field": "requiresAttunement",
+      "ourValue": false,
+      "correctValue": true,
+      "note": "Official DMG requires attunement for Circlet of Blasting."
+    },
+    {
+      "nameEn": "Brass Dragon Scale Mail",
+      "field": "rarity",
+      "ourValue": "Very Rare",
+      "correctValue": "Rare",
+      "note": "Dragon scale mail is rare for brass, bronze, copper, silver, and white; very rare for black, blue, green, red, and gold."
+    },
+    {
+      "nameEn": "Bronze Dragon Scale Mail",
+      "field": "rarity",
+      "ourValue": "Very Rare",
+      "correctValue": "Rare",
+      "note": "Dragon scale mail is rare for brass, bronze, copper, silver, and white; very rare for black, blue, green, red, and gold."
+    },
+    {
+      "nameEn": "Copper Dragon Scale Mail",
+      "field": "rarity",
+      "ourValue": "Very Rare",
+      "correctValue": "Rare",
+      "note": "Dragon scale mail is rare for brass, bronze, copper, silver, and white; very rare for black, blue, green, red, and gold."
+    },
+    {
+      "nameEn": "Silver Dragon Scale Mail",
+      "field": "rarity",
+      "ourValue": "Very Rare",
+      "correctValue": "Rare",
+      "note": "Dragon scale mail is rare for brass, bronze, copper, silver, and white; very rare for black, blue, green, red, and gold."
+    },
+    {
+      "nameEn": "White Dragon Scale Mail",
+      "field": "rarity",
+      "ourValue": "Very Rare",
+      "correctValue": "Rare",
+      "note": "Dragon scale mail is rare for brass, bronze, copper, silver, and white; very rare for black, blue, green, red, and gold."
+    },
+    {
+      "nameEn": "Dust of Sneezing and Choking",
+      "field": "rarity",
+      "ourValue": "Uncommon",
+      "correctValue": "Rare",
+      "note": "Official DMG rarity is rare."
+    },
+    {
+      "nameEn": "Efficient Quiver",
+      "field": "nameEn",
+      "ourValue": "Efficient Quiver",
+      "correctValue": "Efficient Quiver (also called Quiver of Ehlonna in newer printings)",
+      "note": "The DMG item is Efficient Quiver; newer printings rename it Quiver of Ehlonna. Other fields given are correct."
+    },
+    {
+      "nameEn": "Gem of Seeing",
+      "field": "requiresAttunement",
+      "ourValue": true,
+      "correctValue": false,
+      "note": "DMG lists Gem of Seeing as rare and not requiring attunement."
+    },
+    {
+      "nameEn": "Giant Slayer",
+      "field": "requiresAttunement",
+      "ourValue": false,
+      "correctValue": true,
+      "note": "DMG lists Giant Slayer as a rare weapon that requires attunement."
+    },
+    {
+      "nameEn": "Glamoured Studded Leather Armor",
+      "field": "requiresAttunement",
+      "ourValue": false,
+      "correctValue": true,
+      "note": "DMG lists Glamoured Studded Leather as rare armor requiring attunement."
+    },
+    {
+      "nameEn": "Gloves of Swimming and Climbing",
+      "field": "requiresAttunement",
+      "ourValue": true,
+      "correctValue": false,
+      "note": "DMG lists Gloves of Swimming and Climbing as uncommon and not requiring attunement."
+    },
+    {
+      "nameEn": "Goggles of Night",
+      "field": "requiresAttunement",
+      "ourValue": false,
+      "correctValue": true,
+      "note": "DMG lists Goggles of Night as uncommon wondrous item requiring attunement."
+    },
+    {
+      "nameEn": "Manual of Clay Golems",
+      "field": "rarity",
+      "ourValue": "Very Rare",
+      "correctValue": "Legendary",
+      "note": "DMG lists Manual of Clay Golems as Legendary."
+    },
+    {
+      "nameEn": "Manual of Iron Golems",
+      "field": "rarity",
+      "ourValue": "Very Rare",
+      "correctValue": "Legendary",
+      "note": "DMG lists Manual of Iron Golems as Legendary."
+    },
+    {
+      "nameEn": "Oil of Etherealness",
+      "field": "category",
+      "ourValue": "Potion",
+      "correctValue": "Wondrous Items",
+      "note": "DMG categorizes Oil of Etherealness as a wondrous item, not a potion."
+    },
+    {
+      "nameEn": "Oil of Sharpness",
+      "field": "category",
+      "ourValue": "Potion",
+      "correctValue": "Wondrous Items",
+      "note": "DMG categorizes Oil of Sharpness as a wondrous item, not a potion."
+    },
+    {
+      "nameEn": "Oil of Slipperiness",
+      "field": "category",
+      "ourValue": "Potion",
+      "correctValue": "Wondrous Items",
+      "note": "DMG categorizes Oil of Slipperiness as a wondrous item, not a potion."
+    },
+    {
+      "nameEn": "Potion of Healing",
+      "field": "rarity",
+      "ourValue": "Varies",
+      "correctValue": "Common",
+      "note": "In the DMG, Potion of Healing is a separate item with rarity Common. The healing potion family does not use a single 'Varies' rarity entry."
+    },
+    {
+      "nameEn": "Potion of Acid Resistance",
+      "field": "nameEn",
+      "ourValue": "Potion of Acid Resistance",
+      "correctValue": "Potion of Resistance",
+      "note": "The DMG has Potion of Resistance, whose damage type is determined randomly or by the DM. There is no separate official DMG item named Potion of Acid Resistance."
+    },
+    {
+      "nameEn": "Potion of Cold Resistance",
+      "field": "nameEn",
+      "ourValue": "Potion of Cold Resistance",
+      "correctValue": "Potion of Resistance",
+      "note": "The DMG has Potion of Resistance, whose damage type is determined randomly or by the DM. There is no separate official DMG item named Potion of Cold Resistance."
+    },
+    {
+      "nameEn": "Potion of Fire Resistance",
+      "field": "nameEn",
+      "ourValue": "Potion of Fire Resistance",
+      "correctValue": "Potion of Resistance",
+      "note": "The DMG has Potion of Resistance, whose damage type is determined randomly or by the DM. There is no separate official DMG item named Potion of Fire Resistance."
+    },
+    {
+      "nameEn": "Potion of Force Resistance",
+      "field": "nameEn",
+      "ourValue": "Potion of Force Resistance",
+      "correctValue": "Potion of Resistance",
+      "note": "The DMG has Potion of Resistance, whose damage type is determined randomly or by the DM. There is no separate official DMG item named Potion of Force Resistance."
+    },
+    {
+      "nameEn": "Potion of Lightning Resistance",
+      "field": "nameEn",
+      "ourValue": "Potion of Lightning Resistance",
+      "correctValue": "Potion of Resistance",
+      "note": "The DMG has Potion of Resistance, whose damage type is determined randomly or by the DM. There is no separate official DMG item named Potion of Lightning Resistance."
+    },
+    {
+      "nameEn": "Potion of Necrotic Resistance",
+      "field": "nameEn",
+      "ourValue": "Potion of Necrotic Resistance",
+      "correctValue": "Potion of Resistance",
+      "note": "The DMG has Potion of Resistance, whose damage type is determined randomly or by the DM. There is no separate official DMG item named Potion of Necrotic Resistance."
+    },
+    {
+      "nameEn": "Potion of Poison Resistance",
+      "field": "nameEn",
+      "ourValue": "Potion of Poison Resistance",
+      "correctValue": "Potion of Resistance",
+      "note": "The DMG has Potion of Resistance, whose damage type is determined randomly or by the DM. There is no separate official DMG item named Potion of Poison Resistance."
+    },
+    {
+      "nameEn": "Potion of Psychic Resistance",
+      "field": "nameEn",
+      "ourValue": "Potion of Psychic Resistance",
+      "correctValue": "Potion of Resistance",
+      "note": "The DMG has Potion of Resistance, whose damage type is determined randomly or by the DM. There is no separate official DMG item named Potion of Psychic Resistance."
+    },
+    {
+      "nameEn": "Potion of Radiant Resistance",
+      "field": "nameEn",
+      "ourValue": "Potion of Radiant Resistance",
+      "correctValue": "Potion of Resistance",
+      "note": "The DMG has Potion of Resistance, whose damage type is determined randomly or by the DM. There is no separate official DMG item named Potion of Radiant Resistance."
+    },
+    {
+      "nameEn": "Potion of Water Breathing",
+      "field": "rarity",
+      "ourValue": "Uncommon",
+      "correctValue": "Rare",
+      "note": "DMG lists Potion of Water Breathing as rare."
+    },
+    {
+      "nameEn": "Ring of Animal Influence",
+      "field": "requiresAttunement",
+      "ourValue": false,
+      "correctValue": true,
+      "note": "DMG lists Ring of Animal Influence as requiring attunement."
+    },
+    {
+      "nameEn": "Ring of Feather Falling",
+      "field": "rarity",
+      "ourValue": "Rare",
+      "correctValue": "Uncommon",
+      "note": "DMG lists Ring of Feather Falling as uncommon."
+    },
+    {
+      "nameEn": "Ring of Invisibility",
+      "field": "rarity",
+      "ourValue": "Legendary",
+      "correctValue": "Very Rare",
+      "note": "DMG lists Ring of Invisibility as very rare."
+    },
+    {
+      "nameEn": "Ring of Poison Resistance",
+      "field": "rarity",
+      "ourValue": "Rare",
+      "correctValue": "Uncommon",
+      "note": "In the DMG, Ring of Poison Resistance is an uncommon magic item."
+    },
+    {
+      "nameEn": "Spellguard Shield",
+      "field": "category",
+      "ourValue": "Armor",
+      "correctValue": "Shield",
+      "note": "In the DMG, Spellguard Shield is a shield, not armor."
+    },
+    {
+      "nameEn": "Sphere of Annihilation",
+      "field": "requiresAttunement",
+      "ourValue": false,
+      "correctValue": true,
+      "note": "The DMG lists Sphere of Annihilation as requiring attunement."
+    },
+    {
+      "nameEn": "Staff of Charming",
+      "field": "requiresAttunement",
+      "ourValue": true,
+      "correctValue": false,
+      "note": "The DMG does not list Staff of Charming as requiring attunement."
+    },
+    {
+      "nameEn": "Staff of Fire",
+      "field": "rarity",
+      "ourValue": "Very Rare",
+      "correctValue": "Rare",
+      "note": "The DMG lists Staff of Fire as Rare."
+    },
+    {
+      "nameEn": "Staff of Frost",
+      "field": "rarity",
+      "ourValue": "Very Rare",
+      "correctValue": "Very rare",
+      "note": "Official DMG rarity formatting is 'Very rare'."
+    },
+    {
+      "nameEn": "Staff of Swarming Insects",
+      "field": "requiresAttunement",
+      "ourValue": true,
+      "correctValue": false,
+      "note": "The DMG does not list Staff of Swarming Insects as requiring attunement."
+    },
+    {
+      "nameEn": "Staff of the Python",
+      "field": "rarity",
+      "ourValue": "Very Rare",
+      "correctValue": "Uncommon",
+      "note": "The DMG lists Staff of the Python as Uncommon."
+    },
+    {
+      "nameEn": "Weapon, +1, +2, or +3",
+      "field": "category",
+      "ourValue": "Weapon",
+      "correctValue": "Weapon (any sword)",
+      "note": "The DMG entry is specifically for any sword, not weapons in general."
+    }
+  ]
+}

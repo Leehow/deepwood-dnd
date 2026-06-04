@@ -1,0 +1,441 @@
+{
+  "overview": {
+    "description": "六大属性是DND角色的基础数值，决定了角色在各种挑战中的表现。每个属性都关联特定的技能和检定",
+    "descriptionEn": "The six abilities are the foundation of a DND character, determining performance in various challenges. Each ability is associated with specific skills and checks",
+    "totalAbilities": 6,
+    "purpose": "衡量角色的天生才能和基础能力",
+    "relatedRules": [
+      "属性检定",
+      "豁免检定",
+      "技能",
+      "属性调整值",
+      "熟练加值"
+    ],
+    "quickReference": "六大属性：力量、敏捷、体质、智力、感知、魅力。调整值 = (属性值 - 10) / 2"
+  },
+  "abilities": [
+    {
+      "id": "strength",
+      "name": "力量",
+      "nameEn": "Strength",
+      "abbreviation": "STR",
+      "abbreviationCn": "力",
+      "description": "力量衡量运动和肉体基本力量",
+      "importantFor": [
+        "barbarian",
+        "fighter",
+        "paladin"
+      ],
+      "skills": [
+        {
+          "id": "athletics",
+          "name": "运动",
+          "nameEn": "Athletics",
+          "description": "你的运动检定涉及跳跃、攀爬和游泳等困难情况。"
+        }
+      ],
+      "checks": {
+        "common": [
+          "强行打开一扇卡住、上锁或栓住的门",
+          "挣脱束缚",
+          "挤过狭小的空间",
+          "抓住马车后端不被甩下",
+          "推倒雕像",
+          "阻止滚落的巨石"
+        ]
+      }
+    },
+    {
+      "id": "dexterity",
+      "name": "敏捷",
+      "nameEn": "Dexterity",
+      "abbreviation": "DEX",
+      "abbreviationCn": "敏",
+      "description": "敏捷衡量灵活性、反应和平衡能力",
+      "importantFor": [
+        "monk",
+        "ranger",
+        "rogue"
+      ],
+      "armorClass": true,
+      "initiative": true,
+      "skills": [
+        {
+          "id": "acrobatics",
+          "name": "杂技",
+          "nameEn": "Acrobatics",
+          "description": "你的杂技检定涉及你尝试保持脚下平衡的困难情况。"
+        },
+        {
+          "id": "sleight_of_hand",
+          "name": "巧手",
+          "nameEn": "Sleight of Hand",
+          "description": "每当你尝试一项手上巧技或手法欺骗时，进行敏捷(巧手)检定。"
+        },
+        {
+          "id": "stealth",
+          "name": "隐匿",
+          "nameEn": "Stealth",
+          "description": "你进行敏捷(隐匿)检定来躲过敌人、潜行溜走、不被发现或在没被察觉的情况下靠近某人。"
+        }
+      ],
+      "checks": {
+        "common": [
+          "控制一辆高速行驶的马车",
+          "开锁",
+          "解除陷阱",
+          "安全地绑住囚犯",
+          "挣脱束缚",
+          "演奏乐器",
+          "制作小型或精细物品"
+        ]
+      }
+    },
+    {
+      "id": "constitution",
+      "name": "体质",
+      "nameEn": "Constitution",
+      "abbreviation": "CON",
+      "abbreviationCn": "体",
+      "description": "体质衡量健康、生命力和体力",
+      "importantFor": [
+        "所有职业"
+      ],
+      "hitPoints": true,
+      "skills": [],
+      "checks": {
+        "common": [
+          "长时间憋气",
+          "不眠不休地强行军",
+          "没有水或食物的情况下生存",
+          "一口气喝下一桶麦酒"
+        ]
+      }
+    },
+    {
+      "id": "intelligence",
+      "name": "智力",
+      "nameEn": "Intelligence",
+      "abbreviation": "INT",
+      "abbreviationCn": "智",
+      "description": "智力衡量精神敏锐度、记忆力和分析推理能力",
+      "importantFor": [
+        "wizard"
+      ],
+      "skills": [
+        {
+          "id": "arcana",
+          "name": "奥秘",
+          "nameEn": "Arcana",
+          "description": "你的奥秘检定衡量你回忆起法术、魔法物品、神秘符号、魔法传统、存在位面和它们的居民相关知识的能力。"
+        },
+        {
+          "id": "history",
+          "name": "历史",
+          "nameEn": "History",
+          "description": "你的历史检定衡量你回忆起历史事件、传奇人物、古代王国、过往纷争、近期战争和失落文明相关知识的能力。"
+        },
+        {
+          "id": "investigation",
+          "name": "调查",
+          "nameEn": "Investigation",
+          "description": "当你四处寻找线索并基于这些线索进行推论时，你进行智力(调查)检定。"
+        },
+        {
+          "id": "nature",
+          "name": "自然",
+          "nameEn": "Nature",
+          "description": "你的自然检定衡量你回忆起地形、植物和动物、天气和自然周期相关知识的能力。"
+        },
+        {
+          "id": "religion",
+          "name": "宗教",
+          "nameEn": "Religion",
+          "description": "你的宗教检定衡量你回忆起神祇、仪式和祷文、宗教等级制度、神圣符号以及邪教秘密行径相关知识的能力。"
+        }
+      ],
+      "checks": {
+        "common": [
+          "与生物交流时不用言语",
+          "估计某件物品的价值",
+          "伪造文件",
+          "回忆起某个工艺或贸易的知识",
+          "在一场智力游戏中获胜"
+        ]
+      }
+    },
+    {
+      "id": "wisdom",
+      "name": "感知",
+      "nameEn": "Wisdom",
+      "abbreviation": "WIS",
+      "abbreviationCn": "感",
+      "description": "感知反映你对周遭世界的关注程度以及你的洞察力",
+      "importantFor": [
+        "cleric",
+        "druid"
+      ],
+      "skills": [
+        {
+          "id": "animal_handling",
+          "name": "驯兽",
+          "nameEn": "Animal Handling",
+          "description": "当存在安抚受惊的坐骑、直觉捕食者意图、或控制一匹战马冲锋等问题时，DM可能会要求你进行感知(驯兽)检定。"
+        },
+        {
+          "id": "insight",
+          "name": "洞悉",
+          "nameEn": "Insight",
+          "description": "你的洞悉检定决定你能否确定一个生物的真实意图，比如在谈判中搜寻线索或探知某人的诚实或虚伪。"
+        },
+        {
+          "id": "medicine",
+          "name": "医药",
+          "nameEn": "Medicine",
+          "description": "感知(医药)检定让你尝试稳定垂死同伴或诊断疾病。"
+        },
+        {
+          "id": "perception",
+          "name": "察觉",
+          "nameEn": "Perception",
+          "description": "你的察觉检定让你能察觉、听见或以其他方式探测到某个存在。它衡量你对周围环境的警觉程度和你感官的敏锐度。"
+        },
+        {
+          "id": "survival",
+          "name": "生存",
+          "nameEn": "Survival",
+          "description": "DM可能会要求你进行感知(生存)检定来追踪痕迹、狩猎野味、引导团队穿过冰封荒野、识别某种生物曾在附近活动过的迹象、预测天气或避开流沙和其他自然危害。"
+        }
+      ],
+      "checks": {
+        "common": [
+          "通过身体语言理解某人意图",
+          "理解某人的感受",
+          "注意到事物的变化",
+          "照顾受伤者"
+        ]
+      }
+    },
+    {
+      "id": "charisma",
+      "name": "魅力",
+      "nameEn": "Charisma",
+      "abbreviation": "CHA",
+      "abbreviationCn": "魅",
+      "description": "魅力衡量你有效地与他人交互的能力。它包括自信和口才等因素",
+      "importantFor": [
+        "bard",
+        "sorcerer",
+        "warlock",
+        "paladin"
+      ],
+      "skills": [
+        {
+          "id": "deception",
+          "name": "欺瞒",
+          "nameEn": "Deception",
+          "description": "你的欺瞒检定决定你能否令人信服地隐藏真相，无论是口头上还是通过你的行动。"
+        },
+        {
+          "id": "intimidation",
+          "name": "威吓",
+          "nameEn": "Intimidation",
+          "description": "当你尝试通过公开的威胁、敌对行动和肢体暴力来影响某人时，DM可能会要求你进行魅力(威吓)检定。"
+        },
+        {
+          "id": "performance",
+          "name": "表演",
+          "nameEn": "Performance",
+          "description": "你的表演检定决定你能否通过音乐、舞蹈、表演、讲故事或其他娱乐形式取悦观众。"
+        },
+        {
+          "id": "persuasion",
+          "name": "游说",
+          "nameEn": "Persuasion",
+          "description": "当你尝试真诚地影响某人或某群体，或在谈判期间做出榜样时，DM可能会要求你进行魅力(游说)检定。"
+        }
+      ],
+      "checks": {
+        "common": [
+          "找到合适的人来打听消息",
+          "理解当前的社交环境",
+          "与难相处的人交互"
+        ]
+      }
+    }
+  ],
+  "savingThrows": {
+    "description": "豁免检定代表着角色抵御各种威胁的尝试，如法术、陷阱、毒素、疾病、类似威胁等。你无法主动进行豁免，而是在必须抗衡某些伤害时被迫进行豁免。",
+    "formula": "d20 + 属性调整值 + 熟练加值(如果有)",
+    "common": {
+      "strength": "肉体抗力",
+      "dexterity": "躲闪和反射",
+      "constitution": "坚韧",
+      "intelligence": "对抗幻术和诱惑推理",
+      "wisdom": "抵抗诱惑和幻象",
+      "charisma": "抵抗附身和放逐效应"
+    }
+  },
+  "abilityChecks": {
+    "description": "属性检定测试角色或怪物在特定情况下为克服挑战所做出的努力",
+    "formula": "d20 + 属性调整值 + 熟练加值(如果有) + 其他加值和减值",
+    "difficultyClass": {
+      "veryEasy": {
+        "dc": 5,
+        "name": "非常简单",
+        "nameEn": "Very Easy"
+      },
+      "easy": {
+        "dc": 10,
+        "name": "简单",
+        "nameEn": "Easy"
+      },
+      "medium": {
+        "dc": 15,
+        "name": "中等",
+        "nameEn": "Medium"
+      },
+      "hard": {
+        "dc": 20,
+        "name": "困难",
+        "nameEn": "Hard"
+      },
+      "veryHard": {
+        "dc": 25,
+        "name": "非常困难",
+        "nameEn": "Very Hard"
+      },
+      "nearlyImpossible": {
+        "dc": 30,
+        "name": "近乎不可能",
+        "nameEn": "Nearly Impossible"
+      }
+    }
+  },
+  "modifierCalculation": {
+    "description": "属性调整值的计算公式",
+    "formula": "(属性值 - 10) / 2 (向下取整)",
+    "table": [
+      {
+        "score": 1,
+        "modifier": -5
+      },
+      {
+        "score": 2,
+        "modifier": -4
+      },
+      {
+        "score": 3,
+        "modifier": -4
+      },
+      {
+        "score": 4,
+        "modifier": -3
+      },
+      {
+        "score": 5,
+        "modifier": -3
+      },
+      {
+        "score": 6,
+        "modifier": -2
+      },
+      {
+        "score": 7,
+        "modifier": -2
+      },
+      {
+        "score": 8,
+        "modifier": -1
+      },
+      {
+        "score": 9,
+        "modifier": -1
+      },
+      {
+        "score": 10,
+        "modifier": 0
+      },
+      {
+        "score": 11,
+        "modifier": 0
+      },
+      {
+        "score": 12,
+        "modifier": 1
+      },
+      {
+        "score": 13,
+        "modifier": 1
+      },
+      {
+        "score": 14,
+        "modifier": 2
+      },
+      {
+        "score": 15,
+        "modifier": 2
+      },
+      {
+        "score": 16,
+        "modifier": 3
+      },
+      {
+        "score": 17,
+        "modifier": 3
+      },
+      {
+        "score": 18,
+        "modifier": 4
+      },
+      {
+        "score": 19,
+        "modifier": 4
+      },
+      {
+        "score": 20,
+        "modifier": 5
+      },
+      {
+        "score": 21,
+        "modifier": 5
+      },
+      {
+        "score": 22,
+        "modifier": 6
+      },
+      {
+        "score": 23,
+        "modifier": 6
+      },
+      {
+        "score": 24,
+        "modifier": 7
+      },
+      {
+        "score": 25,
+        "modifier": 7
+      },
+      {
+        "score": 26,
+        "modifier": 8
+      },
+      {
+        "score": 27,
+        "modifier": 8
+      },
+      {
+        "score": 28,
+        "modifier": 9
+      },
+      {
+        "score": 29,
+        "modifier": 9
+      },
+      {
+        "score": 30,
+        "modifier": 10
+      }
+    ]
+  }
+}

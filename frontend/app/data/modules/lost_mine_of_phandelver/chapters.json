@@ -1,0 +1,93 @@
+[
+  {
+    "id": "chapter_1",
+    "number": 1,
+    "title": "地精箭头",
+    "title_en": "Goblin Arrows",
+    "description": "",
+    "key_locations": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "key_npcs": [
+      "elmar_barthen",
+      "linene_graywind"
+    ],
+    "encounters": [],
+    "level_range": "1-5"
+  },
+  {
+    "id": "chapter_2",
+    "number": 2,
+    "title": "凡达林",
+    "title_en": "Phandalin",
+    "description": "",
+    "key_locations": [
+      "9",
+      "10",
+      "12"
+    ],
+    "key_npcs": [
+      "qelline_alderleaf",
+      "thel_dendrar",
+      "cloak",
+      "mirna_dendrar",
+      "aldith_tresendar"
+    ],
+    "encounters": [],
+    "level_range": "1-5"
+  },
+  {
+    "id": "chapter_3",
+    "number": 3,
+    "title": "蜘蛛之网",
+    "title_en": "The Spider's Web",
+    "description": "",
+    "key_locations": [
+      "11",
+      "13"
+    ],
+    "key_npcs": [
+      "old_owl",
+      "old_owl_well",
+      "reidoth",
+      "hamun_kost",
+      "brughor_axe",
+      "targor_bloodsword"
+    ],
+    "encounters": [],
+    "level_range": "1-5"
+  },
+  {
+    "id": "chapter_4",
+    "number": 4,
+    "title": "潮音洞穴",
+    "title_en": "Wave Echo Cave",
+    "description": "",
+    "key_locations": [
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "key_npcs": [
+      "gundren_rockseeker",
+      "sildar_hallwinter",
+      "mormesk",
+      "nezznar",
+      "moemesk",
+      "lolth"
+    ],
+    "encounters": [],
+    "level_range": "1-5"
+  }
+]

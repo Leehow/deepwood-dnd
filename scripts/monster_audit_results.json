@@ -1,0 +1,5124 @@
+{
+  "matched": 256,
+  "errors": [
+    {
+      "nameEn": "Aboleth",
+      "name": "底栖魔鱼",
+      "id": "aboleth",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 17,
+          "ours": 15
+        },
+        {
+          "field": "hp",
+          "srd": 135,
+          "ours": 90
+        },
+        {
+          "field": "hpFormula",
+          "srd": "18d10+36",
+          "ours": "12d8 + 36"
+        },
+        {
+          "field": "str",
+          "srd": 21,
+          "ours": 18
+        },
+        {
+          "field": "dex",
+          "srd": 9,
+          "ours": 12
+        },
+        {
+          "field": "con",
+          "srd": 15,
+          "ours": 16
+        },
+        {
+          "field": "int",
+          "srd": 18,
+          "ours": 16
+        },
+        {
+          "field": "wis",
+          "srd": 15,
+          "ours": 14
+        },
+        {
+          "field": "cha",
+          "srd": 18,
+          "ours": 14
+        },
+        {
+          "field": "cr",
+          "srd": "10",
+          "ours": "5"
+        },
+        {
+          "field": "xp",
+          "srd": 5900,
+          "ours": 1800
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 10,
+            "swim": 40
+          },
+          "ours": {
+            "walk": 40
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Acolyte",
+      "name": "侍僧",
+      "id": "acolyte",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Adult Black Dragon",
+      "name": "成年黑龙",
+      "id": "adult_black_dragon",
+      "issues": [
+        {
+          "field": "cha",
+          "srd": 17,
+          "ours": 13
+        },
+        {
+          "field": "xp",
+          "srd": 11500,
+          "ours": 11
+        }
+      ]
+    },
+    {
+      "nameEn": "Adult Blue Dragon",
+      "name": "成年蓝龙",
+      "id": "adult_blue_dragon",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 15000,
+          "ours": 15
+        }
+      ]
+    },
+    {
+      "nameEn": "Adult Brass Dragon",
+      "name": "成年黄铜龙",
+      "id": "adult_brass_dragon",
+      "issues": [
+        {
+          "field": "int",
+          "srd": 14,
+          "ours": 16
+        },
+        {
+          "field": "wis",
+          "srd": 13,
+          "ours": 15
+        },
+        {
+          "field": "cha",
+          "srd": 17,
+          "ours": 19
+        },
+        {
+          "field": "xp",
+          "srd": 10000,
+          "ours": 10
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 40,
+            "burrow": 40,
+            "fly": 80
+          },
+          "ours": {
+            "walk": 40,
+            "fly": 80,
+            "burrow": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Adult Bronze Dragon",
+      "name": "成年青铜龙",
+      "id": "adult_bronze_dragon",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 13000,
+          "ours": 13
+        }
+      ]
+    },
+    {
+      "nameEn": "Adult Copper Dragon",
+      "name": "成年赤铜龙",
+      "id": "adult_copper_dragon",
+      "issues": [
+        {
+          "field": "int",
+          "srd": 18,
+          "ours": 16
+        },
+        {
+          "field": "cha",
+          "srd": 17,
+          "ours": 19
+        },
+        {
+          "field": "xp",
+          "srd": 11500,
+          "ours": 11
+        }
+      ]
+    },
+    {
+      "nameEn": "Adult Gold Dragon",
+      "name": "幼年金龙",
+      "id": "adult_gold_dragon",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 19,
+          "ours": 18
+        },
+        {
+          "field": "hp",
+          "srd": 256,
+          "ours": 178
+        },
+        {
+          "field": "hpFormula",
+          "srd": "19d12+133",
+          "ours": "17d10+85"
+        },
+        {
+          "field": "str",
+          "srd": 27,
+          "ours": 23
+        },
+        {
+          "field": "con",
+          "srd": 25,
+          "ours": 21
+        },
+        {
+          "field": "wis",
+          "srd": 15,
+          "ours": 13
+        },
+        {
+          "field": "cha",
+          "srd": 24,
+          "ours": 20
+        },
+        {
+          "field": "cr",
+          "srd": "17",
+          "ours": "10"
+        },
+        {
+          "field": "xp",
+          "srd": 18000,
+          "ours": 5
+        },
+        {
+          "field": "size",
+          "srd": "Huge",
+          "ours": "大型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Adult Red Dragon",
+      "name": "成年红龙",
+      "id": "adult_red_dragon",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 18000,
+          "ours": 18
+        }
+      ]
+    },
+    {
+      "nameEn": "Adult Silver Dragon",
+      "name": "幼年银龙",
+      "id": "adult_silver_dragon",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 19,
+          "ours": 18
+        },
+        {
+          "field": "hp",
+          "srd": 243,
+          "ours": 168
+        },
+        {
+          "field": "hpFormula",
+          "srd": "18d12+126",
+          "ours": "16d10+80"
+        },
+        {
+          "field": "str",
+          "srd": 27,
+          "ours": 23
+        },
+        {
+          "field": "con",
+          "srd": 25,
+          "ours": 21
+        },
+        {
+          "field": "wis",
+          "srd": 13,
+          "ours": 15
+        },
+        {
+          "field": "cha",
+          "srd": 21,
+          "ours": 19
+        },
+        {
+          "field": "cr",
+          "srd": "16",
+          "ours": "9"
+        },
+        {
+          "field": "xp",
+          "srd": 15000,
+          "ours": 5
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 40,
+            "fly": 80
+          },
+          "ours": {
+            "fly": 80
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Huge",
+          "ours": "大型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Air Elemental",
+      "name": "气元素",
+      "id": "air_elemental",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 1800,
+          "ours": 1
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "fly": 90,
+            "hover": true
+          },
+          "ours": {
+            "walk": 0,
+            "fly": 90
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Androsphinx",
+      "name": "男面斯芬克斯",
+      "id": "androsphinx",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 40,
+            "fly": 60
+          },
+          "ours": {
+            "walk": 40
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Ankheg",
+      "name": "掘地虫",
+      "id": "ankheg",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "burrow": 10
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Ape",
+      "name": "猿",
+      "id": "ape",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Assassin",
+      "name": "刺客",
+      "id": "assassin",
+      "issues": [
+        {
+          "field": "con",
+          "srd": 14,
+          "ours": 13
+        },
+        {
+          "field": "int",
+          "srd": 13,
+          "ours": 11
+        },
+        {
+          "field": "wis",
+          "srd": 11,
+          "ours": 12
+        },
+        {
+          "field": "cha",
+          "srd": 10,
+          "ours": 14
+        }
+      ]
+    },
+    {
+      "nameEn": "Axe Beak",
+      "name": "斧嘴鸟",
+      "id": "axe_beak",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Azer",
+      "name": "火矮人",
+      "id": "azer",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 15,
+          "ours": 14
+        },
+        {
+          "field": "hpFormula",
+          "srd": "6d8+12",
+          "ours": "6d8 + 12"
+        },
+        {
+          "field": "str",
+          "srd": 17,
+          "ours": 16
+        },
+        {
+          "field": "int",
+          "srd": 12,
+          "ours": 8
+        },
+        {
+          "field": "wis",
+          "srd": 13,
+          "ours": 10
+        },
+        {
+          "field": "cha",
+          "srd": 10,
+          "ours": 8
+        }
+      ]
+    },
+    {
+      "nameEn": "Balor",
+      "name": "巴洛炎魔",
+      "id": "balor",
+      "issues": [
+        {
+          "field": "str",
+          "srd": 26,
+          "ours": 22
+        }
+      ]
+    },
+    {
+      "nameEn": "Bandit",
+      "name": "强盗",
+      "id": "bandit",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Bandit Captain",
+      "name": "强盗首领",
+      "id": "bandit_captain",
+      "issues": [
+        {
+          "field": "dex",
+          "srd": 16,
+          "ours": 14
+        }
+      ]
+    },
+    {
+      "nameEn": "Barbed Devil",
+      "name": "猬魔",
+      "id": "barbed_devil",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 1800,
+          "ours": 1
+        }
+      ]
+    },
+    {
+      "nameEn": "Basilisk",
+      "name": "石化蜥蜴",
+      "id": "basilisk",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 12,
+          "ours": 15
+        }
+      ]
+    },
+    {
+      "nameEn": "Behir",
+      "name": "青足龙蛇",
+      "id": "behir",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 50,
+            "climb": 40
+          },
+          "ours": {
+            "walk": 50
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Black Bear",
+      "name": "黑熊",
+      "id": "black_bear",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Black Dragon Wyrmling",
+      "name": "黑龙雏龙",
+      "id": "black_dragon_wyrmling",
+      "issues": [
+        {
+          "field": "int",
+          "srd": 10,
+          "ours": 6
+        }
+      ]
+    },
+    {
+      "nameEn": "Black Pudding",
+      "name": "黑布丁",
+      "id": "black_pudding",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 7,
+          "ours": 6
+        },
+        {
+          "field": "hp",
+          "srd": 85,
+          "ours": 84
+        },
+        {
+          "field": "hpFormula",
+          "srd": "10d10+30",
+          "ours": "8d10+40"
+        },
+        {
+          "field": "str",
+          "srd": 16,
+          "ours": 14
+        },
+        {
+          "field": "dex",
+          "srd": 5,
+          "ours": -4
+        },
+        {
+          "field": "con",
+          "srd": 16,
+          "ours": 20
+        },
+        {
+          "field": "int",
+          "srd": 1,
+          "ours": -5
+        },
+        {
+          "field": "wis",
+          "srd": 6,
+          "ours": -2
+        },
+        {
+          "field": "cha",
+          "srd": 1,
+          "ours": -5
+        },
+        {
+          "field": "cr",
+          "srd": "4",
+          "ours": "2"
+        },
+        {
+          "field": "xp",
+          "srd": 1100,
+          "ours": 450
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 20,
+            "climb": 20
+          },
+          "ours": {
+            "walk": 15
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Blink Dog",
+      "name": "闪现犬",
+      "id": "blink_dog",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Blood Hawk",
+      "name": "血鹰",
+      "id": "blood_hawk",
+      "issues": [
+        {
+          "field": "dex",
+          "srd": 14,
+          "ours": 15
+        },
+        {
+          "field": "con",
+          "srd": 10,
+          "ours": 8
+        },
+        {
+          "field": "int",
+          "srd": 3,
+          "ours": 2
+        },
+        {
+          "field": "wis",
+          "srd": 14,
+          "ours": 12
+        },
+        {
+          "field": "cha",
+          "srd": 5,
+          "ours": 6
+        },
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Boar",
+      "name": "野猪",
+      "id": "boar",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Bone Devil",
+      "name": "骨魔",
+      "id": "bone_devil",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 19,
+          "ours": 16
+        },
+        {
+          "field": "hp",
+          "srd": 142,
+          "ours": 85
+        },
+        {
+          "field": "hpFormula",
+          "srd": "15d10+60",
+          "ours": "10d8+40"
+        },
+        {
+          "field": "xp",
+          "srd": 5000,
+          "ours": 5
+        }
+      ]
+    },
+    {
+      "nameEn": "Bugbear",
+      "name": "熊地精",
+      "id": "bugbear",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 16,
+          "ours": 17
+        },
+        {
+          "field": "hp",
+          "srd": 27,
+          "ours": 65
+        },
+        {
+          "field": "hpFormula",
+          "srd": "5d8+5",
+          "ours": "10d8+20"
+        }
+      ]
+    },
+    {
+      "nameEn": "Bulette",
+      "name": "鲨蜥兽",
+      "id": "bulette",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 40,
+            "burrow": 40
+          },
+          "ours": {
+            "walk": 40
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Camel",
+      "name": "骆驼",
+      "id": "camel",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Cat",
+      "name": "猫",
+      "id": "cat",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 40,
+            "climb": 30
+          },
+          "ours": {}
+        }
+      ]
+    },
+    {
+      "nameEn": "Centaur",
+      "name": "人马",
+      "id": "centaur",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 12,
+          "ours": 13
+        },
+        {
+          "field": "hpFormula",
+          "srd": "6d10+12",
+          "ours": "6d8 + 12"
+        },
+        {
+          "field": "str",
+          "srd": 18,
+          "ours": 16
+        },
+        {
+          "field": "int",
+          "srd": 9,
+          "ours": 10
+        },
+        {
+          "field": "wis",
+          "srd": 13,
+          "ours": 12
+        },
+        {
+          "field": "cha",
+          "srd": 11,
+          "ours": 12
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 50
+          },
+          "ours": {
+            "walk": 40
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Chimera",
+      "name": "奇美拉",
+      "id": "chimera",
+      "issues": [
+        {
+          "field": "wis",
+          "srd": 14,
+          "ours": 12
+        },
+        {
+          "field": "cha",
+          "srd": 10,
+          "ours": 8
+        },
+        {
+          "field": "xp",
+          "srd": 2300,
+          "ours": 2
+        }
+      ]
+    },
+    {
+      "nameEn": "Chuul",
+      "name": "甲伏怪",
+      "id": "chuul",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "swim": 30
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Clay Golem",
+      "name": "粘土魔像",
+      "id": "clay_golem",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 5000,
+          "ours": 5
+        }
+      ]
+    },
+    {
+      "nameEn": "Cloaker",
+      "name": "蛰伏伪怪",
+      "id": "cloaker",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 3900,
+          "ours": 3
+        }
+      ]
+    },
+    {
+      "nameEn": "Cloud Giant",
+      "name": "云巨人",
+      "id": "cloud_giant",
+      "issues": [
+        {
+          "field": "str",
+          "srd": 27,
+          "ours": 23
+        },
+        {
+          "field": "con",
+          "srd": 22,
+          "ours": 21
+        },
+        {
+          "field": "int",
+          "srd": 12,
+          "ours": 14
+        },
+        {
+          "field": "wis",
+          "srd": 16,
+          "ours": 15
+        },
+        {
+          "field": "cha",
+          "srd": 16,
+          "ours": 17
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 40
+          },
+          "ours": {}
+        }
+      ]
+    },
+    {
+      "nameEn": "Cockatrice",
+      "name": "蛇鸡兽",
+      "id": "cockatrice",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 11,
+          "ours": 13
+        },
+        {
+          "field": "hp",
+          "srd": 27,
+          "ours": 22
+        },
+        {
+          "field": "hpFormula",
+          "srd": "6d6+6",
+          "ours": "4d8 + 4"
+        },
+        {
+          "field": "str",
+          "srd": 6,
+          "ours": 10
+        },
+        {
+          "field": "dex",
+          "srd": 12,
+          "ours": 15
+        },
+        {
+          "field": "con",
+          "srd": 12,
+          "ours": 13
+        },
+        {
+          "field": "int",
+          "srd": 2,
+          "ours": 3
+        },
+        {
+          "field": "wis",
+          "srd": 13,
+          "ours": 12
+        },
+        {
+          "field": "cha",
+          "srd": 5,
+          "ours": 6
+        },
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/4"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 20,
+            "fly": 40
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Constrictor Snake",
+      "name": "蟒蛇",
+      "id": "constrictor_snake",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Couatl",
+      "name": "羽蛇",
+      "id": "couatl",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 1100,
+          "ours": 1
+        }
+      ]
+    },
+    {
+      "nameEn": "Crocodile",
+      "name": "鳄鱼",
+      "id": "crocodile",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 20,
+            "swim": 20
+          },
+          "ours": {
+            "walk": 20,
+            "swim": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Cult Fanatic",
+      "name": "邪教狂信者",
+      "id": "cult_fanatic",
+      "issues": [
+        {
+          "field": "hp",
+          "srd": 22,
+          "ours": 33
+        },
+        {
+          "field": "hpFormula",
+          "srd": "6d8-5",
+          "ours": "6d8+6"
+        }
+      ]
+    },
+    {
+      "nameEn": "Cultist",
+      "name": "邪教徒",
+      "id": "cultist",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Darkmantle",
+      "name": "暗幕魔兽",
+      "id": "darkmantle",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 11,
+          "ours": 13
+        },
+        {
+          "field": "hp",
+          "srd": 22,
+          "ours": 34
+        },
+        {
+          "field": "hpFormula",
+          "srd": "5d6+5",
+          "ours": "4d8+12"
+        },
+        {
+          "field": "str",
+          "srd": 16,
+          "ours": 14
+        },
+        {
+          "field": "dex",
+          "srd": 12,
+          "ours": 16
+        },
+        {
+          "field": "con",
+          "srd": 13,
+          "ours": 15
+        },
+        {
+          "field": "wis",
+          "srd": 10,
+          "ours": 12
+        },
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 10,
+            "fly": 30
+          },
+          "ours": {
+            "walk": 30
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Small",
+          "ours": "中型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Death Dog",
+      "name": "亡命恶犬",
+      "id": "death_dog",
+      "issues": [
+        {
+          "field": "str",
+          "srd": 15,
+          "ours": 12
+        },
+        {
+          "field": "dex",
+          "srd": 14,
+          "ours": 15
+        },
+        {
+          "field": "con",
+          "srd": 14,
+          "ours": 12
+        },
+        {
+          "field": "wis",
+          "srd": 13,
+          "ours": 12
+        },
+        {
+          "field": "cha",
+          "srd": 6,
+          "ours": 7
+        }
+      ]
+    },
+    {
+      "nameEn": "Deer",
+      "name": "鹿",
+      "id": "deer",
+      "issues": [
+        {
+          "field": "dex",
+          "srd": 16,
+          "ours": 15
+        },
+        {
+          "field": "con",
+          "srd": 11,
+          "ours": 10
+        },
+        {
+          "field": "wis",
+          "srd": 14,
+          "ours": 12
+        },
+        {
+          "field": "cha",
+          "srd": 5,
+          "ours": 6
+        }
+      ]
+    },
+    {
+      "nameEn": "Deva",
+      "name": "梵天神侍",
+      "id": "deva",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "fly": 90
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Djinni",
+      "name": "气巨灵",
+      "id": "djinni",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 17,
+          "ours": 18
+        },
+        {
+          "field": "hp",
+          "srd": 161,
+          "ours": 187
+        },
+        {
+          "field": "hpFormula",
+          "srd": "14d10+84",
+          "ours": "15d10+105"
+        },
+        {
+          "field": "str",
+          "srd": 21,
+          "ours": 23
+        },
+        {
+          "field": "dex",
+          "srd": 15,
+          "ours": 12
+        },
+        {
+          "field": "con",
+          "srd": 22,
+          "ours": 24
+        },
+        {
+          "field": "int",
+          "srd": 15,
+          "ours": 12
+        },
+        {
+          "field": "wis",
+          "srd": 16,
+          "ours": 14
+        },
+        {
+          "field": "cha",
+          "srd": 20,
+          "ours": 14
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "fly": 90
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Doppelganger",
+      "name": "变形怪",
+      "id": "doppelganger",
+      "issues": [
+        {
+          "field": "con",
+          "srd": 14,
+          "ours": 13
+        }
+      ]
+    },
+    {
+      "nameEn": "Draft Horse",
+      "name": "驮用马",
+      "id": "draft_horse",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Dragon Turtle",
+      "name": "龙龟",
+      "id": "dragon_turtle",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 20,
+          "ours": 19
+        },
+        {
+          "field": "hp",
+          "srd": 341,
+          "ours": 123
+        },
+        {
+          "field": "hpFormula",
+          "srd": "22d20+110",
+          "ours": "13d10+52"
+        },
+        {
+          "field": "str",
+          "srd": 25,
+          "ours": 16
+        },
+        {
+          "field": "dex",
+          "srd": 10,
+          "ours": 16
+        },
+        {
+          "field": "con",
+          "srd": 20,
+          "ours": 18
+        },
+        {
+          "field": "int",
+          "srd": 10,
+          "ours": 13
+        },
+        {
+          "field": "wis",
+          "srd": 12,
+          "ours": 14
+        },
+        {
+          "field": "cr",
+          "srd": "17",
+          "ours": "6"
+        },
+        {
+          "field": "xp",
+          "srd": 18000,
+          "ours": 2
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 20,
+            "swim": 40
+          },
+          "ours": {
+            "walk": 30,
+            "climb": 30
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Gargantuan",
+          "ours": "大型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Dretch",
+      "name": "怯魔",
+      "id": "dretch",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        },
+        {
+          "field": "xp",
+          "srd": 25,
+          "ours": 50
+        }
+      ]
+    },
+    {
+      "nameEn": "Drider",
+      "name": "蛛化精灵",
+      "id": "drider",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 19,
+          "ours": 15
+        },
+        {
+          "field": "hp",
+          "srd": 123,
+          "ours": 137
+        },
+        {
+          "field": "hpFormula",
+          "srd": "13d10+52",
+          "ours": "18d10+144"
+        },
+        {
+          "field": "int",
+          "srd": 13,
+          "ours": 12
+        },
+        {
+          "field": "cha",
+          "srd": 12,
+          "ours": 14
+        },
+        {
+          "field": "cr",
+          "srd": "6",
+          "ours": "5"
+        },
+        {
+          "field": "xp",
+          "srd": 2300,
+          "ours": 1800
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "climb": 30
+          },
+          "ours": {
+            "walk": 40
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Large",
+          "ours": "中型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Drow",
+      "name": "卓尔",
+      "id": "drow",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Dryad",
+      "name": "树精",
+      "id": "dryad",
+      "issues": [
+        {
+          "field": "wis",
+          "srd": 15,
+          "ours": 11
+        }
+      ]
+    },
+    {
+      "nameEn": "Dust Mephit",
+      "name": "尘魔蝠",
+      "id": "dust_mephit",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Earth Elemental",
+      "name": "土元素",
+      "id": "earth_elemental",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 17,
+          "ours": 13
+        },
+        {
+          "field": "hp",
+          "srd": 126,
+          "ours": 102
+        },
+        {
+          "field": "hpFormula",
+          "srd": "12d10+60",
+          "ours": "12d10+36"
+        },
+        {
+          "field": "str",
+          "srd": 20,
+          "ours": 10
+        },
+        {
+          "field": "dex",
+          "srd": 8,
+          "ours": 17
+        },
+        {
+          "field": "con",
+          "srd": 20,
+          "ours": 16
+        },
+        {
+          "field": "int",
+          "srd": 5,
+          "ours": 6
+        },
+        {
+          "field": "cha",
+          "srd": 5,
+          "ours": 7
+        },
+        {
+          "field": "xp",
+          "srd": 1800,
+          "ours": 1
+        }
+      ]
+    },
+    {
+      "nameEn": "Efreeti",
+      "name": "火巨灵",
+      "id": "efreeti",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 17,
+          "ours": 18
+        },
+        {
+          "field": "hp",
+          "srd": 200,
+          "ours": 187
+        },
+        {
+          "field": "hpFormula",
+          "srd": "16d10+112",
+          "ours": "15d10+105"
+        },
+        {
+          "field": "str",
+          "srd": 22,
+          "ours": 23
+        },
+        {
+          "field": "int",
+          "srd": 16,
+          "ours": 12
+        },
+        {
+          "field": "wis",
+          "srd": 15,
+          "ours": 14
+        },
+        {
+          "field": "cha",
+          "srd": 16,
+          "ours": 14
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 40,
+            "fly": 60
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Elk",
+      "name": "麋鹿",
+      "id": "elk",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Erinyes",
+      "name": "欲魔",
+      "id": "erinyes",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 18,
+          "ours": 15
+        },
+        {
+          "field": "hp",
+          "srd": 153,
+          "ours": 110
+        },
+        {
+          "field": "hpFormula",
+          "srd": "18d8+72",
+          "ours": "13d8+52"
+        },
+        {
+          "field": "str",
+          "srd": 18,
+          "ours": 16
+        },
+        {
+          "field": "dex",
+          "srd": 16,
+          "ours": 17
+        },
+        {
+          "field": "int",
+          "srd": 14,
+          "ours": 12
+        },
+        {
+          "field": "cha",
+          "srd": 18,
+          "ours": 14
+        },
+        {
+          "field": "cr",
+          "srd": "12",
+          "ours": "5"
+        },
+        {
+          "field": "xp",
+          "srd": 8400,
+          "ours": 1800
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "fly": 60
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Ettin",
+      "name": "双头巨人",
+      "id": "ettin",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 1100,
+          "ours": 1
+        }
+      ]
+    },
+    {
+      "nameEn": "Fire Elemental",
+      "name": "火元素",
+      "id": "fire_elemental",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 13,
+          "ours": 15
+        },
+        {
+          "field": "hp",
+          "srd": 102,
+          "ours": 90
+        },
+        {
+          "field": "hpFormula",
+          "srd": "12d10+36",
+          "ours": "12d10+24"
+        },
+        {
+          "field": "str",
+          "srd": 10,
+          "ours": 14
+        },
+        {
+          "field": "dex",
+          "srd": 17,
+          "ours": 20
+        },
+        {
+          "field": "con",
+          "srd": 16,
+          "ours": 14
+        },
+        {
+          "field": "cha",
+          "srd": 7,
+          "ours": 6
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 50
+          },
+          "ours": {
+            "walk": 0
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Fire Giant",
+      "name": "火巨人",
+      "id": "fire_giant",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30
+          },
+          "ours": {}
+        }
+      ]
+    },
+    {
+      "nameEn": "Flesh Golem",
+      "name": "肉身魔像",
+      "id": "flesh_golem",
+      "issues": [
+        {
+          "field": "int",
+          "srd": 6,
+          "ours": 3
+        },
+        {
+          "field": "wis",
+          "srd": 10,
+          "ours": 11
+        },
+        {
+          "field": "cha",
+          "srd": 5,
+          "ours": 1
+        },
+        {
+          "field": "xp",
+          "srd": 1800,
+          "ours": 1
+        }
+      ]
+    },
+    {
+      "nameEn": "Flying Snake",
+      "name": "飞蛇",
+      "id": "flying_snake",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Flying Sword",
+      "name": "凌空剑",
+      "id": "flying_sword",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 17,
+          "ours": 18
+        },
+        {
+          "field": "hp",
+          "srd": 17,
+          "ours": 33
+        },
+        {
+          "field": "hpFormula",
+          "srd": "5d6",
+          "ours": "6d8+6"
+        },
+        {
+          "field": "str",
+          "srd": 12,
+          "ours": 14
+        },
+        {
+          "field": "dex",
+          "srd": 15,
+          "ours": 11
+        },
+        {
+          "field": "con",
+          "srd": 11,
+          "ours": 13
+        },
+        {
+          "field": "wis",
+          "srd": 5,
+          "ours": 3
+        },
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1"
+        },
+        {
+          "field": "xp",
+          "srd": 50,
+          "ours": 200
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 0,
+            "fly": 50,
+            "hover": true
+          },
+          "ours": {
+            "walk": 25
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Small",
+          "ours": "中型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Frog",
+      "name": "青蛙",
+      "id": "frog",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 0,
+          "ours": 2900
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 20,
+            "swim": 20
+          },
+          "ours": {
+            "walk": 20
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Frost Giant",
+      "name": "霜巨人",
+      "id": "frost_giant",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 15,
+          "ours": 14
+        },
+        {
+          "field": "hp",
+          "srd": 138,
+          "ours": 200
+        },
+        {
+          "field": "hpFormula",
+          "srd": "12d12+60",
+          "ours": "16d12+96"
+        },
+        {
+          "field": "str",
+          "srd": 23,
+          "ours": 27
+        },
+        {
+          "field": "dex",
+          "srd": 9,
+          "ours": 10
+        },
+        {
+          "field": "con",
+          "srd": 21,
+          "ours": 22
+        },
+        {
+          "field": "int",
+          "srd": 9,
+          "ours": 12
+        },
+        {
+          "field": "wis",
+          "srd": 10,
+          "ours": 16
+        },
+        {
+          "field": "cha",
+          "srd": 12,
+          "ours": 16
+        },
+        {
+          "field": "cr",
+          "srd": "8",
+          "ours": "9"
+        },
+        {
+          "field": "xp",
+          "srd": 3900,
+          "ours": 5000
+        }
+      ]
+    },
+    {
+      "nameEn": "Gargoyle",
+      "name": "石像鬼",
+      "id": "gargoyle",
+      "issues": [
+        {
+          "field": "hpFormula",
+          "srd": "7d8+21",
+          "ours": "7d10+14"
+        },
+        {
+          "field": "str",
+          "srd": 15,
+          "ours": 19
+        },
+        {
+          "field": "con",
+          "srd": 16,
+          "ours": 15
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "fly": 60
+          },
+          "ours": {}
+        },
+        {
+          "field": "size",
+          "srd": "Medium",
+          "ours": "大型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Ghost",
+      "name": "幽魂",
+      "id": "ghost",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 1100,
+          "ours": 1
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 0,
+            "fly": 40,
+            "hover": true
+          },
+          "ours": {
+            "walk": 0,
+            "fly": 40
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Badger",
+      "name": "巨獾",
+      "id": "giant_badger",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Bat",
+      "name": "巨蝙蝠",
+      "id": "giant_bat",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Centipede",
+      "name": "巨蜈蚣",
+      "id": "giant_centipede",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 13,
+          "ours": 12
+        },
+        {
+          "field": "hp",
+          "srd": 4,
+          "ours": 60
+        },
+        {
+          "field": "hpFormula",
+          "srd": "1d6+1",
+          "ours": "8d12+8"
+        },
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Crab",
+      "name": "巨蟹",
+      "id": "giant_crab",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "swim": 30
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Crocodile",
+      "name": "巨鳄",
+      "id": "giant_crocodile",
+      "issues": [
+        {
+          "field": "con",
+          "srd": 17,
+          "ours": 19
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Elk",
+      "name": "巨麋鹿",
+      "id": "giant_elk",
+      "issues": [
+        {
+          "field": "wis",
+          "srd": 14,
+          "ours": 10
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Frog",
+      "name": "巨蛙",
+      "id": "giant_frog",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Goat",
+      "name": "巨山羊",
+      "id": "giant_goat",
+      "issues": [
+        {
+          "field": "dex",
+          "srd": 11,
+          "ours": 12
+        },
+        {
+          "field": "wis",
+          "srd": 12,
+          "ours": 11
+        },
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Lizard",
+      "name": "巨蜥",
+      "id": "giant_lizard",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Owl",
+      "name": "巨猫头鹰",
+      "id": "giant_owl",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Poisonous Snake",
+      "name": "巨毒蛇",
+      "id": "giant_poisonous_snake",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Rat",
+      "name": "巨鼠",
+      "id": "giant_rat",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Sea Horse",
+      "name": "巨海马",
+      "id": "giant_sea_horse",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Shark",
+      "name": "巨鲨",
+      "id": "giant_shark",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "swim": 50
+          },
+          "ours": {
+            "walk": 0,
+            "swim": 50
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Toad",
+      "name": "巨蟾",
+      "id": "giant_toad",
+      "issues": [
+        {
+          "field": "hp",
+          "srd": 39,
+          "ours": 19
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Wasp",
+      "name": "巨黄蜂",
+      "id": "giant_wasp",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 10,
+            "fly": 50,
+            "swim": 50
+          },
+          "ours": {
+            "walk": 10,
+            "fly": 50
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Weasel",
+      "name": "巨鼬",
+      "id": "giant_weasel",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Giant Wolf Spider",
+      "name": "巨狼蛛",
+      "id": "giant_wolf_spider",
+      "issues": [
+        {
+          "field": "int",
+          "srd": 3,
+          "ours": 2
+        },
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Goat",
+      "name": "山羊",
+      "id": "goat",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 10,
+          "ours": 13
+        },
+        {
+          "field": "hp",
+          "srd": 4,
+          "ours": 1
+        },
+        {
+          "field": "hpFormula",
+          "srd": "1d8",
+          "ours": "1d4-1"
+        }
+      ]
+    },
+    {
+      "nameEn": "Goblin",
+      "name": "地精",
+      "id": "goblin",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Gorgon",
+      "name": "石化牛",
+      "id": "gorgon",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 19,
+          "ours": 12
+        },
+        {
+          "field": "hp",
+          "srd": 114,
+          "ours": 55
+        },
+        {
+          "field": "hpFormula",
+          "srd": "12d10+48",
+          "ours": "10d8+10"
+        },
+        {
+          "field": "str",
+          "srd": 20,
+          "ours": 15
+        },
+        {
+          "field": "dex",
+          "srd": 11,
+          "ours": 14
+        },
+        {
+          "field": "con",
+          "srd": 18,
+          "ours": 13
+        },
+        {
+          "field": "int",
+          "srd": 2,
+          "ours": 12
+        },
+        {
+          "field": "wis",
+          "srd": 12,
+          "ours": 11
+        },
+        {
+          "field": "cha",
+          "srd": 7,
+          "ours": 9
+        },
+        {
+          "field": "cr",
+          "srd": "5",
+          "ours": "3"
+        },
+        {
+          "field": "xp",
+          "srd": 1800,
+          "ours": 700
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 40
+          },
+          "ours": {
+            "walk": 10
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Large",
+          "ours": "中型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Gray Ooze",
+      "name": "灰泥怪",
+      "id": "gray_ooze",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 8,
+          "ours": 6
+        },
+        {
+          "field": "hp",
+          "srd": 22,
+          "ours": 84
+        },
+        {
+          "field": "hpFormula",
+          "srd": "3d8+9",
+          "ours": "8d10+40"
+        },
+        {
+          "field": "str",
+          "srd": 12,
+          "ours": 14
+        },
+        {
+          "field": "dex",
+          "srd": 6,
+          "ours": 3
+        },
+        {
+          "field": "con",
+          "srd": 16,
+          "ours": 20
+        },
+        {
+          "field": "cha",
+          "srd": 2,
+          "ours": 1
+        },
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "2"
+        },
+        {
+          "field": "xp",
+          "srd": 100,
+          "ours": 450
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 10,
+            "climb": 10
+          },
+          "ours": {
+            "walk": 15
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Medium",
+          "ours": "大型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Grick",
+      "name": "穴居攫怪",
+      "id": "grick",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 14,
+          "ours": 18
+        },
+        {
+          "field": "hp",
+          "srd": 27,
+          "ours": 75
+        },
+        {
+          "field": "hpFormula",
+          "srd": "6d8",
+          "ours": "10d10+20"
+        }
+      ]
+    },
+    {
+      "nameEn": "Grimlock",
+      "name": "石盲蛮族",
+      "id": "grimlock",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Guard",
+      "name": "警卫",
+      "id": "guard",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Gynosphinx",
+      "name": "女面斯芬克斯",
+      "id": "gynosphinx",
+      "issues": [
+        {
+          "field": "hp",
+          "srd": 136,
+          "ours": 199
+        },
+        {
+          "field": "hpFormula",
+          "srd": "16d10+48",
+          "ours": "19d10+95"
+        },
+        {
+          "field": "str",
+          "srd": 18,
+          "ours": 22
+        },
+        {
+          "field": "dex",
+          "srd": 15,
+          "ours": 10
+        },
+        {
+          "field": "con",
+          "srd": 16,
+          "ours": 20
+        },
+        {
+          "field": "int",
+          "srd": 18,
+          "ours": 16
+        },
+        {
+          "field": "cha",
+          "srd": 18,
+          "ours": 23
+        },
+        {
+          "field": "cr",
+          "srd": "11",
+          "ours": "17"
+        },
+        {
+          "field": "xp",
+          "srd": 7200,
+          "ours": 18000
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 40,
+            "fly": 60
+          },
+          "ours": {
+            "walk": 40
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Hell Hound",
+      "name": "地狱犬",
+      "id": "hell_hound",
+      "issues": [
+        {
+          "field": "str",
+          "srd": 17,
+          "ours": 18
+        },
+        {
+          "field": "wis",
+          "srd": 13,
+          "ours": 12
+        },
+        {
+          "field": "cha",
+          "srd": 6,
+          "ours": 8
+        }
+      ]
+    },
+    {
+      "nameEn": "Hezrou",
+      "name": "狂战魔",
+      "id": "hezrou",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 16,
+          "ours": 19
+        },
+        {
+          "field": "hp",
+          "srd": 136,
+          "ours": 262
+        },
+        {
+          "field": "hpFormula",
+          "srd": "13d10+65",
+          "ours": "21d12+126"
+        },
+        {
+          "field": "str",
+          "srd": 19,
+          "ours": 22
+        },
+        {
+          "field": "dex",
+          "srd": 17,
+          "ours": 16
+        },
+        {
+          "field": "con",
+          "srd": 20,
+          "ours": 22
+        },
+        {
+          "field": "int",
+          "srd": 5,
+          "ours": 14
+        },
+        {
+          "field": "wis",
+          "srd": 12,
+          "ours": 15
+        },
+        {
+          "field": "cha",
+          "srd": 13,
+          "ours": 22
+        },
+        {
+          "field": "cr",
+          "srd": "8",
+          "ours": "19"
+        },
+        {
+          "field": "xp",
+          "srd": 3900,
+          "ours": 22000
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30
+          },
+          "ours": {
+            "walk": 40
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Large",
+          "ours": "巨型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Hill Giant",
+      "name": "山丘巨人",
+      "id": "hill_giant",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 13,
+          "ours": 17
+        },
+        {
+          "field": "hp",
+          "srd": 105,
+          "ours": 126
+        },
+        {
+          "field": "hpFormula",
+          "srd": "10d12+40",
+          "ours": "11d12+55"
+        },
+        {
+          "field": "xp",
+          "srd": 1800,
+          "ours": 1
+        }
+      ]
+    },
+    {
+      "nameEn": "Hobgoblin",
+      "name": "大地精",
+      "id": "hobgoblin",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Homunculus",
+      "name": "造妖",
+      "id": "homunculus",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 13,
+          "ours": 15
+        },
+        {
+          "field": "hp",
+          "srd": 5,
+          "ours": 75
+        },
+        {
+          "field": "hpFormula",
+          "srd": "2d4",
+          "ours": "10d10+20"
+        },
+        {
+          "field": "str",
+          "srd": 4,
+          "ours": 18
+        },
+        {
+          "field": "dex",
+          "srd": 15,
+          "ours": 10
+        },
+        {
+          "field": "con",
+          "srd": 11,
+          "ours": 15
+        },
+        {
+          "field": "int",
+          "srd": 10,
+          "ours": 6
+        },
+        {
+          "field": "wis",
+          "srd": 10,
+          "ours": 12
+        },
+        {
+          "field": "cr",
+          "srd": "0",
+          "ours": "3"
+        },
+        {
+          "field": "xp",
+          "srd": 10,
+          "ours": 700
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 20,
+            "fly": 40
+          },
+          "ours": {
+            "walk": 30
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Tiny",
+          "ours": "大型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Hunter Shark",
+      "name": "寻猎鲨",
+      "id": "hunter_shark",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "swim": 40
+          },
+          "ours": {
+            "walk": 0,
+            "swim": 40
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Hydra",
+      "name": "多头蛇蜥",
+      "id": "hydra",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "swim": 30
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Hyena",
+      "name": "鬣狗",
+      "id": "hyena",
+      "issues": [
+        {
+          "field": "str",
+          "srd": 11,
+          "ours": 12
+        },
+        {
+          "field": "dex",
+          "srd": 13,
+          "ours": 15
+        },
+        {
+          "field": "cha",
+          "srd": 5,
+          "ours": 6
+        }
+      ]
+    },
+    {
+      "nameEn": "Ice Mephit",
+      "name": "冰魔蝠",
+      "id": "ice_mephit",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 11,
+          "ours": 12
+        },
+        {
+          "field": "hp",
+          "srd": 21,
+          "ours": 17
+        },
+        {
+          "field": "hpFormula",
+          "srd": "6d6",
+          "ours": "5d6"
+        },
+        {
+          "field": "str",
+          "srd": 7,
+          "ours": 5
+        },
+        {
+          "field": "dex",
+          "srd": 13,
+          "ours": 14
+        },
+        {
+          "field": "cha",
+          "srd": 12,
+          "ours": 10
+        },
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "fly": 30
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Imp",
+      "name": "小魔鬼",
+      "id": "imp",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 13,
+          "ours": 15
+        },
+        {
+          "field": "hp",
+          "srd": 10,
+          "ours": 110
+        },
+        {
+          "field": "hpFormula",
+          "srd": "3d4+3",
+          "ours": "13d8+52"
+        },
+        {
+          "field": "str",
+          "srd": 6,
+          "ours": 16
+        },
+        {
+          "field": "con",
+          "srd": 13,
+          "ours": 18
+        },
+        {
+          "field": "int",
+          "srd": 11,
+          "ours": 12
+        },
+        {
+          "field": "wis",
+          "srd": 12,
+          "ours": 14
+        },
+        {
+          "field": "cr",
+          "srd": "1",
+          "ours": "5"
+        },
+        {
+          "field": "xp",
+          "srd": 200,
+          "ours": 1800
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 20,
+            "fly": 40
+          },
+          "ours": {
+            "walk": 30
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Tiny",
+          "ours": "中型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Invisible Stalker",
+      "name": "隐形追猎者",
+      "id": "invisible_stalker",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 14,
+          "ours": 12
+        },
+        {
+          "field": "hp",
+          "srd": 104,
+          "ours": 18
+        },
+        {
+          "field": "hpFormula",
+          "srd": "16d8+32",
+          "ours": "4d8"
+        },
+        {
+          "field": "str",
+          "srd": 16,
+          "ours": 11
+        },
+        {
+          "field": "dex",
+          "srd": 19,
+          "ours": 20
+        },
+        {
+          "field": "con",
+          "srd": 14,
+          "ours": 11
+        },
+        {
+          "field": "int",
+          "srd": 10,
+          "ours": 13
+        },
+        {
+          "field": "wis",
+          "srd": 15,
+          "ours": 10
+        },
+        {
+          "field": "cha",
+          "srd": 11,
+          "ours": 10
+        },
+        {
+          "field": "cr",
+          "srd": "6",
+          "ours": "1/2"
+        },
+        {
+          "field": "xp",
+          "srd": 2300,
+          "ours": 100
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 50,
+            "fly": 50,
+            "hover": true
+          },
+          "ours": {
+            "walk": 40
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Iron Golem",
+      "name": "钢铁魔像",
+      "id": "iron_golem",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 15000,
+          "ours": 15
+        }
+      ]
+    },
+    {
+      "nameEn": "Killer Whale",
+      "name": "虎鲸",
+      "id": "killer_whale",
+      "issues": [
+        {
+          "field": "hpFormula",
+          "srd": "12d12+12",
+          "ours": "12d12 +12"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "swim": 60
+          },
+          "ours": {
+            "walk": 0,
+            "swim": 60
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Knight",
+      "name": "骑士",
+      "id": "knight",
+      "issues": [
+        {
+          "field": "con",
+          "srd": 14,
+          "ours": 16
+        },
+        {
+          "field": "cha",
+          "srd": 15,
+          "ours": 11
+        }
+      ]
+    },
+    {
+      "nameEn": "Kraken",
+      "name": "克拉肯",
+      "id": "kraken",
+      "issues": [
+        {
+          "field": "size",
+          "srd": "Gargantuan",
+          "ours": "巨型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Lemure",
+      "name": "劣魔",
+      "id": "lemure",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 7,
+          "ours": 15
+        },
+        {
+          "field": "hp",
+          "srd": 13,
+          "ours": 110
+        },
+        {
+          "field": "hpFormula",
+          "srd": "3d8",
+          "ours": "13d8+52"
+        },
+        {
+          "field": "str",
+          "srd": 10,
+          "ours": 16
+        },
+        {
+          "field": "dex",
+          "srd": 5,
+          "ours": 17
+        },
+        {
+          "field": "con",
+          "srd": 11,
+          "ours": 18
+        },
+        {
+          "field": "int",
+          "srd": 1,
+          "ours": 12
+        },
+        {
+          "field": "wis",
+          "srd": 11,
+          "ours": 14
+        },
+        {
+          "field": "cha",
+          "srd": 3,
+          "ours": 14
+        },
+        {
+          "field": "cr",
+          "srd": "0",
+          "ours": "5"
+        },
+        {
+          "field": "xp",
+          "srd": 10,
+          "ours": 1800
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 15
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Lich",
+      "name": "巫妖",
+      "id": "lich",
+      "issues": [
+        {
+          "field": "hpFormula",
+          "srd": "18d8+54",
+          "ours": "18d10+36"
+        }
+      ]
+    },
+    {
+      "nameEn": "Lizardfolk",
+      "name": "蜥蜴人",
+      "id": "lizardfolk",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 13,
+          "ours": 15
+        },
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "swim": 30
+          },
+          "ours": {}
+        }
+      ]
+    },
+    {
+      "nameEn": "Magma Mephit",
+      "name": "熔岩魔蝠",
+      "id": "magma_mephit",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "fly": 30
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Mastiff",
+      "name": "獒犬",
+      "id": "mastiff",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Merfolk",
+      "name": "人鱼",
+      "id": "merfolk",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Merrow",
+      "name": "迈罗人鱼",
+      "id": "merrow",
+      "issues": [
+        {
+          "field": "dex",
+          "srd": 10,
+          "ours": 11
+        },
+        {
+          "field": "con",
+          "srd": 15,
+          "ours": 14
+        },
+        {
+          "field": "int",
+          "srd": 8,
+          "ours": 11
+        },
+        {
+          "field": "wis",
+          "srd": 10,
+          "ours": 12
+        },
+        {
+          "field": "cha",
+          "srd": 9,
+          "ours": 13
+        }
+      ]
+    },
+    {
+      "nameEn": "Mule",
+      "name": "骡子",
+      "id": "mule",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Night Hag",
+      "name": "夜鬼婆",
+      "id": "night_hag",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30
+          },
+          "ours": {
+            "walk": 20
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Noble",
+      "name": "贵族",
+      "id": "noble",
+      "issues": [
+        {
+          "field": "int",
+          "srd": 12,
+          "ours": 10
+        },
+        {
+          "field": "wis",
+          "srd": 14,
+          "ours": 10
+        },
+        {
+          "field": "cha",
+          "srd": 16,
+          "ours": 14
+        },
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Ochre Jelly",
+      "name": "赭冻怪",
+      "id": "ochre_jelly",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 8,
+          "ours": 6
+        },
+        {
+          "field": "hp",
+          "srd": 45,
+          "ours": 84
+        },
+        {
+          "field": "hpFormula",
+          "srd": "6d10+12",
+          "ours": "8d10+40"
+        },
+        {
+          "field": "str",
+          "srd": 15,
+          "ours": 14
+        },
+        {
+          "field": "dex",
+          "srd": 6,
+          "ours": 3
+        },
+        {
+          "field": "con",
+          "srd": 14,
+          "ours": 20
+        },
+        {
+          "field": "int",
+          "srd": 2,
+          "ours": 1
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 10,
+            "climb": 10
+          },
+          "ours": {
+            "walk": 15
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Oni",
+      "name": "恶鬼",
+      "id": "oni",
+      "issues": [
+        {
+          "field": "dex",
+          "srd": 11,
+          "ours": 8
+        },
+        {
+          "field": "int",
+          "srd": 14,
+          "ours": 11
+        },
+        {
+          "field": "wis",
+          "srd": 12,
+          "ours": 14
+        },
+        {
+          "field": "cha",
+          "srd": 15,
+          "ours": 12
+        }
+      ]
+    },
+    {
+      "nameEn": "Otyugh",
+      "name": "食腐兽",
+      "id": "otyugh",
+      "issues": [
+        {
+          "field": "dex",
+          "srd": 11,
+          "ours": 8
+        },
+        {
+          "field": "con",
+          "srd": 19,
+          "ours": 16
+        }
+      ]
+    },
+    {
+      "nameEn": "Panther",
+      "name": "黑豹",
+      "id": "panther",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 50,
+            "climb": 40
+          },
+          "ours": {
+            "walk": 50
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Phase Spider",
+      "name": "相位蜘蛛",
+      "id": "phase_spider",
+      "issues": [
+        {
+          "field": "str",
+          "srd": 15,
+          "ours": 14
+        },
+        {
+          "field": "dex",
+          "srd": 15,
+          "ours": 16
+        },
+        {
+          "field": "int",
+          "srd": 6,
+          "ours": 2
+        },
+        {
+          "field": "cha",
+          "srd": 6,
+          "ours": 2
+        }
+      ]
+    },
+    {
+      "nameEn": "Pit Fiend",
+      "name": "深狱炼魔",
+      "id": "pit_fiend",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 19,
+          "ours": 15
+        },
+        {
+          "field": "hp",
+          "srd": 300,
+          "ours": 110
+        },
+        {
+          "field": "hpFormula",
+          "srd": "24d10+168",
+          "ours": "13d8+52"
+        },
+        {
+          "field": "str",
+          "srd": 26,
+          "ours": 16
+        },
+        {
+          "field": "dex",
+          "srd": 14,
+          "ours": 17
+        },
+        {
+          "field": "con",
+          "srd": 24,
+          "ours": 18
+        },
+        {
+          "field": "int",
+          "srd": 22,
+          "ours": 12
+        },
+        {
+          "field": "wis",
+          "srd": 18,
+          "ours": 14
+        },
+        {
+          "field": "cha",
+          "srd": 24,
+          "ours": 14
+        },
+        {
+          "field": "cr",
+          "srd": "20",
+          "ours": "5"
+        },
+        {
+          "field": "xp",
+          "srd": 25000,
+          "ours": 1800
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "fly": 60
+          },
+          "ours": {
+            "walk": 30
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Large",
+          "ours": "中型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Plesiosaurus",
+      "name": "蛇颈龙",
+      "id": "plesiosaurus",
+      "issues": [
+        {
+          "field": "hp",
+          "srd": 68,
+          "ours": 51
+        },
+        {
+          "field": "hpFormula",
+          "srd": "8d10+24",
+          "ours": "6d10+18"
+        },
+        {
+          "field": "str",
+          "srd": 18,
+          "ours": 19
+        },
+        {
+          "field": "dex",
+          "srd": 15,
+          "ours": 5
+        },
+        {
+          "field": "con",
+          "srd": 16,
+          "ours": 17
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 20,
+            "swim": 40
+          },
+          "ours": {
+            "walk": 60
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Poisonous Snake",
+      "name": "毒蛇",
+      "id": "poisonous_snake",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 13,
+          "ours": 14
+        },
+        {
+          "field": "hp",
+          "srd": 2,
+          "ours": 11
+        },
+        {
+          "field": "hpFormula",
+          "srd": "1d4",
+          "ours": "2d8+2"
+        },
+        {
+          "field": "str",
+          "srd": 2,
+          "ours": 10
+        },
+        {
+          "field": "dex",
+          "srd": 16,
+          "ours": 18
+        },
+        {
+          "field": "con",
+          "srd": 11,
+          "ours": 13
+        },
+        {
+          "field": "int",
+          "srd": 1,
+          "ours": 2
+        },
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/4"
+        },
+        {
+          "field": "xp",
+          "srd": 25,
+          "ours": 50
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "swim": 30
+          },
+          "ours": {
+            "walk": 30
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Tiny",
+          "ours": "中型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Polar Bear",
+      "name": "白熊",
+      "id": "polar_bear",
+      "issues": [
+        {
+          "field": "str",
+          "srd": 20,
+          "ours": 19
+        }
+      ]
+    },
+    {
+      "nameEn": "Pony",
+      "name": "矮种马",
+      "id": "pony",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Priest",
+      "name": "祭司",
+      "id": "priest",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 13,
+          "ours": 15
+        },
+        {
+          "field": "hp",
+          "srd": 27,
+          "ours": 13
+        },
+        {
+          "field": "hpFormula",
+          "srd": "5d8+5",
+          "ours": "3d8"
+        },
+        {
+          "field": "dex",
+          "srd": 10,
+          "ours": 14
+        },
+        {
+          "field": "con",
+          "srd": 12,
+          "ours": 10
+        },
+        {
+          "field": "int",
+          "srd": 13,
+          "ours": 11
+        },
+        {
+          "field": "wis",
+          "srd": 16,
+          "ours": 11
+        },
+        {
+          "field": "cha",
+          "srd": 13,
+          "ours": 12
+        },
+        {
+          "field": "cr",
+          "srd": "2",
+          "ours": "1/4"
+        },
+        {
+          "field": "xp",
+          "srd": 450,
+          "ours": 50
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 25
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Pseudodragon",
+      "name": "伪龙",
+      "id": "pseudodragon",
+      "issues": [
+        {
+          "field": "dex",
+          "srd": 15,
+          "ours": 10
+        },
+        {
+          "field": "wis",
+          "srd": 12,
+          "ours": 10
+        },
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 15,
+            "fly": 60
+          },
+          "ours": {
+            "walk": 15
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Quasit",
+      "name": "夸塞魔",
+      "id": "quasit",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 13,
+          "ours": 19
+        },
+        {
+          "field": "hp",
+          "srd": 7,
+          "ours": 262
+        },
+        {
+          "field": "hpFormula",
+          "srd": "3d4",
+          "ours": "21d12+126"
+        },
+        {
+          "field": "str",
+          "srd": 5,
+          "ours": 22
+        },
+        {
+          "field": "dex",
+          "srd": 17,
+          "ours": 20
+        },
+        {
+          "field": "con",
+          "srd": 10,
+          "ours": 22
+        },
+        {
+          "field": "int",
+          "srd": 7,
+          "ours": 18
+        },
+        {
+          "field": "wis",
+          "srd": 10,
+          "ours": 16
+        },
+        {
+          "field": "cha",
+          "srd": 10,
+          "ours": 22
+        },
+        {
+          "field": "cr",
+          "srd": "1",
+          "ours": "19"
+        },
+        {
+          "field": "xp",
+          "srd": 200,
+          "ours": 22000
+        },
+        {
+          "field": "size",
+          "srd": "Tiny",
+          "ours": "巨型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Quipper",
+      "name": "食人鱼",
+      "id": "quipper",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "swim": 40
+          },
+          "ours": {
+            "walk": 0,
+            "swim": 40
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Rakshasa",
+      "name": "罗刹",
+      "id": "rakshasa",
+      "issues": [
+        {
+          "field": "dex",
+          "srd": 17,
+          "ours": 15
+        },
+        {
+          "field": "con",
+          "srd": 18,
+          "ours": 16
+        },
+        {
+          "field": "int",
+          "srd": 13,
+          "ours": 18
+        },
+        {
+          "field": "wis",
+          "srd": 16,
+          "ours": 15
+        },
+        {
+          "field": "size",
+          "srd": "Medium",
+          "ours": "大型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Rat",
+      "name": "老鼠",
+      "id": "rat",
+      "issues": [
+        {
+          "field": "size",
+          "srd": "Tiny",
+          "ours": "小型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Red Dragon Wyrmling",
+      "name": "红龙雏龙",
+      "id": "red_dragon_wyrmling",
+      "issues": [
+        {
+          "field": "hp",
+          "srd": 75,
+          "ours": 78
+        },
+        {
+          "field": "xp",
+          "srd": 1100,
+          "ours": 1
+        }
+      ]
+    },
+    {
+      "nameEn": "Reef Shark",
+      "name": "礁鲨",
+      "id": "reef_shark",
+      "issues": [
+        {
+          "field": "str",
+          "srd": 14,
+          "ours": 13
+        },
+        {
+          "field": "dex",
+          "srd": 13,
+          "ours": 15
+        },
+        {
+          "field": "con",
+          "srd": 13,
+          "ours": 12
+        },
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "swim": 40
+          },
+          "ours": {
+            "walk": 0,
+            "swim": 40
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Riding Horse",
+      "name": "乘用马",
+      "id": "riding_horse",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        },
+        {
+          "field": "xp",
+          "srd": 25,
+          "ours": 50
+        }
+      ]
+    },
+    {
+      "nameEn": "Roc",
+      "name": "鹏鸟",
+      "id": "roc",
+      "issues": [
+        {
+          "field": "size",
+          "srd": "Gargantuan",
+          "ours": "巨型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Roper",
+      "name": "树绳妖",
+      "id": "roper",
+      "issues": [
+        {
+          "field": "con",
+          "srd": 17,
+          "ours": 16
+        },
+        {
+          "field": "int",
+          "srd": 7,
+          "ours": 5
+        },
+        {
+          "field": "wis",
+          "srd": 16,
+          "ours": 10
+        },
+        {
+          "field": "cha",
+          "srd": 6,
+          "ours": 5
+        }
+      ]
+    },
+    {
+      "nameEn": "Rug of Smothering",
+      "name": "闷人毯",
+      "id": "rug_of_smothering",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 12,
+          "ours": 18
+        },
+        {
+          "field": "hpFormula",
+          "srd": "6d10",
+          "ours": "6d8+6"
+        },
+        {
+          "field": "str",
+          "srd": 17,
+          "ours": 14
+        },
+        {
+          "field": "dex",
+          "srd": 14,
+          "ours": 11
+        },
+        {
+          "field": "con",
+          "srd": 10,
+          "ours": 13
+        },
+        {
+          "field": "cr",
+          "srd": "2",
+          "ours": "1"
+        },
+        {
+          "field": "xp",
+          "srd": 450,
+          "ours": 200
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 10
+          },
+          "ours": {
+            "walk": 25
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Large",
+          "ours": "中型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Rust Monster",
+      "name": "锈蚀怪",
+      "id": "rust_monster",
+      "issues": [
+        {
+          "field": "str",
+          "srd": 13,
+          "ours": 14
+        },
+        {
+          "field": "int",
+          "srd": 2,
+          "ours": 1
+        },
+        {
+          "field": "wis",
+          "srd": 13,
+          "ours": 8
+        },
+        {
+          "field": "cha",
+          "srd": 6,
+          "ours": 3
+        },
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Sahuagin",
+      "name": "沙华鱼人",
+      "id": "sahuagin",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Satyr",
+      "name": "半羊人",
+      "id": "satyr",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Scorpion",
+      "name": "蝎子",
+      "id": "scorpion",
+      "issues": [
+        {
+          "field": "wis",
+          "srd": 8,
+          "ours": 10
+        }
+      ]
+    },
+    {
+      "nameEn": "Scout",
+      "name": "斥候",
+      "id": "scout",
+      "issues": [
+        {
+          "field": "dex",
+          "srd": 14,
+          "ours": 12
+        },
+        {
+          "field": "wis",
+          "srd": 13,
+          "ours": 11
+        },
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Sea Hag",
+      "name": "海鬼婆",
+      "id": "sea_hag",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 14,
+          "ours": 18
+        },
+        {
+          "field": "hp",
+          "srd": 52,
+          "ours": 65
+        },
+        {
+          "field": "hpFormula",
+          "srd": "7d8+21",
+          "ours": "10d8+20"
+        },
+        {
+          "field": "cr",
+          "srd": "2",
+          "ours": "4"
+        },
+        {
+          "field": "xp",
+          "srd": 450,
+          "ours": 1
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "swim": 40
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Sea Horse",
+      "name": "海马",
+      "id": "sea_horse",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "swim": 20
+          },
+          "ours": {
+            "walk": 0,
+            "swim": 20
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Shadow",
+      "name": "幽影",
+      "id": "shadow",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Shrieker",
+      "name": "紫蕈",
+      "id": "shrieker",
+      "issues": [
+        {
+          "field": "hp",
+          "srd": 13,
+          "ours": 1
+        },
+        {
+          "field": "hpFormula",
+          "srd": "3d8",
+          "ours": "1d10-4"
+        },
+        {
+          "field": "str",
+          "srd": 1,
+          "ours": 5
+        },
+        {
+          "field": "con",
+          "srd": 10,
+          "ours": 3
+        },
+        {
+          "field": "wis",
+          "srd": 3,
+          "ours": 1
+        },
+        {
+          "field": "cr",
+          "srd": "0",
+          "ours": "1/2"
+        },
+        {
+          "field": "xp",
+          "srd": 10,
+          "ours": 100
+        },
+        {
+          "field": "size",
+          "srd": "Medium",
+          "ours": "大型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Solar",
+      "name": "炽天神侍",
+      "id": "solar",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 50,
+            "fly": 150
+          },
+          "ours": {
+            "walk": 50
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Specter",
+      "name": "幽灵",
+      "id": "specter",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 0,
+            "fly": 50,
+            "hover": true
+          },
+          "ours": {
+            "walk": 0,
+            "fly": 50
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Spirit Naga",
+      "name": "精魂纳迦",
+      "id": "spirit_naga",
+      "issues": [
+        {
+          "field": "hp",
+          "srd": 75,
+          "ours": 58
+        },
+        {
+          "field": "hpFormula",
+          "srd": "10d10+20",
+          "ours": "9d10+9"
+        },
+        {
+          "field": "str",
+          "srd": 18,
+          "ours": 15
+        },
+        {
+          "field": "dex",
+          "srd": 17,
+          "ours": 16
+        },
+        {
+          "field": "con",
+          "srd": 14,
+          "ours": 12
+        },
+        {
+          "field": "int",
+          "srd": 16,
+          "ours": 15
+        },
+        {
+          "field": "cr",
+          "srd": "8",
+          "ours": "4"
+        },
+        {
+          "field": "xp",
+          "srd": 3900,
+          "ours": 1100
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 40
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Sprite",
+      "name": "小妖精",
+      "id": "sprite",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        },
+        {
+          "field": "size",
+          "srd": "Tiny",
+          "ours": "超小型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Spy",
+      "name": "密探",
+      "id": "spy",
+      "issues": [
+        {
+          "field": "wis",
+          "srd": 14,
+          "ours": 11
+        }
+      ]
+    },
+    {
+      "nameEn": "Steam Mephit",
+      "name": "蒸汽魔蝠",
+      "id": "steam_mephit",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 10,
+          "ours": 12
+        },
+        {
+          "field": "hp",
+          "srd": 21,
+          "ours": 22
+        },
+        {
+          "field": "hpFormula",
+          "srd": "6d6",
+          "ours": "5d6+5"
+        },
+        {
+          "field": "str",
+          "srd": 5,
+          "ours": 8
+        },
+        {
+          "field": "dex",
+          "srd": 11,
+          "ours": 12
+        },
+        {
+          "field": "con",
+          "srd": 10,
+          "ours": 12
+        },
+        {
+          "field": "int",
+          "srd": 11,
+          "ours": 9
+        },
+        {
+          "field": "wis",
+          "srd": 10,
+          "ours": 11
+        },
+        {
+          "field": "cha",
+          "srd": 12,
+          "ours": 7
+        },
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "fly": 30
+          },
+          "ours": {
+            "walk": 30
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Stirge",
+      "name": "蚊蝠",
+      "id": "stirge",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 10,
+            "fly": 40
+          },
+          "ours": {
+            "walk": 10
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Stone Giant",
+      "name": "石巨人",
+      "id": "stone_giant",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 17,
+          "ours": 14
+        },
+        {
+          "field": "hp",
+          "srd": 126,
+          "ours": 200
+        },
+        {
+          "field": "hpFormula",
+          "srd": "11d12+55",
+          "ours": "16d12+96"
+        },
+        {
+          "field": "str",
+          "srd": 23,
+          "ours": 27
+        },
+        {
+          "field": "dex",
+          "srd": 15,
+          "ours": 10
+        },
+        {
+          "field": "con",
+          "srd": 20,
+          "ours": 22
+        },
+        {
+          "field": "int",
+          "srd": 10,
+          "ours": 12
+        },
+        {
+          "field": "wis",
+          "srd": 12,
+          "ours": 16
+        },
+        {
+          "field": "cha",
+          "srd": 9,
+          "ours": 16
+        },
+        {
+          "field": "cr",
+          "srd": "7",
+          "ours": "9"
+        },
+        {
+          "field": "xp",
+          "srd": 2900,
+          "ours": 5000
+        }
+      ]
+    },
+    {
+      "nameEn": "Stone Golem",
+      "name": "石魔像",
+      "id": "stone_golem",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 17,
+          "ours": 19
+        },
+        {
+          "field": "hp",
+          "srd": 178,
+          "ours": 114
+        },
+        {
+          "field": "hpFormula",
+          "srd": "17d10+85",
+          "ours": "12d10+48"
+        },
+        {
+          "field": "xp",
+          "srd": 5900,
+          "ours": 5
+        }
+      ]
+    },
+    {
+      "nameEn": "Storm Giant",
+      "name": "风暴巨人",
+      "id": "storm_giant",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 16,
+          "ours": 14
+        },
+        {
+          "field": "hp",
+          "srd": 230,
+          "ours": 200
+        },
+        {
+          "field": "hpFormula",
+          "srd": "20d12+100",
+          "ours": "16d12+96"
+        },
+        {
+          "field": "str",
+          "srd": 29,
+          "ours": 27
+        },
+        {
+          "field": "dex",
+          "srd": 14,
+          "ours": 10
+        },
+        {
+          "field": "con",
+          "srd": 20,
+          "ours": 22
+        },
+        {
+          "field": "int",
+          "srd": 16,
+          "ours": 12
+        },
+        {
+          "field": "wis",
+          "srd": 18,
+          "ours": 16
+        },
+        {
+          "field": "cha",
+          "srd": 18,
+          "ours": 16
+        },
+        {
+          "field": "cr",
+          "srd": "13",
+          "ours": "9"
+        },
+        {
+          "field": "xp",
+          "srd": 10000,
+          "ours": 5000
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 50,
+            "swim": 50
+          },
+          "ours": {
+            "walk": 40
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Swarm of Bats",
+      "name": "蝙蝠群",
+      "id": "swarm_of_bats",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        },
+        {
+          "field": "size",
+          "srd": "Medium",
+          "ours": "微型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Swarm of Insects",
+      "name": "虫群",
+      "id": "swarm_of_insects",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        },
+        {
+          "field": "size",
+          "srd": "Medium",
+          "ours": "微型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Swarm of Poisonous Snakes",
+      "name": "毒蛇群",
+      "id": "swarm_of_poisonous_snakes",
+      "issues": [
+        {
+          "field": "size",
+          "srd": "Medium",
+          "ours": "微型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Swarm of Quippers",
+      "name": "食人鱼群",
+      "id": "swarm_of_quippers",
+      "issues": [
+        {
+          "field": "size",
+          "srd": "Medium",
+          "ours": "微型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Swarm of Rats",
+      "name": "鼠群",
+      "id": "swarm_of_rats",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        },
+        {
+          "field": "size",
+          "srd": "Medium",
+          "ours": "微型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Swarm of Ravens",
+      "name": "渡鸦群",
+      "id": "swarm_of_ravens",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        },
+        {
+          "field": "size",
+          "srd": "Medium",
+          "ours": "微型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Thug",
+      "name": "暴徒",
+      "id": "thug",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Tribal Warrior",
+      "name": "部族武者",
+      "id": "tribal_warrior",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.125",
+          "ours": "1/8"
+        }
+      ]
+    },
+    {
+      "nameEn": "Triceratops",
+      "name": "三角龙",
+      "id": "triceratops",
+      "issues": [
+        {
+          "field": "hp",
+          "srd": 95,
+          "ours": 51
+        },
+        {
+          "field": "hpFormula",
+          "srd": "10d12+30",
+          "ours": "6d10+18"
+        },
+        {
+          "field": "str",
+          "srd": 22,
+          "ours": 19
+        },
+        {
+          "field": "dex",
+          "srd": 9,
+          "ours": 5
+        },
+        {
+          "field": "wis",
+          "srd": 11,
+          "ours": 12
+        },
+        {
+          "field": "cr",
+          "srd": "5",
+          "ours": "2"
+        },
+        {
+          "field": "xp",
+          "srd": 1800,
+          "ours": 450
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 50
+          },
+          "ours": {
+            "walk": 60
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Huge",
+          "ours": "大型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Tyrannosaurus Rex",
+      "name": "雷克斯暴龙",
+      "id": "tyrannosaurus_rex",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 3900,
+          "ours": 3
+        }
+      ]
+    },
+    {
+      "nameEn": "Violet Fungus",
+      "name": "紫蕈",
+      "id": "violet_fungus",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "1/4"
+        }
+      ]
+    },
+    {
+      "nameEn": "Warhorse",
+      "name": "战马",
+      "id": "warhorse",
+      "issues": [
+        {
+          "field": "wis",
+          "srd": 12,
+          "ours": 11
+        },
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Water Elemental",
+      "name": "水元素",
+      "id": "water_elemental",
+      "issues": [
+        {
+          "field": "ac",
+          "srd": 14,
+          "ours": 15
+        },
+        {
+          "field": "hp",
+          "srd": 114,
+          "ours": 90
+        },
+        {
+          "field": "hpFormula",
+          "srd": "12d10+48",
+          "ours": "12d10+24"
+        },
+        {
+          "field": "str",
+          "srd": 18,
+          "ours": 14
+        },
+        {
+          "field": "dex",
+          "srd": 14,
+          "ours": 20
+        },
+        {
+          "field": "con",
+          "srd": 18,
+          "ours": 14
+        },
+        {
+          "field": "int",
+          "srd": 5,
+          "ours": 6
+        },
+        {
+          "field": "cha",
+          "srd": 8,
+          "ours": 6
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 30,
+            "swim": 90
+          },
+          "ours": {
+            "walk": 0
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Will-o'-Wisp",
+      "name": "鬼火",
+      "id": "will_o'_wisp",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 0,
+            "fly": 50,
+            "hover": true
+          },
+          "ours": {
+            "walk": 0,
+            "fly": 50
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Wolf",
+      "name": "冬狼",
+      "id": "wolf",
+      "issues": [
+        {
+          "field": "hp",
+          "srd": 11,
+          "ours": 75
+        },
+        {
+          "field": "hpFormula",
+          "srd": "2d8+2",
+          "ours": "10d10+20"
+        },
+        {
+          "field": "str",
+          "srd": 12,
+          "ours": 18
+        },
+        {
+          "field": "dex",
+          "srd": 15,
+          "ours": 13
+        },
+        {
+          "field": "con",
+          "srd": 12,
+          "ours": 14
+        },
+        {
+          "field": "int",
+          "srd": 3,
+          "ours": 7
+        },
+        {
+          "field": "cha",
+          "srd": 6,
+          "ours": 8
+        },
+        {
+          "field": "cr",
+          "srd": "0.25",
+          "ours": "3"
+        },
+        {
+          "field": "xp",
+          "srd": 50,
+          "ours": 700
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 40
+          },
+          "ours": {
+            "walk": 50
+          }
+        },
+        {
+          "field": "size",
+          "srd": "Medium",
+          "ours": "大型"
+        }
+      ]
+    },
+    {
+      "nameEn": "Worg",
+      "name": "座狼",
+      "id": "worg",
+      "issues": [
+        {
+          "field": "cr",
+          "srd": "0.5",
+          "ours": "1/2"
+        }
+      ]
+    },
+    {
+      "nameEn": "Wraith",
+      "name": "缚灵",
+      "id": "wraith",
+      "issues": [
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 0,
+            "fly": 60,
+            "hover": true
+          },
+          "ours": {
+            "walk": 0,
+            "fly": 60
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Young Black Dragon",
+      "name": "幼年黑龙",
+      "id": "young_black_dragon",
+      "issues": [
+        {
+          "field": "hpFormula",
+          "srd": "15d10+45",
+          "ours": "15d12+45"
+        },
+        {
+          "field": "xp",
+          "srd": 2900,
+          "ours": 2
+        }
+      ]
+    },
+    {
+      "nameEn": "Young Blue Dragon",
+      "name": "幼年蓝龙",
+      "id": "young_blue_dragon",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 5000,
+          "ours": 5
+        }
+      ]
+    },
+    {
+      "nameEn": "Young Brass Dragon",
+      "name": "幼年黄铜龙",
+      "id": "young_brass_dragon",
+      "issues": [
+        {
+          "field": "int",
+          "srd": 12,
+          "ours": 14
+        },
+        {
+          "field": "xp",
+          "srd": 2300,
+          "ours": 2
+        },
+        {
+          "field": "speed",
+          "srd": {
+            "walk": 40,
+            "burrow": 20,
+            "fly": 80
+          },
+          "ours": {
+            "walk": 40,
+            "fly": 80
+          }
+        }
+      ]
+    },
+    {
+      "nameEn": "Young Red Dragon",
+      "name": "幼年红龙",
+      "id": "young_red_dragon",
+      "issues": [
+        {
+          "field": "xp",
+          "srd": 5900,
+          "ours": 5
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_matched": 256,
+    "monsters_with_errors": 186,
+    "error_rate": "72.7%",
+    "field_error_counts": {
+      "cr": 96,
+      "speed": 70,
+      "xp": 58,
+      "hpFormula": 54,
+      "wis": 50,
+      "hp": 49,
+      "str": 49,
+      "con": 48,
+      "cha": 48,
+      "dex": 47,
+      "int": 46,
+      "ac": 45,
+      "size": 30
+    }
+  }
+}

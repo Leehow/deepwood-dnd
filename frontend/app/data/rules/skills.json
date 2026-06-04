@@ -1,0 +1,405 @@
+{
+  "overview": {
+    "description": "技能代表角色在特定任务上的专长。每个技能关联一个属性，检定时掷d20+属性调整值+熟练加值(如果熟练)",
+    "descriptionEn": "Skills represent a character's expertise in specific tasks. Each skill is tied to an ability, with checks rolling d20+ability modifier+proficiency bonus (if proficient)",
+    "totalSkills": 18,
+    "purpose": "衡量角色在专门领域的能力",
+    "relatedRules": [
+      "属性检定",
+      "熟练加值",
+      "专精(Expertise)",
+      "优势与劣势"
+    ],
+    "quickReference": "技能检定 = d20 + 属性调整值 + 熟练加值(如果有) ≥ DC"
+  },
+  "skills": [
+    {
+      "id": "athletics",
+      "name": "运动",
+      "nameEn": "Athletics",
+      "ability": "strength",
+      "description": "你的运动检定涉及跳跃、攀爬和游泳等困难情况。",
+      "examples": [
+        "你尝试跳过异常长的距离或在跳跃中做出特技动作",
+        "你尝试攀爬陡峭或光滑的悬崖、避开危险的同时爬墙、或是在有人试图将你推下时抓住崖壁",
+        "你尝试在激流、风暴般的波涛或长满海藻的区域中游泳或是保持漂浮",
+        "另一生物试图推你或将你推倒",
+        "你试图擒抱某个生物或从擒抱中挣脱",
+        "你尝试推开门或从门后推开某物"
+      ]
+    },
+    {
+      "id": "acrobatics",
+      "name": "杂技",
+      "nameEn": "Acrobatics",
+      "ability": "dexterity",
+      "description": "你的杂技检定涉及你尝试保持脚下平衡的困难情况。",
+      "examples": [
+        "你尝试在走钢丝、窄木板或不稳的地面上保持平衡",
+        "你尝试做出翻滚、空翻、后空翻等特技动作",
+        "你尝试在冰面上保持平衡",
+        "你尝试从擒抱中挣脱",
+        "你尝试避免摔倒在滑溜的地面上"
+      ],
+      "note": "杂技、隐匿和巧手检定通常在其他人注意到你时具有劣势"
+    },
+    {
+      "id": "sleight_of_hand",
+      "name": "巧手",
+      "nameEn": "Sleight of Hand",
+      "ability": "dexterity",
+      "description": "每当你尝试一项手上巧技或手法欺骗时，进行敏捷(巧手)检定。",
+      "examples": [
+        "你尝试从另一个人身上偷取某物",
+        "你尝试将某物藏在你的人身上",
+        "你尝试从另一个人的口袋里偷东西",
+        "你尝试耍戏法",
+        "你尝试开锁"
+      ],
+      "contested": "DM可能会要求你进行敏捷(巧手)检定来判定你能否完成此类行为，并与目标的感知(察觉)检定对抗"
+    },
+    {
+      "id": "stealth",
+      "name": "隐匿",
+      "nameEn": "Stealth",
+      "ability": "dexterity",
+      "description": "你进行敏捷(隐匿)检定来躲过敌人、潜行溜走、不被发现或在没被察觉的情况下靠近某人。",
+      "examples": [
+        "你尝试躲藏起来",
+        "你尝试潜行溜过守卫",
+        "你尝试在没被听到的情况下溜走",
+        "你尝试在没被看到的情况下靠近某人"
+      ],
+      "contested": "当你尝试躲藏时，进行敏捷(隐匿)检定。除非你被发现，否则该检定结果与试图发现你的生物的感知(察觉)检定对抗"
+    },
+    {
+      "id": "arcana",
+      "name": "奥秘",
+      "nameEn": "Arcana",
+      "ability": "intelligence",
+      "description": "你的奥秘检定衡量你回忆起法术、魔法物品、神秘符号、魔法传统、存在位面和它们的居民相关知识的能力。",
+      "examples": [
+        "识别正在施展的法术",
+        "识别魔法物品的性质",
+        "回忆关于某个存在位面的知识",
+        "识别神秘符号或魔法阵",
+        "回忆关于某个魔法传统的知识"
+      ]
+    },
+    {
+      "id": "history",
+      "name": "历史",
+      "nameEn": "History",
+      "ability": "intelligence",
+      "description": "你的历史检定衡量你回忆起历史事件、传奇人物、古代王国、过往纷争、近期战争和失落文明相关知识的能力。",
+      "examples": [
+        "回忆关于某个历史事件的知识",
+        "回忆关于某个传奇人物的知识",
+        "回忆关于某个古代王国的知识",
+        "回忆关于某场过往战争的知识",
+        "识别古代文物或遗迹"
+      ]
+    },
+    {
+      "id": "investigation",
+      "name": "调查",
+      "nameEn": "Investigation",
+      "ability": "intelligence",
+      "description": "当你四处寻找线索并基于这些线索进行推论时，你进行智力(调查)检定。",
+      "examples": [
+        "你推断某扇门后可能有什么",
+        "你从一个房间里找出隐藏物品的位置",
+        "你从伤口形状推断何种武器造成了伤害",
+        "你确定某个隧道中最薄弱的点可能会崩塌",
+        "你搜索房间寻找线索"
+      ],
+      "note": "调查检定涉及推理和演绎，而察觉检定则更直接地涉及你的感官"
+    },
+    {
+      "id": "nature",
+      "name": "自然",
+      "nameEn": "Nature",
+      "ability": "intelligence",
+      "description": "你的自然检定衡量你回忆起地形、植物和动物、天气和自然周期相关知识的能力。",
+      "examples": [
+        "识别某种植物或动物",
+        "预测天气变化",
+        "识别某种地形的危险",
+        "回忆关于自然周期的知识",
+        "追踪动物"
+      ]
+    },
+    {
+      "id": "religion",
+      "name": "宗教",
+      "nameEn": "Religion",
+      "ability": "intelligence",
+      "description": "你的宗教检定衡量你回忆起神祇、仪式和祷文、宗教等级制度、神圣符号以及邪教秘密行径相关知识的能力。",
+      "examples": [
+        "识别神圣符号",
+        "回忆关于某个神祇的知识",
+        "识别宗教仪式",
+        "识别不死生物的弱点",
+        "回忆关于某个邪教的知识"
+      ]
+    },
+    {
+      "id": "animal_handling",
+      "name": "驯兽",
+      "nameEn": "Animal Handling",
+      "ability": "wisdom",
+      "description": "当存在安抚受惊的坐骑、直觉捕食者意图、或控制一匹战马冲锋等问题时，DM可能会要求你进行感知(驯兽)检定。",
+      "examples": [
+        "你尝试安抚驯养动物",
+        "你尝试让坐骑冒险进入不自然的区域",
+        "你尝试直觉某个动物的意图",
+        "你尝试控制你的坐骑在你骑乘它战斗时保持冷静",
+        "你尝试驾驭马车穿过危险地形"
+      ]
+    },
+    {
+      "id": "insight",
+      "name": "洞悉",
+      "nameEn": "Insight",
+      "ability": "wisdom",
+      "description": "你的洞悉检定决定你能否确定一个生物的真实意图，比如在谈判中搜寻线索或探知某人的诚实或虚伪。",
+      "examples": [
+        "确定某人是否在说谎",
+        "预测某人的下一步行动",
+        "察觉到某人隐藏的情绪",
+        "理解肢体语言或社交暗示",
+        "判断在谈判中可以信任谁"
+      ],
+      "contested": "进行这样的检定涉及搜集暗示，如肢体语言、言语习惯和行为举止的变化。它通常与欺瞒检定对抗"
+    },
+    {
+      "id": "medicine",
+      "name": "医药",
+      "nameEn": "Medicine",
+      "ability": "wisdom",
+      "description": "感知(医药)检定让你尝试稳定垂死同伴或诊断疾病。",
+      "examples": [
+        "稳定垂死的同伴",
+        "诊断疾病",
+        "确定某人的死因",
+        "识别毒药或疾病的症状",
+        "照顾生病或受伤的人"
+      ],
+      "special": "使用医疗包稳定垂死生物的DC为10"
+    },
+    {
+      "id": "perception",
+      "name": "察觉",
+      "nameEn": "Perception",
+      "ability": "wisdom",
+      "description": "你的察觉检定让你能察觉、听见或以其他方式探测到某个存在。它衡量你对周围环境的警觉程度和你感官的敏锐度。",
+      "examples": [
+        "你尝试听到门后的对话",
+        "你尝试偷听守卫的对话",
+        "你试图察觉隐藏的生物或物体",
+        "你环顾四周寻找不寻常的东西",
+        "你尝试注意到接近的威胁"
+      ],
+      "passive": "DM可能决定你进行被动感知(察觉)检定，而非让你掷骰。被动检定结果等于 10 + 所有通常应用于该检定的调整值",
+      "contested": "察觉检定常与隐匿检定对抗"
+    },
+    {
+      "id": "survival",
+      "name": "生存",
+      "nameEn": "Survival",
+      "ability": "wisdom",
+      "description": "DM可能会要求你进行感知(生存)检定来追踪痕迹、狩猎野味、引导团队穿过冰封荒野、识别某种生物曾在附近活动过的迹象、预测天气或避开流沙和其他自然危害。",
+      "examples": [
+        "追踪生物",
+        "狩猎和觅食",
+        "在荒野中找到安全的路径",
+        "预测天气变化",
+        "识别动物的踪迹",
+        "避开自然危害如流沙或雪崩"
+      ]
+    },
+    {
+      "id": "deception",
+      "name": "欺瞒",
+      "nameEn": "Deception",
+      "ability": "charisma",
+      "description": "你的欺瞒检定决定你能否令人信服地隐藏真相，无论是口头上还是通过你的行动。",
+      "examples": [
+        "试图快速说谎",
+        "伪装成另一个人",
+        "在赌博中作弊",
+        "误导某人",
+        "保持扑克脸",
+        "讲述令人信服的谎言"
+      ],
+      "contested": "欺瞒检定通常与目标的洞悉检定对抗"
+    },
+    {
+      "id": "intimidation",
+      "name": "威吓",
+      "nameEn": "Intimidation",
+      "ability": "charisma",
+      "description": "当你尝试通过公开的威胁、敌对行动和肢体暴力来影响某人时，DM可能会要求你进行魅力(威吓)检定。",
+      "examples": [
+        "你尝试从俘虏那里撬出信息",
+        "你试图说服街头暴徒退缩",
+        "你用破酒瓶的锋利边缘威胁某人",
+        "你尝试让某人因恐惧而服从",
+        "你在战斗中怒吼以吓退敌人"
+      ],
+      "methods": "包括威胁性的肢体语言、暴力行为或明确的威胁"
+    },
+    {
+      "id": "performance",
+      "name": "表演",
+      "nameEn": "Performance",
+      "ability": "charisma",
+      "description": "你的表演检定决定你能否通过音乐、舞蹈、表演、讲故事或其他娱乐形式取悦观众。",
+      "examples": [
+        "演奏乐器",
+        "表演舞蹈",
+        "表演戏剧",
+        "讲述故事",
+        "朗诵诗歌",
+        "杂耍或其他娱乐性表演"
+      ],
+      "tools": "通常涉及使用乐器或其他表演工具"
+    },
+    {
+      "id": "persuasion",
+      "name": "游说",
+      "nameEn": "Persuasion",
+      "ability": "charisma",
+      "description": "当你尝试真诚地影响某人或某群体，或在谈判期间做出榜样时，DM可能会要求你进行魅力(游说)检定。",
+      "examples": [
+        "说服城主宽恕你的罪行",
+        "在谈判中寻求和平",
+        "激励人群",
+        "礼貌地请求帮助",
+        "说服某人做正确的事",
+        "在外交场合表现得体"
+      ],
+      "note": "游说通常用于善意的交互，而欺瞒和威吓则不是"
+    }
+  ],
+  "skillSystem": {
+    "description": "技能代表角色或怪物在执行某类任务时的专长",
+    "proficiency": {
+      "description": "如果角色具有某技能的熟练项，则在该技能检定中加上熟练加值",
+      "formula": "1d20 + 属性调整值 + 熟练加值 + 其他加值"
+    },
+    "expertise": {
+      "description": "某些职业特性(如游荡者的专精)允许角色在特定技能上获得双倍熟练加值",
+      "formula": "1d20 + 属性调整值 + (熟练加值 × 2) + 其他加值",
+      "classes": [
+        "rogue",
+        "bard"
+      ]
+    },
+    "passiveChecks": {
+      "description": "被动检定是一种特殊的属性检定，不需要掷骰",
+      "formula": "10 + 所有通常应用于该检定的调整值",
+      "common": "被动感知(察觉)最常用，DM使用它来秘密判定角色是否注意到隐藏的威胁",
+      "advantage": "如果角色在检定上具有优势，则被动检定+5",
+      "disadvantage": "如果角色在检定上具有劣势，则被动检定-5"
+    },
+    "workingTogether": {
+      "description": "有时两个或更多角色会一起尝试完成某项任务",
+      "help": {
+        "name": "协助",
+        "description": "一个角色可以使用协助动作来帮助另一个角色完成任务",
+        "effect": "被协助的角色在检定上获得优势",
+        "requirements": "协助者必须能够执行该任务，且DM必须认为协助是可能的"
+      },
+      "groupChecks": {
+        "name": "团队检定",
+        "description": "当多个角色试图完成同一件事时，DM可能要求进行团队检定",
+        "procedure": "每个参与者进行检定，如果至少一半的人成功，则整个团队成功",
+        "examples": [
+          "团队悄悄穿过森林",
+          "团队试图伪造文件"
+        ]
+      }
+    },
+    "contests": {
+      "description": "对抗检定用于两个生物尝试做相反的事情时",
+      "procedure": [
+        "两个参与者都进行相应的属性检定",
+        "他们应用所有适当的加值和减值",
+        "如果参与者有相同的总值，则情况保持不变"
+      ],
+      "examples": [
+        {
+          "action": "推开某人",
+          "check": "力量(运动) vs 力量(运动)或敏捷(杂技)"
+        },
+        {
+          "action": "躲藏不被发现",
+          "check": "敏捷(隐匿) vs 感知(察觉)"
+        },
+        {
+          "action": "识破谎言",
+          "check": "感知(洞悉) vs 魅力(欺瞒)"
+        },
+        {
+          "action": "从擒抱中逃脱",
+          "check": "力量(运动)或敏捷(杂技) vs 力量(运动)"
+        }
+      ]
+    }
+  },
+  "skillsByAbility": {
+    "strength": [
+      "athletics"
+    ],
+    "dexterity": [
+      "acrobatics",
+      "sleight_of_hand",
+      "stealth"
+    ],
+    "constitution": [],
+    "intelligence": [
+      "arcana",
+      "history",
+      "investigation",
+      "nature",
+      "religion"
+    ],
+    "wisdom": [
+      "animal_handling",
+      "insight",
+      "medicine",
+      "perception",
+      "survival"
+    ],
+    "charisma": [
+      "deception",
+      "intimidation",
+      "performance",
+      "persuasion"
+    ]
+  },
+  "variantSkills": {
+    "description": "在某些情况下，DM可能要求你使用不同的属性来进行技能检定",
+    "examples": [
+      {
+        "skill": "athletics",
+        "normalAbility": "strength",
+        "variantAbility": "constitution",
+        "situation": "长距离游泳或攀爬"
+      },
+      {
+        "skill": "intimidation",
+        "normalAbility": "charisma",
+        "variantAbility": "strength",
+        "situation": "通过展示肌肉力量来威吓"
+      },
+      {
+        "skill": "performance",
+        "normalAbility": "charisma",
+        "variantAbility": "dexterity",
+        "situation": "杂技表演"
+      }
+    ]
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "meta": {
+    "source": "D&D 5E 城主指南",
+    "chapter": "第5章 冒险环境",
+    "description": "聚居地创建相关的随机表和指南"
+  },
+  "settlement_basics": {
+    "description": "聚居地基础",
+    "types": [
+      { "type": "村庄", "typeEn": "Village", "features": ["道路", "偏远农场", "村庄中心"] },
+      { "type": "小镇", "typeEn": "Town", "features": ["主道路", "水路", "城墙", "领主楼堡", "神庙"] },
+      { "type": "城市", "typeEn": "City", "features": ["主道路", "水路", "城墙", "内城墙", "分区"] }
+    ],
+    "location_factors": [
+      "食物充足",
+      "水源丰富",
+      "农田可用",
+      "建筑材料可得"
+    ]
+  },
+  "race_relations": {
+    "description": "种族关系",
+    "dice": "d20",
+    "items": [
+      { "roll": [1, 10], "result": "和谐" },
+      { "roll": [11, 14], "result": "紧张或竞争" },
+      { "roll": [15, 16], "result": "多数族裔作为征服者" },
+      { "roll": 17, "result": "少数族裔作为统治者" },
+      { "roll": 18, "result": "少数族裔作为难民" },
+      { "roll": 19, "result": "多数族裔压迫少数族裔" },
+      { "roll": 20, "result": "少数族裔压迫多数族裔" }
+    ]
+  },
+  "ruler_status": {
+    "description": "统治者形象",
+    "dice": "d20",
+    "items": [
+      { "roll": [1, 5], "result": "受人尊敬，公平，公正" },
+      { "roll": [6, 8], "result": "可怕暴君" },
+      { "roll": 9, "result": "软弱而受他人操控" },
+      { "roll": 10, "result": "非合法统治者，酝酿着内战" },
+      { "roll": 11, "result": "被一个强大的怪物管治或控制" },
+      { "roll": 12, "result": "神秘莫测，幕后的帮派集团" },
+      { "roll": 13, "result": "有争议的领袖，公开争斗" },
+      { "roll": 14, "result": "公开夺权的帮派集团" },
+      { "roll": 15, "result": "愚蠢粗野之徒" },
+      { "roll": 16, "result": "弥留之际，继承人们为争权而竞争" },
+      { "roll": [17, 18], "result": "铁腕思想却受人尊敬" },
+      { "roll": [19, 20], "result": "宗教领袖" }
+    ]
+  },
+  "notable_traits": {
+    "description": "重要特色",
+    "dice": "d20",
+    "items": [
+      { "roll": 1, "trait": "街道上的运河" },
+      { "roll": 2, "trait": "巨大的雕像或遗迹" },
+      { "roll": 3, "trait": "宏大的神庙" },
+      { "roll": 4, "trait": "大型堡垒" },
+      { "roll": 5, "trait": "青翠的公园和果园" },
+      { "roll": 6, "trait": "河流将小镇分开" },
+      { "roll": 7, "trait": "主要贸易中心" },
+      { "roll": 8, "trait": "某强大家族或公会的总部" },
+      { "roll": 9, "trait": "居民大多都很富有" },
+      { "roll": 10, "trait": "贫穷、败落" },
+      { "roll": 11, "trait": "难闻的气味（制革业、开放的下水道）" },
+      { "roll": 12, "trait": "一种特定商品的贸易中心" },
+      { "roll": 13, "trait": "多场战役的发生地" },
+      { "roll": 14, "trait": "某神话或魔法事件的发生地" },
+      { "roll": 15, "trait": "重要的图书馆或档案馆" },
+      { "roll": 16, "trait": "禁止对所有众神的崇拜活动" },
+      { "roll": 17, "trait": "罪恶名声" },
+      { "roll": 18, "trait": "著名的图书馆或学院" },
+      { "roll": 19, "trait": "重要陵墓或坟场的所在地" },
+      { "roll": 20, "trait": "在远古废墟上重建" }
+    ]
+  },
+  "known_for": {
+    "description": "因何闻名",
+    "dice": "d20",
+    "items": [
+      { "roll": 1, "fame": "美味佳肴" },
+      { "roll": 2, "fame": "粗鲁的居民" },
+      { "roll": 3, "fame": "贪婪的商人" },
+      { "roll": 4, "fame": "艺术家和作家" },
+      { "roll": 5, "fame": "伟大英雄/救世主" },
+      { "roll": 6, "fame": "繁花" },
+      { "roll": 7, "fame": "成群结队的乞丐" },
+      { "roll": 8, "fame": "顽强的武者" },
+      { "roll": 9, "fame": "黑暗魔法" },
+      { "roll": 10, "fame": "颓废" },
+      { "roll": 11, "fame": "虔诚" },
+      { "roll": 12, "fame": "赌博" },
+      { "roll": 13, "fame": "无神" },
+      { "roll": 14, "fame": "教育" },
+      { "roll": 15, "fame": "葡萄酒" },
+      { "roll": 16, "fame": "高端时尚" },
+      { "roll": 17, "fame": "政治阴谋" },
+      { "roll": 18, "fame": "强大的公会" },
+      { "roll": 19, "fame": "烈酒" },
+      { "roll": 20, "fame": "爱国主义" }
+    ]
+  },
+  "current_calamity": {
+    "description": "当前灾祸",
+    "dice": "d20",
+    "items": [
+      { "roll": 1, "calamity": "疑似吸血鬼侵扰" },
+      { "roll": 2, "calamity": "新异教寻找信徒" },
+      { "roll": 3, "calamity": "重要人物死亡（疑似谋杀）" },
+      { "roll": 4, "calamity": "盗贼行会之间的战争" },
+      { "roll": [5, 6], "calamity": "瘟疫或饥荒（引发骚乱）" },
+      { "roll": 7, "calamity": "腐败官员" },
+      { "roll": [8, 9], "calamity": "怪物猎食" },
+      { "roll": 10, "calamity": "一名强大的法师搬到了城中" },
+      { "roll": 11, "calamity": "经济萧条（贸易中断）" },
+      { "roll": 12, "calamity": "洪水" },
+      { "roll": 13, "calamity": "墓地里蠢蠢欲动的不死生物" },
+      { "roll": 14, "calamity": "末世预言" },
+      { "roll": 15, "calamity": "战争边缘" },
+      { "roll": 16, "calamity": "内部纷争（导致无政府状态）" },
+      { "roll": 17, "calamity": "遭敌人围攻" },
+      { "roll": 18, "calamity": "丑闻对权势家族构成威胁" },
+      { "roll": 19, "calamity": "发现地下城（冒险者们涌向城市）" },
+      { "roll": 20, "calamity": "宗教派别为争权斗争" }
+    ]
+  },
+  "random_buildings": {
+    "description": "随机建筑",
+    "building_type": {
+      "dice": "d20",
+      "items": [
+        { "roll": [1, 10], "type": "住宅" },
+        { "roll": [11, 12], "type": "宗教建筑" },
+        { "roll": [13, 15], "type": "酒馆" },
+        { "roll": [16, 17], "type": "货栈" },
+        { "roll": [18, 20], "type": "商店" }
+      ]
+    },
+    "residence": {
+      "dice": "d20",
+      "items": [
+        { "roll": [1, 2], "type": "废弃的空屋" },
+        { "roll": [3, 8], "type": "中产阶级的房屋" },
+        { "roll": [9, 10], "type": "上流社会的房屋" },
+        { "roll": [11, 15], "type": "拥挤的廉价公寓" },
+        { "roll": [16, 17], "type": "孤儿院" },
+        { "roll": 18, "type": "隐秘的奴隶围栏" },
+        { "roll": 19, "type": "隐秘异教的前沿基地" },
+        { "roll": 20, "type": "奢华、戒备森严的豪宅" }
+      ]
+    },
+    "religious_building": {
+      "dice": "d20",
+      "items": [
+        { "roll": [1, 10], "type": "某善良或中立神祇的神庙" },
+        { "roll": [11, 12], "type": "伪神的神庙（由一群游骗祭司运营）" },
+        { "roll": 13, "type": "苦行者的家" },
+        { "roll": [14, 15], "type": "废弃的圣地" },
+        { "roll": [16, 17], "type": "致力于宗教研究的图书馆" },
+        { "roll": [18, 20], "type": "某邪魔或邪神的隐秘圣地" }
+      ]
+    },
+    "tavern": {
+      "dice": "d20",
+      "items": [
+        { "roll": [1, 5], "type": "安静、低调的酒吧" },
+        { "roll": [6, 9], "type": "吵闹的潜水酒吧" },
+        { "roll": 10, "type": "盗贼公会常光顾的店" },
+        { "roll": 11, "type": "秘密社团的集会场所" },
+        { "roll": [12, 13], "type": "上层社会餐饮俱乐部" },
+        { "roll": [14, 15], "type": "赌窟" },
+        { "roll": [16, 17], "type": "面向特定的种族或公会" },
+        { "roll": 18, "type": "会员制俱乐部" },
+        { "roll": [19, 20], "type": "妓院" }
+      ]
+    },
+    "warehouse": {
+      "dice": "d20",
+      "items": [
+        { "roll": [1, 4], "type": "空荡或遭废弃" },
+        { "roll": [5, 6], "type": "戒备森严，贵重商品" },
+        { "roll": [7, 10], "type": "廉价商品" },
+        { "roll": [11, 14], "type": "散装商品" },
+        { "roll": 15, "type": "活体动物" },
+        { "roll": [16, 17], "type": "武器/护甲" },
+        { "roll": [18, 19], "type": "远方进口商品" },
+        { "roll": 20, "type": "秘密的走私者老巢" }
+      ]
+    },
+    "shop": {
+      "dice": "d20",
+      "items": [
+        { "roll": 1, "type": "典当行" },
+        { "roll": 2, "type": "草药/焚香" },
+        { "roll": 3, "type": "水果/蔬菜" },
+        { "roll": 4, "type": "干肉" },
+        { "roll": 5, "type": "陶器" },
+        { "roll": 6, "type": "殡仪" },
+        { "roll": 7, "type": "书店" },
+        { "roll": 8, "type": "借贷" },
+        { "roll": 9, "type": "武器/护甲" },
+        { "roll": 10, "type": "船具用品" },
+        { "roll": 11, "type": "铁匠铺" },
+        { "roll": 12, "type": "木匠" },
+        { "roll": 13, "type": "织布工" },
+        { "roll": 14, "type": "珠宝商" },
+        { "roll": 15, "type": "烘焙师" },
+        { "roll": 16, "type": "地图绘制" },
+        { "roll": 17, "type": "裁缝" },
+        { "roll": 18, "type": "绳索制造" },
+        { "roll": 19, "type": "石匠" },
+        { "roll": 20, "type": "抄写员" }
+      ]
+    }
+  },
+  "tavern_name_generator": {
+    "description": "酒馆名生成器",
+    "dice": "d20",
+    "first_half": [
+      { "roll": 1, "name": "银", "nameEn": "The Silver" },
+      { "roll": 2, "name": "金", "nameEn": "The Golden" },
+      { "roll": 3, "name": "慢行", "nameEn": "The Staggering" },
+      { "roll": 4, "name": "大笑", "nameEn": "The Laughing" },
+      { "roll": 5, "name": "阔步", "nameEn": "The Prancing" },
+      { "roll": 6, "name": "虚饰", "nameEn": "The Gilded" },
+      { "roll": 7, "name": "奔跑", "nameEn": "The Running" },
+      { "roll": 8, "name": "长啸", "nameEn": "The Howling" },
+      { "roll": 9, "name": "被宰", "nameEn": "The Slaughtered" },
+      { "roll": 10, "name": "斜睨", "nameEn": "The Leering" },
+      { "roll": 11, "name": "醉熏", "nameEn": "The Drunken" },
+      { "roll": 12, "name": "跳跃", "nameEn": "The Leaping" },
+      { "roll": 13, "name": "咆哮", "nameEn": "The Roaring" },
+      { "roll": 14, "name": "皱眉", "nameEn": "The Frowning" },
+      { "roll": 15, "name": "孤独", "nameEn": "The Lonely" },
+      { "roll": 16, "name": "浪荡", "nameEn": "The Wandering" },
+      { "roll": 17, "name": "神秘", "nameEn": "The Mysterious" },
+      { "roll": 18, "name": "吠叫", "nameEn": "The Barking" },
+      { "roll": 19, "name": "漆黑", "nameEn": "The Black" },
+      { "roll": 20, "name": "闪烁", "nameEn": "The Gleaming" }
+    ],
+    "second_half": [
+      { "roll": 1, "name": "鳗", "nameEn": "Eel" },
+      { "roll": 2, "name": "海豚", "nameEn": "Dolphin" },
+      { "roll": 3, "name": "矮人", "nameEn": "Dwarf" },
+      { "roll": 4, "name": "飞马", "nameEn": "Pegasus" },
+      { "roll": 5, "name": "小马驹", "nameEn": "Pony" },
+      { "roll": 6, "name": "玫瑰", "nameEn": "Rose" },
+      { "roll": 7, "name": "牡鹿", "nameEn": "Stag" },
+      { "roll": 8, "name": "狼", "nameEn": "Wolf" },
+      { "roll": 9, "name": "羔羊", "nameEn": "Lamb" },
+      { "roll": 10, "name": "恶魔", "nameEn": "Demon" },
+      { "roll": 11, "name": "山羊", "nameEn": "Goat" },
+      { "roll": 12, "name": "精魂", "nameEn": "Spirit" },
+      { "roll": 13, "name": "部落", "nameEn": "Horde" },
+      { "roll": 14, "name": "小丑", "nameEn": "Jester" },
+      { "roll": 15, "name": "山", "nameEn": "Mountain" },
+      { "roll": 16, "name": "鹰", "nameEn": "Eagle" },
+      { "roll": 17, "name": "半羊人", "nameEn": "Satyr" },
+      { "roll": 18, "name": "狗", "nameEn": "Dog" },
+      { "roll": 19, "name": "蜘蛛", "nameEn": "Spider" },
+      { "roll": 20, "name": "星", "nameEn": "Star" }
+    ]
+  },
+  "urban_encounters": {
+    "description": "随机城中遭遇",
+    "dice": "d12+d8",
+    "items": [
+      { "roll": 2, "encounter": "动物奔逃", "description": "一只或一群意料之外的动物在街道上奔走" },
+      { "roll": 3, "encounter": "公告", "description": "宣告员或疯子在街角发表公告" },
+      { "roll": 4, "encounter": "斗殴", "description": "一场斗殴在冒险者身边爆发" },
+      { "roll": 5, "encounter": "恶霸", "description": "1d4+2的恶霸骚扰一个外乡人" },
+      { "roll": 6, "encounter": "伙伴", "description": "一位向队伍示好的当地人接触（可能是密探）" },
+      { "roll": 7, "encounter": "竞赛", "description": "冒险者们被卷入一场即兴的竞赛中" },
+      { "roll": 8, "encounter": "尸体", "description": "冒险者们发现一具类人生物的尸体" },
+      { "roll": 9, "encounter": "征募", "description": "警备队员征募角色们帮助处理问题" },
+      { "roll": 10, "encounter": "醉汉", "description": "一个醉汉将角色错认作其他人" },
+      { "roll": 11, "encounter": "火灾", "description": "发生一场火灾" },
+      { "roll": 12, "encounter": "发现饰品", "description": "角色们发现一件随机的饰品" },
+      { "roll": 13, "encounter": "警卫盘问", "description": "1d4+1的警卫仗势欺人" },
+      { "roll": 14, "encounter": "扒手", "description": "一个窃贼试图偷窃" },
+      { "roll": 15, "encounter": "巡游队伍", "description": "一群市民在庆典或举办葬礼" },
+      { "roll": 16, "encounter": "游行抗议", "description": "市民和平抗议一项新法律" },
+      { "roll": 17, "encounter": "失控货车", "description": "一组马匹拉着马车飞奔横穿街道" },
+      { "roll": 18, "encounter": "可疑交易", "description": "两名披着斗篷的人物在进行可疑交易" },
+      { "roll": 19, "encounter": "大场面", "description": "公共形式的娱乐项目（吟游诗人、马戏团、处决等）" },
+      { "roll": 20, "encounter": "顽童", "description": "一个街头顽童黏上冒险者们" }
+    ]
+  },
+  "law_and_order": {
+    "description": "律法与秩序",
+    "police": {
+      "city": "城市警备队负责维持秩序，民兵负责护卫城墙",
+      "town": "边境小镇可能依靠冒险者或市民抓捕罪犯"
+    },
+    "trials": "大多数审判由地方法官或当地领主监督",
+    "sentences": [
+      "罚款",
+      "数月或数年的强制劳动",
+      "流放",
+      "死刑"
+    ],
+    "note": "很少聚居地建有专门的监狱来关押被定罪的囚犯"
+  },
+  "ai_usage": {
+    "description": "AI使用这些内容的建议",
+    "tips": [
+      "聚居地应该有自己的特色和问题",
+      "统治者的形象影响整个城市的氛围",
+      "当前灾祸可以作为冒险钩子",
+      "酒馆是冒险的经典起点，要有特色",
+      "城中遭遇让城市冒险更加生动"
+    ],
+    "example_settlements": [
+      "港口城市莫林：以葡萄酒和政治阴谋闻名，河流将城市分成贫富两区，目前正遭受神秘的连环谋杀...",
+      "矮人小镇铁砧堡：铁匠铺和锻造厂林立，居民顽强而骄傲，最近发现了通往幽暗地域的隧道...",
+      "精灵村落银叶：隐藏在古老森林深处，以魔法学院闻名，一位强大的德鲁伊失踪引发了恐慌..."
+    ]
+  }
+}

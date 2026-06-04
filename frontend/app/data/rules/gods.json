@@ -1,0 +1,2138 @@
+{
+  "overview": {
+    "description": "宗教是裂隙诸境中生命的重要组成部分。诸神在大裂隙后依然存在，牧师引导神圣之力，邪教团举行黑暗献祭，圣武士矗立着有如对抗黑暗的灯塔。",
+    "descriptionEn": "Religion is an important part of life in the Sundered Realms. Gods persist after the Sundering, clerics channel divine power, and paladins stand as beacons against darkness.",
+    "worship": "在裂隙诸境中，人们会因应不同时间与环境敬拜不同的神祇。很多人会偏爱诸神中的一位，并遵循这位神祇的理念与教义成为其信徒。",
+    "optionalRule": true,
+    "optionalRuleNote": "神祇系统是可选规则。DM需要在战役设置中启用此功能，玩家才能在创建角色时选择信仰的神祇。",
+    "optionalRuleNoteEn": "The deity system is an optional rule. The DM must enable this feature in campaign settings for players to select a deity during character creation."
+  },
+  "pantheons": [
+    {
+      "id": "sundered_realms",
+      "name": "裂隙诸境诸神",
+      "nameEn": "Deities of the Sundered Realms",
+      "world": "裂隙诸境 (The Sundered Realms)",
+      "description": "在大裂隙之后，众神依然存在于破碎的世界中。虽然他们的力量在灾变中有所削弱，但他们的信徒遍布各个境域。至少三十位神祇在诸境中广受崇拜。",
+      "deities": [
+        {
+          "id": "auril",
+          "name": "欧吕尔",
+          "nameEn": "Auril",
+          "title": "寒冬女神",
+          "titleEn": "goddess of winter",
+          "alignment": "NE",
+          "domains": [
+            "自然",
+            "风暴"
+          ],
+          "symbol": "六角雪花",
+          "descriptionEn": "Auril the Frostmaiden, the Icedawn, is the evil goddess of winter and cold. She represents the cruel and merciless aspects of winter - the killing frost, the icy wind, and the freezing death. Auril is capricious and takes pleasure in the suffering caused by winter's harshest aspects. Her followers include those who must survive in frozen lands and those who worship winter's destructive power.",
+          "description": "霜少女奥莉尔，又称冰晓，是冬季与严寒的邪恶女神。她代表着冬天残酷无情的一面——致命的霜冻、刺骨的寒风以及冰冷的死亡。奥莉尔性情反复无常，以寒冬带来的苦难为乐。她的信徒包括那些必须在冰封之地生存的人，以及崇拜冬季毁灭力量的人。",
+          "portfolioEn": [
+            "winter",
+            "cold"
+          ],
+          "portfolio": [
+            "冬天",
+            "冷"
+          ],
+          "worshippersEn": [
+            "druids",
+            "rangers",
+            "inhabitants of cold climates"
+          ],
+          "worshippers": [
+            "德鲁伊",
+            "游骑兵",
+            "寒冷气候地区的居民"
+          ]
+        },
+        {
+          "id": "azuth",
+          "name": "阿祖斯",
+          "nameEn": "Azuth",
+          "title": "法师之神",
+          "titleEn": "god of wizards",
+          "alignment": "LN",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "带着火焰轮廓并指向上方的左手",
+          "descriptionEn": "Azuth the High One, the Lord of Spells, is the god of wizards and mages. Once a mortal wizard who was elevated to godhood by Mystra, he serves as the deity of wizardry and arcane knowledge. Azuth teaches that magic is a tool to be mastered through discipline and study, and that with great magical power comes great responsibility. His followers are primarily wizards who seek to perfect their craft.",
+          "description": "至高者阿祖斯，法术之主，是法师与术士的神祇。他原是一位凡人法师，后被密斯特拉擢升为神，掌管奥术魔法与神秘知识。阿祖斯教导人们，魔法是一种需要通过自律与研习来掌握的工具，而强大的魔法力量也伴随着巨大的责任。他的信徒主要是那些致力于精进自身技艺的法师。",
+          "portfolioEn": [
+            "wizards",
+            "mages",
+            "spellcasting"
+          ],
+          "portfolio": [
+            "巫师",
+            "法师",
+            "施法"
+          ],
+          "worshippersEn": [
+            "wizards",
+            "sorcerers",
+            "monks",
+            "scholars"
+          ],
+          "worshippers": [
+            "巫师",
+            "法师",
+            "僧侣",
+            "学者们"
+          ]
+        },
+        {
+          "id": "bane",
+          "name": "班恩",
+          "nameEn": "Bane",
+          "title": "暴政之神",
+          "titleEn": "god of tyranny",
+          "alignment": "LE",
+          "domains": [
+            "战争"
+          ],
+          "symbol": "竖立的黑色右拳",
+          "descriptionEn": "Bane the Black Lord, the Lord of Darkness, is the evil god of tyranny, hatred, fear, and strife. He represents the lust for power and the desire to dominate others through fear and oppression. Bane teaches that might makes right and that the strong should rule over the weak. His followers include tyrants, evil warriors, and those who seek power through domination and fear.",
+          "description": "班，即黑魔王、黑暗之主，是暴政、憎恨、恐惧与纷争的邪恶之神。他象征着对权力的贪婪，以及通过恐惧和压迫来支配他人的欲望。班宣扬强者为王、弱者臣服的理念，认为力量即是正义。他的追随者包括暴君、邪恶的战士，以及那些企图通过统治与恐吓获取权力之人。",
+          "portfolioEn": [
+            "tyranny",
+            "hatred",
+            "fear",
+            "strife"
+          ],
+          "portfolio": [
+            "暴政",
+            "仇恨",
+            "恐惧",
+            "纷争"
+          ],
+          "worshippersEn": [
+            "tyrants",
+            "evil fighters",
+            "evil monks",
+            "corrupt officials"
+          ],
+          "worshippers": [
+            "暴君",
+            "邪恶的战士们",
+            "邪恶的僧人",
+            "腐败官员"
+          ]
+        },
+        {
+          "id": "beshaba",
+          "name": "本莎芭",
+          "nameEn": "Beshaba",
+          "title": "厄运女神",
+          "titleEn": "goddess of misfortune",
+          "alignment": "CE",
+          "domains": [
+            "诡术"
+          ],
+          "symbol": "黑色鹿角",
+          "descriptionEn": "Beshaba the Maid of Misfortune, Lady Doom, is the chaotic evil goddess of bad luck, accidents, and random misfortune. She is the dark counterpart to Tymora, and represents the cruel twists of fate that bring disaster and ruin. Beshaba is spiteful and vindictive, taking pleasure in others' suffering. Her followers are often those who have suffered terrible misfortunes and seek to appease her, or those who deliberately cause misfortune for others.",
+          "description": "不幸少女贝莎芭，又称厄运女士，是混乱邪恶的厄运、意外与无常灾祸女神。她是泰姆拉的黑暗对立面，象征着带来灾难与毁灭的命运残酷转折。贝莎芭心怀怨恨、报复心强，以他人的痛苦为乐。她的信徒通常是那些遭受过可怕不幸而试图安抚她的人，或是一些故意给他人带来厄运之徒。",
+          "portfolioEn": [
+            "misfortune",
+            "bad luck",
+            "accidents"
+          ],
+          "portfolio": [
+            "不幸",
+            "倒霉",
+            "事故"
+          ],
+          "worshippersEn": [
+            "those who seek to appease bad luck",
+            "the unfortunate",
+            "nihilists"
+          ],
+          "worshippers": [
+            "那些试图安抚厄运的人",
+            "不幸的人",
+            "虚无主义者"
+          ]
+        },
+        {
+          "id": "bhaal",
+          "name": "巴尔",
+          "nameEn": "Bhaal",
+          "title": "谋杀之神",
+          "titleEn": "god of murder",
+          "alignment": "NE",
+          "domains": [
+            "死亡"
+          ],
+          "symbol": "血滴环绕的颅骨",
+          "descriptionEn": "Bhaal the Lord of Murder was the god of murder and violent death. Though he was destroyed during the Time of Troubles, his essence lives on through his mortal progeny, the Bhaalspawn. Bhaal represented the inevitability of death through violence and taught that murder is an art form to be perfected. His few remaining followers are assassins and killers who seek to perfect the art of taking life.",
+          "description": "巴尔，谋杀之主，是谋杀与暴力死亡的神祇。尽管他在动荡之年被毁灭，但他的本质通过其凡人后裔——巴尔之子得以延续。巴尔象征着暴力致死的必然性，并教导人们谋杀是一种需要臻于完美的艺术形式。他仅存的少数信徒都是刺客和杀手，致力于完善夺取生命的技艺。",
+          "portfolioEn": [
+            "murder",
+            "violence",
+            "assassins"
+          ],
+          "portfolio": [
+            "谋杀",
+            "暴力",
+            "刺客"
+          ],
+          "worshippersEn": [
+            "assassins",
+            "killers",
+            "vengeful people"
+          ],
+          "worshippers": [
+            "刺客",
+            "杀手们",
+            "心怀怨恨的人"
+          ]
+        },
+        {
+          "id": "chauntea",
+          "name": "裳禔亚",
+          "nameEn": "Chauntea",
+          "title": "农业女神",
+          "titleEn": "goddess of agriculture",
+          "alignment": "NG",
+          "domains": [
+            "生命"
+          ],
+          "symbol": "一捆谷物或谷物上盛开的玫瑰",
+          "descriptionEn": "Chauntea the Great Mother, the Grain Goddess, is the goddess of agriculture, plants cultivated by humans, farmers, gardeners, and summer. She represents the bounty of nature when tamed and cultivated responsibly. Chauntea teaches that the natural world and civilization can exist in harmony when properly balanced. Her followers are farmers, gardeners, and those who work the land.",
+          "description": "伟大的母亲——谷物女神菖黛，是农业、人类所种植的植物、农夫、园丁以及夏季的女神。她象征着在合理驯化与负责任耕作下大自然所赐予的丰饶。菖黛教导人们，只要取得恰当的平衡，自然世界与文明便能和谐共存。她的信徒包括农民、园丁以及所有耕耘土地的人们。",
+          "portfolioEn": [
+            "agriculture",
+            "plants",
+            "farmers",
+            "gardeners",
+            "summer"
+          ],
+          "portfolio": [
+            "农业",
+            "植物",
+            "农民",
+            "园丁们",
+            "夏天"
+          ],
+          "worshippersEn": [
+            "peasants",
+            "farmers",
+            "gardeners",
+            "people of the earth"
+          ],
+          "worshippers": [
+            "农民",
+            "农民们",
+            "园丁们",
+            "地球上的人们"
+          ]
+        },
+        {
+          "id": "cyric",
+          "name": "希瑞克",
+          "nameEn": "Cyric",
+          "title": "谎言之神",
+          "titleEn": "god of lies",
+          "alignment": "CE",
+          "domains": [
+            "诡术"
+          ],
+          "symbol": "黑色或紫色光芒中的白色无颌颅骨",
+          "descriptionEn": "Cyric the Dark Sun, the Mad God, Prince of Lies, is the god of lies, intrigue, strife, and murder. He gained godhood during the Time of Troubles and has since descended into madness. Cyric represents deception, betrayal, and chaos. He teaches that reality is what you make it and that lies can become truth if enough people believe them. His followers are often as mad and unpredictable as their deity.",
+          "description": "黑暗太阳西里克，疯狂之神，谎言王子，是谎言、阴谋、纷争与谋杀之神。他在动荡之年晋升为神，此后逐渐陷入疯狂。西里克象征着欺骗、背叛与混乱。他宣扬现实由你创造，只要足够多人相信，谎言便可成真。他的信徒往往如同其神祇一般疯狂而不可预测。",
+          "portfolioEn": [
+            "lies",
+            "intrigue",
+            "deception",
+            "murder",
+            "strife",
+            "illusion"
+          ],
+          "portfolio": [
+            "谎言",
+            "阴谋",
+            "欺骗",
+            "谋杀",
+            "纷争",
+            "幻觉"
+          ],
+          "worshippersEn": [
+            "liars",
+            "criminals",
+            "anarchists",
+            "the insane"
+          ],
+          "worshippers": [
+            "说谎者",
+            "罪犯",
+            "无政府主义者",
+            "疯狂的人"
+          ]
+        },
+        {
+          "id": "deneir",
+          "name": "迪尼尔",
+          "nameEn": "Deneir",
+          "title": "写作之神",
+          "titleEn": "god of writing",
+          "alignment": "NG",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "一只睁开的眼睛，上面有一截蜡烛",
+          "descriptionEn": "Deneir the Lord of All Glyphs and Images, the First Scribe, is the god of literature, art, and cartography. He represents the preservation and dissemination of knowledge through writing and imagery. Deneir teaches that the written word is sacred and that knowledge should be recorded and shared. His followers include scribes, scholars, cartographers, and artists who work to preserve knowledge for future generations.",
+          "description": "丹奥，万符之主、首位书记，是文学、艺术与制图之神。他象征着通过文字与图像来保存和传播知识。丹奥教导人们文字是神圣的，知识应当被记录并分享。他的信徒包括抄写员、学者、制图师和艺术家，他们致力于为后代保存人类的知识。",
+          "portfolioEn": [
+            "writing",
+            "literature",
+            "art",
+            "cartography"
+          ],
+          "portfolio": [
+            "写作",
+            "文学",
+            "艺术",
+            "地图学"
+          ],
+          "worshippersEn": [
+            "scribes",
+            "scholars",
+            "artists",
+            "cartographers"
+          ],
+          "worshippers": [
+            "抄写员",
+            "学者们",
+            "艺术家们",
+            "制图师"
+          ]
+        },
+        {
+          "id": "eldath",
+          "name": "埃达丝",
+          "nameEn": "Eldath",
+          "title": "和平女神",
+          "titleEn": "goddess of peace",
+          "alignment": "NG",
+          "domains": [
+            "生命",
+            "自然"
+          ],
+          "symbol": "注入水池的瀑布",
+          "descriptionEn": "Eldath the Quiet One, the Guardian of Groves, is the goddess of peace, waterfalls, pools, and springs. She represents serenity, pacifism, and the quiet beauty of nature. Eldath teaches non-violence and that true strength comes from peace and harmony with nature. Her followers include pacifists, druids, and those who seek tranquility. Eldath opposes all violence and her clergy will only fight in defense of nature's sacred places.",
+          "description": "寂静者艾尔达丝，树丛的守护者，是和平、瀑布、池塘与泉水的女神。她象征着宁静、非暴力以及大自然静谧之美。艾尔达丝教导人们摒弃暴力，并认为真正的力量源于与自然的和平共处与和谐。她的追随者包括和平主义者、德鲁伊以及追求安宁之人。艾尔达丝反对一切暴力行为，其神职人员仅在保卫自然圣地时才会进行战斗。",
+          "portfolioEn": [
+            "peace",
+            "waterfalls",
+            "pools",
+            "springs",
+            "quiet places"
+          ],
+          "portfolio": [
+            "和平",
+            "瀑布",
+            "泳池",
+            "弹簧",
+            "安静的地方"
+          ],
+          "worshippersEn": [
+            "pacifists",
+            "druids",
+            "rangers",
+            "poets"
+          ],
+          "worshippers": [
+            "和平主义者",
+            "德鲁伊",
+            "游骑兵",
+            "诗人"
+          ]
+        },
+        {
+          "id": "gond",
+          "name": "贡德",
+          "nameEn": "Gond",
+          "title": "工艺之神",
+          "titleEn": "god of craft",
+          "alignment": "N",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "四道轮辐的齿轮",
+          "descriptionEn": "Gond Wonderbringer, the Lord of All Smiths, is the god of craft, smithwork, and inventiveness. He represents the creative spark that drives innovation and the skill to transform raw materials into wondrous creations. Gond teaches that progress and innovation should be celebrated, and that there is always a better way to build or create something. His followers include craftsmen, inventors, and engineers.",
+          "description": "工匠之神贡德·奇迹缔造者是工艺、锻造与创造发明之神。他象征着推动创新的灵感火花，以及将原始材料转化为奇妙作品的技艺。贡德教导人们应当颂扬进步与创新，并相信总会有更好的方式来建造或创造事物。他的信徒包括工匠、发明家和工程师。",
+          "portfolioEn": [
+            "craft",
+            "smithwork",
+            "inventiveness"
+          ],
+          "portfolio": [
+            "工艺",
+            "史密斯工作",
+            "创造力"
+          ],
+          "worshippersEn": [
+            "smiths",
+            "craftsmen",
+            "engineers",
+            "inventors",
+            "woodworkers"
+          ],
+          "worshippers": [
+            "史密斯们",
+            "工匠",
+            "工程师们",
+            "发明家",
+            "木工师傅"
+          ]
+        },
+        {
+          "id": "helm",
+          "name": "海姆",
+          "nameEn": "Helm",
+          "title": "保护之神",
+          "titleEn": "god of protection",
+          "alignment": "LN",
+          "domains": [
+            "生命",
+            "光明"
+          ],
+          "symbol": "竖立的左手铁手套，其上有一只凝视的眼睛",
+          "descriptionEn": "Helm the Vigilant One, the Watcher, is the god of guardians and protection. He is eternally vigilant, never sleeping, never faltering in his duty to protect. Helm represents the ideal that those who guard and protect must never abandon their posts or shirk their duty. His followers are dedicated protectors, bodyguards, and watchmen who take their responsibilities with utmost seriousness.",
+          "description": "赫尔姆，即警觉者、守望者，是守护与保护之神。他永远保持警惕，从不睡眠，也从不懈怠于保护的职责。赫尔姆象征着守卫者绝不可擅离职守或逃避责任的理想。他的信徒们是 dedicated 的守护者、保镖和守夜人，他们以最严肃的态度对待自己的职责。",
+          "portfolioEn": [
+            "protection",
+            "guardians",
+            "watchers"
+          ],
+          "portfolio": [
+            "保护",
+            "守护者",
+            "观察者"
+          ],
+          "worshippersEn": [
+            "guards",
+            "bodyguards",
+            "paladins",
+            "mercenaries",
+            "wardens"
+          ],
+          "worshippers": [
+            "守卫",
+            "保镖",
+            "圣骑士",
+            "雇佣兵",
+            "看守员"
+          ]
+        },
+        {
+          "id": "ilmater",
+          "name": "伊尔梅特",
+          "nameEn": "Ilmater",
+          "title": "忍耐之神",
+          "titleEn": "god of endurance",
+          "alignment": "LG",
+          "domains": [
+            "生命"
+          ],
+          "symbol": "被红绳绑住手腕的双手",
+          "descriptionEn": "Ilmater the Crying God, the Broken God, is the god of endurance, suffering, martyrdom, and perseverance. He willingly takes on the suffering of others and teaches his followers to do the same. His clergy are healers and caregivers who aid the sick, wounded, and oppressed. Ilmater represents compassion in its purest form - the willingness to suffer so that others may be relieved of their pain.",
+          "description": "伊尔马特，又称哭泣之神、破碎之神，是忍耐、苦难、殉道与坚韧之神。他自愿承担他人的痛苦，并教导信徒效仿此道。他的神职人员是治愈者与看护者，帮助病患、伤者和受压迫之人。伊尔马特代表着最纯粹的慈悲——甘愿承受苦难，以使他人得以摆脱痛苦。",
+          "portfolioEn": [
+            "endurance",
+            "suffering",
+            "martyrdom",
+            "perseverance"
+          ],
+          "portfolio": [
+            "耐力",
+            "苦难",
+            "殉难",
+            "坚持不懈"
+          ],
+          "worshippersEn": [
+            "the lame",
+            "the oppressed",
+            "the poor",
+            "monks",
+            "paladins",
+            "serfs"
+          ],
+          "worshippers": [
+            "跛子",
+            "被压迫者",
+            "穷人",
+            "僧侣",
+            "圣骑士",
+            "农奴"
+          ]
+        },
+        {
+          "id": "kelemvor",
+          "name": "凯兰沃",
+          "nameEn": "Kelemvor",
+          "title": "死者之神",
+          "titleEn": "god of the dead",
+          "alignment": "LN",
+          "domains": [
+            "死亡"
+          ],
+          "symbol": "竖立的臂骨支撑的天平",
+          "descriptionEn": "Kelemvor, Lord of the Dead and Judge of the Damned, is the god of death and the dead. Once a mortal man who ascended to godhood, he brought a new philosophy to death - that it is a natural part of life to be understood, not feared. Unlike his predecessors who made the afterlife uncertain and terrifying, Kelemvor teaches that death comes to all and should be faced with dignity. He judges all souls fairly, sending them to their proper afterlife based on their deeds in life.",
+          "description": "死亡之主、受罚者之审判者——凯勒莫弗，是掌管死亡与亡者的神明。他曾是一位凡人，后升格为神，为死亡带来了一种全新的理念：死亡是生命中自然的一部分，应当被理解而非畏惧。与过去那些让来世充满不确定与恐惧的前任神明不同，凯勒莫弗教导人们，死亡终将降临于所有人，应以尊严面对。他公正地审判所有灵魂，根据其生前行为，将其送往应有的来世归宿。",
+          "portfolioEn": [
+            "death",
+            "the dead",
+            "the dying"
+          ],
+          "portfolio": [
+            "死亡",
+            "死者",
+            "垂死之人"
+          ],
+          "worshippersEn": [
+            "the dying",
+            "families of the dying",
+            "grave keepers",
+            "hunters of the undead"
+          ],
+          "worshippers": [
+            "垂死之人",
+            "临终者家属",
+            "守墓人",
+            "亡灵猎手"
+          ]
+        },
+        {
+          "id": "lathander",
+          "name": "洛山达",
+          "nameEn": "Lathander",
+          "title": "新生与复苏之神",
+          "titleEn": "god of birth & renewal",
+          "alignment": "NG",
+          "domains": [
+            "生命",
+            "光明"
+          ],
+          "symbol": "日出中的旅途",
+          "descriptionEn": "Lathander the Morninglord is the god of spring, dawn, birth, renewal, creativity, youth, vitality, and athletics. He represents new beginnings and fresh starts. His followers are optimistic and energetic, believing in the power of hope and the promise of a better tomorrow. Temples of Lathander are built to catch the first rays of dawn, and his clergy perform morning ceremonies to greet each new day.",
+          "description": "晨曦之神拉坦德是春天、黎明、诞生、更新、创造、青春、活力和体育的神祇。他象征着新的开始与崭新的起点。他的信徒乐观而充满活力，坚信希望的力量以及美好未来的承诺。拉坦德的神庙通常建造得能够迎接清晨的第一缕阳光，他的神职人员每天早晨举行仪式，迎接新的一天到来。",
+          "portfolioEn": [
+            "spring",
+            "dawn",
+            "birth",
+            "renewal",
+            "creativity",
+            "youth",
+            "vitality",
+            "self-perfection"
+          ],
+          "portfolio": [
+            "春天",
+            "黎明",
+            "出生",
+            "续期",
+            "创造力",
+            "青年",
+            "活力",
+            "自我完善"
+          ],
+          "worshippersEn": [
+            "artists",
+            "athletes",
+            "spring brides",
+            "youth"
+          ],
+          "worshippers": [
+            "艺术家们",
+            "运动员",
+            "春季新娘",
+            "青年"
+          ]
+        },
+        {
+          "id": "leira",
+          "name": "莱拉",
+          "nameEn": "Leira",
+          "title": "幻象女神",
+          "titleEn": "goddess of illusion",
+          "alignment": "CN",
+          "domains": [
+            "诡术"
+          ],
+          "symbol": "含有旋雾的向下三角",
+          "descriptionEn": "Leira the Lady of the Mists, the Lady of Deception, is the goddess of deception and illusions. Though she was once thought destroyed, Leira has returned. She represents the power of illusion, misdirection, and the hidden truth behind false appearances. Leira teaches that reality is what you make of it and that illusions can be as powerful as truth. Her followers include illusionists, spies, and those who use deception as a tool.",
+          "description": "迷雾女士莱拉，又称欺诈女士，是欺骗与幻象的女神。尽管她曾被认为已被毁灭，但如今莱拉已然归来。她象征着幻术、误导以及虚假表象背后的隐秘真相。莱拉教导人们：现实取决于你如何塑造，而幻象的力量可与真实等同。她的信徒包括幻术师、间谍以及一切以欺骗为手段之人。",
+          "portfolioEn": [
+            "illusions",
+            "deception",
+            "misdirection"
+          ],
+          "portfolio": [
+            "幻觉",
+            "欺骗",
+            "误导"
+          ],
+          "worshippersEn": [
+            "illusionists",
+            "spies",
+            "rogues",
+            "entertainers"
+          ],
+          "worshippers": [
+            "魔术师",
+            "间谍",
+            "流氓",
+            "艺人"
+          ]
+        },
+        {
+          "id": "lliira",
+          "name": "黎尔拉",
+          "nameEn": "Lliira",
+          "title": "欢乐女神",
+          "titleEn": "goddess of joy",
+          "alignment": "CG",
+          "domains": [
+            "生命"
+          ],
+          "symbol": "三个六角星组成的三角",
+          "descriptionEn": "Lliira Our Lady of Joy, Joybringer, is the goddess of joy, happiness, dance, and freedom. She represents the pure exuberance of life and the freedom to express joy without restraint. Lliira teaches that life should be celebrated and that happiness is worth pursuing. Her followers include dancers, revelers, and those who believe in living life to its fullest. Her clergy often serve as entertainers and spread joy wherever they go.",
+          "description": "莉拉，喜悦圣母、赐悦女神，是欢乐、幸福、舞蹈与自由的女神。她象征着生命的纯粹欢欣，以及无拘无束表达喜悦的自由。莉拉教导人们应当庆祝生命，追求幸福是值得的。她的信徒包括舞者、欢庆者，以及那些相信尽情生活的人。她的神职人员常常担任表演者的角色，将喜悦传播到他们所到的每一个地方。",
+          "portfolioEn": [
+            "joy",
+            "happiness",
+            "dance",
+            "freedom",
+            "liberty"
+          ],
+          "portfolio": [
+            "喜悦",
+            "幸福",
+            "舞蹈",
+            "自由",
+            "自由"
+          ],
+          "worshippersEn": [
+            "dancers",
+            "revelers",
+            "entertainers",
+            "hedonists"
+          ],
+          "worshippers": [
+            "舞者",
+            "狂欢者",
+            "艺人",
+            "享乐主义者"
+          ]
+        },
+        {
+          "id": "loviatar",
+          "name": "劳薇艾塔",
+          "nameEn": "Loviatar",
+          "title": "痛苦女神",
+          "titleEn": "goddess of pain",
+          "alignment": "LE",
+          "domains": [
+            "死亡"
+          ],
+          "symbol": "九尾刺鞭",
+          "descriptionEn": "Loviatar the Maiden of Pain, the Willing Whip, is the evil goddess of pain, suffering, and torture. She represents the infliction and endurance of pain as both punishment and pleasure. Loviatar teaches that pain is the ultimate sensation and that suffering purifies and strengthens. Her followers include torturers, sadists, and those who believe that pain brings power. Her clergy often serve as torturers and use pain as a tool of control.",
+          "description": "痛苦少女洛维亚塔，顺从之鞭，是痛苦、折磨与苦难的邪恶女神。她象征着以惩罚或愉悦为目的施加与承受痛苦。洛维亚塔教导信徒，痛苦是最极致的感受，而受苦能净化灵魂并使人更强大。她的追随者包括酷刑者、施虐狂以及相信痛苦能带来力量的人。她的神职人员常担任酷刑执行者，将痛苦作为控制他人的工具。",
+          "portfolioEn": [
+            "pain",
+            "suffering",
+            "torture",
+            "agony"
+          ],
+          "portfolio": [
+            "疼痛",
+            "苦难",
+            "酷刑",
+            "痛苦"
+          ],
+          "worshippersEn": [
+            "torturers",
+            "sadists",
+            "those who endure pain",
+            "bullies"
+          ],
+          "worshippers": [
+            "折磨者",
+            "施虐狂",
+            "那些承受痛苦的人",
+            "欺凌者"
+          ]
+        },
+        {
+          "id": "malar",
+          "name": "玛拉",
+          "nameEn": "Malar",
+          "title": "猎杀之神",
+          "titleEn": "god of the hunt",
+          "alignment": "CE",
+          "domains": [
+            "自然"
+          ],
+          "symbol": "利爪",
+          "descriptionEn": "Malar the Beastlord, the Black-Blooded One, is the evil god of the hunt, evil lycanthropes, bloodlust, and savage beasts. He represents the savage, predatory aspect of nature - the hunt, the kill, and the primal instinct to survive through violence. Malar teaches that only the strong deserve to survive and that the hunt is sacred. His followers include hunters, evil lycanthropes, and those who revel in bloodshed.",
+          "description": "兽王玛拉，黑血之主，是狩猎、邪恶的兽化人、嗜血欲望以及野蛮猛兽的邪神。他代表着自然界中野蛮而掠食的一面——追猎、杀戮，以及通过暴力求存的原始本能。玛拉宣扬唯有强者才配生存，而狩猎是神圣的。他的信徒包括猎手、邪恶的兽化人，以及那些沉醉于血腥杀戮之人。",
+          "portfolioEn": [
+            "hunting",
+            "stalking",
+            "bloodlust",
+            "evil lycanthropes"
+          ],
+          "portfolio": [
+            "狩猎",
+            "跟踪",
+            "嗜血欲望",
+            "邪恶的狼人"
+          ],
+          "worshippersEn": [
+            "hunters",
+            "rangers",
+            "barbarians",
+            "lycanthropes",
+            "druids"
+          ],
+          "worshippers": [
+            "猎人",
+            "游骑兵",
+            "野蛮人",
+            "狼人",
+            "德鲁伊"
+          ]
+        },
+        {
+          "id": "mask",
+          "name": "马斯克",
+          "nameEn": "Mask",
+          "title": "盗贼之神",
+          "titleEn": "god of thieves",
+          "alignment": "CN",
+          "domains": [
+            "诡术"
+          ],
+          "symbol": "黑色面具",
+          "descriptionEn": "Mask the Lord of Shadows, the Master of All Thieves, is the god of thieves, thievery, and shadows. He represents the art of stealth and the redistribution of wealth through cunning rather than force. Mask teaches that those with quick wits and nimble fingers deserve the rewards they can take. His followers include thieves, rogues, and spies who operate in the shadows.",
+          "description": "阴影之主、万盗之王——玛斯克，是窃贼、偷盗与暗影之神。他象征着潜行的艺术，以及通过智谋而非武力进行财富再分配。玛斯克教导说，那些头脑机敏、手法灵巧之人理应获得他们所能夺取的奖赏。他的信徒包括在暗影中行动的盗贼、 rogue（游荡者）和间谍。",
+          "portfolioEn": [
+            "thieves",
+            "thievery",
+            "shadows"
+          ],
+          "portfolio": [
+            "小偷",
+            "偷窃",
+            "影子"
+          ],
+          "worshippersEn": [
+            "thieves",
+            "rogues",
+            "beggars",
+            "spies"
+          ],
+          "worshippers": [
+            "小偷",
+            "流氓",
+            "乞丐",
+            "间谍"
+          ]
+        },
+        {
+          "id": "mielikki",
+          "name": "梅丽凯",
+          "nameEn": "Mielikki",
+          "title": "森林女神",
+          "titleEn": "goddess of forests",
+          "alignment": "NG",
+          "domains": [
+            "自然"
+          ],
+          "symbol": "独角兽头",
+          "descriptionEn": "Mielikki Our Lady of the Forest, the Forest Queen, is the goddess of forests, forest creatures, rangers, dryads, and autumn. She represents the harmony that can exist between civilization and the wilderness. Unlike Silvanus who is stern and unforgiving, Mielikki is more accepting of those who respect nature even if they are not druids. Her followers include rangers and those who live in harmony with the forest.",
+          "description": "蜜莉姬，森林圣母、森林之后，是森林、林间生物、巡林客、树妖以及秋天的女神。她象征着文明与荒野之间能够存在的和谐关系。与严厉而不宽容的西凡纳斯不同，蜜莉姬更能接纳那些尊重自然的人，即使他们并非德鲁伊。她的追随者包括巡林客以及所有与森林和谐共处之人。",
+          "portfolioEn": [
+            "forests",
+            "forest creatures",
+            "rangers",
+            "dryads",
+            "autumn"
+          ],
+          "portfolio": [
+            "森林",
+            "森林生物",
+            "游骑兵",
+            "树精",
+            "秋天"
+          ],
+          "worshippersEn": [
+            "rangers",
+            "druids",
+            "dryads",
+            "forest dwellers"
+          ],
+          "worshippers": [
+            "游骑兵",
+            "德鲁伊",
+            "树精",
+            "森林居民"
+          ]
+        },
+        {
+          "id": "milil",
+          "name": "密里耳",
+          "nameEn": "Milil",
+          "title": "诗歌之神",
+          "titleEn": "god of poetry & song",
+          "alignment": "NG",
+          "domains": [
+            "光明"
+          ],
+          "symbol": "树叶制作的五弦竖琴",
+          "descriptionEn": "Milil the Lord of Song, the One True Hand of All-Wise Oghma, is the god of poetry, song, and eloquence. He represents the power of music and the spoken word to inspire, educate, and move hearts. Milil teaches that song and poetry are the highest forms of expression and that they should be used to preserve history and inspire greatness. His followers include bards, poets, and musicians.",
+          "description": "宋之主米尔，全知奥格玛唯一的真手，是诗歌、歌唱与雄辩之神。他象征着音乐与语言的力量，能够激励人心、启迪智慧、触动情感。米尔教导人们，诗歌与歌曲是最崇高的表达形式，应当用来传承历史、激发伟大。他的信徒包括吟游诗人、诗人和音乐家。",
+          "portfolioEn": [
+            "poetry",
+            "song",
+            "eloquence"
+          ],
+          "portfolio": [
+            "诗歌",
+            "歌曲",
+            "口才"
+          ],
+          "worshippersEn": [
+            "bards",
+            "minstrels",
+            "poets",
+            "troubadours"
+          ],
+          "worshippers": [
+            "诗人",
+            "吟游诗人",
+            "诗人",
+            "游吟诗人"
+          ]
+        },
+        {
+          "id": "myrkul",
+          "name": "米尔寇",
+          "nameEn": "Myrkul",
+          "title": "死亡之神",
+          "titleEn": "god of death",
+          "alignment": "NE",
+          "domains": [
+            "死亡"
+          ],
+          "symbol": "白色人类颅骨",
+          "descriptionEn": "Myrkul Lord of Bones, the Reaper, is the god of death, decay, old age, exhaustion, dusk, and autumn. He represents the slow, inevitable decline that comes with age and the decay that follows death. Myrkul teaches that death is not an end but a transition, and that the dead should be honored and remembered. His followers include necromancers and those who tend to the dead.",
+          "description": "骨王米尔库尔，即死神，是死亡、腐朽、衰老、疲惫、黄昏与秋天之神。他象征着随着年岁增长而不可避免的缓慢衰退，以及死亡之后的腐化过程。米尔库尔教导人们，死亡并非终结，而是一种过渡，逝者应当被尊敬和铭记。他的信徒包括亡灵法师以及照料死者之人。",
+          "portfolioEn": [
+            "death",
+            "decay",
+            "old age",
+            "dusk",
+            "autumn"
+          ],
+          "portfolio": [
+            "死亡",
+            "衰变",
+            "老年",
+            "黄昏",
+            "秋天"
+          ],
+          "worshippersEn": [
+            "necromancers",
+            "aging people",
+            "the dying"
+          ],
+          "worshippers": [
+            "亡灵法师",
+            "老年人",
+            "垂死的人"
+          ]
+        },
+        {
+          "id": "mystra",
+          "name": "密斯特拉",
+          "nameEn": "Mystra",
+          "title": "魔法女神",
+          "titleEn": "goddess of magic",
+          "alignment": "NG",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "七星圆环，九星环绕流泻的红雾或一个星型",
+          "descriptionEn": "Mystra is the goddess of magic and the Weave, the source from which all magic flows. She is the latest in a line of deities to hold this position, having been resurrected after being murdered by Cyric and Shar. Mystra maintains the balance of magic throughout the multiverse and teaches that magic is to be preserved, furthered, and used responsibly. Without her, magic would rage uncontrolled throughout the Realms.",
+          "description": "密斯特拉是魔法与魔网的女神，所有魔法都源自于她。她是继前任神祇之后担任这一职位的最新一位神明，在被西瑞克和莎尔谋杀后得以复活。密斯特拉维系着多元宇宙中魔法的平衡，并教导人们应当保护、发展并负责任地使用魔法。若没有她，魔法将在各个位面肆意泛滥，失去控制。",
+          "portfolioEn": [
+            "magic",
+            "spells",
+            "the Weave"
+          ],
+          "portfolio": [
+            "魔法",
+            "咒语",
+            "织网"
+          ],
+          "worshippersEn": [
+            "wizards",
+            "sorcerers",
+            "those who use magic"
+          ],
+          "worshippers": [
+            "巫师",
+            "法师",
+            "使用魔法的人"
+          ]
+        },
+        {
+          "id": "oghma",
+          "name": "欧格玛",
+          "nameEn": "Oghma",
+          "title": "知识之神",
+          "titleEn": "god of knowledge",
+          "alignment": "N",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "空卷轴",
+          "descriptionEn": "Oghma the Binder, the Lord of Knowledge, is the god of knowledge, invention, eloquence, and inspiration. He represents the pursuit and preservation of knowledge in all its forms. Oghma teaches that knowledge should be shared freely and that ideas are more valuable than gold. His followers include scholars, sages, and bards who seek to spread knowledge and preserve it for future generations.",
+          "description": "缚者奥格玛，知识之主，是知识、发明、雄辩与灵感之神。他象征着对一切形式知识的追求与保存。奥格玛教导人们应自由分享知识，并认为思想比黄金更为珍贵。他的追随者包括学者、智者和吟游诗人，他们致力于传播知识，并将其传承给后世。",
+          "portfolioEn": [
+            "knowledge",
+            "invention",
+            "inspiration",
+            "bards"
+          ],
+          "portfolio": [
+            "知识",
+            "发明",
+            "灵感",
+            "诗人"
+          ],
+          "worshippersEn": [
+            "scholars",
+            "sages",
+            "bards",
+            "wizards",
+            "scribes",
+            "artists"
+          ],
+          "worshippers": [
+            "学者们",
+            "智者",
+            "诗人",
+            "巫师",
+            "抄写员",
+            "艺术家们"
+          ]
+        },
+        {
+          "id": "savras",
+          "name": "萨弗拉斯",
+          "nameEn": "Savras",
+          "title": "占卜和命运之神",
+          "titleEn": "god of divination & fate",
+          "alignment": "LN",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "包含各种眼睛的水晶球",
+          "descriptionEn": "Savras the All-Seeing, the Third Eye, is the god of divination and fate. He possesses knowledge of all that has been, is, and will be. Savras represents the power of foresight and the understanding that the future can be glimpsed through divination. He teaches that knowledge of the future brings power and that fate can be understood if not always changed. His followers include diviners, seers, and those who seek knowledge of things to come.",
+          "description": "全视者萨弗拉斯，又称第三只眼，是占卜与命运之神。他知晓过去、现在与未来的一切。萨弗拉斯象征着预见的力量，表明通过占卜可以窥见未来。他教导人们：预知未来即拥有力量，命运虽未必总能改变，却可被理解。他的信徒包括占卜师、先知以及所有渴望知晓未来之人。",
+          "portfolioEn": [
+            "divination",
+            "fate",
+            "truth"
+          ],
+          "portfolio": [
+            "占卜",
+            "命运",
+            "真相"
+          ],
+          "worshippersEn": [
+            "diviners",
+            "judges",
+            "monks",
+            "seekers of truth"
+          ],
+          "worshippers": [
+            "占卜师",
+            "法官们",
+            "僧侣",
+            "真理的追寻者"
+          ]
+        },
+        {
+          "id": "selune",
+          "name": "塞伦涅",
+          "nameEn": "Selune",
+          "title": "月亮女神",
+          "titleEn": "goddess of the moon",
+          "alignment": "CG",
+          "domains": [
+            "知识",
+            "生命"
+          ],
+          "symbol": "一双眼睛周围七颗星",
+          "descriptionEn": "Selûne the Moonmaiden, Our Lady of Silver, is the goddess of the moon, stars, navigation, prophecy, and wanderers. She is the eternal enemy of her twin sister Shar, goddess of darkness. Selûne represents guidance and hope in darkness, both literal and metaphorical. Her followers include navigators, sailors, and those who travel by night. She watches over all who journey in darkness and offers her light to guide them.",
+          "description": "月之少女苏琳，银女士，是月亮、星辰、航海、预言和旅者的女神。她与孪生妹妹、黑暗女神莎尔是永恒的敌人。苏琳象征着在黑暗（无论是实际的还是隐喻的）中给予指引与希望。她的信徒包括导航者、水手以及夜间旅行的人。她守护所有在黑暗中前行的人，并以她的光芒为他们引路。",
+          "portfolioEn": [
+            "moon",
+            "stars",
+            "navigation",
+            "prophecy",
+            "questers",
+            "good lycanthropes"
+          ],
+          "portfolio": [
+            "月亮",
+            "星星",
+            "导航",
+            "预言",
+            "探索者",
+            "善良的兽化人"
+          ],
+          "worshippersEn": [
+            "navigators",
+            "monks",
+            "sailors",
+            "travelers",
+            "female spellcasters"
+          ],
+          "worshippers": [
+            "导航员",
+            "僧侣",
+            "水手们",
+            "旅行者",
+            "女性施法者"
+          ]
+        },
+        {
+          "id": "shar",
+          "name": "莎尔",
+          "nameEn": "Shar",
+          "title": "黑暗和遗失女神",
+          "titleEn": "goddess of darkness & loss",
+          "alignment": "NE",
+          "domains": [
+            "死亡",
+            "诡术"
+          ],
+          "symbol": "带边的黑盘子",
+          "descriptionEn": "Shar the Mistress of the Night, the Dark Goddess, is the goddess of darkness, loss, night, secrets, and the deep caverns. She is Selûne's twin sister and eternal enemy. Shar represents the absence of light, hope, and memory. She teaches that loss is inevitable and that secrets are more valuable than knowledge shared. Her followers embrace darkness and seek to spread it throughout the world.",
+          "description": "夜之女主人、黑暗女神莎尔，是黑暗、失落、夜晚、秘密与幽暗地域的女神。她是瑟伦涅的孪生妹妹，也是永恒的敌人。莎尔象征着光明、希望与记忆的缺失。她教导世人：失落不可避免，而秘密远比共享的知识更为珍贵。她的信徒拥抱黑暗，并致力于将黑暗散布于世间。",
+          "portfolioEn": [
+            "darkness",
+            "loss",
+            "night",
+            "secrets",
+            "the deep caverns",
+            "caverns",
+            "dungeons"
+          ],
+          "portfolio": [
+            "黑暗",
+            "损失",
+            "夜晚",
+            "秘密",
+            "幽暗地域",
+            "洞穴",
+            "地牢"
+          ],
+          "worshippersEn": [
+            "those who embrace loss",
+            "nihilists",
+            "the deep cavern dwellers",
+            "those seeking to forget"
+          ],
+          "worshippers": [
+            "拥抱失去的人",
+            "虚无主义者",
+            "地底居民",
+            "那些想要遗忘的人"
+          ]
+        },
+        {
+          "id": "silvanus",
+          "name": "西凡那斯",
+          "nameEn": "Silvanus",
+          "title": "荒野自然之神",
+          "titleEn": "god of wild nature",
+          "alignment": "N",
+          "domains": [
+            "自然"
+          ],
+          "symbol": "橡树叶",
+          "descriptionEn": "Silvanus the Oak Father, Old Oak, is the god of wild nature and druids. Unlike Chauntea who represents cultivated nature, Silvanus represents nature in its raw, wild state. He teaches that nature and civilization must maintain balance, and that the wilderness must be preserved. His followers are druids and rangers who protect wild places from the encroachment of civilization.",
+          "description": "西凡纳斯，又称老橡树之父，是荒野自然与德鲁伊的神祇。与代表人工培育自然的裳提亚不同，西凡纳斯象征着原始而狂野的自然状态。他教导人们，自然与文明必须保持平衡，荒野必须得到保护。他的信徒是德鲁伊和游侠，致力于守护荒野之地免受文明扩张的侵扰。",
+          "portfolioEn": [
+            "wild nature",
+            "druids"
+          ],
+          "portfolio": [
+            "野生自然",
+            "德鲁伊"
+          ],
+          "worshippersEn": [
+            "druids",
+            "woodsmen",
+            "wood elves"
+          ],
+          "worshippers": [
+            "德鲁伊",
+            "伐木工人",
+            "木精灵"
+          ]
+        },
+        {
+          "id": "sune",
+          "name": "淑妮",
+          "nameEn": "Sune",
+          "title": "爱与美的女神",
+          "titleEn": "goddess of love & beauty",
+          "alignment": "CG",
+          "domains": [
+            "生命",
+            "光明"
+          ],
+          "symbol": "美貌的红发女子的脸庞",
+          "descriptionEn": "Sune Firehair, Lady Firehair, is the goddess of beauty, love, and passion. She represents all things beautiful - from physical beauty to beautiful emotions like love and passion. Her followers believe that beauty is more than skin deep and that true beauty comes from within. They promote beauty in all its forms and seek to bring more beauty into the world through art, love, and passion.",
+          "description": "苏妮·火发，火发女士，是美、爱与激情的女神。她代表着一切美好之物——从外在美到爱与激情等美好的情感。她的信徒相信，美远不止于外表，真正的美源自内心。他们推崇各种形式的美，并致力于通过艺术、爱与激情为世界带来更多美好。",
+          "portfolioEn": [
+            "beauty",
+            "love",
+            "passion"
+          ],
+          "portfolio": [
+            "美",
+            "爱",
+            "激情"
+          ],
+          "worshippersEn": [
+            "lovers",
+            "artists",
+            "half-elves",
+            "adventurers"
+          ],
+          "worshippers": [
+            "恋人",
+            "艺术家们",
+            "半精灵",
+            "冒险者"
+          ]
+        },
+        {
+          "id": "talona",
+          "name": "塔洛娜",
+          "nameEn": "Talona",
+          "title": "疾病和剧毒女神",
+          "titleEn": "goddess of disease & poison",
+          "alignment": "CE",
+          "domains": [
+            "死亡"
+          ],
+          "symbol": "三角上的三颗泪滴",
+          "descriptionEn": "Talona the Lady of Poison, Mistress of Disease, is the evil goddess of disease and poison. She represents the ravages of plague, the corruption of poison, and all manner of illness. Talona teaches that disease is a natural force that prunes the weak from the strong. Her followers include those who spread disease, poisoners, and healers who worship her to avert her curses. Many worship her out of fear rather than devotion.",
+          "description": "塔洛娜，毒药女士，疫病女主人，是邪恶的疾病与毒药女神。她象征着瘟疫带来的毁灭、毒素的侵蚀以及各种各样的疾病。塔洛娜教导说，疾病是一种自然力量，能够将弱者从强者中淘汰。她的信徒包括传播疾病之人、用毒者，以及为避免她诅咒而崇拜她的治疗者。许多人出于恐惧而非虔诚而敬拜她。",
+          "portfolioEn": [
+            "disease",
+            "poison"
+          ],
+          "portfolio": [
+            "疾病",
+            "毒药"
+          ],
+          "worshippersEn": [
+            "healers (to avert disease)",
+            "the diseased",
+            "poisoners"
+          ],
+          "worshippers": [
+            "治疗者（用于预防疾病）",
+            "病人",
+            "投毒者"
+          ]
+        },
+        {
+          "id": "talos",
+          "name": "塔洛斯",
+          "nameEn": "Talos",
+          "title": "风暴之神",
+          "titleEn": "god of storms",
+          "alignment": "CE",
+          "domains": [
+            "风暴"
+          ],
+          "symbol": "三束闪电从中间散开来",
+          "descriptionEn": "Talos the Destroyer, the Storm Lord, is the evil god of storms, destruction, rebellion, conflagration, earthquakes, and vortices. He represents the raw destructive power of nature unleashed. Talos teaches that destruction is a natural part of existence and that civilization's attempts to control nature are futile. His followers include those who revel in destruction and chaos.",
+          "description": "毁灭之神塔洛斯，风暴之主，是风暴、毁灭、叛乱、烈焰、地震与漩涡的邪神。他象征着自然界 unleashed 的原始破坏力。塔洛斯宣扬毁灭是存在中自然的一部分，而文明试图控制自然的努力终将徒劳无功。他的信徒包括那些沉醉于破坏与混乱之人。",
+          "portfolioEn": [
+            "storms",
+            "destruction",
+            "rebellion",
+            "earthquakes",
+            "vortices",
+            "conflagrations"
+          ],
+          "portfolio": [
+            "风暴",
+            "毁灭",
+            "叛乱",
+            "地震",
+            "涡旋",
+            "大火；火灾"
+          ],
+          "worshippersEn": [
+            "those who fear storms",
+            "anarchists",
+            "barbarians",
+            "fighters",
+            "half-orcs"
+          ],
+          "worshippers": [
+            "那些惧怕风暴的人",
+            "无政府主义者",
+            "野蛮人",
+            "战士们",
+            "半兽人"
+          ]
+        },
+        {
+          "id": "tempus",
+          "name": "坦帕斯",
+          "nameEn": "Tempus",
+          "title": "战争之神",
+          "titleEn": "god of war",
+          "alignment": "N",
+          "domains": [
+            "战争"
+          ],
+          "symbol": "竖立的火焰剑",
+          "descriptionEn": "Tempus, the Lord of Battles, is the god of war and its soldiers. He represents honorable combat and believes that war is a natural part of life that brings honor and glory. Tempus values skill and courage in battle above all else. He does not favor one side over another but blesses all who face battle with courage. His followers include warriors of all kinds who seek glory in honorable combat.",
+          "description": "战神坦帕斯是战争与战士之主。他象征着光荣的战斗，认为战争是生命中自然的一部分，能带来荣誉与荣耀。坦帕斯最重视战斗中的技艺与勇气。他不偏袒任何一方，而是赐福所有以勇气面对战斗之人。他的信徒包括各类追求在光荣战斗中赢得荣耀的战士。",
+          "portfolioEn": [
+            "war",
+            "battle",
+            "warriors"
+          ],
+          "portfolio": [
+            "战争",
+            "战斗",
+            "战士"
+          ],
+          "worshippersEn": [
+            "warriors",
+            "fighters",
+            "barbarians",
+            "soldiers"
+          ],
+          "worshippers": [
+            "战士",
+            "战士们",
+            "野蛮人",
+            "士兵们"
+          ]
+        },
+        {
+          "id": "torm",
+          "name": "托姆",
+          "nameEn": "Torm",
+          "title": "勇气和牺牲之神",
+          "titleEn": "god of courage & self-sacrifice",
+          "alignment": "LG",
+          "domains": [
+            "战争"
+          ],
+          "symbol": "白色右手铁手套",
+          "descriptionEn": "Torm the True, also known as the Loyal Fury, is the god of duty, loyalty, righteousness, and paladins. Once a mortal champion who served Tyr, he ascended to godhood through his unwavering devotion. His followers are steadfast defenders of law and good, willing to sacrifice themselves for the greater good. He embodies the ideal that duty and honor must be upheld at any cost.",
+          "description": "托姆·特鲁，又称忠诚之怒，是职责、忠诚、正义与圣骑士之神。他原是一位侍奉泰尔的凡人英雄，因坚定不移的奉献而升格为神。他的信徒是律法与善良的坚定守护者，愿意为更大的善而牺牲自己。他体现了职责与荣誉必须不惜一切代价坚守的理想。",
+          "portfolioEn": [
+            "duty",
+            "loyalty",
+            "obedience",
+            "paladins"
+          ],
+          "portfolio": [
+            "职责",
+            "忠诚",
+            "顺从",
+            "圣骑士"
+          ],
+          "worshippersEn": [
+            "paladins",
+            "guards",
+            "soldiers",
+            "law enforcers"
+          ],
+          "worshippers": [
+            "圣骑士",
+            "守卫",
+            "士兵们",
+            "执法者"
+          ]
+        },
+        {
+          "id": "tymora",
+          "name": "泰摩拉",
+          "nameEn": "Tymora",
+          "title": "幸运女神",
+          "titleEn": "goddess of fortune",
+          "alignment": "CG",
+          "domains": [
+            "诡术"
+          ],
+          "symbol": "人脸面向上的硬币",
+          "descriptionEn": "Tymora Lady Luck, the Smiling Lady, is the goddess of good fortune, skill, victory, and adventurers. She represents the belief that fortune favors the bold and that luck can be earned through courage and daring. Tymora teaches that one should take risks and seize opportunities when they arise. Her followers include adventurers, gamblers, and anyone who relies on luck and skill to succeed.",
+          "description": "幸运女神泰姆拉，又称微笑女士，是好运、技艺、胜利与冒险者的女神。她象征着“天助勇者”的信念，认为勇气和胆识能够赢得运气。泰姆拉教导人们应当勇于冒险，在机遇来临时果断把握。她的信徒包括冒险者、赌徒，以及所有依靠运气与技巧取得成功的人。",
+          "portfolioEn": [
+            "good fortune",
+            "skill",
+            "victory",
+            "adventurers"
+          ],
+          "portfolio": [
+            "好运",
+            "技能",
+            "胜利",
+            "冒险者"
+          ],
+          "worshippersEn": [
+            "rogues",
+            "gamblers",
+            "adventurers",
+            "any who rely on luck"
+          ],
+          "worshippers": [
+            "流氓",
+            "赌徒",
+            "冒险者",
+            "任何依赖运气的人"
+          ]
+        },
+        {
+          "id": "tyr",
+          "name": "提尔",
+          "nameEn": "Tyr",
+          "title": "正义之神",
+          "titleEn": "god of justice",
+          "alignment": "LG",
+          "domains": [
+            "战争"
+          ],
+          "symbol": "战锤上的天平",
+          "descriptionEn": "Tyr the Maimed God is the lawful good god of justice and law. He lost his right hand in battle with the demon prince Uram-the-Unclean, and his eyes were torn out when he confronted a demon. Though blind and maimed, Tyr sees through the eyes of his faithful and judges all with perfect clarity. He represents the sacrifice required to uphold justice and civilized values.",
+          "description": "独臂之神提尔是正义与律法的守序善良之神。他在与恶魔王子乌拉姆-不洁者的战斗中失去了右手，又在对抗恶魔时被挖去了双眼。尽管双目失明、肢体残缺，提尔却能透过信徒的眼睛观察世间，以无比清晰的洞察力裁决一切。他象征着为维护正义与文明价值所必需的牺牲。",
+          "portfolioEn": [
+            "justice",
+            "law",
+            "righteousness"
+          ],
+          "portfolio": [
+            "正义",
+            "法律",
+            "正义"
+          ],
+          "worshippersEn": [
+            "paladins",
+            "judges",
+            "magistrates",
+            "lawyers"
+          ],
+          "worshippers": [
+            "圣骑士",
+            "法官们",
+            "治安法官",
+            "律师们"
+          ]
+        },
+        {
+          "id": "umberlee",
+          "name": "安博里",
+          "nameEn": "Umberlee",
+          "title": "海洋女神",
+          "titleEn": "goddess of the sea",
+          "alignment": "CE",
+          "domains": [
+            "风暴"
+          ],
+          "symbol": "左右卷曲的波浪",
+          "descriptionEn": "Umberlee the Bitch Queen, the Queen of the Depths, is the evil goddess of the oceans, currents, waves, and sea winds. She is as cruel and unpredictable as the sea itself, demanding tribute from sailors and coastal dwellers. Umberlee represents the destructive and merciless power of the ocean - storms, shipwrecks, and drowning. Her followers include sailors who pay her tribute for safe passage and those who serve her out of fear of her wrath.",
+          "description": "暴戾女王安博莉，深渊之后，是海洋、洋流、波涛与海风的邪恶女神。她如同大海本身一般残忍而反复无常，向水手和沿海居民索要贡品。安博莉象征着海洋毁灭性且无情的力量——风暴、沉船与溺亡。她的信徒包括为求平安航行而向她献祭的水手，以及因畏惧其怒火而侍奉她的人。",
+          "portfolioEn": [
+            "oceans",
+            "currents",
+            "waves",
+            "sea winds"
+          ],
+          "portfolio": [
+            "海洋",
+            "电流",
+            "波浪",
+            "海风"
+          ],
+          "worshippersEn": [
+            "sailors",
+            "weresharks",
+            "coastal dwellers",
+            "pirates"
+          ],
+          "worshippers": [
+            "水手们",
+            "狼鲨人",
+            "沿海居民",
+            "海盗"
+          ]
+        },
+        {
+          "id": "waukeen",
+          "name": "渥金",
+          "nameEn": "Waukeen",
+          "title": "贸易女神",
+          "titleEn": "goddess of trade",
+          "alignment": "N",
+          "domains": [
+            "诡术"
+          ],
+          "symbol": "刻有渥金左脸的竖立硬币",
+          "descriptionEn": "Waukeen the Coinmaiden, the Merchant's Friend, is the goddess of trade, money, and wealth. She represents honest commerce and the belief that wealth should be earned through fair trade and hard work. Waukeen teaches that money is a tool for improving lives and that commerce brings people together. Her followers include merchants, traders, and anyone involved in business.",
+          "description": "财富女神、商旅之友瓦肯，是贸易、金钱与财富的女神。她象征着诚实的商业往来，倡导通过公平交易和辛勤劳动来获取财富。瓦肯教导人们，金钱是改善生活的工具，而商业能将人们联系在一起。她的信徒包括商人、贸易者以及所有从事商业活动的人。",
+          "portfolioEn": [
+            "trade",
+            "money",
+            "wealth"
+          ],
+          "portfolio": [
+            "贸易",
+            "钱",
+            "财富"
+          ],
+          "worshippersEn": [
+            "merchants",
+            "traders",
+            "shopkeepers",
+            "the wealthy"
+          ],
+          "worshippers": [
+            "商家",
+            "交易员",
+            "店主们",
+            "富人"
+          ]
+        }
+      ],
+      "descriptionEn": "After the Sundering, the gods still exist in the shattered world. Though their power was diminished by the cataclysm, their followers are spread across all realms. At least thirty deities are widely worshipped throughout the Sundered Realms."
+    },
+    {
+      "id": "dragonlance",
+      "name": "龙枪诸神",
+      "nameEn": "Deities of Dragonlance",
+      "world": "克莱恩 (Krynn)",
+      "description": "克莱恩世界的诸神分属三个家族：七位善良神（以帕拉丁和米莎凯为首）、七位中立神（以吉立安为首）、七位邪恶神（以塔克希丝和沙苟纳为首）",
+      "note": "不同的民族和文化以不同的敬意冠以这些神灵不同的名字，但他们是这个世界仅有的神祇，而他们的神位也化成了恒定的星座",
+      "families": [
+        {
+          "name": "善良神",
+          "leaders": [
+            "帕拉丁 (Paladine)",
+            "米莎凯 (Mishakal)"
+          ],
+          "count": 7
+        },
+        {
+          "name": "中立神",
+          "leaders": [
+            "吉立安 (Gilean)"
+          ],
+          "count": 7
+        },
+        {
+          "name": "邪恶神",
+          "leaders": [
+            "塔克希丝 (Takhisis)",
+            "沙苟纳 (Sargonnas)"
+          ],
+          "count": 7
+        }
+      ],
+      "deities": [
+        {
+          "id": "paladine",
+          "name": "帕拉丁",
+          "nameEn": "Paladine",
+          "title": "光明与秩序之主",
+          "titleEn": "Lord of Light and Order",
+          "alignment": "LG",
+          "domains": [
+            "战争",
+            "光明"
+          ],
+          "symbol": "银三角或白金龙",
+          "family": "善良神",
+          "description": "帕拉丁是克莱恩世界善良神的首领，代表光明、秩序、荣誉和保护。他是白金龙的化身。",
+          "descriptionEn": "Paladine is the leader of the gods of good in Krynn, representing light, order, honor and protection. He is the embodiment of the platinum dragon."
+        },
+        {
+          "id": "mishakal",
+          "name": "米莎凯",
+          "nameEn": "Mishakal",
+          "title": "治疗女神",
+          "titleEn": "Goddess of Healing",
+          "alignment": "LG",
+          "domains": [
+            "生命",
+            "知识"
+          ],
+          "symbol": "蓝色无限符号",
+          "family": "善良神",
+          "description": "米莎凯是治疗、慈悲和爱的女神，也是帕拉丁的配偶。她的信徒致力于治疗伤病。",
+          "descriptionEn": "Mishakal is the goddess of healing, mercy and love, and the consort of Paladine. Her followers are dedicated to healing the sick and injured."
+        },
+        {
+          "id": "majere",
+          "name": "马杰瑞",
+          "nameEn": "Majere",
+          "title": "冥想与秩序之神",
+          "titleEn": "God of Meditation and Order",
+          "alignment": "LG",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "单独的铜蜘蛛或玫瑰",
+          "family": "善良神",
+          "description": "马杰瑞是冥想、自律和内在平衡的神。他教导通过冥想达到启迪。",
+          "descriptionEn": "Majere is the god of meditation, discipline, and inner balance. He teaches enlightenment through meditation."
+        },
+        {
+          "id": "kiri_jolith",
+          "name": "基里-约利斯",
+          "nameEn": "Kiri-Jolith",
+          "title": "光荣战争之神",
+          "titleEn": "God of Just War",
+          "alignment": "LG",
+          "domains": [
+            "战争"
+          ],
+          "symbol": "野牛角或有翼公牛",
+          "family": "善良神",
+          "description": "基里-约利斯是正义战争与勇气的神，教导战士为正义而战。",
+          "descriptionEn": "Kiri-Jolith is the god of just war and valor, teaching warriors to fight for righteousness."
+        },
+        {
+          "id": "habbakuk",
+          "name": "哈巴库克",
+          "nameEn": "Habbakuk",
+          "title": "动物与海洋之神",
+          "titleEn": "God of Animals and the Sea",
+          "alignment": "NG",
+          "domains": [
+            "自然",
+            "风暴"
+          ],
+          "symbol": "蓝鸟或凤凰",
+          "family": "善良神",
+          "description": "哈巴库克是动物、海洋和坚韧的神，守护自然界和水手。",
+          "descriptionEn": "Habbakuk is the god of animals, the sea, and perseverance, protecting nature and sailors."
+        },
+        {
+          "id": "branchala",
+          "name": "布兰查拉",
+          "nameEn": "Branchala",
+          "title": "音乐与诗歌之神",
+          "titleEn": "God of Music and Poetry",
+          "alignment": "CG",
+          "domains": [
+            "光明"
+          ],
+          "symbol": "竖琴或长笛",
+          "family": "善良神",
+          "description": "布兰查拉是音乐、诗歌和艺术的神，激励吟游诗人和艺术家。",
+          "descriptionEn": "Branchala is the god of music, poetry, and art, inspiring bards and artists."
+        },
+        {
+          "id": "solinari",
+          "name": "索林纳瑞",
+          "nameEn": "Solinari",
+          "title": "善良魔法之神",
+          "titleEn": "God of Good Magic",
+          "alignment": "LG",
+          "domains": [
+            "奥秘"
+          ],
+          "symbol": "白色圆圈或球体",
+          "family": "善良神",
+          "description": "索林纳瑞是善良魔法的神，化身为白色月亮。白袍法师崇拜他。",
+          "descriptionEn": "Solinari is the god of good magic, embodied by the white moon. White Robed mages worship him."
+        },
+        {
+          "id": "gilean",
+          "name": "吉立安",
+          "nameEn": "Gilean",
+          "title": "知识之神",
+          "titleEn": "God of Knowledge",
+          "alignment": "N",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "打开的书籍",
+          "family": "中立神",
+          "description": "吉立安是知识、平衡和学识的神，中立神的首领。他保管着命运之书。",
+          "descriptionEn": "Gilean is the god of knowledge, balance, and learning, leader of the neutral gods. He keeps the Tobril of Fate."
+        },
+        {
+          "id": "sirrion",
+          "name": "西里翁",
+          "nameEn": "Sirrion",
+          "title": "火焰与变化之神",
+          "titleEn": "God of Fire and Change",
+          "alignment": "CN",
+          "domains": [
+            "自然"
+          ],
+          "symbol": "多色火焰",
+          "family": "中立神",
+          "description": "西里翁是火焰、变化和激情的神，代表转变的力量。",
+          "descriptionEn": "Sirrion is the god of fire, change, and passion, representing the power of transformation."
+        },
+        {
+          "id": "reorx",
+          "name": "瑞欧克斯",
+          "nameEn": "Reorx",
+          "title": "锻造之神",
+          "titleEn": "God of the Forge",
+          "alignment": "N",
+          "domains": [
+            "知识",
+            "锻造"
+          ],
+          "symbol": "锻造锤",
+          "family": "中立神",
+          "description": "瑞欧克斯是锻造、工艺和创造的神，矮人和侏儒特别崇敬他。",
+          "descriptionEn": "Reorx is the god of the forge, craft, and creation, especially revered by dwarves and gnomes."
+        },
+        {
+          "id": "chislev",
+          "name": "奇斯列夫",
+          "nameEn": "Chislev",
+          "title": "自然女神",
+          "titleEn": "Goddess of Nature",
+          "alignment": "N",
+          "domains": [
+            "自然"
+          ],
+          "symbol": "羽毛",
+          "family": "中立神",
+          "description": "奇斯列夫是自然、野兽和季节的女神，保护荒野。",
+          "descriptionEn": "Chislev is the goddess of nature, beasts, and seasons, protecting the wilderness."
+        },
+        {
+          "id": "zivilyn",
+          "name": "齐维林",
+          "nameEn": "Zivilyn",
+          "title": "智慧之神",
+          "titleEn": "God of Wisdom",
+          "alignment": "N",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "大橡树或绿叶",
+          "family": "中立神",
+          "description": "齐维林是智慧、洞察和启示的神，能够看穿时间的流动。",
+          "descriptionEn": "Zivilyn is the god of wisdom, insight, and enlightenment, able to perceive the flow of time."
+        },
+        {
+          "id": "shinare",
+          "name": "希纳蕾",
+          "nameEn": "Shinare",
+          "title": "财富与贸易女神",
+          "titleEn": "Goddess of Wealth and Trade",
+          "alignment": "LN",
+          "domains": [
+            "知识",
+            "诡术"
+          ],
+          "symbol": "格里芬翅膀",
+          "family": "中立神",
+          "description": "希纳蕾是财富、贸易和产业的女神，商人和工匠崇拜她。",
+          "descriptionEn": "Shinare is the goddess of wealth, trade, and industry, worshipped by merchants and artisans."
+        },
+        {
+          "id": "lunitari",
+          "name": "卢尼塔瑞",
+          "nameEn": "Lunitari",
+          "title": "中立魔法女神",
+          "titleEn": "Goddess of Neutral Magic",
+          "alignment": "N",
+          "domains": [
+            "奥秘"
+          ],
+          "symbol": "红色圆圈或球体",
+          "family": "中立神",
+          "description": "卢尼塔瑞是中立魔法的女神，化身为红色月亮。红袍法师崇拜她。",
+          "descriptionEn": "Lunitari is the goddess of neutral magic, embodied by the red moon. Red Robed mages worship her."
+        },
+        {
+          "id": "takhisis",
+          "name": "塔克希丝",
+          "nameEn": "Takhisis",
+          "title": "黑暗与邪恶女王",
+          "titleEn": "Queen of Darkness and Evil",
+          "alignment": "LE",
+          "domains": [
+            "死亡",
+            "诡术"
+          ],
+          "symbol": "黑色新月或五头龙",
+          "family": "邪恶神",
+          "description": "塔克希丝是黑暗、邪恶和统治的女神，邪恶神的首领。她是五头龙的化身。",
+          "descriptionEn": "Takhisis is the goddess of darkness, evil, and domination, leader of the evil gods. She is the embodiment of the five-headed dragon."
+        },
+        {
+          "id": "sargonnas",
+          "name": "沙苟纳",
+          "nameEn": "Sargonnas",
+          "title": "复仇与火焰之神",
+          "titleEn": "God of Vengeance and Fire",
+          "alignment": "LE",
+          "domains": [
+            "战争"
+          ],
+          "symbol": "有角的公牛头或红色秃鹫",
+          "family": "邪恶神",
+          "description": "沙苟纳是复仇、愤怒和火焰的神，也是塔克希丝的配偶。",
+          "descriptionEn": "Sargonnas is the god of vengeance, wrath, and fire, also the consort of Takhisis."
+        },
+        {
+          "id": "morgion",
+          "name": "摩吉恩",
+          "nameEn": "Morgion",
+          "title": "疾病与腐朽之神",
+          "titleEn": "God of Disease and Decay",
+          "alignment": "NE",
+          "domains": [
+            "死亡"
+          ],
+          "symbol": "带兜帽的眼睛",
+          "family": "邪恶神",
+          "description": "摩吉恩是疾病、腐朽和秘密的神，散播瘟疫和腐败。",
+          "descriptionEn": "Morgion is the god of disease, decay, and secrets, spreading plague and corruption."
+        },
+        {
+          "id": "chemosh",
+          "name": "切莫什",
+          "nameEn": "Chemosh",
+          "title": "死亡之主",
+          "titleEn": "Lord of Death",
+          "alignment": "NE",
+          "domains": [
+            "死亡"
+          ],
+          "symbol": "黄色头骨",
+          "family": "邪恶神",
+          "description": "切莫什是死亡、不死生物和虚假承诺的神，诱惑生者追求虚假的永生。",
+          "descriptionEn": "Chemosh is the god of death, undeath, and false promises, tempting the living with false immortality."
+        },
+        {
+          "id": "zeboim",
+          "name": "泽博伊姆",
+          "nameEn": "Zeboim",
+          "title": "海洋与风暴女神",
+          "titleEn": "Goddess of Sea and Storm",
+          "alignment": "CE",
+          "domains": [
+            "风暴"
+          ],
+          "symbol": "海龟壳图案",
+          "family": "邪恶神",
+          "description": "泽博伊姆是海洋、风暴和嫉妒的女神，脾气暴躁，难以预测。",
+          "descriptionEn": "Zeboim is the goddess of the sea, storms, and jealousy, tempestuous and unpredictable."
+        },
+        {
+          "id": "hiddukel",
+          "name": "希杜克尔",
+          "nameEn": "Hiddukel",
+          "title": "欺诈与贪婪之神",
+          "titleEn": "God of Lies and Greed",
+          "alignment": "CE",
+          "domains": [
+            "诡术"
+          ],
+          "symbol": "断裂的商人秤",
+          "family": "邪恶神",
+          "description": "希杜克尔是欺诈、贪婪和不诚实交易的神，腐蚀商业和协议。",
+          "descriptionEn": "Hiddukel is the god of lies, greed, and dishonest deals, corrupting commerce and agreements."
+        },
+        {
+          "id": "nuitari",
+          "name": "努伊塔瑞",
+          "nameEn": "Nuitari",
+          "title": "邪恶魔法之神",
+          "titleEn": "God of Evil Magic",
+          "alignment": "LE",
+          "domains": [
+            "奥秘"
+          ],
+          "symbol": "黑色圆圈或球体",
+          "family": "邪恶神",
+          "description": "努伊塔瑞是邪恶魔法的神，化身为黑色月亮（凡人看不见）。黑袍法师崇拜他。",
+          "descriptionEn": "Nuitari is the god of evil magic, embodied by the black moon (invisible to mortals). Black Robed mages worship him."
+        }
+      ]
+    },
+    {
+      "id": "eberron",
+      "name": "艾伯伦诸神",
+      "nameEn": "Deities of Eberron",
+      "world": "艾伯伦 (Eberron)",
+      "description": "艾伯伦世界有许多不同的宗教，但最重要的是天命诸神神系和他们邪恶的阴影——黑暗六邪神",
+      "mainPantheons": [
+        {
+          "name": "天命诸神",
+          "nameEn": "Sovereign Host",
+          "description": "被认为支配着生活的方方面面，并为统一之声代言"
+        },
+        {
+          "name": "黑暗六邪神",
+          "nameEn": "Dark Six",
+          "description": "原始、血腥、残忍，并时常提出反对之声"
+        }
+      ],
+      "otherReligions": [
+        {
+          "name": "银焰教会",
+          "nameEn": "Church of the Silver Flame",
+          "type": "一神论",
+          "description": "致力打击世间邪恶，但同时也困扰于内部的腐败"
+        },
+        {
+          "name": "沃尔血族哲学",
+          "nameEn": "Blood of Vol",
+          "description": "教导人们神性与芸芸众生相伴，崇拜不死生物可以确保获得永生"
+        },
+        {
+          "name": "黄泉巨龙教派",
+          "nameEn": "Cults of the Dragon Below",
+          "description": "献身于恶魔以及被禁锢在艾伯伦幽暗地域的恐惧之物——吉波尔"
+        },
+        {
+          "name": "光芒大道",
+          "nameEn": "Path of Light",
+          "description": "相信世界会走向辉煌的未来，阴云将被光明驱散"
+        },
+        {
+          "name": "不朽评议会",
+          "nameEn": "Undying Court",
+          "type": "先祖之魂崇拜",
+          "description": "以灵魂和不死生物的形式存在"
+        },
+        {
+          "name": "远古战魂",
+          "nameEn": "Spirits of the Past",
+          "description": "古代战争伟大英雄的远古战魂"
+        }
+      ],
+      "deities": [
+        {
+          "id": "arawai",
+          "name": "艾拉外",
+          "nameEn": "Arawai",
+          "title": "丰收女神",
+          "titleEn": "Goddess of Fertility",
+          "alignment": "NG",
+          "domains": [
+            "生命",
+            "自然"
+          ],
+          "symbol": "一捆麦子或一棵活树",
+          "pantheon": "天命诸神",
+          "description": "艾拉外是丰收、富饶和生命的女神。她掌管农业、天气和野生动物。",
+          "descriptionEn": "Arawai is the goddess of fertility, abundance, and life. She governs agriculture, weather, and wildlife."
+        },
+        {
+          "id": "aureon",
+          "name": "奥里昂",
+          "nameEn": "Aureon",
+          "title": "法律与知识之神",
+          "titleEn": "God of Law and Knowledge",
+          "alignment": "LN",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "张开的书卷上的龙眼",
+          "pantheon": "天命诸神",
+          "description": "奥里昂是法律、知识和魔法的神。他是法师和学者的守护神。",
+          "descriptionEn": "Aureon is the god of law, knowledge, and magic. He is the patron of wizards and scholars."
+        },
+        {
+          "id": "balinor",
+          "name": "巴里诺",
+          "nameEn": "Balinor",
+          "title": "野兽与狩猎之神",
+          "titleEn": "God of Beasts and the Hunt",
+          "alignment": "N",
+          "domains": [
+            "生命",
+            "自然"
+          ],
+          "symbol": "一对鹿角",
+          "pantheon": "天命诸神",
+          "description": "巴里诺是野兽、狩猎和荒野的神。猎人和游骑兵崇拜他。",
+          "descriptionEn": "Balinor is the god of beasts, the hunt, and the wild. Hunters and rangers worship him."
+        },
+        {
+          "id": "boldrei",
+          "name": "波德瑞",
+          "nameEn": "Boldrei",
+          "title": "家庭与社区女神",
+          "titleEn": "Goddess of Community and Home",
+          "alignment": "LG",
+          "domains": [
+            "生命"
+          ],
+          "symbol": "火焰中的石头炉床",
+          "pantheon": "天命诸神",
+          "description": "波德瑞是家庭、社区和炉火的女神。她保护家园和村庄。",
+          "descriptionEn": "Boldrei is the goddess of community, home, and hearth. She protects homes and villages."
+        },
+        {
+          "id": "dol_arrah",
+          "name": "多尔·阿拉",
+          "nameEn": "Dol Arrah",
+          "title": "阳光与荣誉女神",
+          "titleEn": "Goddess of Sunlight and Honor",
+          "alignment": "LG",
+          "domains": [
+            "光明",
+            "战争"
+          ],
+          "symbol": "升起的太阳",
+          "pantheon": "天命诸神",
+          "description": "多尔·阿拉是阳光、荣誉和自我牺牲的女神。她是圣武士和正义战士的守护神。",
+          "descriptionEn": "Dol Arrah is the goddess of sunlight, honor, and sacrifice. She is the patron of paladins and righteous warriors."
+        },
+        {
+          "id": "dol_dorn",
+          "name": "多尔·多恩",
+          "nameEn": "Dol Dorn",
+          "title": "力量与武器之神",
+          "titleEn": "God of Strength at Arms",
+          "alignment": "CG",
+          "domains": [
+            "战争"
+          ],
+          "symbol": "一把长剑交叉一面盾牌",
+          "pantheon": "天命诸神",
+          "description": "多尔·多恩是力量、勇气和武艺的神。他是战士和运动员的守护神。",
+          "descriptionEn": "Dol Dorn is the god of strength, courage, and martial prowess. He is the patron of warriors and athletes."
+        },
+        {
+          "id": "kol_korran",
+          "name": "科尔·科兰",
+          "nameEn": "Kol Korran",
+          "title": "贸易与财富之神",
+          "titleEn": "God of Trade and Wealth",
+          "alignment": "N",
+          "domains": [
+            "诡术"
+          ],
+          "symbol": "九面金币",
+          "pantheon": "天命诸神",
+          "description": "科尔·科兰是贸易、财富和商业的神。商人和工匠崇拜他。",
+          "descriptionEn": "Kol Korran is the god of trade, wealth, and commerce. Merchants and artisans worship him."
+        },
+        {
+          "id": "olladra",
+          "name": "奥拉德拉",
+          "nameEn": "Olladra",
+          "title": "好运与盛宴女神",
+          "titleEn": "Goddess of Good Fortune",
+          "alignment": "NG",
+          "domains": [
+            "生命",
+            "诡术"
+          ],
+          "symbol": "一枚多米诺骨牌",
+          "pantheon": "天命诸神",
+          "description": "奥拉德拉是好运、盛宴和喜悦的女神。她受到赌徒和厨师的崇拜。",
+          "descriptionEn": "Olladra is the goddess of good fortune, feast, and joy. She is worshipped by gamblers and cooks."
+        },
+        {
+          "id": "onatar",
+          "name": "奥纳塔",
+          "nameEn": "Onatar",
+          "title": "工艺之神",
+          "titleEn": "God of Craft",
+          "alignment": "NG",
+          "domains": [
+            "知识",
+            "锻造"
+          ],
+          "symbol": "交叉的锤子和钳子",
+          "pantheon": "天命诸神",
+          "description": "奥纳塔是工艺、锻造和火焰的神。他是工匠和发明家的守护神。",
+          "descriptionEn": "Onatar is the god of craft, forge, and fire. He is the patron of artisans and inventors."
+        },
+        {
+          "id": "the_devourer",
+          "name": "吞噬者",
+          "nameEn": "The Devourer",
+          "title": "自然之怒",
+          "titleEn": "God of Nature's Wrath",
+          "alignment": "NE",
+          "domains": [
+            "风暴"
+          ],
+          "symbol": "一束闪电击中波浪的尖峰",
+          "pantheon": "黑暗六邪神",
+          "description": "吞噬者是自然之怒、深海和风暴的神。他代表自然最具破坏力的一面。",
+          "descriptionEn": "The Devourer is the god of nature's wrath, the deep sea, and storms. He represents nature's most destructive aspects."
+        },
+        {
+          "id": "the_fury",
+          "name": "狂怒者",
+          "nameEn": "The Fury",
+          "title": "愤怒与疯狂女神",
+          "titleEn": "Goddess of Wrath and Madness",
+          "alignment": "NE",
+          "domains": [
+            "战争"
+          ],
+          "symbol": "一条翼龙",
+          "pantheon": "黑暗六邪神",
+          "description": "狂怒者是愤怒、疯狂和激情的女神。她代表失控的情绪。",
+          "descriptionEn": "The Fury is the goddess of wrath, madness, and passion. She represents emotions run wild."
+        },
+        {
+          "id": "the_keeper",
+          "name": "守护者",
+          "nameEn": "The Keeper",
+          "title": "贪婪与死亡之神",
+          "titleEn": "God of Greed and Death",
+          "alignment": "NE",
+          "domains": [
+            "死亡"
+          ],
+          "symbol": "一条龙形的牙齿",
+          "pantheon": "黑暗六邪神",
+          "description": "守护者是贪婪、死亡和腐败的神。他渴望收集灵魂。",
+          "descriptionEn": "The Keeper is the god of greed, death, and decay. He desires to collect souls."
+        },
+        {
+          "id": "the_mockery",
+          "name": "嘲弄者",
+          "nameEn": "The Mockery",
+          "title": "背叛与暴力之神",
+          "titleEn": "God of Violence and Treachery",
+          "alignment": "NE",
+          "domains": [
+            "诡术",
+            "战争"
+          ],
+          "symbol": "五根沾血的工具",
+          "pantheon": "黑暗六邪神",
+          "description": "嘲弄者是背叛、暴力和不荣誉战争的神。他是刺客和叛徒的守护神。",
+          "descriptionEn": "The Mockery is the god of treachery, violence, and dishonorable war. He is the patron of assassins and traitors."
+        },
+        {
+          "id": "the_shadow",
+          "name": "阴影",
+          "nameEn": "The Shadow",
+          "title": "黑暗魔法之神",
+          "titleEn": "God of Dark Magic",
+          "alignment": "CE",
+          "domains": [
+            "知识"
+          ],
+          "symbol": "一座烟雾缭绕的塔",
+          "pantheon": "黑暗六邪神",
+          "description": "阴影是黑暗魔法、野心和腐败知识的神。他诱惑法师走向黑暗。",
+          "descriptionEn": "The Shadow is the god of dark magic, ambition, and corrupt knowledge. He tempts mages to darkness."
+        },
+        {
+          "id": "the_traveler",
+          "name": "旅行者",
+          "nameEn": "The Traveler",
+          "title": "混乱与变化之神",
+          "titleEn": "God of Chaos and Change",
+          "alignment": "CN",
+          "domains": [
+            "知识",
+            "诡术"
+          ],
+          "symbol": "四根交叉的骨头形成十字",
+          "pantheon": "黑暗六邪神",
+          "description": "旅行者是混乱、变化和欺骗的神。他的动机和目的总是神秘莫测。",
+          "descriptionEn": "The Traveler is the god of chaos, change, and deception. His motives and purposes are always mysterious."
+        },
+        {
+          "id": "silver_flame",
+          "name": "银焰",
+          "nameEn": "The Silver Flame",
+          "title": "纯净与保护的神圣之火",
+          "titleEn": "The Divine Fire of Purity and Protection",
+          "alignment": "LG",
+          "domains": [
+            "生命",
+            "光明",
+            "战争"
+          ],
+          "symbol": "银色箭状火焰",
+          "pantheon": "银焰教会",
+          "description": "银焰是一种神圣的力量，而非传统意义上的神祇。它代表纯洁、保护和对抗邪恶的力量。",
+          "descriptionEn": "The Silver Flame is a divine force rather than a traditional deity. It represents purity, protection, and the power to fight evil."
+        }
+      ]
+    }
+  ],
+  "nonhumanDeities": {
+    "name": "非人类神祇",
+    "nameEn": "Nonhuman Deities",
+    "description": "一些与非人类种族息息相关的神祇在许多不同的世界被崇拜着",
+    "note": "非人类种族往往有自己完整的神系",
+    "examples": [
+      {
+        "race": "矮人",
+        "raceEn": "Dwarf",
+        "mainDeity": {
+          "name": "摩拉丁",
+          "nameEn": "Moradin"
+        },
+        "pantheon": [
+          "蓓伦妮·真银 (Berronar Truesilver) - 摩拉丁之妻",
+          "阿巴索 (Abbathor)",
+          "克兰贾汀·银须 (Clangeddin Silverbeard)",
+          "杜马松 (Dumathoin)",
+          "杜格马睿·明罩 (Dugmaren Brightmantle)",
+          "贡姆·古辛 (Gorm Gulthyn)",
+          "海菈·明斧 (Haela Brightaxe)",
+          "马萨摩·杜因 (Marthammor Duin)",
+          "萨德·哈尔 (Thard Harr)",
+          "维加丁 (Vergadain)"
+        ]
+      }
+    ]
+  },
+  "domainNotes": {
+    "lifeAndDeath": {
+      "life": {
+        "domain": "生命领域",
+        "domainEn": "Life Domain",
+        "restriction": "只有非邪恶的牧师可以选择",
+        "associated": "与医疗、保护、分娩、培育还有丰产密切相关的神祇"
+      },
+      "death": {
+        "domain": "死亡领域",
+        "domainEn": "Death Domain",
+        "note": "在《城主指南》中有详细说明",
+        "typical": "大多选择该领域的牧师都是邪恶的NPC",
+        "playerOption": "如果你想信仰一位死亡之神，你可以与DM商讨"
+      }
+    }
+  }
+}

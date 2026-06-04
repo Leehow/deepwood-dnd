@@ -1,0 +1,20 @@
+{
+  "id": "lost_mine_of_phandelver",
+  "title": "凡戴尔的失落矿坑",
+  "title_en": "Lost Mine of Phandelver",
+  "version": "2.0.0",
+  "parser_version": "enhanced_1.0",
+  "parse_date": "2024-11-01",
+  "statistics": {
+    "total_npcs": 30,
+    "total_locations": 7,
+    "total_encounters": 0,
+    "total_traps": 0,
+    "total_treasures": 0,
+    "total_dialogues": 0,
+    "dungeon_rooms": 1,
+    "buildings": 6,
+    "hostile_npcs": 3,
+    "friendly_npcs": 0
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "overview": {
+    "description": "种族和职业的外观特征描述，用于AI头像生成",
+    "purpose": "帮助图片AI理解D&D种族和职业的视觉特征"
+  },
+  "races": {
+    "human": {
+      "name": "人类",
+      "avatarDescription": "A human with diverse features, could have any skin tone from pale to dark, varied hair colors and styles, average height and build, expressive eyes showing intelligence and determination"
+    },
+    "elf": {
+      "name": "精灵",
+      "avatarDescription": "An elf with elegant, angular features, pointed ears, slender graceful build, high cheekbones, almond-shaped eyes that often have unusual colors like violet or silver, ethereal and ageless appearance"
+    },
+    "high_elf": {
+      "name": "高等精灵",
+      "avatarDescription": "A high elf with regal bearing, golden or silver-tinged skin, hair in shades of gold, silver, or pale blonde, eyes of deep blue, violet, or green, aristocratic features radiating arcane power"
+    },
+    "wood_elf": {
+      "name": "木精灵",
+      "avatarDescription": "A wood elf with copper or bronze skin, hair in autumn colors - brown, red, or green-tinged, amber or hazel eyes, lean athletic build, features suggesting a deep connection to nature"
+    },
+    "dark_elf": {
+      "name": "卓尔精灵",
+      "avatarDescription": "A dark elf (drow) with obsidian black skin, stark white or pale silver hair, piercing red or violet eyes, sharp angular features, an aura of danger and mystery"
+    },
+    "dwarf": {
+      "name": "矮人",
+      "avatarDescription": "A dwarf with a stout, muscular build, standing about 4-5 feet tall but broad-shouldered, long braided beard (males) or braided hair, ruddy complexion, prominent brow, eyes like gemstones"
+    },
+    "mountain_dwarf": {
+      "name": "山地矮人",
+      "avatarDescription": "A mountain dwarf with fair to light brown skin, thick well-groomed beard often adorned with metal clasps, strong jaw, battle-hardened appearance, proud bearing of a warrior"
+    },
+    "hill_dwarf": {
+      "name": "丘陵矮人",
+      "avatarDescription": "A hill dwarf with ruddy skin tone, warm brown or auburn hair, kind but weathered features, slightly rounder build than mountain dwarves, wise knowing eyes"
+    },
+    "halfling": {
+      "name": "半身人",
+      "avatarDescription": "A halfling standing about 3 feet tall, with a round friendly face, curly hair (often brown or sandy), large bright eyes full of curiosity, slightly pointed ears, barefoot with hairy feet"
+    },
+    "lightfoot": {
+      "name": "轻足半身人",
+      "avatarDescription": "A lightfoot halfling with nimble features, mischievous glint in eyes, slender for a halfling, hair often in disarray, quick smile, appearance suggesting stealth and agility"
+    },
+    "stout": {
+      "name": "强魄半身人",
+      "avatarDescription": "A stout halfling with broader build, rosy cheeks, determined expression, slightly more muscular than other halflings, features suggesting dwarven heritage, hearty appearance"
+    },
+    "gnome": {
+      "name": "侏儒",
+      "avatarDescription": "A gnome standing about 3-4 feet tall, with a large head relative to body, long pointed nose, bright twinkling eyes, wild hair in unusual colors, animated expressive features"
+    },
+    "forest_gnome": {
+      "name": "森林侏儒",
+      "avatarDescription": "A forest gnome with bark-brown or tan skin, hair in earth tones or mossy green, bright curious eyes, features suggesting woodland creatures, often wearing natural adornments"
+    },
+    "rock_gnome": {
+      "name": "岩侏儒",
+      "avatarDescription": "A rock gnome with slightly grayish skin, hair often white or gray, mechanical goggles or tools visible, intelligent calculating eyes, features marked by constant tinkering"
+    },
+    "half_elf": {
+      "name": "半精灵",
+      "avatarDescription": "A half-elf combining human and elven features, slightly pointed ears, high cheekbones but softer than full elves, varied skin tones, eyes that hint at elven ancestry, graceful but more robust than elves"
+    },
+    "half_orc": {
+      "name": "半兽人",
+      "avatarDescription": "A half-orc with distinctly GREEN skin (olive-green to gray-green), two prominent TUSKS protruding upward from lower jaw, heavy pronounced brow ridge, powerful muscular build, coarse dark hair, fierce intimidating eyes, broad flat nose, strong square jawline"
+    },
+    "dragonborn": {
+      "name": "龙裔",
+      "avatarDescription": "A dragonborn with draconic features, scaled skin in various colors (brass, bronze, copper, gold, silver, black, blue, green, red, white), reptilian eyes with vertical pupils, no hair but often frills or horns, powerful clawed hands, imposing 6-7 foot tall humanoid dragon appearance"
+    },
+    "tiefling": {
+      "name": "提夫林",
+      "avatarDescription": "A tiefling with infernal heritage visible - skin in shades of red, purple, or blue, prominent curved horns on forehead, solid-colored eyes (red, gold, silver, or black without visible pupils), long pointed tail, sharp canine teeth, otherworldly unsettling beauty"
+    }
+  },
+  "classes": {
+    "barbarian": {
+      "name": "野蛮人",
+      "avatarDescription": "wearing tribal or primitive armor, battle scars visible, wild unkempt hair, fierce primal expression, muscles bulging with raw power, possibly tribal tattoos or war paint"
+    },
+    "bard": {
+      "name": "吟游诗人",
+      "avatarDescription": "dressed in colorful flamboyant clothing, carrying a musical instrument, charismatic confident smile, expressive theatrical pose, perhaps feathered hat or flowing cape"
+    },
+    "cleric": {
+      "name": "牧师",
+      "avatarDescription": "wearing religious vestments or armor with holy symbols, divine light in eyes, serene or zealous expression, holy symbol prominently displayed, aura of spiritual power"
+    },
+    "druid": {
+      "name": "德鲁伊",
+      "avatarDescription": "wearing natural materials - leather, leaves, fur, wooden staff or nature focus, wild untamed hair often with leaves or vines, eyes reflecting the wild, connection to nature visible"
+    },
+    "fighter": {
+      "name": "战士",
+      "avatarDescription": "wearing practical combat armor, bearing marks of many battles, confident martial stance, well-maintained weapons visible, disciplined military bearing, alert watchful eyes"
+    },
+    "monk": {
+      "name": "武僧",
+      "avatarDescription": "wearing simple robes or minimal clothing, lean muscular build showing physical discipline, calm centered expression, barefoot or simple footwear, hands positioned in martial arts stance"
+    },
+    "paladin": {
+      "name": "圣武士",
+      "avatarDescription": "wearing shining plate armor often with holy symbols, righteous determined expression, divine radiance about them, sword and shield ready, noble heroic bearing"
+    },
+    "ranger": {
+      "name": "游侠",
+      "avatarDescription": "wearing practical woodland gear - leather armor, cloak, hood, bow or paired weapons visible, weathered from outdoor life, keen observant eyes, at home in wilderness"
+    },
+    "rogue": {
+      "name": "游荡者",
+      "avatarDescription": "wearing dark practical clothing, hooded cloak, daggers or tools visible, cunning calculating expression, shadows seeming to cling to them, alert and ready to move"
+    },
+    "sorcerer": {
+      "name": "术士",
+      "avatarDescription": "arcane energy crackling around them, eyes glowing with innate power, fine robes showing magical heritage, confident born-with-power bearing, magical aura visible"
+    },
+    "warlock": {
+      "name": "邪术师",
+      "avatarDescription": "dark mysterious robes, otherworldly symbols or marks, eyes hinting at pact with powerful entity, eldritch energy visible, unsettling yet compelling presence"
+    },
+    "wizard": {
+      "name": "法师",
+      "avatarDescription": "wearing scholarly robes, carrying spellbook or arcane focus, intelligent studious expression, perhaps spectacles or beard suggesting years of study, arcane symbols on clothing"
+    }
+  }
+}
