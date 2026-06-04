@@ -1,6 +1,6 @@
-# Contributing to 深渊小屋 (Deepwood)
+# Contributing to Deepwood DND
 
-Thanks for your interest in contributing! Deepwood is a full-stack D&D 5E
+Thanks for your interest in contributing! Deepwood DND is a full-stack D&D 5E
 platform (FastAPI + React Router v7 + PostgreSQL). This guide covers the
 basics for getting set up and submitting changes.
 
@@ -20,7 +20,7 @@ and help keep the community welcoming.
   copyrighted D&D book text, scanned/OCR'd book content, PDFs, or other
   copyright-sensitive material to the repository.** Only SRD/Open Game Content
   and original work belong here.
-- Keep the license boundary clear. Apache-2.0 covers Deepwood software code,
+- Keep the license boundary clear. Apache-2.0 covers Deepwood DND software code,
   not D&D content or third-party assets/data. Contributions that add rules
   text, lore, modules, maps, art, uploads, generated campaign content, or
   reference data must be legally redistributable and clearly documented.

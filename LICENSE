@@ -169,7 +169,7 @@ recommend that a file or class name and description of purpose be included on
 the same "printed page" as the copyright notice for easier identification
 within third-party archives.
 
-Copyright 2026 Deepwood (深渊小屋) contributors
+Copyright 2026 Deepwood DND contributors
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -185,7 +185,7 @@ limitations under the License.
 
 ---
 
-NOTE ON SCOPE: This Apache License 2.0 covers the original Deepwood
+NOTE ON SCOPE: This Apache License 2.0 covers the original Deepwood DND
 application code (the software in this repository). It does NOT grant any
 rights to Dungeons & Dragons game content, rules text, or other third-party
 material. Game content is governed separately; see LICENSE-OGL.md (Open Game

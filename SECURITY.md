@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-If you discover a security vulnerability in **深渊小屋 (Deepwood)**, please
+If you discover a security vulnerability in **Deepwood DND**, please
 report it privately rather than opening a public issue.
 
 - Use GitHub's **"Report a vulnerability"** flow (Security → Advisories) on the
@@ -37,7 +37,7 @@ channel at this time.
 
 ## Scope
 
-Deepwood handles user accounts, campaign data, real-time WebSocket traffic, and
+Deepwood DND handles user accounts, campaign data, real-time WebSocket traffic, and
 file uploads. When contributing, be mindful of authentication/authorization
 checks, input validation on uploads and AI-driven parsing, and avoiding the
 leakage of identity through transport channels other than the bearer token

@@ -1,12 +1,12 @@
 # Legal Notice / 法律声明
 
-This notice explains the boundary between the Deepwood software license and any
+This notice explains the boundary between the Deepwood DND software license and any
 game/content rights that may be relevant when you run or extend the product.
 It is not legal advice.
 
 ## License split / 协议边界
 
-The Deepwood application code is licensed under the **Apache License 2.0**.
+The Deepwood DND application code is licensed under the **Apache License 2.0**.
 That license covers only the original product/software code in this repository.
 
 Apache-2.0 does **not** grant any rights to Dungeons & Dragons, Wizards of the
@@ -15,13 +15,13 @@ artwork, maps, lore, monsters, spells, modules, uploads, generated campaign
 content, or third-party assets/data. Those materials are governed separately by
 their own licenses, policies, or rights holders.
 
-深渊小屋开源的是产品和软件代码，不提供 D&D 相关版权、商标、设定、规则书、
+Deepwood DND 开源的是产品和软件代码，不提供 D&D 相关版权、商标、设定、规则书、
 冒险模组、美术、地图、上传资料或第三方素材的授权。Apache-2.0 允许你使用、
 修改和分发本项目软件代码，但不等于允许你商业化使用任何 D&D 相关内容。
 
 ## D&D and commercial use / D&D 与商业化
 
-Deepwood is an unofficial tool for tabletop role-playing games. If your
+Deepwood DND is an unofficial tool for tabletop role-playing games. If your
 deployment, fork, product, or service uses D&D-related content or branding, you
 are responsible for independently complying with all applicable Wizards of the
 Coast terms, SRD/OGL/Creative Commons terms, Fan Content Policy requirements,
@@ -30,11 +30,11 @@ trademark rules, and any other third-party content licenses.
 Commercial use of the **software** may be permitted by Apache-2.0. Commercial
 use of D&D-related content, names, rules text, lore, artwork, adventures,
 modules, or built-in/reference data may require additional rights or may be
-restricted. Before commercializing a Deepwood-based product or service, remove
+restricted. Before commercializing a Deepwood DND-based product or service, remove
 or replace any content you do not have rights to use and confirm that your use
 of D&D material is compliant.
 
-如果你要把基于深渊小屋的产品商业化，请先确认你的数据、素材、规则文本、模组、
+如果你要把基于 Deepwood DND 的产品商业化，请先确认你的数据、素材、规则文本、模组、
 品牌表达和 D&D 相关内容都符合权利方要求。我们只提供产品代码；用户自行上传、
 内置、整理或分发的 D&D/第三方内容，由用户自行承担合规责任。
 
@@ -51,14 +51,14 @@ separate content notices.
 
 ## Fan Content disclaimer / 粉丝内容声明
 
-Where Deepwood is operated as free, non-commercial D&D fan content, it should
+Where Deepwood DND is operated as free, non-commercial D&D fan content, it should
 follow the [Wizards Fan Content Policy](https://company.wizards.com/en/legal/fancontentpolicy):
 
-**深渊小屋 (Deepwood)** is unofficial Fan Content. Not approved or endorsed by
+**Deepwood DND** is unofficial Fan Content. Not approved or endorsed by
 Wizards. Portions of the materials used may be property of Wizards of the Coast.
 ©Wizards of the Coast LLC.
 
-**深渊小屋 (Deepwood)** 是非官方粉丝内容，未经威世智批准或认可。部分使用的材料
+**Deepwood DND** 是非官方粉丝内容，未经威世智批准或认可。部分使用的材料
 可能属于威世智海岸公司。©Wizards of the Coast LLC.
 
 ## Open Game Content / 开放游戏内容

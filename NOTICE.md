@@ -1,6 +1,6 @@
 # NOTICE / 第三方与内容声明
 
-This file summarizes the licensing layers of **深渊小屋 (Deepwood)** and the
+This file summarizes the licensing layers of **Deepwood DND** and the
 third-party material it relies on. It is informational; the authoritative terms
 live in the referenced license files.
 
@@ -13,11 +13,11 @@ written for this project) is licensed under the **Apache License 2.0** — see
 
 ## 2. Dungeons & Dragons game content
 
-Deepwood is a tool for playing **Dungeons & Dragons 5th Edition**. D&D is a
+Deepwood DND is a tool for playing **Dungeons & Dragons 5th Edition**. D&D is a
 trademark of Wizards of the Coast LLC. This project is **not** affiliated with,
 endorsed, or approved by Wizards of the Coast.
 
-The Apache-2.0 license for this repository covers only the Deepwood
+The Apache-2.0 license for this repository covers only the Deepwood DND
 software/product code. It does **not** license D&D rules text, Wizards
 trademarks, Product Identity, lore, artwork, maps, official books/adventures,
 uploaded modules, generated campaign content, or third-party data/assets.
@@ -32,10 +32,10 @@ uploaded modules, generated campaign content, or third-party data/assets.
 **Product Identity** (as defined by the OGL) and copyrighted, non-SRD book text
 are **not** redistributed by this repository. See section 4.
 
-If you commercialize a product or service based on Deepwood, your commercial
+If you commercialize a product or service based on Deepwood DND, your commercial
 rights to the software are separate from your rights to any D&D-related content.
 You are responsible for complying with the applicable Wizards/SRD/OGL/Fan
-Content Policy and third-party content requirements. Deepwood provides product
+Content Policy and third-party content requirements. Deepwood DND provides product
 code, not D&D content rights.
 
 ## 3. Bundled third-party software
@@ -58,6 +58,6 @@ the following are **not** tracked here and are excluded by `.gitignore`:
 - PDFs, CHM archives, and other distributed book formats.
 - Local environment files (`.env`), secrets, and API keys.
 
-If you run Deepwood, you are responsible for ensuring that any content you
+If you run Deepwood DND, you are responsible for ensuring that any content you
 upload, parse, or store complies with the rights you hold and with the Wizards
 Fan Content Policy.

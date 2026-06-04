@@ -1,69 +1,77 @@
-# 深渊小屋 (Deepwood)
+# Deepwood DND
 
-**深渊小屋 (Deepwood)** is a free, full-stack **Dungeons & Dragons 5th Edition**
-platform for running campaigns online: managing characters, parsing modules, and
-playing sessions on a shared tactical map with real-time, collaborative features.
+<p align="center">
+  <img src="./frontend/public/logo.png" alt="Deepwood DND logo - dragon holding a d20" width="280" />
+</p>
 
-> **Not affiliated with Wizards of the Coast.** Deepwood is unofficial Fan
-> Content. D&D content is used under the Open Gaming License (SRD) and the
-> Wizards Fan Content Policy. See **Legal & Content Boundary** below.
+**Deepwood DND** is a free, full-stack virtual tabletop platform for
+Dungeons & Dragons-style campaigns. It helps groups manage characters, parse
+modules, and play sessions on a shared tactical map with real-time
+collaboration.
 
-## Features
+Deepwood DND 是一个免费的全栈虚拟桌面角色扮演平台，面向 Dungeons & Dragons
+风格的战役体验。它支持角色管理、模组解析、共享战术地图、实时协作、骰子流程
+和 AI 辅助。
 
-- **Campaigns & characters** — create and manage 5E characters, level-ups,
-  multiclassing, spells, equipment, and currency.
-- **Real-time tabletop** — a Konva-based tactical map with tokens, fog of war,
-  drawing, rulers, terrain, and music, synchronized over WebSocket.
-- **Dice system** — a three-stage DM → player → adjudication roll flow.
-- **Module pipeline** — upload an adventure (PDF/Markdown), OCR and parse it into
-  structured chapters, monsters, items, and maps.
-- **AI assists** — optional integrations for chat, image/avatar generation, and
-  OCR via pluggable providers (configured with your own API keys).
+> **Unofficial / 非官方声明**  
+> Deepwood DND is not affiliated with, endorsed, sponsored, or approved by
+> Wizards of the Coast. Deepwood DND provides product/software code only; it
+> does not provide D&D content rights.  
+> Deepwood DND 与 Wizards of the Coast 无从属、授权、赞助或认可关系。本项目
+> 只提供产品和软件代码，不提供 D&D 相关内容、商标、设定或版权授权。
 
-## Tech Stack
+## Features / 功能
 
-**Frontend**
+- **Campaigns & characters / 战役与角色** — create and manage 5E-style
+  characters, level-ups, multiclassing, spells, equipment, and currency.
+- **Real-time tabletop / 实时战术桌面** — Konva-based tactical map with tokens,
+  fog of war, drawing, rulers, terrain, music, and WebSocket synchronization.
+- **Dice flow / 骰子流程** — a DM → player → adjudication roll workflow.
+- **Module pipeline / 模组流水线** — upload PDF/Markdown content, OCR/parse it,
+  and organize chapters, monsters, items, maps, and notes.
+- **AI assists / AI 辅助** — optional chat, image/avatar generation, OCR, and
+  module processing integrations. Bring your own provider keys.
 
-- React Router v7 (framework mode) + React 18 + TypeScript
-- Zustand (client state), React Query / `app/queries/` (server cache)
-- Konva.js (canvas/map), Tailwind CSS + Radix UI
+## Tech Stack / 技术栈
+
+**Frontend / 前端**
+
+- React Router v7 + React 18 + TypeScript
+- Zustand, React Query, Konva.js, Tailwind CSS, Radix UI
 - Vite
 
-> Note: the project migrated from Remix v2 to React Router v7. Some older code
-> comments may still say "Remix"; the `package.json` scripts
-> (`react-router dev` / `react-router build`) are authoritative.
+**Backend / 后端**
 
-**Backend**
+- FastAPI, PostgreSQL, asyncpg, SQLAlchemy 2.0
+- Alembic migrations, WebSocket, Pydantic
+- Redis optional cache
 
-- FastAPI (async), PostgreSQL + asyncpg + SQLAlchemy 2.0
-- Alembic (migrations), WebSocket, Pydantic
-- Redis (optional, caching)
+**AI services / AI 服务**
 
-**AI services (optional, bring your own keys)**
+Provider identity and API keys are supplied through environment variables or
+in-app settings. No provider keys are bundled.
 
-- Chat / adjudication, image & avatar generation, and OCR via configurable
-  providers. Identity and keys are supplied through environment variables and
-  in-app settings — none are bundled.
+AI 服务的身份和密钥通过环境变量或应用内配置提供；仓库不内置任何服务商密钥。
 
-## Quick Start
+## Quick Start / 快速开始
 
-### Prerequisites
+### Prerequisites / 前置要求
 
 - Python 3.11+
 - Node.js 20+
 - PostgreSQL 15+
-- Redis (optional)
+- Redis (optional / 可选)
 
-### Setup
+### Setup / 安装
 
-1. Clone the repository:
+1. Clone the repository / 克隆仓库:
 
    ```bash
-   git clone <repository-url>
-   cd deepwood   # or your clone directory
+   git clone https://github.com/Leehow/deepwood-dnd.git
+   cd deepwood-dnd
    ```
 
-2. Backend environment:
+2. Backend environment / 后端环境:
 
    ```bash
    cd backend
@@ -72,45 +80,45 @@ playing sessions on a shared tactical map with real-time, collaborative features
    pip install -r requirements.txt
    ```
 
-3. Frontend:
+3. Frontend / 前端依赖:
 
    ```bash
    cd frontend
    npm install
    ```
 
-4. Configure environment variables (copy the examples, then fill in your own
-   values — never commit the resulting `.env` files):
+4. Configure environment variables / 配置环境变量:
 
    ```bash
    cp backend/.env.example backend/.env
    cp frontend/.env.example frontend/.env
    ```
 
-5. Run database migrations:
+   Fill in your own local values and never commit `.env` files.  
+   请填入你自己的本地配置，不要提交 `.env` 文件。
+
+5. Run database migrations / 执行数据库迁移:
 
    ```bash
    cd backend
    alembic upgrade head
    ```
 
-## Development
+## Development / 开发
 
-The easiest way to start everything is the helper script, which launches the
-frontend (**port 5174**) and backend (**port 8174**) together with color-coded
-logging:
+Start both services with the helper script / 用启动脚本同时运行前后端:
 
 ```bash
-chmod +x dev-start.sh   # first time only
+chmod +x dev-start.sh
 ./dev-start.sh
 ```
 
-Then open:
+Then open / 然后打开:
 
-- Frontend: <http://localhost:5174>
-- Backend API docs (Swagger): <http://localhost:8174/docs>
+- Frontend / 前端: <http://localhost:5174>
+- Backend API docs / 后端 API 文档: <http://localhost:8174/docs>
 
-### Manual start
+Manual start / 手动启动:
 
 ```bash
 # Backend
@@ -122,121 +130,116 @@ cd frontend
 npm run dev -- --port 5174
 ```
 
-### Free a busy port
+## Testing / 测试
 
 ```bash
-lsof -ti:5174,8174 | xargs kill -9 2>/dev/null
-```
-
-## Testing
-
-```bash
-# Backend (80% coverage required)
+# Backend
 cd backend && pytest
-pytest tests/test_file.py -v       # specific file
-pytest --no-cov                    # skip coverage (faster)
+pytest tests/test_file.py -v
+pytest --no-cov
 
 # Frontend
-cd frontend && npm run test        # Vitest unit tests
-cd frontend && npm run typecheck   # TypeScript check
-npx playwright test                # E2E (specs live in ./debug/)
+cd frontend && npm run test
+cd frontend && npm run typecheck
+npx playwright test
 ```
 
-### Quality gates (must pass before a PR)
+Quality gates / 质量检查:
 
 ```bash
 bash scripts/quality/check_transport_contracts.sh
 bash scripts/quality/check_repo_hygiene.sh
 ```
 
-These are also enforced by `.github/workflows/quality-gate.yml`.
+## Project Structure / 项目结构
 
-## Project Structure
-
-```
+```text
 .
-├── backend/         # FastAPI backend (app/, alembic/, tests/)
-├── frontend/        # React Router v7 frontend (app/, public/)
-├── scripts/         # Data/maintenance utilities (read keys from env vars)
-├── docs/            # Architecture and design documentation
-├── debug/           # E2E specs and dev/debug scripts
-├── dnd-platform/    # SRD reference data + runtime upload/parsed dirs*
-└── dev-start.sh     # Development startup script
+├── backend/         # FastAPI backend / 后端服务
+├── frontend/        # React Router frontend / 前端应用
+├── scripts/         # Data and maintenance utilities / 数据与维护脚本
+├── docs/            # Architecture and design docs / 架构与设计文档
+├── debug/           # E2E and debug scripts / 调试脚本
+├── dnd-platform/    # Reference data + runtime directories / 参考数据与运行目录
+└── dev-start.sh     # Development startup script / 开发启动脚本
 ```
 
-\* `dnd-platform/upload/`, `dnd-platform/configs/modules/`, and
+`dnd-platform/upload/`, `dnd-platform/configs/modules/`, and
 `dnd-platform/modules/` are runtime working directories. They are created on
-demand and intentionally **not** tracked in Git (see below).
+demand and intentionally not tracked in Git.
 
-## Environment Variables
+`dnd-platform/upload/`、`dnd-platform/configs/modules/` 和
+`dnd-platform/modules/` 是运行时目录，会按需创建，仓库中不跟踪。
 
-### Backend (`backend/.env`)
+## Legal & Content Boundary / 法律与内容边界
 
-```env
-DATABASE_URL=postgresql+asyncpg://user:password@localhost/dbname
-SECRET_KEY=your-jwt-secret-key
-REDIS_URL=redis://localhost:6379/0
-# AI providers (optional) — supply your own keys
-DEFAULT_AI_API_KEY=your-api-key-here
-```
-
-See `backend/.env.example` for the full list.
-
-### Frontend (`frontend/.env`)
-
-```env
-VITE_API_URL=http://localhost:8174
-VITE_WS_URL=ws://localhost:8174
-```
-
-## Legal & Content Boundary
-
-Deepwood is **unofficial Fan Content** and is **not** affiliated with, endorsed,
+Deepwood DND is unofficial fan software. It is not affiliated with, endorsed,
 or approved by Wizards of the Coast. Dungeons & Dragons is a trademark of
 Wizards of the Coast LLC.
 
-- **Application code** — Apache License 2.0; see [`LICENSE`](./LICENSE).
-- **License boundary** — Apache-2.0 covers only the Deepwood software/product
-  code. It does not grant rights to D&D rules text, trademarks, lore, official
-  books/adventures, artwork, maps, modules, uploads, generated campaign
-  content, or third-party data/assets.
-- **Open Game Content (SRD 5.1)** — used under OGL v1.0a; see
-  [`LICENSE-OGL.md`](./LICENSE-OGL.md).
-- **Fan Content Policy** — Deepwood is free to access and non-commercial; see
-  [`LEGAL.md`](./LEGAL.md).
-- **Third-party / content summary** — see [`NOTICE.md`](./NOTICE.md).
+Deepwood DND 是非官方粉丝软件，与 Wizards of the Coast 无从属、授权或认可关系。
+Dungeons & Dragons 是 Wizards of the Coast LLC 的商标。
 
-Commercial use of the Deepwood software may be allowed by Apache-2.0, but
-commercial use of any D&D-related content or branding is separate. If you build
-a commercial product or service with Deepwood, you must independently comply
+- **Application code / 应用代码** — licensed under the Apache License 2.0.
+  See [`LICENSE`](./LICENSE).
+- **License boundary / 协议边界** — Apache-2.0 covers only Deepwood DND
+  software/product code. It does not grant rights to D&D rules text,
+  trademarks, lore, official books/adventures, artwork, maps, modules, uploads,
+  generated campaign content, or third-party data/assets.
+- **协议边界** — Apache-2.0 只覆盖 Deepwood DND 的软件和产品代码，不授权任何
+  D&D 规则文本、商标、设定、官方书籍/冒险、美术、地图、模组、上传内容、生成战役
+  内容或第三方数据/素材。
+- **Open Game Content / 开放游戏内容** — SRD/Open Game Content is governed
+  separately; see [`LICENSE-OGL.md`](./LICENSE-OGL.md).
+- **Third-party and content notice / 第三方与内容声明** — see
+  [`NOTICE.md`](./NOTICE.md) and [`LEGAL.md`](./LEGAL.md).
+
+Commercial use of the Deepwood DND software may be allowed by Apache-2.0, but
+commercial use of D&D-related content or branding is separate. If you build a
+commercial product or service with Deepwood DND, you must independently comply
 with the applicable D&D/Wizards/SRD/OGL/Fan Content Policy and third-party
-rights requirements. We provide the product code; we do not provide D&D content
+rights requirements. We provide product code; we do not provide D&D content
 rights.
 
-### Content intentionally excluded from this repository
+Apache-2.0 可能允许你商业使用 Deepwood DND 的软件代码，但这不等于允许商业使用
+D&D 相关内容或品牌。如果你基于 Deepwood DND 做商业产品或服务，需要自行确保
+符合 D&D/Wizards/SRD/OGL/Fan Content Policy 以及第三方版权要求。我们提供的是
+产品代码，不提供 D&D 内容权利。
 
-To respect copyright and keep the public repo clean, the following are **not**
-included and are blocked by `.gitignore`:
+### Excluded content / 不包含的内容
 
-- Scanned or OCR-converted copies of official D&D books and published adventures
-  (Player's Handbook, Dungeon Master's Guide, Monster Manual, etc.).
-- Uploaded source files and their parsed/converted output
-  (`dnd-platform/upload/`, `dnd-platform/configs/modules/`,
-  `dnd-platform/modules/`).
-- PDFs, CHM archives, and other distributed book formats.
-- Local environment files and secrets (`.env`, API keys).
+The public repository intentionally excludes:
 
-If you self-host Deepwood and upload your own books or modules, you are
-responsible for holding the necessary rights and for complying with the Wizards
-Fan Content Policy.
+- Scanned or OCR-converted official D&D books and published adventures.
+- Uploaded source files and parsed/generated module output.
+- PDFs, CHM archives, ZIP book archives, local environment files, secrets, and
+  API keys.
 
-## Contributing
+公共仓库有意排除了：
+
+- 官方 D&D 书籍和已出版冒险的扫描版/OCR 转换版。
+- 用户上传源文件及其解析/生成的模组产物。
+- PDF、CHM、ZIP 书籍归档、本地环境文件、密钥和 API key。
+
+If you self-host Deepwood DND and upload your own books, modules, maps, assets,
+or data, you are responsible for holding the necessary rights and complying
+with all applicable content policies and laws.
+
+如果你自托管 Deepwood DND 并上传自己的书籍、模组、地图、素材或数据，你需要自行
+确保拥有相应权利，并遵守相关内容政策与法律要求。
+
+## Contributing / 贡献
 
 See [`CONTRIBUTING.md`](./CONTRIBUTING.md). Please report security issues
 privately per [`SECURITY.md`](./SECURITY.md).
 
-## License
+请阅读 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。安全问题请按
+[`SECURITY.md`](./SECURITY.md) 私下报告。
 
-Apache License 2.0 for the application code — see [`LICENSE`](./LICENSE). Game
-content is governed separately as described in **Legal & Content Boundary**
-above.
+## License / 许可证
+
+Deepwood DND application code is licensed under the Apache License 2.0. Game
+content and third-party material are governed separately as described above.
+
+Deepwood DND 应用代码使用 Apache License 2.0。游戏内容和第三方材料按上文所述
+另行适用其各自协议。
